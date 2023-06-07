@@ -2,11 +2,12 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
-    "module": "es6",
+    // "module": "es6",
     "strict": true,
     "target": "es5",
     "allowJs": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
+    "outDir": "./dist"
   },
   "files": ["app/init.tsx"]
 }

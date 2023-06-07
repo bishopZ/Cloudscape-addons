@@ -1,0 +1,6 @@
+
+@use '@cloudscape-design/design-tokens/index' as awsui;
+
+.code-background {
+  background-color: awsui.$color-background-cell-shaded;
+}

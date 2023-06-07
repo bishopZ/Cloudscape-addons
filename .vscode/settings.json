@@ -10,5 +10,6 @@
   },
   "eslint.validate": [
       "javascript"
-  ]
+  ],
+  "editor.rulers": [80, 120],
 }

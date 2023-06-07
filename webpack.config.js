@@ -6,7 +6,7 @@ const isProduction = process.env.NODE_ENV == 'production';
 const stylesHandler = 'style-loader';
 
 const config = {
-  entry: './app/init.tsx',
+  entry: ['./app/init.tsx', './app/styles.scss'],
   output: {
     path: path.resolve(__dirname, 'public'),
   },

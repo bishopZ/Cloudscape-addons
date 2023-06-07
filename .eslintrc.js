@@ -45,6 +45,8 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-argument': 'off',
     'no-prototype-builtins': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
 
     // AWS UI turns on
     'eqeqeq': 'error',
