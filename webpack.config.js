@@ -1,23 +1,33 @@
-// Generated using webpack-cli https://github.com/webpack/webpack-cli
-
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const isProduction = process.env.NODE_ENV == 'production';
-const stylesHandler = 'style-loader';
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const isProduction = process.env.NODE_ENV === 'production';
 
 const config = {
   entry: ['./app/init.tsx', './app/styles.scss'],
   output: {
     path: path.resolve(__dirname, 'public'),
   },
-  devServer: {
-    open: true,
-    host: 'localhost',
+  resolve: {
+    extensions: ['.tsx', '.ts', '...'],
+    roots: [path.resolve('./app')]
+  },
+  optimization: {
+    minimizer: [
+      `...`,
+      new CssMinimizerPlugin(),
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'app/index.html',
     }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[name].css',
+    }),
+    // new OptimizeCssAssetsPlugin({}),
   ],
   module: {
     rules: [
@@ -46,11 +56,11 @@ const config = {
       },
       {
         test: /\.css$/i,
-        use: [stylesHandler, 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [stylesHandler, 'css-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
@@ -58,8 +68,9 @@ const config = {
       },
     ],
   },
-  resolve: {
-    extensions: ['.tsx', '.ts', '...'],
+  devServer: {
+    open: true,
+    host: 'localhost',
   },
 };
 

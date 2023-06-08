@@ -1,5 +1,5 @@
 import type { ButtonProps, IconProps } from '@cloudscape-design/components';
-import { Button, FormField } from '@cloudscape-design/components';
+import { Button, FormField, Popover } from '@cloudscape-design/components';
 import React from 'react';
 
 import { loadingText } from '../helpers/a11y-helpers';
@@ -11,6 +11,7 @@ type Props = {
   text: React.ReactNode
   href: string
   label?: string
+  popover?: React.ReactNode
   constraint?: React.ReactNode
   description?: React.ReactNode
   error?: React.ReactNode
@@ -37,35 +38,40 @@ type Props = {
 
 export const LabeledButton = (props: Props) => {
   const {
-    text = <>&nbsp;</>,
     label = <>&nbsp;</>,
     iconAlt = props.iconName,
-    iconAlign,
-    iconName,
-    iconUrl,
-    href,
-    constraint,
-    description,
-    info,
-    error,
-    secondaryControl,
-    variant,
-    download,
-    formAction,
     optional = false,
-    external,
-    stretch,
-    disabled,
-    fullWidth,
-    loading,
-    wrapText,
-    onClick,
-    onFollow,
+    text, href,
+    iconAlign, iconName, iconUrl,
+    popover, constraint, description, info, error, secondaryControl,
+    variant, download, formAction,
+    external, stretch, disabled, fullWidth, loading, wrapText,
+    onClick, onFollow,
   } = props;
 
   const displayLabel = optional
     ? addOptional(label)
     : label;
+
+  const PlainButton = () => <Button
+    target={external ? '_blank' : ''} // also sets the rel property
+    href={href}
+    variant={variant}
+    iconName={iconName}
+    iconAlign={iconAlign}
+    iconAlt={iconAlt}
+    iconUrl={iconUrl}
+    formAction={formAction}
+    download={download}
+    disabled={disabled}
+    fullWidth={fullWidth}
+    loading={loading}
+    loadingText={loadingText}
+    wrapText={wrapText}
+    onClick={onClick}
+    onFollow={onFollow}>
+    {text}
+  </Button>;
 
   return <FormField
     label={displayLabel}
@@ -76,24 +82,15 @@ export const LabeledButton = (props: Props) => {
     secondaryControl={secondaryControl}
     stretch={stretch}
     i18nStrings={formfieldStrings}>
-    <Button
-      href={href}
-      target={external ? '_blank' : ''} // also sets the rel property
-      variant={variant}
-      iconName={iconName}
-      iconAlign={iconAlign}
-      iconAlt={iconAlt}
-      iconUrl={iconUrl}
-      formAction={formAction}
-      download={download}
-      disabled={disabled}
-      fullWidth={fullWidth}
-      loading={loading}
-      loadingText={loadingText}
-      wrapText={wrapText}
-      onClick={onClick}
-      onFollow={onFollow}>
-      {text}
-    </Button>
+    {popover
+      ? <Popover
+        dismissButton={false}
+        position="top"
+        size="small"
+        triggerType="custom"
+        content={popover}>
+        <PlainButton />
+      </Popover>
+      : <PlainButton />}
   </FormField>;
 };

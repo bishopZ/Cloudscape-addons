@@ -1,13 +1,12 @@
 import type { AppLayoutProps, DatePickerProps, MultiselectProps, PaginationProps } from '@cloudscape-design/components';
 
-// provided by I18n tools?
+// This setion is not needed if you use the Cloudscap I18n suppert: TODO link
 export const errorIconAriaLabel = 'Error';
 export const selectedAriaLabel = 'Selected';
 export const expandAriaLabel = 'Expand';
 export const clearAriaLabel = 'Clear';
 export const externalIconAriaLabel = 'Opens in a new tab';
 export const closeModalAriaLabel = 'Close modal';
-// export const deselectAriaLabel = e => `Remove ${e.label}`;
 export const filteringAriaLabel = 'Filter instances';
 export const filteringClearAriaLabel = 'Clear filtering';
 export const filteringPlaceholder = 'Search';
@@ -31,11 +30,6 @@ export const layoutLabels: AppLayoutProps.Labels = {
   toolsToggle: 'Open help panel'
 };
 
-// export const cardLabels = {
-//   itemSelectionLabel: (e, n) => `select ${n.name}`,
-//   selectionGroupLabel: 'Item selection'
-// };
-
 export const datePickerLabels: DatePickerProps.OpenCalendarAriaLabel = selectedDate =>
   `Choose certificate expiry date${
     selectedDate
@@ -58,3 +52,7 @@ export const paginationLabels: PaginationProps.Labels = {
 //   }
 // };
 
+// export const cardLabels = {
+//   itemSelectionLabel: (e, n) => `select ${n.name}`,
+//   selectionGroupLabel: 'Item selection'
+// };

@@ -7,14 +7,15 @@ import type { InputChange, KeyDetail } from '../helpers/type-helpers';
 
 type Props = {
   value: string
-  placeholder?: string
+  onChange: (event: InputChange) => void
+  rows?: number
   label?: React.ReactNode
+  placeholder?: string
   constraint?: React.ReactNode
   description?: React.ReactNode
   error?: React.ReactNode
   info?: React.ReactNode
   secondaryControl?: React.ReactNode
-  rows?: number
   autoComplete?: string | boolean
   spellcheck?: boolean
   stretch?: boolean
@@ -23,33 +24,18 @@ type Props = {
   readOnly?: boolean
   onBlur?: () => void
   onFocus?: () => void
-  onChange?: (event: InputChange) => void
   onKeyDown?: (event: KeyDetail) => void
   onKeyUp?: (event: KeyDetail) => void
 }
 
 export const LabeledTextarea = (props: Props) => {
   const {
-    value,
-    label,
-    placeholder,
-    constraint,
-    description,
-    error,
-    info,
-    secondaryControl,
-    rows,
-    stretch,
+    label = <>&nbsp;</>,
     optional = false,
-    autoComplete,
-    disabled,
-    readOnly,
-    spellcheck,
-    onBlur,
-    onFocus,
-    onChange,
-    onKeyDown,
-    onKeyUp,
+    value, rows,
+    placeholder, constraint, description, error, info, secondaryControl,
+    stretch, autoComplete, disabled, readOnly, spellcheck,
+    onBlur, onFocus, onChange, onKeyDown, onKeyUp,
   } = props;
 
   const displayLabel = optional

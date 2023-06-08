@@ -9,6 +9,7 @@ import type { InputChange, KeyDetail } from '../helpers/type-helpers';
 
 type Props = {
   value: string
+  onChange: (event: InputChange) => void
   mode?: keyof typeof modeMap
   label?: React.ReactNode
   placeholder?: string
@@ -26,7 +27,6 @@ type Props = {
   step?: number
   onBlur?: () => void
   onFocus?: () => void
-  onChange?: (event: InputChange) => void
   onKeyDown?: (event: KeyDetail) => void
   onKeyUp?: (event: KeyDetail) => void
 }
@@ -47,26 +47,14 @@ const modeMap: Map = {
 export const LabeledInput = (props: Props) => {
   const {
     label = <>&nbsp;</>,
-    value = '',
     mode = 'text',
     placeholder = 'Enter a value',
     step = 1,
-    constraint,
-    description,
-    error,
-    info,
-    secondaryControl,
     optional = false,
-    disabled,
-    stretch,
-    readOnly,
-    autoComplete,
-    spellcheck,
-    onBlur,
-    onFocus,
-    onChange,
-    onKeyDown,
-    onKeyUp
+    value,
+    constraint, description, error, info, secondaryControl,
+    disabled, stretch, readOnly, autoComplete, spellcheck,
+    onBlur, onFocus, onChange, onKeyDown, onKeyUp
   } = props;
 
   const displayLabel = optional

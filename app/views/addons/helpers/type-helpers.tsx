@@ -1,5 +1,6 @@
 import type {
-  ButtonProps, CheckboxProps, InputProps, MultiselectProps, NonCancelableCustomEvent, SelectProps, ToggleProps
+  ButtonProps, CheckboxProps, InputProps, MultiselectProps, NonCancelableCustomEvent, RadioGroupProps,
+  SelectProps, TilesProps, ToggleProps
 } from '@cloudscape-design/components';
 
 export type ValueOf<T> = T[keyof T]
@@ -11,7 +12,12 @@ export type MultiselectChange = NonCancelableCustomEvent<MultiselectProps.Multis
 export type CheckboxChange = NonCancelableCustomEvent<CheckboxProps.ChangeDetail>
 export type SelectLoad = NonCancelableCustomEvent<SelectProps.LoadItemsDetail>
 export type ToogleChange = NonCancelableCustomEvent<ToggleProps.ChangeDetail>
+export type RadioChange = NonCancelableCustomEvent<RadioGroupProps.ChangeDetail>
+export type TileChange = NonCancelableCustomEvent<TilesProps.ChangeDetail>
 
-export type ButtonClick = CustomEvent<ButtonProps.ClickDetail>;
-export type ButtonFollow = CustomEvent<ButtonProps.FollowDetail>;
+export type ButtonClick = CustomEvent<ButtonProps.ClickDetail>
+export type ButtonFollow = CustomEvent<ButtonProps.FollowDetail>
 export type KeyDetail = CustomEvent<InputProps.KeyDetail>
+
+export type RadioItems = ReadonlyArray<RadioGroupProps.RadioButtonDefinition>
+export type TileItems = ReadonlyArray<TilesProps.TilesDefinition>

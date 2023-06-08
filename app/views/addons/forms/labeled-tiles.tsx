@@ -1,36 +1,32 @@
-import { Checkbox, FormField } from '@cloudscape-design/components';
+import { FormField, Tiles } from '@cloudscape-design/components';
 import React from 'react';
 
 import { formfieldStrings } from '../helpers/i18n-helpers';
 import { addOptional } from '../helpers/string-utils';
-import type { CheckboxChange } from '../helpers/type-helpers';
+import type { TileChange, TileItems } from '../helpers/type-helpers';
 
 type Props = {
-  checked: boolean
-  onChange: (event: CheckboxChange) => void
-  children: React.ReactNode
-  label?: React.ReactNode
+  value: string | null
+  items: TileItems
+  onChange: (event: TileChange) => void
+  label?: string
   constraint?: React.ReactNode
   description?: React.ReactNode
   error?: React.ReactNode
   info?: React.ReactNode
   secondaryControl?: React.ReactNode
-  stretch?: boolean
+  columns?: number
   optional?: boolean
-  disabled?: boolean
-  indeterminate?: boolean
-  onBlur?: () => void
-  onFocus?: () => void
+  stretch?: boolean
 }
 
-export const LabeledCheckbox = (props: Props) => {
+export const LabeledTiles = (props: Props) => {
   const {
     label = <>&nbsp;</>,
-    optional = false,
-    checked, children,
+    value, columns, items,
     constraint, description, error, info, secondaryControl,
-    stretch, disabled, indeterminate,
-    onBlur, onFocus, onChange,
+    optional, stretch,
+    onChange,
   } = props;
 
   const displayLabel = optional
@@ -46,15 +42,12 @@ export const LabeledCheckbox = (props: Props) => {
     secondaryControl={secondaryControl}
     stretch={stretch}
     i18nStrings={formfieldStrings}>
-    <Checkbox
-      checked={checked}
+    <Tiles
+      value={value}
+      items={items}
+      columns={columns}
       ariaRequired={!optional}
-      disabled={disabled}
-      indeterminate={indeterminate}
-      onBlur={onBlur}
-      onFocus={onFocus}
-      onChange={onChange}>
-      {children}
-    </Checkbox>
+      onChange={onChange}
+    />
   </FormField>;
 };

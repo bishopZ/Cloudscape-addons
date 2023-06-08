@@ -11,11 +11,12 @@ import { addOptional, makeCounter } from '../helpers/string-utils';
 import type { MultiselectChange, SelectLoad } from '../helpers/type-helpers';
 
 type Props = {
+  onChange: (event: MultiselectChange) => void
+  empty: React.ReactNode
   label?: React.ReactNode
   options?: SelectProps.Option[]
-  selectedOptions: SelectProps.Option[]
+  selectedOptions?: SelectProps.Option[]
   placeholder?: string
-  empty?: React.ReactNode
   noMatch?: React.ReactNode
   constraint?: React.ReactNode
   description?: React.ReactNode
@@ -31,7 +32,6 @@ type Props = {
   expand?: boolean
   onBlur?: () => void
   onFocus?: () => void
-  onChange?: (event: MultiselectChange) => void
   onLoadItems?: (event: SelectLoad) => void
 }
 
@@ -42,25 +42,15 @@ export const LabeledMultiselect = (props: Props) => {
     label = <>&nbsp;</>,
     options = [],
     selectedOptions = [],
-    placeholder,
-    constraint,
-    description,
-    error,
-    info,
-    secondaryControl,
     empty = 'No options',
     noMatch = 'No matches',
     filteringType = 'none',
     status = 'finished',
-    tokenLimit,
-    stretch,
     optional = false,
-    disabled,
-    expand,
-    onBlur,
-    onFocus,
-    onChange,
-    onLoadItems,
+    tokenLimit,
+    placeholder, constraint, description, error, info, secondaryControl,
+    stretch, disabled, expand,
+    onBlur, onFocus, onChange, onLoadItems,
   } = props;
 
   const displayLabel = optional

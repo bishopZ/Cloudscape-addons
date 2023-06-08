@@ -7,8 +7,9 @@ import type { ToogleChange } from '../helpers/type-helpers';
 
 type Props = {
   checked: boolean
-  label?: React.ReactNode
+  onChange: (event: ToogleChange) => void
   children: React.ReactNode | React.ReactNode[]
+  label?: React.ReactNode
   constraint?: React.ReactNode
   description?: React.ReactNode
   error?: React.ReactNode
@@ -19,25 +20,16 @@ type Props = {
   disabled?: boolean
   onBlur?: () => void
   onFocus?: () => void
-  onChange?: (event: ToogleChange) => void
 }
 
 export const LabeledToggle = (props: Props) => {
   const {
-    checked,
-    label,
-    children,
-    constraint,
-    description,
-    error,
-    info,
-    secondaryControl,
+    label = <>&nbsp;</>,
     optional = false,
-    stretch,
-    disabled,
-    onBlur,
-    onFocus,
-    onChange,
+    checked, children,
+    constraint, description, error, info, secondaryControl,
+    stretch, disabled,
+    onBlur, onFocus, onChange,
   } = props;
 
   const displayLabel = optional

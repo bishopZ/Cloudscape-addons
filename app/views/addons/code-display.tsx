@@ -9,7 +9,7 @@ type Props = {
   height?: number
 }
 
-const DEFAULT_HEIGHT = 355;
+const DEFAULT_HEIGHT = 360;
 
 const formatCode = (code: string) => {
   const lines = code.split('\r\n');
@@ -36,11 +36,14 @@ const formatCode = (code: string) => {
 };
 
 const styleBase = {
-  backgroundColor: awsui.colorBackgroundCellShaded
+  backgroundColor: awsui.colorBackgroundCellShaded,
 };
 
 export const CodeDisplay = (props: Props) => {
-  const { value, height } = props;
+  const {
+    height,
+    value,
+  } = props;
 
   return <div
     className="code-background"
@@ -51,7 +54,7 @@ export const CodeDisplay = (props: Props) => {
         ...styleBase
       }
       : {
-        height: DEFAULT_HEIGHT,
+        minHeight: DEFAULT_HEIGHT,
         ...styleBase
       }}>
     <Box

@@ -1,36 +1,32 @@
-import { Checkbox, FormField } from '@cloudscape-design/components';
+import { FormField, RadioGroup } from '@cloudscape-design/components';
 import React from 'react';
 
 import { formfieldStrings } from '../helpers/i18n-helpers';
 import { addOptional } from '../helpers/string-utils';
-import type { CheckboxChange } from '../helpers/type-helpers';
+import type { RadioChange, RadioItems } from '../helpers/type-helpers';
 
 type Props = {
-  checked: boolean
-  onChange: (event: CheckboxChange) => void
-  children: React.ReactNode
-  label?: React.ReactNode
+  value: string | null
+  items: RadioItems
+  onChange: (event: RadioChange) => void
+  label?: string
   constraint?: React.ReactNode
   description?: React.ReactNode
   error?: React.ReactNode
   info?: React.ReactNode
   secondaryControl?: React.ReactNode
-  stretch?: boolean
   optional?: boolean
-  disabled?: boolean
-  indeterminate?: boolean
-  onBlur?: () => void
-  onFocus?: () => void
+  stretch?: boolean
 }
 
-export const LabeledCheckbox = (props: Props) => {
+export const LabeledRadioGroup = (props: Props) => {
   const {
     label = <>&nbsp;</>,
     optional = false,
-    checked, children,
+    value, items,
     constraint, description, error, info, secondaryControl,
-    stretch, disabled, indeterminate,
-    onBlur, onFocus, onChange,
+    stretch,
+    onChange
   } = props;
 
   const displayLabel = optional
@@ -46,15 +42,11 @@ export const LabeledCheckbox = (props: Props) => {
     secondaryControl={secondaryControl}
     stretch={stretch}
     i18nStrings={formfieldStrings}>
-    <Checkbox
-      checked={checked}
+    <RadioGroup
+      value={value}
+      items={items}
       ariaRequired={!optional}
-      disabled={disabled}
-      indeterminate={indeterminate}
-      onBlur={onBlur}
-      onFocus={onFocus}
-      onChange={onChange}>
-      {children}
-    </Checkbox>
+      onChange={onChange}
+    />
   </FormField>;
 };

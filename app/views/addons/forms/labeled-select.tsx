@@ -12,27 +12,27 @@ import type { SelectChange, SelectLoad } from '../helpers/type-helpers';
 
 
 type Props = {
+  onChange: (event: SelectChange) => void
+  empty: React.ReactNode
   label?: React.ReactNode
+  options?: SelectProps.Option[]
+  selectedOption?: SelectProps.Option
   placeholder?: string
   constraint?: React.ReactNode
   description?: React.ReactNode
   error?: React.ReactNode
   info?: React.ReactNode
-  empty?: React.ReactNode
   noMatch?: React.ReactNode
   secondaryControl?: React.ReactNode
   filteringType?: SelectProps.FilteringType
   status?: 'pending' | 'loading' | 'finished' | 'error'
   triggerVariant?: SelectProps.TriggerVariant
-  options?: SelectProps.Option[]
-  selectedOption?: SelectProps.Option
   stretch?: boolean
   optional?: boolean
   disabled?: boolean
   expand?: boolean
   onBlur?: () => void
   onFocus?: () => void
-  onChange?: (event: SelectChange) => void
   onLoadItems?: (event: SelectLoad) => void
 }
 
@@ -46,20 +46,11 @@ export const LabeledSelect = (props: Props) => {
     placeholder = 'Select an option',
     empty = 'No options',
     noMatch = 'No matches',
-    constraint,
-    description,
-    error,
-    info,
-    secondaryControl,
-    stretch,
     optional = false,
-    disabled,
-    expand,
     triggerVariant,
-    onBlur,
-    onFocus,
-    onChange,
-    onLoadItems,
+    constraint, description, error, info, secondaryControl,
+    stretch, disabled, expand,
+    onBlur, onFocus, onChange, onLoadItems,
   } = props;
 
   const displayLabel = optional

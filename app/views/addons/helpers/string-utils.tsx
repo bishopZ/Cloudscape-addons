@@ -15,7 +15,7 @@ export const addOptional = (label: React.ReactNode) => <>
   </Box>
 </>;
 
-export const formatDate = (date: string | Date) => {
+export const formatDate = (date?: string | Date) => {
   if (!date) return <Dash />;
   const newDate = typeof date === 'string'
     ? new Date(date)
