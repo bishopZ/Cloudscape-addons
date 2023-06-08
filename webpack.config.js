@@ -69,8 +69,11 @@ const config = {
     ],
   },
   devServer: {
-    open: true,
-    host: 'localhost',
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    compress: true,
+    port: 8000,
   },
 };
 

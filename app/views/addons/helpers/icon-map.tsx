@@ -22,9 +22,11 @@ export const IconMap = () => {
   return <Grid gridDefinition={grid}>
     {icons.map(icon =>
       <Box key={icon}>
+        <>&nbsp;&nbsp;</>
         <Icon name={icon} size="small" />
         <>&nbsp;&nbsp;</>
         {icon}
+        <>&nbsp;&nbsp;</>
       </Box>
     )}
   </Grid>;
