@@ -22,8 +22,10 @@ const formatCode = (code: string) => {
   return <>
     <br />
     <>&nbsp;1{padding}</>
-    {lines.map((line, index) => <>
-      {line.split(' ').map(linePart => <>{linePart}&nbsp;</>)}
+    {lines.map((line, index) => <Box key={index}>
+      {line.split(' ').map(
+        (linePart, lineNumber) => <Box key={lineNumber}>{linePart}&nbsp;</Box>
+      )}
       <br />
       <>&nbsp;</>
       {index !== lineCount - 1
@@ -31,7 +33,7 @@ const formatCode = (code: string) => {
           {index + 2}
           {padding}
         </>}
-    </>)}
+    </Box>)}
   </>;
 };
 

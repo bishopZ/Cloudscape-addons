@@ -1,7 +1,9 @@
 import type {
-  ButtonProps, CheckboxProps, InputProps, MultiselectProps, NonCancelableCustomEvent, RadioGroupProps,
+  BreadcrumbGroupProps,
+  ButtonProps, CheckboxProps, FlashbarProps, InputProps, MultiselectProps, NonCancelableCustomEvent, RadioGroupProps,
   SelectProps, TilesProps, ToggleProps
 } from '@cloudscape-design/components';
+import type { Params } from 'react-router-dom';
 
 export type ValueOf<T> = T[keyof T]
 export type GenericObject = Record<string, string>;
@@ -21,3 +23,9 @@ export type KeyDetail = CustomEvent<InputProps.KeyDetail>
 
 export type RadioItems = ReadonlyArray<RadioGroupProps.RadioButtonDefinition>
 export type TileItems = ReadonlyArray<TilesProps.TilesDefinition>
+
+export type FlashbarMessage = FlashbarProps.MessageDefinition;
+
+export type ParamBreadcrumb = (params: Readonly<Params<string>>) => BreadcrumbGroupProps.Item;
+export type ParamString = (params: Readonly<Params<string>>) => string;
+export type Breadcrumb = BreadcrumbGroupProps.Item

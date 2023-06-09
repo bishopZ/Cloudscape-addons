@@ -1,5 +1,5 @@
 import type {
-  FlashbarProps, FormFieldProps, MultiselectProps, TagEditorProps,
+  FlashbarProps, FormFieldProps, MultiselectProps, TagEditorProps, TopNavigationProps,
 } from '@cloudscape-design/components';
 
 import * as Labels from './a11y-helpers';
@@ -22,6 +22,15 @@ export const ariaLabels: FlashbarProps.I18nStrings = {
   successIconAriaLabel: 'Success',
   infoIconAriaLabel: 'Info',
   inProgressIconAriaLabel: 'In progress'
+};
+
+export const topNavStrings: TopNavigationProps.I18nStrings = {
+  searchIconAriaLabel: 'Search',
+  searchDismissIconAriaLabel: 'Close search',
+  overflowMenuTriggerText: 'More',
+  overflowMenuTitleText: 'All',
+  overflowMenuBackIconAriaLabel: 'Back',
+  overflowMenuDismissIconAriaLabel: 'Close menu'
 };
 
 ////
