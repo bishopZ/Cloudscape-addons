@@ -42,15 +42,28 @@ export const paginationLabels: PaginationProps.Labels = {
   pageLabel: pageNumber => `Page ${pageNumber} of all pages`
 };
 
-// export const tableLabels = {
-//   selectionGroupLabel: 'Items selection',
-//   allItemsSelectionLabel: ({ selectedItems }) =>
-//     `${selectedItems.length} ${selectedItems.length === 1 ? 'item' : 'items'} selected`,
-//   itemSelectionLabel: ({ selectedItems }, item) => {
-//     const isItemSelected = selectedItems.filter(i => i.name === item.name).length;
-//     return `${item.name} is ${isItemSelected ? '' : 'not'} selected`;
-//   }
-// };
+// export const tableLabels = (tableName: string) => ({
+//   tableLabel: tableName,
+//   activateEditLabel: (column: unknown) => str('tables.edit.activate'),
+//   cancelEditLabel: (column: unknown) => str('tables.edit.cancel'),
+//   submitEditLabel: (column: unknown) => str('tables.edit.submit'),
+//   itemSelectionLabel: (data: unknown, row: unknown) => str('tables.select.item'),
+//   allItemsSelectionLabel: (data: unknown) => str('tables.select.all'),
+//   selectionGroupLabel: str('tables.select.group'),
+// });
+
+type Selected = { selectedItems: TitledItem[] }
+type TitledItem = { title: string }
+
+export const tableLabels = {
+  selectionGroupLabel: 'Items selection',
+  allItemsSelectionLabel: ({ selectedItems }: Selected) =>
+    `${selectedItems.length} ${selectedItems.length === 1 ? 'item' : 'items'} selected`,
+  itemSelectionLabel: ({ selectedItems }: Selected, item: TitledItem) => {
+    const isItemSelected = selectedItems.filter((candidate: TitledItem) => candidate.title === item.title).length;
+    return `${item.title} is ${isItemSelected ? '' : 'not'} selected`;
+  }
+};
 
 // export const cardLabels = {
 //   itemSelectionLabel: (e, n) => `select ${n.name}`,

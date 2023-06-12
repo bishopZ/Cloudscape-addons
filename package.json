@@ -9,8 +9,9 @@
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "serve": "webpack serve",
-    "server": "webpack && node ./server/init.js"
+    "serve": "webpack --mode=production --node-env=production && webpack serve",
+    "server": "webpack && node ./server/init.js",
+    "clean": "rm -rf ./public/*"
   },
   "dependencies": {
     "@cloudscape-design/collection-hooks": "1.0.21",

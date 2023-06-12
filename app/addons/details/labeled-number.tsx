@@ -1,7 +1,7 @@
 import { Box, FormField } from '@cloudscape-design/components';
 import React from 'react';
 
-import { formfieldStrings } from './helpers/i18n-helpers';
+import { formfieldStrings } from '../helpers/i18n-helpers';
 import { Dash, LoadingSpinner } from './loading';
 
 type Props = {
@@ -19,13 +19,8 @@ type Props = {
 export const LabeledNumber = (props: Props) => {
   const {
     loading = false,
-    label,
-    number,
-    constraint,
-    description,
-    error,
-    info,
-    secondaryControl,
+    label, number,
+    constraint, description, error, info, secondaryControl,
     stretch,
   } = props;
 

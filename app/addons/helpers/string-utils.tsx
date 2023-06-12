@@ -1,7 +1,7 @@
 import { Box } from '@cloudscape-design/components';
 import React from 'react';
 
-import { Dash } from '../loading';
+import { Dash } from '../details/loading';
 
 export const DEFAULT_LOCALE = 'en-us';
 

@@ -1,0 +1,30 @@
+import { Box, Link, SpaceBetween } from '@cloudscape-design/components';
+import React from 'react';
+
+import { Spacing } from '../../addons/helpers/spacing-constants';
+
+export const Footer = () => {
+  return <footer>
+    <Box margin={Spacing.M} float="left">
+      <SpaceBetween size="m" direction="horizontal">
+        <Link href="#/contributors">
+          Contact
+        </Link>
+        <Link href="#/terms">
+          Terms
+        </Link>
+        <Link href="#/privacy">
+          Privacy
+        </Link>
+        <Link href="https://stellarelements.com" external>
+          Stellar Elements
+        </Link>
+      </SpaceBetween>
+    </Box>
+    <Box margin={Spacing.M} float="right">
+      <>&copy;&nbsp;2023 Stellar Elements, Inc. All rights reserved.</>
+      <br />
+      <>This site uses essential cookies.</>
+    </Box>
+  </footer>;
+};

@@ -3,8 +3,12 @@ import React from 'react';
 
 export const Dash = () => <>&ndash;</>;
 
-export const LoadingSpinner = () => <>
+type Props = {
+  mediaName?: string
+}
+
+export const LoadingSpinner = ({ mediaName }: Props) => <>
   <Spinner />
   <>&nbsp;</>
-  Loading
+  Loading {mediaName ?? ''}
 </>;

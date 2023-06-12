@@ -2,7 +2,7 @@ import { Box } from '@cloudscape-design/components';
 import * as awsui from '@cloudscape-design/design-tokens';
 import React from 'react';
 
-import { Spacing } from './helpers/spacing-constants';
+import { Spacing } from '../helpers/spacing-constants';
 
 type Props = {
   value: string

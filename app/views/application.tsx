@@ -6,7 +6,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import { store } from '../data/data-store';
 import { ROUTES } from '../utils/routes';
-import { Layout } from './layout';
+import { Layout } from './features/layout';
 
 export const Application = () => {
   return <>

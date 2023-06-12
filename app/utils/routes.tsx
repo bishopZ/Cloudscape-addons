@@ -2,7 +2,9 @@ import type { AppLayoutProps, BreadcrumbGroupProps } from '@cloudscape-design/co
 import type React from 'react';
 
 import type { ParamBreadcrumb, ParamString } from '../addons/helpers/type-helpers';
-import { Preview } from '../views/preview';
+import { Blog } from '../views/pages/blog/blog-page';
+import { Docs } from '../views/pages/docs';
+import { Preview } from '../views/pages/preview';
 
 export type RouteProps = {
   contentType: AppLayoutProps.ContentType
@@ -15,10 +17,22 @@ export type RouteProps = {
 // eslint-disable-next-line max-lines-per-function
 export const ROUTES = (): RouteProps[] => [
   {
+    path: '/docs',
+    title: 'Documentation',
+    contentType: 'default',
+    component: Docs,
+    breadcrumbs: []
+  }, {
+    path: '/preview',
+    title: 'Preview',
+    contentType: 'default',
+    component: Preview,
+    breadcrumbs: []
+  }, {
     path: '/',
     title: 'Blog',
     contentType: 'default',
-    component: Preview,
+    component: Blog,
     breadcrumbs: []
   }
 ];

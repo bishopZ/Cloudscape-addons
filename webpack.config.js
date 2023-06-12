@@ -5,9 +5,10 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const isProduction = process.env.NODE_ENV === 'production';
 
 const config = {
-  entry: ['./app/init.tsx', './app/styles.scss'],
+  entry: ['./app/init.tsx', './app/styles.scss', './app/images/favicon.png'],
   output: {
     path: path.resolve(__dirname, 'public'),
+    assetModuleFilename: "[name][ext]",
   },
   resolve: {
     extensions: ['.tsx', '.ts', '...'],
@@ -27,7 +28,6 @@ const config = {
       filename: '[name].css',
       chunkFilename: '[name].css',
     }),
-    // new OptimizeCssAssetsPlugin({}),
   ],
   module: {
     rules: [
@@ -64,7 +64,7 @@ const config = {
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: 'asset',
+        type: 'asset/resource',
       },
     ],
   },

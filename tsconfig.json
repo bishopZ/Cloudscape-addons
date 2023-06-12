@@ -7,7 +7,11 @@
     "target": "es5",
     "allowJs": true,
     "jsx": "react-jsx",
-    "outDir": "./dist"
+    "outDir": "./public",
+    "baseUrl": "./app",
+    "paths": {
+      "/*": ["./*"], // root import alias
+    },
   },
   "files": ["app/init.tsx"]
 }

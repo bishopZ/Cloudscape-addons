@@ -1,8 +1,8 @@
 import type {
-  BreadcrumbGroupProps,
-  ButtonProps, CheckboxProps, FlashbarProps, InputProps, MultiselectProps, NonCancelableCustomEvent, RadioGroupProps,
-  SelectProps, TilesProps, ToggleProps
+  BreadcrumbGroupProps, ButtonProps, CheckboxProps, CollectionPreferencesProps, FlashbarProps, InputProps,
+  MultiselectProps, NonCancelableCustomEvent, RadioGroupProps, SelectProps, TableProps, TilesProps, ToggleProps
 } from '@cloudscape-design/components';
+import type { NonCancelableEventHandler } from '@cloudscape-design/components/internal/events';
 import type { Params } from 'react-router-dom';
 
 export type ValueOf<T> = T[keyof T]
@@ -29,3 +29,9 @@ export type FlashbarMessage = FlashbarProps.MessageDefinition;
 export type ParamBreadcrumb = (params: Readonly<Params<string>>) => BreadcrumbGroupProps.Item;
 export type ParamString = (params: Readonly<Params<string>>) => string;
 export type Breadcrumb = BreadcrumbGroupProps.Item
+
+export type TableColumn<T> = TableProps.ColumnDefinition<T> & { editable?: boolean }
+export type PreferenceConfirm<T> = NonCancelableEventHandler<CollectionPreferencesProps.Preferences<T>>
+
+export type VisibleContentOptions = CollectionPreferencesProps.VisibleContentOptionsGroup
+export type ColumnWidthsChange = NonCancelableCustomEvent<TableProps.ColumnWidthsChangeDetail>

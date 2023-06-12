@@ -1,6 +1,7 @@
 
 @use '@cloudscape-design/design-tokens/index' as awsui;
 
-.code-background {
-  background-color: awsui.$color-background-cell-shaded;
+footer {
+  background-color: awsui.$color-background-container-header;
+  height: 4.3rem;
 }
