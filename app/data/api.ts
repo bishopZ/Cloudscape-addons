@@ -1,6 +1,13 @@
 
 export const fetchArticles = async () => {
-  return fakeData;
+  try {
+    const articles = await fetch('http://localhost:3000/api/articles')
+      .then(response => response.json())
+    return articles;
+  } catch (error) {
+    console.log(error);
+    return fakeData;
+  }
 };
 
 const fakeData = [
@@ -21,41 +28,6 @@ const fakeData = [
   {
     slug: 'type-helpers',
     title: 'Type helpers',
-    format: 'Documentation',
-    topic: 'Components',
-    discipline: 'Engineering',
-  },
-  {
-    slug: 'string-utils',
-    title: 'String utils',
-    format: 'Documentation',
-    topic: 'Components',
-    discipline: 'Engineering',
-  },
-  {
-    slug: 'i18n-helpers',
-    title: 'Internationalization helpers',
-    format: 'Documentation',
-    topic: 'Components',
-    discipline: 'Engineering',
-  },
-  {
-    slug: 'a11y-helpers',
-    title: 'Accessibility helpers',
-    format: 'Documentation',
-    topic: 'Components',
-    discipline: 'Engineering',
-  },
-  {
-    slug: 'labeled-input',
-    title: 'Labeled input',
-    format: 'Documentation',
-    topic: 'Components',
-    discipline: 'Engineering',
-  },
-  {
-    slug: 'labeled-number',
-    title: 'Labeled number',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',

@@ -7,10 +7,10 @@
     "lint": "eslint",
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
     "serve": "webpack --mode=production --node-env=production && webpack serve",
-    "server": "webpack && node ./server/init.js",
+    "server": "node ./server/init.js",
+    "deploy": "npm run build && node ./server/init.js",
     "clean": "rm -rf ./public/*"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "@cloudscape-design/design-tokens": "3.0.15",
     "@cloudscape-design/global-styles": "1.0.9",
     "@reduxjs/toolkit": "1.9.5",
+    "express": "4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.7",

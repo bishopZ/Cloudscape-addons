@@ -19,7 +19,7 @@ export type Namespace = ValueOf<typeof PREFERENCES>
 const initialState = {
   initialized: false,
   [PREFERENCES.ARTICLES]: {
-    pageSizes: [5, 20, 50],
+    pageSizes: [5, 25, 50],
     pageSize: 50,
     wrapLines: false,
     columnWidth: [300, 150, 150, 150], // for all columns
