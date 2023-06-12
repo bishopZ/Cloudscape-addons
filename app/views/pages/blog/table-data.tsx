@@ -8,7 +8,7 @@ export const TABLE_COLUMNS: TableColumn<Article>[] = [
   {
     id: 'title',
     header: 'Title',
-    cell: item => <Link href={`#/transformers/${item.slug}`}>
+    cell: item => <Link href={`#/article/${item.slug}`}>
       {item.title}
     </Link>,
     sortingField: 'title',

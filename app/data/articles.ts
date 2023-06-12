@@ -54,6 +54,10 @@ export const selectArticles = (state: RootState) => {
   return state.articles;
 };
 
+export const selectArticle = (slug: string) => (state: RootState) => {
+  return state.articles.items.find(item => item.slug === slug);
+};
+
 export const getSelectedCount = (state: RootState) => {
   const slice = state.articles;
   return {

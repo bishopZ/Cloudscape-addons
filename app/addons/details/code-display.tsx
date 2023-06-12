@@ -22,9 +22,9 @@ const formatCode = (code: string) => {
   return <>
     <br />
     <>&nbsp;1{padding}</>
-    {lines.map((line, index) => <Box key={index}>
+    {lines.map((line, index) => <>
       {line.split(' ').map(
-        (linePart, lineNumber) => <Box key={lineNumber}>{linePart}&nbsp;</Box>
+        linePart => <>{linePart}&nbsp;</>
       )}
       <br />
       <>&nbsp;</>
@@ -33,7 +33,7 @@ const formatCode = (code: string) => {
           {index + 2}
           {padding}
         </>}
-    </Box>)}
+    </>)}
   </>;
 };
 
@@ -47,25 +47,27 @@ export const CodeDisplay = (props: Props) => {
     value,
   } = props;
 
-  return <div
-    className="code-background"
-    style={height
-      ? {
-        height,
-        overflowY: 'scroll',
-        ...styleBase
-      }
-      : {
-        minHeight: DEFAULT_HEIGHT,
-        ...styleBase
-      }}>
-    <Box
-      variant="code"
-      padding={Spacing.HorizontalS}
-      color="text-body-secondary"
-      display="block"
-      fontSize="body-s">
-      {formatCode(value)}
-    </Box>
-  </div>;
+  return <Box margin={Spacing.VerticalXXL}>
+    <div
+      className="code-background"
+      style={height
+        ? {
+          height,
+          overflowY: 'scroll',
+          ...styleBase
+        }
+        : {
+          minHeight: DEFAULT_HEIGHT,
+          ...styleBase
+        }}>
+      <Box
+        variant="code"
+        padding={Spacing.HorizontalS}
+        color="text-body-secondary"
+        display="block"
+        fontSize="body-s">
+        {formatCode(value)}
+      </Box>
+    </div>
+  </Box>;
 };

@@ -39,3 +39,8 @@ export const makeS3Location = (location: string) => {
   if (parts.length > 4) key = parts.slice(3, -1).join('/');
   return { key, bucketName };
 };
+
+export const deslugify = (slug: string) => {
+  const words = slug.split("-").join(' ');
+  return words.charAt(0).toUpperCase() + words.substring(1).toLowerCase()
+}

@@ -31,14 +31,14 @@ module.exports = () => [
   },
   {
     slug: 'i18n-helpers',
-    title: 'i18n helpers',
+    title: 'I18n helpers',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',
   },
   {
     slug: 'a11y-helpers',
-    title: 'a11y helpers',
+    title: 'A11y helpers',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',

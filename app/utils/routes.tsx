@@ -1,6 +1,9 @@
 import type { AppLayoutProps, BreadcrumbGroupProps } from '@cloudscape-design/components';
 import type React from 'react';
 
+import { deslugify } from '/addons/helpers/string-utils';
+import { ArticleContainer } from '/views/article-container';
+
 import type { ParamBreadcrumb, ParamString } from '../addons/helpers/type-helpers';
 import { Blog } from '../views/pages/blog/blog-page';
 import { Docs } from '../views/pages/docs';
@@ -28,6 +31,14 @@ export const ROUTES = (): RouteProps[] => [
     contentType: 'default',
     component: Preview,
     breadcrumbs: []
+  }, {
+    path: '/article/:slug',
+    title: params => deslugify(params.slug ?? 'Article'),
+    contentType: 'default',
+    component: ArticleContainer,
+    breadcrumbs: [
+      params => ({ text: deslugify(params.slug ?? 'Article'), href: '' })
+    ]
   }, {
     path: '/',
     title: 'Blog',
