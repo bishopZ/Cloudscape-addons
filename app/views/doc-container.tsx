@@ -14,7 +14,7 @@ const getArticle = (slug?: CONTENT_KEYS) => {
   return CONTENT_MAP[slug];
 };
 
-export const ArticleContainer = () => {
+export const DocsContainer = () => {
   const params = useParams();
   const dispatch = useAppDispatch();
   const { initialized } = useAppSelector(selectArticles);

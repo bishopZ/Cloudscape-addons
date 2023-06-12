@@ -34,7 +34,7 @@ const docsgNav: SidenavItem[] = [
 
 export const Navigation = () => {
   const location = useLocation();
-  const isDocs = location.pathname === '/docs';
+  const isDocs = location.pathname.indexOf('/docs') !== -1;
   return <SideNavigation
     header={isDocs ? docs : blog}
     items={isDocs ? docsgNav : blogNav}
@@ -58,7 +58,7 @@ export const Breadcrumbs = (props: Props) => {
     return formattedCrumb;
   });
 
-  const root = location.pathname === '/docs' ? docs : blog;
+  const root = location.pathname.indexOf('/docs') === -1 ? blog : docs;
 
   return <BreadcrumbGroup
     items={

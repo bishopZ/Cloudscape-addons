@@ -3,6 +3,7 @@ import type React from 'react';
 
 import { deslugify } from '/addons/helpers/string-utils';
 import { ArticleContainer } from '/views/article-container';
+import { DocsContainer } from '/views/doc-container';
 
 import type { ParamBreadcrumb, ParamString } from '../addons/helpers/type-helpers';
 import { Blog } from '../views/pages/blog/blog-page';
@@ -31,6 +32,14 @@ export const ROUTES = (): RouteProps[] => [
     contentType: 'default',
     component: Preview,
     breadcrumbs: []
+  }, {
+    path: '/docs/:slug',
+    title: params => deslugify(params.slug ?? 'Documentation'),
+    contentType: 'default',
+    component: DocsContainer,
+    breadcrumbs: [
+      params => ({ text: deslugify(params.slug ?? 'Documentation'), href: '' })
+    ]
   }, {
     path: '/article/:slug',
     title: params => deslugify(params.slug ?? 'Article'),
