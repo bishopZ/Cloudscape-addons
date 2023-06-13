@@ -31,7 +31,7 @@ module.exports = () => [
     section: 'Forms',
     vendor: 'Cloudscape',
     publicationDate: new Date('Jun 17 2021'),
-    tenets: [1, 3, 4]
+    tenets: [0, 1, 3, 4]
   },
   // {
   //   slug: 'labeled-number',

@@ -23,6 +23,7 @@ import { IconMap } from '/addons/helpers/icon-map';
 import { GenericEmpty } from '/addons/tables/generic-empty';
 
 import { LoadingPreview } from '../articles/loading-preview';
+import { InputPreview } from '../articles/input-preview';
 
 export const Preview = () => {
   return <ContentLayout
@@ -43,8 +44,13 @@ export const Preview = () => {
       }>
         <LoadingPreview />
       </Container>
-      <br />
-      <LabeledInput value={''} onChange={() => {}} />
+      <Container header={
+        <Header variant="h2">
+          {'<LabeledInput />'}
+        </Header>
+      }>
+        <InputPreview />
+      </Container>
       <br />
       <LabeledSelect onChange={() => {}} empty={''} />
       <br />

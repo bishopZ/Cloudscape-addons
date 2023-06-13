@@ -3,9 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const isProduction = process.env.NODE_ENV === 'production';
+const CopyPlugin = require("copy-webpack-plugin");
 
 const config = {
-  entry: ['./app/init.tsx', './app/styles.scss', './app/images/favicon.png'],
+  entry: ['./app/init.tsx', './app/styles/styles.scss', './app/images/favicon.png'],
   output: {
     path: path.resolve(__dirname, 'public'),
     assetModuleFilename: "[name][ext]",
@@ -28,6 +29,11 @@ const config = {
       filename: '[name].css',
       chunkFilename: '[name].css',
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: './app/utils/prism.js', to: './prism.js' },
+      ],
+    }),
   ],
   module: {
     rules: [
@@ -38,7 +44,9 @@ const config = {
           {
             loader: 'babel-loader',
             options: {
-              plugins: ["@babel/plugin-syntax-jsx"],
+              plugins: [
+                "@babel/plugin-syntax-jsx",
+              ],
               presets: [
                 ['@babel/preset-react', {
                   include: [

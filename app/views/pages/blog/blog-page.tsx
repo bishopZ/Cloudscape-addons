@@ -55,10 +55,10 @@ export const Blog = () => {
     },
     pagination: { pageSize: articlePrefs.pageSize },
     sorting: { defaultState: {
-      sortingColumn: TABLE_COLUMNS[0],
+      sortingColumn: TABLE_COLUMNS[1],
       isDecending: true
     } },
-    selection: { trackBy: 'transformerId', keepSelection: true },
+    selection: { trackBy: 'title', keepSelection: true },
   };
 
   const {

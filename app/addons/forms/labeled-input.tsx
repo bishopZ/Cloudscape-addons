@@ -2,17 +2,17 @@ import type { InputProps } from '@cloudscape-design/components';
 import { FormField, Input } from '@cloudscape-design/components';
 import React from 'react';
 
-import { clearAriaLabel } from '../helpers/a11y-helpers';
-import { formfieldStrings } from '../helpers/i18n-helpers';
-import { addOptional } from '../helpers/string-utils';
-import type { InputChange, KeyDetail } from '../helpers/type-helpers';
+import { clearAriaLabel } from '/addons/helpers/a11y-helpers';
+import { formfieldStrings } from '/addons/helpers/i18n-helpers';
+import { addOptional } from '/addons/helpers/string-utils';
+import type { InputChange, KeyDetail } from '/addons/helpers/type-helpers';
 
 type Props = {
   value: string
   onChange: (event: InputChange) => void
   mode?: keyof typeof modeMap
-  label?: React.ReactNode
   placeholder?: string
+  label?: React.ReactNode
   constraint?: React.ReactNode
   description?: React.ReactNode
   error?: React.ReactNode

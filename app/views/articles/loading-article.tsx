@@ -1,12 +1,17 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import { CodeDisplay } from '/addons/details/code-display';
 import { ExternalLink } from '/addons/details/external-link';
 
 import { LoadingPreview } from './loading-preview';
 
 export const LoadingArticle = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      if (window.Prism) window.Prism.highlightAll()
+    }, 0)  
+  }, [])
+
   return <SpaceBetween size="m">
     <Container
       header={<Header variant="h2">
@@ -15,10 +20,9 @@ export const LoadingArticle = () => {
       <Box variant="p">
         Cloudscape addon's proudly announces this stunning piece of code!
       </Box>
-      <CodeDisplay
-        value={'export const Dash = () => <>&ndash;</>;'}
-        height={50}
-      />
+      <pre><code className="language-javascript">
+        {`export const Dash = () => <>&ndash;</>;`} 
+      </code></pre>
       <Box variant="p">
         The Dash component isn't about fancy code. Of course a developer can
         write {'&ndash;'} instead of {'<Dash />'}, but that requires every developer on
@@ -44,19 +48,21 @@ export const LoadingArticle = () => {
         optional media name. It can be used as the generic interface for
         the state of your app while data is being fetched.
       </Box>
-      <CodeDisplay
-        value={`
-import { Spinner } from '@cloudscape-design/components';\r\n
-\r\n
-type Props = { mediaName?: string }\r\n
-\r\n
-export const LoadingSpinner = ({ mediaName }: Props) => <>\r\n
-  <Spinner />\r\n
-  <>&nbsp;</>\r\n
-  Loading {mediaName ?? ''}\r\n
-</>;\r\n`}
-        height={195}
-      />
+      <pre><code className="language-javascript">
+        {`import { Spinner } from '@cloudscape-design/components';
+import React from 'react';
+
+export const Dash = () => <>&ndash;</>;
+
+type Props = { mediaName?: string }
+
+export const LoadingSpinner = ({ mediaName }: Props) => <>
+  <Spinner />
+  <>&nbsp;</>
+  Loading {mediaName ?? ''}
+</>;
+`} 
+      </code></pre>
       <Box variant="p">
         The Dash component isn't about fancy code. Of course a developer can
         write {'&ndash;'} instead of {'<Dash />'}, but that requires every developer on

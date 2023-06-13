@@ -23,8 +23,10 @@ export const TenetsSection = () => {
       </Header>
     }>
     <ul>
-      {article.tenets.map(id => <>
-        <li><strong>{tenets[id].title}</strong> - {tenets[id].description}</li>
+      {article.tenets.map((id, index) => <>
+        <li key={index}>
+          <strong>{tenets[id].title}</strong> - {tenets[id].description}
+        </li>
       </>)}
     </ul>
   </Container>;

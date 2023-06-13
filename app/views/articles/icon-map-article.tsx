@@ -1,5 +1,5 @@
 import { Box, ColumnLayout, Container, Header, Icon, SpaceBetween } from '@cloudscape-design/components';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import { CodeDisplay } from '/addons/details/code-display';
@@ -9,6 +9,13 @@ import { IconMap } from '/addons/helpers/icon-map';
 import { formatDate } from '/addons/helpers/string-utils';
 
 export const IconMapArticle = () => {
+  
+  useEffect(() => {
+    setTimeout(() => {
+      if (window.Prism) window.Prism.highlightAll()
+    }, 0)  
+  }, [])
+
   return <SpaceBetween size="m">
     <Container
       header={<Header variant="h2">
@@ -38,46 +45,50 @@ export const IconMapArticle = () => {
         <Icon name="script" size="big" />
       </Header>
     }>
-      <CodeDisplay
-        value={`
-  import { Box, Grid, Icon } from '@cloudscape-design/components';\r\n
-  import React from 'react';\r\n
-  \r\n
-  const icons = [\r\n
-    'add-plus', 'angle-left-double', 'angle-left', 'angle-right-double', 'angle-right',\r\n
-    'angle-up', 'angle-down', 'arrow-left', 'audio-full', 'audio-half', 'audio-off',\r\n
-    'bug', 'call', 'calendar', 'caret-down-filled', 'caret-down', 'caret-left-filled',\r\n
-    'caret-right-filled', 'caret-up-filled', 'caret-up', 'check', 'contact', 'close',\r\n
-    'copy', 'delete-marker', 'download', 'drag-indicator', 'edit', 'ellipsis', 'envelope',\r\n 
-    'expand', 'external', 'file-open', 'file', 'filter', 'flag', 'folder-open', 'folder',\r\n
-    'group-active', 'group', 'heart', 'insert-row', 'key', 'keyboard', 'lock-private',\r\n
-    'menu', 'microphone', 'microphone-off', 'multiscreen', 'notification', 'redo',\r\n
-    'refresh', 'remove', 'resize-area', 'script', 'search', 'security', 'settings',\r\n
-    'share', 'shrink', 'status-in-progress', 'status-info', 'status-negative',\r\n
-    'status-pending', 'status-positive', 'status-stopped', 'status-warning', 'suggestions',\r\n 
-    'thumbs-down-filled', 'thumbs-down', 'thumbs-up-filled', 'thumbs-up', 'ticket',\r\n 
-    'treeview-collapse', 'treeview-expand', 'undo', 'unlocked', 'upload-download',\r\n
-    'upload', 'user-profile-active', 'user-profile', 'video-off', 'video-on',\r\n
-    'video-unavailable', 'view-full', 'view-horizontal', 'view-vertical', 'zoom-in',\r\n
-    'zoom-out', 'zoom-to-fit'\r\n
-  ] as const;\r\n
-  \r\n
-  const grid = icons.map(() => ({ colspan: 2 }));\r\n
-  \r\n
-  export const IconMap = () => {\r\n
-    return <Grid gridDefinition={grid}>\r\n
-      {icons.map(icon =>\r\n
-        <Box key={icon}>\r\n
-          <>&nbsp;&nbsp;</>\r\n
-          <Icon name={icon} size="small" />\r\n
-          <>&nbsp;&nbsp;</>\r\n
-          {icon}\r\n
-          <>&nbsp;&nbsp;</>\r\n
-        </Box>\r\n
-      )}\r\n
-    </Grid>;\r\n
-  };\r\n`}
-      />
+      <pre><code className="language-javascript">
+        {`import { Box, Grid, Icon } from '@cloudscape-design/components';
+import React from 'react';
+
+import { Spacing } from './spacing-constants';
+
+const names = [
+  'add-plus', 'angle-left-double', 'angle-left', 'angle-right-double',
+  'angle-right', 'angle-up', 'angle-down', 'arrow-left', 'audio-full',
+  'audio-half', 'audio-off', 'bug', 'call', 'calendar', 'caret-down-filled',
+  'caret-down', 'caret-left-filled', 'caret-right-filled', 'caret-up-filled',
+  'caret-up', 'check', 'contact', 'close', 'copy', 'delete-marker', 'download',
+  'drag-indicator', 'edit', 'ellipsis', 'envelope', 'expand', 'external',
+  'file-open', 'file', 'filter', 'flag', 'folder-open', 'folder', 'group-active',
+  'group', 'heart', 'insert-row', 'key', 'keyboard', 'lock-private', 'menu',
+  'microphone', 'microphone-off', 'multiscreen', 'notification', 'redo',
+  'refresh', 'remove', 'resize-area', 'script', 'search', 'security',
+  'settings', 'share', 'shrink', 'status-in-progress', 'status-info',
+  'status-negative', 'status-pending', 'status-positive', 'status-stopped',
+  'status-warning', 'suggestions', 'thumbs-down-filled', 'thumbs-down',
+  'thumbs-up-filled', 'thumbs-up', 'ticket', 'treeview-collapse',
+  'treeview-expand', 'undo', 'unlocked', 'upload-download', 'upload',
+  'user-profile-active', 'user-profile', 'video-off', 'video-on',
+  'video-unavailable', 'view-full', 'view-horizontal', 'view-vertical',
+  'zoom-in', 'zoom-out', 'zoom-to-fit'
+] as const;
+
+const grid = names.map(() => ({ colspan: 3 }));
+
+export const IconMap = () => {
+  return <Box margin={Spacing.L}>
+    <Grid gridDefinition={grid}>
+      {names.map(name =>
+        <Box key={name}>
+          <>&nbsp;&nbsp;</>
+          <Icon name={name} size="small" />
+          <>&nbsp;&nbsp;</>
+          {name}
+          <>&nbsp;&nbsp;</>
+        </Box>
+      )}
+    </Grid>
+  </Box>;
+};`}</code></pre>
     </Container>
     <Container header={<Header variant="h2">Preview</Header>}>
       <IconMap />
