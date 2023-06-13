@@ -1,4 +1,4 @@
-import { ContentLayout, Header } from '@cloudscape-design/components';
+import { ContentLayout, Header, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -9,12 +9,15 @@ import { useAppDispatch, useAppSelector } from '/data/data-store';
 import type { CONTENT_KEYS } from '/utils/content-map';
 import { CONTENT_MAP } from '/utils/content-map';
 
+import { TenetsSection } from '../tenets/tenets-section';
+import { DocsDetails } from './docs-details';
+
 const getArticle = (slug?: CONTENT_KEYS) => {
   if (!slug) return null;
   return CONTENT_MAP[slug];
 };
 
-export const ArticleContainer = () => {
+export const DocsContainer = () => {
   const params = useParams();
   const dispatch = useAppDispatch();
   const { initialized } = useAppSelector(selectArticles);
@@ -28,8 +31,12 @@ export const ArticleContainer = () => {
     header={<Header variant="h1">
       {deslugify(params.slug as string)}
     </Header>}>
-    {!initialized && <LoadingSpinner />}
-    {initialized && ArticleComponent && <ArticleComponent />}
+    <SpaceBetween size="m">
+      {!initialized && <LoadingSpinner />}
+      <TenetsSection />
+      {initialized && ArticleComponent && <ArticleComponent />}
+      <DocsDetails />
+    </SpaceBetween>
   </ContentLayout>;
 };
 

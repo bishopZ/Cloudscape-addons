@@ -1,7 +1,12 @@
-import { A11yHelpers } from "../views/articles/a11y-helpers";
+import { IconMapArticle } from '/views/articles/icon-map-article';
+import { InputArticle } from '/views/articles/input-article';
+import { LoadingArticle } from '/views/articles/loading-article';
 
 export const CONTENT_MAP = {
-  'a11y-helpers': A11yHelpers
+  'icon-map': IconMapArticle,
+  'loading-states': LoadingArticle,
+  'labeled-input': InputArticle,
+  'labeled-number': IconMapArticle,
 } as const;
 
 export type CONTENT_KEYS = keyof typeof CONTENT_MAP

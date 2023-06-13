@@ -3,9 +3,7 @@ import React from 'react';
 
 export const Dash = () => <>&ndash;</>;
 
-type Props = {
-  mediaName?: string
-}
+type Props = { mediaName?: string }
 
 export const LoadingSpinner = ({ mediaName }: Props) => <>
   <Spinner />

@@ -11,8 +11,10 @@ export type Article = {
   format: string
   topic: string
   discipline: string
+  section: string
+  vendor: string
   description?: string
-  tags?: string[]
+  tenets?: number[]
   publicationDate?: Date
   editDate?: Date
 }

@@ -28,7 +28,7 @@ const formatCode = (code: string) => {
       )}
       <br />
       <>&nbsp;</>
-      {index !== lineCount - 1
+      {index < lineCount - 1
         && <>
           {index + 2}
           {padding}
@@ -47,7 +47,7 @@ export const CodeDisplay = (props: Props) => {
     value,
   } = props;
 
-  return <Box margin={Spacing.VerticalXXL}>
+  return <Box margin={Spacing.VerticalM}>
     <div
       className="code-background"
       style={height

@@ -89,7 +89,6 @@ export const Blog = () => {
     {...collectionProps}
     variant="full-page"
     trackBy="transformerId"
-    selectionType="multi"
     resizableColumns
     stickyHeader
     firstIndex={paginationProps.currentPageIndex * articlePrefs.pageSize + 1}

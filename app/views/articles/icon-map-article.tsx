@@ -1,0 +1,86 @@
+import { Box, ColumnLayout, Container, Header, Icon, SpaceBetween } from '@cloudscape-design/components';
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+
+import { CodeDisplay } from '/addons/details/code-display';
+import { ExternalLink } from '/addons/details/external-link';
+import { KeyValue } from '/addons/details/key-value';
+import { IconMap } from '/addons/helpers/icon-map';
+import { formatDate } from '/addons/helpers/string-utils';
+
+export const IconMapArticle = () => {
+  return <SpaceBetween size="m">
+    <Container
+      header={<Header variant="h2">
+        Introducing the IconMap
+      </Header>}>
+      <Box variant="p">
+        Cloudscape includes
+        <ExternalLink href="https://cloudscape.design/components/icon/?tabId=api">a nice set of icons</ExternalLink>,
+        however the documentation doesn't
+        show a preview of those icons. All the names are listed, but finding the
+        icon that matches your design, can take time.
+      </Box>
+      <Box variant="p">
+        Icon map is a simple component that displays the available icons. When you're
+        trying to visually match an icon, you can insert the Icon map component and preview the result
+        to quickly locate the icon you are looking for.
+      </Box>
+      <Box variant="p">
+        Icon map isn't meant to be included in production code, but rather as
+        a developer tool to speed the process of identifing a particular icon's name.
+      </Box>
+    </Container>
+    <Container header={
+      <Header variant="h2">
+        <>Source code</>
+        <>&nbsp;</>
+        <Icon name="script" size="big" />
+      </Header>
+    }>
+      <CodeDisplay
+        value={`
+  import { Box, Grid, Icon } from '@cloudscape-design/components';\r\n
+  import React from 'react';\r\n
+  \r\n
+  const icons = [\r\n
+    'add-plus', 'angle-left-double', 'angle-left', 'angle-right-double', 'angle-right',\r\n
+    'angle-up', 'angle-down', 'arrow-left', 'audio-full', 'audio-half', 'audio-off',\r\n
+    'bug', 'call', 'calendar', 'caret-down-filled', 'caret-down', 'caret-left-filled',\r\n
+    'caret-right-filled', 'caret-up-filled', 'caret-up', 'check', 'contact', 'close',\r\n
+    'copy', 'delete-marker', 'download', 'drag-indicator', 'edit', 'ellipsis', 'envelope',\r\n 
+    'expand', 'external', 'file-open', 'file', 'filter', 'flag', 'folder-open', 'folder',\r\n
+    'group-active', 'group', 'heart', 'insert-row', 'key', 'keyboard', 'lock-private',\r\n
+    'menu', 'microphone', 'microphone-off', 'multiscreen', 'notification', 'redo',\r\n
+    'refresh', 'remove', 'resize-area', 'script', 'search', 'security', 'settings',\r\n
+    'share', 'shrink', 'status-in-progress', 'status-info', 'status-negative',\r\n
+    'status-pending', 'status-positive', 'status-stopped', 'status-warning', 'suggestions',\r\n 
+    'thumbs-down-filled', 'thumbs-down', 'thumbs-up-filled', 'thumbs-up', 'ticket',\r\n 
+    'treeview-collapse', 'treeview-expand', 'undo', 'unlocked', 'upload-download',\r\n
+    'upload', 'user-profile-active', 'user-profile', 'video-off', 'video-on',\r\n
+    'video-unavailable', 'view-full', 'view-horizontal', 'view-vertical', 'zoom-in',\r\n
+    'zoom-out', 'zoom-to-fit'\r\n
+  ] as const;\r\n
+  \r\n
+  const grid = icons.map(() => ({ colspan: 2 }));\r\n
+  \r\n
+  export const IconMap = () => {\r\n
+    return <Grid gridDefinition={grid}>\r\n
+      {icons.map(icon =>\r\n
+        <Box key={icon}>\r\n
+          <>&nbsp;&nbsp;</>\r\n
+          <Icon name={icon} size="small" />\r\n
+          <>&nbsp;&nbsp;</>\r\n
+          {icon}\r\n
+          <>&nbsp;&nbsp;</>\r\n
+        </Box>\r\n
+      )}\r\n
+    </Grid>;\r\n
+  };\r\n`}
+      />
+    </Container>
+    <Container header={<Header variant="h2">Preview</Header>}>
+      <IconMap />
+    </Container>
+  </SpaceBetween>;
+};

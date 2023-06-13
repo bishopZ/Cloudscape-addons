@@ -40,15 +40,15 @@ const utilities = (path: string): Utilities[] => [
       items: [{
         id: 'light-mode',
         text: <><Icon name={undefined} />&nbsp;Light</> as unknown as string,
-        href: '/enable-light'
+        href: '#/enable-light'
       }, {
         id: 'dark-mode',
         text: <><Icon name="check" />&nbsp;Dark</> as unknown as string,
-        href: '/enable-dark'
+        href: '#/enable-dark'
       }, {
         id: 'auto-mode',
         text: <><Icon name={undefined} />&nbsp;Auto</> as unknown as string,
-        href: '/enable-auto'
+        href: '#/enable-auto'
       }]
     },
     {
@@ -57,11 +57,11 @@ const utilities = (path: string): Utilities[] => [
       items: [{
         id: 'compact-mode',
         text: <><Icon name="check" />&nbsp;Compact</> as unknown as string,
-        href: '/enable-compact'
+        href: '#/enable-compact'
       }, {
         id: 'confort-mode',
         text: <><Icon name={undefined} />&nbsp;Comfort</> as unknown as string,
-        href: '/enable-comfort'
+        href: '#/enable-comfort'
       }]
     }]
   }

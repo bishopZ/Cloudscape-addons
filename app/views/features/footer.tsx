@@ -7,13 +7,10 @@ export const Footer = () => {
   return <footer>
     <Box margin={Spacing.M} float="left">
       <SpaceBetween size="m" direction="horizontal">
-        <Link href="#/contributors">
+        <Link href="#/contact">
           Contact
         </Link>
-        <Link href="#/terms">
-          Terms
-        </Link>
-        <Link href="#/privacy">
+        <Link href="https://www.stellarelements.com/privacy-policy" external>
           Privacy
         </Link>
         <Link href="https://stellarelements.com" external>
@@ -22,7 +19,7 @@ export const Footer = () => {
       </SpaceBetween>
     </Box>
     <Box margin={Spacing.M} float="right">
-      <>&copy;&nbsp;2023 Stellar Elements, Inc. All rights reserved.</>
+      <>&copy;&nbsp;2023 Stellar Elements. All Rights Reserved.</>
       <br />
       <>This site uses essential cookies.</>
     </Box>

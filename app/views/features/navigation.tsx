@@ -1,12 +1,15 @@
 import type { SideNavigationProps } from '@cloudscape-design/components';
 import { BreadcrumbGroup, SideNavigation } from '@cloudscape-design/components';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
-import type { Breadcrumb, ParamBreadcrumb } from '../../addons/helpers/type-helpers';
-import { useAppDispatch } from '../../data/data-store';
+import { LoadingSpinner } from '/addons/details/loading';
+import { initArticles, selectArticles } from '/data/articles';
 
-type SidenavItem = SideNavigationProps.Item;
+import type { Breadcrumb, ParamBreadcrumb } from '../../addons/helpers/type-helpers';
+import { useAppDispatch, useAppSelector } from '../../data/data-store';
+
+type SidenavItem = SideNavigationProps.Section | SideNavigationProps.Link;
 
 const blog: SidenavItem = {
   type: 'link', text: 'Blog', href: '#/'
@@ -21,25 +24,41 @@ const blogNav: SidenavItem[] = [
   { type: 'link', text: 'Gallery', href: '#/preview' },
 ];
 
-const docsgNav: SidenavItem[] = [
+const docsNav: SidenavItem[] = [
   { type: 'link', text: 'Getting started', href: '#/docs' },
   { type: 'link', text: 'Philosophy', href: '#/docs/philosophy' },
   {
-    type: 'section', text: 'Components', items: [
-      { type: 'link', text: 'Icon Map', href: '#/docs/icon-map' },
-      { type: 'link', text: 'Labeled Button', href: '#/docs/labeled-button' },
-    ]
+    type: 'section', text: 'Components', items: []
   }
 ];
 
 export const Navigation = () => {
+  const dispatch = useAppDispatch();
   const location = useLocation();
   const isDocs = location.pathname.indexOf('/docs') !== -1;
-  return <SideNavigation
+  const { initialized, items } = useAppSelector(selectArticles);
+
+  // TODO move to the reducer
+  const section = docsNav[2] as SideNavigationProps.Section;
+  section.items = items
+    .map(item => ({
+      type: 'link',
+      text: item.title,
+      href: `#/docs/${item.slug}`
+    } as SideNavigationProps.Link))
+    .sort((a, b) => a.text.localeCompare(b.text));
+
+  useEffect(() => {
+    if (!initialized) void dispatch(initArticles);
+  }, [initialized]);
+
+  return <><SideNavigation
     header={isDocs ? docs : blog}
-    items={isDocs ? docsgNav : blogNav}
+    items={isDocs ? docsNav : blogNav}
     activeHref={`#${location.pathname}`}
-  />;
+  />
+  {!initialized && <LoadingSpinner />}
+  </>;
 };
 
 type Props = {

@@ -26,7 +26,7 @@ const HeaderActions = () => {
   return <SpaceBetween size="s" direction="horizontal">
     <Link href="#/">
       <Button variant="primary">
-        Action
+        Browse
       </Button>
     </Link>
   </SpaceBetween>;

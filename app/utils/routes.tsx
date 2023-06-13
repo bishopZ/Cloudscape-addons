@@ -2,13 +2,12 @@ import type { AppLayoutProps, BreadcrumbGroupProps } from '@cloudscape-design/co
 import type React from 'react';
 
 import { deslugify } from '/addons/helpers/string-utils';
-import { ArticleContainer } from '/views/article-container';
-import { DocsContainer } from '/views/doc-container';
-
-import type { ParamBreadcrumb, ParamString } from '../addons/helpers/type-helpers';
-import { Blog } from '../views/pages/blog/blog-page';
-import { Docs } from '../views/pages/docs';
-import { Preview } from '../views/pages/preview';
+import type { ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
+import { ArticleContainer } from '/views/pages/blog/article-container';
+import { Blog } from '/views/pages/blog/blog-page';
+import { DocsContainer } from '/views/pages/docs/doc-container';
+import { Docs } from '/views/pages/docs/getting-started';
+import { Preview } from '/views/pages/preview';
 
 export type RouteProps = {
   contentType: AppLayoutProps.ContentType
