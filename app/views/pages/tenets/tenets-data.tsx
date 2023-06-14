@@ -16,12 +16,15 @@ export const tenets = [
   {
     title: 'Create a venacular',
     description: 'The point of a design systen is to provide all the pieces. \
-      The names of those pieces for a kind of language that pages can be described with.'
+      The names of those pieces form the language that experiences are described in.'
   },
   {
-    title: 'Abstract details with smart defaults',
-    description: 'We don\'t want every developer to have to read EVERY piece of \
-    documentation, every time they implement a component. When we provide smart \
-    defaults for component properties it saves every developer time and brain space.'
+    title: 'Use smart defaults',
+    description: 'Smart \
+      defaults for component properties saves every developer time and brain space.'
   },
+  {
+    title: 'Be explicit',
+    description: 'Internal documentation is easier to work with than external documentation.'
+  }
 ];

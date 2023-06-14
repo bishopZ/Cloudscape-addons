@@ -1,6 +1,8 @@
+import { Container } from '@cloudscape-design/components';
 import React from 'react';
 
 export const Docs = () => {
-
-  return <></>
-}
+  return <Container>
+    Getting started
+  </Container>;
+};

@@ -9,12 +9,19 @@ export const HelpPanelContent = () => {
     <br />
     <Box variant="strong">Assumptions</Box>
     <Box variant="p">
-      This library assumes you are using Cloudscape with the tools listed below.
+      The documentation assumes you are using Cloudscape with these tools.
     </Box>
     <ul>
-      <li>React</li>
-      <li>Typescript</li>
-      <li>Redux Toolkit</li>
+      <li>React v18</li>
+      <li>Typescript v5</li>
+      <li>Cloudscape v3</li>
+    </ul>
+    <Box variant="p">
+      A few of the addons also require Redux Toolkit.
+    </Box>
+    <ul>
+      <li>Redux v4</li>
+      <li>Redux Toolkit v1</li>
     </ul>
   </HelpPanel>;
 };

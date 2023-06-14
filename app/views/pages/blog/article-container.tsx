@@ -21,6 +21,8 @@ export const ArticleContainer = () => {
   const dispatch = useAppDispatch();
   const { initialized } = useAppSelector(selectArticles);
   const ArticleComponent = getArticle(params.slug as CONTENT_KEYS);
+  const { items } = useAppSelector(selectArticles);
+  const article = items.find(item => item.slug === params.slug); // TODO move to the reducer
 
   useEffect(() => {
     if (!initialized) void dispatch(initArticles);
@@ -28,7 +30,7 @@ export const ArticleContainer = () => {
 
   return <ContentLayout
     header={<Header variant="h1">
-      {deslugify(params.slug as string)}
+      {article?.title ?? deslugify(params.slug as string)}
     </Header>}>
     {!initialized && <LoadingSpinner />}
     {initialized && <SpaceBetween size="m">

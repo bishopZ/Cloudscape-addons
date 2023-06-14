@@ -2,7 +2,7 @@
 export const fetchArticles = async () => {
   try {
     const articles = await fetch('http://localhost:3000/api/articles')
-      .then(response => response.json())
+      .then(response => response.json());
     return articles;
   } catch (error) {
     console.log(error);

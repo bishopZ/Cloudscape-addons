@@ -1,3 +1,4 @@
+import type { BoxProps } from '@cloudscape-design/components';
 import { Box, FormField } from '@cloudscape-design/components';
 import React from 'react';
 
@@ -7,6 +8,7 @@ import { Dash, LoadingSpinner } from './loading';
 type Props = {
   label: React.ReactNode
   number?: number | React.ReactNode
+  status?: 'info' | 'error' | 'success' | 'inactive'
   constraint?: React.ReactNode
   description?: React.ReactNode
   error?: React.ReactNode
@@ -19,10 +21,17 @@ type Props = {
 export const LabeledNumber = (props: Props) => {
   const {
     loading = false,
-    label, number,
+    label, number, status,
     constraint, description, error, info, secondaryControl,
     stretch,
   } = props;
+
+  let color: BoxProps.Color = 'text-status-info';
+  switch (status) {
+    case 'error': color = 'text-status-error'; break;
+    case 'success': color = 'text-status-success'; break;
+    case 'inactive': color = 'text-status-inactive'; break;
+  }
 
   return <FormField
     label={label}
@@ -34,8 +43,8 @@ export const LabeledNumber = (props: Props) => {
     stretch={stretch}
     i18nStrings={formfieldStrings}>
     <Box
-      fontSize="display-l"
-      color="text-status-info">
+      fontSize={loading ? undefined : 'display-l'}
+      color={color}>
       {loading
         ? <LoadingSpinner />
         : number ?? <Dash />}

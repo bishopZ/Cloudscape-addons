@@ -1,5 +1,5 @@
 import '@cloudscape-design/global-styles/index.css';
-import '/styles/prism.css'
+import '/styles/prism.css';
 
 import React from 'react';
 import { Provider } from 'react-redux';

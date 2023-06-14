@@ -11,9 +11,7 @@ export const BlogHeader = () => {
   return <Header
     variant="h1"
     counter={makeCounter(selected, total)}
-    actions={<HeaderActions />}
-    // TODO info={<InfoLink id={'some.info.id'} />}
-  >
+    actions={<HeaderActions />}>
     Articles
   </Header>;
 };

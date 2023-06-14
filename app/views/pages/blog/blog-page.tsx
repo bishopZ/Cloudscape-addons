@@ -6,7 +6,6 @@ import React, { useEffect } from 'react';
 import { GenericError } from '/addons/details/generic-error';
 import { LoadingSpinner } from '/addons/details/loading';
 import { paginationLabels, tableLabels } from '/addons/helpers/a11y-helpers';
-import { makeCounter } from '/addons/helpers/string-utils';
 import type { ColumnWidthsChange } from '/addons/helpers/type-helpers';
 import { GenericEmpty, NoMatch } from '/addons/tables/generic-empty';
 import type { Article } from '/data/articles';
@@ -80,7 +79,7 @@ export const Blog = () => {
 
   const ArticleFilter = <TextFilter
     {...filterProps}
-    countText={makeCounter(filteredItemsCount ?? 0, items.length)}
+    countText={`${filteredItemsCount} matches`}
     filteringPlaceholder="Find an article"
     filteringAriaLabel="Find an article"
   />;

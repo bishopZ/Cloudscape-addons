@@ -15,8 +15,10 @@ export type Article = {
   vendor: string
   description?: string
   tenets?: number[]
-  publicationDate?: Date
+  publicationDate: Date
   editDate?: Date
+  referenceComponent?: string
+  referenceLink?: string
 }
 
 const initialState = {

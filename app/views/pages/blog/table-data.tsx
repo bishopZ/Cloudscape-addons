@@ -9,7 +9,7 @@ export const TABLE_COLUMNS: TableColumn<Article>[] = [
   {
     id: 'title',
     header: 'Title',
-    cell: item => <Link href={`#/article/${item.slug}`}>
+    cell: item => <Link href={`#/blog/${item.slug}`}>
       {item.title}
     </Link>,
     sortingField: 'title',
@@ -19,7 +19,11 @@ export const TABLE_COLUMNS: TableColumn<Article>[] = [
     id: 'publicationDate',
     header: 'Date',
     cell: item => formatDate(item.publicationDate),
-    sortingField: 'publicationDate'
+    sortingComparator: (a, b) => {
+      if (a.publicationDate < b.publicationDate) return 1;
+      if (a.publicationDate > b.publicationDate) return -1;
+      return 0;
+    }
   },
   {
     id: 'section',
@@ -29,7 +33,7 @@ export const TABLE_COLUMNS: TableColumn<Article>[] = [
   },
   {
     id: 'format',
-    header: 'Format',
+    header: 'Type',
     cell: item => item.format,
     sortingField: 'format'
   },

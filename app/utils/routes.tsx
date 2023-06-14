@@ -26,11 +26,13 @@ export const ROUTES = (): RouteProps[] => [
     component: Docs,
     breadcrumbs: []
   }, {
-    path: '/preview',
+    path: '/blog/gallery',
     title: 'Preview',
     contentType: 'default',
     component: Preview,
-    breadcrumbs: []
+    breadcrumbs: [
+      { text: 'Gallery', href: '' }
+    ]
   }, {
     path: '/docs/:slug',
     title: params => deslugify(params.slug ?? 'Documentation'),
@@ -40,7 +42,7 @@ export const ROUTES = (): RouteProps[] => [
       params => ({ text: deslugify(params.slug ?? 'Documentation'), href: '' })
     ]
   }, {
-    path: '/article/:slug',
+    path: '/blog/:slug',
     title: params => deslugify(params.slug ?? 'Article'),
     contentType: 'default',
     component: ArticleContainer,

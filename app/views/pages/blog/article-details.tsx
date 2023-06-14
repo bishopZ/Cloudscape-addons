@@ -14,18 +14,18 @@ export const ArticleDetails = () => {
   const article = items.find(item => item.slug === params.slug); // TODO move to the reducer
 
   return <Container header={<Header variant="h2">Details</Header>}>
-    <ColumnLayout columns={3}>
+    <ColumnLayout columns={3} borders="vertical">
       <SpaceBetween size="m">
-        <KeyValue label="Author">Bishop Zareh</KeyValue>
         <KeyValue label="Vendor">{article?.vendor ?? <Dash />}</KeyValue>
         <KeyValue label="Discipline">{article?.discipline ?? <Dash />}</KeyValue>
       </SpaceBetween>
       <SpaceBetween size="m">
-        <KeyValue label="Format">{article?.format ?? <Dash />}</KeyValue>
+        <KeyValue label="Type">{article?.format ?? <Dash />}</KeyValue>
         <KeyValue label="Topic">{article?.topic ?? <Dash />}</KeyValue>
         <KeyValue label="Section">{article?.section ?? <Dash />}</KeyValue>
       </SpaceBetween>
       <SpaceBetween size="m">
+        <KeyValue label="Author">Bishop Zareh</KeyValue>
         <KeyValue label="Last edited">{formatDate(article?.publicationDate)}</KeyValue>
       </SpaceBetween>
     </ColumnLayout>

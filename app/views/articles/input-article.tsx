@@ -1,17 +1,18 @@
-import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
+import { Box, Container, Header, Icon, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
-import { InputPreview } from './input-preview'
 
+import { LabeledContent } from './common/labeled-content';
+import { InputPreview } from './previews/input-preview';
+
+/* eslint-disable max-lines-per-function */
 export const InputArticle = () => {
-  
-  
   useEffect(() => {
     setTimeout(() => {
-      if (window.Prism) window.Prism.highlightAll()
-    }, 0)  
-  }, [])
+      if (window.Prism) window.Prism.highlightAll();
+    }, 0);
+  }, []);
 
   return <SpaceBetween size="m">
     <Container
@@ -19,41 +20,40 @@ export const InputArticle = () => {
       Introducing LabeledInput
       </Header>}>
       <Box variant="p">
-        The LabeledInput component is the first of a series of Labeled components.
         Input boxes can be used for many things and all design systems aim to be
         versitile, so that the components can be used in any situation.
       </Box>
       <Box variant="p">
         However, the vast majority of uses of an
-        <ExternalLink href="">Input component</ExternalLink>
-        is in the context of a form.
+        <ExternalLink href="https://cloudscape.design/components/input/">
+          Input component
+        </ExternalLink>
+        are in the context of a form.
         When an Input is in a form, it should have a label to comply with
         accessibility and usablity best practices. Labels are provided by the
-        <ExternalLink href="">FormField component</ExternalLink>.
+        <ExternalLink href="https://cloudscape.design/components/form-field/">
+          FormField component
+        </ExternalLink>.
       </Box>
       <Box variant="p">
         Since the main use of an Input is in combination with a FormField, we
         present the Labeled component as a unified interface for Inputs in the
         context of a form.
       </Box>
-      <Box variant="p">
-        Over the coming months, Cloudscape Addons will release similar Labeled
-        components for other form fields. These labeled components set
-        smart default, and provide a unified interface across all form field types.
-      </Box>
+      <LabeledContent />
     </Container>
     <Container header={
-      <Header variant='h2'>Input type map</Header>
+      <Header variant="h2">Input type map</Header>
     }>
       <Box variant="p">
         As a design system, Cloudscape aims to provide open access to the HTML
-        interface provided by the standards and adoption. It provides many options
-        for the type and inputmode attributes of the input element.
+        interface provided by standards and adoption, and it provides many options
+        for the type and inputmode attributes of the input HTML element.
       </Box>
       <Box variant="p">
-        Yet, those two properties often go togeather into only a few common 
-        conbinations. The LabeledInput component creates a single interface for
-        the mapping of these two fields. The mapping can always be expanded for
+        Yet, those two properties often go togeather into only a few common
+        combinations. The LabeledInput component creates a single interface for
+        the mapping of these two fields, and the mapping can always be expanded for
         more unusual use cases.
       </Box>
       <pre><code className="language-javascript">{`type Map = Record<string, [InputProps.Type, InputProps.InputMode]>
@@ -68,6 +68,7 @@ const modeMap: Map = {
   email: ['email', 'email'],
   url: ['url', 'url']
 };
+
 type Props = {
   mode?: keyof typeof modeMap
   ...
@@ -89,18 +90,18 @@ type Props = {
         LabeledInput provide smart defaults for the properties below.
       </Box>
       <pre><code className="language-javascript">
-{`label = <>&nbsp;</>,
+        {`label = <>&nbsp;</>,
 mode = 'text',
 placeholder = 'Enter a value',
 step = 1,
 optional = false,`}</code></pre>
       <Box variant="p">
-        The optional property does two things. It sets ariaRequired, so that 
-        developers don't have to remember to do that. It also adds a common
-        "optional" flag to the label.
+        The optional property does two things. It sets ariaRequired, so that
+        developers don't have to remember to do that. It also uses a common way
+        to add "optional" to the field label.
       </Box>
       <pre><code className="language-javascript">
-{`const displayLabel = optional
+        {`const displayLabel = optional
   ? addOptional(label)
   : label;
 
@@ -108,15 +109,19 @@ optional = false,`}</code></pre>
   label={displayLabel}
   ...>
   <Input
-  ariaRequired={!optional}
-  ...
+    ariaRequired={!optional}
+    ...
   />
 </FormField>
 `}</code></pre>
     </Container>
     <Container
       header={
-        <Header variant="h2">Component source code</Header>
+        <Header variant="h2">
+          <>Source code</>
+          <>&nbsp;</>
+          <Icon name="script" size="big" />
+        </Header>
       }>
       <pre><code className="language-javascript">
         {`import type { InputProps } from '@cloudscape-design/components';
@@ -214,9 +219,13 @@ export const LabeledInput = (props: Props) => {
     </Container>
     <Container
       header={
-        <Header variant='h2'>Preview</Header>
+        <Header variant="h2">
+          Preview
+          <>&nbsp;</>
+          <Icon name="multiscreen" size="medium" />
+        </Header>
       }>
-        <InputPreview />
+      <InputPreview />
     </Container>
   </SpaceBetween>;
 };

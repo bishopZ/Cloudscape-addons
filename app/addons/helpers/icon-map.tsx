@@ -1,4 +1,4 @@
-import { Box, Grid, Icon } from '@cloudscape-design/components';
+import { Box, Grid, Icon, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
 import { Spacing } from './spacing-constants';
@@ -27,16 +27,13 @@ const names = [
 const grid = names.map(() => ({ colspan: 3 }));
 
 export const IconMap = () => {
-  return <Box margin={Spacing.L}>
+  return <Box margin={Spacing.S}>
     <Grid gridDefinition={grid}>
-      {names.map(name =>
-        <Box key={name}>
-          <>&nbsp;&nbsp;</>
+      {names.map((name, index) =>
+        <SpaceBetween key={index} size="s" direction="horizontal">
           <Icon name={name} size="small" />
-          <>&nbsp;&nbsp;</>
-          {name}
-          <>&nbsp;&nbsp;</>
-        </Box>
+          <>{name}</>
+        </SpaceBetween>
       )}
     </Grid>
   </Box>;

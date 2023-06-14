@@ -1,20 +1,15 @@
-import { Box, ColumnLayout, Container, Header, Icon, SpaceBetween } from '@cloudscape-design/components';
+import { Box, Container, Header, Icon, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
-import { CodeDisplay } from '/addons/details/code-display';
 import { ExternalLink } from '/addons/details/external-link';
-import { KeyValue } from '/addons/details/key-value';
 import { IconMap } from '/addons/helpers/icon-map';
-import { formatDate } from '/addons/helpers/string-utils';
 
 export const IconMapArticle = () => {
-  
   useEffect(() => {
     setTimeout(() => {
-      if (window.Prism) window.Prism.highlightAll()
-    }, 0)  
-  }, [])
+      if (window.Prism) window.Prism.highlightAll();
+    }, 0);
+  }, []);
 
   return <SpaceBetween size="m">
     <Container
@@ -46,7 +41,7 @@ export const IconMapArticle = () => {
       </Header>
     }>
       <pre><code className="language-javascript">
-        {`import { Box, Grid, Icon } from '@cloudscape-design/components';
+        {`import { Box, Grid, Icon, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
 import { Spacing } from './spacing-constants';
@@ -75,22 +70,25 @@ const names = [
 const grid = names.map(() => ({ colspan: 3 }));
 
 export const IconMap = () => {
-  return <Box margin={Spacing.L}>
+  return <Box margin={Spacing.S}>
     <Grid gridDefinition={grid}>
-      {names.map(name =>
-        <Box key={name}>
-          <>&nbsp;&nbsp;</>
+      {names.map((name, index) =>
+        <SpaceBetween key={index} size="s" direction="horizontal">
           <Icon name={name} size="small" />
-          <>&nbsp;&nbsp;</>
-          {name}
-          <>&nbsp;&nbsp;</>
-        </Box>
+          <>{name}</>
+        </SpaceBetween>
       )}
     </Grid>
   </Box>;
 };`}</code></pre>
     </Container>
-    <Container header={<Header variant="h2">Preview</Header>}>
+    <Container header={
+      <Header variant="h2">
+        Preview
+        <>&nbsp;</>
+        <Icon name="multiscreen" size="medium" />
+      </Header>
+    }>
       <IconMap />
     </Container>
   </SpaceBetween>;

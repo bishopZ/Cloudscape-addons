@@ -21,7 +21,7 @@ export const LoadingPreview = () => {
       <LoadingSpinner mediaName="instance" />
     </KeyValue>
     <Box variant="p">
-      Dash can be used when the value was fetched, but it doesn't exist.
+      Dash can be used when the value was fetched, but doesn't exist.
     </Box>
     <KeyValue label="Instance option">
       <Dash />

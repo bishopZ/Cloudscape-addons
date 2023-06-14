@@ -21,12 +21,12 @@ const docs: SidenavItem = {
 
 const blogNav: SidenavItem[] = [
   { type: 'link', text: 'Articles', href: '#/' },
-  { type: 'link', text: 'Gallery', href: '#/preview' },
+  { type: 'link', text: 'Gallery', href: '#/blog/gallery' },
 ];
 
 const docsNav: SidenavItem[] = [
   { type: 'link', text: 'Getting started', href: '#/docs' },
-  { type: 'link', text: 'Philosophy', href: '#/docs/philosophy' },
+  { type: 'link', text: 'Core Tenets', href: '#/docs/philosophy' },
   {
     type: 'section', text: 'Components', items: []
   }
@@ -41,6 +41,7 @@ export const Navigation = () => {
   // TODO move to the reducer
   const section = docsNav[2] as SideNavigationProps.Section;
   section.items = items
+    .filter(item => item.format === 'Documentation')
     .map(item => ({
       type: 'link',
       text: item.title,

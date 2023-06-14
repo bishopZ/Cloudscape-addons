@@ -1,4 +1,4 @@
-import { ColumnLayout, Container, Header, SpaceBetween } from '@cloudscape-design/components';
+import { ColumnLayout, Container, Header, Link, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -15,14 +15,20 @@ export const DocsDetails = () => {
   const article = items.find(item => item.slug === params.slug); // TODO move to the reducer
 
   return <Container header={<Header variant="h2">Details</Header>}>
-    <ColumnLayout columns={2}>
+    <ColumnLayout columns={2} borders="vertical">
       <SpaceBetween size="m">
         <KeyValue label="Author">Bishop Zareh</KeyValue>
         <KeyValue label="Last edited">{formatDate(article?.publicationDate)}</KeyValue>
         <KeyValue label="Section">{article?.section ?? <Dash />}</KeyValue>
       </SpaceBetween>
       <SpaceBetween size="m">
-        <KeyValue label="Github link">
+        {article?.referenceComponent && article.referenceLink
+          && <KeyValue label="Reference component">
+            <ExternalLink href={article.referenceLink}>
+              {article.referenceComponent}
+            </ExternalLink>
+          </KeyValue>}
+        <KeyValue label="Github">
           <ExternalLink href="https://github.com">source code</ExternalLink>
         </KeyValue>
         <KeyValue label="License">

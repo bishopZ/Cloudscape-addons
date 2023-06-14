@@ -22,9 +22,9 @@ const initialState = {
     pageSizes: [5, 25, 50],
     pageSize: 50,
     wrapLines: false,
-    columnWidth: [240, 150, 0, 0, 0, 0], // for all columns
+    columnWidth: [220, 180, 0, 0, 0, 0], // for all columns
     contentSelection: [ // for visible columns
-      'title', 'publicationDate', 'section', 'format'
+      'title', 'publicationDate', 'section'
     ]
   }
 };
