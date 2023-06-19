@@ -37,7 +37,7 @@ export const DocsContainer = () => {
       {!initialized && <LoadingSpinner />}
       <TenetsSection />
       {initialized && ArticleComponent && <ArticleComponent />}
-      <DocsDetails />
+      {article && <DocsDetails />}
     </SpaceBetween>
   </ContentLayout>;
 };

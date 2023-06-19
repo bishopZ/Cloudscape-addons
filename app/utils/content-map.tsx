@@ -5,8 +5,10 @@ import { InputArticle } from '/views/articles/input-article';
 import { LoadingArticle } from '/views/articles/loading-article';
 import { NumberArticle } from '/views/articles/number-article';
 import { SpacingConstants } from '/views/articles/spacing-article';
+import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
+  'philosophy': TenetsPage,
   'icon-map': IconMapArticle,
   'loading-states': LoadingArticle,
   'labeled-input': InputArticle,

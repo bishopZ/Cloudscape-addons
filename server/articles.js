@@ -3,7 +3,7 @@ module.exports = () => [
   {
     slug: 'loading-states',
     title: 'Loading spinner and dash',
-    description: '',
+    description: 'Basic loading state components to expand the vocabulary of Cloudscape.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
@@ -18,7 +18,7 @@ module.exports = () => [
   {
     slug: 'icon-map',
     title: 'Icon map',
-    description: '',
+    description: 'Developer convenience component to aid in quickly finding the name of a particular icon.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
@@ -33,7 +33,7 @@ module.exports = () => [
   {
     slug: 'labeled-input',
     title: 'Labeled input',
-    description: '',
+    description: 'Labeled variation of the Input component that provides smart defaults.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
@@ -41,14 +41,14 @@ module.exports = () => [
     section: 'Forms',
     vendor: 'Cloudscape',
     publicationDate: new Date('Jun 14, 2021'),
-    tenets: [0, 1, 3, 4, 5],
+    tenets: [0, 1, 3, 4],
     referenceComponent: 'Input',
     referenceLink: 'https://cloudscape.design/components/input/'
   },
   {
     slug: 'labeled-number',
     title: 'Labeled number',
-    description: '',
+    description: 'Labeled number display as seen in Cloudscape Dashboard demo.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
@@ -56,14 +56,14 @@ module.exports = () => [
     section: 'Details',
     vendor: 'Cloudscape',
     publicationDate: new Date('Jun 12, 2021'),
-    tenets: [0, 1, 3],
+    tenets: [0, 1],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
   },
   {
     slug: 'spacing-constants',
     title: 'Spacing constants',
-    description: '',
+    description: 'Helper file for DRYing up the use of spacing objects in your project.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
@@ -71,14 +71,14 @@ module.exports = () => [
     section: 'Helpers',
     vendor: 'Cloudscape',
     publicationDate: new Date('Jun 2, 2021'),
-    tenets: [0, 1, 2, 3],
+    tenets: [0, 1, 2],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
   },
   {
     slug: 'generic-empty',
     title: 'Generic empty',
-    description: '',
+    description: 'Simple components designed to speed up creation of new Tables.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
@@ -86,14 +86,14 @@ module.exports = () => [
     section: 'Tables',
     vendor: 'Cloudscape',
     publicationDate: new Date('Jun 4, 2021'),
-    tenets: [2, 4],
+    tenets: [2, 3],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
   },
   {
     slug: 'bridging-the-chasm',
     title: 'Bridging the chasm: Unifying design and development',
-    description: '',
+    description: 'Harmonious collaboration between design and development is crucial for crafting outstanding user experiences.',
     image: 'assets/chasm.jpg',
     format: 'Article',
     topic: 'Collaboration',
@@ -113,7 +113,7 @@ module.exports = () => [
   //   section: 'Details',
   //   vendor: 'Cloudscape',
   //   publicationDate: new Date('Jun 5, 2021'),
-  //   tenets: [1, 2, 3],
+  //   tenets: [1, 2],
   //   referenceComponent: 'Dashboard',
   //   referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
   // },

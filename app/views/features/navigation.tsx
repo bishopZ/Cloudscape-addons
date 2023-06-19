@@ -20,7 +20,6 @@ const docs: SidenavItem = {
 };
 
 const blogNav: SidenavItem[] = [
-  { type: 'link', text: 'Browse articles', href: '#/' },
   { type: 'link', text: 'Search articles', href: '#/blog/search' },
   { type: 'link', text: 'Cloudscape gallery', href: '#/blog/gallery' },
 ];
