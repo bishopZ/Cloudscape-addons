@@ -1,8 +1,10 @@
-import { Box, Container, Header, Icon, Link, SpaceBetween } from '@cloudscape-design/components';
+import { Box, Container, Header, Link, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 
+import { PreviewHeader } from '../common/headers/preview-header';
+import { SourceHeader } from '../common/headers/source-header';
 import { NumberPreview } from './previews/number-preview';
 
 /* eslint-disable max-lines-per-function */
@@ -20,7 +22,7 @@ export const NumberArticle = () => {
       </Header>}>
       <SpaceBetween size="m">
         <Box variant="p">
-          Most of the labeled addons are designed to add labels when the form field
+          Most of the labeled addons are designed to add labels when a form field
           is used in a form. There are other times labels are handy as well, such as
           on a Details page or a
           <ExternalLink href="https://cloudscape.design/examples/react/dashboard.html">
@@ -44,9 +46,7 @@ switch (status) {
   case 'inactive': color = 'text-status-inactive'; break;
 }
 
-<Box
-  color={color}
-  ...>
+<Box color={color} ...>
   {number}
 </Box`}</code></pre>
         <Box variant="p">
@@ -75,13 +75,7 @@ const {
       </SpaceBetween>
     </Container>
     <Container
-      header={
-        <Header variant="h2">
-          <>Source code</>
-          <>&nbsp;</>
-          <Icon name="script" size="big" />
-        </Header>
-      }>
+      header={<SourceHeader />}>
       <pre><code className="language-javascript">{`import type { BoxProps } from '@cloudscape-design/components';
 import { Box, FormField } from '@cloudscape-design/components';
 import React from 'react';
@@ -137,13 +131,7 @@ export const LabeledNumber = (props: Props) => {
 };`}</code></pre>
     </Container>
     <Container
-      header={
-        <Header variant="h2">
-          Preview
-          <>&nbsp;</>
-          <Icon name="multiscreen" size="medium" />
-        </Header>
-      }>
+      header={<PreviewHeader />}>
       <NumberPreview />
     </Container>
   </SpaceBetween>;

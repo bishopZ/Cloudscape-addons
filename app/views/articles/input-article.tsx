@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 
+import { PreviewHeader } from '../common/headers/preview-header';
+import { SourceHeader } from '../common/headers/source-header';
 import { LabeledContent } from './common/labeled-content';
 import { InputPreview } from './previews/input-preview';
 
@@ -116,13 +118,7 @@ optional = false,`}</code></pre>
 `}</code></pre>
     </Container>
     <Container
-      header={
-        <Header variant="h2">
-          <>Source code</>
-          <>&nbsp;</>
-          <Icon name="script" size="big" />
-        </Header>
-      }>
+      header={<SourceHeader />}>
       <pre><code className="language-javascript">
         {`import type { InputProps } from '@cloudscape-design/components';
 import { FormField, Input } from '@cloudscape-design/components';
@@ -218,13 +214,7 @@ export const LabeledInput = (props: Props) => {
 };`}</code></pre>
     </Container>
     <Container
-      header={
-        <Header variant="h2">
-          Preview
-          <>&nbsp;</>
-          <Icon name="multiscreen" size="medium" />
-        </Header>
-      }>
+      header={<PreviewHeader />}>
       <InputPreview />
     </Container>
   </SpaceBetween>;

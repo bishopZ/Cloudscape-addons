@@ -2,7 +2,7 @@ import { ColumnLayout, Container, Header, SpaceBetween } from '@cloudscape-desig
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import { KeyValue } from '/addons/details/key-value';
+import { LabeledValue } from '/addons/details/labeled-value';
 import { Dash } from '/addons/details/loading';
 import { formatDate } from '/addons/helpers/string-utils';
 import { selectArticles } from '/data/articles';
@@ -16,17 +16,17 @@ export const ArticleDetails = () => {
   return <Container header={<Header variant="h2">Details</Header>}>
     <ColumnLayout columns={3} borders="vertical">
       <SpaceBetween size="m">
-        <KeyValue label="Vendor">{article?.vendor ?? <Dash />}</KeyValue>
-        <KeyValue label="Discipline">{article?.discipline ?? <Dash />}</KeyValue>
+        <LabeledValue label="Vendor">{article?.vendor ?? <Dash />}</LabeledValue>
+        <LabeledValue label="Discipline">{article?.discipline ?? <Dash />}</LabeledValue>
       </SpaceBetween>
       <SpaceBetween size="m">
-        <KeyValue label="Type">{article?.format ?? <Dash />}</KeyValue>
-        <KeyValue label="Topic">{article?.topic ?? <Dash />}</KeyValue>
-        <KeyValue label="Section">{article?.section ?? <Dash />}</KeyValue>
+        <LabeledValue label="Type">{article?.format ?? <Dash />}</LabeledValue>
+        <LabeledValue label="Topic">{article?.topic ?? <Dash />}</LabeledValue>
+        <LabeledValue label="Section">{article?.section ?? <Dash />}</LabeledValue>
       </SpaceBetween>
       <SpaceBetween size="m">
-        <KeyValue label="Author">Bishop Zareh</KeyValue>
-        <KeyValue label="Last edited">{formatDate(article?.publicationDate)}</KeyValue>
+        <LabeledValue label="Author">Bishop Zareh</LabeledValue>
+        <LabeledValue label="Last edited">{formatDate(article?.publicationDate)}</LabeledValue>
       </SpaceBetween>
     </ColumnLayout>
   </Container>;

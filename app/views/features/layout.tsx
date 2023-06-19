@@ -85,9 +85,9 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
 
   useEffect(() => {
     disableMotion(false);
-    applyMode(Mode.Dark);
+    // applyMode(Mode.Dark);
     applyDensity(Density.Compact);
-    // applyMode(Mode.Light);
+    applyMode(Mode.Light);
     // applyDensity(Density.Comfortable);
   }, []);
 

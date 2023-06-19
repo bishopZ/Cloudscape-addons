@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 import {
   deselectAriaLabel, errorIconAriaLabel, filteringAriaLabel, filteringClearAriaLabel, filteringPlaceholder,
   finishedText, loadingText, recoveryText, selectedAriaLabel
-} from '../helpers/a11y-helpers';
-import { formfieldStrings, multiselectStrings } from '../helpers/i18n-helpers';
-import { addOptional, makeCounter } from '../helpers/string-utils';
-import type { MultiselectChange, SelectLoad } from '../helpers/type-helpers';
+} from '/addons/helpers/a11y-helpers';
+import { formfieldStrings, multiselectStrings } from '/addons/helpers/i18n-helpers';
+import { addOptional, makeCounter } from '/addons/helpers/string-utils';
+import type { MultiselectChange, SelectLoad } from '/addons/helpers/type-helpers';
 
 type Props = {
   onChange: (event: MultiselectChange) => void

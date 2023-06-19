@@ -9,12 +9,15 @@ export const HelpPanelContent = () => {
     <br />
     <Box variant="strong">Assumptions</Box>
     <Box variant="p">
-      The documentation assumes you are using Cloudscape with these tools.
+      The documentation was written using Cloudscape with these tools.
     </Box>
     <ul>
+      <li>Cloudscape components v3</li>
+      <li>Cloudscape collection hooks v1</li>
+      <li>Cloudscape design tokens v3</li>
+      <li>Cloudscape global styles v1</li>
       <li>React v18</li>
       <li>Typescript v5</li>
-      <li>Cloudscape v3</li>
     </ul>
     <Box variant="p">
       A few of the addons also require Redux Toolkit.

@@ -1,21 +1,21 @@
 import { Box, Button, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
-import { Spacing } from '../helpers/spacing-constants';
+import { Spacing } from '/addons/helpers/spacing-constants';
 
 type Props = {
-  title: string
-  description: string
-  buttonName: string
-  onClick: () => void
+  title?: string
+  description?: string
+  buttonName?: string
+  onClick?: () => void
 }
 
 export const GenericEmpty = (props: Props) => {
   const {
     title = 'No items',
     description = 'No items to show.',
-    buttonName = 'Create new',
-    onClick
+    buttonName = 'Refresh',
+    onClick = () => { window.location.reload() }
   } = props;
 
   return <SpaceBetween size="s">
@@ -44,7 +44,7 @@ type NoMatchProps = {
 
 export const NoMatch = ({ clear }: NoMatchProps) => <GenericEmpty
   title="No matches"
-  description="We could not find a match."
+  description="We couldn't find a match."
   buttonName="Clear filter"
   onClick={() => { clear() }}
 />;

@@ -1,7 +1,7 @@
 import { Box, ColumnLayout } from '@cloudscape-design/components';
 import React from 'react';
 
-import { KeyValue } from '/addons/details/key-value';
+import { LabeledValue } from '/addons/details/labeled-value';
 import { Dash, LoadingSpinner } from '/addons/details/loading';
 
 export const LoadingPreview = () => {
@@ -10,21 +10,21 @@ export const LoadingPreview = () => {
       Often times, on a details or dashboard page, you will have key-value pairs.
       These show a label and a value.
     </Box>
-    <KeyValue label="Instance option">
+    <LabeledValue label="Instance option">
       active
-    </KeyValue>
+    </LabeledValue>
     <Box variant="p">
       The LoadingSpinner can be used when the data is in the process of being fetched
       from an API or other data source.
     </Box>
-    <KeyValue label="Instance option">
+    <LabeledValue label="Instance option">
       <LoadingSpinner mediaName="instance" />
-    </KeyValue>
+    </LabeledValue>
     <Box variant="p">
       Dash can be used when the value was fetched, but doesn't exist.
     </Box>
-    <KeyValue label="Instance option">
+    <LabeledValue label="Instance option">
       <Dash />
-    </KeyValue>
+    </LabeledValue>
   </ColumnLayout>;
 };

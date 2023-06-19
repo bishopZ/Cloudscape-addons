@@ -2,10 +2,10 @@ import type { ButtonProps, IconProps } from '@cloudscape-design/components';
 import { Button, FormField, Popover } from '@cloudscape-design/components';
 import React from 'react';
 
-import { loadingText } from '../helpers/a11y-helpers';
-import { formfieldStrings } from '../helpers/i18n-helpers';
-import { addOptional } from '../helpers/string-utils';
-import type { ButtonClick, ButtonFollow } from '../helpers/type-helpers';
+import { loadingText } from '/addons/helpers/a11y-helpers';
+import { formfieldStrings } from '/addons/helpers/i18n-helpers';
+import { addOptional } from '/addons/helpers/string-utils';
+import type { ButtonClick, ButtonFollow } from '/addons/helpers/type-helpers';
 
 type Props = {
   text: React.ReactNode

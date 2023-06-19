@@ -5,10 +5,10 @@ import React from 'react';
 import {
   errorIconAriaLabel, filteringAriaLabel, filteringClearAriaLabel, filteringPlaceholder, finishedText, loadingText,
   recoveryText, selectedAriaLabel
-} from '../helpers/a11y-helpers';
-import { formfieldStrings } from '../helpers/i18n-helpers';
-import { addOptional, makeCounter } from '../helpers/string-utils';
-import type { SelectChange, SelectLoad } from '../helpers/type-helpers';
+} from '/addons/helpers/a11y-helpers';
+import { formfieldStrings } from '/addons/helpers/i18n-helpers';
+import { addOptional, makeCounter } from '/addons/helpers/string-utils';
+import type { SelectChange, SelectLoad } from '/addons/helpers/type-helpers';
 
 
 type Props = {

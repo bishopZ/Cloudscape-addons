@@ -1,9 +1,9 @@
 import { FormField, Textarea } from '@cloudscape-design/components';
 import React from 'react';
 
-import { formfieldStrings } from '../helpers/i18n-helpers';
-import { addOptional } from '../helpers/string-utils';
-import type { InputChange, KeyDetail } from '../helpers/type-helpers';
+import { formfieldStrings } from '/addons/helpers/i18n-helpers';
+import { addOptional } from '/addons/helpers/string-utils';
+import type { InputChange, KeyDetail } from '/addons/helpers/type-helpers';
 
 type Props = {
   value: string

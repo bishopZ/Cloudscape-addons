@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 
+import { PreviewHeader } from '../common/headers/preview-header';
 import { LoadingPreview } from './previews/loading-preview';
 
 export const LoadingArticle = () => {
@@ -64,11 +65,7 @@ export const LoadingSpinner = ({ mediaName }: Props) => <>
 `}
       </code></pre>
     </Container>
-    <Container header={<Header variant="h2">
-      Preview
-      <>&nbsp;</>
-      <Icon name="multiscreen" size="medium" />
-    </Header>}>
+    <Container header={<PreviewHeader />}>
       <LoadingPreview />
     </Container>
   </SpaceBetween>;

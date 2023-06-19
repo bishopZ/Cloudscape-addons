@@ -8,7 +8,7 @@ export const NumberPreview = () => {
     <LabeledNumber label="Unique visitors" number={'14k'} />
     <LabeledNumber
       label="Messages sent"
-      description="Over the last year."
+      description="Over the last month."
       number={'120'}
       status="success"
     />

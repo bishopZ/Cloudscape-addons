@@ -2,7 +2,8 @@ import type { BoxProps } from '@cloudscape-design/components';
 import { Box, FormField } from '@cloudscape-design/components';
 import React from 'react';
 
-import { formfieldStrings } from '../helpers/i18n-helpers';
+import { formfieldStrings } from '/addons/helpers/i18n-helpers';
+
 import { Dash, LoadingSpinner } from './loading';
 
 type Props = {

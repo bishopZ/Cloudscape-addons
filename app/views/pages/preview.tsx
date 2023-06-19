@@ -3,8 +3,7 @@ import React from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { GenericError } from '/addons/details/generic-error';
-import { KeyValue } from '/addons/details/key-value';
-import { LabeledNumber } from '/addons/details/labeled-number';
+import { LabeledValue } from '/addons/details/labeled-value';
 import { LabeledButton } from '/addons/forms/labeled-button';
 import { LabeledCheckbox } from '/addons/forms/labeled-checkbox';
 import { LabeledMultiselect } from '/addons/forms/labeled-multiselect';
@@ -17,16 +16,20 @@ import { UnsavedChanges } from '/addons/forms/unsaved-changes';
 import { IconMap } from '/addons/helpers/icon-map';
 import { GenericEmpty } from '/addons/tables/generic-empty';
 
+import { EmptyPreview } from '../articles/previews/empty-preview';
 import { InputPreview } from '../articles/previews/input-preview';
 import { LoadingPreview } from '../articles/previews/loading-preview';
 import { NumberPreview } from '../articles/previews/number-preview';
 
 export const Preview = () => {
   return <ContentLayout
-    header={
-      <Header variant="h1">Component gallery</Header>
-    }>
+    header={<Header variant="h1">Component gallery</Header>}>
     <SpaceBetween size="l">
+      <Container header={
+        <Header variant="h2">Loading spinner and Dash</Header>
+      }>
+        <LoadingPreview />
+      </Container>
       <Container
         header={
           <Header variant="h2">Icon map</Header>
@@ -34,26 +37,21 @@ export const Preview = () => {
         <IconMap />
       </Container>
       <Container header={
-        <Header variant="h2">
-          Loading spinner and Dash
-        </Header>
+        <Header variant="h2">Generic empty and No match</Header>
       }>
-        <LoadingPreview />
+        <EmptyPreview />
       </Container>
       <Container header={
-        <Header variant="h2">
-          Labeled input
-        </Header>
-      }>
-        <InputPreview />
-      </Container>
-      <Container header={
-        <Header variant="h2">
-          Labeled number
-        </Header>
+        <Header variant="h2">Labeled number</Header>
       }>
         <NumberPreview />
       </Container>
+      <Container header={
+        <Header variant="h2">Labeled input</Header>
+      }>
+        <InputPreview />
+      </Container>
+      <LabeledValue label="">test</LabeledValue>
       <LabeledSelect onChange={() => {}} empty={''} />
       <ExternalLink href={''}>Link</ExternalLink>
       <LabeledButton text={'button'} href={'#'} />
@@ -71,7 +69,6 @@ export const Preview = () => {
         onClick={() => {}}
       />
       <GenericError />
-      <KeyValue label={'label'}>Value</KeyValue>
     </SpaceBetween>
   </ContentLayout>;
 };

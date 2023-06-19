@@ -52,6 +52,45 @@ module.exports = () => [
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
   },
+  {
+    slug: 'spacing-constants',
+    title: 'Spacing constants',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Helpers',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('Jun 2, 2021'),
+    tenets: [0, 1, 2, 3],
+    referenceComponent: 'Dashboard',
+    referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
+  },
+  {
+    slug: 'generic-empty',
+    title: 'Generic empty',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Tables',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('Jun 4, 2021'),
+    tenets: [2, 4],
+    referenceComponent: 'Dashboard',
+    referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
+  },
+  {
+    slug: 'labeled-value',
+    title: 'Labeled value',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Details',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('Jun 5, 2021'),
+    tenets: [1, 2, 3],
+    referenceComponent: 'Dashboard',
+    referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
+  },
 ] .filter(item => {
   if (!item.publicationDate) return false;
   const today = new Date();

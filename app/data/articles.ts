@@ -1,7 +1,8 @@
 import type { Dispatch, PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
 
-import type { GenericObject } from '../addons/helpers/type-helpers';
+import type { GenericObject } from '/addons/helpers/type-helpers';
+
 import { fetchArticles } from './api';
 import type { RootState } from './data-store';
 

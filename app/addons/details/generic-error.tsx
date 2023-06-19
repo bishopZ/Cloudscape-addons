@@ -1,7 +1,7 @@
 import { Alert, Button } from '@cloudscape-design/components';
 import React from 'react';
 
-import { errorIconAriaLabel } from '../helpers/a11y-helpers';
+import { errorIconAriaLabel } from '/addons/helpers/a11y-helpers';
 
 type Props = {
   header?: string

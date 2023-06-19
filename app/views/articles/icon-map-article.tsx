@@ -1,8 +1,11 @@
-import { Box, Container, Header, Icon, SpaceBetween } from '@cloudscape-design/components';
+import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { IconMap } from '/addons/helpers/icon-map';
+import { PreviewHeader } from '/views/common/headers/preview-header';
+import { SourceHeader } from '/views/common/headers/source-header';
+
 
 export const IconMapArticle = () => {
   useEffect(() => {
@@ -33,13 +36,7 @@ export const IconMapArticle = () => {
         a developer tool to speed the process of identifing a particular icon's name.
       </Box>
     </Container>
-    <Container header={
-      <Header variant="h2">
-        <>Source code</>
-        <>&nbsp;</>
-        <Icon name="script" size="big" />
-      </Header>
-    }>
+    <Container header={<SourceHeader />}>
       <pre><code className="language-javascript">
         {`import { Box, Grid, Icon, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
@@ -82,13 +79,7 @@ export const IconMap = () => {
   </Box>;
 };`}</code></pre>
     </Container>
-    <Container header={
-      <Header variant="h2">
-        Preview
-        <>&nbsp;</>
-        <Icon name="multiscreen" size="medium" />
-      </Header>
-    }>
+    <Container header={<PreviewHeader />}>
       <IconMap />
     </Container>
   </SpaceBetween>;
