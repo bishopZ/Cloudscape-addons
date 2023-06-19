@@ -3,6 +3,8 @@ module.exports = () => [
   {
     slug: 'loading-states',
     title: 'Loading spinner and dash',
+    description: '',
+    image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',
@@ -16,6 +18,8 @@ module.exports = () => [
   {
     slug: 'icon-map',
     title: 'Icon map',
+    description: '',
+    image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',
@@ -29,6 +33,8 @@ module.exports = () => [
   {
     slug: 'labeled-input',
     title: 'Labeled input',
+    description: '',
+    image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',
@@ -42,6 +48,8 @@ module.exports = () => [
   {
     slug: 'labeled-number',
     title: 'Labeled number',
+    description: '',
+    image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',
@@ -55,6 +63,8 @@ module.exports = () => [
   {
     slug: 'spacing-constants',
     title: 'Spacing constants',
+    description: '',
+    image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',
@@ -68,6 +78,8 @@ module.exports = () => [
   {
     slug: 'generic-empty',
     title: 'Generic empty',
+    description: '',
+    image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',
@@ -81,6 +93,8 @@ module.exports = () => [
   {
     slug: 'bridging-the-chasm',
     title: 'Bridging the chasm: Unifying design and development',
+    description: '',
+    image: 'assets/chasm.jpg',
     format: 'Article',
     topic: 'Collaboration',
     discipline: 'Project management',
@@ -91,6 +105,8 @@ module.exports = () => [
   // {
   //   slug: 'labeled-value',
   //   title: 'Labeled value',
+  //   description: '',
+  //   image: 'assets/chasm.jpg',
   //   format: 'Documentation',
   //   topic: 'Components',
   //   discipline: 'Engineering',

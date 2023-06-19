@@ -21,7 +21,7 @@ const topNav: TopNavigationProps.Identity = {
   href: '#/',
   title: 'Stellar Addons',
   logo: {
-    src: 'favicon.png',
+    src: 'assets/favicon.png',
     alt: 'Stellar addons logo'
   }
 };

@@ -1,4 +1,4 @@
-import type { AppLayoutProps, DatePickerProps, MultiselectProps, PaginationProps } from '@cloudscape-design/components';
+import type { AppLayoutProps, CardsProps, DatePickerProps, MultiselectProps, PaginationProps } from '@cloudscape-design/components';
 
 // This setion is not needed if you use the Cloudscap I18n suppert: TODO link
 export const errorIconAriaLabel = 'Error';
@@ -42,16 +42,6 @@ export const paginationLabels: PaginationProps.Labels = {
   pageLabel: pageNumber => `Page ${pageNumber} of all pages`
 };
 
-// export const tableLabels = (tableName: string) => ({
-//   tableLabel: tableName,
-//   activateEditLabel: (column: unknown) => str('tables.edit.activate'),
-//   cancelEditLabel: (column: unknown) => str('tables.edit.cancel'),
-//   submitEditLabel: (column: unknown) => str('tables.edit.submit'),
-//   itemSelectionLabel: (data: unknown, row: unknown) => str('tables.select.item'),
-//   allItemsSelectionLabel: (data: unknown) => str('tables.select.all'),
-//   selectionGroupLabel: str('tables.select.group'),
-// });
-
 type Selected = { selectedItems: TitledItem[] }
 type TitledItem = { title: string }
 
@@ -65,7 +55,7 @@ export const tableLabels = {
   }
 };
 
-// export const cardLabels = {
-//   itemSelectionLabel: (e, n) => `select ${n.name}`,
-//   selectionGroupLabel: 'Item selection'
-// };
+export const cardLabels = (nameField: string): CardsProps.AriaLabels<any> => ({
+  itemSelectionLabel: (event, item) => `select ${item[nameField]}`,
+  selectionGroupLabel: 'Item selection'
+});

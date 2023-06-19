@@ -14,7 +14,8 @@ export type Article = {
   discipline: string
   section: string
   vendor: string
-  description?: string
+  description: string
+  image: string
   tenets?: number[]
   publicationDate: Date
   editDate?: Date

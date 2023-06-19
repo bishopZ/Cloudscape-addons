@@ -6,10 +6,15 @@ const isProduction = process.env.NODE_ENV === 'production';
 const CopyPlugin = require("copy-webpack-plugin");
 
 const config = {
-  entry: ['./app/init.tsx', './app/styles/styles.scss', './app/images/favicon.png'],
+  entry: [
+    './app/init.tsx', 
+    './app/styles/styles.scss', 
+    './app/images/favicon.png',
+    './app/images/chasm.jpg'
+  ],
   output: {
     path: path.resolve(__dirname, 'public'),
-    assetModuleFilename: "[name][ext]",
+    assetModuleFilename: "assets/[name][ext]",
   },
   resolve: {
     extensions: ['.tsx', '.ts', '...'],
