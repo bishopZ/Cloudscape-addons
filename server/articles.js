@@ -79,18 +79,28 @@ module.exports = () => [
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
   },
   {
-    slug: 'labeled-value',
-    title: 'Labeled value',
-    format: 'Documentation',
-    topic: 'Components',
-    discipline: 'Engineering',
-    section: 'Details',
-    vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 5, 2021'),
-    tenets: [1, 2, 3],
-    referenceComponent: 'Dashboard',
-    referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
+    slug: 'bridging-the-chasm',
+    title: 'Bridging the chasm: Unifying design and development',
+    format: 'Article',
+    topic: 'Collaboration',
+    discipline: 'Project management',
+    section: 'Tools',
+    vendor: 'Figma',
+    publicationDate: new Date('Jun 1, 2021'),
   },
+  // {
+  //   slug: 'labeled-value',
+  //   title: 'Labeled value',
+  //   format: 'Documentation',
+  //   topic: 'Components',
+  //   discipline: 'Engineering',
+  //   section: 'Details',
+  //   vendor: 'Cloudscape',
+  //   publicationDate: new Date('Jun 5, 2021'),
+  //   tenets: [1, 2, 3],
+  //   referenceComponent: 'Dashboard',
+  //   referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
+  // },
 ] .filter(item => {
   if (!item.publicationDate) return false;
   const today = new Date();

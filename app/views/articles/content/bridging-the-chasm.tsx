@@ -4,9 +4,6 @@ import React from 'react';
 /* eslint-disable max-len */
 export const BridgingTheChasmContent = () => {
   return <SpaceBetween size="m">
-    <Header variant="h1">
-      Bridging the chasm: Unifying design and development
-    </Header>
     <Container header={<Header variant="h2">Abstract</Header>}>
       <SpaceBetween size="m">
         <Box variant="p">

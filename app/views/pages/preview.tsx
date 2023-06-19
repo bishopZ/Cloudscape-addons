@@ -23,7 +23,7 @@ import { NumberPreview } from '../articles/previews/number-preview';
 
 export const Preview = () => {
   return <ContentLayout
-    header={<Header variant="h1">Component gallery</Header>}>
+    header={<Header variant="h1">Cloudscape addon gallery</Header>}>
     <SpaceBetween size="l">
       <Container header={
         <Header variant="h2">Loading spinner and Dash</Header>

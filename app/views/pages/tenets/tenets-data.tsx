@@ -14,7 +14,7 @@ export const tenets = [
       Changes only need to be made in one place.'
   },
   {
-    title: 'Create a venacular',
+    title: 'Create a vocabulary',
     description: 'The point of a design systen is to provide all the pieces. \
       The names of those pieces form the language that experiences are described in.'
   },

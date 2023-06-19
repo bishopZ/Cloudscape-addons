@@ -19,10 +19,10 @@ import { Breadcrumbs, Navigation } from './navigation';
 
 const topNav: TopNavigationProps.Identity = {
   href: '#/',
-  title: 'Cloudscape Addons',
+  title: 'Stellar Addons',
   logo: {
     src: 'favicon.png',
-    alt: 'Cloudscape Addons logo'
+    alt: 'Stellar addons logo'
   }
 };
 
@@ -119,7 +119,7 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
         </Link>
         <Link href="#/docs">
           <Button variant={path.startsWith('/docs') ? 'normal' : 'link'}>
-            Docs
+            Cloudscape docs
           </Button>
         </Link>
       </SpaceBetween>}

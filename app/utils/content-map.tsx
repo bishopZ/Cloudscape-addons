@@ -13,7 +13,7 @@ export const CONTENT_MAP = {
   'labeled-number': NumberArticle,
   'spacing-constants': SpacingConstants,
   'generic-empty': EmptyArticle,
-  'labeled-value': BridgingTheChasmContent,
+  'bridging-the-chasm': BridgingTheChasmContent,
 } as const;
 
 export type CONTENT_KEYS = keyof typeof CONTENT_MAP

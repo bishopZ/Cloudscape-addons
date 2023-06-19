@@ -7,7 +7,7 @@ export const Footer = () => {
   return <footer>
     <Box margin={Spacing.M} float="left">
       <SpaceBetween size="m" direction="horizontal">
-        <Link href="#/contact">
+        <Link href="https://www.stellarelements.com/contact" external>
           Contact
         </Link>
         <Link href="https://www.stellarelements.com/privacy-policy" external>

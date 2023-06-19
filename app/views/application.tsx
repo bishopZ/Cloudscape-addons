@@ -20,12 +20,14 @@ export const Application = () => {
             <Route
               key={index}
               path={path}
-              element={<Layout
-                breadcrumbs={breadcrumbs}
-                contentType={contentType}
-                title={title}>
-                <Component />
-              </Layout>}
+              element={
+                <Layout
+                  breadcrumbs={breadcrumbs}
+                  contentType={contentType}
+                  title={title}>
+                  <Component />
+                </Layout>
+              }
             />
           )}
         </Routes>
