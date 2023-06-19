@@ -19,11 +19,11 @@ import { Footer } from './footer';
 import { HelpPanelContent } from './help-panel';
 import { Breadcrumbs, Navigation } from './navigation';
 
-const borderRadius = '0.25rem';
+const borderRadius = '0.26rem';
 
 const theme: Theme = {
   tokens: {
-    fontFamilyBase: ' Avenir, \'Helvetica Neue\', Roboto, Arial, sans-serif',
+    fontFamilyBase: 'Avenir, "Open Sans", "Helvetica Neue", Roboto, Arial, sans-serif',
     borderRadiusAlert: borderRadius,
     borderRadiusBadge: borderRadius,
     borderRadiusButton: borderRadius,

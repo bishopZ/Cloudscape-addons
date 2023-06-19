@@ -8,9 +8,9 @@ export const HelpPanelContent = () => {
     <SpaceBetween size="s">
       <Box variant="p">
       Cloudscape Addons is an exciting addition to
-        <ExternalLink href="https://cloudscape.design/">Amazon's Cloudscape design system</ExternalLink>.
+        <ExternalLink href="https://cloudscape.design/">Amazon's Cloudscape design system.</ExternalLink>
       </Box>
-      <Box variant="strong">Assumptions</Box>
+      <Header variant="h3">Assumptions</Header>
       <Box variant="p">
       The documentation was written using Cloudscape with these tools.
       </Box>
@@ -29,7 +29,7 @@ export const HelpPanelContent = () => {
         <li>Redux v4</li>
         <li>Redux Toolkit v1</li>
       </ul> */}
-      <Header variant="h2">About Stellar Elements</Header>
+      <Header variant="h3">About Stellar Elements</Header>
       <Box variant="p">
       Stellar Elements is an unconsultancy. We diagnose and execute.
       </Box>

@@ -1,10 +1,10 @@
 import type { CardsProps } from '@cloudscape-design/components';
-import { Cards, Header, Link } from '@cloudscape-design/components';
+import { Button, Cards, Header, Icon, Link } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 
 import { Dash, LoadingSpinner } from '/addons/details/loading';
 import { cardLabels, loadingText } from '/addons/helpers/a11y-helpers';
-import { formatDate } from '/addons/helpers/string-utils';
+import { getRelativeTime } from '/addons/helpers/string-utils';
 import type { Article } from '/data/articles';
 import { initArticles, selectArticles } from '/data/articles';
 import { useAppDispatch, useAppSelector } from '/data/data-store';
@@ -29,22 +29,21 @@ const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
     { id: 'description',
       header: 'Description',
       content: item => item.description,
-      width: 50
     }, {
       id: 'publicationDate',
-      header: 'Publication date',
-      content: item => formatDate(item.publicationDate),
-      width: 50
+      header: 'Published',
+      content: item => getRelativeTime(item.publicationDate),
+      width: 33
     }, {
       id: 'topic',
       header: 'Topic',
       content: item => item.topic ?? <Dash />,
-      width: 50
+      width: 33
     }, {
       id: 'section',
       header: 'Section',
       content: item => item.section ?? <Dash />,
-      width: 50
+      width: 33
     }],
 };
 
@@ -80,6 +79,14 @@ export const BrowseArticles = () => {
     totalItemsCount={sortedArticles.length}
     variant="full-page"
     ariaLabels={cardLabels('title')}
-    header={<Header variant="h1">Articles</Header>}
+    header={<Header
+      variant="h1"
+      actions={<Link href="#/blog/search">
+        <Button variant="primary" iconName="search">
+          Search
+        </Button>
+      </Link>}>
+      Articles
+    </Header>}
   />;
 };
