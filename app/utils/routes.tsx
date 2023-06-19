@@ -8,6 +8,7 @@ import { Blog } from '/views/pages/blog/blog-page';
 import { BrowseArticles } from '/views/pages/blog/browse-page';
 import { DocsContainer } from '/views/pages/docs/doc-container';
 import { Docs } from '/views/pages/docs/getting-started';
+import { NotFound } from '/views/pages/not-found';
 import { Preview } from '/views/pages/preview';
 
 export type RouteProps = {
@@ -60,6 +61,13 @@ export const ROUTES = (): RouteProps[] => [
       params => ({ text: deslugify(params.slug ?? 'Article'), href: '' })
     ]
   }, {
+    path: '/:slug',
+    title: 'Blog',
+    contentType: 'default',
+    component: NotFound,
+    breadcrumbs: []
+  },
+  {
     path: '/',
     title: 'Blog',
     contentType: 'default',
