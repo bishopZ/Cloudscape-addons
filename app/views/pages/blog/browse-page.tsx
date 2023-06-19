@@ -26,14 +26,15 @@ const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
         />
       </div>
     },
-    {
+    { id: 'description',
+      header: 'Description',
+      content: item => item.description,
+      width: 50
+    }, {
       id: 'publicationDate',
       header: 'Publication date',
       content: item => formatDate(item.publicationDate),
-    }, {
-      id: 'description',
-      header: 'Description',
-      content: item => item.description
+      width: 50
     }, {
       id: 'topic',
       header: 'Topic',

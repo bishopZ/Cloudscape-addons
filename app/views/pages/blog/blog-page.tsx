@@ -91,7 +91,7 @@ export const Blog = () => {
     resizableColumns
     stickyHeader
     firstIndex={paginationProps.currentPageIndex * articlePrefs.pageSize + 1}
-    stripedRows={items.length > 20}
+    stripedRows
     columnDefinitions={TABLE_COLUMNS}
     visibleColumns={articlePrefs.contentSelection}
     wrapLines={articlePrefs.wrapLines}

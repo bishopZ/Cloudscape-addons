@@ -2,6 +2,8 @@ import type { AppLayoutProps, TopNavigationProps } from '@cloudscape-design/comp
 import {
   AppLayout, Button, Flashbar, Icon, Link, SpaceBetween, TopNavigation
 } from '@cloudscape-design/components';
+import type { Theme } from '@cloudscape-design/components/theming';
+import { applyTheme } from '@cloudscape-design/components/theming';
 import { applyDensity, applyMode, Density, disableMotion, Mode } from '@cloudscape-design/global-styles';
 import React, { useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
@@ -16,6 +18,43 @@ import { POST_TITLE } from '/utils/constants';
 import { Footer } from './footer';
 import { HelpPanelContent } from './help-panel';
 import { Breadcrumbs, Navigation } from './navigation';
+
+const borderRadius = '0.25rem';
+
+const theme: Theme = {
+  tokens: {
+    fontFamilyBase: ' Avenir, \'Helvetica Neue\', Roboto, Arial, sans-serif',
+    borderRadiusAlert: borderRadius,
+    borderRadiusBadge: borderRadius,
+    borderRadiusButton: borderRadius,
+    borderRadiusCalendarDayFocusRing: borderRadius,
+    borderRadiusContainer: borderRadius,
+    borderRadiusControlCircularFocusRing: borderRadius,
+    borderRadiusControlDefaultFocusRing: borderRadius,
+    borderRadiusDropdown: borderRadius,
+    borderRadiusFlashbar: borderRadius,
+    borderRadiusItem: borderRadius,
+    borderRadiusInput: borderRadius,
+    borderRadiusPopover: borderRadius,
+    borderRadiusTabsFocusRing: borderRadius,
+    borderRadiusTiles: borderRadius,
+    borderRadiusToken: borderRadius,
+    borderRadiusTutorialPanelItem: borderRadius,
+    colorBackgroundLayoutMain: {
+      light: 'rgb(241 241 247)',
+      dark: 'rgb(8 14 14)'
+    },
+    colorTextAccent: { light: '#d37209' },
+    colorBackgroundContainerContent: {
+      light: 'rgb(255 255 255)',
+      dark: 'rgb(0 0 0)'
+    },
+    colorBackgroundContainerHeader: {
+      light: 'rgb(247 247 247)',
+      dark: 'rgb(8 8 8)'
+    },
+  },
+};
 
 const topNav: TopNavigationProps.Identity = {
   href: '#/',
@@ -86,9 +125,10 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
   useEffect(() => {
     disableMotion(false);
     // applyMode(Mode.Dark);
-    applyDensity(Density.Compact);
+    // applyDensity(Density.Compact);
     applyMode(Mode.Light);
-    // applyDensity(Density.Comfortable);
+    applyTheme({ theme });
+    applyDensity(Density.Comfortable);
   }, []);
 
   useEffect(() => {
