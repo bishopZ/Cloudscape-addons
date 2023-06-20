@@ -111,13 +111,13 @@ module.exports = () => [
     topic: 'Design Systems',
     discipline: 'Design',
     section: 'Tokens',
-    vendor: '',
+    author: 'Chad Lumley & Bishop Zareh',
     publicationDate: new Date('Jun 3, 2021'),
   },
   {
     slug: 'labeled-value',
     title: 'Labeled value',
-    description: '',
+    description: 'A simple, generic component for a common Details page pattern.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
@@ -128,6 +128,17 @@ module.exports = () => [
     tenets: [1, 2],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
+  },
+  {
+    slug: 'documenting-a-design-system',
+    title: 'Documenting a design system',
+    description: 'How you document your design system with assets, process and documents.',
+    image: 'assets/chasm.jpg',
+    format: 'Article',
+    topic: 'Design Systems',
+    discipline: 'Writing',
+    section: 'Documentation',
+    publicationDate: new Date('Jun 5, 2021'),
   },
 ] .filter(item => {
   if (!item.publicationDate) return false;
