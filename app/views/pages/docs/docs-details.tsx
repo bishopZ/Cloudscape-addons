@@ -4,8 +4,7 @@ import { useParams } from 'react-router-dom';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { LabeledValue } from '/addons/details/labeled-value';
-import { Dash } from '/addons/details/loading';
-import { formatDate } from '/addons/helpers/string-utils';
+import { formatDate, inNotEmpty } from '/addons/helpers/string-utils';
 import { selectArticles } from '/data/articles';
 import { useAppSelector } from '/data/data-store';
 
@@ -19,7 +18,7 @@ export const DocsDetails = () => {
       <SpaceBetween size="m">
         <LabeledValue label="Author">Bishop Zareh</LabeledValue>
         <LabeledValue label="Publication date">{formatDate(article?.publicationDate)}</LabeledValue>
-        <LabeledValue label="Section">{article?.section ?? <Dash />}</LabeledValue>
+        <LabeledValue label="Section">{inNotEmpty(article?.section)}</LabeledValue>
       </SpaceBetween>
       <SpaceBetween size="m">
         {article?.referenceComponent && article.referenceLink

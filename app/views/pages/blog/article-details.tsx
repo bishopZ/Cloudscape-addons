@@ -3,8 +3,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import { LabeledValue } from '/addons/details/labeled-value';
-import { Dash } from '/addons/details/loading';
-import { formatDate } from '/addons/helpers/string-utils';
+import { formatDate, inNotEmpty } from '/addons/helpers/string-utils';
 import { selectArticles } from '/data/articles';
 import { useAppSelector } from '/data/data-store';
 
@@ -16,13 +15,13 @@ export const ArticleDetails = () => {
   return <Container header={<Header variant="h2">Details</Header>}>
     <ColumnLayout columns={3} borders="vertical">
       <SpaceBetween size="m">
-        <LabeledValue label="Discipline">{article?.discipline ?? <Dash />}</LabeledValue>
-        <LabeledValue label="Vendor">{article?.vendor ?? <Dash />}</LabeledValue>
+        <LabeledValue label="Discipline">{inNotEmpty(article?.discipline)}</LabeledValue>
+        <LabeledValue label="Vendor">{inNotEmpty(article?.vendor)}</LabeledValue>
       </SpaceBetween>
       <SpaceBetween size="m">
-        <LabeledValue label="Type">{article?.format ?? <Dash />}</LabeledValue>
-        <LabeledValue label="Topic">{article?.topic ?? <Dash />}</LabeledValue>
-        <LabeledValue label="Section">{article?.section ?? <Dash />}</LabeledValue>
+        <LabeledValue label="Type">{inNotEmpty(article?.format)}</LabeledValue>
+        <LabeledValue label="Topic">{inNotEmpty(article?.topic)}</LabeledValue>
+        <LabeledValue label="Section">{inNotEmpty(article?.section)}</LabeledValue>
       </SpaceBetween>
       <SpaceBetween size="m">
         <LabeledValue label="Author">Bishop Zareh</LabeledValue>

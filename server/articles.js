@@ -25,7 +25,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Helpers',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 4, 2021'),
+    publicationDate: new Date('Jun 5, 2021'),
     tenets: [0],
     referenceComponent: 'Icon',
     referenceLink: 'https://cloudscape.design/components/icon/'
@@ -40,7 +40,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Forms',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 17, 2021'),
+    publicationDate: new Date('Jun 18, 2021'),
     tenets: [0, 1, 3, 4],
     referenceComponent: 'Input',
     referenceLink: 'https://cloudscape.design/components/input/'
@@ -55,7 +55,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Details',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 16, 2021'),
+    publicationDate: new Date('Jun 17, 2021'),
     tenets: [0, 1],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
@@ -70,7 +70,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Helpers',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 3, 2021'),
+    publicationDate: new Date('Jun 4, 2021'),
     tenets: [0, 1, 2],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
@@ -85,7 +85,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Tables',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 5, 2021'),
+    publicationDate: new Date('Jun 6, 2021'),
     tenets: [2, 3],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
@@ -102,21 +102,33 @@ module.exports = () => [
     vendor: 'Figma',
     publicationDate: new Date('Jun 1, 2021'),
   },
-  // {
-  //   slug: 'labeled-value',
-  //   title: 'Labeled value',
-  //   description: '',
-  //   image: 'assets/chasm.jpg',
-  //   format: 'Documentation',
-  //   topic: 'Components',
-  //   discipline: 'Engineering',
-  //   section: 'Details',
-  //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 5, 2021'),
-  //   tenets: [1, 2],
-  //   referenceComponent: 'Dashboard',
-  //   referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
-  // },
+  {
+    slug: 'anatomy-of-a-design-system',
+    title: 'Anatomy of a design system',
+    description: 'A design system consists of several key elements that work together to provide a cohesive and standardized approach to digital design.',
+    image: 'assets/chasm.jpg',
+    format: 'Article',
+    topic: 'Design Systems',
+    discipline: 'Design',
+    section: 'Tokens',
+    vendor: '',
+    publicationDate: new Date('Jun 3, 2021'),
+  },
+  {
+    slug: 'labeled-value',
+    title: 'Labeled value',
+    description: '',
+    image: 'assets/chasm.jpg',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Details',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('Jun 7, 2021'),
+    tenets: [1, 2],
+    referenceComponent: 'Dashboard',
+    referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
+  },
 ] .filter(item => {
   if (!item.publicationDate) return false;
   const today = new Date();

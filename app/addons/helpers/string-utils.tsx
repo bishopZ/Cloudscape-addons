@@ -45,6 +45,11 @@ export const deslugify = (slug: string) => {
   return words.charAt(0).toUpperCase() + words.substring(1).toLowerCase();
 };
 
+export const inNotEmpty = (candidate?: string) => {
+  if (!candidate || candidate === '') return <Dash />;
+  return candidate;
+};
+
 const units: Record<string, number> = {
   year: 24 * 60 * 60 * 1000 * 365,
   month: 24 * 60 * 60 * 1000 * 365 / 12,
