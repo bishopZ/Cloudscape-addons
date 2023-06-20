@@ -1,4 +1,4 @@
-import { Container, Header, Icon } from '@cloudscape-design/components';
+import { Box, Button, Container, Header, Icon, Link } from '@cloudscape-design/components';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -16,7 +16,13 @@ export const TenetsSection = () => {
 
   return <Container
     header={
-      <Header variant="h2">
+      <Header
+        variant="h2"
+        actions={<Link href="#/docs/philosophy">
+          <Button variant="link">
+            See all
+          </Button>
+        </Link>}>
         <>Tenets</>
         <>&nbsp;</>
         <Icon name="suggestions" size="medium" />

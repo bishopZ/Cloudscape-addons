@@ -64,15 +64,10 @@ export const tenets = [
     description: 'Smart defaults for component properties saves every developer time and brain space.',
     content: <>
       <Box variant="p">
-        By employing intelligent and well-thought-out default values, developers can save valuable time and mental energy.
-      </Box>
-      <Box variant="p">
         Smart defaults eliminate the need for developers to specify every property, allowing them to focus on the core functionality and customization of the components. This not only accelerates the development process but also reduces the cognitive load required to configure each property manually.
       </Box>
       <Box variant="p">
         Smart defaults promote consistency across the codebase, ensuring that components behave predictably and adhere to established conventions.
-      </Box>
-      <Box variant="p">
         By providing sensible and optimized default values, developers can enhance the user experience, as components are intuitively functional out of the box.
       </Box>
     </>
@@ -83,8 +78,6 @@ export const tenets = [
     content: <>
       <Box variant="p">
         Being explicit is more valuable than relying solely on external documentation. Internal documentation, which is embedded within the codebase, provides immediate context and clarity for developers working directly with the code.
-      </Box>
-      <Box variant="p">
         It eliminates the need for constantly referencing external documentation, reducing the time and effort spent searching for information.
       </Box>
       <Box variant="p">

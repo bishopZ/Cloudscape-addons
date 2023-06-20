@@ -1,10 +1,10 @@
+import { EmptyArticle } from '/views/articles/addons/empty-article';
+import { IconMapArticle } from '/views/articles/addons/icon-map-article';
+import { InputArticle } from '/views/articles/addons/input-article';
+import { LoadingArticle } from '/views/articles/addons/loading-article';
+import { NumberArticle } from '/views/articles/addons/number-article';
+import { SpacingConstants } from '/views/articles/addons/spacing-article';
 import { BridgingTheChasmContent } from '/views/articles/content/bridging-the-chasm';
-import { EmptyArticle } from '/views/articles/empty-article';
-import { IconMapArticle } from '/views/articles/icon-map-article';
-import { InputArticle } from '/views/articles/input-article';
-import { LoadingArticle } from '/views/articles/loading-article';
-import { NumberArticle } from '/views/articles/number-article';
-import { SpacingConstants } from '/views/articles/spacing-article';
 import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {

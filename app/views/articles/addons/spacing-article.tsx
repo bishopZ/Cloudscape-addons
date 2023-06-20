@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 
-import { SourceHeader } from '../common/headers/source-header';
+import { SourceHeader } from '../../common/headers/source-header';
 
 export const SpacingConstants = () => {
   useEffect(() => {

@@ -16,12 +16,12 @@ const blog: SidenavItem = {
 };
 
 const docs: SidenavItem = {
-  type: 'link', text: 'Cloudscape docs', href: '#/docs'
+  type: 'link', text: 'Cloudscape addons', href: '#/docs'
 };
 
 const blogNav: SidenavItem[] = [
   { type: 'link', text: 'Search articles', href: '#/blog/search' },
-  { type: 'link', text: 'Cloudscape gallery', href: '#/blog/gallery' },
+  { type: 'link', text: 'Addons gallery', href: '#/blog/gallery' },
 ];
 
 const docsNav: SidenavItem[] = [

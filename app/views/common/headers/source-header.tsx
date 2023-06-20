@@ -5,6 +5,6 @@ export const SourceHeader = () => {
   return <Header variant="h2">
     <>Source code</>
     <>&nbsp;</>
-    <Icon name="script" size="big" />
+    <Icon name="script" size="medium" />
   </Header>;
 };

@@ -1,10 +1,10 @@
-import { Box, Container, Header, Icon, SpaceBetween } from '@cloudscape-design/components';
+import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 
-import { PreviewHeader } from '../common/headers/preview-header';
-import { LoadingPreview } from './previews/loading-preview';
+import { PreviewHeader } from '../../common/headers/preview-header';
+import { LoadingPreview } from '../previews/loading-preview';
 
 export const LoadingArticle = () => {
   useEffect(() => {

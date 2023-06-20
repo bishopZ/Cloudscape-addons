@@ -3,9 +3,9 @@ import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 
-import { PreviewHeader } from '../common/headers/preview-header';
-import { SourceHeader } from '../common/headers/source-header';
-import { EmptyPreview } from './previews/empty-preview';
+import { PreviewHeader } from '../../common/headers/preview-header';
+import { SourceHeader } from '../../common/headers/source-header';
+import { EmptyPreview } from '../previews/empty-preview';
 
 /* eslint-disable max-lines-per-function */
 export const EmptyArticle = () => {

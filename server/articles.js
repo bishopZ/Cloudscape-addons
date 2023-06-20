@@ -10,7 +10,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Details',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 1, 2021'),
+    publicationDate: new Date('Jun 2, 2021'),
     tenets: [2, 3],
     referenceComponent: 'Spinner',
     referenceLink: 'https://cloudscape.design/components/spinner/'
@@ -25,7 +25,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Helpers',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 3, 2021'),
+    publicationDate: new Date('Jun 4, 2021'),
     tenets: [0],
     referenceComponent: 'Icon',
     referenceLink: 'https://cloudscape.design/components/icon/'
@@ -40,7 +40,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Forms',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 14, 2021'),
+    publicationDate: new Date('Jun 17, 2021'),
     tenets: [0, 1, 3, 4],
     referenceComponent: 'Input',
     referenceLink: 'https://cloudscape.design/components/input/'
@@ -55,7 +55,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Details',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 12, 2021'),
+    publicationDate: new Date('Jun 16, 2021'),
     tenets: [0, 1],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
@@ -70,7 +70,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Helpers',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 2, 2021'),
+    publicationDate: new Date('Jun 3, 2021'),
     tenets: [0, 1, 2],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
@@ -85,14 +85,14 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Tables',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 4, 2021'),
+    publicationDate: new Date('Jun 5, 2021'),
     tenets: [2, 3],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html'
   },
   {
     slug: 'bridging-the-chasm',
-    title: 'Bridging the chasm: Unifying design and development',
+    title: 'Bridging the chasm: unifying design and development',
     description: 'Harmonious collaboration between design and development is crucial for crafting outstanding user experiences.',
     image: 'assets/chasm.jpg',
     format: 'Article',

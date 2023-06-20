@@ -20,6 +20,13 @@ import { HelpPanelContent } from './help-panel';
 import { Breadcrumbs, Navigation } from './navigation';
 
 const borderRadius = '0.26rem';
+const black = 'black';
+const darkGrey = 'black'; // = 'rgb(8 8 8)';
+const lightGrey = 'rgb(8 14 14)';
+
+const white = 'white';
+const offWhite = 'white'; // = 'rgb(247 247 247)';
+const darkWhite = 'rgb(241 241 247)';
 
 const theme: Theme = {
   tokens: {
@@ -41,17 +48,17 @@ const theme: Theme = {
     borderRadiusToken: borderRadius,
     borderRadiusTutorialPanelItem: borderRadius,
     colorBackgroundLayoutMain: {
-      light: 'rgb(241 241 247)',
-      dark: 'rgb(8 14 14)'
+      light: darkWhite,
+      dark: lightGrey
     },
-    colorTextAccent: { light: '#d37209' },
+    colorTextAccent: { light: '#c96709' },
     colorBackgroundContainerContent: {
-      light: 'rgb(255 255 255)',
-      dark: 'rgb(0 0 0)'
+      light: white,
+      dark: black
     },
     colorBackgroundContainerHeader: {
-      light: 'rgb(247 247 247)',
-      dark: 'rgb(8 8 8)'
+      light: offWhite ?? white,
+      dark: darkGrey ?? black
     },
   },
 };
@@ -73,6 +80,7 @@ const utilities = (path: string): Utilities[] => [
     text: '',
     description: '',
     iconName: 'user-profile',
+    iconAlt: 'User preferences',
     items: [{
       id: 'brightness',
       text: 'Brightness',
@@ -159,7 +167,7 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
         </Link>
         <Link href="#/docs">
           <Button variant={path.startsWith('/docs') ? 'normal' : 'link'}>
-            Cloudscape docs
+            Cloudscape addons
           </Button>
         </Link>
       </SpaceBetween>}

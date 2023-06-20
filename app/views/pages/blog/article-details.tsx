@@ -16,8 +16,8 @@ export const ArticleDetails = () => {
   return <Container header={<Header variant="h2">Details</Header>}>
     <ColumnLayout columns={3} borders="vertical">
       <SpaceBetween size="m">
-        <LabeledValue label="Vendor">{article?.vendor ?? <Dash />}</LabeledValue>
         <LabeledValue label="Discipline">{article?.discipline ?? <Dash />}</LabeledValue>
+        <LabeledValue label="Vendor">{article?.vendor ?? <Dash />}</LabeledValue>
       </SpaceBetween>
       <SpaceBetween size="m">
         <LabeledValue label="Type">{article?.format ?? <Dash />}</LabeledValue>
@@ -26,7 +26,7 @@ export const ArticleDetails = () => {
       </SpaceBetween>
       <SpaceBetween size="m">
         <LabeledValue label="Author">Bishop Zareh</LabeledValue>
-        <LabeledValue label="Last edited">{formatDate(article?.publicationDate)}</LabeledValue>
+        <LabeledValue label="Publication date">{formatDate(article?.publicationDate)}</LabeledValue>
       </SpaceBetween>
     </ColumnLayout>
   </Container>;

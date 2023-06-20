@@ -5,7 +5,7 @@ import React from 'react';
 export const BridgingTheChasmContent = () => {
   return <SpaceBetween size="m">
     <Container header={<Header variant="h2">Abstract</Header>}>
-      <SpaceBetween size="m">
+      <SpaceBetween size="xs">
         <Box variant="p">
         In the dynamic realm of software engineering, the harmonious collaboration
         between design and development is crucial for crafting outstanding user
@@ -22,7 +22,7 @@ export const BridgingTheChasmContent = () => {
     </Container>
     <Container
       header={<Header variant="h2">1. Introduction</Header>}>
-      <SpaceBetween size="m">
+      <SpaceBetween size="xs">
         <Box variant="p">
         The symbiotic relationship between design and development in the context of software engineering has been a subject of intrigue and challenge for professionals in the field. As the digital landscape continues to expand and diversify, the need to close the gap between these two vital disciplines has become increasingly pressing. This paper explores the current state of collaboration between design and development, proposing strategies to enhance their cohesion and empower organizations to deliver cutting-edge products and experiences.
         </Box>
@@ -32,7 +32,7 @@ export const BridgingTheChasmContent = () => {
       </SpaceBetween>
     </Container>
     <Container header={<Header variant="h2">2. Understanding the divide</Header>}>
-      <SpaceBetween size="m">
+      <SpaceBetween size="xs">
         <Header variant="h3">2.1 The language barrier</Header>
         <Box variant="p">
         Designers and developers often find themselves conversing in different languages, both literally and figuratively. Communication gaps arising from disparate terminologies, tools, and workflows hinder effective collaboration. Bridging this language barrier requires a shared vocabulary and an understanding of each discipline's fundamental principles.
@@ -47,7 +47,7 @@ export const BridgingTheChasmContent = () => {
       </SpaceBetween>
     </Container>
     <Container header={<Header variant="h2">3 Potential solutions</Header>}>
-      <SpaceBetween size="m">
+      <SpaceBetween size="xs">
         <Box variant="p">
         As the divide between designers and developers widens, designs often suffer from misinterpretation, compromises, or even loss. Hence, the question arises: How can we bridge this gap? While an ideal scenario would involve all designers having coding expertise and all developers possessing design skills, such a reality remains unrealistic.
         </Box>
@@ -65,29 +65,17 @@ export const BridgingTheChasmContent = () => {
         <Box variant="p">
         Figma is widely regarded as a robust and effective collaborative design tool by offering these features.
         </Box>
-        <Header variant="h3">3.2.1 Real-time collaboration</Header>
+        <Box variant="h4">3.2.1 Real-time collaboration</Box>
         <Box variant="p">
         Figma excels in enabling real-time collaboration among designers and developers. Multiple team members can work simultaneously on a project, making instant changes that are instantly visible to others. This promotes seamless collaboration, eliminates version control issues, and allows for quick feedback and iteration.
         </Box>
-        <Header variant="h3">3.2.2 Cloud-based platform</Header>
-        <Box variant="p">
-        Figma's cloud-based nature eliminates the need for file transfers or complex setup processes. Design files are stored in the cloud, accessible from anywhere, and can be easily shared with team members or stakeholders. This simplifies the workflow, facilitates cross-team collaboration, and ensures that everyone is working on the most up-to-date version of the design.
-        </Box>
-        <Header variant="h3">3.2.3 Shared design components and libraries</Header>
+        <Box variant="h4">3.2.2 Shared design components and libraries</Box>
         <Box variant="p">
         Figma allows the creation of design components and libraries that can be shared across projects and team members. This promotes consistency, efficiency, and scalability, as updates to shared components automatically propagate throughout the project. Designers and developers can collaborate on building and refining these components, ensuring a unified and coherent design system.
         </Box>
-        <Header variant="h3">3.2.4 Commenting and feedback</Header>
+        <Box variant="h4">3.2.3 Commenting and feedback</Box>
         <Box variant="p">
         Figma offers robust commenting and feedback features, enabling designers and developers to provide contextual feedback directly on specific design elements. This streamlines communication, reduces the need for separate communication channels, and ensures that feedback is captured within the design itself, fostering a more iterative and collaborative design process.
-        </Box>
-        <Header variant="h3">3.2.5 Developer-friendly features</Header>
-        <Box variant="p">
-        Figma recognizes the importance of bridging the gap between design and development. It offers features specifically tailored to developers, such as inspect mode, which allows developers to inspect design elements and extract relevant CSS properties, measurements, and assets. This facilitates a smoother handoff between design and development, promoting better understanding and implementation of the design intent.
-        </Box>
-        <Header variant="h3">3.2.6 Integrations and plugins</Header>
-        <Box variant="p">
-        Figma supports a wide range of integrations and plugins, allowing designers and developers to extend its functionality and integrate it with other tools and platforms. This flexibility enables teams to tailor Figma to their specific workflows, integrate with project management systems, version control systems, and design handoff platforms, further enhancing collaboration and productivity.
         </Box>
         <Header variant="h3">3.3 Foster design and development workshops</Header>
         <Box variant="p">
@@ -104,7 +92,7 @@ export const BridgingTheChasmContent = () => {
       </SpaceBetween>
     </Container>
     <Container header={<Header variant="h2">4 Conclusion</Header>}>
-      <SpaceBetween size="m">
+      <SpaceBetween size="xs">
         <Box variant="p">
         Bridging the gap between designers and developers in the digital landscape necessitates effective communication, platform understanding, collaborative design tools, design and development workshops, iterative collaboration, and cross-disciplinary training. By adopting these strategies, designers and developers can foster a cohesive and productive partnership, resulting in the creation of exceptional user experiences that embody the designer's vision.
         </Box>

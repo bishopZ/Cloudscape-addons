@@ -1,12 +1,12 @@
-import { Box, Container, Header, Icon, SpaceBetween } from '@cloudscape-design/components';
+import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 
-import { PreviewHeader } from '../common/headers/preview-header';
-import { SourceHeader } from '../common/headers/source-header';
-import { LabeledContent } from './common/labeled-content';
-import { InputPreview } from './previews/input-preview';
+import { PreviewHeader } from '../../common/headers/preview-header';
+import { SourceHeader } from '../../common/headers/source-header';
+import { LabeledContent } from '../common/labeled-content';
+import { InputPreview } from '../previews/input-preview';
 
 /* eslint-disable max-lines-per-function */
 export const InputArticle = () => {
