@@ -1,4 +1,4 @@
-import { Box, Header, HelpPanel, SpaceBetween } from '@cloudscape-design/components';
+import { Box, Button, Header, HelpPanel, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
@@ -49,6 +49,14 @@ export const HelpPanelContent = () => {
 
       That's how we make creating great experiences, a better experience.
       </Box>
+      <Button
+        href="https://stellarelements.com/work"
+        iconName="external"
+        iconAlign="right"
+        variant="primary"
+        target="_blank">
+          See our work
+      </Button>
     </SpaceBetween>
   </HelpPanel>;
 };

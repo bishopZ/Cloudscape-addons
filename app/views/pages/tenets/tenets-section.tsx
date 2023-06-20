@@ -18,7 +18,7 @@ export const TenetsSection = () => {
     header={
       <Header
         variant="h2"
-        actions={<Link href="#/docs/philosophy">
+        actions={<Link href="#/docs/core-tenets">
           <Button variant="link">
             See all
           </Button>

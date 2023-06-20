@@ -26,7 +26,7 @@ const blogNav: SidenavItem[] = [
 
 const docsNav: SidenavItem[] = [
   { type: 'link', text: 'Getting started', href: '#/docs' },
-  { type: 'link', text: 'Core Tenets', href: '#/docs/philosophy' },
+  { type: 'link', text: 'Core Tenets', href: '#/docs/core-tenets' },
   {
     type: 'section', text: 'Components', items: []
   }

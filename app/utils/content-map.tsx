@@ -8,7 +8,7 @@ import { BridgingTheChasmContent } from '/views/articles/content/bridging-the-ch
 import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
-  'philosophy': TenetsPage,
+  'core-tenets': TenetsPage,
   'icon-map': IconMapArticle,
   'loading-states': LoadingArticle,
   'labeled-input': InputArticle,
