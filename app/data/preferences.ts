@@ -16,8 +16,13 @@ export const PREFERENCES = {
 
 export type Namespace = ValueOf<typeof PREFERENCES>
 
+type GlobalPreference = 'brightness' | 'density' | 'motion'
+
 const initialState = {
   initialized: false,
+  brightness: 'auto',
+  density: 'comfort',
+  motion: 'on',
   [PREFERENCES.ARTICLES]: {
     pageSizes: [5, 25, 50],
     pageSize: 50,
@@ -54,16 +59,23 @@ const update = (state: State, action: PayloadAction<{ preferences: Preference, m
   return state;
 };
 
+const changePref = (state: State, action: PayloadAction<{ name: GlobalPreference, value: string}>) => {
+  const { name, value } = action.payload;
+  state[name] = value;
+  saveLocalStorage(PREFERNCE_STORAGE_KEY, state);
+};
+
 export const preferences = createSlice({
   name: 'preferences',
   initialState,
   reducers: {
     setPreferences: set,
-    updatePreferences: update
+    updatePreferences: update,
+    changePreference: changePref
   },
 });
 
-export const { setPreferences, updatePreferences } = preferences.actions;
+export const { setPreferences, updatePreferences, changePreference } = preferences.actions;
 
 export const initPreferences = (dispatch: Dispatch) => {
   const preferences = loadLocalStorage(PREFERNCE_STORAGE_KEY);

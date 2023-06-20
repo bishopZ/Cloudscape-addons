@@ -1,118 +1,25 @@
-import type { AppLayoutProps, TopNavigationProps } from '@cloudscape-design/components';
+import type { AppLayoutProps } from '@cloudscape-design/components';
 import {
-  AppLayout, Button, Flashbar, Icon, Link, SpaceBetween, TopNavigation
+  AppLayout, Button, Flashbar, Link, SpaceBetween, TopNavigation
 } from '@cloudscape-design/components';
-import type { Theme } from '@cloudscape-design/components/theming';
 import { applyTheme } from '@cloudscape-design/components/theming';
 import { applyDensity, applyMode, Density, disableMotion, Mode } from '@cloudscape-design/global-styles';
 import React, { useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
+import { LoadingSpinner } from '/addons/details/loading';
 import { layoutLabels } from '/addons/helpers/a11y-helpers';
 import { topNavStrings } from '/addons/helpers/i18n-helpers';
 import type { Breadcrumb, ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
 import { useAppDispatch, useAppSelector } from '/data/data-store';
 import { clearNotifications, selectNotifications } from '/data/notifications';
+import { initPreferences, selectPreferences } from '/data/preferences';
 import { POST_TITLE } from '/utils/constants';
 
 import { Footer } from './footer';
 import { HelpPanelContent } from './help-panel';
+import { theme, topNav, utilities } from './layout-data';
 import { Breadcrumbs, Navigation } from './navigation';
-
-const borderRadius = '0.26rem';
-const black = 'black';
-const darkGrey = 'black'; // = 'rgb(8 8 8)';
-const lightGrey = 'rgb(8 14 14)';
-
-const white = 'white';
-const offWhite = 'white'; // = 'rgb(247 247 247)';
-const darkWhite = 'rgb(241 241 247)';
-
-const theme: Theme = {
-  tokens: {
-    fontFamilyBase: 'Avenir, "Open Sans", "Helvetica Neue", Roboto, Arial, sans-serif',
-    borderRadiusAlert: borderRadius,
-    borderRadiusBadge: borderRadius,
-    borderRadiusButton: borderRadius,
-    borderRadiusCalendarDayFocusRing: borderRadius,
-    borderRadiusContainer: borderRadius,
-    borderRadiusControlCircularFocusRing: borderRadius,
-    borderRadiusControlDefaultFocusRing: borderRadius,
-    borderRadiusDropdown: borderRadius,
-    borderRadiusFlashbar: borderRadius,
-    borderRadiusItem: borderRadius,
-    borderRadiusInput: borderRadius,
-    borderRadiusPopover: borderRadius,
-    borderRadiusTabsFocusRing: borderRadius,
-    borderRadiusTiles: borderRadius,
-    borderRadiusToken: borderRadius,
-    borderRadiusTutorialPanelItem: borderRadius,
-    colorBackgroundLayoutMain: {
-      light: darkWhite,
-      dark: lightGrey
-    },
-    colorTextAccent: { light: '#c96709' },
-    colorBackgroundContainerContent: {
-      light: white,
-      dark: black
-    },
-    colorBackgroundContainerHeader: {
-      light: offWhite ?? white,
-      dark: darkGrey ?? black
-    },
-  },
-};
-
-const topNav: TopNavigationProps.Identity = {
-  href: '#/',
-  title: 'Stellar Addons',
-  logo: {
-    src: 'assets/favicon.png',
-    alt: 'Stellar addons logo'
-  }
-};
-
-type Utilities = TopNavigationProps.ButtonUtility | TopNavigationProps.MenuDropdownUtility
-
-const utilities = (path: string): Utilities[] => [
-  {
-    type: 'menu-dropdown',
-    text: '',
-    description: '',
-    iconName: 'user-profile',
-    iconAlt: 'User preferences',
-    items: [{
-      id: 'brightness',
-      text: 'Brightness',
-      items: [{
-        id: 'light-mode',
-        text: <><Icon name={undefined} />&nbsp;Light</> as unknown as string,
-        href: '#/enable-light'
-      }, {
-        id: 'dark-mode',
-        text: <><Icon name="check" />&nbsp;Dark</> as unknown as string,
-        href: '#/enable-dark'
-      }, {
-        id: 'auto-mode',
-        text: <><Icon name={undefined} />&nbsp;Auto</> as unknown as string,
-        href: '#/enable-auto'
-      }]
-    },
-    {
-      id: 'density',
-      text: 'Density',
-      items: [{
-        id: 'compact-mode',
-        text: <><Icon name="check" />&nbsp;Compact</> as unknown as string,
-        href: '#/enable-compact'
-      }, {
-        id: 'confort-mode',
-        text: <><Icon name={undefined} />&nbsp;Comfort</> as unknown as string,
-        href: '#/enable-comfort'
-      }]
-    }]
-  }
-];
 
 type Props = {
   children: React.ReactNode
@@ -130,14 +37,42 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
   const params = useParams();
   const path = location.pathname;
 
+  const { initialized, brightness, density, motion } = useAppSelector(selectPreferences);
+
+  console.log(brightness);
   useEffect(() => {
-    disableMotion(false);
-    // applyMode(Mode.Dark);
-    // applyDensity(Density.Compact);
-    applyMode(Mode.Light);
+    if (!initialized) void dispatch(initPreferences);
+  }, [initialized]);
+
+  useEffect(() => {
     applyTheme({ theme });
-    applyDensity(Density.Comfortable);
-  }, []);
+
+    if (brightness === 'light') {
+      applyMode(Mode.Light);
+    }
+    if (brightness === 'dark') {
+      applyMode(Mode.Dark);
+    }
+    if (brightness === 'auto') {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        applyMode(Mode.Dark);
+      } else {
+        applyMode(Mode.Light);
+      }
+    }
+
+    if (density === 'compact') {
+      applyDensity(Density.Compact);
+    } else {
+      applyDensity(Density.Comfortable);
+    }
+
+    if (motion === 'off') {
+      disableMotion(true);
+    } else {
+      disableMotion(false);
+    }
+  }, [initialized, brightness, density, motion]);
 
   useEffect(() => {
     if (lastPath !== path) {
@@ -154,10 +89,14 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
     if (document.title !== displayTitle) document.title = displayTitle;
   }, [title]);
 
+  if (!initialized) return <LoadingSpinner />;
+
+  const utils = utilities({ brightness, density, motion }, dispatch);
+
   return <>
     <TopNavigation
       identity={topNav}
-      utilities={utilities(path)}
+      utilities={utils}
       i18nStrings={topNavStrings}
       search={<SpaceBetween size="s" direction="horizontal">
         <Link href="#/">
@@ -185,22 +124,3 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
     <Footer />
   </>;
 };
-// {
-//   type: 'button',
-//   text: 'Blog',
-//   href: '#/',
-//   variant: path === '/' ? 'primary-button' : undefined
-// },
-// {
-//   type: 'button',
-//   text: 'Docs',
-//   href: '#/docs',
-//   variant: path === '/docs' ? 'primary-button' : undefined
-// },
-// {
-//   type: 'button',
-//   text: 'Github',
-//   href: 'https://github.com/',
-//   external: true,
-//   externalIconAriaLabel
-// },
