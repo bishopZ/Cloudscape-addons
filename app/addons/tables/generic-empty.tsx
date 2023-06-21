@@ -20,17 +20,14 @@ export const GenericEmpty = (props: Props) => {
 
   return <SpaceBetween size="s">
     <Box
-      variant="div"
       margin={Spacing.TopM}
       fontWeight="bold">
       {title}
     </Box>
-    <Box variant="div">
+    <Box>
       {description}
     </Box>
-    <Box
-      variant="div"
-      margin={Spacing.TopS}>
+    <Box margin={Spacing.TopS}>
       <Button onClick={onClick}>
         {buttonName}
       </Button>

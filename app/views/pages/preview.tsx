@@ -12,7 +12,7 @@ import { LabeledSelect } from '/addons/forms/labeled-select';
 import { LabeledTextarea } from '/addons/forms/labeled-textarea';
 import { LabeledTiles } from '/addons/forms/labeled-tiles';
 import { LabeledToggle } from '/addons/forms/labeled-toggle';
-import { UnsavedChanges } from '/addons/forms/unsaved-changes';
+import { UnsavedChangesModal } from '/addons/forms/unsaved-changes';
 import { IconMap } from '/addons/helpers/icon-map';
 import { GenericEmpty } from '/addons/tables/generic-empty';
 
@@ -20,6 +20,7 @@ import { EmptyPreview } from '../articles/previews/empty-preview';
 import { InputPreview } from '../articles/previews/input-preview';
 import { LoadingPreview } from '../articles/previews/loading-preview';
 import { NumberPreview } from '../articles/previews/number-preview';
+import { UnsavedPreview } from '../articles/previews/unsaved-preview';
 
 export const Preview = () => {
   return <ContentLayout
@@ -51,6 +52,11 @@ export const Preview = () => {
       }>
         <InputPreview />
       </Container>
+      <Container header={
+        <Header variant="h2">Unsaved changes modal</Header>
+      }>
+        <UnsavedPreview />
+      </Container>
       <LabeledValue label="">test</LabeledValue>
       <LabeledSelect onChange={() => {}} empty={''} />
       <ExternalLink href={''}>Link</ExternalLink>
@@ -61,7 +67,6 @@ export const Preview = () => {
       <LabeledToggle checked={false} onChange={() => {}}>On</LabeledToggle>
       <LabeledRadioGroup value={''} items={[]} onChange={() => {}} />
       <LabeledTiles value={null} items={[]} onChange={() => {}} />
-      <UnsavedChanges visible={false} onDismiss={() => {}} onLeave={() => {}} />
       <GenericEmpty
         title={''}
         description={''}

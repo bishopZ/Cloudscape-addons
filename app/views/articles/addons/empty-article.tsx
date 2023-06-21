@@ -2,6 +2,7 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { SourceCodeSection } from '/views/common/source-code-section';
 
 import { PreviewHeader } from '../../common/headers/preview-header';
 import { SourceHeader } from '../../common/headers/source-header';
@@ -70,6 +71,13 @@ onClick = () => { window.location.reload() }`}</code></pre>
   buttonName="Clear filter"
   onClick={() => { clear() }}
 />;`}</code></pre>
+      </SpaceBetween>
+    </Container>
+    <Container
+      header={<Header variant="h2">
+        Implementation example
+      </Header>}>
+      <SpaceBetween size="m">
         <Box variant="p">
           Both components can be used with the Collection Hooks like this.
         </Box>
@@ -94,9 +102,7 @@ return <Table
 />`}</code></pre>
       </SpaceBetween>
     </Container>
-    <Container header={<SourceHeader />}>
-      <pre><code className="language-javascript">
-        {`import { Box, Button, SpaceBetween } from '@cloudscape-design/components';
+    <SourceCodeSection source={`import { Box, Button, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
 import { Spacing } from '/addons/helpers/spacing-constants';
@@ -118,17 +124,14 @@ export const GenericEmpty = (props: Props) => {
 
   return <SpaceBetween size="s">
     <Box
-      variant="div"
       margin={Spacing.TopM}
       fontWeight="bold">
       {title}
     </Box>
-    <Box variant="div">
+    <Box>
       {description}
     </Box>
-    <Box
-      variant="div"
-      margin={Spacing.TopS}>
+    <Box margin={Spacing.TopS}>
       <Button onClick={onClick}>
         {buttonName}
       </Button>
@@ -145,8 +148,7 @@ export const NoMatch = ({ clear }: NoMatchProps) => <GenericEmpty
   description="We couldn't find a match."
   buttonName="Clear filter"
   onClick={() => { clear() }}
-/>;`}</code></pre>
-    </Container>
+/>;`} />
     <Container header={<PreviewHeader />}>
       <EmptyPreview />
     </Container>

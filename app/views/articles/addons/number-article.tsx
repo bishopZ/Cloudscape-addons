@@ -2,6 +2,7 @@ import { Box, Container, Header, Link, SpaceBetween } from '@cloudscape-design/c
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { SourceCodeSection } from '/views/common/source-code-section';
 
 import { PreviewHeader } from '../../common/headers/preview-header';
 import { SourceHeader } from '../../common/headers/source-header';
@@ -74,9 +75,7 @@ const {
 </Box>`}</code></pre>
       </SpaceBetween>
     </Container>
-    <Container
-      header={<SourceHeader />}>
-      <pre><code className="language-javascript">{`import type { BoxProps } from '@cloudscape-design/components';
+    <SourceCodeSection source={`import type { BoxProps } from '@cloudscape-design/components';
 import { Box, FormField } from '@cloudscape-design/components';
 import React from 'react';
 
@@ -128,8 +127,7 @@ export const LabeledNumber = (props: Props) => {
         : number ?? <Dash />}
     </Box>
   </FormField>;
-};`}</code></pre>
-    </Container>
+};`} />
     <Container
       header={<PreviewHeader />}>
       <NumberPreview />

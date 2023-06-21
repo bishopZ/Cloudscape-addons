@@ -2,6 +2,7 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { SourceCodeSection } from '/views/common/source-code-section';
 
 import { SourceHeader } from '../../common/headers/source-header';
 
@@ -49,8 +50,7 @@ XXL: { horizontal: 'xxl', vertical: 'xxl' },`}</code></pre>
         </Box>
       </SpaceBetween>
     </Container>
-    <Container header={<SourceHeader />}>
-      <pre><code className="language-javascript">{`import type { BoxProps } from '@cloudscape-design/components';
+    <SourceCodeSection source={`import type { BoxProps } from '@cloudscape-design/components';
 
 const SpacingConstant = {
   TopN: { top: 'n' },
@@ -118,7 +118,7 @@ const SpacingConstant = {
 
 };
 
-export const Spacing = SpacingConstant as Record<keyof typeof SpacingConstant, BoxProps.Spacing>;`}</code></pre>
-    </Container>
+export const Spacing = SpacingConstant as Record<keyof typeof SpacingConstant, BoxProps.Spacing>;`}
+    />
   </SpaceBetween>;
 };

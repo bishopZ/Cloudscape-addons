@@ -16,3 +16,7 @@ footer {
     width: 100%;
   }
 }
+
+[class^='awsui_card-header_'], [class*=' awsui_card-header_'] {
+  min-height: 3.1rem;
+}

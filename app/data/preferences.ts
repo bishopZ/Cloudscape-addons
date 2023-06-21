@@ -24,12 +24,12 @@ const initialState = {
   density: 'comfort',
   motion: 'on',
   [PREFERENCES.ARTICLES]: {
-    pageSizes: [5, 25, 50],
+    pageSizes: [10, 45, 100],
     pageSize: 50,
     wrapLines: false,
-    columnWidth: [220, 180, 0, 0, 0, 0], // for all columns
+    columnWidth: [250, 165, 0, 0, 150, 0], // for all columns
     contentSelection: [ // for visible columns
-      'title', 'publicationDate', 'section'
+      'title', 'publicationDate', 'section', 'topic', 'discipline'
     ]
   }
 };

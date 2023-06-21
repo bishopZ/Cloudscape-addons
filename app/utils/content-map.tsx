@@ -5,6 +5,7 @@ import { LabeledValueArticle } from '/views/articles/addons/labeled-value-articl
 import { LoadingArticle } from '/views/articles/addons/loading-article';
 import { NumberArticle } from '/views/articles/addons/number-article';
 import { SpacingConstants } from '/views/articles/addons/spacing-article';
+import { UnsavedArticle } from '/views/articles/addons/unsaved-article';
 import { AnatomyArticle } from '/views/articles/content/anatomy-article';
 import { BridgingTheChasmContent } from '/views/articles/content/bridging-the-chasm';
 import { DocumentingArticle } from '/views/articles/content/documenting-article';
@@ -20,6 +21,7 @@ export const CONTENT_MAP = {
   'spacing-constants': SpacingConstants,
   'labeled-value': LabeledValueArticle,
   'generic-empty': EmptyArticle,
+  'unsaved-changes-modal': UnsavedArticle,
 
   'bridging-the-chasm': BridgingTheChasmContent,
   'anatomy-of-a-design-system': AnatomyArticle,

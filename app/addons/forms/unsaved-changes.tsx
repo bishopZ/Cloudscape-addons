@@ -1,40 +1,36 @@
-import { Alert, Box, Button, Modal } from '@cloudscape-design/components';
+import { Alert, Box, Button, Modal, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
 type Props = {
   visible: boolean
   onDismiss: () => void
-  onLeave: () => void
+  onConfirm: () => void
 }
 
-export const UnsavedChanges = (props: Props) => {
+export const UnsavedChangesModal = (props: Props) => {
   const {
     visible,
-    onDismiss, onLeave
+    onDismiss, onConfirm
   } = props;
+
+  const Footer = () => <Box variant="span" float="right">
+    <SpaceBetween size="s" direction="horizontal">
+      <Button onClick={onDismiss} variant="link">
+        Cancel
+      </Button>
+      <Button onClick={onConfirm} variant="primary">
+        Exit
+      </Button>
+    </SpaceBetween>
+  </Box>;
 
   return <Modal
     visible={visible}
     header={'Unsaved changes'}
     onDismiss={onDismiss}
-    footer={
-      <Box
-        variant="span"
-        float="right">
-        <Button
-          onClick={onDismiss}
-          variant="link">
-          Cancel
-        </Button>
-        <Button
-          onClick={onLeave}
-          variant="primary">
-          Leave
-        </Button>
-      </Box>
-    }>
+    footer={<Footer />}>
     <Alert type="warning">
-      You have unsaved changes. If you leave, your changes will be lost. Continue?
+      You have unsaved changes. If you leave now, your changes will be lost. Continue?
     </Alert>
   </Modal>;
 };

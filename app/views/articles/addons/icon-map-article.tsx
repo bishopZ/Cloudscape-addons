@@ -5,6 +5,7 @@ import { ExternalLink } from '/addons/details/external-link';
 import { IconMap } from '/addons/helpers/icon-map';
 import { PreviewHeader } from '/views/common/headers/preview-header';
 import { SourceHeader } from '/views/common/headers/source-header';
+import { SourceCodeSection } from '/views/common/source-code-section';
 
 
 export const IconMapArticle = () => {
@@ -36,9 +37,7 @@ export const IconMapArticle = () => {
         a developer tool to speed the process of identifing a particular icon's name.
       </Box>
     </Container>
-    <Container header={<SourceHeader />}>
-      <pre><code className="language-javascript">
-        {`import { Box, Grid, Icon, SpaceBetween } from '@cloudscape-design/components';
+    <SourceCodeSection source={`import { Box, Grid, Icon, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
 import { Spacing } from './spacing-constants';
@@ -77,8 +76,8 @@ export const IconMap = () => {
       )}
     </Grid>
   </Box>;
-};`}</code></pre>
-    </Container>
+};`}
+    />
     <Container header={<PreviewHeader />}>
       <IconMap />
     </Container>

@@ -2,6 +2,7 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { SourceCodeSection } from '/views/common/source-code-section';
 
 import { PreviewHeader } from '../../common/headers/preview-header';
 import { SourceHeader } from '../../common/headers/source-header';
@@ -123,9 +124,7 @@ optional = false,`}</code></pre>
 `}</code></pre>
       </SpaceBetween>
     </Container>
-    <Container header={<SourceHeader />}>
-      <pre><code className="language-javascript">
-        {`import type { InputProps } from '@cloudscape-design/components';
+    <SourceCodeSection source={`import type { InputProps } from '@cloudscape-design/components';
 import { FormField, Input } from '@cloudscape-design/components';
 import React from 'react';
 
@@ -216,8 +215,7 @@ export const LabeledInput = (props: Props) => {
       onKeyUp={onKeyUp}
     />
   </FormField>;
-};`}</code></pre>
-    </Container>
+};`} />
     <Container header={<PreviewHeader />}>
       <InputPreview />
     </Container>

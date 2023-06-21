@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { ExternalLink } from '/addons/details/external-link';
 import { PreviewHeader } from '/views/common/headers/preview-header';
 import { SourceHeader } from '/views/common/headers/source-header';
+import { SourceCodeSection } from '/views/common/source-code-section';
 
 import { InputPreview } from '../previews/input-preview';
 
@@ -36,9 +37,7 @@ export const LabeledValueArticle = () => {
         </Box>
       </SpaceBetween>
     </Container>
-    <Container header={<SourceHeader />}>
-      <pre><code className="language-javascript">
-        {`import { Box } from '@cloudscape-design/components';
+    <SourceCodeSection source={`import { Box } from '@cloudscape-design/components';
 import React from 'react';
 
 type KeyValueProps = {
@@ -50,8 +49,6 @@ export const LabeledValue = ({ label, children }: KeyValueProps) =>
   <Box>
     <Box variant="awsui-key-label">{label}</Box>
     <Box>{children}</Box>
-  </Box>;`}
-      </code></pre>
-    </Container>
+  </Box>;`} />
   </SpaceBetween>;
 };

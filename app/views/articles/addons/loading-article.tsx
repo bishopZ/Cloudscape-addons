@@ -2,6 +2,7 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { SourceCodeSection } from '/views/common/source-code-section';
 
 import { PreviewHeader } from '../../common/headers/preview-header';
 import { LoadingPreview } from '../previews/loading-preview';
@@ -49,8 +50,8 @@ export const LoadingArticle = () => {
         optional media name. It can be used as the generic interface for
         the state of your app while data is being fetched.
       </Box>
-      <pre><code className="language-javascript">
-        {`import { Spinner } from '@cloudscape-design/components';
+    </Container>
+    <SourceCodeSection source={`import { Spinner } from '@cloudscape-design/components';
 import React from 'react';
 
 export const Dash = () => <>&ndash;</>;
@@ -61,10 +62,7 @@ export const LoadingSpinner = ({ mediaName }: Props) => <>
   <Spinner />
   <>&nbsp;</>
   Loading {mediaName ?? ''}
-</>;
-`}
-      </code></pre>
-    </Container>
+</>;`} />
     <Container header={<PreviewHeader />}>
       <LoadingPreview />
     </Container>
