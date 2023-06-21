@@ -9,6 +9,7 @@ import { UnsavedArticle } from '/views/articles/addons/unsaved-article';
 import { AnatomyArticle } from '/views/articles/content/anatomy-article';
 import { BridgingTheChasmContent } from '/views/articles/content/bridging-the-chasm';
 import { DocumentingArticle } from '/views/articles/content/documenting-article';
+import { LifecycleArticle } from '/views/articles/content/lifecycle-article';
 import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
@@ -26,6 +27,7 @@ export const CONTENT_MAP = {
   'bridging-the-chasm': BridgingTheChasmContent,
   'anatomy-of-a-design-system': AnatomyArticle,
   'documenting-a-design-system': DocumentingArticle,
+  'design-system-lifecycle': LifecycleArticle,
 } as const;
 
 export type CONTENT_KEYS = keyof typeof CONTENT_MAP

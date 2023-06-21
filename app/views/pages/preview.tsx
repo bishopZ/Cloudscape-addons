@@ -12,7 +12,6 @@ import { LabeledSelect } from '/addons/forms/labeled-select';
 import { LabeledTextarea } from '/addons/forms/labeled-textarea';
 import { LabeledTiles } from '/addons/forms/labeled-tiles';
 import { LabeledToggle } from '/addons/forms/labeled-toggle';
-import { UnsavedChangesModal } from '/addons/forms/unsaved-changes';
 import { IconMap } from '/addons/helpers/icon-map';
 import { GenericEmpty } from '/addons/tables/generic-empty';
 

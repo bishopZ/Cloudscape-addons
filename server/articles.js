@@ -156,6 +156,18 @@ module.exports = () => [
     author: 'Chad Lumley & Bishop Zareh',
     publicationDate: new Date('Jun 5, 2021'),
   },
+  {
+    slug: 'design-system-lifecycle',
+    title: 'What is the lifecycle of a design system?',
+    description: 'Explores the stages of a design system\'s maturity.',
+    image: 'assets/chasm.jpg',
+    format: 'Article',
+    topic: 'Design Systems',
+    discipline: 'Design',
+    section: 'Delivery',
+    author: 'Chad Lumley & Bishop Zareh',
+    publicationDate: new Date('Jun 7, 2021'),
+  },
 ] .filter(item => {
   if (!item.publicationDate) return false;
   const today = new Date();
