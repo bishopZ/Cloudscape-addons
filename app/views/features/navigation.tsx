@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
 import { LoadingSpinner } from '/addons/details/loading';
+import { capitalize } from '/addons/helpers/string-utils';
 import { initArticles, selectArticles } from '/data/articles';
 
 import type { Breadcrumb, ParamBreadcrumb } from '../../addons/helpers/type-helpers';
@@ -27,9 +28,6 @@ const blogNav: SidenavItem[] = [
 const docsNav: SidenavItem[] = [
   { type: 'link', text: 'Getting started', href: '#/docs' },
   { type: 'link', text: 'Core Tenets', href: '#/docs/core-tenets' },
-  {
-    type: 'section', text: 'Components', items: []
-  }
 ];
 
 export const Navigation = () => {
@@ -38,16 +36,29 @@ export const Navigation = () => {
   const isDocs = location.pathname.indexOf('/docs') !== -1;
   const { initialized, items } = useAppSelector(selectArticles);
 
-  // TODO move to the reducer
-  const section = docsNav[2] as SideNavigationProps.Section;
-  section.items = items
-    .filter(item => item.format === 'Documentation')
-    .map(item => ({
-      type: 'link',
-      text: item.title,
-      href: `#/docs/${item.slug}`
-    } as SideNavigationProps.Link))
-    .sort((a, b) => a.text.localeCompare(b.text));
+  const docArticles = items.filter(item => item.format === 'Documentation');
+
+  const types = docArticles.reduce((memo, doc) => {
+    if (memo.indexOf(doc.section) === -1) memo.push(doc.section);
+    return memo;
+  }, [] as string[]);
+
+  types
+    .sort((a, b) => a.localeCompare(b))
+    .forEach(type => {
+      docsNav.push({
+        type: 'section',
+        text: capitalize(type),
+        items: docArticles
+          .filter(item => item.section === type)
+          .map(item => ({
+            type: 'link',
+            text: item.title,
+            href: `#/docs/${item.slug}`
+          } as SideNavigationProps.Link))
+          .sort((a, b) => a.text.localeCompare(b.text))
+      });
+    });
 
   useEffect(() => {
     if (!initialized) void dispatch(initArticles);
@@ -68,7 +79,7 @@ type Props = {
 
 export const Breadcrumbs = (props: Props) => {
   const { items } = props;
-  const dispatch = useAppDispatch();
+  // const dispatch = useAppDispatch();
   const params = useParams();
   const location = useLocation();
   const formattedBreadcrumbs = items.map(crumb => {
@@ -87,7 +98,7 @@ export const Breadcrumbs = (props: Props) => {
         : []
     }
     onFollow={() => {
-      // TODO clear selection
+      // clear selection
     }}
   />;
 };
