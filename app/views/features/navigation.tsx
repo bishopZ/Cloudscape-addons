@@ -4,13 +4,14 @@ import React, { useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
 import { LoadingSpinner } from '/addons/details/loading';
-import { capitalize } from '/addons/helpers/string-utils';
 import { initArticles, selectArticles } from '/data/articles';
 
 import type { Breadcrumb, ParamBreadcrumb } from '../../addons/helpers/type-helpers';
 import { useAppDispatch, useAppSelector } from '../../data/data-store';
 
 type SidenavItem = SideNavigationProps.Section | SideNavigationProps.Link;
+
+export const capitalize = (value: string) => value.replace(value[0], value[0].toUpperCase());
 
 const blog: SidenavItem = {
   type: 'link', text: 'Blog', href: '#/'
@@ -25,17 +26,16 @@ const blogNav: SidenavItem[] = [
   { type: 'link', text: 'Addons gallery', href: '#/blog/gallery' },
 ];
 
-const docsNav: SidenavItem[] = [
-  { type: 'link', text: 'Getting started', href: '#/docs' },
-  { type: 'link', text: 'Core Tenets', href: '#/docs/core-tenets' },
-];
-
 export const Navigation = () => {
   const dispatch = useAppDispatch();
   const location = useLocation();
   const isDocs = location.pathname.indexOf('/docs') !== -1;
   const { initialized, items } = useAppSelector(selectArticles);
 
+  const docsNav: SidenavItem[] = [
+    { type: 'link', text: 'Getting started', href: '#/docs' },
+    { type: 'link', text: 'Core Tenets', href: '#/docs/core-tenets' },
+  ];
   const docArticles = items.filter(item => item.format === 'Documentation');
 
   const types = docArticles.reduce((memo, doc) => {
