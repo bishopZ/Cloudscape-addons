@@ -16,7 +16,6 @@ import { clearNotifications, selectNotifications } from '/data/notifications';
 import { initPreferences, selectPreferences } from '/data/preferences';
 import { POST_TITLE } from '/utils/constants';
 
-import { Footer } from './footer';
 import { HelpPanelContent } from './help-panel';
 import { theme, topNav, utilities } from './layout-data';
 import { Breadcrumbs, Navigation } from './navigation';
@@ -121,6 +120,5 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
       footerSelector="footer"
       content={children}
     />
-    <Footer />
   </>;
 };

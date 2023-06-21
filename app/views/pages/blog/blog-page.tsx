@@ -2,6 +2,7 @@ import { useCollection } from '@cloudscape-design/collection-hooks';
 import type { TableProps } from '@cloudscape-design/components';
 import { Pagination, Table, TextFilter } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 import { GenericError } from '/addons/details/generic-error';
 import { LoadingSpinner } from '/addons/details/loading';
@@ -19,9 +20,8 @@ import { TABLE_COLUMNS } from './table-data';
 
 export const Blog = () => {
   const dispatch = useAppDispatch();
+  const params = useParams();
   const { initialized, items: articles, error } = useAppSelector(selectArticles);
-
-  console.log(articles);
 
   useEffect(() => {
     if (!initialized) void dispatch(initArticles);
@@ -51,6 +51,7 @@ export const Blog = () => {
 
   const collectionSettings = {
     filtering: {
+      defaultFilteringText: params.filter ?? '',
       empty: TableFooter,
       noMatch: <NoMatch clear={() => { actions.setFiltering('') }} />,
     },

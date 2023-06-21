@@ -37,12 +37,16 @@ const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
     }, {
       id: 'topic',
       header: 'Topic',
-      content: item => item.topic ?? <Dash />,
+      content: item => <Link href={`#/blog/search/${item.topic}`}>
+        {item.topic ?? <Dash />}
+      </Link>,
       width: 33
     }, {
       id: 'section',
       header: 'Section',
-      content: item => item.section ?? <Dash />,
+      content: item => <Link href={`#/blog/search/${item.section}`}>
+        {item.section ?? <Dash />}
+      </Link>,
       width: 33
     }],
 };

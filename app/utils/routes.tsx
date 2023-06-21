@@ -37,6 +37,14 @@ export const ROUTES = (): RouteProps[] => [
     ]
   },
   {
+    path: '/blog/search/:filter',
+    title: 'Articles',
+    contentType: 'default',
+    component: Blog,
+    breadcrumbs: [
+      { text: 'Search', href: '' }
+    ]
+  }, {
     path: '/blog/search',
     title: 'Articles',
     contentType: 'default',

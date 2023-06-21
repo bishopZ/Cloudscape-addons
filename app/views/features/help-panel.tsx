@@ -1,18 +1,35 @@
-import { Box, Button, Header, HelpPanel, SpaceBetween } from '@cloudscape-design/components';
+import { Box, Button, Header, HelpPanel, Link, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { Spacing } from '/addons/helpers/spacing-constants';
 
 export const HelpPanelContent = () => {
   return <HelpPanel header={<Box variant="h2">What is this?</Box>}>
     <SpaceBetween size="s">
       <Box variant="p">
-      Cloudscape Addons is an exciting addition to
+        Cloudscape Addons is an exciting addition to
         <ExternalLink href="https://cloudscape.design/">Amazon's Cloudscape design system.</ExternalLink>
+      </Box>
+      <SpaceBetween size="s">
+        <Link href="https://www.stellarelements.com/contact" external>
+          Contact
+        </Link>
+        <Link href="https://www.stellarelements.com/privacy-policy" external>
+          Privacy
+        </Link>
+        <Link href="https://stellarelements.com" external>
+          Stellar Elements
+        </Link>
+      </SpaceBetween>
+      <Box variant="p">
+        <>&copy;&nbsp;2023 Stellar Elements. All Rights Reserved.</>
+        <br />
+        <>This site uses essential cookies.</>
       </Box>
       <Header variant="h3">Assumptions</Header>
       <Box variant="p">
-      The documentation was written using Cloudscape with these tools.
+        The documentation was written using Cloudscape with these tools.
       </Box>
       <ul>
         <li>Cloudscape components v3</li>

@@ -19,6 +19,7 @@ export type Article = {
   publicationDate: Date
   editDate?: Date
   keywords?: string
+  author?: string
   tenets?: number[]
   referenceComponent?: string
   referenceLink?: string

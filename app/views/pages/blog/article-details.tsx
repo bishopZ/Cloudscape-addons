@@ -1,4 +1,4 @@
-import { ColumnLayout, Container, Header, SpaceBetween } from '@cloudscape-design/components';
+import { ColumnLayout, Container, Header, Link, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -15,17 +15,41 @@ export const ArticleDetails = () => {
   return <Container header={<Header variant="h2">Details</Header>}>
     <ColumnLayout columns={3} borders="vertical">
       <SpaceBetween size="m">
-        <LabeledValue label="Discipline">{inNotEmpty(article?.discipline)}</LabeledValue>
-        <LabeledValue label="Vendor">{inNotEmpty(article?.vendor)}</LabeledValue>
+        <LabeledValue label="Discipline">
+          <Link href={`#/blog/search/${article?.discipline}`}>
+            {inNotEmpty(article?.discipline)}
+          </Link>
+        </LabeledValue>
+        <LabeledValue label="Vendor">
+          <Link href={`#/blog/search/${article?.vendor}`}>
+            {inNotEmpty(article?.vendor)}
+          </Link>
+        </LabeledValue>
       </SpaceBetween>
       <SpaceBetween size="m">
-        <LabeledValue label="Type">{inNotEmpty(article?.format)}</LabeledValue>
-        <LabeledValue label="Topic">{inNotEmpty(article?.topic)}</LabeledValue>
-        <LabeledValue label="Section">{inNotEmpty(article?.section)}</LabeledValue>
+        <LabeledValue label="Type">
+          <Link href={`#/blog/search/${article?.format}`}>
+            {inNotEmpty(article?.format)}
+          </Link>
+        </LabeledValue>
+        <LabeledValue label="Topic">
+          <Link href={`#/blog/search/${article?.topic}`}>
+            {inNotEmpty(article?.topic)}
+          </Link>
+        </LabeledValue>
+        <LabeledValue label="Section">
+          <Link href={`#/blog/search/${article?.section}`}>
+            {inNotEmpty(article?.section)}
+          </Link>
+        </LabeledValue>
       </SpaceBetween>
       <SpaceBetween size="m">
-        <LabeledValue label="Author">Bishop Zareh</LabeledValue>
-        <LabeledValue label="Publication date">{formatDate(article?.publicationDate)}</LabeledValue>
+        <LabeledValue label="Author">
+          {article?.author ?? 'Bishop Zareh'}
+        </LabeledValue>
+        <LabeledValue label="Publication date">
+          {formatDate(article?.publicationDate)}
+        </LabeledValue>
       </SpaceBetween>
     </ColumnLayout>
   </Container>;

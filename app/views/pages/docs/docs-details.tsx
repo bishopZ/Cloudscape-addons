@@ -1,4 +1,4 @@
-import { ColumnLayout, Container, Header, SpaceBetween } from '@cloudscape-design/components';
+import { ColumnLayout, Container, Header, Link, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -17,8 +17,14 @@ export const DocsDetails = () => {
     <ColumnLayout columns={2} borders="vertical">
       <SpaceBetween size="m">
         <LabeledValue label="Author">Bishop Zareh</LabeledValue>
-        <LabeledValue label="Publication date">{formatDate(article?.publicationDate)}</LabeledValue>
-        <LabeledValue label="Section">{inNotEmpty(article?.section)}</LabeledValue>
+        <LabeledValue label="Publication date">
+          {formatDate(article?.publicationDate)}
+        </LabeledValue>
+        <LabeledValue label="Section">
+          <Link href={`#/blog/search/${article?.section}`}>
+            {inNotEmpty(article?.section)}
+          </Link>
+        </LabeledValue>
       </SpaceBetween>
       <SpaceBetween size="m">
         {article?.referenceComponent && article.referenceLink
