@@ -19,7 +19,9 @@ import { TABLE_COLUMNS } from './table-data';
 
 export const Blog = () => {
   const dispatch = useAppDispatch();
-  const { initialized, selectedItems, items: articles, error } = useAppSelector(selectArticles);
+  const { initialized, items: articles, error } = useAppSelector(selectArticles);
+
+  console.log(articles);
 
   useEffect(() => {
     if (!initialized) void dispatch(initArticles);
@@ -79,7 +81,7 @@ export const Blog = () => {
 
   const ArticleFilter = <TextFilter
     {...filterProps}
-    countText={`${filteredItemsCount} matches`}
+    countText={`${filteredItemsCount} ${filteredItemsCount === 1 ? 'match' : 'matches'}`}
     filteringPlaceholder="Find an article"
     filteringAriaLabel="Find an article"
   />;
@@ -97,7 +99,6 @@ export const Blog = () => {
     wrapLines={articlePrefs.wrapLines}
     items={items}
     totalItemsCount={items.length}
-    selectedItems={selectedItems}
     ariaLabels={tableLabels as unknown as TableProps.AriaLabels<Article>}
     loading={!initialized && !preferencesFetched}
     loadingText="Loading"

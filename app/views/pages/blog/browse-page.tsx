@@ -1,5 +1,5 @@
 import type { CardsProps } from '@cloudscape-design/components';
-import { Button, Cards, Header, Icon, Link } from '@cloudscape-design/components';
+import { Alert, Button, Cards, Header, Icon, Link } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 
 import { Dash, LoadingSpinner } from '/addons/details/loading';
@@ -49,8 +49,9 @@ const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
 
 const carddsPerRow = [
   { cards: 1 },
-  { minWidth: 500, cards: 2 },
-  { minWidth: 1000, cards: 3 }
+  { minWidth: 420, cards: 2 },
+  { minWidth: 910, cards: 3 },
+  { minWidth: 1240, cards: 4 },
 ];
 
 export const BrowseArticles = () => {
@@ -69,24 +70,27 @@ export const BrowseArticles = () => {
 
   if (!initialized) return <LoadingSpinner />;
 
-  return <Cards
-    stickyHeader
-    cardsPerRow={carddsPerRow}
-    cardDefinition={CARD_DEFINITIONS}
-    loading={!initialized}
-    loadingText={loadingText}
-    items={sortedArticles}
-    totalItemsCount={sortedArticles.length}
-    variant="full-page"
-    ariaLabels={cardLabels('title')}
-    header={<Header
-      variant="h1"
-      actions={<Link href="#/blog/search">
-        <Button variant="primary" iconName="search">
+  return <>
+    <Cards
+      stickyHeader
+      cardsPerRow={carddsPerRow}
+      cardDefinition={CARD_DEFINITIONS}
+      loading={!initialized}
+      loadingText={loadingText}
+      items={sortedArticles}
+      totalItemsCount={sortedArticles.length}
+      variant="full-page"
+      ariaLabels={cardLabels('title')}
+      header={<Header
+        variant="h1"
+        actions={<Link href="#/blog/search">
+          <Button variant="primary" iconName="search">
           Search
-        </Button>
-      </Link>}>
+          </Button>
+        </Link>}>
       Articles
-    </Header>}
-  />;
+      </Header>}
+    />
+    <Alert>New articles every two weeks!</Alert>
+  </>;
 };

@@ -16,9 +16,10 @@ export type Article = {
   vendor: string
   description: string
   image: string
-  tenets?: number[]
   publicationDate: Date
   editDate?: Date
+  keywords?: string
+  tenets?: number[]
   referenceComponent?: string
   referenceLink?: string
 }
