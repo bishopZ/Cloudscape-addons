@@ -21,7 +21,7 @@ export const ArticleDetails = () => {
           </Link>
         </LabeledValue>
         <LabeledValue label="Vendor">
-          <Link href={`#/blog/search/${article?.vendor}`}>
+          <Link href={`#/blog/search/${article?.vendor ?? ''}`}>
             {inNotEmpty(article?.vendor)}
           </Link>
         </LabeledValue>

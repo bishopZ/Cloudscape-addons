@@ -38,7 +38,7 @@ const units: Record<string, number> = {
 
 export const getRelativeTime = (date1: Date, date2 = new Date()) => {
   const elapsed = new Date(date1).valueOf() - date2.valueOf();
-  const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+  const rtf = new Intl.RelativeTimeFormat(DEFAULT_LOCALE, { numeric: 'auto' });
   for (const unit in units) {
     if (Math.abs(elapsed) > units[unit] || unit === 'second') {
       return rtf.format(Math.round(elapsed / units[unit]), unit as Intl.RelativeTimeFormatUnit);
@@ -50,8 +50,8 @@ export const makeCounter = (selected: number, total: number) => selected > 0
   ? `(${selected}/${total})`
   : `(${total})`;
 
-export const makeS3Location = (location: string) => {
-  const parts = location.split('/');
+export const makeS3Location = (uri: string) => {
+  const parts = uri.split('/');
   const bucketName = parts[2];
   let key = '';
   if (parts.length === 4) [key] = parts.slice(-1);

@@ -7,6 +7,5 @@ type Props = { mediaName?: string }
 
 export const LoadingSpinner = ({ mediaName }: Props) => <>
   <Spinner />
-  <>&nbsp;</>
-  Loading {mediaName ?? ''}
+  <>&nbsp;Loading {mediaName ?? ''}</>
 </>;

@@ -2,12 +2,14 @@ import type { CollectionPreferencesProps } from '@cloudscape-design/components';
 import { CollectionPreferences } from '@cloudscape-design/components';
 import React from 'react';
 
-import type { PreferenceConfirm, TableColumn, VisibleContentOptions } from '/addons/helpers/type-helpers';
+import type { PreferenceConfirm, TableColumn } from '/addons/helpers/type-helpers';
 import type { Article } from '/data/articles';
 import type { AppDispatch } from '/data/data-store';
 import { useAppDispatch } from '/data/data-store';
 import type { Namespace } from '/data/preferences';
 import { updatePreferences } from '/data/preferences';
+
+type VisibleContentOptions = CollectionPreferencesProps.VisibleContentOptionsGroup
 
 export type SavedPreferences = {
   pageSize: number;
@@ -21,7 +23,7 @@ export type SavedPreferences = {
 type SavedPreferencesProps = {
   savedPreferences: SavedPreferences;
   mediaName: Namespace;
-  columns?: (TableColumn<Article> & { editable?: boolean })[];
+  columns?: (TableColumn<Article>)[];
 };
 
 type onConfirmProps = SavedPreferencesProps & { dispatch: AppDispatch };

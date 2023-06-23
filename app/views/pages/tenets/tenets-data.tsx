@@ -46,7 +46,7 @@ export const tenets = [
   {
     title: 'Solve a problem one time',
     description: 'Solve it one time and use that solution everywhere. \
-      Changes only need to be made in one place.',
+      Changes only need to be made in one place, one time.',
     content: <>
       <Box variant="p">
           By adhering to this principle, changes only need to be made in one place, saving time, effort, and reducing the risk of errors.

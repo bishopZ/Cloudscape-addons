@@ -3,7 +3,7 @@ import React from 'react';
 
 import { formfieldStrings } from '/addons/helpers/i18n-helpers';
 import { addOptional } from '/addons/helpers/string-utils';
-import type { InputChange, KeyDetail } from '/addons/helpers/type-helpers';
+import type { InputChange, InputKeyDetail } from '/addons/helpers/type-helpers';
 
 type Props = {
   value: string
@@ -24,8 +24,8 @@ type Props = {
   readOnly?: boolean
   onBlur?: () => void
   onFocus?: () => void
-  onKeyDown?: (event: KeyDetail) => void
-  onKeyUp?: (event: KeyDetail) => void
+  onKeyDown?: (event: InputKeyDetail) => void
+  onKeyUp?: (event: InputKeyDetail) => void
 }
 
 export const LabeledTextarea = (props: Props) => {

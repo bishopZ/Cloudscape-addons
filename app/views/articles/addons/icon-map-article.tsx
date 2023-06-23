@@ -17,6 +17,15 @@ export const IconMapArticle = () => {
 
   return <SpaceBetween size="m">
     <Container
+      media={{
+        content:
+        <img
+          src="assets/chasm.jpg"
+          alt="placeholder"
+        />,
+        height: 200,
+        position: 'top'
+      }}
       header={<Header variant="h2">
         Introducing the IconMap
       </Header>}>
@@ -40,7 +49,7 @@ export const IconMapArticle = () => {
     <SourceCodeSection source={`import { Box, Grid, Icon, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
-import { Spacing } from './spacing-constants';
+import { Spacing } from '/addons/helpers/spacing-constants';
 
 const names = [
   'add-plus', 'angle-left-double', 'angle-left', 'angle-right-double',

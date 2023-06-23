@@ -4,7 +4,6 @@ import {
 } from '@cloudscape-design/components';
 import type { Theme } from '@cloudscape-design/components/theming';
 import React from 'react';
-import { Dispatch } from 'redux';
 
 import type { GenericObject } from '/addons/helpers/type-helpers';
 import type { AppDispatch } from '/data/data-store';

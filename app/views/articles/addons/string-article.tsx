@@ -2,7 +2,7 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
-import { addOptional, makeCounter } from '/addons/helpers/string-utils';
+import { addOptional, formatDate, makeCounter } from '/addons/helpers/string-utils';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 /* eslint-disable max-lines-per-function */
@@ -15,6 +15,15 @@ export const StringArticle = () => {
 
   return <SpaceBetween size="m">
     <Container
+      media={{
+        content:
+        <img
+          src="assets/chasm.jpg"
+          alt="placeholder"
+        />,
+        height: 200,
+        position: 'top'
+      }}
       header={<Header variant="h2">
         Introducing StringUtils
       </Header>}>
@@ -55,7 +64,7 @@ export const StringArticle = () => {
           ariaRequired property. Since most form fields are required, the detail of
           filling in the ariaRequired is often overlooked. Rather than asking developers
           to do extra work to support aria, the Labeled components in Addons sets the
-          default to required, and it always sets the aria label so that developers
+          default to required, and they always sets the aria label so that developers
           don't have to remember to do so. addOptional then becomes a nice visual
           indicator of the interconnected nature of required and optional form fields,
           and how that is messaged to <em>all</em> users.
@@ -65,6 +74,9 @@ export const StringArticle = () => {
     <Container
       header={<Header variant="h2">
         Introducing formatDate
+        &nbsp;<Box fontSize="heading-s" display="inline-block">
+          ({formatDate('December 16, 1773')})
+        </Box>
       </Header>}>
       <SpaceBetween size="m">
         <Box variant="p">
@@ -93,7 +105,9 @@ export const formatDate = (date?: string | Date) => {
           These days relative dates are included in the javascript specification,
           with just a little extra finese.
         </Box>
-        <pre><code className="language-javascript">{`const units: Record<string, number> = {
+        <pre><code className="language-javascript">{`export const DEFAULT_LOCALE = 'en-us';
+        
+const units: Record<string, number> = {
   year: 24 * 60 * 60 * 1000 * 365,
   month: 24 * 60 * 60 * 1000 * 365 / 12,
   day: 24 * 60 * 60 * 1000,
@@ -104,7 +118,7 @@ export const formatDate = (date?: string | Date) => {
 
 export const getRelativeTime = (date1: Date, date2 = new Date()) => {
   const elapsed = new Date(date1).valueOf() - date2.valueOf();
-  const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+  const rtf = new Intl.RelativeTimeFormat(DEFAULT_LOCALE, { numeric: 'auto' });
   for (const unit in units) {
     if (Math.abs(elapsed) > units[unit] || unit === 'second') {
       return rtf.format(Math.round(elapsed / units[unit]), unit as Intl.RelativeTimeFormatUnit);
@@ -114,15 +128,15 @@ export const getRelativeTime = (date1: Date, date2 = new Date()) => {
       </SpaceBetween>
     </Container>
     <Container
-      header={<Header variant="h2" counter={makeCounter(14, 79)}>
+      header={<Header variant="h2" counter={makeCounter(14, 39)}>
         Introducing makeCounter
       </Header>}>
       <SpaceBetween size="m">
         <Box variant="p">
           In Cloudscape, when you create a Table component, it gets a Header component.
           The Header component has a slot to imput a counter. The idea is to add
-          the number if items in the table and the number of selected items, if the
-          items are selectedable. This helper simply makes an easy and consistent
+          the number of items in the table and the number of selected items, if the
+          items are selectable. This helper simply makes an easy and consistent
           way to add those counters.
         </Box>
         <pre><code className="language-javascript">{`export const makeCounter = (selected: number, total: number) => selected > 0
@@ -131,22 +145,22 @@ export const getRelativeTime = (date1: Date, date2 = new Date()) => {
       </SpaceBetween>
     </Container>
     <Container
-      header={<Header variant="h2" counter={makeCounter(14, 79)}>
+      header={<Header variant="h2">
         Introducing makeS3Location
       </Header>}>
       <SpaceBetween size="m">
         <Box variant="p">
           One stunning aspect of Cloudscape is
           the <ExternalLink href="https://cloudscape.design/components/s3-resource-selector/">
-            S3 Reource Selector
-          </ExternalLink>. It has a myriad of uses and built-in functionality, but
+            S3 Reource Selector.
+          </ExternalLink> It has a myriad of uses and built-in functionality, but
           the feature come at the cost of a rather complicated setup process.
-          If you do want to use S3 at all with Cloudscape, this conversion helper
-          converts an S3 uri into S3 location object (as defined by the AWS SDK)
-          and will speed your implementation.
+          If you do want to use S3 with Cloudscape, this helper
+          converts an S3 uri, such as s3://bucket/prefix/object, into S3 location
+          object as defined by the AWS SDK.
         </Box>
-        <pre><code className="language-javascript">{`export const makeS3Location = (location: string) => {
-  const parts = location.split('/');
+        <pre><code className="language-javascript">{`export const makeS3Location = (uri: string) => {
+  const parts = uri.split('/');
   const bucketName = parts[2];
   let key = '';
   if (parts.length === 4) [key] = parts.slice(-1);

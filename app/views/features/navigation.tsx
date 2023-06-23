@@ -1,15 +1,19 @@
 import type { SideNavigationProps } from '@cloudscape-design/components';
-import { BreadcrumbGroup, SideNavigation } from '@cloudscape-design/components';
+import { Box, BreadcrumbGroup, SideNavigation } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
 import { LoadingSpinner } from '/addons/details/loading';
+import { externalIconAriaLabel } from '/addons/helpers/a11y-helpers';
+import { Spacing } from '/addons/helpers/spacing-constants';
+import type { Breadcrumb, ParamBreadcrumb } from '/addons/helpers/type-helpers';
 import { initArticles, selectArticles } from '/data/articles';
+import { useAppDispatch, useAppSelector } from '/data/data-store';
 
-import type { Breadcrumb, ParamBreadcrumb } from '../../addons/helpers/type-helpers';
-import { useAppDispatch, useAppSelector } from '../../data/data-store';
-
-type SidenavItem = SideNavigationProps.Section | SideNavigationProps.Link;
+type SidenavItem = SideNavigationProps.Section
+| SideNavigationProps.SectionGroup
+| SideNavigationProps.Link
+| SideNavigationProps.Divider;
 
 export const capitalize = (value: string) => value.replace(value[0], value[0].toUpperCase());
 
@@ -24,6 +28,22 @@ const docs: SidenavItem = {
 const blogNav: SidenavItem[] = [
   { type: 'link', text: 'Search articles', href: '#/blog/search' },
   { type: 'link', text: 'Addons gallery', href: '#/blog/gallery' },
+  { type: 'divider' },
+  {
+    type: 'link',
+    text: 'Privacy',
+    external: true,
+    externalIconAriaLabel,
+    href: 'https://www.stellarelements.com/privacy-policy'
+  },
+  {
+    type: 'link',
+    text: 'Feedback',
+    external: true,
+    externalIconAriaLabel,
+    href: 'https://www.stellarelements.com/contact'
+  },
+  { type: 'divider' },
 ];
 
 export const Navigation = () => {
@@ -34,7 +54,7 @@ export const Navigation = () => {
 
   const docsNav: SidenavItem[] = [
     { type: 'link', text: 'Getting started', href: '#/docs' },
-    { type: 'link', text: 'Core Tenets', href: '#/docs/core-tenets' },
+    { type: 'link', text: 'Core Tenets', href: '#/docs/core-tenets' }
   ];
   const docArticles = items.filter(item => item.format === 'Documentation');
 
@@ -46,9 +66,10 @@ export const Navigation = () => {
   types
     .sort((a, b) => a.localeCompare(b))
     .forEach(type => {
+      docsNav.push({ type: 'divider' });
       docsNav.push({
-        type: 'section',
-        text: capitalize(type),
+        type: 'section-group',
+        title: capitalize(type),
         items: docArticles
           .filter(item => item.section === type)
           .map(item => ({
@@ -64,12 +85,24 @@ export const Navigation = () => {
     if (!initialized) void dispatch(initArticles);
   }, [initialized]);
 
-  return <><SideNavigation
-    header={isDocs ? docs : blog}
-    items={isDocs ? docsNav : blogNav}
-    activeHref={`#${location.pathname}`}
-  />
-  {!initialized && <LoadingSpinner />}
+  return <>
+    {!initialized && <LoadingSpinner />}
+    <SideNavigation
+      header={isDocs ? docs : blog}
+      items={isDocs ? docsNav : blogNav}
+      activeHref={`#${location.pathname}`}
+    />
+    <Box
+      fontSize="body-s"
+      color="text-status-inactive"
+      margin={Spacing.L}>
+      &copy; 2023 Stellar Elements
+      <br />all rights reserved
+      <br />this site uses essential cookies.
+    </Box>
+    <br />
+    <br />
+    <br />
   </>;
 };
 

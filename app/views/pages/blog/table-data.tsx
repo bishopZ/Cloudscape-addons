@@ -1,7 +1,7 @@
 import { Link } from '@cloudscape-design/components';
 import React from 'react';
 
-import { formatDate } from '/addons/helpers/string-utils';
+import { formatDate, inNotEmpty } from '/addons/helpers/string-utils';
 import type { TableColumn } from '/addons/helpers/type-helpers';
 import type { Article } from '/data/articles';
 
@@ -28,31 +28,31 @@ export const TABLE_COLUMNS: TableColumn<Article>[] = [
   {
     id: 'section',
     header: 'Section',
-    cell: item => item.section,
+    cell: item => inNotEmpty(item.section),
     sortingField: 'section'
   },
   {
     id: 'format',
     header: 'Type',
-    cell: item => item.format,
+    cell: item => inNotEmpty(item.format),
     sortingField: 'format'
   },
   {
     id: 'topic',
     header: 'Topic',
-    cell: item => item.topic,
+    cell: item => inNotEmpty(item.topic),
     sortingField: 'topic'
   },
   {
     id: 'discipline',
     header: 'Discipline',
-    cell: item => item.discipline,
+    cell: item => inNotEmpty(item.discipline),
     sortingField: 'discipline'
   },
   {
     id: 'vendor',
     header: 'Vendor',
-    cell: item => item.vendor,
+    cell: item => inNotEmpty(item.vendor),
     sortingField: 'vendor'
   },
 ];

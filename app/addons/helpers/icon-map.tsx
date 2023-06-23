@@ -1,7 +1,7 @@
 import { Box, Grid, Icon, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
-import { Spacing } from './spacing-constants';
+import { Spacing } from '/addons/helpers/spacing-constants';
 
 const names = [
   'add-plus', 'angle-left-double', 'angle-left', 'angle-right-double',

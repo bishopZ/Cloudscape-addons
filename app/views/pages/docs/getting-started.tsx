@@ -1,25 +1,47 @@
-import { Box, Container, ContentLayout, ExpandableSection, Header, Link, SpaceBetween } from '@cloudscape-design/components';
-import React from 'react';
+import {
+  Box, Button, Container, ContentLayout, ExpandableSection, Header, Link, SpaceBetween
+} from '@cloudscape-design/components';
+import React, { useState } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { useAppDispatch } from '/data/data-store';
+import { changePreference } from '/data/preferences';
 
 /* eslint-disable max-lines-per-function */
 export const Docs = () => {
+  const [expandAll, setExpandAll] = useState(false);
+  const dispatch = useAppDispatch();
+
   return <ContentLayout
     header={
       <Header
         variant="h1"
+        actions={<Button
+          variant="primary"
+          onClick={() => { setExpandAll(true) }}>
+              Expand all
+        </Button>}
+        info={<Link onFollow={() => {
+          dispatch(changePreference({
+            name: 'tools',
+            value: 'open'
+          }));
+        }}>
+          info
+        </Link>}
         description="An overview of Cloudscape Addons, how to use them, basic examples and more.">
         Getting started
       </Header>
     }>
     <SpaceBetween size="m">
       <Container>
-        <ExpandableSection headerText={
-          <Box variant="h4" tagOverride="strong">
-          What is Cloudscape?
-          </Box>
-        }>
+        <ExpandableSection
+          defaultExpanded
+          headerText={
+            <Box variant="h4" tagOverride="strong">
+              What is Cloudscape?
+            </Box>
+          }>
           <Box variant="p">
           Cloudscape is
             <ExternalLink href="https://cloudscape.design/">an open source design system</ExternalLink>
@@ -29,11 +51,13 @@ export const Docs = () => {
         </ExpandableSection>
       </Container>
       <Container>
-        <ExpandableSection headerText={
-          <Box variant="h4" tagOverride="strong">
+        <ExpandableSection
+          defaultExpanded
+          headerText={
+            <Box variant="h4" tagOverride="strong">
           What is Cloudscape Addons?
-          </Box>
-        }>
+            </Box>
+          }>
           <Box variant="p">
           Cloudscape Addons is an exciting addition to Amazon's Cloudscape design system.
           Check out the <Link href="#/blog/gallery">Gallery</Link> to see the Addons in action.
@@ -41,11 +65,13 @@ export const Docs = () => {
         </ExpandableSection>
       </Container>
       <Container>
-        <ExpandableSection headerText={
-          <Box variant="h4" tagOverride="strong">
+        <ExpandableSection
+          defaultExpanded={expandAll}
+          headerText={
+            <Box variant="h4" tagOverride="strong">
            How can I use the Addons?
-          </Box>
-        }>
+            </Box>
+          }>
           <ol>
             <li>
             First, use the <Link href="#/">Browse</Link> or <Link href="#/blog/search">Search</Link> pages
@@ -64,11 +90,13 @@ export const Docs = () => {
         </ExpandableSection>
       </Container>
       <Container>
-        <ExpandableSection headerText={
-          <Box variant="h4" tagOverride="strong">
+        <ExpandableSection
+          defaultExpanded={expandAll}
+          headerText={
+            <Box variant="h4" tagOverride="strong">
           Where's the repo?
-          </Box>
-        }>
+            </Box>
+          }>
           <Box variant="p">
           We do have plans to move Cloudscape Addons into a cerntralized revision
           manager such as Github. But, for now, these components are meant to be maintained
@@ -77,11 +105,13 @@ export const Docs = () => {
         </ExpandableSection>
       </Container>
       <Container>
-        <ExpandableSection headerText={
-          <Box variant="h4" tagOverride="strong">
+        <ExpandableSection
+          defaultExpanded={expandAll}
+          headerText={
+            <Box variant="h4" tagOverride="strong">
           Community: How can I get involved?
-          </Box>
-        }>
+            </Box>
+          }>
           <ul>
             <li>
               Our <Link href="#/">community blog</Link> updates every two weeks with new articles
@@ -98,11 +128,13 @@ export const Docs = () => {
         </ExpandableSection>
       </Container>
       <Container>
-        <ExpandableSection headerText={
-          <Box variant="h4" tagOverride="strong">
+        <ExpandableSection
+          defaultExpanded={expandAll}
+          headerText={
+            <Box variant="h4" tagOverride="strong">
           What browsers are supported?
-          </Box>
-        }>
+            </Box>
+          }>
           <Box variant="p">
         We support the latest 3 major versions of these browsers for desktop.
           </Box>
@@ -116,6 +148,34 @@ export const Docs = () => {
         We do not support Microsoft Internet Explorer or mobile browsers.
         We support all viewport sizes across desktop browsers.
           </Box>
+        </ExpandableSection>
+      </Container>
+      <Container>
+        <ExpandableSection
+          defaultExpanded={expandAll}
+          headerText={
+            <Box variant="h4" tagOverride="strong">
+          What versions are used?
+            </Box>
+          }>
+          <Box variant="p">
+            The documentation was written using Cloudscape with these tools.
+            <ul>
+              <li>Cloudscape components v3</li>
+              <li>Cloudscape collection hooks v1</li>
+              <li>Cloudscape design tokens v3</li>
+              <li>Cloudscape global styles v1</li>
+              <li>React v18</li>
+              <li>Typescript v5</li>
+            </ul>
+          </Box>
+          {/* <Box variant="p">
+      A few of the addons also require Redux Toolkit.
+      </Box>
+      <ul>
+        <li>Redux v4</li>
+        <li>Redux Toolkit v1</li>
+      </ul> */}
         </ExpandableSection>
       </Container>
     </SpaceBetween>

@@ -5,7 +5,7 @@ import React from 'react';
 import { clearAriaLabel } from '/addons/helpers/a11y-helpers';
 import { formfieldStrings } from '/addons/helpers/i18n-helpers';
 import { addOptional } from '/addons/helpers/string-utils';
-import type { InputChange, KeyDetail } from '/addons/helpers/type-helpers';
+import type { InputChange, InputKeyDetail } from '/addons/helpers/type-helpers';
 
 type Props = {
   value: string
@@ -27,8 +27,8 @@ type Props = {
   step?: number
   onBlur?: () => void
   onFocus?: () => void
-  onKeyDown?: (event: KeyDetail) => void
-  onKeyUp?: (event: KeyDetail) => void
+  onKeyDown?: (event: InputKeyDetail) => void
+  onKeyUp?: (event: InputKeyDetail) => void
 }
 
 type Map = Record<string, [InputProps.Type, InputProps.InputMode]>

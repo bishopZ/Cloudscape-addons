@@ -1,5 +1,5 @@
 import type { CardsProps } from '@cloudscape-design/components';
-import { Alert, Button, Cards, Header, Icon, Link } from '@cloudscape-design/components';
+import { Alert, Box, Button, Cards, Header, Icon, Link } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 
 import { Dash, LoadingSpinner } from '/addons/details/loading';
@@ -8,6 +8,7 @@ import { getRelativeTime } from '/addons/helpers/string-utils';
 import type { Article } from '/data/articles';
 import { initArticles, selectArticles } from '/data/articles';
 import { useAppDispatch, useAppSelector } from '/data/data-store';
+import { changePreference } from '/data/preferences';
 
 const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
   header: item =>
@@ -28,24 +29,32 @@ const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
     },
     { id: 'description',
       header: 'Description',
-      content: item => item.description,
+      content: item => <Box fontSize="body-s" color="text-body-secondary">
+        {item.description}
+      </Box>,
     }, {
       id: 'publicationDate',
       header: 'Published',
-      content: item => getRelativeTime(item.publicationDate),
+      content: item => <Box fontSize="body-s" color="text-body-secondary">
+        {getRelativeTime(item.publicationDate)}
+      </Box>,
       width: 33
     }, {
       id: 'topic',
       header: 'Topic',
       content: item => <Link href={`#/blog/search/${item.topic}`}>
-        {item.topic ?? <Dash />}
+        <Box fontSize="body-s" color="text-status-info">
+          {item.topic ?? <Dash />}
+        </Box>
       </Link>,
       width: 33
     }, {
       id: 'section',
       header: 'Section',
       content: item => <Link href={`#/blog/search/${item.section}`}>
-        {item.section ?? <Dash />}
+        <Box fontSize="body-s" color="text-status-info">
+          {item.section ?? <Dash />}
+        </Box>
       </Link>,
       width: 33
     }],
@@ -87,14 +96,23 @@ export const BrowseArticles = () => {
       ariaLabels={cardLabels('title')}
       header={<Header
         variant="h1"
+        description="New articles every two weeks."
+        info={<Link onFollow={() => {
+          dispatch(changePreference({
+            name: 'tools',
+            value: 'open'
+          }));
+        }}>
+          info
+        </Link>}
         actions={<Link href="#/blog/search">
           <Button variant="primary" iconName="search">
-          Search
+            Search
           </Button>
         </Link>}>
-      Articles
+        Blog
       </Header>}
     />
-    <Alert>New articles every two weeks!</Alert>
+    <Alert header="New articles every two weeks!" />
   </>;
 };

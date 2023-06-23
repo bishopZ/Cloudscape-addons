@@ -51,7 +51,7 @@ export const Blog = () => {
 
   const collectionSettings = {
     filtering: {
-      defaultFilteringText: params.filter ?? '',
+      defaultFilteringText: params.filter?.toLocaleLowerCase() ?? '',
       empty: TableFooter,
       noMatch: <NoMatch clear={() => { actions.setFiltering('') }} />,
     },

@@ -4,20 +4,17 @@ import React from 'react';
 /* eslint-disable max-len */
 export const AnatomyArticle = () => {
   return <SpaceBetween size="m">
-    <Container header={<Header variant="h2">Do I need a Design System?</Header>}>
-      <SpaceBetween size="xs">
-        <Box variant="p">
-        The need for a design system often arises due to two key factors: scale and longevity.
-        </Box>
-        <Box variant="p">
-        Scale plays a significant role in deciding whether a design system is necessary. If your organization is small, with a single team of skilled individuals capable of handling all design work, a design system may not be a top priority. Yet, if your brand operates in a complex organizational structure with various skill levels and many teams working on different products and channels (such as web, mobile, etc.), a design system becomes essential to ensure consistency and efficiency.
-        </Box>
-        <Box variant="p">
-          If your brand operates in a stable market and has products with a long lifespan, investing in a design system can help limit risks associated with inconsistency, improve stability, and ensure a seamless user experience. Yet, if your organization experiments with new products or operates in a changing market, the benefits of a design system may be outweighed by the need for flexibility and adaptability.
-        </Box>
-      </SpaceBetween>
-    </Container>
-    <Container header={<Header variant="h2">Anatomy of a Design System</Header>}>
+    <Container
+      media={{
+        content:
+          <img
+            src="assets/chasm.jpg"
+            alt="placeholder"
+          />,
+        height: 200,
+        position: 'top'
+      }}
+      header={<Header variant="h2">What are the parts of a design system?</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
         A design system consists of several key elements that work together to provide a cohesive and standardized approach to digital design.

@@ -5,7 +5,6 @@ import { ExternalLink } from '/addons/details/external-link';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 import { PreviewHeader } from '../../common/headers/preview-header';
-import { SourceHeader } from '../../common/headers/source-header';
 import { LabeledContent } from '../common/labeled-content';
 import { InputPreview } from '../previews/input-preview';
 
@@ -19,6 +18,15 @@ export const InputArticle = () => {
 
   return <SpaceBetween size="m">
     <Container
+      media={{
+        content:
+      <img
+        src="assets/chasm.jpg"
+        alt="placeholder"
+      />,
+        height: 200,
+        position: 'top'
+      }}
       header={<Header variant="h2">
       Introducing LabeledInput
       </Header>}>
@@ -36,8 +44,8 @@ export const InputArticle = () => {
           When an Input is in a form, it should have a label to comply with
           accessibility and usablity best practices. Labels are provided by the
           <ExternalLink href="https://cloudscape.design/components/form-field/">
-            FormField component
-          </ExternalLink>.
+            FormField component.
+          </ExternalLink>
         </Box>
         <Box variant="p">
           Since the main use of an Input is in combination with a FormField, we
@@ -77,13 +85,11 @@ const modeMap: Map = {
 
 type Props = {
   mode?: keyof typeof modeMap
-  ...
 }
 
 <Input
   type={modeMap[mode][0]}
   inputMode={modeMap[mode][1]}
-  ...
 />
 
 `}</code></pre>
@@ -113,15 +119,9 @@ optional = false,`}</code></pre>
   ? addOptional(label)
   : label;
 
-<FormField
-  label={displayLabel}
-  ...>
-  <Input
-    ariaRequired={!optional}
-    ...
-  />
-</FormField>
-`}</code></pre>
+return <FormField label={displayLabel}>
+  <Input ariaRequired={!optional} />
+</FormField>`}</code></pre>
       </SpaceBetween>
     </Container>
     <SourceCodeSection source={`import type { InputProps } from '@cloudscape-design/components';
@@ -131,7 +131,7 @@ import React from 'react';
 import { clearAriaLabel } from '/addons/helpers/a11y-helpers';
 import { formfieldStrings } from '/addons/helpers/i18n-helpers';
 import { addOptional } from '/addons/helpers/string-utils';
-import type { InputChange, KeyDetail } from '/addons/helpers/type-helpers';
+import type { InputChange, InputKeyDetail } from '/addons/helpers/type-helpers';
 
 type Props = {
   value: string
@@ -153,8 +153,8 @@ type Props = {
   step?: number
   onBlur?: () => void
   onFocus?: () => void
-  onKeyDown?: (event: KeyDetail) => void
-  onKeyUp?: (event: KeyDetail) => void
+  onKeyDown?: (event: InputKeyDetail) => void
+  onKeyUp?: (event: InputKeyDetail) => void
 }
 
 type Map = Record<string, [InputProps.Type, InputProps.InputMode]>

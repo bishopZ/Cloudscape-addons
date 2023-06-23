@@ -13,9 +13,7 @@ export const TenetsPage = () => {
             {tenet.title}
           </Header>
         }>
-        <SpaceBetween size="s" >
-          {tenet.content}
-        </SpaceBetween>
+        {tenet.content}
       </Container>
     )}
   </SpaceBetween>;

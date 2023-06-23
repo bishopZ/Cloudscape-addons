@@ -15,6 +15,15 @@ export const UnsavedArticle = () => {
 
   return <SpaceBetween size="m">
     <Container
+      media={{
+        content:
+        <img
+          src="assets/chasm.jpg"
+          alt="placeholder"
+        />,
+        height: 200,
+        position: 'top'
+      }}
       header={<Header variant="h2">
         Introducing UnsavedChangesModal
       </Header>}>
@@ -60,7 +69,7 @@ export const UnsavedChangesModal = (props: Props) => {
         Cancel
       </Button>
       <Button onClick={onConfirm} variant="primary">
-        Exit
+        Leave
       </Button>
     </SpaceBetween>
   </Box>;

@@ -4,8 +4,7 @@ import React, { useEffect } from 'react';
 import { ExternalLink } from '/addons/details/external-link';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
-import { SourceHeader } from '../../common/headers/source-header';
-
+/* eslint-disable max-lines-per-function */
 export const SpacingConstants = () => {
   useEffect(() => {
     setTimeout(() => {
@@ -15,6 +14,15 @@ export const SpacingConstants = () => {
 
   return <SpaceBetween size="m">
     <Container
+      media={{
+        content:
+          <img
+            src="assets/chasm.jpg"
+            alt="placeholder"
+          />,
+        height: 200,
+        position: 'top'
+      }}
       header={<Header variant="h2">
       Introducing the spacing constants
       </Header>}>
@@ -22,7 +30,7 @@ export const SpacingConstants = () => {
         <Box variant="p">
           The spacing constants provide a consistent interface to the Spacing
           property of Cloudscape's
-          <ExternalLink href="https://cloudscape.design/components/box/">Box component</ExternalLink>.
+          <ExternalLink href="https://cloudscape.design/components/box/">Box component.</ExternalLink>
           The Box component is the only tool in Cloudscapes arsenal that can add
           padding and margin to content. Since the Box component is so common,
           the Spacing constants warrent being DRYed up into a single constants

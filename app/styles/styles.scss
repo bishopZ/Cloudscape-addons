@@ -1,11 +1,6 @@
 
 @use '@cloudscape-design/design-tokens/index' as awsui;
 
-footer {
-  background-color: awsui.$color-background-container-header;
-  height: 4.3rem;
-}
-
 .card-image {
   height: 120px;
   display: flex;
@@ -19,4 +14,8 @@ footer {
 
 [class^='awsui_card-header_'], [class*=' awsui_card-header_'] {
   min-height: 3.1rem;
+}
+
+.card-image {
+  background-color: awsui.$color-background-cell-shaded;
 }

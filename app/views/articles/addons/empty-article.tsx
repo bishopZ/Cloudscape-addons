@@ -5,7 +5,6 @@ import { ExternalLink } from '/addons/details/external-link';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 import { PreviewHeader } from '../../common/headers/preview-header';
-import { SourceHeader } from '../../common/headers/source-header';
 import { EmptyPreview } from '../previews/empty-preview';
 
 /* eslint-disable max-lines-per-function */
@@ -18,6 +17,15 @@ export const EmptyArticle = () => {
 
   return <SpaceBetween size="m">
     <Container
+      media={{
+        content:
+          <img
+            src="assets/chasm.jpg"
+            alt="placeholder"
+          />,
+        height: 200,
+        position: 'top'
+      }}
       header={<Header variant="h2">
       Introducing GenericEmpty
       </Header>}>

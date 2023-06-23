@@ -19,7 +19,7 @@ export const UnsavedChangesModal = (props: Props) => {
         Cancel
       </Button>
       <Button onClick={onConfirm} variant="primary">
-        Exit
+        Leave
       </Button>
     </SpaceBetween>
   </Box>;

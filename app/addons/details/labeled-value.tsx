@@ -3,7 +3,7 @@ import React from 'react';
 
 type KeyValueProps = {
   label: React.ReactNode
-  children: React.ReactNode | React.ReactNode[]
+  children: React.ReactNode
 }
 
 export const LabeledValue = ({ label, children }: KeyValueProps) =>

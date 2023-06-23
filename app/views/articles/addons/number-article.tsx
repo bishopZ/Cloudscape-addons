@@ -5,7 +5,6 @@ import { ExternalLink } from '/addons/details/external-link';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 import { PreviewHeader } from '../../common/headers/preview-header';
-import { SourceHeader } from '../../common/headers/source-header';
 import { NumberPreview } from '../previews/number-preview';
 
 /* eslint-disable max-lines-per-function */
@@ -18,6 +17,15 @@ export const NumberArticle = () => {
 
   return <SpaceBetween size="m">
     <Container
+      media={{
+        content:
+      <img
+        src="assets/chasm.jpg"
+        alt="placeholder"
+      />,
+        height: 200,
+        position: 'top'
+      }}
       header={<Header variant="h2">
       Introducing LabeledNumber
       </Header>}>
@@ -27,8 +35,8 @@ export const NumberArticle = () => {
           is used in a form. There are other times labels are handy as well, such as
           on a Details page or a
           <ExternalLink href="https://cloudscape.design/examples/react/dashboard.html">
-          Dashboard page
-          </ExternalLink>.
+          Dashboard page.
+          </ExternalLink>
         </Box>
         <Box variant="p">
           LabeledNumber is the component needed to create the pattern shown in
@@ -37,7 +45,6 @@ export const NumberArticle = () => {
         </Box>
         <pre><code className="language-javascript">{`type Props = {
   status?: 'info' | 'error' | 'success' | 'inactive'
-  ...
 }
 
 let color: BoxProps.Color = 'text-status-info';
@@ -47,7 +54,7 @@ switch (status) {
   case 'inactive': color = 'text-status-inactive'; break;
 }
 
-<Box color={color} ...>
+<Box color={color}>
   {number}
 </Box`}</code></pre>
         <Box variant="p">
@@ -58,17 +65,13 @@ switch (status) {
         <pre><code className="language-javascript">{`
 type Props = {
   loading?: boolean
-  ...
 }
 
 const {
   loading = false,
-  ...
 } = props;
 
-<Box
-  fontSize={loading ? undefined : 'display-l'}
-  ...>
+<Box fontSize={loading ? undefined : 'display-l'}>
   {loading
     ? <LoadingSpinner />
     : number ?? <Dash />}
@@ -79,8 +82,8 @@ const {
 import { Box, FormField } from '@cloudscape-design/components';
 import React from 'react';
 
-import { formfieldStrings } from '../helpers/i18n-helpers';
-import { Dash, LoadingSpinner } from './loading';
+import { Dash, LoadingSpinner } from '/addons/details/loading';
+import { formfieldStrings } from '/addons/helpers/i18n-helpers';
 
 type Props = {
   label: React.ReactNode

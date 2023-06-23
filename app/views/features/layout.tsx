@@ -1,6 +1,6 @@
 import type { AppLayoutProps } from '@cloudscape-design/components';
 import {
-  AppLayout, Button, Flashbar, Link, SpaceBetween, TopNavigation
+  AppLayout, Box, Button, Flashbar, Link, SpaceBetween, TopNavigation
 } from '@cloudscape-design/components';
 import { applyTheme } from '@cloudscape-design/components/theming';
 import { applyDensity, applyMode, Density, disableMotion, Mode } from '@cloudscape-design/global-styles';
@@ -10,10 +10,11 @@ import { useLocation, useParams } from 'react-router-dom';
 import { LoadingSpinner } from '/addons/details/loading';
 import { layoutLabels } from '/addons/helpers/a11y-helpers';
 import { topNavStrings } from '/addons/helpers/i18n-helpers';
+import { Spacing } from '/addons/helpers/spacing-constants';
 import type { Breadcrumb, ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
 import { useAppDispatch, useAppSelector } from '/data/data-store';
 import { clearNotifications, selectNotifications } from '/data/notifications';
-import { initPreferences, selectPreferences } from '/data/preferences';
+import { changePreference, initPreferences, selectPreferences } from '/data/preferences';
 import { POST_TITLE } from '/utils/constants';
 
 import { HelpPanelContent } from './help-panel';
@@ -36,9 +37,8 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
   const params = useParams();
   const path = location.pathname;
 
-  const { initialized, brightness, density, motion } = useAppSelector(selectPreferences);
+  const { initialized, brightness, density, motion, tools } = useAppSelector(selectPreferences);
 
-  console.log(brightness);
   useEffect(() => {
     if (!initialized) void dispatch(initPreferences);
   }, [initialized]);
@@ -88,7 +88,9 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
     if (document.title !== displayTitle) document.title = displayTitle;
   }, [title]);
 
-  if (!initialized) return <LoadingSpinner />;
+  if (!initialized) return <Box margin={Spacing.L} textAlign="center">
+    <LoadingSpinner />
+  </Box>;
 
   const utils = utilities({ brightness, density, motion }, dispatch);
 
@@ -105,7 +107,7 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
         </Link>
         <Link href="#/docs">
           <Button variant={path.startsWith('/docs') ? 'normal' : 'link'}>
-            Cloudscape addons
+            Cloudscape addons v1
           </Button>
         </Link>
       </SpaceBetween>}
@@ -117,8 +119,19 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
       navigation={<Navigation />}
       ariaLabels={layoutLabels}
       tools={<HelpPanelContent />}
+      toolsOpen={tools === 'open'}
+      onToolsChange={() => {
+        dispatch(changePreference({
+          name: 'tools',
+          value: tools === 'open' ? 'closed' : 'open'
+        }));
+      }}
       footerSelector="footer"
-      content={children}
+      content={
+        <>
+          {children}
+        </>
+      }
     />
   </>;
 };

@@ -1,4 +1,8 @@
-import type { AppLayoutProps, CardsProps, DatePickerProps, MultiselectProps, PaginationProps } from '@cloudscape-design/components';
+import type {
+  AppLayoutProps, CardsProps, DatePickerProps, MultiselectProps, PaginationProps, TableProps
+} from '@cloudscape-design/components';
+
+import type { GenericObject } from './type-helpers';
 
 // This setion is not needed if you use the Cloudscap I18n suppert: TODO link
 export const errorIconAriaLabel = 'Error';
@@ -42,20 +46,17 @@ export const paginationLabels: PaginationProps.Labels = {
   pageLabel: pageNumber => `Page ${pageNumber} of all pages`
 };
 
-type Selected = { selectedItems: TitledItem[] }
-type TitledItem = { title: string }
-
-export const tableLabels = {
+export const tableLabels: TableProps.AriaLabels<GenericObject> = {
   selectionGroupLabel: 'Items selection',
-  allItemsSelectionLabel: ({ selectedItems }: Selected) =>
+  allItemsSelectionLabel: ({ selectedItems }) =>
     `${selectedItems.length} ${selectedItems.length === 1 ? 'item' : 'items'} selected`,
-  itemSelectionLabel: ({ selectedItems }: Selected, item: TitledItem) => {
-    const isItemSelected = selectedItems.filter((candidate: TitledItem) => candidate.title === item.title).length;
+  itemSelectionLabel: ({ selectedItems }, item) => {
+    const isItemSelected = selectedItems.filter(candidate => candidate.title === item.title).length;
     return `${item.title} is ${isItemSelected ? '' : 'not'} selected`;
   }
 };
 
-export const cardLabels = (nameField: string): CardsProps.AriaLabels<any> => ({
+export const cardLabels = (nameField: string): CardsProps.AriaLabels<GenericObject> => ({
   itemSelectionLabel: (event, item) => `select ${item[nameField]}`,
   selectionGroupLabel: 'Item selection'
 });

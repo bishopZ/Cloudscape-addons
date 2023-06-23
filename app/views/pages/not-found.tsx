@@ -17,8 +17,8 @@ export const NotFound = () => {
       <Box>
         If you believe something should be here, please contact
         <ExternalLink href="https://www.stellarelements.com/contact">
-          Stellar Elements
-        </ExternalLink>.
+          Stellar Elements.
+        </ExternalLink>
       </Box>
     </SpaceBetween>
   </ContentLayout>;

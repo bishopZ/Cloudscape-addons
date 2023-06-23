@@ -16,13 +16,14 @@ export const PREFERENCES = {
 
 export type Namespace = ValueOf<typeof PREFERENCES>
 
-type GlobalPreference = 'brightness' | 'density' | 'motion'
+type GlobalPreference = 'brightness' | 'density' | 'motion' | 'tools'
 
 const initialState = {
   initialized: false,
   brightness: 'auto',
   density: 'comfort',
   motion: 'on',
+  tools: 'open',
   [PREFERENCES.ARTICLES]: {
     pageSizes: [10, 45, 100],
     pageSize: 50,

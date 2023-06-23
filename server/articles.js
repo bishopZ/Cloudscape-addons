@@ -2,7 +2,7 @@
 module.exports = () => [
   {
     slug: 'loading-states',
-    title: 'Loading spinner and dash',
+    title: 'Loading states',
     description: 'Basic loading state components to expand the vocabulary of Cloudscape.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
@@ -11,11 +11,11 @@ module.exports = () => [
     section: 'Details',
     vendor: 'Cloudscape',
     publicationDate: new Date('Jun 2, 2021'),
-    tenets: [2, 3],
+    tenets: [2],
     referenceComponent: 'Spinner',
     referenceLink: 'https://cloudscape.design/components/spinner/',
-    keywords: 'fancy code ndash mdash team Spinner loading optionalgeneric state fetch medianame dashboard key \
-    value addons',
+    keywords: 'fancy code ndash mdash team Spinner loading optional generic state fetch medianame dashboard key \
+    value html addons',
   },
   {
     slug: 'icon-map',
@@ -31,16 +31,15 @@ module.exports = () => [
     tenets: [0],
     referenceComponent: 'Icon',
     referenceLink: 'https://cloudscape.design/components/icon/',
-    keywords: 'icons set preview design simple find tool speed box grid spacebetween spacing add plus angle left \
-      double angle left angle right double angle right angle up angle down arrow left audio full audio half audio \
-      off bug call calendar caret down filled caret down caret left filled caret right filled caret up filled \
-      caret up check contact close copy delete marker download drag indicator edit ellipsis envelope expand external \
-      file open file filter flag folder open folder group active group heart insert row key keyboard lock private menu \
-      microphone microphone off multiscreen notification redo refresh remove resize area script search security \
-      settings share shrink status in progress status info status negative status pending status positive status stopped \
-      status warning suggestions thumbs down filled thumbs down thumbs up filled thumbs up ticket treeview collapse \
-      treeview expand undo unlocked upload download upload user profile active user profile video off video on\
-      video unavailable view full view horizontal view vertical zoom in zoom out zoom to fit addons',
+    keywords: 'icons set preview design simple find tool speed box grid spacebetween spacing plus \
+      double angle arrow left full audio half off bug call calendar caret filled right \
+      check contact close copy delete marker download drag indicator edit ellipsis envelope expand external \
+      file filter flag open folder group active heart insert row keyboard lock private menu \
+      microphone microphone multiscreen notification redo refresh remove resize area script search security \
+      settings share shrink status progress info negative pending positive stopped \
+      warning suggestions thumbs up ticket collapse \
+      treeview expand undo unlocked upload user profile user profile video on\
+      video unavailable view horizontal vertical zoom out to fit addons',
   },
   {
     slug: 'labeled-input',
@@ -52,13 +51,13 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Forms',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 19, 2021'),
+    publicationDate: new Date('Jun 20, 2021'),
     tenets: [0, 1, 3, 4],
     referenceComponent: 'Input',
     referenceLink: 'https://cloudscape.design/components/input/',
     keywords: 'versitile majority form label accessibility usability best practice formfield type map text password \
     decimal numeric search email tel url value placeholder optional mode step addoptional aria inputprops \
-    cleararialabel formfieldstrings inputchange keyDetail onchange secondarycontrol readonly onkey autocomplete \
+    cleararialabel formfieldstrings inputchange InputKeyDetail onchange secondarycontrol readonly onkey autocomplete \
     spellcheck info error constraint onchange labeledinput addons'
   },
   {
@@ -71,7 +70,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Details',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 17, 2021'),
+    publicationDate: new Date('Jun 19, 2021'),
     tenets: [0, 1],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
@@ -98,7 +97,7 @@ module.exports = () => [
     topn topxs tops topm topl topxl topxxl bottomn bottomxxs bottomxs bottoms bottomm bottoml bottomxl bottomxxl \
     leftn leftxxs leftxs lefts leftm leftl leftxl leftxxl rightn rightxxs rightxs rights rightm rightl rightxl \
     rightxxl verticaln verticalxxs verticalxs verticals verticalm verticall verticalxl verticalxxl horizontaln \
-    horizontalxxs horizontalxs horizontals horizontalm horizontall horizontalxl horizontalxxl addons'
+    horizontalxxs horizontalxs horizontals horizontalm horizontall horizontalxl horizontalxxl none addons'
   },
   {
     slug: 'generic-empty',
@@ -114,7 +113,7 @@ module.exports = () => [
     tenets: [2, 3],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
-    keywords: 'table configuration collection hools items states empty filter matches patterns reusable smart defaults \
+    keywords: 'table configuration collection hools items states filter matches patterns reusable smart defaults \
     title description buttonname onclick standard continuation refresh nomatch clear defaults Implementation \
     usecollection collectionsettings filterprops collectionprops button box spacebetween fontweight spacing addons',
   },
@@ -132,7 +131,7 @@ module.exports = () => [
     tenets: [1, 2],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
-    keywords: 'formfield form field wrap details labeledvalue keyvalue key-value key value consistent naming \
+    keywords: 'formfield form field wrap details labeledvalue keyvalue key-value value consistent naming \
     box keyvalueprops label children addons',
   },
   {
@@ -155,7 +154,8 @@ module.exports = () => [
   {
     slug: 'string-utils',
     title: 'String utils',
-    description: 'A collection of utility functions are useful with Cloudscape.',
+    description: 'A collection of localization-friendly string utility functions \
+    for use with tables, dates, and S3 resources.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
     topic: 'Components',
@@ -163,21 +163,50 @@ module.exports = () => [
     section: 'Helpers',
     vendor: 'Cloudscape',
     publicationDate: new Date('Jun 14, 2021'),
-    tenets: [0, 1, 2, 3, 4],
-    keywords: '',
+    tenets: [0, 1, 2, 3],
+    keywords: 'utilities localization internationlization l10n l18n multi-language addoptional form fields optional \
+    label title translated heading-s inline-block ariarequired required formatdate absolute relativedash fallback \
+    toLocaleDateString LOCALE year month day week minute second moment makecounter table header s3 resource \
+    selector location uri aws sdk bucketname box makeS3Location addons',
+  },
+  {
+    slug: 'type-helpers',
+    title: 'Type helpers',
+    description: 'A collection of Typescript definitions that make your code more readible.',
+    image: 'assets/chasm.jpg',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Helpers',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('Jun 16, 2021'),
+    tenets: [1, 4],
+    keywords: 'addons',
+  },
+  {
+    slug: 'do-i-need-a-design-system',
+    title: 'Do I need a design system?',
+    description: 'As designers and developers, we\'re often asked how to approach design systems, and when to consider using them.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Vitra_Design_Museum.JPG/320px-Vitra_Design_Museum.JPG',
+    format: 'Article',
+    topic: 'Design systems',
+    discipline: 'Product',
+    section: 'Tools',
+    publicationDate: new Date('Jun 1, 2021'),
+    keywords: 'key factors scale longevity necessary organization skilled design work system priority brand lifespan risks stability \
+    choice options',
   },
   {
     slug: 'bridging-the-chasm',
-    title: 'How can design and development collaborate better?',
+    title: 'Design and development collaboratation',
     description: 'Harmonious collaboration between design and development is crucial for crafting outstanding user experiences.',
-    image: 'assets/chasm.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Collaboration_power.png/320px-Collaboration_power.png',
     format: 'Article',
     topic: 'Collaboration',
     discipline: 'Product',
     section: 'Tools',
-    vendor: 'Figma',
-    publicationDate: new Date('Jun 1, 2021'),
-    keywords: 'abstract software engineering divide potential bridge gap insights synergy design thinking agile \
+    publicationDate: new Date('Jun 3, 2021'),
+    keywords: 'software engineering divide potential bridge gap insights synergy design thinking agile \
     development methodologies collaborative tools integrated workflows digital innovation symbiotic relationship \
     professionals landscape diversity bootcamps worldwide framework pragmatic stragey evidence-based langauge \
     barrier communication terminology vocabulary principles mindset creativity logic perspective organization \
@@ -190,17 +219,16 @@ module.exports = () => [
   },
   {
     slug: 'anatomy-of-a-design-system',
-    title: 'What are the parts of a design system?',
+    title: 'Anatomy of a Design System',
     description: 'A design system consists of several key elements that work together to provide a cohesive and standardized approach to digital design.',
-    image: 'assets/chasm.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Parts_of_clarinet_6.jpg/1024px-Parts_of_clarinet_6.jpg',
     format: 'Article',
-    topic: 'Design Systems',
+    topic: 'Design systems',
     discipline: 'Design',
     section: 'Foundation',
     author: 'Chad Lumley & Bishop Zareh',
-    publicationDate: new Date('Jun 3, 2021'),
-    keywords: 'key factors scale longevity necessary organization skilled design work system priority brand lifespan risks stability \
-    anatomy digital design foundations layer elements development interfaces principles iconography guidelines logos \
+    publicationDate: new Date('Jun 5, 2021'),
+    keywords: 'anatomy digital design foundations layer elements development interfaces principles iconography guidelines logos \
     typefaces illustration sound voice tone photography motion layout elevation color identity lanugage \
     tokens decisions attributes spacing opacity radii volume borders timing consistent global platforms \
     product scalability change multi-platform support unified process core collection building block \
@@ -209,15 +237,15 @@ module.exports = () => [
   },
   {
     slug: 'documenting-a-design-system',
-    title: 'How should I document my design system?',
+    title: 'Documenting design systems',
     description: 'Document your design system with assets, process and documentation.',
-    image: 'assets/chasm.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Austria_-_G%C3%B6ttweig_Abbey_-_2015.jpg/320px-Austria_-_G%C3%B6ttweig_Abbey_-_2015.jpg',
     format: 'Article',
-    topic: 'Design Systems',
+    topic: 'Design systems',
     discipline: 'Writing',
     section: 'Delivery',
     author: 'Chad Lumley & Bishop Zareh',
-    publicationDate: new Date('Jun 5, 2021'),
+    publicationDate: new Date('Jun 7, 2021'),
     keywords: 'centralized scalable cohesive potential clear communicates assets processes guidelines \
     teams consistency efficiency collaboration tangible layered logo files brand identity tokens CSS primitive \
     color palette core sass layout mixin interfaces components figma buttons product human behaviors actions \
@@ -229,23 +257,53 @@ module.exports = () => [
   },
   {
     slug: 'design-system-lifecycle',
-    title: 'What is the lifecycle of a design system?',
+    title: 'Design system lifecycle',
     description: 'Explores the stages of a design system\'s maturity.',
-    image: 'assets/chasm.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/PENGUIN_LIFECYCLE_H.JPG/320px-PENGUIN_LIFECYCLE_H.JPG',
     format: 'Article',
-    topic: 'Design Systems',
+    topic: 'Design systems',
     discipline: 'Design',
     section: 'Delivery',
     author: 'Chad Lumley & Bishop Zareh',
-    publicationDate: new Date('Jun 7, 2021'),
+    publicationDate: new Date('Jun 9, 2021'),
     keywords: 'superheros digital interface mature win joke potential journey stages model \
-    version ingredients balance present dicovering combination princcipals tokens core \
+    version ingredients balance present dicovering combination principals tokens core \
     adoption obvious charming associated instructions showcase choice teenage foundation \
     growth nurturing mindset promise improving time healthy platform wise leader organization \
-    guru guiding greatness evolving adapt game educate engage knowledge potential purpose \
+    guru guiding greatness evolving adapt',
+  },
+  {
+    slug: 'design-system-maturity',
+    title: 'Maturing a design system',
+    description: 'How to advance the maturity of your design system.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/PENGUIN_LIFECYCLE_H.JPG/320px-PENGUIN_LIFECYCLE_H.JPG',
+    format: 'Article',
+    topic: 'Design systems',
+    discipline: 'Design',
+    section: 'Delivery',
+    author: 'Chad Lumley & Bishop Zareh',
+    publicationDate: new Date('Jun 11, 2021'),
+    keywords: 'game educate engage knowledge potential purpose \
     benefits approach vision elighten colleagues two-way conversation users learn listen \
     needs voice recruit adopters contributors heros future continuous improvement \
     scientist perfecting edge',
+  },
+  {
+    slug: 'collaboration-tools-figma',
+    title: 'Collaborative design with Figma',
+    description: 'Articulation of the features and advantages of Figma as a \
+    collaborative design & feedback tool.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png',
+    format: 'Article',
+    topic: 'Collaboration',
+    discipline: 'Design',
+    section: 'Tools',
+    vendor: 'Figma',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Jun 13, 2021'),
+    keywords: 'tolls adoption designers developers shared platforms real-time editing commenting \
+    version control process exchange ideas vision implementation robust effective simultaneous \
+    feedback interation components libraries projects team unified coherent contextual channels',
   },
 ] .filter(item => {
   if (!item.publicationDate) return false;

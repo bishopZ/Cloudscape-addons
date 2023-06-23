@@ -2,11 +2,7 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
-import { PreviewHeader } from '/views/common/headers/preview-header';
-import { SourceHeader } from '/views/common/headers/source-header';
 import { SourceCodeSection } from '/views/common/source-code-section';
-
-import { InputPreview } from '../previews/input-preview';
 
 export const LabeledValueArticle = () => {
   useEffect(() => {
@@ -17,6 +13,15 @@ export const LabeledValueArticle = () => {
 
   return <SpaceBetween size="m">
     <Container
+      media={{
+        content:
+      <img
+        src="assets/chasm.jpg"
+        alt="placeholder"
+      />,
+        height: 200,
+        position: 'top'
+      }}
       header={<Header variant="h2">
       Introducing LabeledValue
       </Header>}>
@@ -42,7 +47,7 @@ import React from 'react';
 
 type KeyValueProps = {
   label: React.ReactNode
-  children: React.ReactNode | React.ReactNode[]
+  children: React.ReactNode
 }
 
 export const LabeledValue = ({ label, children }: KeyValueProps) =>

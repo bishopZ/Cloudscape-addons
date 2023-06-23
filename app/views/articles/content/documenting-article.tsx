@@ -4,7 +4,17 @@ import React from 'react';
 /* eslint-disable max-len */
 export const DocumentingArticle = () => {
   return <SpaceBetween size="m">
-    <Container header={<Header variant="h2">Introduction</Header>}>
+    <Container
+      media={{
+        content:
+        <img
+          src="assets/chasm.jpg"
+          alt="placeholder"
+        />,
+        height: 200,
+        position: 'top'
+      }}
+      header={<Header variant="h2">How should I document my design system?</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
         Design systems provide a centralized and scalable approach to creating and maintaining cohesive user experiences. Yet, for others to leverage the potential of your design system, it’s crucial to establish clear documentation that communicates the assets, processes, and guidelines to the teams using it. In this article, we explore the key aspects of design system documentation and its role in fostering consistency, efficiency, and collaboration.
