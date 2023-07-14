@@ -1,23 +1,17 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
+import { makeHeaderImage } from '/utils/content-map';
+
 /* eslint-disable max-len */
 export const DocumentingArticle = () => {
   return <SpaceBetween size="m">
     <Container
-      media={{
-        content:
-        <img
-          src="assets/chasm.jpg"
-          alt="placeholder"
-        />,
-        height: 200,
-        position: 'top'
-      }}
+      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
       header={<Header variant="h2">How should I document my design system?</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
-        Design systems provide a centralized and scalable approach to creating and maintaining cohesive user experiences. Yet, for others to leverage the potential of your design system, it’s crucial to establish clear documentation that communicates the assets, processes, and guidelines to the teams using it. In this article, we explore the key aspects of design system documentation and its role in fostering consistency, efficiency, and collaboration.
+        Design systems provide a centralized and scalable approach to creating and maintaining cohesive customer experiences. Yet, for others to leverage the potential of your design system, it’s crucial to establish clear documentation that communicates the assets, processes, and guidelines to the teams using it. In this article, we explore the key aspects of design system documentation and its role in fostering consistency, efficiency, and collaboration.
         </Box>
       </SpaceBetween>
     </Container>
@@ -35,7 +29,7 @@ export const DocumentingArticle = () => {
     </Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
-        For others to use your design system, it’s important to define and document the processes that govern its development, maintenance, and usage. These processes help guide the behaviors and actions of the teams that use it.
+        For others to use your design system, it’s important to define and document the processes that govern its development, maintenance, and usage. This journey will help guide the behaviors and actions of the teams that use it.
         </Box>
         <Box variant="p">
         For example, governance and testing processes outline guidelines for evaluating and approving changes to the system. Contribution processes define how teams can contribute to the system's evolution. Synchronization processes ensure consistency across teams and projects. Deprecation processes guide the removal of outdated elements. Release and versioning processes enable controlled updates. Extension and variation processes allow customization while maintaining core consistency. Onboarding processes help the adoption of the design system by new team members.
@@ -60,7 +54,7 @@ export const DocumentingArticle = () => {
           Explanations: Describing the purpose and functionality of each component.
           </li>
           <li>
-          Usage and Migration: Guiding users on how to incorporate and transition to different elements.
+          Usage and Migration: Guiding customers to incorporate and transition to different elements.
           </li>
           <li>
           Guidelines: Outlining the recommended scenarios and limitations for using specific components.

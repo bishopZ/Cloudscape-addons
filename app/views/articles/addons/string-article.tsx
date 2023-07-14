@@ -1,8 +1,9 @@
-import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
+import { Box, Container, Header, Link, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { addOptional, formatDate, makeCounter } from '/addons/helpers/string-utils';
+import { makeHeaderImage } from '/utils/content-map';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 /* eslint-disable max-lines-per-function */
@@ -14,16 +15,69 @@ export const StringArticle = () => {
   }, []);
 
   return <SpaceBetween size="m">
+    <SourceCodeSection source={`import { Box } from '@cloudscape-design/components';
+import React from 'react';
+
+import { Dash } from '/addons/details/loading';
+
+export const DEFAULT_LOCALE = 'en-us';
+
+export const addOptional = (label: React.ReactNode) => <>
+  {label}
+  <>&nbsp;</>
+  <Box fontSize="heading-s" display="inline-block">
+    <em>
+      (optional)
+    </em>
+  </Box>
+</>;
+
+export const formatDate = (date?: string | Date) => {
+  if (!date) return <Dash />;
+  const newDate = typeof date === 'string'
+    ? new Date(date)
+    : date;
+  return newDate.toLocaleDateString(DEFAULT_LOCALE, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+};
+
+const units: Record<string, number> = {
+  year: 24 * 60 * 60 * 1000 * 365,
+  month: 24 * 60 * 60 * 1000 * 365 / 12,
+  day: 24 * 60 * 60 * 1000,
+  hour: 60 * 60 * 1000,
+  minute: 60 * 1000,
+  second: 1000
+};
+
+export const getRelativeTime = (date1: Date, date2 = new Date()) => {
+  const elapsed = new Date(date1).valueOf() - date2.valueOf();
+  const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+  for (const unit in units) {
+    if (Math.abs(elapsed) > units[unit] || unit === 'second') {
+      return rtf.format(Math.round(elapsed / units[unit]), unit as Intl.RelativeTimeFormatUnit);
+    }
+  }
+};
+
+export const makeCounter = (selected: number, total: number) => selected > 0
+  ? ${'`(${selected}/${total})`'}
+  : ${'`(${total})`'};
+
+export const makeS3Location = (location: string) => {
+  const parts = location.split('/');
+  const bucketName = parts[2];
+  let key = '';
+  if (parts.length === 4) [key] = parts.slice(-1);
+  if (parts.length > 4) key = parts.slice(3, -1).join('/');
+  return { key, bucketName };
+};
+`} />
     <Container
-      media={{
-        content:
-        <img
-          src="assets/chasm.jpg"
-          alt="placeholder"
-        />,
-        height: 200,
-        position: 'top'
-      }}
+      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
       header={<Header variant="h2">
         Introducing StringUtils
       </Header>}>
@@ -67,7 +121,7 @@ export const StringArticle = () => {
           default to required, and they always sets the aria label so that developers
           don't have to remember to do so. addOptional then becomes a nice visual
           indicator of the interconnected nature of required and optional form fields,
-          and how that is messaged to <em>all</em> users.
+          and how that is messaged to <em>all</em> customers.
         </Box>
       </SpaceBetween>
     </Container>
@@ -103,7 +157,8 @@ export const formatDate = (date?: string | Date) => {
         <Box variant="p">
           But what if we want relative dates? Should we install moment.js?
           These days relative dates are included in the javascript specification,
-          with just a little extra finese.
+          with just a little extra finese. Relative time is used for the
+          publication date on Stellar Addon's <Link href="#/">Blog page</Link>.
         </Box>
         <pre><code className="language-javascript">{`export const DEFAULT_LOCALE = 'en-us';
         
@@ -169,66 +224,5 @@ export const getRelativeTime = (date1: Date, date2 = new Date()) => {
 };`}</code></pre>
       </SpaceBetween>
     </Container>
-    <SourceCodeSection source={`import { Box } from '@cloudscape-design/components';
-import React from 'react';
-
-import { Dash } from '/addons/details/loading';
-
-export const DEFAULT_LOCALE = 'en-us';
-
-export const addOptional = (label: React.ReactNode) => <>
-  {label}
-  <>&nbsp;</>
-  <Box fontSize="heading-s" display="inline-block">
-    <em>
-      (optional)
-    </em>
-  </Box>
-</>;
-
-export const formatDate = (date?: string | Date) => {
-  if (!date) return <Dash />;
-  const newDate = typeof date === 'string'
-    ? new Date(date)
-    : date;
-  return newDate.toLocaleDateString(DEFAULT_LOCALE, {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
-};
-
-const units: Record<string, number> = {
-  year: 24 * 60 * 60 * 1000 * 365,
-  month: 24 * 60 * 60 * 1000 * 365 / 12,
-  day: 24 * 60 * 60 * 1000,
-  hour: 60 * 60 * 1000,
-  minute: 60 * 1000,
-  second: 1000
-};
-
-export const getRelativeTime = (date1: Date, date2 = new Date()) => {
-  const elapsed = new Date(date1).valueOf() - date2.valueOf();
-  const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
-  for (const unit in units) {
-    if (Math.abs(elapsed) > units[unit] || unit === 'second') {
-      return rtf.format(Math.round(elapsed / units[unit]), unit as Intl.RelativeTimeFormatUnit);
-    }
-  }
-};
-
-export const makeCounter = (selected: number, total: number) => selected > 0
-  ? ${'`(${selected}/${total})`'}
-  : ${'`(${total})`'};
-
-export const makeS3Location = (location: string) => {
-  const parts = location.split('/');
-  const bucketName = parts[2];
-  let key = '';
-  if (parts.length === 4) [key] = parts.slice(-1);
-  if (parts.length > 4) key = parts.slice(3, -1).join('/');
-  return { key, bucketName };
-};
-`} />
   </SpaceBetween>;
 };

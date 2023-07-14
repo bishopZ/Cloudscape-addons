@@ -7,8 +7,23 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: awsui.$color-background-cell-shaded;
   img {
     width: 100%;
+  }
+}
+
+.card-image-wide {
+  height: 165px;
+  width: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 100%;
+  background-color: awsui.$color-background-cell-shaded;
+  img {
+    height: 100%;
   }
 }
 
@@ -16,6 +31,7 @@
   min-height: 3.1rem;
 }
 
-.card-image {
-  background-color: awsui.$color-background-cell-shaded;
+
+[class^='awsui_variant-default_'], [class*=' awsui_variant-default_'] {
+  max-width: 1024px;
 }

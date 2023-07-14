@@ -2,7 +2,8 @@
 module.exports = () => [
   {
     slug: 'loading-states',
-    title: 'Loading states',
+    title: 'Cloudscape loading states',
+    name: 'Loading states',
     description: 'Basic loading state components to expand the vocabulary of Cloudscape.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
@@ -10,7 +11,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Details',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 2, 2021'),
+    publicationDate: new Date('Jun 3, 2024'),
     tenets: [2],
     referenceComponent: 'Spinner',
     referenceLink: 'https://cloudscape.design/components/spinner/',
@@ -19,7 +20,8 @@ module.exports = () => [
   },
   {
     slug: 'icon-map',
-    title: 'Icon map',
+    title: 'Cloudscape icon map',
+    name: 'Icon map',
     description: 'Developer convenience component to aid in quickly finding the name of a particular icon.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
@@ -27,7 +29,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Helpers',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 6, 2021'),
+    publicationDate: new Date('Jun 4, 2024'),
     tenets: [0],
     referenceComponent: 'Icon',
     referenceLink: 'https://cloudscape.design/components/icon/',
@@ -43,7 +45,8 @@ module.exports = () => [
   },
   {
     slug: 'labeled-input',
-    title: 'Labeled input',
+    title: 'Cloudscape labeled input',
+    name: 'Labeled input',
     description: 'Labeled variation of the Input component that provides smart defaults.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
@@ -51,7 +54,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Forms',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 20, 2021'),
+    publicationDate: new Date('Jun 24, 2024'),
     tenets: [0, 1, 3, 4],
     referenceComponent: 'Input',
     referenceLink: 'https://cloudscape.design/components/input/',
@@ -62,7 +65,8 @@ module.exports = () => [
   },
   {
     slug: 'labeled-number',
-    title: 'Labeled number',
+    title: 'Cloudscape labeled number',
+    name: 'Labeled number',
     description: 'Labeled number display as seen in Cloudscape Dashboard demo.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
@@ -70,7 +74,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Details',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 19, 2021'),
+    publicationDate: new Date('Jun 23, 2024'),
     tenets: [0, 1],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
@@ -80,7 +84,8 @@ module.exports = () => [
   },
   {
     slug: 'spacing-constants',
-    title: 'Spacing constants',
+    title: 'Cloudscape spacing constants',
+    name: 'Spacing constants',
     description: 'Helper file for DRYing up the use of spacing objects in your project.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
@@ -88,7 +93,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Helpers',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 4, 2021'),
+    publicationDate: new Date('Jun 5, 2024'),
     tenets: [0, 1, 2],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
@@ -101,7 +106,8 @@ module.exports = () => [
   },
   {
     slug: 'generic-empty',
-    title: 'Generic empty',
+    title: 'Cloudscape generic empty',
+    name: 'Generic empty',
     description: 'Simple components designed to speed up creation of new Tables.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
@@ -109,7 +115,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Tables',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 8, 2021'),
+    publicationDate: new Date('Jun 7, 2024'),
     tenets: [2, 3],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
@@ -119,7 +125,8 @@ module.exports = () => [
   },
   {
     slug: 'labeled-value',
-    title: 'Labeled value',
+    title: 'Cloudscape labeled value',
+    name: 'Labeled value',
     description: 'A simple, generic component for a common Details page pattern.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
@@ -127,7 +134,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Details',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 10, 2021'),
+    publicationDate: new Date('Jun 11, 2024'),
     tenets: [1, 2],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
@@ -136,7 +143,8 @@ module.exports = () => [
   },
   {
     slug: 'unsaved-changes-modal',
-    title: 'Unsaved changes modal',
+    title: 'Cloudscape unsaved changes modal',
+    name: 'Unsaved changes modal',
     description: 'The modal described in the documentation for Cloudscape\'s Wizard Component.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
@@ -144,7 +152,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Forms',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 12, 2021'),
+    publicationDate: new Date('Jun 12, 2024'),
     tenets: [0, 2],
     referenceComponent: 'Wizard',
     referenceLink: 'https://cloudscape.design/components/wizard/',
@@ -153,7 +161,8 @@ module.exports = () => [
   },
   {
     slug: 'string-utils',
-    title: 'String utils',
+    title: 'Cloudscape string utilities',
+    name: 'String utilities',
     description: 'A collection of localization-friendly string utility functions \
     for use with tables, dates, and S3 resources.',
     image: 'assets/chasm.jpg',
@@ -162,7 +171,7 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Helpers',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 14, 2021'),
+    publicationDate: new Date('Jun 14, 2024'),
     tenets: [0, 1, 2, 3],
     keywords: 'utilities localization internationlization l10n l18n multi-language addoptional form fields optional \
     label title translated heading-s inline-block ariarequired required formatdate absolute relativedash fallback \
@@ -171,7 +180,8 @@ module.exports = () => [
   },
   {
     slug: 'type-helpers',
-    title: 'Type helpers',
+    title: 'Cloudscape Typescript helpers',
+    name: 'Typescript helpers',
     description: 'A collection of Typescript definitions that make your code more readible.',
     image: 'assets/chasm.jpg',
     format: 'Documentation',
@@ -179,9 +189,24 @@ module.exports = () => [
     discipline: 'Engineering',
     section: 'Helpers',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 16, 2021'),
+    publicationDate: new Date('Jun 16, 2024'),
     tenets: [1, 4],
-    keywords: 'addons',
+    keywords: 'addons definitions name internal intuitive readability generic shape non-cancelable preventdefault \
+    wrappers event handler definition list inference engine variables object fruits apple grape bland \
+    BreadcrumbGroupProps, ButtonDropdownProps, ButtonProps, CalendarProps, CardsProps, CheckboxProps, \
+    CollectionPreferencesProps, DateRangePickerProps, ExpandableSectionProps, FlashbarProps, GridProps, \
+    InputProps, LinkProps, ModalProps, MultiselectProps, NonCancelableCustomEvent, RadioGroupProps, \
+    SegmentedControlProps, SelectProps, SideNavigationProps, TableProps, TabsProps, TagEditorProps, \
+    TextFilterProps, TilesProps, ToggleProps, TokenGroupProps, WizardProps NonCancelableEventHandler \
+    GenericObject Record string unknown valueof keyof typeof buttonclick buttonfollow buttondropclick \
+    cardschange calendarchange checkboxchange columnwidthschange daterangechange expandablechange \
+    inputchange inputkeydetail linkfollow modaldismiss mutilselectchange preferenceconfirm \
+    radiochange rowclick sementedchange selectchange selectload sidenavchange sidenavfollow \
+    tabchange tableselectionchange tablesortchange tageditorchange textfilterchange tilechange \
+    tokendismiss togglechange wizardnavigate breadcrumb buttondropitems cardsdefinition \
+    cardSection cardslayout flashbarmessages griddefinition multiselectdoptions radioitems \
+    sidenavheader sidenavitems segmentedoptions tabs tags tablecolumn tileitems timerangeoptions \
+    tokenitems wizardsteps',
   },
   {
     slug: 'do-i-need-a-design-system',
@@ -192,7 +217,8 @@ module.exports = () => [
     topic: 'Design systems',
     discipline: 'Product',
     section: 'Tools',
-    publicationDate: new Date('Jun 1, 2021'),
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Jun 1, 2024'),
     keywords: 'key factors scale longevity necessary organization skilled design work system priority brand lifespan risks stability \
     choice options',
   },
@@ -205,7 +231,8 @@ module.exports = () => [
     topic: 'Collaboration',
     discipline: 'Product',
     section: 'Tools',
-    publicationDate: new Date('Jun 3, 2021'),
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Jun 13, 2024'),
     keywords: 'software engineering divide potential bridge gap insights synergy design thinking agile \
     development methodologies collaborative tools integrated workflows digital innovation symbiotic relationship \
     professionals landscape diversity bootcamps worldwide framework pragmatic stragey evidence-based langauge \
@@ -219,15 +246,15 @@ module.exports = () => [
   },
   {
     slug: 'anatomy-of-a-design-system',
-    title: 'Anatomy of a Design System',
+    title: 'Anatomy of a design system',
     description: 'A design system consists of several key elements that work together to provide a cohesive and standardized approach to digital design.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Parts_of_clarinet_6.jpg/1024px-Parts_of_clarinet_6.jpg',
     format: 'Article',
     topic: 'Design systems',
     discipline: 'Design',
     section: 'Foundation',
-    author: 'Chad Lumley & Bishop Zareh',
-    publicationDate: new Date('Jun 5, 2021'),
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Jun 2, 2024'),
     keywords: 'anatomy digital design foundations layer elements development interfaces principles iconography guidelines logos \
     typefaces illustration sound voice tone photography motion layout elevation color identity lanugage \
     tokens decisions attributes spacing opacity radii volume borders timing consistent global platforms \
@@ -237,15 +264,15 @@ module.exports = () => [
   },
   {
     slug: 'documenting-a-design-system',
-    title: 'Documenting design systems',
+    title: 'Documenting a design system',
     description: 'Document your design system with assets, process and documentation.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Austria_-_G%C3%B6ttweig_Abbey_-_2015.jpg/320px-Austria_-_G%C3%B6ttweig_Abbey_-_2015.jpg',
     format: 'Article',
     topic: 'Design systems',
     discipline: 'Writing',
     section: 'Delivery',
-    author: 'Chad Lumley & Bishop Zareh',
-    publicationDate: new Date('Jun 7, 2021'),
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Jun 6, 2024'),
     keywords: 'centralized scalable cohesive potential clear communicates assets processes guidelines \
     teams consistency efficiency collaboration tangible layered logo files brand identity tokens CSS primitive \
     color palette core sass layout mixin interfaces components figma buttons product human behaviors actions \
@@ -257,15 +284,15 @@ module.exports = () => [
   },
   {
     slug: 'design-system-lifecycle',
-    title: 'Design system lifecycle',
+    title: 'Lifecycle of a design system',
     description: 'Explores the stages of a design system\'s maturity.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/PENGUIN_LIFECYCLE_H.JPG/320px-PENGUIN_LIFECYCLE_H.JPG',
     format: 'Article',
     topic: 'Design systems',
     discipline: 'Design',
     section: 'Delivery',
-    author: 'Chad Lumley & Bishop Zareh',
-    publicationDate: new Date('Jun 9, 2021'),
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Jun 8, 2024'),
     keywords: 'superheros digital interface mature win joke potential journey stages model \
     version ingredients balance present dicovering combination principals tokens core \
     adoption obvious charming associated instructions showcase choice teenage foundation \
@@ -281,8 +308,8 @@ module.exports = () => [
     topic: 'Design systems',
     discipline: 'Design',
     section: 'Delivery',
-    author: 'Chad Lumley & Bishop Zareh',
-    publicationDate: new Date('Jun 11, 2021'),
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Jun 9, 2024'),
     keywords: 'game educate engage knowledge potential purpose \
     benefits approach vision elighten colleagues two-way conversation users learn listen \
     needs voice recruit adopters contributors heros future continuous improvement \
@@ -300,7 +327,7 @@ module.exports = () => [
     section: 'Tools',
     vendor: 'Figma',
     author: 'Bishop Zareh',
-    publicationDate: new Date('Jun 13, 2021'),
+    publicationDate: new Date('Jun 15, 2024'),
     keywords: 'tolls adoption designers developers shared platforms real-time editing commenting \
     version control process exchange ideas vision implementation robust effective simultaneous \
     feedback interation components libraries projects team unified coherent contextual channels',

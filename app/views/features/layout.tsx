@@ -99,18 +99,18 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
       identity={topNav}
       utilities={utils}
       i18nStrings={topNavStrings}
-      search={<SpaceBetween size="s" direction="horizontal">
-        <Link href="#/">
-          <Button variant={path.startsWith('/blog') || path === '/' ? 'normal' : 'link'}>
-            Blog
-          </Button>
-        </Link>
-        <Link href="#/docs">
-          <Button variant={path.startsWith('/docs') ? 'normal' : 'link'}>
-            Cloudscape addons v1
-          </Button>
-        </Link>
-      </SpaceBetween>}
+      // search={<SpaceBetween size="s" direction="horizontal">
+      //   <Link href="#/">
+      //     <Button variant={path.startsWith('/blog') || path === '/' ? 'normal' : 'link'}>
+      //       Blog
+      //     </Button>
+      //   </Link>
+      //   <Link href="#/docs">
+      //     <Button variant={path.startsWith('/docs') ? 'normal' : 'link'}>
+      //       Addons
+      //     </Button>
+      //   </Link>
+      // </SpaceBetween>}
     />
     <AppLayout
       contentType={contentType}
@@ -127,11 +127,7 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
         }));
       }}
       footerSelector="footer"
-      content={
-        <>
-          {children}
-        </>
-      }
+      content={<>{children}</>}
     />
   </>;
 };

@@ -12,7 +12,7 @@ export const BlogHeader = () => {
     variant="h1"
     counter={makeCounter(selected, total)}
     actions={<HeaderActions />}>
-    Articles
+    Search articles
   </Header>;
 };
 

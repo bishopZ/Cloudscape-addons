@@ -1,4 +1,4 @@
-import { Container, ExpandableSection } from '@cloudscape-design/components';
+import { Button, Container, ExpandableSection } from '@cloudscape-design/components';
 import React from 'react';
 
 import { SourceHeader } from './headers/source-header';
@@ -9,6 +9,9 @@ type Props = {
 
 export const SourceCodeSection = (props: Props) => {
   const { source } = props;
+  const isDocs = location.hash.indexOf('/docs') !== -1;
+
+  if (!isDocs) return <></>;
 
   return <Container header={<SourceHeader source={source} />}>
     <ExpandableSection

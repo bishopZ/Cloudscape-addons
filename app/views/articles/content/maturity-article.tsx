@@ -1,11 +1,15 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
+import { makeHeaderImage } from '/utils/content-map';
+
 /* eslint-disable max-len */
 export const MaturityArticle = () => {
-  return <Container header={
-    <Header variant="h2">How can I mature my design system?</Header>
-  }>
+  return <Container
+    media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
+    header={
+      <Header variant="h2">How can I mature my design system?</Header>
+    }>
     <SpaceBetween size="xs">
       <Box variant="p">
         Maturity comes through a cycle of three steps: educate, engage, and evolve.

@@ -55,11 +55,11 @@ export const theme: Theme = {
 
 export const topNav: TopNavigationProps.Identity = {
   href: '#/',
-  title: 'Stellar Addons',
-  logo: {
-    src: 'assets/favicon.png',
-    alt: 'Stellar addons logo'
-  }
+  title: 'BishopZ.com',
+  // logo: {
+  //   src: 'assets/favicon.png',
+  //   alt: 'Bishop Z logo'
+  // }
 };
 
 type Utilities = TopNavigationProps.MenuDropdownUtility

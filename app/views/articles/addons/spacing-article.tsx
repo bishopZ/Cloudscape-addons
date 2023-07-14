@@ -2,6 +2,7 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { makeHeaderImage } from '/utils/content-map';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 /* eslint-disable max-lines-per-function */
@@ -13,51 +14,6 @@ export const SpacingConstants = () => {
   }, []);
 
   return <SpaceBetween size="m">
-    <Container
-      media={{
-        content:
-          <img
-            src="assets/chasm.jpg"
-            alt="placeholder"
-          />,
-        height: 200,
-        position: 'top'
-      }}
-      header={<Header variant="h2">
-      Introducing the spacing constants
-      </Header>}>
-      <SpaceBetween size="m">
-        <Box variant="p">
-          The spacing constants provide a consistent interface to the Spacing
-          property of Cloudscape's
-          <ExternalLink href="https://cloudscape.design/components/box/">Box component.</ExternalLink>
-          The Box component is the only tool in Cloudscapes arsenal that can add
-          padding and margin to content. Since the Box component is so common,
-          the Spacing constants warrent being DRYed up into a single constants
-          file.
-        </Box>
-        <Box variant="p">
-          The spacing constants are divided by direction, and provide the same
-          variants as Cloudscape, XXS, XS, S, M, L, XL, XXL, and N for none.
-          Spacing.M is medium size spacing in all four directions. Horizontal
-          and Vertical provide spacing in two directions, and the rest are
-          provided as Top, Left, Bottom and Right.
-        </Box>
-        <pre><code className="language-javascript">{`TopXXS: { top: 'xxs' },
-BottomXS: { bottom: 'xs' },
-LeftS: { left: 's' },
-RightM: { right: 'm' },
-VerticalL: { vertical: 'l' },
-HorizontalXL: { horizontal: 'xl' },
-XXL: { horizontal: 'xxl', vertical: 'xxl' },`}</code></pre>
-        <Box variant="p">
-          Having each of these variations already typed out and in the code, enables
-          developers to quickly switch between then without worry or hesitation.
-          Maintaining this as a file enables you to add any mismatched variations that
-          might prove useful, such as TopXXLBottomS.
-        </Box>
-      </SpaceBetween>
-    </Container>
     <SourceCodeSection source={`import type { BoxProps } from '@cloudscape-design/components';
 
 const SpacingConstant = {
@@ -128,5 +84,42 @@ const SpacingConstant = {
 
 export const Spacing = SpacingConstant as Record<keyof typeof SpacingConstant, BoxProps.Spacing>;`}
     />
+    <Container
+      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
+      header={<Header variant="h2">
+      Introducing the spacing constants
+      </Header>}>
+      <SpaceBetween size="m">
+        <Box variant="p">
+          The spacing constants provide a consistent interface to the Spacing
+          property of Cloudscape's
+          <ExternalLink href="https://cloudscape.design/components/box/">Box component.</ExternalLink>
+          The Box component is the only tool in Cloudscapes arsenal that can add
+          padding and margin to content. Since the Box component is so common,
+          the Spacing constants warrent being DRYed up into a single constants
+          file.
+        </Box>
+        <Box variant="p">
+          The spacing constants are divided by direction, and provide the same
+          variants as Cloudscape, XXS, XS, S, M, L, XL, XXL, and N for none.
+          Spacing.M is medium size spacing in all four directions. Horizontal
+          and Vertical provide spacing in two directions, and the rest are
+          provided as Top, Left, Bottom and Right.
+        </Box>
+        <pre><code className="language-javascript">{`TopXXS: { top: 'xxs' },
+BottomXS: { bottom: 'xs' },
+LeftS: { left: 's' },
+RightM: { right: 'm' },
+VerticalL: { vertical: 'l' },
+HorizontalXL: { horizontal: 'xl' },
+XXL: { horizontal: 'xxl', vertical: 'xxl' },`}</code></pre>
+        <Box variant="p">
+          Having each of these variations already typed out and in the code, enables
+          developers to quickly switch between then without worry or hesitation.
+          Maintaining this as a file enables you to add any mismatched variations that
+          might prove useful, such as TopXXLBottomS.
+        </Box>
+      </SpaceBetween>
+    </Container>
   </SpaceBetween>;
 };

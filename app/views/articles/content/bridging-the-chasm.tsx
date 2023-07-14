@@ -1,24 +1,18 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
+import { makeHeaderImage } from '/utils/content-map';
+
 /* eslint-disable max-len */
 export const BridgingTheChasmContent = () => {
   return <SpaceBetween size="m">
     <Container
-      media={{
-        content:
-        <img
-          src="assets/chasm.jpg"
-          alt="placeholder"
-        />,
-        height: 200,
-        position: 'top'
-      }}
+      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
       header={<Header variant="h2">How can design and development collaborate better?</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
         In the dynamic realm of software engineering, the harmonious collaboration
-        between design and development is crucial for crafting outstanding user
+        between design and development is crucial for crafting outstanding customer
         experiences. However, the persistent divide between these domains presents
         challenges that hinder their full potential. This paper explores innovative
         approaches to bridge this gap, drawing insights from the synergy of design
@@ -52,7 +46,7 @@ export const BridgingTheChasmContent = () => {
         </Box>
         <Header variant="h3">2.2 Constant changes</Header>
         <Box variant="p">
-        Designers typically communicate their ideas through a loosely-organized set of wireframes, comps, and supporting documents. Sometimes called a "hairball," this collection of documents is shared with developers. Then, inevitably, as the development progresses, unexpected changes arise, leading to the need for urgent meetings and hastily assembled additional documentation to keep the hairball intact. Hopefully, by the end of the development process, the final product still reflects the designer's original intent and vision.
+        Designers typically communicate their ideas through a loosely-organized set of wireframes, comps, and supporting documents. Sometimes called a "hairball," this collection of documents is shared with developers. Then, inevitably, as the development progresses, unexpected changes arise, leading to the need for urgent meetings and hastily assembled additional documentation to keep the hairball intact. Hopefully, by the end of development, the final product still reflects the designer's original intent and vision.
         </Box>
       </SpaceBetween>
     </Container>
@@ -66,15 +60,15 @@ export const BridgingTheChasmContent = () => {
         Designers and developers should strive to establish clear and efficient channels of communication from the outset. Regular meetings, stand-ups, and status updates can facilitate a better understanding of project goals, design intentions, and technical constraints. Open lines of communication allow for timely feedback, clarification of requirements, and alignment of expectations, reducing the likelihood of misinterpretations or unnecessary compromises.
         </Box>
         <Box variant="p">
-        Designers who fail to establish clear lines of communication with developers inevitably risk their work getting lost within the ever-widening gap. Designers should possess an understanding of the platform's inherent limitations for which they are designing. Familiarity with the ease or difficulty of implementing design concepts from a development standpoint is crucial. By demonstrating empathy towards their colleagues, designers can avoid presenting ideas that may be perceived as infeasible or needlessly challenging by developers. Ultimately, cultivating empathy, not only towards fellow team members, but also towards the end users, can significantly contribute to the creation of exceptional user experiences.
+        Designers who fail to establish clear lines of communication with developers inevitably risk their work getting lost within the ever-widening gap. Designers should possess an understanding of the platform's inherent limitations for which they are designing. Familiarity with the ease or difficulty of implementing design concepts from a development standpoint is crucial. By demonstrating empathy towards their colleagues, designers can avoid presenting ideas that may be perceived as infeasible or needlessly challenging by developers. Ultimately, cultivating empathy, not only towards fellow team members, but also towards the customers, can significantly contribute to the creation of exceptional customer experiences.
         </Box>
         <Header variant="h3">3.2 Embrace collaborative design tools</Header>
         <Box variant="p">
-        The adoption of collaborative design tools can greatly enhance the collaboration between designers and developers. By leveraging shared platforms that allow real-time editing, commenting, and version control, both parties can actively participate in the design process. This promotes a seamless exchange of ideas, enables developers to understand the designer's vision more accurately, and facilitates the identification of potential implementation challenges early on.
+        The adoption of collaborative design tools can greatly enhance the collaboration between designers and developers. By leveraging shared platforms that allow real-time editing, commenting, and version control, both parties can actively participate in the design journey. This promotes a seamless exchange of ideas, enables developers to understand the designer's vision more accurately, and facilitates the identification of potential implementation challenges early on.
         </Box>
         <Header variant="h3">3.3 Foster design and development workshops</Header>
         <Box variant="p">
-        Organizing workshops or knowledge-sharing sessions can prove invaluable in bridging the gap between designers and developers. These interactive sessions provide an opportunity for designers to gain a better understanding of development principles and constraints, and for developers to grasp design principles and user experience considerations. By fostering empathy and promoting cross-disciplinary learning, such workshops facilitate a more holistic approach to product development, where designers and developers work together more effectively.
+        Organizing workshops or knowledge-sharing sessions can prove invaluable in bridging the gap between designers and developers. These interactive sessions provide an opportunity for designers to gain a better understanding of development principles and constraints, and for developers to grasp design principles and customer experience considerations. By fostering empathy and promoting cross-disciplinary learning, such workshops facilitate a more holistic approach to product development, where designers and developers work together more effectively.
         </Box>
         <Header variant="h3">3.4 Encourage iterative collaboration</Header>
         <Box variant="p">
@@ -82,14 +76,14 @@ export const BridgingTheChasmContent = () => {
         </Box>
         <Header variant="h3">3.5 Promote cross-disciplinary training</Header>
         <Box variant="p">
-        Encouraging cross-disciplinary training and knowledge exchange can empower designers and developers to acquire a foundational understanding of each other's roles. Designers can benefit from learning basic coding principles and gaining insights into development processes, while developers can gain a deeper appreciation for design principles and user-centered thinking. This shared knowledge fosters mutual respect, effective communication, and a better appreciation of the challenges and opportunities faced by both disciplines.
+        Encouraging cross-disciplinary training and knowledge exchange can empower designers and developers to acquire a foundational understanding of each other's roles. Designers can benefit from learning basic coding principles and gaining insights into development, while developers can gain a deeper appreciation for design principles and user-centered thinking. This shared knowledge fosters mutual respect, effective communication, and a better appreciation of the challenges and opportunities faced by both disciplines.
         </Box>
       </SpaceBetween>
     </Container>
     <Container header={<Header variant="h2">4 Conclusion</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
-        Bridging the gap between designers and developers in the digital landscape necessitates effective communication, platform understanding, collaborative design tools, design and development workshops, iterative collaboration, and cross-disciplinary training. By adopting these strategies, designers and developers can foster a cohesive and productive partnership, resulting in the creation of exceptional user experiences that embody the designer's vision.
+        Bridging the gap between designers and developers in the digital landscape necessitates effective communication, platform understanding, collaborative design tools, design and development workshops, iterative collaboration, and cross-disciplinary training. By adopting these strategies, designers and developers can foster a cohesive and productive partnership, resulting in the creation of exceptional customer experiences that embody the designer's vision.
         </Box>
       </SpaceBetween>
     </Container>

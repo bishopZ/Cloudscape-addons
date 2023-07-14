@@ -7,6 +7,12 @@ import type { Article } from '/data/articles';
 
 export const TABLE_COLUMNS: TableColumn<Article>[] = [
   {
+    id: 'image',
+    header: 'Image',
+    cell: item => <img style={{ maxWidth: 110 }} src="/assets/chasm.jpg" />,
+    sortingField: 'image',
+  },
+  {
     id: 'title',
     header: 'Title',
     cell: item => <Link href={`#/blog/${item.slug}`}>

@@ -13,14 +13,14 @@ export const Preview = () => {
     header={<Header
       description="Preview of the Cloudscape Addon components."
       variant="h1">
-      Addon gallery
+      Addons gallery
     </Header>}>
     <SpaceBetween size="l">
       <Container header={
         <Header
           actions={<Button variant="link" href="#/docs/loading-states">Docs</Button>}
           variant="h2">
-          Loading spinner and Dash
+          Loading states
         </Header>
       }>
         <LoadingPreview />

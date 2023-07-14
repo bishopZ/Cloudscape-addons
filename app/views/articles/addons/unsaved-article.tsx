@@ -2,6 +2,7 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { makeHeaderImage } from '/utils/content-map';
 import { UnsavedPreview } from '/views/articles/previews/unsaved-preview';
 import { PreviewHeader } from '/views/common/headers/preview-header';
 import { SourceCodeSection } from '/views/common/source-code-section';
@@ -14,40 +15,6 @@ export const UnsavedArticle = () => {
   }, []);
 
   return <SpaceBetween size="m">
-    <Container
-      media={{
-        content:
-        <img
-          src="assets/chasm.jpg"
-          alt="placeholder"
-        />,
-        height: 200,
-        position: 'top'
-      }}
-      header={<Header variant="h2">
-        Introducing UnsavedChangesModal
-      </Header>}>
-      <SpaceBetween size="m">
-        <Box variant="p">
-          Perhaps the most comprehensive and well-thought-out components in
-          Cloudscape is
-          the <ExternalLink href="https://cloudscape.design/components/wizard/">Wizard component.</ExternalLink> Ask
-          any UX designer how a Wizard
-          should be designed and they will talk your ear off. The Wizard pattern
-          has been with us for decades and Cloudscape's Wizard goes a long ways
-          toward proving out the lessons learned over that time.
-        </Box>
-        <Box variant="p">
-          In the documentation for the Wizard component they offer some recommendations
-          that also apply to most forms pages. If the user changes a value, then
-          navigates to another page, then their changes will be lost.
-          Users should be alerted to this situation before the changes are lost.
-          Cloudscape's documentation recommends use of a modal to let the user
-          know they have unsaved changes. But, the documentation doesn't
-          actually provide the code for this modal.
-        </Box>
-      </SpaceBetween>
-    </Container>
     <SourceCodeSection source={`import { Alert, Box, Button, Modal, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
@@ -84,6 +51,32 @@ export const UnsavedChangesModal = (props: Props) => {
     </Alert>
   </Modal>;
 };`} />
+    <Container
+      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
+      header={<Header variant="h2">
+        Introducing UnsavedChangesModal
+      </Header>}>
+      <SpaceBetween size="m">
+        <Box variant="p">
+          Perhaps the most comprehensive and well-thought-out components in
+          Cloudscape is
+          the <ExternalLink href="https://cloudscape.design/components/wizard/">Wizard component.</ExternalLink> Ask
+          any UX designer how a Wizard
+          should be designed and they will talk your ear off. The Wizard pattern
+          has been with us for decades and Cloudscape's Wizard goes a long ways
+          toward proving out the lessons learned over that time.
+        </Box>
+        <Box variant="p">
+          In the documentation for the Wizard component they offer some recommendations
+          that also apply to most forms pages. If the customer changes a value, then
+          navigates to another page, then their changes will be lost.
+          Users should be alerted to this situation before the changes are lost.
+          Cloudscape's documentation recommends use of a modal to let the customer
+          know they have unsaved changes. But, the documentation doesn't
+          actually provide the code for this modal.
+        </Box>
+      </SpaceBetween>
+    </Container>
     <Container header={<PreviewHeader />}>
       <UnsavedPreview />
     </Container>

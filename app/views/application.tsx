@@ -5,8 +5,8 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
-import { store } from '../data/data-store';
-import { ROUTES } from '../utils/routes';
+import { store } from '/data/data-store';
+import { ROUTES } from '/utils/routes';
 import { Layout } from './features/layout';
 
 export const Application = () => {

@@ -1,6 +1,7 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 
+import { makeHeaderImage } from '/utils/content-map';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 /* eslint-disable max-lines-per-function */
@@ -12,16 +13,75 @@ export const TypeArticle = () => {
   }, []);
 
   return <SpaceBetween size="m">
+    <SourceCodeSection source={`import type {
+  BreadcrumbGroupProps, ButtonDropdownProps, ButtonProps, CalendarProps, CardsProps, CheckboxProps,
+  CollectionPreferencesProps, DateRangePickerProps, ExpandableSectionProps, FlashbarProps, GridProps,
+  InputProps, LinkProps, ModalProps, MultiselectProps, NonCancelableCustomEvent, RadioGroupProps,
+  SegmentedControlProps, SelectProps, SideNavigationProps, TableProps, TabsProps, TagEditorProps,
+  TextFilterProps, TilesProps, ToggleProps, TokenGroupProps, WizardProps,
+} from '@cloudscape-design/components';
+import type { NonCancelableEventHandler } from '@cloudscape-design/components/internal/events';
+
+export type GenericObject = Record<string, unknown>
+export type ValueOf<T> = T[keyof T]
+
+export type ButtonClick = CustomEvent<ButtonProps.ClickDetail>
+export type ButtonFollow = CustomEvent<ButtonProps.FollowDetail>
+export type ButtonDropClick = CustomEvent<ButtonDropdownProps.ItemClickDetails>
+export type CardsChange<T> = NonCancelableCustomEvent<CardsProps.SelectionChangeDetail<T>>
+export type CalendarChange = NonCancelableCustomEvent<CalendarProps.ChangeDetail>
+export type CheckboxChange = NonCancelableCustomEvent<CheckboxProps.ChangeDetail>
+export type ColumnWidthsChange = NonCancelableCustomEvent<TableProps.ColumnWidthsChangeDetail>
+export type DateRangeChange = NonCancelableCustomEvent<DateRangePickerProps.ChangeDetail>
+export type ExpandableChange = NonCancelableCustomEvent<ExpandableSectionProps.ChangeDetail>
+export type InputChange = NonCancelableCustomEvent<InputProps.ChangeDetail>
+export type InputKeyDetail = CustomEvent<InputProps.KeyDetail>
+export type LinkFollow = CustomEvent<LinkProps.FollowDetail>
+export type ModalDismiss = NonCancelableCustomEvent<ModalProps.DismissDetail>
+export type MultiselectChange = NonCancelableCustomEvent<MultiselectProps.MultiselectChangeDetail>
+export type PreferenceConfirm<T> = NonCancelableEventHandler<CollectionPreferencesProps.Preferences<T>>
+export type RadioChange = NonCancelableCustomEvent<RadioGroupProps.ChangeDetail>
+export type RowClick<T> = NonCancelableCustomEvent<TableProps.OnRowClickDetail<T>>
+export type SegmentedChange = NonCancelableCustomEvent<SegmentedControlProps.ChangeDetail>
+export type SelectChange = NonCancelableCustomEvent<SelectProps.ChangeDetail>
+export type SelectLoad = NonCancelableCustomEvent<SelectProps.LoadItemsDetail>
+export type SideNavChange = NonCancelableCustomEvent<SideNavigationProps.ChangeDetail>
+export type SideNavFollow = CustomEvent<SideNavigationProps.FollowDetail>
+export type TabChange = NonCancelableCustomEvent<TabsProps.ChangeDetail>
+export type TableSelectionChange<T> = NonCancelableCustomEvent<TableProps.SelectionChangeDetail<T>>
+export type TableSortChange<T> = NonCancelableCustomEvent<TableProps.SortingState<T>>
+export type TagEditorChange = NonCancelableCustomEvent<TagEditorProps.ChangeDetail>
+export type TextFilterChange = NonCancelableCustomEvent<TextFilterProps.ChangeDetail>
+export type TileChange = NonCancelableCustomEvent<TilesProps.ChangeDetail>
+export type TokenDismiss = NonCancelableCustomEvent<TokenGroupProps.DismissDetail>
+export type ToogleChange = NonCancelableCustomEvent<ToggleProps.ChangeDetail>
+export type WizardNavigate = NonCancelableCustomEvent<WizardProps.NavigateDetail>
+
+export type Breadcrumb = BreadcrumbGroupProps.Item
+export type ButtonDropItems = ReadonlyArray<ButtonDropdownProps.ItemOrGroup>
+export type CardsDefinition<T> = CardsProps.CardDefinition<T>
+export type CardSection<T> = ReadonlyArray<CardsProps.SectionDefinition<T>>
+export type CardsLayout = ReadonlyArray<CardsProps.CardsLayout>
+export type FlashbarMessage = FlashbarProps.MessageDefinition;
+export type FlashbarMessages = ReadonlyArray<FlashbarProps.MessageDefinition>
+export type GridDefinition = ReadonlyArray<GridProps.ElementDefinition>
+export type MultiSelectedOptions = ReadonlyArray<MultiselectProps.Option>
+export type RadioItems = ReadonlyArray<RadioGroupProps.RadioButtonDefinition>
+export type SideNavHeader = SideNavigationProps.Header
+export type SideNavItems = ReadonlyArray<SideNavigationProps.Item>
+export type SegmentedOptions = ReadonlyArray<SegmentedControlProps.Option>
+export type SelectOptions = Array<SelectProps.Option>
+export type Tabs = ReadonlyArray<TabsProps.Tab>
+export type Tag = TagEditorProps.Tag
+export type Tags = ReadonlyArray<TagEditorProps.Tag>
+export type TableColumn<T> = TableProps.ColumnDefinition<T> & { editable?: boolean }
+export type TileItems = ReadonlyArray<TilesProps.TilesDefinition>
+export type TimeRangeOptions = ReadonlyArray<DateRangePickerProps.RelativeOption>
+export type TokenItems = ReadonlyArray<TokenGroupProps.Item>
+export type WizardSteps = ReadonlyArray<WizardProps.Step>
+`} />
     <Container
-      media={{
-        content:
-        <img
-          src="assets/chasm.jpg"
-          alt="placeholder"
-        />,
-        height: 200,
-        position: 'top'
-      }}
+      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
       header={<Header variant="h2">
         Introducing TypeHelpers
       </Header>}>
@@ -35,8 +95,8 @@ export const TypeArticle = () => {
 export type InputChange = NonCancelableCustomEvent<InputProps.ChangeDetail>
 `}</code></pre>
         <Box variant="p">
-          We could use the Type provided by Cloudscape, but then, we would need to have
-          {'NonCancelableCustomEvent<InputProps.ChangeDetail>'} in our code, every time
+          We could use the Type provided by Cloudscape, but then, we would need to type
+          &nbsp;{'NonCancelableCustomEvent<InputProps.ChangeDetail>'} in our code, every time
           we create an input event handler. Doing so makes our code much more difficult
           to read. If we use the Addon names instead, it uses the same definition
           provided by Cloudscape, but has a shorter and more intuitive name.
@@ -114,72 +174,5 @@ type fruitValues = ValueOf<typeof FRUITS> // "apple" and "grape"
 `}</code></pre>
       </SpaceBetween>
     </Container>
-    <SourceCodeSection source={`import type {
-  BreadcrumbGroupProps, ButtonDropdownProps, ButtonProps, CalendarProps, CardsProps, CheckboxProps,
-  CollectionPreferencesProps, DateRangePickerProps, ExpandableSectionProps, FlashbarProps, GridProps,
-  InputProps, LinkProps, ModalProps, MultiselectProps, NonCancelableCustomEvent, RadioGroupProps,
-  SegmentedControlProps, SelectProps, SideNavigationProps, TableProps, TabsProps, TagEditorProps,
-  TextFilterProps, TilesProps, ToggleProps, TokenGroupProps, WizardProps,
-} from '@cloudscape-design/components';
-import type { NonCancelableEventHandler } from '@cloudscape-design/components/internal/events';
-
-export type GenericObject = Record<string, unknown>
-export type ValueOf<T> = T[keyof T]
-
-export type ButtonClick = CustomEvent<ButtonProps.ClickDetail>
-export type ButtonFollow = CustomEvent<ButtonProps.FollowDetail>
-export type ButtonDropClick = CustomEvent<ButtonDropdownProps.ItemClickDetails>
-export type CardsChange<T> = NonCancelableCustomEvent<CardsProps.SelectionChangeDetail<T>>
-export type CalendarChange = NonCancelableCustomEvent<CalendarProps.ChangeDetail>
-export type CheckboxChange = NonCancelableCustomEvent<CheckboxProps.ChangeDetail>
-export type ColumnWidthsChange = NonCancelableCustomEvent<TableProps.ColumnWidthsChangeDetail>
-export type DateRangeChange = NonCancelableCustomEvent<DateRangePickerProps.ChangeDetail>
-export type ExpandableChange = NonCancelableCustomEvent<ExpandableSectionProps.ChangeDetail>
-export type InputChange = NonCancelableCustomEvent<InputProps.ChangeDetail>
-export type InputKeyDetail = CustomEvent<InputProps.KeyDetail>
-export type LinkFollow = CustomEvent<LinkProps.FollowDetail>
-export type ModalDismiss = NonCancelableCustomEvent<ModalProps.DismissDetail>
-export type MultiselectChange = NonCancelableCustomEvent<MultiselectProps.MultiselectChangeDetail>
-export type PreferenceConfirm<T> = NonCancelableEventHandler<CollectionPreferencesProps.Preferences<T>>
-export type RadioChange = NonCancelableCustomEvent<RadioGroupProps.ChangeDetail>
-export type RowClick<T> = NonCancelableCustomEvent<TableProps.OnRowClickDetail<T>>
-export type SegmentedChange = NonCancelableCustomEvent<SegmentedControlProps.ChangeDetail>
-export type SelectChange = NonCancelableCustomEvent<SelectProps.ChangeDetail>
-export type SelectLoad = NonCancelableCustomEvent<SelectProps.LoadItemsDetail>
-export type SideNavChange = NonCancelableCustomEvent<SideNavigationProps.ChangeDetail>
-export type SideNavFollow = CustomEvent<SideNavigationProps.FollowDetail>
-export type TabChange = NonCancelableCustomEvent<TabsProps.ChangeDetail>
-export type TableSelectionChange<T> = NonCancelableCustomEvent<TableProps.SelectionChangeDetail<T>>
-export type TableSortChange<T> = NonCancelableCustomEvent<TableProps.SortingState<T>>
-export type TagEditorChange = NonCancelableCustomEvent<TagEditorProps.ChangeDetail>
-export type TextFilterChange = NonCancelableCustomEvent<TextFilterProps.ChangeDetail>
-export type TileChange = NonCancelableCustomEvent<TilesProps.ChangeDetail>
-export type TokenDismiss = NonCancelableCustomEvent<TokenGroupProps.DismissDetail>
-export type ToogleChange = NonCancelableCustomEvent<ToggleProps.ChangeDetail>
-export type WizardNavigate = NonCancelableCustomEvent<WizardProps.NavigateDetail>
-
-export type Breadcrumb = BreadcrumbGroupProps.Item
-export type ButtonDropItems = ReadonlyArray<ButtonDropdownProps.ItemOrGroup>
-export type CardsDefinition<T> = CardsProps.CardDefinition<T>
-export type CardSection<T> = ReadonlyArray<CardsProps.SectionDefinition<T>>
-export type CardsLayout = ReadonlyArray<CardsProps.CardsLayout>
-export type FlashbarMessage = FlashbarProps.MessageDefinition;
-export type FlashbarMessages = ReadonlyArray<FlashbarProps.MessageDefinition>
-export type GridDefinition = ReadonlyArray<GridProps.ElementDefinition>
-export type MultiSelectedOptions = ReadonlyArray<MultiselectProps.Option>
-export type RadioItems = ReadonlyArray<RadioGroupProps.RadioButtonDefinition>
-export type SideNavHeader = SideNavigationProps.Header
-export type SideNavItems = ReadonlyArray<SideNavigationProps.Item>
-export type SegmentedOptions = ReadonlyArray<SegmentedControlProps.Option>
-export type SelectOptions = Array<SelectProps.Option>
-export type Tabs = ReadonlyArray<TabsProps.Tab>
-export type Tag = TagEditorProps.Tag
-export type Tags = ReadonlyArray<TagEditorProps.Tag>
-export type TableColumn<T> = TableProps.ColumnDefinition<T> & { editable?: boolean }
-export type TileItems = ReadonlyArray<TilesProps.TilesDefinition>
-export type TimeRangeOptions = ReadonlyArray<DateRangePickerProps.RelativeOption>
-export type TokenItems = ReadonlyArray<TokenGroupProps.Item>
-export type WizardSteps = ReadonlyArray<WizardProps.Step>
-`} />
   </SpaceBetween>;
 };

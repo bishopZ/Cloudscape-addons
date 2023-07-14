@@ -2,6 +2,7 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { makeHeaderImage } from '/utils/content-map';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 export const LabeledValueArticle = () => {
@@ -12,16 +13,21 @@ export const LabeledValueArticle = () => {
   }, []);
 
   return <SpaceBetween size="m">
+    <SourceCodeSection source={`import { Box } from '@cloudscape-design/components';
+import React from 'react';
+
+type KeyValueProps = {
+  label: React.ReactNode
+  children: React.ReactNode
+}
+
+export const LabeledValue = ({ label, children }: KeyValueProps) =>
+  <Box>
+    <Box variant="awsui-key-label">{label}</Box>
+    <Box>{children}</Box>
+  </Box>;`} />
     <Container
-      media={{
-        content:
-      <img
-        src="assets/chasm.jpg"
-        alt="placeholder"
-      />,
-        height: 200,
-        position: 'top'
-      }}
+      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
       header={<Header variant="h2">
       Introducing LabeledValue
       </Header>}>
@@ -42,18 +48,5 @@ export const LabeledValueArticle = () => {
         </Box>
       </SpaceBetween>
     </Container>
-    <SourceCodeSection source={`import { Box } from '@cloudscape-design/components';
-import React from 'react';
-
-type KeyValueProps = {
-  label: React.ReactNode
-  children: React.ReactNode
-}
-
-export const LabeledValue = ({ label, children }: KeyValueProps) =>
-  <Box>
-    <Box variant="awsui-key-label">{label}</Box>
-    <Box>{children}</Box>
-  </Box>;`} />
   </SpaceBetween>;
 };

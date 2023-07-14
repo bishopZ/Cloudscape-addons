@@ -26,23 +26,24 @@ const docs: SidenavItem = {
 };
 
 const blogNav: SidenavItem[] = [
+  // { type: 'link', text: 'Addons gallery', href: '#/blog/gallery' },
+  // { type: 'link', text: 'Understanding design systems', href: '#/blog/search/design%20systems' },
   { type: 'link', text: 'Search articles', href: '#/blog/search' },
-  { type: 'link', text: 'Addons gallery', href: '#/blog/gallery' },
-  { type: 'divider' },
-  {
-    type: 'link',
-    text: 'Privacy',
-    external: true,
-    externalIconAriaLabel,
-    href: 'https://www.stellarelements.com/privacy-policy'
-  },
-  {
-    type: 'link',
-    text: 'Feedback',
-    external: true,
-    externalIconAriaLabel,
-    href: 'https://www.stellarelements.com/contact'
-  },
+  // { type: 'divider' },
+  // {
+  //   type: 'link',
+  //   text: 'Privacy',
+  //   external: true,
+  //   externalIconAriaLabel,
+  //   href: 'https://www.stellarelements.com/privacy-policy'
+  // },
+  // {
+  //   type: 'link',
+  //   text: 'Feedback',
+  //   external: true,
+  //   externalIconAriaLabel,
+  //   href: 'https://www.stellarelements.com/contact'
+  // },
   { type: 'divider' },
 ];
 
@@ -54,7 +55,7 @@ export const Navigation = () => {
 
   const docsNav: SidenavItem[] = [
     { type: 'link', text: 'Getting started', href: '#/docs' },
-    { type: 'link', text: 'Core Tenets', href: '#/docs/core-tenets' }
+    { type: 'link', text: 'Core tenets', href: '#/docs/core-tenets' }
   ];
   const docArticles = items.filter(item => item.format === 'Documentation');
 
@@ -74,7 +75,7 @@ export const Navigation = () => {
           .filter(item => item.section === type)
           .map(item => ({
             type: 'link',
-            text: item.title,
+            text: item.name ?? item.title,
             href: `#/docs/${item.slug}`
           } as SideNavigationProps.Link))
           .sort((a, b) => a.text.localeCompare(b.text))
@@ -96,7 +97,7 @@ export const Navigation = () => {
       fontSize="body-s"
       color="text-status-inactive"
       margin={Spacing.L}>
-      &copy; 2023 Stellar Elements
+      &copy; 2023 TODO
       <br />all rights reserved
       <br />this site uses essential cookies.
     </Box>

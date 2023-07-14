@@ -7,9 +7,9 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 const config = {
   entry: [
-    './app/init.tsx', 
-    './app/styles/styles.scss', 
-    './app/images/favicon.png',
+    './app/init.tsx',
+    './app/styles/styles.scss',
+    // './app/images/favicon.png',
     './app/images/chasm.jpg'
   ],
   output: {

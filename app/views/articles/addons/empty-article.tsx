@@ -2,12 +2,13 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { makeHeaderImage } from '/utils/content-map';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 import { PreviewHeader } from '../../common/headers/preview-header';
 import { EmptyPreview } from '../previews/empty-preview';
 
-/* eslint-disable max-lines-per-function */
+/* eslint-disable max-lines-per-function, max-len */
 export const EmptyArticle = () => {
   useEffect(() => {
     setTimeout(() => {
@@ -16,16 +17,57 @@ export const EmptyArticle = () => {
   }, []);
 
   return <SpaceBetween size="m">
+    <SourceCodeSection source={`import { Box, Button, SpaceBetween } from '@cloudscape-design/components';
+import React from 'react';
+
+import { Spacing } from '/addons/helpers/spacing-constants';
+
+type Props = {
+  title?: string
+  description?: string
+  buttonName?: string
+  onClick?: () => void
+}
+
+export const GenericEmpty = (props: Props) => {
+  const {
+    title = 'No items',
+    description = 'No items to show.',
+    buttonName = 'Refresh',
+    onClick = () => { window.location.reload() }
+  } = props;
+
+  return <SpaceBetween size="s">
+    <Box
+      margin={Spacing.TopM}
+      fontWeight="bold">
+      {title}
+    </Box>
+    <Box>
+      {description}
+    </Box>
+    <Box margin={Spacing.TopS}>
+      <Button onClick={onClick}>
+        {buttonName}
+      </Button>
+    </Box>
+  </SpaceBetween>;
+};
+
+type NoMatchProps = {
+  clear: () => void
+}
+
+export const NoMatch = ({ clear }: NoMatchProps) => <GenericEmpty
+  title="No matches"
+  description="We couldn't find a match."
+  buttonName="Clear filter"
+  onClick={() => { clear() }}
+/>;`} />
     <Container
-      media={{
-        content:
-          <img
-            src="assets/chasm.jpg"
-            alt="placeholder"
-          />,
-        height: 200,
-        position: 'top'
-      }}
+      media={makeHeaderImage(
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png'
+      )}
       header={<Header variant="h2">
       Introducing GenericEmpty
       </Header>}>
@@ -42,7 +84,7 @@ export const EmptyArticle = () => {
           </ExternalLink> to manage the collection of items shown in the table.
           The configuration of the collection requires you to define two states.
           What should be shown when the table has no items, called "empty state,"
-          and what should be shown if the user filtered the table, and there are
+          and what should be shown if the customer filtered the table, and there are
           no matches for the current filter, called "no match".
         </Box>
         <Box variant="p">
@@ -110,53 +152,6 @@ return <Table
 />`}</code></pre>
       </SpaceBetween>
     </Container>
-    <SourceCodeSection source={`import { Box, Button, SpaceBetween } from '@cloudscape-design/components';
-import React from 'react';
-
-import { Spacing } from '/addons/helpers/spacing-constants';
-
-type Props = {
-  title?: string
-  description?: string
-  buttonName?: string
-  onClick?: () => void
-}
-
-export const GenericEmpty = (props: Props) => {
-  const {
-    title = 'No items',
-    description = 'No items to show.',
-    buttonName = 'Refresh',
-    onClick = () => { window.location.reload() }
-  } = props;
-
-  return <SpaceBetween size="s">
-    <Box
-      margin={Spacing.TopM}
-      fontWeight="bold">
-      {title}
-    </Box>
-    <Box>
-      {description}
-    </Box>
-    <Box margin={Spacing.TopS}>
-      <Button onClick={onClick}>
-        {buttonName}
-      </Button>
-    </Box>
-  </SpaceBetween>;
-};
-
-type NoMatchProps = {
-  clear: () => void
-}
-
-export const NoMatch = ({ clear }: NoMatchProps) => <GenericEmpty
-  title="No matches"
-  description="We couldn't find a match."
-  buttonName="Clear filter"
-  onClick={() => { clear() }}
-/>;`} />
     <Container header={<PreviewHeader />}>
       <EmptyPreview />
     </Container>

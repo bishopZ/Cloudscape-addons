@@ -29,7 +29,7 @@ export const Docs = () => {
         }}>
           info
         </Link>}
-        description="An overview of Cloudscape Addons, how to use them, basic examples and more.">
+        description="TODO">
         Getting started
       </Header>
     }>
@@ -46,7 +46,7 @@ export const Docs = () => {
           Cloudscape is
             <ExternalLink href="https://cloudscape.design/">an open source design system</ExternalLink>
           released by Amazon. Cloudscape offers user interface guidelines, front-end components, design resources,
-          and development tools for building intuitive, engaging, and inclusive user experiences at scale.
+          and development tools for building intuitive, engaging, and inclusive customer experiences at scale.
           </Box>
         </ExpandableSection>
       </Container>
@@ -120,9 +120,6 @@ export const Docs = () => {
             <li>
               When we establish a version controlled repository, we will
               accept community contributions in the form of pull requests.
-            </li>
-            <li>
-              You can always<ExternalLink href="https://www.stellarelements.com/contact">drop us a line.</ExternalLink>
             </li>
           </ul>
         </ExpandableSection>

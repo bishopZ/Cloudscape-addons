@@ -1,19 +1,13 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
+import { makeHeaderImage } from '/utils/content-map';
+
 /* eslint-disable max-len */
 export const AnatomyArticle = () => {
   return <SpaceBetween size="m">
     <Container
-      media={{
-        content:
-          <img
-            src="assets/chasm.jpg"
-            alt="placeholder"
-          />,
-        height: 200,
-        position: 'top'
-      }}
+      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
       header={<Header variant="h2">What are the parts of a design system?</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
@@ -25,7 +19,7 @@ export const AnatomyArticle = () => {
         </Box>
         <Header variant="h3">Tokens</Header>
         <Box variant="p">
-        Tokens are a set of codified design decisions derived from the Foundations layer. They define the values and properties of various design attributes, such as typography, color, spacing, elevation, opacity, radii, volume, borders, timing, and more. By utilizing tokens, design teams can maintain consistent design patterns and make global changes across different platforms and products. Tokens ease scalability, ease of change, and multi-platform support, ensuring a unified and efficient design process.
+        Tokens are a set of codified design decisions derived from the Foundations layer. They define the values and properties of various design attributes, such as typography, color, spacing, elevation, opacity, radii, volume, borders, timing, and more. By utilizing tokens, design teams can maintain consistent design patterns and make global changes across different platforms and products. Tokens ease scalability, ease of change, and multi-platform support, ensuring a unified and efficient design journey.
         </Box>
         <Header variant="h3">Core Systems</Header>
         <Box variant="p">
@@ -33,7 +27,7 @@ export const AnatomyArticle = () => {
         </Box>
         <Header variant="h3">Components</Header>
         <Box variant="p">
-        The component layer of a design system consists of reusable parts that make up a digital interface. These components range from simple elements like buttons, search bars, and text inputs to more complex ones like notifications, breadcrumbs, tabs, tooltips, and radio buttons. Components are built using the fundamental systems defined in the design system, ensuring consistent and coherent user experiences. By utilizing pre-built components, designers can save time and effort while maintaining design consistency throughout the digital ecosystem.
+        The component layer of a design system consists of reusable parts that make up a digital interface. These components range from simple elements like buttons, search bars, and text inputs to more complex ones like notifications, breadcrumbs, tabs, tooltips, and radio buttons. Components are built using the fundamental systems defined in the design system, ensuring consistent and coherent customer experiences. By utilizing pre-built components, designers can save time and effort while maintaining design consistency throughout the digital ecosystem.
         </Box>
       </SpaceBetween>
     </Container>

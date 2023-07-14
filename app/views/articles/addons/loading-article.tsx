@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { LoadingSpinner } from '/addons/details/loading';
+import { makeHeaderImage } from '/utils/content-map';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 import { PreviewHeader } from '../../common/headers/preview-header';
@@ -16,16 +17,19 @@ export const LoadingArticle = () => {
   }, []);
 
   return <SpaceBetween size="m">
+    <SourceCodeSection source={`import { Spinner } from '@cloudscape-design/components';
+import React from 'react';
+
+export const Dash = () => <>&ndash;</>;
+
+type Props = { mediaName?: string }
+
+export const LoadingSpinner = ({ mediaName }: Props) => <>
+  <Spinner />
+  <>&nbsp;Loading {mediaName ?? ''}</>
+</>;`} />
     <Container
-      media={{
-        content:
-      <img
-        src="assets/chasm.jpg"
-        alt="placeholder"
-      />,
-        height: 200,
-        position: 'top'
-      }}
+      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
       header={<Header variant="h2">
       Introducing Dash
       </Header>}>
@@ -38,18 +42,19 @@ export const LoadingArticle = () => {
         </code></pre>
         <Box variant="p">
           The Dash component isn't about fancy code. Of course, a developer can
-          write {'&ndash;'} instead of {'<Dash />'}, but that requires every developer on
-          the project to remember the difference between {'&ndash;'} and {'&mdash;'}, and
-          make a decision of which to use, every time they encounter the problem.
-        </Box>
-        <Box variant="p">
+          write <code className="language-javascript">{'&ndash;'}</code> instead
+          of <code className="language-javascript">{'<Dash />'}</code>,
+          but that requires every developer on
+          the project to remember the difference
+          between <code className="language-javascript">{'&ndash;'}</code> and
+          &nbsp;<code className="language-javascript">{'&mdash;'}</code>, and
+          make a decision of which to use, each time they encounter the problem.
           Instead, decide one time, as a team, then write a component like Dash,
           so that the same solution is used every time.
         </Box>
         <Box variant="p">
           Dash is especially useful on details pages when not every item has a
-          value for every detail being shown. The Dash component becomes the
-          vocabulary word for "no value exists."
+          value. The Dash component becomes the vocabulary word for "no value exists."
         </Box>
       </SpaceBetween>
     </Container>
@@ -65,9 +70,9 @@ export const LoadingArticle = () => {
           <ExternalLink href="https://cloudscape.design/components/spinner/">
           Spinner component.
           </ExternalLink>
-        LoadingSpinner simply adds the word "Loading" and adds an
+        LoadingSpinner simply adds the word "Loading" and an
         optional media name. It's designed as the generic interface for
-        the state of your app while data is being fetched.
+        the state of your app while data is in-transit.
         </Box>
         <pre><code className="language-javascript">{`export const LoadingSpinner = ({ mediaName }: Props) => <>
   <Spinner />
@@ -75,17 +80,6 @@ export const LoadingArticle = () => {
 </>;`}</code></pre>
       </SpaceBetween>
     </Container>
-    <SourceCodeSection source={`import { Spinner } from '@cloudscape-design/components';
-import React from 'react';
-
-export const Dash = () => <>&ndash;</>;
-
-type Props = { mediaName?: string }
-
-export const LoadingSpinner = ({ mediaName }: Props) => <>
-  <Spinner />
-  <>&nbsp;Loading {mediaName ?? ''}</>
-</>;`} />
     <Container header={<PreviewHeader />}>
       <LoadingPreview />
     </Container>

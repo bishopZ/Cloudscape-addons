@@ -9,6 +9,7 @@ import type { RootState } from './data-store';
 export type Article = {
   slug: string
   title: string
+  name?: string
   format: string
   topic: string
   discipline: string

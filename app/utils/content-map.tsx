@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { EmptyArticle } from '/views/articles/addons/empty-article';
 import { IconMapArticle } from '/views/articles/addons/icon-map-article';
 import { InputArticle } from '/views/articles/addons/input-article';
@@ -39,5 +41,18 @@ export const CONTENT_MAP = {
   'design-system-maturity': MaturityArticle,
   'collaboration-tools-figma': FigmaArticle,
 } as const;
+
+export const makeHeaderImage = (path: string) => {
+  if (!path) return undefined;
+  if (window.location.hash.indexOf('docs') !== -1) return undefined;
+  return {
+    content: <img
+      src={path}
+      alt="Article header"
+    />,
+    height: 200,
+    position: 'top' as 'top' | 'side'
+  };
+};
 
 export type CONTENT_KEYS = keyof typeof CONTENT_MAP

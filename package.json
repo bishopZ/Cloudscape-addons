@@ -1,6 +1,6 @@
 {
-  "name": "cloudscape-addons",
-  "version": "1.0.0",
+  "name": "bishopz.com",
+  "version": "4.0.0",
   "private": true,
   "repository": "TODO",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "watch": "webpack --watch",
-    "serve": "webpack --mode=production --node-env=production && webpack serve",
+    "serve": "webpack && webpack serve",
     "server": "node ./server/init.js",
     "deploy": "npm run build && node ./server/init.js",
     "clean": "rm -rf ./public/*"

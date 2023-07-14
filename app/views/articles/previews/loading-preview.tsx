@@ -14,7 +14,7 @@ export const LoadingPreview = () => {
       active
     </LabeledValue>
     <Box variant="p">
-      The LoadingSpinner can be used when the data is in the process of being fetched
+      The LoadingSpinner can be used when the data is being fetched
       from an API or other data source.
     </Box>
     <LabeledValue label="Instance option">

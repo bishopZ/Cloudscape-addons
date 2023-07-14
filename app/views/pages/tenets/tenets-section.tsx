@@ -1,4 +1,4 @@
-import { Box, Button, Container, Header, Icon, Link } from '@cloudscape-design/components';
+import { Button, Container, Header, Icon, Link } from '@cloudscape-design/components';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -20,7 +20,7 @@ export const TenetsSection = () => {
         variant="h2"
         actions={<Link href="#/docs/core-tenets">
           <Button variant="link">
-            See all
+            Core tenets
           </Button>
         </Link>}>
         <>Tenets</>

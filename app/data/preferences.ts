@@ -28,9 +28,9 @@ const initialState = {
     pageSizes: [10, 45, 100],
     pageSize: 50,
     wrapLines: false,
-    columnWidth: [250, 165, 0, 0, 150, 0], // for all columns
+    columnWidth: [120, 250, 165, 0, 0, 150, 0], // for all columns
     contentSelection: [ // for visible columns
-      'title', 'publicationDate', 'section', 'topic', 'discipline'
+      'image', 'title', 'publicationDate', 'section', 'topic', 'discipline'
     ]
   }
 };

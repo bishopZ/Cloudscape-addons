@@ -27,7 +27,6 @@ module.exports = {
     'plugin:jsx-a11y/strict'
   ],
   rules: {
-    // AWS UI team disables these
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
@@ -36,7 +35,6 @@ module.exports = {
     'react/prop-types': 'off',
     'react/no-unescaped-entities': 'off',
 
-    // we turned off
     'react-hooks/exhaustive-deps': 'off',
     '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
@@ -48,12 +46,10 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/no-var-requires': 'off',
 
-    // AWS UI turns on
     'eqeqeq': 'error',
     '@typescript-eslint/return-await': 'error',
     '@typescript-eslint/require-await': 'error',
 
-    // we turned on
     'array-callback-return': 'warn',
     'no-constructor-return': 'warn',
     'no-await-in-loop': 'warn',
@@ -112,7 +108,6 @@ module.exports = {
       { 'enforceForRenamedProperties': false }
     ],
 
-    // we turned on, layout
     'no-tabs': 'warn',
     'no-trailing-spaces': 'warn',
     'rest-spread-spacing': 'warn',
@@ -154,7 +149,6 @@ module.exports = {
     'padded-blocks': ['error', 'never'],
     '@typescript-eslint/quotes': ['error', 'single'],
 
-    // we turned on, react
     'react/no-unused-class-component-methods': 'warn',
     'react/prefer-stateless-function': 'warn',
     'react/function-component-definition': ['warn', {
@@ -185,7 +179,6 @@ module.exports = {
     'react/jsx-max-props-per-line': ['error', { 'maximum': { 'single': 3, 'multi': 1 } }],
     'react/jsx-newline': ['error', { 'prevent': true }],
 
-    // we turned on, typescript
     '@typescript-eslint/consistent-type-imports': 'warn',
     '@typescript-eslint/no-confusing-non-null-assertion': 'warn',
     '@typescript-eslint/no-confusing-void-expression': 'warn',
@@ -203,7 +196,6 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/type-annotation-spacing': 'error',
 
-    // we turned on, core
     'id-length': ['error', { 'exceptions': ['_', 's', 'l', 'a', 'b', 'm'] }],
     'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-var': 'error',
@@ -213,7 +205,6 @@ module.exports = {
     'radix': 'error',
     '@typescript-eslint/no-duplicate-imports': 'error',
 
-    // we turned on, import
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error'
 

@@ -3,8 +3,8 @@ import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { IconMap } from '/addons/helpers/icon-map';
+import { makeHeaderImage } from '/utils/content-map';
 import { PreviewHeader } from '/views/common/headers/preview-header';
-import { SourceHeader } from '/views/common/headers/source-header';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 
@@ -16,36 +16,6 @@ export const IconMapArticle = () => {
   }, []);
 
   return <SpaceBetween size="m">
-    <Container
-      media={{
-        content:
-        <img
-          src="assets/chasm.jpg"
-          alt="placeholder"
-        />,
-        height: 200,
-        position: 'top'
-      }}
-      header={<Header variant="h2">
-        Introducing the IconMap
-      </Header>}>
-      <Box variant="p">
-        Cloudscape includes
-        <ExternalLink href="https://cloudscape.design/components/icon/?tabId=api">a nice set of icons</ExternalLink>,
-        however the documentation doesn't
-        show a preview of those icons. All the names are listed, but finding the
-        icon that matches your design, can take time.
-      </Box>
-      <Box variant="p">
-        Icon map is a simple component that displays the available icons. When you're
-        trying to visually match an icon, you can insert the Icon map component and preview the result
-        to quickly locate the icon you are looking for.
-      </Box>
-      <Box variant="p">
-        Icon map isn't meant to be included in production code, but rather as
-        a developer tool to speed the process of identifing a particular icon's name.
-      </Box>
-    </Container>
     <SourceCodeSection source={`import { Box, Grid, Icon, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
@@ -87,6 +57,28 @@ export const IconMap = () => {
   </Box>;
 };`}
     />
+    <Container
+      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
+      header={<Header variant="h2">
+        Introducing the IconMap
+      </Header>}>
+      <Box variant="p">
+        Cloudscape includes
+        <ExternalLink href="https://cloudscape.design/components/icon/?tabId=api">a nice set of icons</ExternalLink>,
+        however the documentation doesn't
+        show a preview of those icons. All the names are listed, but finding the
+        icon that matches your design, can take time.
+      </Box>
+      <Box variant="p">
+        Icon map is a simple component that displays the available icons. When you're
+        trying to visually match an icon, you can insert the Icon map component and preview the result
+        to quickly locate the icon you are looking for.
+      </Box>
+      <Box variant="p">
+        Icon map isn't meant to be included in production code, but rather as
+        a developer tool to speed the process of identifing a particular icon's name.
+      </Box>
+    </Container>
     <Container header={<PreviewHeader />}>
       <IconMap />
     </Container>

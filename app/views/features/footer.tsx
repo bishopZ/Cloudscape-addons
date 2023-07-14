@@ -7,16 +7,16 @@ export const Footer = () => {
   return <footer>
     <Box display="inline-block" margin={Spacing.VerticalL}>
       <SpaceBetween size="s" direction="horizontal">
-        <Link href="https://www.stellarelements.com/contact" external>
+        <Link href="" external>
         Feedback
         </Link>
-        <Link href="https://www.stellarelements.com/privacy-policy" external>
+        <Link href="" external>
         Privacy
         </Link>
       </SpaceBetween>
     </Box>
     <Box float="right" margin={Spacing.VerticalL} display="inline-block">
-  &copy; 2023 Stellar Elements. All Rights Reserved.
+  &copy; 2023 TODO All Rights Reserved.
       <br />This site uses essential cookies.
     </Box>
   </footer>;

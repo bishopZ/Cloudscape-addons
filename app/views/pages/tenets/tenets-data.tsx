@@ -68,7 +68,7 @@ export const tenets = [
       </Box>
       <Box variant="p">
         Smart defaults promote consistency across the codebase, ensuring that components behave predictably and adhere to established conventions.
-        By providing sensible and optimized default values, developers can enhance the user experience, as components are intuitively functional out of the box.
+        By providing sensible and optimized default values, developers can enhance the customer experience, as components are intuitively functional out of the box.
       </Box>
     </>
   },
