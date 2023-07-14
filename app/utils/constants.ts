@@ -1,2 +1,2 @@
 
-export const POST_TITLE = ' - Cloudscape addons';
+export const POST_TITLE = ' - BishopZ.com';
