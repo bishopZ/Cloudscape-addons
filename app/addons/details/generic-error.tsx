@@ -1,5 +1,5 @@
 import { Alert, Button } from '@cloudscape-design/components';
-import React from 'react';
+import React, { memo, useCallback } from 'react';
 
 import { errorIconAriaLabel } from '/addons/helpers/a11y-helpers';
 
@@ -10,18 +10,21 @@ type Props = {
   onClick?: () => void
 }
 
-export const GenericError = (props: Props) => {
+const GenericError = (props: Props) => {
   const {
-    header = 'Network error',
+    header = 'Unknown error',
     message = 'An unknown error occurred. Please try again. If the problem persists, contact technical support.',
     buttonName = 'Refresh',
     onClick = () => { window.location.reload() }
   } = props;
+
+  const onClickMemo = useCallback(onClick, [onClick]);
+
   return <Alert
     type="error"
     header={header}
     action={
-      <Button onClick={onClick}>
+      <Button onClick={onClickMemo}>
         {buttonName}
       </Button>
     }
@@ -29,3 +32,5 @@ export const GenericError = (props: Props) => {
     {message}
   </Alert>;
 };
+
+export default memo(GenericError);

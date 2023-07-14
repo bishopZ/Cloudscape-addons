@@ -4,7 +4,7 @@ import { Pagination, Table, TextFilter } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { GenericError } from '/addons/details/generic-error';
+import GenericError from '/addons/details/generic-error';
 import { LoadingSpinner } from '/addons/details/loading';
 import { paginationLabels, tableLabels } from '/addons/helpers/a11y-helpers';
 import type { ColumnWidthsChange } from '/addons/helpers/type-helpers';

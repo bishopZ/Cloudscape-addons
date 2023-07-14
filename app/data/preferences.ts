@@ -23,7 +23,7 @@ const initialState = {
   brightness: 'auto',
   density: 'comfort',
   motion: 'on',
-  tools: 'open',
+  tools: 'closed',
   [PREFERENCES.ARTICLES]: {
     pageSizes: [10, 45, 100],
     pageSize: 50,

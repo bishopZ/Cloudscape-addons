@@ -1,4 +1,4 @@
-import { Button, Container, ExpandableSection } from '@cloudscape-design/components';
+import { Container, ExpandableSection } from '@cloudscape-design/components';
 import React from 'react';
 
 import { SourceHeader } from './headers/source-header';

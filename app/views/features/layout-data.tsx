@@ -55,7 +55,7 @@ export const theme: Theme = {
 
 export const topNav: TopNavigationProps.Identity = {
   href: '#/',
-  title: 'BishopZ.com',
+  title: 'bishopZ.com',
   // logo: {
   //   src: 'assets/favicon.png',
   //   alt: 'Bishop Z logo'

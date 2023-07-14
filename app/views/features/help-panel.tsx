@@ -1,16 +1,31 @@
-import { Box, Button, Header, HelpPanel, SpaceBetween } from '@cloudscape-design/components';
-import React from 'react';
-
-import { ExternalLink } from '/addons/details/external-link';
+import { Box, HelpPanel, SpaceBetween } from '@cloudscape-design/components';
+import React, { memo } from 'react';
 
 export const HelpPanelContent = () => {
   return <HelpPanel
     header={<Box variant="h2">What is this?</Box>}>
     <SpaceBetween size="xs">
       <Box variant="p">
-        TODO
+        When we first came to this domain, we built BishopZ.com version 1.
+        And sadly, it sank into the swamp.
       </Box>
-      <Header variant="h3">Created by <br />Bishop Z</Header>
+      <Box variant="p">
+        But then... then we built BishopZ.com version 2,
+        and it also sank into the swamp.
+      </Box>
+      <Box variant="p">
+        But then... Then we built BishopZ.com version 3, and
+        it burned down, and then sank into the swamp.
+      </Box>
+      <Box variant="p">
+        But version 4... version 4 is all for you,
+        and some day, all that you see will be yours.
+      </Box>
+      <Box variant="p">
+        (What? You mean the curtains? What do I want with the curtains?)
+      </Box>
     </SpaceBetween>
   </HelpPanel>;
 };
+
+export default memo(HelpPanelContent);

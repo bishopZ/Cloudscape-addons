@@ -8,13 +8,14 @@ import { LoadingPreview } from '/views/articles/previews/loading-preview';
 import { NumberPreview } from '/views/articles/previews/number-preview';
 import { UnsavedPreview } from '/views/articles/previews/unsaved-preview';
 
+const PreviewHeader = <Header
+  description="Preview of the Cloudscape Addon components."
+  variant="h1">
+  Addons gallery
+</Header>;
+
 export const Preview = () => {
-  return <ContentLayout
-    header={<Header
-      description="Preview of the Cloudscape Addon components."
-      variant="h1">
-      Addons gallery
-    </Header>}>
+  return <ContentLayout header={PreviewHeader}>
     <SpaceBetween size="l">
       <Container header={
         <Header

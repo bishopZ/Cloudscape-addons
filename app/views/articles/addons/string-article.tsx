@@ -142,7 +142,7 @@ export const makeS3Location = (location: string) => {
           uses the Dash component as a smart fallback.
         </Box>
         <pre><code className="language-javascript">{`export const DEFAULT_LOCALE = 'en-us';
-        
+
 export const formatDate = (date?: string | Date) => {
   if (!date) return <Dash />;
   const newDate = typeof date === 'string'
@@ -158,10 +158,10 @@ export const formatDate = (date?: string | Date) => {
           But what if we want relative dates? Should we install moment.js?
           These days relative dates are included in the javascript specification,
           with just a little extra finese. Relative time is used for the
-          publication date on Stellar Addon's <Link href="#/">Blog page</Link>.
+          publication date on the <Link href="#/">Blog page</Link>.
         </Box>
         <pre><code className="language-javascript">{`export const DEFAULT_LOCALE = 'en-us';
-        
+
 const units: Record<string, number> = {
   year: 24 * 60 * 60 * 1000 * 365,
   month: 24 * 60 * 60 * 1000 * 365 / 12,

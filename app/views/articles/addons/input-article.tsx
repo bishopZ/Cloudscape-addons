@@ -3,11 +3,10 @@ import React, { useEffect } from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { makeHeaderImage } from '/utils/content-map';
+import LabeledContent from '/views/articles/common/labeled-content';
+import { InputPreview } from '/views/articles/previews/input-preview';
+import { PreviewHeader } from '/views/common/headers/preview-header';
 import { SourceCodeSection } from '/views/common/source-code-section';
-
-import { PreviewHeader } from '../../common/headers/preview-header';
-import { LabeledContent } from '../common/labeled-content';
-import { InputPreview } from '../previews/input-preview';
 
 /* eslint-disable max-lines-per-function */
 export const InputArticle = () => {

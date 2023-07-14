@@ -1,6 +1,6 @@
 import type { AppLayoutProps } from '@cloudscape-design/components';
 import {
-  AppLayout, Box, Button, Flashbar, Link, SpaceBetween, TopNavigation
+  AppLayout, Box, Flashbar, TopNavigation
 } from '@cloudscape-design/components';
 import { applyTheme } from '@cloudscape-design/components/theming';
 import { applyDensity, applyMode, Density, disableMotion, Mode } from '@cloudscape-design/global-styles';
@@ -17,7 +17,7 @@ import { clearNotifications, selectNotifications } from '/data/notifications';
 import { changePreference, initPreferences, selectPreferences } from '/data/preferences';
 import { POST_TITLE } from '/utils/constants';
 
-import { HelpPanelContent } from './help-panel';
+import HelpPanelContent from './help-panel';
 import { theme, topNav, utilities } from './layout-data';
 import { Breadcrumbs, Navigation } from './navigation';
 

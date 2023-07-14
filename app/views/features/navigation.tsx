@@ -18,7 +18,7 @@ type SidenavItem = SideNavigationProps.Section
 export const capitalize = (value: string) => value.replace(value[0], value[0].toUpperCase());
 
 const blog: SidenavItem = {
-  type: 'link', text: 'Blog', href: '#/'
+  type: 'link', text: 'Home', href: '#/'
 };
 
 const docs: SidenavItem = {
@@ -26,25 +26,31 @@ const docs: SidenavItem = {
 };
 
 const blogNav: SidenavItem[] = [
+  { type: 'link', text: 'Resume', href: '#/' },
   // { type: 'link', text: 'Addons gallery', href: '#/blog/gallery' },
   // { type: 'link', text: 'Understanding design systems', href: '#/blog/search/design%20systems' },
-  { type: 'link', text: 'Search articles', href: '#/blog/search' },
+  // { type: 'link', text: 'Search articles', href: '#/blog/search' },
   // { type: 'divider' },
   // {
   //   type: 'link',
   //   text: 'Privacy',
   //   external: true,
   //   externalIconAriaLabel,
-  //   href: 'https://www.stellarelements.com/privacy-policy'
+  //   href: ''
   // },
   // {
   //   type: 'link',
   //   text: 'Feedback',
   //   external: true,
   //   externalIconAriaLabel,
-  //   href: 'https://www.stellarelements.com/contact'
+  //   href: ''
   // },
   { type: 'divider' },
+];
+
+const docsNav: SidenavItem[] = [
+  { type: 'link', text: 'Getting started', href: '#/docs' },
+  { type: 'link', text: 'Core tenets', href: '#/docs/core-tenets' }
 ];
 
 export const Navigation = () => {
@@ -52,11 +58,6 @@ export const Navigation = () => {
   const location = useLocation();
   const isDocs = location.pathname.indexOf('/docs') !== -1;
   const { initialized, items } = useAppSelector(selectArticles);
-
-  const docsNav: SidenavItem[] = [
-    { type: 'link', text: 'Getting started', href: '#/docs' },
-    { type: 'link', text: 'Core tenets', href: '#/docs/core-tenets' }
-  ];
   const docArticles = items.filter(item => item.format === 'Documentation');
 
   const types = docArticles.reduce((memo, doc) => {
@@ -97,7 +98,7 @@ export const Navigation = () => {
       fontSize="body-s"
       color="text-status-inactive"
       margin={Spacing.L}>
-      &copy; 2023 TODO
+      &copy; 2023 Bishop Zareh
       <br />all rights reserved
       <br />this site uses essential cookies.
     </Box>

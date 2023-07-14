@@ -5,7 +5,7 @@ const articles = require('./articles');
 const express = require('express')
 
 const HOST = 'localhost';
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express()
 
 app.use('/', express.static(path.join(__dirname, '../public')))

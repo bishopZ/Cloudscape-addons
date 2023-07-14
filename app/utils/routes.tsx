@@ -1,15 +1,15 @@
 import type { AppLayoutProps, BreadcrumbGroupProps } from '@cloudscape-design/components';
-import type React from 'react';
 
-import { deslugify } from '/addons/helpers/string-utils';
+// import { deslugify } from '/addons/helpers/string-utils';
 import type { ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
-import { ArticleContainer } from '/views/pages/blog/article-container';
-import { Blog } from '/views/pages/blog/blog-page';
-import { BrowseArticles } from '/views/pages/blog/browse-page';
-import { DocsContainer } from '/views/pages/docs/doc-container';
-import { Docs } from '/views/pages/docs/getting-started';
+// import { ArticleContainer } from '/views/pages/blog/article-container';
+// import { Blog } from '/views/pages/blog/blog-page';
+// import { BrowseArticles } from '/views/pages/blog/browse-page';
+// import { DocsContainer } from '/views/pages/docs/doc-container';
+// import { Docs } from '/views/pages/docs/getting-started';
 import { NotFound } from '/views/pages/not-found';
-import { Preview } from '/views/pages/preview';
+// import { Preview } from '/views/pages/preview';
+import { Resume } from '/views/pages/resume';
 
 export type RouteProps = {
   contentType: AppLayoutProps.ContentType
@@ -22,64 +22,64 @@ export type RouteProps = {
 // eslint-disable-next-line max-lines-per-function
 export const ROUTES = (): RouteProps[] => [
   {
-    path: '/docs',
-    title: 'Documentation',
-    contentType: 'default',
-    component: Docs,
-    breadcrumbs: []
-  }, {
-    path: '/blog/gallery',
-    title: 'Cloudscape gallery',
-    contentType: 'default',
-    component: Preview,
-    breadcrumbs: [
-      { text: 'Gallery', href: '' }
-    ]
-  },
-  {
-    path: '/blog/search/:filter',
-    title: 'Articles',
-    contentType: 'default',
-    component: Blog,
-    breadcrumbs: [
-      { text: 'Search', href: '' }
-    ]
-  }, {
-    path: '/blog/search',
-    title: 'Articles',
-    contentType: 'default',
-    component: Blog,
-    breadcrumbs: [
-      { text: 'Search', href: '' }
-    ]
-  }, {
-    path: '/docs/:slug',
-    title: params => deslugify(params.slug ?? 'Documentation'),
-    contentType: 'default',
-    component: DocsContainer,
-    breadcrumbs: [
-      params => ({ text: deslugify(params.slug ?? 'Documentation'), href: '' })
-    ]
-  }, {
-    path: '/blog/:slug',
-    title: params => deslugify(params.slug ?? 'Article'),
-    contentType: 'default',
-    component: ArticleContainer,
-    breadcrumbs: [
-      params => ({ text: deslugify(params.slug ?? 'Article'), href: '' })
-    ]
-  }, {
+  //   path: '/docs',
+  //   title: 'Documentation',
+  //   contentType: 'default',
+  //   component: Docs,
+  //   breadcrumbs: []
+  // }, {
+  //   path: '/blog/gallery',
+  //   title: 'Cloudscape gallery',
+  //   contentType: 'default',
+  //   component: Preview,
+  //   breadcrumbs: [
+  //     { text: 'Gallery', href: '' }
+  //   ]
+  // },
+  // {
+  //   path: '/blog/search/:filter',
+  //   title: 'Articles',
+  //   contentType: 'default',
+  //   component: Blog,
+  //   breadcrumbs: [
+  //     { text: 'Search', href: '' }
+  //   ]
+  // }, {
+  //   path: '/blog/search',
+  //   title: 'Articles',
+  //   contentType: 'default',
+  //   component: Blog,
+  //   breadcrumbs: [
+  //     { text: 'Search', href: '' }
+  //   ]
+  // }, {
+  //   path: '/docs/:slug',
+  //   title: params => deslugify(params.slug ?? 'Documentation'),
+  //   contentType: 'default',
+  //   component: DocsContainer,
+  //   breadcrumbs: [
+  //     params => ({ text: deslugify(params.slug ?? 'Documentation'), href: '' })
+  //   ]
+  // }, {
+  //   path: '/blog/:slug',
+  //   title: params => deslugify(params.slug ?? 'Article'),
+  //   contentType: 'default',
+  //   component: ArticleContainer,
+  //   breadcrumbs: [
+  //     params => ({ text: deslugify(params.slug ?? 'Article'), href: '' })
+  //   ]
+  // }, {
     path: '/:slug',
-    title: 'Blog',
+    title: 'Article',
     contentType: 'default',
     component: NotFound,
     breadcrumbs: []
   },
   {
     path: '/',
-    title: 'Blog',
+    title: 'Resume',
     contentType: 'default',
-    component: BrowseArticles,
+    component: Resume,
     breadcrumbs: []
   }
 ];
