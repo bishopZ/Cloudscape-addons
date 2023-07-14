@@ -15,7 +15,7 @@ export const HelpPanelContent = () => {
       </Box>
       <Box variant="p">
         But then... Then we built BishopZ.com version 3, and
-        it burned down, and then sank into the swamp.
+        it burned down... and then sank into the swamp.
       </Box>
       <Box variant="p">
         But version 4... version 4 is all for you,

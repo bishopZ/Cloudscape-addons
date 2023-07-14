@@ -71,7 +71,7 @@ const skills: Skill[] = [
       {
         name: 'Process', skills: [
           ['Agile lead', 'Requirements gathering', 'Project estimation', 'Backlog creation'],
-          ['Jira', 'Trello', 'SIM'],
+          ['Jira', 'Trello'],
           ['Mentorship', 'Workshop design', 'Instructional design'],
         ]
       }, {
@@ -135,16 +135,16 @@ const skills: Skill[] = [
   }, {
     discipline: 'Design', areas: [
       {
-        name: 'Brand', skills: [
-          ['Visual design', 'Typography', 'Color theory'],
-          ['Copywriting', 'Journey mapping', 'User testing'],
-          ['Experiential design', 'Immersive design', 'Voice UI'],
+        name: 'Product design', skills: [
+          ['Experiential design', 'Immersive design'],
+          ['Copywriting', 'Journey mapping', 'User testing', 'UX research'],
+          ['Voice UI', 'Multi-modal/multi-device UI'],
         ]
       }, {
-        name: 'Visual & Motion design', skills: [
+        name: 'Visual, UX & Motion design', skills: [
           ['Figma', 'Sketch', 'Photoshop', 'Illustrator', 'Adobe XD'],
           ['Final Cut Pro', 'After Effects', 'Autodesk 3ds', 'Cinema 4D'],
-          ['Storyboards', 'Color grading', 'Camera tracking', 'Motion design', 'Narrative construction'],
+          ['Narrative construction', 'Storyboards', 'Motion design', 'Compositing', 'Color grading'],
         ]
       }, {
         name: 'Design systems', skills: [
@@ -170,7 +170,7 @@ export const Resume = () => {
           guide your team to success.
         </Box>
         <Box variant="p">
-          Bishop has created 100s of novel experiences for the web, mobile,
+          Bishop has created hundreds of novel experiences for the web, mobile,
           and immersive environments. He's received awards from
           SIGGRAPH, SXSW, AIGA, Awwwards
           and industry certifications from
@@ -184,9 +184,15 @@ export const Resume = () => {
           In 2013, he organized a panel at South by Southwest on glitch art.
           In 2016, he won an Audience Choice award at the San Antonio Film
           Festival for his color grading and title design work on
-          Wallace Witherspoon's "Second Impression." In 2018, he was
-          featured in the Colorado AdClub's "The 50" for his work on
-          Aspen's Give a Fl*ke campaign.
+          Wallace Witherspoon's "Second Impression."
+          In 2018, he was featured in the Colorado AdClub's "The 50"
+          for his work on Aspen's "Give a Fl*ke" campaign.
+<<<<<<< HEAD
+=======
+        </Box>
+        <Box variant="p">
+>>>>>>> 05479cd (update branding)
+          Since 2021, he's been working as an embedded expert at Amazon.
         </Box>
       </Container>
       <Container
@@ -228,7 +234,7 @@ export const Resume = () => {
             description={<>
               <Box variant="p">
                 Managed the technical aspects of over twenty accounts.
-                Full stack development on multiple architectures, mostly
+                Full-stack development on multiple architectures, mostly
                 using React with Redux. Managed teams of domestic and foreign contract
                 developers. Built websites, take-overs, social media posts,
                 mobile apps, voice apps, interactive prototypes, landing pages,
@@ -261,7 +267,7 @@ export const Resume = () => {
           <JobCard
             title="Senior Frontend Engineer"
             company="Bloomfire &bull; Full-time"
-            duration="1 yr 4 mos &bull; Seattle, Washington (remote)"
+            duration="1 yr 4 mos &bull; Austin, Texas"
             /* eslint-disable-next-line max-len */
             logo="https://media.licdn.com/dms/image/C4E0BAQFBJYrCf4gQRA/company-logo_100_100/0/1583167897491?e=1698883200&v=beta&t=u0VCJaQhiBZIdUg3c6s8xqMX0rXsfOCnbGscU-Icp1o"
             description="Senior frontend developer for an Austin Ventures-funded
@@ -274,7 +280,7 @@ export const Resume = () => {
             <JobCard
               title="Senior Prototype Developer"
               company="Compass Learning &bull; Full-time"
-              duration="1 yr 4 mos &bull; Seattle, Washington (remote)"
+              duration="1 yr 4 mos &bull; Austin, Texas"
               /* eslint-disable-next-line max-len */
               logo="https://media.licdn.com/dms/image/C560BAQFIL_lFjqWATg/company-logo_100_100/0/1519855885980?e=1698883200&v=beta&t=KIXytVQmxAe114j46FZSMjKrKw80e3RcwcQiyT8ka9k"
               description="Built weekly Javascript/HTML5 prototypes for user
@@ -288,7 +294,7 @@ export const Resume = () => {
             <JobCard
               title="Senior Presentation Layer Developer"
               company="SapientRazorfish &bull; Full-time"
-              duration="1 yr 2 mos &bull; Seattle, Washington (remote)"
+              duration="1 yr 2 mos &bull; Austin, Texas"
               /* eslint-disable-next-line max-len */
               logo="https://media.licdn.com/dms/image/C560BAQFfYKn6of94Bw/company-logo_100_100/0/1549799977055?e=1698883200&v=beta&t=g1k2kXLwBDrlMQk8TM5YRSiGz8z-ApDvv_hfKbg5iK0"
               description="Built weekly Javascript/HTML5 prototypes for user
@@ -372,13 +378,23 @@ export const Resume = () => {
       </Container> */}
       <Container
         header={<Header variant="h2">Testimonial</Header>}>
-        <Box variant="p" padding={Spacing.L}>
+<<<<<<< HEAD
+        <Box variant="p" padding={Spacing.L} fontSize="heading-xs">
+=======
+        <Box variant="p" padding={Spacing.L} fontSize="heading-s">
+>>>>>>> 05479cd (update branding)
           &ldquo;Bishop has always impressed me with his ability to solve problems
           with technology, he could engineer a solution to do almost anything.
           He supported many clients for our agency, in many different disciplines,
           including product development. When you have a tough technology problem,
           he is a good one to have on your team!&rdquo;
-          <em>- <Link href="https://karshhagan.com/people/david-stewart" external>
+        </Box>
+<<<<<<< HEAD
+        <Box variant="p">
+=======
+        <Box variant="p" padding={Spacing.LeftL}>
+>>>>>>> 05479cd (update branding)
+          <em><Link href="https://karshhagan.com/people/david-stewart" external>
             David Stewart
           </Link>
           , Karsh Hagan, VP of Creative Technology</em>
