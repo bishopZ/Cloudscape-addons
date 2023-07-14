@@ -13,6 +13,8 @@ app.use('/', express.static(path.join(__dirname, '../public')))
 app.get('/api/articles', (request, response) => {
   console.log('sent articles')
   response.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
+  response.setHeader('Access-Control-Allow-Origin', 'https://bishopz.herokuapp.com/');
+  response.setHeader('Access-Control-Allow-Origin', 'https://bishopz.com/');
   response.json(articles())
 })
 

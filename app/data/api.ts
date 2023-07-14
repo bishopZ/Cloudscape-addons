@@ -1,7 +1,7 @@
 
 export const fetchArticles = async () => {
   try {
-    const articles = await fetch('http://localhost:3000/api/articles')
+    const articles = await fetch('/api/articles')
       .then(response => response.json());
     return articles;
   } catch (error) {
