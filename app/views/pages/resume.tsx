@@ -187,11 +187,8 @@ export const Resume = () => {
           Wallace Witherspoon's "Second Impression."
           In 2018, he was featured in the Colorado AdClub's "The 50"
           for his work on Aspen's "Give a Fl*ke" campaign.
-<<<<<<< HEAD
-=======
         </Box>
         <Box variant="p">
->>>>>>> 05479cd (update branding)
           Since 2021, he's been working as an embedded expert at Amazon.
         </Box>
       </Container>
@@ -378,22 +375,14 @@ export const Resume = () => {
       </Container> */}
       <Container
         header={<Header variant="h2">Testimonial</Header>}>
-<<<<<<< HEAD
-        <Box variant="p" padding={Spacing.L} fontSize="heading-xs">
-=======
         <Box variant="p" padding={Spacing.L} fontSize="heading-s">
->>>>>>> 05479cd (update branding)
           &ldquo;Bishop has always impressed me with his ability to solve problems
           with technology, he could engineer a solution to do almost anything.
           He supported many clients for our agency, in many different disciplines,
           including product development. When you have a tough technology problem,
           he is a good one to have on your team!&rdquo;
         </Box>
-<<<<<<< HEAD
-        <Box variant="p">
-=======
         <Box variant="p" padding={Spacing.LeftL}>
->>>>>>> 05479cd (update branding)
           <em><Link href="https://karshhagan.com/people/david-stewart" external>
             David Stewart
           </Link>
