@@ -2,6 +2,7 @@ import type { AppLayoutProps, BreadcrumbGroupProps } from '@cloudscape-design/co
 
 // import { deslugify } from '/addons/helpers/string-utils';
 import type { ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
+import { Exhibitions } from '/views/pages/exhibitions';
 // import { ArticleContainer } from '/views/pages/blog/article-container';
 // import { Blog } from '/views/pages/blog/blog-page';
 // import { BrowseArticles } from '/views/pages/blog/browse-page';
@@ -69,6 +70,12 @@ export const ROUTES = (): RouteProps[] => [
   //     params => ({ text: deslugify(params.slug ?? 'Article'), href: '' })
   //   ]
   // }, {
+    path: '/exhibitions',
+    title: 'Show record',
+    contentType: 'default',
+    component: Exhibitions,
+    breadcrumbs: []
+  }, {
     path: '/:slug',
     title: 'Article',
     contentType: 'default',

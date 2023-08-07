@@ -27,6 +27,7 @@ const docs: SidenavItem = {
 
 const blogNav: SidenavItem[] = [
   { type: 'link', text: 'Resume', href: '#/' },
+  { type: 'link', text: 'Show record', href: '#/exhibitions' },
   // { type: 'link', text: 'Addons gallery', href: '#/blog/gallery' },
   // { type: 'link', text: 'Understanding design systems', href: '#/blog/search/design%20systems' },
   // { type: 'link', text: 'Search articles', href: '#/blog/search' },

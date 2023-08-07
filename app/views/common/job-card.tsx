@@ -1,6 +1,8 @@
 import { Box, Grid, Header } from '@cloudscape-design/components';
 import React from 'react';
 
+import { Spacing } from '/addons/helpers/spacing-constants';
+
 type Props = {
   title: string
   company: string
@@ -19,10 +21,12 @@ export const JobCard = (props: Props) => {
 
   return <Box>
     <Grid gridDefinition={gridDefinition}>
-      <img
-        alt={`${company} logo`}
-        src={logo}
-      />
+      <Box padding={Spacing.TopS}>
+        <img
+          alt={`${company} logo`}
+          src={logo}
+        />
+      </Box>
       <Box>
         <Header variant="h3">
           {title}

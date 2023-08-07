@@ -70,8 +70,8 @@ const skills: Skill[] = [
     discipline: 'Product', areas: [
       {
         name: 'Process', skills: [
-          ['Agile lead', 'Requirements gathering', 'Project estimation', 'Backlog creation'],
-          ['Jira', 'Trello'],
+          ['Agile lead', 'Jira', 'Trello', 'User-centric approach'],
+          ['Requirements gathering', 'Project estimation', 'Backlog creation', 'Data-driven decision making'],
           ['Mentorship', 'Workshop design', 'Instructional design'],
         ]
       }, {
@@ -85,7 +85,7 @@ const skills: Skill[] = [
   }, {
     discipline: 'Frontend engineering', areas: [
       {
-        name: 'Build system, CMS, and Platform', skills: [
+        name: 'Build system, CMS & Platform', skills: [
           ['Node.js', 'Express', 'Webpack', 'Gatsby', 'Next.js', 'Sass'],
           ['Storyblock', 'Contentful', 'Strapi'],
           ['Git', 'Docker', 'CloudFormation', 'AWS Amplify', 'Heroku'],
@@ -138,7 +138,7 @@ const skills: Skill[] = [
         name: 'Product design', skills: [
           ['Experiential design', 'Immersive design'],
           ['Copywriting', 'Journey mapping', 'User testing', 'UX research'],
-          ['Voice UI', 'Multi-modal/multi-device UI'],
+          ['Voice UI', 'Multi-modal / multi-device UI'],
         ]
       }, {
         name: 'Visual, UX & Motion design', skills: [
@@ -157,21 +157,33 @@ const skills: Skill[] = [
   }
 ];
 
-/* eslint-disable max-lines-per-function, react/jsx-max-depth */
+/* eslint-disable max-lines-per-function, react/jsx-max-depth, react/self-closing-comp */
 export const Resume = () => {
   return <ContentLayout
     header={<Header variant="h1">Bishop Zareh</Header>}>
     <SpaceBetween size="s">
       <Container
+        media={{
+          content:
+            <iframe
+              title="vimeo-player"
+              src="//player.vimeo.com/video/213543689"
+              width="100%"
+              frameBorder="0"
+              height="360"
+              allowFullScreen></iframe>,
+          height: 360,
+          position: 'top'
+        }}
         header={<Header variant="h2">Summary</Header>}>
         <Box variant="p">
-          With over 20 years experience creating software for the web,
-          Bishop brings a wealth of knowledge and experience that can help
-          guide your team to success.
+          With more than two decades of experience crafting
+          hundreds of novel experiences for the web, mobile, and immersive environments,
+          Bishop brings a wealth of knowledge and expertise
+          to lead your team toward success.
         </Box>
         <Box variant="p">
-          Bishop has created hundreds of novel experiences for the web, mobile,
-          and immersive environments. He's received awards from
+          He's received awards from
           SIGGRAPH, SXSW, AIGA, Awwwards
           and industry certifications from
           Adobe, Apple, Autodesk and Google.
@@ -189,7 +201,7 @@ export const Resume = () => {
           for his work on Aspen's "Give a Fl*ke" campaign.
         </Box>
         <Box variant="p">
-          Since 2021, he's been working as an embedded expert at Amazon.
+          Since 2021, he's worked as an embedded expert at Amazon.
         </Box>
       </Container>
       <Container
@@ -206,18 +218,21 @@ export const Resume = () => {
                 Worked exclusingly on the Amazon account helping to build the
                 interface to Amazon Web Services (AWS).</Box>
               <Box variant="p">
-                On my first project, I helped to upgrade an existing service,
-                already in production, to a newer version of its design system,
-                and to newer React and Redux coding patterns. We created a
-                template that all new code on the project should follow. Enforced
-                those standards with new Contribution Guidelines, eslist configuration,
-                and new automated testing framework (Cypress). We then built several
-                new features to showcase the velocity of feature development using
-                our new system.
+                On my first project, I helped to update an in-production service
+                to a newer version of its design system,
+                and to newer React and Redux coding patterns.
+                We created a template that all new code on the project should follow.
+                Enforced those standards with
+                new Contribution Guidelines, eslist configuration,
+                and new automated testing framework (Cypress).
+                We also built several new features
+                to showcase the velocity of feature development
+                using our system.
               </Box>
               <Box variant="p">
-                On my second project, I single-handedly built the interface for a
-                new AWS service. This allowed me to use the newest and best tools
+                On my second project, I single-handedly
+                built the interface for a new AWS service.
+                This allowed me to use the newest and best tools
                 available to Amazon's internal engineers.
               </Box>
             </>}
@@ -231,34 +246,37 @@ export const Resume = () => {
             description={<>
               <Box variant="p">
                 Managed the technical aspects of over twenty accounts.
+
                 Full-stack development on multiple architectures, mostly
-                using React with Redux. Managed teams of domestic and foreign contract
-                developers. Built websites, take-overs, social media posts,
+                using React with Redux.
+
+                Managed teams of domestic and foreign contract developers.
+
+                Built websites, take-overs, social media posts,
                 mobile apps, voice apps, interactive prototypes, landing pages,
                 animated microsites, and large content marketing websites.
+
                 Architected and built three web-based products with Node.js
-                for an internal startup incubator. Collaborated with brand
-                creatives to develop innovative marketing campaigns using
+                for an internal startup incubator.
+
+                Collaborated with brand creatives
+                to develop innovative marketing campaigns using
                 design systems, personalization, chat bots,
                 augmented reality (AR), webcam stream routing,
                 animation-to-web pipelines, machine learning,
-                blockchain and more. Created many starter templates for new
+                blockchain and more.
+
+                Created many starter templates for new
                 website builds in diverse industries such as healthcare,
-                energy, and consumer electronics. Official bug hunter on
-                systems that had fallen out of repair. Managed the collaboration
+                energy, and consumer electronics.
+
+                Official bug hunter on systems that had fallen out of repair.
+
+                Managed the collaboration
                 between analytics, measurement goals, media trafficking,
                 reporting, and optimization. Created technology comparisons
                 for a wide variety of stakeholders.
               </Box>
-              {/* <Box variant="p">
-                Full stack development on multiple architectures including,
-                Node, Express, Nest, Next, React, Redux, WordPress, Keystone,
-                Strapi, Git, Docker, Postgres, Mongo, CloudFlare, S3,
-                CloudFront, Amazon Alexa, Lambda, Google Cloud Platform,
-                Google Marketing Platform, Greensock, WPEngine, Monsido,
-                Processing, THREE, D3, OBS, Figma, Sketch, After Effects
-                and more.
-              </Box> */}
             </>}
           />
           <JobCard
@@ -325,6 +343,17 @@ export const Resume = () => {
         header={<Header variant="h2">Education</Header>}>
         <ColumnLayout borders="horizontal">
           <JobCard
+            title="Faculty (Digital Animation)"
+            company="School of the Art Institute of Chicgo &bull; Adjunct"
+            duration="6 yrs 1 mo &bull; Chicago, Illinois"
+            /* eslint-disable-next-line max-len */
+            logo="https://media.licdn.com/dms/image/C4D0BAQH_O0IttUyiXA/company-logo_100_100/0/1519856335355?e=1698883200&v=beta&t=vZlbTmswjjxNFIzrq30K--M-bW1deQxwtN170FboROE"
+            description="Part-time faculty in the Film Video New Media Animation
+              department. Taught senior undergraduate courses in new media
+              animation and distributed video network design. Researched
+              narrative construction, literary theory and visual language."
+          />
+          <JobCard
             title="Certified Professional Instructor (Design Technology)"
             company="Sterling Ledet &bull; Contract"
             duration="17 yrs &bull; Touring"
@@ -337,25 +366,16 @@ export const Resume = () => {
               classes and thousands of students."
           />
           <JobCard
-            title="Faculty (Digital Animation)"
-            company="School of the Art Institute of Chicgo &bull; Adjunct"
-            duration="6 yrs 1 mo &bull; Chicago, Illinois"
-            /* eslint-disable-next-line max-len */
-            logo="https://media.licdn.com/dms/image/C4D0BAQH_O0IttUyiXA/company-logo_100_100/0/1519856335355?e=1698883200&v=beta&t=vZlbTmswjjxNFIzrq30K--M-bW1deQxwtN170FboROE"
-            description="Part-time faculty in the Film Video New Media Animation
-              department. Taught senior undergraduate courses in new media
-              animation and distributed video network design. Researched
-              narrative construction, literary theory and visual language."
-          />
-          <JobCard
             title="Undergraduate"
             company="University of Texas &bull; Student"
             duration="4 yrs &bull; Austin, Texas"
             /* eslint-disable-next-line max-len */
             logo="https://media.licdn.com/dms/image/C560BAQEREeDg1PACXA/company-logo_100_100/0/1617385772288?e=1698883200&v=beta&t=-pXX5cSF2-_ieG8UCcOUlcDty0lNOGJBcuRK7st1f08"
-            description="
-              Radio, Television, Film department, Convergent Media program,
-              Advanced Communication Theory Laboratory (ACTLab)."
+            description={<>
+              Radio, Television, Film department
+              <br />Convergent Media program
+              <br />Advanced Communication Theory Laboratory (ACTLab)
+            </>}
           />
         </ColumnLayout>
       </Container>
@@ -365,17 +385,12 @@ export const Resume = () => {
         columnDefinitions={skillColumns}
         items={skills}
       />
-      {/* <Container
-        header={<Header variant="h2">Awards & Clients</Header>}>
-        <ColumnLayout columns={3}>
-          <ul><li>award</li></ul>
-          <ul><li>client</li></ul>
-          <ul><li>client</li></ul>
-        </ColumnLayout>
-      </Container> */}
       <Container
         header={<Header variant="h2">Testimonial</Header>}>
-        <Box variant="p" padding={Spacing.L} fontSize="heading-s">
+        <Box
+          variant="p"
+          padding={Spacing.HorizontalL}
+          fontSize="heading-m">
           &ldquo;Bishop has always impressed me with his ability to solve problems
           with technology, he could engineer a solution to do almost anything.
           He supported many clients for our agency, in many different disciplines,
@@ -383,10 +398,12 @@ export const Resume = () => {
           he is a good one to have on your team!&rdquo;
         </Box>
         <Box variant="p" padding={Spacing.LeftL}>
-          <em><Link href="https://karshhagan.com/people/david-stewart" external>
-            David Stewart
-          </Link>
-          , Karsh Hagan, VP of Creative Technology</em>
+          <em>
+            <Link href="https://karshhagan.com/people/david-stewart" external>
+              David Stewart
+            </Link>
+            <br />VP of Creative Technology, Karsh Hagan
+          </em>
         </Box>
       </Container>
       {/* <Container
