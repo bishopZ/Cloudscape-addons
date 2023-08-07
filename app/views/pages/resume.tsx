@@ -157,6 +157,9 @@ const skills: Skill[] = [
   }
 ];
 
+let videoHeight = 480;
+if (window.innerWidth < 1024) videoHeight = 240;
+
 /* eslint-disable max-lines-per-function, react/jsx-max-depth, react/self-closing-comp */
 export const Resume = () => {
   return <ContentLayout
@@ -170,9 +173,9 @@ export const Resume = () => {
               src="//player.vimeo.com/video/213543689"
               width="100%"
               frameBorder="0"
-              height="360"
+              height={videoHeight}
               allowFullScreen></iframe>,
-          height: 360,
+          height: videoHeight,
           position: 'top'
         }}
         header={<Header variant="h2">Summary</Header>}>

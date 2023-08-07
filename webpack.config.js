@@ -9,7 +9,7 @@ const config = {
   entry: [
     './app/init.tsx',
     './app/styles/styles.scss',
-    // './app/images/favicon.png',
+    './app/images/Jan-2016-bubble-v1_onwhite.gif',
     './app/images/chasm.jpg'
   ],
   output: {
