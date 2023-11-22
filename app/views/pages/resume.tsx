@@ -181,15 +181,15 @@ export const Resume = () => {
         header={<Header variant="h2">Summary</Header>}>
         <Box variant="p">
           With more than two decades of experience crafting
-          hundreds of novel experiences for the web, mobile, and immersive environments,
+          novel experiences for the web, mobile, and immersive environments,
           Bishop brings a wealth of knowledge and expertise
-          to lead your team toward success.
+          to lead your team to success.
         </Box>
         <Box variant="p">
           He's received awards from
           SIGGRAPH, SXSW, AIGA, Awwwards
           and industry certifications from
-          Adobe, Apple, Autodesk and Google.
+          Apple, Google, Adobe, Autodesk and more.
         </Box>
         <Box variant="p">
           From 2005 to 2011, he taught motion design at
@@ -218,25 +218,16 @@ export const Resume = () => {
             logo="https://media.licdn.com/dms/image/D560BAQG-eXtmKYSbfQ/company-logo_100_100/0/1684789598663?e=1698883200&v=beta&t=xvGJ1_lKCNdONe0o4aXsPcKDqA80g0ar66aAOTqhx6s"
             description={<>
               <Box variant="p">
-                Worked exclusingly on the Amazon account helping to build the
-                interface to Amazon Web Services (AWS).</Box>
-              <Box variant="p">
-                On my first project, I helped to update an in-production service
-                to a newer version of its design system,
-                and to newer React and Redux coding patterns.
-                We created a template that all new code on the project should follow.
-                Enforced those standards with
-                new Contribution Guidelines, eslist configuration,
-                and new automated testing framework (Cypress).
-                We also built several new features
-                to showcase the velocity of feature development
-                using our system.
+                Worked exclusively on the Amazon account helping to build the interface to Amazon Web Services (AWS).
               </Box>
               <Box variant="p">
-                On my second project, I single-handedly
-                built the interface for a new AWS service.
-                This allowed me to use the newest and best tools
-                available to Amazon's internal engineers.
+                I helped update an in-production service to a newer version of its design system, and to newer React and Redux coding patterns. We created a template that all new code on the project should follow. Enforced those standards with new Contribution Guidelines, ESLint configuration, and new automated testing framework (Cypress). We also built several new features to showcase the velocity of feature development using our system.
+              </Box>
+              <Box variant="p">
+                I single-handedly built the interface for a new AWS service. This allowed me to use the newest and best tools available to Amazon's internal engineers.
+              </Box>
+              <Box variant="p">
+                I built a documentation website using over a 1000 Markdown files and Gatsby. Delivered an aggressive set of features on a 12-week timeline.
               </Box>
             </>}
           />
@@ -409,12 +400,6 @@ export const Resume = () => {
           </em>
         </Box>
       </Container>
-      {/* <Container
-        header={<Header variant="h2">Continue!</Header>}>
-        <Box variant="p">
-          Yo
-        </Box>
-      </Container> */}
     </SpaceBetween>
   </ContentLayout>;
 };

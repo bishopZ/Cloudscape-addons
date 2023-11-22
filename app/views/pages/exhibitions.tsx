@@ -15,15 +15,15 @@ export const Exhibitions = () => {
           Amazon
           • Citibank • MIT • SAIC • Leo Burnett
           • Mayo Clinic • Aspen Snow Mass • Harvard Book Store
-          • General Mills • General Motors • TD Ameritrade • AT&T • US Navy • Delta Airlines
           • Arrow Electronics • Blackberry
+          • General Mills • General Motors • AT&T • TD Ameritrade
           • Anchutz Medical Campus • University of Chicago • Cambridge Office of Tourism
           • Fiske Planetarium • Denver International Airport
         </Box>
       </Container>
       <Container header={<h2>Awards</h2>}>
         <p>2018 The 50, AdClub of Colorado (<Link external href="//karshhagan.com/case-studies/aspen-snowmass">Aspen Give a Fl*ke Twitter bot</Link>)</p>
-        <p>2016 Audience Award for Best Narrative Feature, San Antonio Film Festival (“Second Impression” directed by Wallace Weatherspoon)</p>
+        <p>2016 Audience Award for Best Narrative Feature, San Antonio Film Festival ("Second Impression" directed by Wallace Weatherspoon)</p>
         <p>2014 Arts Grant Recipient, Burning Flipside (Meditation Deathmatch)</p>
         <p>2011 Best of New England, AIGA (Island Creek Oyster Bar)</p>
         <p>2011 Site of the Day, Awwwards.com (Island Creek Oyster Bar)</p>
@@ -35,9 +35,10 @@ export const Exhibitions = () => {
         <p>1999 Nominee, SXSW Web Awards (Kill The President)</p>
         <p>1998 Innovation in Art and Technology, Texas Interactive Multimedia Awards (Kill The President)</p>
       </Container>
-      <Container
-        header={<Header variant="h2">Art exhibitions</Header>}>
-        <p>2023 Projection artist, "This Mystic Night" <Link external href="//itchy-o.com">itchy-O</Link>, Levitt Pavillion - Denver, CO</p>
+      <Container header={<Header variant="h2">Art exhibitions</Header>}>
+        <p>2023 Projection artist, <Link external href="//www.westword.com/music/itchy-o-brings-spooktacular-halloween-concerts-to-mercury-cafe-in-denver-18101046">"Hallowmass"</Link> (run of 10 shows) <Link external href="//itchy-o.com">itchy-O</Link>, Mercury Cafe - Denver, CO</p>
+        <p>2023 Performance artist, "Art Night Out" <Link external href="//itchy-o.com">itchy-O</Link>, public road - Lafayette, CO</p>
+        <p>2023 Projection artist, <Link external href="https://itchyo.com/mystic_evening/">"This Mystic Night"</Link> <Link external href="//itchy-o.com">itchy-O</Link>, Levitt Pavillion - Denver, CO (4.3k audience)</p>
         <p>2023 Special effects assistant (fog), "Intergalactic Masquerade" <Link external href="//itchy-o.com">itchy-O</Link>, Oriental Theater - Denver, CO</p>
         <p>2023 Performance artist, <Link external href="//itchy-o.com">itchy-O</Link> featuring <Link external href="//www.n3ptune.com/">n3ptune</Link>, Bluebird - Denver, CO</p>
         <p>2023 Projection artist, "Kink Valentines" <Link external href="//itchy-o.com">itchy-O</Link>, Reel Works - Denver, CO</p>
@@ -62,17 +63,17 @@ export const Exhibitions = () => {
         <p>2002 Group show, “Kill The President” Version&gt;02 Fest, Museum of Contemporary Art - Chicago, IL</p>
         <p>2002 Video installation, “digital?confusion” Austin Museum of Digital Art - Austin, TX (SXSW Interactive opening party)</p>
       </Container>
-      <Container
-        header={<Header variant="h2">Public speaking</Header>}>
-        <p>2023 User Group Presenter, "Typescript: from any to unknown" <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
+      <Container header={<Header variant="h2">Public speaking</Header>}>
+        <p>2023 User Group Presenter, <Link external href="//www.youtube.com/watch?v=Ez4TWswyoZg">"State management: the missing manual"</Link> <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
+        <p>2023 User Group Presenter, <Link external href="//www.youtube.com/watch?v=0Kwm4OskzBs">"Typescript: from Any to Unknown"</Link> <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
         <p>2023 User Group Presenter, "Life as an Engineer at Amazon" <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
         <p>2022 User Group Presenter, "Typescript: from Any to Unknown" <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
         <p>2018 User Group Presenter, “A brief history of recipes” Denver Creative Tech, Legwork Studio - Denver, CO</p>
         <p>2018 User Group Presenter, “ADVANCED INTELLIGENT DEEP ARTIFICIAL NEURAL MACHINE ROBOTS” Refresh Denver, Galvanize - Denver, CO</p>
-        <p>2017 User Group Presenter, “RGB vs HSL, the beatdown” Denver Creative Tech, Commons on Champa - Denver, CO</p>
+        <p>2017 User Group Presenter, <Link external href="//vimeo.com/manage/videos/211040647">"RGB vs HSL, the beatdown"</Link> Denver Creative Tech, Commons on Champa - Denver, CO</p>
         <p>2013 Panel organizer, “2012: Year of the GLI.TC/H” SXSW Interactive, Austin Convention Center - Austin, TX</p>
         <p>2010 Conference presenter, “Advancements in motion” Motion Graphics Festival - Boston, San Francisco, Chicago</p>
-        <p>2009 Conference presenter, “The history of tomorrow's interfaces” <Link href="//reelchicago.com/article/two-days-43-speakers-1500-attendees-see-future-chicago-new-media-summit/" external>Chicago New Media Summit</Link>, Museum of Contemporary Art - Chicago, IL</p>
+        <p>2009 Conference presenter, "The history of tomorrow's interfaces" <Link href="//reelchicago.com/article/two-days-43-speakers-1500-attendees-see-future-chicago-new-media-summit/" external>Chicago New Media Summit</Link>, Museum of Contemporary Art - Chicago, IL</p>
         <p>2009 Conference presenter, “The history of tomorrow's interfaces” Motion Graphics Festival - Boston, Washington DC, Austin</p>
         <p>2008 Conference presenter, “Chicago House Story” Consuming Race Conference, University of Chicago - Chicago, IL</p>
       </Container>
