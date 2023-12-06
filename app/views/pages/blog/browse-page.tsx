@@ -28,8 +28,8 @@ const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
       </div>
     },
     { id: 'description',
-      header: 'Description',
-      content: item => <Box fontSize="body-s" color="text-body-secondary">
+      header: '',
+      content: item => <Box fontSize="body-m">
         {item.description}
       </Box>,
     }, {

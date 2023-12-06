@@ -208,11 +208,10 @@ export const Resume = () => {
           Since 2021, he's worked as an embedded expert at Amazon.
         </Box>
       </Container>
-      <Container
-        header={<Header variant="h2">Experience</Header>}>
+      <Container header={<Header variant="h2">Experience</Header>}>
         <ColumnLayout borders="horizontal">
           <JobCard
-            title="Senior Engineer (Frontend)"
+            title="Senior Frontend Engineer"
             company="Stellar Elements (current) &bull; Full-time"
             duration="Oct 2021 - Present &bull; Seattle, Washington (remote)"
             /* eslint-disable-next-line max-len */
@@ -301,6 +300,7 @@ export const Resume = () => {
                 Javascript and legacy Flash in XCode to deliver HTML5-driven
                 native iPad applications."
             />
+            <hr />
             <JobCard
               title="Senior Presentation Layer Developer"
               company="SapientRazorfish &bull; Full-time"
@@ -315,6 +315,7 @@ export const Resume = () => {
                 Javascript and legacy Flash in XCode to deliver HTML5-driven
                 native iPad applications."
             />
+            <hr />
             <JobCard
               title="Chief Technology Officer"
               company="Design After Next &bull; Full-time, Partner"
@@ -348,7 +349,7 @@ export const Resume = () => {
               animation and distributed video network design. Researched
               narrative construction, literary theory and visual language."
           />
-          <ExpandableSection>
+          <ExpandableSection headerText="More education">
             <JobCard
               title="Certified Professional Instructor (Design Technology)"
               company="Sterling Ledet &bull; Contract"
@@ -361,6 +362,7 @@ export const Resume = () => {
               Earned 9.3 out of 10 average student rating over hundreds of
               classes and thousands of students."
             />
+            <hr />
             <JobCard
               title="Undergraduate"
               company="University of Texas &bull; Student"
@@ -387,7 +389,7 @@ export const Resume = () => {
         <Box
           variant="p"
           padding={Spacing.HorizontalL}
-          fontSize="heading-m">
+          fontSize="heading-s">
           &ldquo;Bishop has always impressed me with his ability to solve problems
           with technology, he could engineer a solution to do almost anything.
           He supported many clients for our agency, in many different disciplines,

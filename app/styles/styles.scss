@@ -3,6 +3,12 @@
 
 th, td { vertical-align: top; }
 
+hr {
+  height: 2px;
+  background-color: #e9ebed;
+  border: none;
+}
+
 .card-image {
   height: 120px;
   display: flex;
@@ -29,8 +35,12 @@ th, td { vertical-align: top; }
   }
 }
 
-[class^='awsui_card-header_'], [class*=' awsui_card-header_'] {
-  min-height: 3.1rem;
+[class^='awsui_card-header_'] a:not(#\9),
+[class*='awsui_card-header_'] a:not(#\9) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
 }
 
 
