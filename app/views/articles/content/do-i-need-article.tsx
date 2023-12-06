@@ -15,7 +15,7 @@ export const DoINeedArticle = () => {
   return <SpaceBetween size="m">
     <Container
       media={article && makeHeaderImage(article.image)}
-      header={<Header variant="h2">Scale and longevity</Header>}>
+      header={<Header variant="h2">Scale</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
           Scale plays a significant role in deciding whether a design system is necessary.
@@ -25,6 +25,7 @@ export const DoINeedArticle = () => {
           and many teams working on different products and channels (such as web, mobile, etc.),
           a design system becomes essential to ensure consistency and efficiency.
         </Box>
+        <Header variant="h2">Longevity</Header>
         <Box variant="p">
           If your brand operates in a stable market and has products with a long lifespan,
           investing in a design system can help limit risks associated with inconsistency,

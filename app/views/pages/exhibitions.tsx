@@ -12,7 +12,7 @@ export const Exhibitions = () => {
       <Container header={<Header variant="h2">Select clients</Header>}>
         <Box
           padding={Spacing.HorizontalL}
-          fontSize="heading-m">
+          fontSize="heading-s">
           Amazon
           • Citibank • MIT • SAIC • Leo Burnett
           • Mayo Clinic • Aspen Snow Mass • Harvard Book Store
@@ -27,7 +27,7 @@ export const Exhibitions = () => {
         <p>2016 Audience Award for Best Narrative Feature, San Antonio Film Festival ("Second Impression" directed by Wallace Weatherspoon)</p>
         <p>2014 Arts Grant Recipient, Burning Flipside (Meditation Deathmatch)</p>
         <p>2011 Best of New England, AIGA (Island Creek Oyster Bar)</p>
-        <p>2011 Site of the Day, <ExternalLink href="//www.awwwards.com/sites/island-creek-oyster-bar">Awwwards.com</ExternalLink> (Island Creek Oyster Bar)</p>
+        <p>2011 Site of the Day, Awwwards.com (<ExternalLink href="//www.awwwards.com/sites/island-creek-oyster-bar">Island Creek Oyster Bar</ExternalLink>)</p>
         <p>2010 Visiting Artist, Salisbury University, Maryland</p>
         <p>2009 Semi-finalist, SXSW Game Idea Competition (Chicago House Story)</p>
         <p>2007 Grant Recipient, Cool Globes: Hot Ideas for a Cooler Planet</p>
