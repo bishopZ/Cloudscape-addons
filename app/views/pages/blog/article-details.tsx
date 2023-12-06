@@ -18,7 +18,7 @@ export const ArticleDetails = () => {
   const article = items.find(item => item.slug === params.slug); // TODO move to the reducer
 
   return <SpaceBetween size="m">
-    <Container header={<Header variant="h2">Article author</Header>}>
+    {/* <Container header={<Header variant="h2">Article author</Header>}>
       <Grid gridDefinition={gridDefinition}>
         <div className="card-image-wide">
           <img src="assets/chasm.jpg" style={{ }} alt="article author" />
@@ -26,41 +26,46 @@ export const ArticleDetails = () => {
         <div>
           <Header variant="h3">About [author name]</Header>
           <Box variant="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </Box>
           <Box variant="p">[author link]</Box>
         </div>
       </Grid>
-    </Container>
+    </Container> */}
     <Container header={<Header variant="h2">Details</Header>}>
       <ColumnLayout columns={3} borders="vertical">
         <SpaceBetween size="m">
           <LabeledValue label="Discipline">
-            <Link href={`#/blog/search/${article?.discipline}`}>
-              {inNotEmpty(article?.discipline)}
-            </Link>
+
+            {inNotEmpty(article?.discipline)}
+
           </LabeledValue>
           <LabeledValue label="Vendor">
-            <Link href={`#/blog/search/${article?.vendor ?? ''}`}>
-              {inNotEmpty(article?.vendor)}
-            </Link>
+
+            {inNotEmpty(article?.vendor)}
+
           </LabeledValue>
         </SpaceBetween>
         <SpaceBetween size="m">
           <LabeledValue label="Type">
-            <Link href={`#/blog/search/${article?.format}`}>
-              {inNotEmpty(article?.format)}
-            </Link>
+
+            {inNotEmpty(article?.format)}
+
           </LabeledValue>
           <LabeledValue label="Topic">
-            <Link href={`#/blog/search/${article?.topic}`}>
-              {inNotEmpty(article?.topic)}
-            </Link>
+
+            {inNotEmpty(article?.topic)}
+
           </LabeledValue>
           <LabeledValue label="Section">
-            <Link href={`#/blog/search/${article?.section}`}>
-              {inNotEmpty(article?.section)}
-            </Link>
+
+            {inNotEmpty(article?.section)}
+
           </LabeledValue>
         </SpaceBetween>
         <SpaceBetween size="m">

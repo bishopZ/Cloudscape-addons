@@ -1,6 +1,7 @@
 import { Box, Container, ContentLayout, Header, Link, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 
+import { ExternalLink } from '/addons/details/external-link';
 import { Spacing } from '/addons/helpers/spacing-constants';
 
 /* eslint-disable max-len */
@@ -8,7 +9,7 @@ export const Exhibitions = () => {
   return <ContentLayout
     header={<Header variant="h1">Show record</Header>}>
     <SpaceBetween size="s">
-      <Container header={<h2>Select clients</h2>}>
+      <Container header={<Header variant="h2">Select clients</Header>}>
         <Box
           padding={Spacing.HorizontalL}
           fontSize="heading-m">
@@ -21,12 +22,12 @@ export const Exhibitions = () => {
           • Fiske Planetarium • Denver International Airport
         </Box>
       </Container>
-      <Container header={<h2>Awards</h2>}>
+      <Container header={<Header variant="h2">Awards</Header>}>
         <p>2018 The 50, AdClub of Colorado (<Link external href="//karshhagan.com/case-studies/aspen-snowmass">Aspen Give a Fl*ke Twitter bot</Link>)</p>
         <p>2016 Audience Award for Best Narrative Feature, San Antonio Film Festival ("Second Impression" directed by Wallace Weatherspoon)</p>
         <p>2014 Arts Grant Recipient, Burning Flipside (Meditation Deathmatch)</p>
         <p>2011 Best of New England, AIGA (Island Creek Oyster Bar)</p>
-        <p>2011 Site of the Day, Awwwards.com (Island Creek Oyster Bar)</p>
+        <p>2011 Site of the Day, <ExternalLink href="//www.awwwards.com/sites/island-creek-oyster-bar">Awwwards.com</ExternalLink> (Island Creek Oyster Bar)</p>
         <p>2010 Visiting Artist, Salisbury University, Maryland</p>
         <p>2009 Semi-finalist, SXSW Game Idea Competition (Chicago House Story)</p>
         <p>2007 Grant Recipient, Cool Globes: Hot Ideas for a Cooler Planet</p>
@@ -36,9 +37,9 @@ export const Exhibitions = () => {
         <p>1998 Innovation in Art and Technology, Texas Interactive Multimedia Awards (Kill The President)</p>
       </Container>
       <Container header={<Header variant="h2">Art exhibitions</Header>}>
-        <p>2023 Projection artist, <Link external href="//www.westword.com/music/itchy-o-brings-spooktacular-halloween-concerts-to-mercury-cafe-in-denver-18101046">"Hallowmass"</Link> (run of 10 shows) <Link external href="//itchy-o.com">itchy-O</Link>, Mercury Cafe - Denver, CO</p>
-        <p>2023 Performance artist, "Art Night Out" <Link external href="//itchy-o.com">itchy-O</Link>, public road - Lafayette, CO</p>
-        <p>2023 Projection artist, <Link external href="https://itchyo.com/mystic_evening/">"This Mystic Night"</Link> <Link external href="//itchy-o.com">itchy-O</Link>, Levitt Pavillion - Denver, CO (4.3k audience)</p>
+        <p>2023 Projection artist, <Link external href="//www.westword.com/music/itchy-o-brings-spooktacular-halloween-concerts-to-mercury-cafe-in-denver-18101046">"Hallowmass"</Link> (run of 10 shows) itchy-O, Mercury Cafe - Denver, CO</p>
+        <p>2023 Performance artist, "Art Night Out" <Link external href="//itchy-o.com">itchy-O</Link> - Lafayette, CO</p>
+        <p>2023 Projection artist, <Link external href="https://itchyo.com/mystic_evening/">"This Mystic Night"</Link> itchy-O, Levitt Pavillion - Denver, CO (4.3k audience)</p>
         <p>2023 Special effects assistant (fog), "Intergalactic Masquerade" <Link external href="//itchy-o.com">itchy-O</Link>, Oriental Theater - Denver, CO</p>
         <p>2023 Performance artist, <Link external href="//itchy-o.com">itchy-O</Link> featuring <Link external href="//www.n3ptune.com/">n3ptune</Link>, Bluebird - Denver, CO</p>
         <p>2023 Projection artist, "Kink Valentines" <Link external href="//itchy-o.com">itchy-O</Link>, Reel Works - Denver, CO</p>
@@ -66,7 +67,7 @@ export const Exhibitions = () => {
       <Container header={<Header variant="h2">Public speaking</Header>}>
         <p>2023 User Group Presenter, <Link external href="//www.youtube.com/watch?v=Ez4TWswyoZg">"State management: the missing manual"</Link> <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
         <p>2023 User Group Presenter, <Link external href="//www.youtube.com/watch?v=0Kwm4OskzBs">"Typescript: from Any to Unknown"</Link> <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
-        <p>2023 User Group Presenter, "Life as an Engineer at Amazon" <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
+        <p>2023 User Group Presenter, "Life as an engineer at Amazon" <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
         <p>2022 User Group Presenter, "Typescript: from Any to Unknown" <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
         <p>2018 User Group Presenter, “A brief history of recipes” Denver Creative Tech, Legwork Studio - Denver, CO</p>
         <p>2018 User Group Presenter, “ADVANCED INTELLIGENT DEEP ARTIFICIAL NEURAL MACHINE ROBOTS” Refresh Denver, Galvanize - Denver, CO</p>

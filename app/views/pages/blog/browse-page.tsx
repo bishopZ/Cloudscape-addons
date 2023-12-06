@@ -42,20 +42,16 @@ const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
     }, {
       id: 'topic',
       header: 'Topic',
-      content: item => <Link href={`#/blog/search/${item.topic}`}>
-        <Box fontSize="body-s" color="text-status-info">
-          {item.topic ?? <Dash />}
-        </Box>
-      </Link>,
+      content: item => <Box fontSize="body-s" color="text-body-secondary">
+        {item.topic ?? <Dash />}
+      </Box>,
       width: 33
     }, {
       id: 'section',
       header: 'Section',
-      content: item => <Link href={`#/blog/search/${item.section}`}>
-        <Box fontSize="body-s" color="text-status-info">
-          {item.section ?? <Dash />}
-        </Box>
-      </Link>,
+      content: item => <Box fontSize="body-s" color="text-body-secondary">
+        {item.section ?? <Dash />}
+      </Box>,
       width: 33
     }],
 };
@@ -96,7 +92,7 @@ export const BrowseArticles = () => {
       ariaLabels={cardLabels('title')}
       header={<Header
         variant="h1"
-        description="New articles every two weeks."
+        // description="New articles every two weeks."
         info={<Link onFollow={() => {
           dispatch(changePreference({
             name: 'tools',
@@ -113,6 +109,6 @@ export const BrowseArticles = () => {
         Blog
       </Header>}
     />
-    <Alert header="New articles every two weeks!" />
+    {/* <Alert header="New articles every two weeks!" /> */}
   </>;
 };

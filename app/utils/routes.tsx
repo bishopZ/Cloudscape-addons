@@ -1,7 +1,10 @@
 import type { AppLayoutProps, BreadcrumbGroupProps } from '@cloudscape-design/components';
 
+import { deslugify } from '/addons/helpers/string-utils';
 // import { deslugify } from '/addons/helpers/string-utils';
 import type { ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
+import { ArticleContainer } from '/views/pages/blog/article-container';
+import { BrowseArticles } from '/views/pages/blog/browse-page';
 import { Exhibitions } from '/views/pages/exhibitions';
 // import { ArticleContainer } from '/views/pages/blog/article-container';
 // import { Blog } from '/views/pages/blog/blog-page';
@@ -62,31 +65,46 @@ export const ROUTES = (): RouteProps[] => [
   //     params => ({ text: deslugify(params.slug ?? 'Documentation'), href: '' })
   //   ]
   // }, {
-  //   path: '/blog/:slug',
-  //   title: params => deslugify(params.slug ?? 'Article'),
-  //   contentType: 'default',
-  //   component: ArticleContainer,
-  //   breadcrumbs: [
-  //     params => ({ text: deslugify(params.slug ?? 'Article'), href: '' })
-  //   ]
-  // }, {
-    path: '/exhibitions',
-    title: 'Show record',
+    path: '/blog/:slug',
+    title: params => deslugify(params.slug ?? 'Article'),
     contentType: 'default',
-    component: Exhibitions,
-    breadcrumbs: []
+    component: ArticleContainer,
+    breadcrumbs: [
+      params => ({ text: deslugify(params.slug ?? 'Article'), href: '' })
+    ]
   }, {
     path: '/:slug',
-    title: 'Article',
+    title: 'Not found',
     contentType: 'default',
     component: NotFound,
     breadcrumbs: []
   },
   {
-    path: '/',
+    path: '/exhibitions',
+    title: 'Show record',
+    contentType: 'default',
+    component: Exhibitions,
+    breadcrumbs: []
+  },
+  {
+    path: '/resume',
     title: 'Resume',
     contentType: 'default',
     component: Resume,
+    breadcrumbs: []
+  },
+  {
+    path: '/blog',
+    title: 'Browse articles',
+    contentType: 'default',
+    component: BrowseArticles,
+    breadcrumbs: []
+  },
+  {
+    path: '/',
+    title: 'Browse articles',
+    contentType: 'default',
+    component: BrowseArticles,
     breadcrumbs: []
   }
 ];

@@ -9,6 +9,7 @@ import { Spacing } from '/addons/helpers/spacing-constants';
 
 import { JobCard } from '../common/job-card';
 
+/* eslint-disable max-len */
 const gridDefinition = [
   { colspan: { default: 12 } },
   { colspan: { default: 12 } }
@@ -347,30 +348,32 @@ export const Resume = () => {
               animation and distributed video network design. Researched
               narrative construction, literary theory and visual language."
           />
-          <JobCard
-            title="Certified Professional Instructor (Design Technology)"
-            company="Sterling Ledet &bull; Contract"
-            duration="17 yrs &bull; Touring"
-            /* eslint-disable-next-line max-len */
-            logo="https://media.licdn.com/dms/image/C4E0BAQFEFKDuHSAl1w/company-logo_100_100/0/1519856968192?e=1698883200&v=beta&t=p1ssvcQsUJ4wcq4wNrjqJeHO1Jfa9NyD1dYeBvSY7Zs"
-            description="Taught multi-day courses to professionals for Adobe,
+          <ExpandableSection>
+            <JobCard
+              title="Certified Professional Instructor (Design Technology)"
+              company="Sterling Ledet &bull; Contract"
+              duration="17 yrs &bull; Touring"
+              /* eslint-disable-next-line max-len */
+              logo="https://media.licdn.com/dms/image/C4E0BAQFEFKDuHSAl1w/company-logo_100_100/0/1519856968192?e=1698883200&v=beta&t=p1ssvcQsUJ4wcq4wNrjqJeHO1Jfa9NyD1dYeBvSY7Zs"
+              description="Taught multi-day courses to professionals for Adobe,
               Apple, Google, Autodesk and Apache.
               Architected solutions for each student.
               Earned 9.3 out of 10 average student rating over hundreds of
               classes and thousands of students."
-          />
-          <JobCard
-            title="Undergraduate"
-            company="University of Texas &bull; Student"
-            duration="4 yrs &bull; Austin, Texas"
-            /* eslint-disable-next-line max-len */
-            logo="https://media.licdn.com/dms/image/C560BAQEREeDg1PACXA/company-logo_100_100/0/1617385772288?e=1698883200&v=beta&t=-pXX5cSF2-_ieG8UCcOUlcDty0lNOGJBcuRK7st1f08"
-            description={<>
+            />
+            <JobCard
+              title="Undergraduate"
+              company="University of Texas &bull; Student"
+              duration="4 yrs &bull; Austin, Texas"
+              /* eslint-disable-next-line max-len */
+              logo="https://media.licdn.com/dms/image/C560BAQEREeDg1PACXA/company-logo_100_100/0/1617385772288?e=1698883200&v=beta&t=-pXX5cSF2-_ieG8UCcOUlcDty0lNOGJBcuRK7st1f08"
+              description={<>
               Radio, Television, Film department
-              <br />Convergent Media program
-              <br />Advanced Communication Theory Laboratory (ACTLab)
-            </>}
-          />
+                <br />Convergent Media program
+                <br />Advanced Communication Theory Laboratory (ACTLab)
+              </>}
+            />
+          </ExpandableSection>
         </ColumnLayout>
       </Container>
       <Table
