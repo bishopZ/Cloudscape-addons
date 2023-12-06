@@ -101,11 +101,12 @@ export const BrowseArticles = () => {
         }}>
           info
         </Link>}
-        actions={<Link href="#/blog/search">
-          <Button variant="primary" iconName="search">
-            Search
-          </Button>
-        </Link>}>
+        // actions={<Link href="#/blog/search">
+        //   <Button variant="primary" iconName="search">
+        //     Search
+        //   </Button>
+        // </Link>}
+      >
         Blog
       </Header>}
     />
