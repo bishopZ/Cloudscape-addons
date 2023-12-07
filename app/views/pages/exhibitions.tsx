@@ -26,7 +26,7 @@ export const Exhibitions = () => {
         <p>2018 The 50, AdClub of Colorado (<Link external href="//karshhagan.com/case-studies/aspen-snowmass">Aspen Give a Fl*ke Twitter bot</Link>)</p>
         <p>2016 Audience Award for Best Narrative Feature, San Antonio Film Festival ("Second Impression" directed by Wallace Weatherspoon)</p>
         <p>2014 Arts Grant Recipient, Burning Flipside (Meditation Deathmatch)</p>
-        <p>2011 Best of New England, AIGA (Island Creek Oyster Bar)</p>
+        <p>2011 Best of New England, AIGA (<ExternalLink href="//www.awwwards.com/sites/island-creek-oyster-bar">Island Creek Oyster Bar</ExternalLink>)</p>
         <p>2011 Site of the Day, Awwwards.com (<ExternalLink href="//www.awwwards.com/sites/island-creek-oyster-bar">Island Creek Oyster Bar</ExternalLink>)</p>
         <p>2010 Visiting Artist, Salisbury University, Maryland</p>
         <p>2009 Semi-finalist, SXSW Game Idea Competition (Chicago House Story)</p>
@@ -65,8 +65,8 @@ export const Exhibitions = () => {
         <p>2002 Video installation, “digital?confusion” Austin Museum of Digital Art - Austin, TX (SXSW Interactive opening party)</p>
       </Container>
       <Container header={<Header variant="h2">Public speaking</Header>}>
-        <p>2023 User Group Presenter, <Link external href="//www.youtube.com/watch?v=Ez4TWswyoZg">"State management: the missing manual"</Link> <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
-        <p>2023 User Group Presenter, <Link external href="//www.youtube.com/watch?v=0Kwm4OskzBs">"Typescript: from Any to Unknown"</Link> <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
+        <p>2023 User Group Presenter, <Link external href="//www.youtube.com/watch?v=Ez4TWswyoZg">"State management: the missing manual"</Link> React Denver - Denver, CO</p>
+        <p>2023 User Group Presenter, <Link external href="//www.youtube.com/watch?v=0Kwm4OskzBs">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>
         <p>2023 User Group Presenter, "Life as an engineer at Amazon" <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
         <p>2022 User Group Presenter, "Typescript: from Any to Unknown" <Link external href="//reactdenver.com/">React Denver</Link> - Denver, CO</p>
         <p>2018 User Group Presenter, “A brief history of recipes” Denver Creative Tech, Legwork Studio - Denver, CO</p>
@@ -74,7 +74,7 @@ export const Exhibitions = () => {
         <p>2017 User Group Presenter, <Link external href="//vimeo.com/manage/videos/211040647">"RGB vs HSL, the beatdown"</Link> Denver Creative Tech, Commons on Champa - Denver, CO</p>
         <p>2013 Panel organizer, “2012: Year of the GLI.TC/H” SXSW Interactive, Austin Convention Center - Austin, TX</p>
         <p>2010 Conference presenter, “Advancements in motion” Motion Graphics Festival - Boston, San Francisco, Chicago</p>
-        <p>2009 Conference presenter, "The history of tomorrow's interfaces" <Link href="//reelchicago.com/article/two-days-43-speakers-1500-attendees-see-future-chicago-new-media-summit/" external>Chicago New Media Summit</Link>, Museum of Contemporary Art - Chicago, IL</p>
+        <p>2009 Conference presenter, <Link href="//reelchicago.com/article/two-days-43-speakers-1500-attendees-see-future-chicago-new-media-summit/" external>"The history of tomorrow's interfaces"</Link> Chicago New Media Summit, Museum of Contemporary Art - Chicago, IL</p>
         <p>2009 Conference presenter, “The history of tomorrow's interfaces” Motion Graphics Festival - Boston, Washington DC, Austin</p>
         <p>2008 Conference presenter, “Chicago House Story” Consuming Race Conference, University of Chicago - Chicago, IL</p>
       </Container>

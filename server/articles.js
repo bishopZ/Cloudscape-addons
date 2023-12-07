@@ -212,7 +212,7 @@ module.exports = () => [
     slug: 'do-i-need-a-design-system',
     title: 'Do I need a design system?',
     description: 'I\'m often asked how to approach design systems, and when to consider using them.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Vitra_Design_Museum.JPG/2048px-Vitra_Design_Museum.JPG',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Lou_Ruovo_Center_for_Brain_Health.jpg',
     format: 'Article',
     topic: 'Design systems',
     discipline: 'Product',
@@ -232,7 +232,7 @@ module.exports = () => [
   //   discipline: 'Product',
   //   section: 'Tools',
   //   author: 'Bishop Zareh',
-  //   publicationDate: new Date('Jun 13, 2023'),
+  //   publicationDate: new Date('Dec 7, 2023'),
   //   keywords: 'software engineering divide potential bridge gap insights synergy design thinking agile \
   //   development methodologies collaborative tools integrated workflows digital innovation symbiotic relationship \
   //   professionals landscape diversity bootcamps worldwide framework pragmatic stragey evidence-based langauge \

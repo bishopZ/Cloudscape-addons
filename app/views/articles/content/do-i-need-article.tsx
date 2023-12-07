@@ -2,6 +2,7 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
+import { Spacing } from '/addons/helpers/spacing-constants';
 import { selectArticles } from '/data/articles';
 import { useAppSelector } from '/data/data-store';
 import { makeHeaderImage } from '/utils/content-map';
@@ -13,10 +14,12 @@ export const DoINeedArticle = () => {
   const article = items.find(item => item.slug === params.slug);
 
   return <SpaceBetween size="m">
-    <Container
-      media={article && makeHeaderImage(article.image)}
-      header={<Header variant="h2">Scale</Header>}>
+    <Container media={article && makeHeaderImage(article.image)}>
+      <Box variant="p" fontSize="body-s" padding={Spacing.BottomM}>
+        Photo by John Fowler from Placitas, NM, USA, CC BY 2.0, Wikimedia Commons
+      </Box>
       <SpaceBetween size="xs">
+        <Header variant="h2">Scale</Header>
         <Box variant="p">
           Scale plays a significant role in deciding whether a design system is necessary.
           If your organization is small, with a single team of skilled individuals capable
@@ -32,9 +35,6 @@ export const DoINeedArticle = () => {
           improve stability, and ensure a seamless customer experience. Yet, if your organization
           experiments with new products or operates in a changing market, the benefits of a
           design system may be outweighed by the need for flexibility and adaptability.
-        </Box>
-        <Box variant="p" fontSize="body-s">
-          Photo by Wladyslaw, CC BY-SA 3.0, Wikimedia Commons
         </Box>
       </SpaceBetween>
     </Container>

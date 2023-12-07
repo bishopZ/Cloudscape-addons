@@ -18,7 +18,7 @@ type SidenavItem = SideNavigationProps.Section
 export const capitalize = (value: string) => value.replace(value[0], value[0].toUpperCase());
 
 const blog: SidenavItem = {
-  type: 'link', text: 'Home', href: '#/'
+  type: 'link', text: 'Blog', href: '#/'
 };
 
 const docs: SidenavItem = {
@@ -90,22 +90,20 @@ export const Navigation = () => {
 
   return <>
     {!initialized && <LoadingSpinner />}
+    <a tabIndex={1} className="sr-only" href="#link-self:rg:">skip navigation</a>
     <SideNavigation
       header={isDocs ? docs : blog}
       items={isDocs ? docsNav : blogNav}
       activeHref={`#${location.pathname}`}
     />
     <Box
+      className="copyright"
       fontSize="body-s"
-      color="text-status-inactive"
-      margin={Spacing.L}>
+      color="text-status-inactive">
       &copy; 2023 Bishop Zareh
       <br />all rights reserved
       <br />this site uses essential cookies.
     </Box>
-    <br />
-    <br />
-    <br />
   </>;
 };
 

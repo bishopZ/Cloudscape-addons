@@ -40,26 +40,22 @@ const skillColumns: TableProps.ColumnDefinition<Skill>[] = [{
   cell: item => {
     return item.areas?.map((area, index) =>
       <Grid key={index} gridDefinition={gridDefinition}>
-        <Box
-          variant="strong"
-          padding={Spacing.TopM}
-          display="block">
-          {area.name}
-        </Box>
-        <Grid gridDefinition={innerGrid}>
-          {area.skills.map((skillSet, setIndex) =>
-            <Box
-              key={setIndex}
-              padding={Spacing.BottomM}
-              display="block">
-              {skillSet.map(skill => <>
-                {skill}
-                <br />
-              </>
-              )}
-            </Box>
-          )}
-        </Grid>
+        <ExpandableSection headerText={area.name}>
+          <Grid gridDefinition={innerGrid}>
+            {area.skills.map((skillSet, setIndex) =>
+              <Box
+                key={setIndex}
+                padding={Spacing.BottomM}
+                display="block">
+                {skillSet.map(skill => <>
+                  {skill}
+                  <br />
+                </>
+                )}
+              </Box>
+            )}
+          </Grid>
+        </ExpandableSection>
       </Grid>
     );
   },
