@@ -56,7 +56,7 @@ const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
     }],
 };
 
-const carddsPerRow = [
+const cardsPerRow = [
   { cards: 1 },
   { minWidth: 420, cards: 2 },
   { minWidth: 910, cards: 3 },
@@ -82,7 +82,7 @@ export const BrowseArticles = () => {
   return <>
     <Cards
       stickyHeader
-      cardsPerRow={carddsPerRow}
+      cardsPerRow={cardsPerRow}
       cardDefinition={CARD_DEFINITIONS}
       loading={!initialized}
       loadingText={loadingText}
@@ -90,25 +90,27 @@ export const BrowseArticles = () => {
       totalItemsCount={sortedArticles.length}
       variant="full-page"
       ariaLabels={cardLabels('title')}
-      header={<Header
-        variant="h1"
-        // description="New articles every two weeks."
-        info={<Link onFollow={() => {
-          dispatch(changePreference({
-            name: 'tools',
-            value: 'open'
-          }));
-        }}>
+      header={
+        <Header
+          variant="h1"
+          // description="New articles every two weeks."
+          info={<Link onFollow={() => {
+            dispatch(changePreference({
+              name: 'tools',
+              value: 'open'
+            }));
+          }}>
           info
-        </Link>}
-        // actions={<Link href="#/blog/search">
-        //   <Button variant="primary" iconName="search">
-        //     Search
-        //   </Button>
-        // </Link>}
-      >
-        Blog
-      </Header>}
+          </Link>}
+          // actions={<Link href="#/blog/search">
+          //   <Button variant="primary" iconName="search">
+          //     Search
+          //   </Button>
+          // </Link>}
+        >
+          Blog
+        </Header>
+      }
     />
     {/* <Alert header="New articles every two weeks!" /> */}
   </>;

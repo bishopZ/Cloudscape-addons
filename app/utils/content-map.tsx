@@ -17,29 +17,34 @@ import { DocumentingArticle } from '/views/articles/content/documenting-article'
 import { FigmaArticle } from '/views/articles/content/figma-article';
 import { LifecycleArticle } from '/views/articles/content/lifecycle-article';
 import { MaturityArticle } from '/views/articles/content/maturity-article';
+import { FromAnyToUnknown } from '/views/articles/embeds/any-to-unknown';
+import { StateManagement } from '/views/articles/embeds/state-management';
 import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
-  'core-tenets': TenetsPage,
-
-  'icon-map': IconMapArticle,
-  'loading-states': LoadingArticle,
-  'labeled-input': InputArticle,
-  'labeled-number': NumberArticle,
-  'spacing-constants': SpacingConstants,
-  'labeled-value': LabeledValueArticle,
-  'generic-empty': EmptyArticle,
-  'unsaved-changes-modal': UnsavedArticle,
-  'string-utils': StringArticle,
-  'type-helpers': TypeArticle,
-
   'do-i-need-a-design-system': DoINeedArticle,
-  'bridging-the-chasm': BridgingTheChasmContent,
-  'anatomy-of-a-design-system': AnatomyArticle,
-  'documenting-a-design-system': DocumentingArticle,
-  'design-system-lifecycle': LifecycleArticle,
-  'design-system-maturity': MaturityArticle,
-  'collaboration-tools-figma': FigmaArticle,
+  'from-any-to-unknown': FromAnyToUnknown,
+  'state-management%3A-the-missing-manual': StateManagement,
+
+  // 'core-tenets': TenetsPage,
+
+  // 'icon-map': IconMapArticle,
+  // 'loading-states': LoadingArticle,
+  // 'labeled-input': InputArticle,
+  // 'labeled-number': NumberArticle,
+  // 'spacing-constants': SpacingConstants,
+  // 'labeled-value': LabeledValueArticle,
+  // 'generic-empty': EmptyArticle,
+  // 'unsaved-changes-modal': UnsavedArticle,
+  // 'string-utils': StringArticle,
+  // 'type-helpers': TypeArticle,
+
+  // 'bridging-the-chasm': BridgingTheChasmContent,
+  // 'anatomy-of-a-design-system': AnatomyArticle,
+  // 'documenting-a-design-system': DocumentingArticle,
+  // 'design-system-lifecycle': LifecycleArticle,
+  // 'design-system-maturity': MaturityArticle,
+  // 'collaboration-tools-figma': FigmaArticle,
 } as const;
 
 export const makeHeaderImage = (path: string) => {

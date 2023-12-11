@@ -90,7 +90,14 @@ export const Navigation = () => {
 
   return <>
     {!initialized && <LoadingSpinner />}
-    <a tabIndex={1} className="sr-only" href="#link-self:rg:">skip navigation</a>
+    <button
+      tabIndex={1}
+      className="sr-only"
+      onClick={() => {
+        document.getElementById('link-self:rd:')?.focus();
+      }}>
+      skip navigation
+    </button>
     <SideNavigation
       header={isDocs ? docs : blog}
       items={isDocs ? docsNav : blogNav}

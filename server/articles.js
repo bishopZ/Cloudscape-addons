@@ -208,20 +208,6 @@ module.exports = () => [
   //   sidenavheader sidenavitems segmentedoptions tabs tags tablecolumn tileitems timerangeoptions \
   //   tokenitems wizardsteps',
   // },
-  {
-    slug: 'do-i-need-a-design-system',
-    title: 'Do I need a design system?',
-    description: 'I\'m often asked how to approach design systems, and when to consider using them.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Lou_Ruovo_Center_for_Brain_Health.jpg',
-    format: 'Article',
-    topic: 'Design systems',
-    discipline: 'Product',
-    section: 'Tools',
-    author: 'Bishop Zareh',
-    publicationDate: new Date('Dec 6, 2023'),
-    keywords: 'key factors scale longevity necessary organization skilled design work system priority brand lifespan risks stability \
-    choice options',
-  },
   // {
   //   slug: 'bridging-the-chasm',
   //   title: 'Design and development collaboratation',
@@ -332,6 +318,52 @@ module.exports = () => [
   //   version control process exchange ideas vision implementation robust effective simultaneous \
   //   feedback interation components libraries projects team unified coherent contextual channels',
   // },
+
+  {
+    slug: 'do-i-need-a-design-system',
+    title: 'Do I need a design system?',
+    description: 'I\'m often asked how to approach design systems, and when to consider using them.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Lou_Ruovo_Center_for_Brain_Health.jpg',
+    format: 'Article',
+    topic: 'Design systems',
+    discipline: 'Product',
+    section: 'Tools',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Dec 6, 2023'),
+    keywords: 'key factors scale longevity necessary organization skilled design work system priority brand lifespan risks stability \
+    choice options',
+  },
+  {
+    slug: 'from-any-to-unknown',
+    title: "Typescript: from Any to Unknown",
+    description: 'We seek to understand the differences between Typescript\'s "any" and "unknown" types. We\'ll learn when to use which, and the common pitfalls that come with using the wrong one. Finally, we\'ll investigate how to create and use Typescript\'s "is" functions to compliment type inference.',
+    image: 'https://bishopz.s3.amazonaws.com/upload/typescript.png',
+    format: 'Presentation',
+    topic: 'Typescript',
+    discipline: 'Engineering',
+    section: 'Tools',
+    vendor: 'Typescript',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Aug 15, 2023'),
+    keywords: 'React Denver math effective safety',
+    views: 142,
+  },
+  {
+    slug: 'state-management%3A-the-missing-manual',
+    title: "State management: the missing manual",
+    description: 'A side-by-side analysis of the three main state management tools in React, useState, useContext and useReducer.',
+    image: 'https://reactdenver.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fqp40pp1s%2Fdevelopment%2Fb5dd4464a1b17b404e499085466e381a1484fade-6000x4000.jpg%3Fw%3D2000%26auto%3Dformat&w=3840&q=75',
+    format: 'Presentation',
+    topic: 'React',
+    discipline: 'Engineering',
+    section: 'Tools',
+    vendor: 'React',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Nov 21, 2023'),
+    keywords: 'React Denver redux bignerdranch programming patterns best practices application scalability',
+    views: 142,
+  },
+
 ] .filter(item => {
   if (!item.publicationDate) return false;
   const today = new Date();
