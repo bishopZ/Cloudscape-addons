@@ -24,7 +24,7 @@ import { TenetsPage } from '/views/pages/tenets/tenets-page';
 export const CONTENT_MAP = {
   'do-i-need-a-design-system': DoINeedArticle,
   'from-any-to-unknown': FromAnyToUnknown,
-  'state-management%3A-the-missing-manual': StateManagement,
+  'state-management:-the-missing-manual': StateManagement,
 
   // 'core-tenets': TenetsPage,
 
