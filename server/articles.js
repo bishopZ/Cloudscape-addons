@@ -336,7 +336,7 @@ module.exports = () => [
   {
     slug: 'from-any-to-unknown',
     title: "Typescript: from Any to Unknown",
-    description: 'We seek to understand the differences between Typescript\'s "any" and "unknown" types. We\'ll learn when to use which, and the common pitfalls that come with using the wrong one. Finally, we\'ll investigate how to create and use Typescript\'s "is" functions to compliment type inference.',
+    description: 'The presentation details the differences between Typescript\'s "any" and "unknown" types.',
     image: 'https://bishopz.s3.amazonaws.com/upload/typescript.png',
     format: 'Presentation',
     topic: 'Typescript',

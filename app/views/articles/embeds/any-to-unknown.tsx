@@ -1,23 +1,20 @@
+import { Container } from '@cloudscape-design/components';
 import React from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 
 export const FromAnyToUnknown = () => {
-  return <>
-    <p>
-      <iframe
-        title="YouTube video player"
-        src="https://www.youtube.com/embed/0Kwm4OskzBs"
-        width="560"
-        height="315"
-        frameBorder="0"
-      />
-    </p>
+  return <Container
+    media={{ content: <iframe
+      title="YouTube video of presentation"
+      src="https://www.youtube.com/embed/0Kwm4OskzBs"
+    />
+    }}>
     <h2>What</h2>
-    <p>We seek to understand the differences between Typescript's "any" and "unknown" types. We'll learn when to use which, and the common pitfalls that come with using the wrong one. Finally, we'll investigate how to create and use Typescript's "is" functions to compliment type inference.</p>
+    <p>We seek to understand the differences between Typescript's "any" and "unknown" types. We'll learn when to use which, and the common pitfalls that come with using the wrong one. Finally, we'll investigate how to create and use Typescript's "is" functions to complement type inference.</p>
     <h2>Who</h2>
     <p>Presented by Bishop Zareh for <ExternalLink href="https://reactdenver.com/">React Denver</ExternalLink></p>
     <h2>Why</h2>
     <p>Making Typescript best practices more well known.</p>
-  </>;
+  </Container>;
 };

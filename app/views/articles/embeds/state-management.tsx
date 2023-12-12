@@ -1,18 +1,15 @@
+import { Container } from '@cloudscape-design/components';
 import React from 'react';
 
 import { ExternalLink } from '/addons/details/external-link';
 
 export const StateManagement = () => {
-  return <>
-    <p>
-      <iframe
-        title="YouTube video player"
-        src="https://www.youtube.com/embed/0Kwm4OskzBs"
-        width="560"
-        height="315"
-        frameBorder="0"
-      />
-    </p>
+  return <Container
+    media={{ content: <iframe
+      title="YouTube video of presentation"
+      src="https://www.youtube.com/embed/0Kwm4OskzBs"
+    /> }}>
+    <p />
     <h2>What</h2>
     <p>We'll do a side-by-side analysis of the three main state management tools
       in React, useState, useContext and useReducer. We'll show how the subtle
@@ -29,5 +26,5 @@ export const StateManagement = () => {
       the advanced engineer looks at each line of code based on the role it plays.
       Understanding the role of different parts of our application enables us to
       reason about the scalability and maintainability of each line.</p>
-  </>;
+  </Container>;
 };
