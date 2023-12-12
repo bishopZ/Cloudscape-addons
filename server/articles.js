@@ -349,7 +349,7 @@ module.exports = () => [
     views: 142,
   },
   {
-    slug: 'state-management%3A-the-missing-manual',
+    slug: 'state-management:-the-missing-manual',
     title: "State management: the missing manual",
     description: 'A side-by-side analysis of the three main state management tools in React, useState, useContext and useReducer.',
     image: 'https://reactdenver.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fqp40pp1s%2Fdevelopment%2Fb5dd4464a1b17b404e499085466e381a1484fade-6000x4000.jpg%3Fw%3D2000%26auto%3Dformat&w=3840&q=75',
