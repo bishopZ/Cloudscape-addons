@@ -7,7 +7,7 @@ export const StateManagement = () => {
   return <Container
     media={{ content: <iframe
       title="YouTube video of presentation"
-      src="https://www.youtube.com/embed/0Kwm4OskzBs"
+      src="https://www.youtube.com/embed/Ez4TWswyoZg"
     /> }}>
     <p />
     <h2>What</h2>
