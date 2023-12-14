@@ -8,13 +8,12 @@ export const FromAnyToUnknown = () => {
     media={{ content: <iframe
       title="YouTube video of presentation"
       src="https://www.youtube.com/embed/0Kwm4OskzBs"
-    />
-    }}>
+    /> }}>
     <h2>What</h2>
-    <p>We seek to understand the differences between Typescript's "any" and "unknown" types.
-      We'll learn when to use which, and the common pitfalls that come with using the
-      wrong one. Finally, we'll investigate how to create and use Typescript's "is"
-      functions to complement type inference.</p>
+    <p>This presentation explores differences between Typescript's "any" and "unknown" types.
+      We learn when to use which, and the common pitfalls that come with using the
+      wrong one. Finally, we investigate how to create and use "is" functions
+      to complement type inference.</p>
     <h2>Who</h2>
     <p>Presented by Bishop Zareh
       for <ExternalLink href="https://reactdenver.com/">React Denver</ExternalLink></p>

@@ -336,7 +336,7 @@ module.exports = () => [
   {
     slug: 'from-any-to-unknown',
     title: "Typescript: from Any to Unknown",
-    description: 'The presentation details the differences between Typescript\'s "any" and "unknown" types.',
+    description: 'This presentation details the differences between Typescript\'s "any" and "unknown" types.',
     image: 'https://bishopz.s3.amazonaws.com/upload/typescript.png',
     format: 'Presentation',
     topic: 'Typescript',
@@ -361,8 +361,35 @@ module.exports = () => [
     author: 'Bishop Zareh',
     publicationDate: new Date('Nov 21, 2023'),
     keywords: 'React Denver redux bignerdranch programming patterns best practices application scalability',
-    views: 142,
   },
+  // {
+  //   slug: "redesigning-retail",
+  //   title: "Redesigning retail",
+  //   description: 'Even as retail establishments begin to open back up, one of the first things on everyone\'s mind is social distancing.',
+  //   image: 'https://bishopz.s3.amazonaws.com/upload/Karsh-Hagan-New-Retail-header.jpg',
+  //   format: 'Article',
+  //   topic: 'Retail',
+  //   discipline: 'Marketing',
+  //   section: 'Immersive',
+  //   author: 'Bishop Zareh',
+  //   publicationDate: new Date('Feb 13, 2021'),
+  //   keywords: 'space covid shopping attitude customer',
+  //   views: 241
+  // }
+  {
+    slug: "using-nfts-to-protect-creative-works",
+    title: "Using NFTs to protect creative works",
+    description: 'Recently, another form of blockchain, NFTs, have made headlines in the art world for their record-breaking, multimillion dollar sales.',
+    image: 'https://bishopz.s3.amazonaws.com/upload/NFT_Graphic_L1-1__Article_Header_1.jpeg',
+    format: 'Article',
+    topic: 'NFTs',
+    discipline: 'Legal',
+    section: 'Blockchain',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('March 21, 2021'),
+    keywords: 'cryptocurrrency art token theft ownership stewardship',
+    views: 331
+  }
 
 ] .filter(item => {
   if (!item.publicationDate) return false;

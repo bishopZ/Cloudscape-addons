@@ -108,7 +108,7 @@ export const BrowseArticles = () => {
           //   </Button>
           // </Link>}
         >
-          Blog
+          Browse articles
         </Header>
       }
     />

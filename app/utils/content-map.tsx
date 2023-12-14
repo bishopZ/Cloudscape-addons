@@ -18,6 +18,8 @@ import { FigmaArticle } from '/views/articles/content/figma-article';
 import { LifecycleArticle } from '/views/articles/content/lifecycle-article';
 import { MaturityArticle } from '/views/articles/content/maturity-article';
 import { FromAnyToUnknown } from '/views/articles/embeds/any-to-unknown';
+import { NftCreativeWork } from '/views/articles/embeds/nft-creative-work';
+import { RedesigningRetail } from '/views/articles/embeds/redesigning-retail';
 import { StateManagement } from '/views/articles/embeds/state-management';
 import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
@@ -25,6 +27,8 @@ export const CONTENT_MAP = {
   'do-i-need-a-design-system': DoINeedArticle,
   'from-any-to-unknown': FromAnyToUnknown,
   'state-management:-the-missing-manual': StateManagement,
+  'redesigning-retail': RedesigningRetail,
+  'using-nfts-to-protect-creative-works': NftCreativeWork,
 
   // 'core-tenets': TenetsPage,
 

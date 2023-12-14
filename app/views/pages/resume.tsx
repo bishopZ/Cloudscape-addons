@@ -154,28 +154,12 @@ const skills: Skill[] = [
   }
 ];
 
-let videoHeight = 480;
-if (window.innerWidth < 1024) videoHeight = 240;
-
 /* eslint-disable max-lines-per-function, react/jsx-max-depth, react/self-closing-comp */
 export const Resume = () => {
   return <ContentLayout
     header={<Header variant="h1">Bishop Zareh</Header>}>
     <SpaceBetween size="s">
-      <Container
-        media={{
-          content:
-            <iframe
-              title="vimeo-player"
-              src="//player.vimeo.com/video/213543689"
-              width="100%"
-              frameBorder="0"
-              height={videoHeight}
-              allowFullScreen></iframe>,
-          height: videoHeight,
-          position: 'top'
-        }}
-        header={<Header variant="h2">Summary</Header>}>
+      <Container header={<Header variant="h2">Summary</Header>}>
         <Box variant="p">
           With more than two decades of experience crafting
           novel experiences for the web, mobile, and immersive environments,

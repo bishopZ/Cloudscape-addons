@@ -6,10 +6,23 @@ import { Spacing } from '/addons/helpers/spacing-constants';
 
 /* eslint-disable max-len */
 export const Exhibitions = () => {
+  let videoHeight = 480;
+  if (window.innerWidth < 1024) videoHeight = 240;
+
   return <ContentLayout
     header={<Header variant="h1">Show record</Header>}>
     <SpaceBetween size="s">
-      <Container header={<Header variant="h2">Select clients</Header>}>
+      <Container
+        header={<Header variant="h2">Select clients</Header>}
+        media={{
+          content: <iframe
+            title="vimeo-player"
+            src="//player.vimeo.com/video/213543689"
+            height={videoHeight}
+            allowFullScreen
+          />,
+          height: videoHeight,
+        }}>
         <Box
           padding={Spacing.HorizontalL}
           fontSize="heading-s">
