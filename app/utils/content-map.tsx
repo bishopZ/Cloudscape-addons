@@ -21,6 +21,7 @@ import { FromAnyToUnknown } from '/views/articles/embeds/any-to-unknown';
 import { NftCreativeWork } from '/views/articles/embeds/nft-creative-work';
 import { RedesigningRetail } from '/views/articles/embeds/redesigning-retail';
 import { StateManagement } from '/views/articles/embeds/state-management';
+import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
 import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
@@ -29,6 +30,7 @@ export const CONTENT_MAP = {
   'state-management:-the-missing-manual': StateManagement,
   'redesigning-retail': RedesigningRetail,
   'using-nfts-to-protect-creative-works': NftCreativeWork,
+  'third-party-cookies': ThirdPartyCookies,
 
   // 'core-tenets': TenetsPage,
 

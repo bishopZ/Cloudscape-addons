@@ -362,20 +362,20 @@ module.exports = () => [
     publicationDate: new Date('Nov 21, 2023'),
     keywords: 'React Denver redux bignerdranch programming patterns best practices application scalability',
   },
-  // {
-  //   slug: "redesigning-retail",
-  //   title: "Redesigning retail",
-  //   description: 'Even as retail establishments begin to open back up, one of the first things on everyone\'s mind is social distancing.',
-  //   image: 'https://bishopz.s3.amazonaws.com/upload/Karsh-Hagan-New-Retail-header.jpg',
-  //   format: 'Article',
-  //   topic: 'Retail',
-  //   discipline: 'Marketing',
-  //   section: 'Immersive',
-  //   author: 'Bishop Zareh',
-  //   publicationDate: new Date('Feb 13, 2021'),
-  //   keywords: 'space covid shopping attitude customer',
-  //   views: 241
-  // }
+  {
+    slug: "redesigning-retail",
+    title: "Redesigning retail",
+    description: 'Even as retail establishments begin to open back up, one of the first things on everyone\'s mind is social distancing.',
+    image: 'https://bishopz.s3.amazonaws.com/upload/Karsh-Hagan-New-Retail-header.jpg',
+    format: 'Article',
+    topic: 'Retail',
+    discipline: 'Marketing',
+    section: 'Immersive',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Feb 13, 3021'),
+    keywords: 'space covid shopping attitude customer',
+    views: 241
+  },
   {
     slug: "using-nfts-to-protect-creative-works",
     title: "Using NFTs to protect creative works",
@@ -389,6 +389,20 @@ module.exports = () => [
     publicationDate: new Date('March 21, 2021'),
     keywords: 'cryptocurrrency art token theft ownership stewardship',
     views: 331
+  },
+  {
+    slug: "third-party-cookies",
+    title: "Why are Third Party Cookies going away?",
+    description: 'Why is the third party cookie on the chopping block?',
+    image: 'https://bishopz.s3.amazonaws.com/upload/cookies_hero_right.png',
+    format: 'Article',
+    topic: 'Browsers',
+    discipline: 'Marketing',
+    section: 'Technology',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('March 21, 2021'),
+    keywords: 'w3c collection tracking advertising targeting',
+    views: 269
   }
 
 ] .filter(item => {
