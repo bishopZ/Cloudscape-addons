@@ -40,17 +40,17 @@ const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
       </Box>,
       width: 33
     }, {
-      id: 'topic',
-      header: 'Topic',
+      id: 'discipline',
+      header: 'Discipline',
       content: item => <Box fontSize="body-s" color="text-body-secondary">
-        {item.topic ?? <Dash />}
+        {item.discipline ?? <Dash />}
       </Box>,
       width: 33
     }, {
-      id: 'section',
-      header: 'Section',
+      id: 'format',
+      header: 'Format',
       content: item => <Box fontSize="body-s" color="text-body-secondary">
-        {item.section ?? <Dash />}
+        {item.format ?? <Dash />}
       </Box>,
       width: 33
     }],

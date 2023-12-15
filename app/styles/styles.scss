@@ -5,6 +5,10 @@ html {
   font-family: Avenir, "Open Sans", "Helvetica Neue", Roboto, Arial, sans-serif
 }
 
+h1, h1 span {
+  letter-spacing: 0.33px !important;
+}
+
 th, td { vertical-align: top; }
 
 main iframe {
@@ -63,6 +67,12 @@ hr {
     height: 100%;
   }
 }
+
+[class^='awsui_logo'],
+[class*='awsui_logo'] {
+  border-radius: 100%;
+}
+
 
 [class^='awsui_card-header_'] a:not(#\9),
 [class*='awsui_card-header_'] a:not(#\9) {

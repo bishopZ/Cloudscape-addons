@@ -20,8 +20,6 @@ export const NftCreativeWork = () => {
     <p><ExternalLink href="https://karshhagan.com/insights/using-nfts-to-protect-creative-works">
       Read the article
     </ExternalLink></p>
-    <h2>Who</h2>
-    <p>Bishop Zareh</p>
     <h2>Why</h2>
     <p>Blockchain brings technological innovation to many parts of our economy
       resistant to change and still adapting to the last round of disruptions.

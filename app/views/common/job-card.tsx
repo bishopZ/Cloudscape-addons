@@ -1,6 +1,7 @@
 import { Box, Grid, Header } from '@cloudscape-design/components';
 import React from 'react';
 
+import { ExternalLink } from '/addons/details/external-link';
 import { Spacing } from '/addons/helpers/spacing-constants';
 
 type Props = {
@@ -9,6 +10,7 @@ type Props = {
   duration: string
   logo: string
   description: React.ReactNode
+  companyLink?: string
 }
 
 // const gridDefinition = [
@@ -17,7 +19,7 @@ type Props = {
 // ];
 
 export const JobCard = (props: Props) => {
-  const { title, logo, company, duration, description } = props;
+  const { title, logo, company, duration, description, companyLink } = props;
 
   return <Box>
     {/* <Grid gridDefinition={gridDefinition}> */}
@@ -32,7 +34,9 @@ export const JobCard = (props: Props) => {
         {title}
       </Header>
       <Box variant="p">
-        {company}
+        {companyLink
+          ? <ExternalLink href={companyLink}>{company}</ExternalLink>
+          : company}
       </Box>
       <Box
         fontSize="body-s"

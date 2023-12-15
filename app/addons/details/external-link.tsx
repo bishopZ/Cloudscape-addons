@@ -14,13 +14,11 @@ export const ExternalLink = (props: Props) => {
     children
   } = props;
   return <>
-    <>&nbsp;</>
     <Link
       href={href}
       external
       externalIconAriaLabel={externalIconAriaLabel}>
       {children}
     </Link>
-    <>&nbsp;</>
   </>;
 };

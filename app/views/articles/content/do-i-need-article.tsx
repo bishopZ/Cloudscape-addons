@@ -15,9 +15,6 @@ export const DoINeedArticle = () => {
 
   return <SpaceBetween size="m">
     <Container media={article && makeHeaderImage(article.image)}>
-      <Box variant="p" fontSize="body-s" padding={Spacing.BottomM}>
-        Photo by John Fowler from Placitas, NM, USA, CC BY 2.0, Wikimedia Commons
-      </Box>
       <SpaceBetween size="xs">
         <Header variant="h2">Scale</Header>
         <Box variant="p">
@@ -35,6 +32,9 @@ export const DoINeedArticle = () => {
           improve stability, and ensure a seamless customer experience. Yet, if your organization
           experiments with new products or operates in a changing market, the benefits of a
           design system may be outweighed by the need for flexibility and adaptability.
+        </Box>
+        <Box variant="p" fontSize="body-s">
+          Photo by John Fowler from Placitas, NM, USA, CC BY 2.0, Wikimedia Commons
         </Box>
       </SpaceBetween>
     </Container>

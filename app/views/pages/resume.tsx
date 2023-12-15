@@ -5,6 +5,7 @@ import {
 } from '@cloudscape-design/components';
 import React from 'react';
 
+import { Dash } from '/addons/details/loading';
 import { Spacing } from '/addons/helpers/spacing-constants';
 
 import { JobCard } from '../common/job-card';
@@ -32,7 +33,7 @@ type Skill = {
 const skillColumns: TableProps.ColumnDefinition<Skill>[] = [{
   id: 'discipline',
   header: 'Discipline',
-  cell: item => item.discipline ?? '-',
+  cell: item => item.discipline ?? <Dash />,
   isRowHeader: true
 }, {
   id: 'areas',
@@ -82,7 +83,7 @@ const skills: Skill[] = [
   }, {
     discipline: 'Frontend engineering', areas: [
       {
-        name: 'Build system, CMS & Platform', skills: [
+        name: 'Build system, CMS, Platform', skills: [
           ['Node.js', 'Express', 'Webpack', 'Gatsby', 'Next.js', 'Sass'],
           ['Storyblock', 'Contentful', 'Strapi'],
           ['Git', 'Docker', 'CloudFormation', 'AWS Amplify', 'Heroku'],
@@ -96,13 +97,13 @@ const skills: Skill[] = [
       }, {
         name: 'Animation', skills: [
           ['Greensock', 'React Spring', 'React Transition Groups'],
-          ['THREE.js', 'D3.js', 'Canvas (WebGL)'],
+          ['THREE.js', 'D3.js', 'Canvas', 'WebGL'],
           ['Processing', 'Resolume', 'Projection mapping'],
         ]
       }, {
         name: 'Testing', skills: [
           ['Selenium', 'Cypress', 'Jest'],
-          ['eslint (custom)', 'Static code analysis'],
+          ['ESLint', 'Static code analysis'],
           ['Accessibility (WCAG)', 'Localization (i18n)'],
         ]
       }
@@ -111,8 +112,8 @@ const skills: Skill[] = [
     discipline: 'Backend engineering', areas: [
       {
         name: 'Cloud & API', skills: [
-          ['Amazon Web Services', 'Google Cloud Platform (GCP)', 'Gitlab'],
-          ['Open Broadcasting System (OBS)', 'RTMP'],
+          ['Amazon Web Services', 'Google Cloud Platform', 'Gitlab'],
+          ['OBS', 'RTMP'],
           ['GraphQL', 'REST'],
         ]
       }, {
@@ -145,7 +146,7 @@ const skills: Skill[] = [
         ]
       }, {
         name: 'Design systems', skills: [
-          ['Bootstrop', 'Cloudscape'],
+          ['Cloudscape', 'Bootstrap'],
           ['Technical writing'],
           ['Design system principles', 'Design system construction'],
         ]
@@ -193,6 +194,7 @@ export const Resume = () => {
           <JobCard
             title="Senior Frontend Engineer"
             company="Stellar Elements (current) &bull; Full-time"
+            companyLink="https://www.stellarelements.com/"
             duration="Oct 2021 - Present &bull; Seattle, Washington (remote)"
             /* eslint-disable-next-line max-len */
             logo="https://media.licdn.com/dms/image/D560BAQG-eXtmKYSbfQ/company-logo_100_100/0/1684789598663?e=1698883200&v=beta&t=xvGJ1_lKCNdONe0o4aXsPcKDqA80g0ar66aAOTqhx6s"
@@ -214,6 +216,7 @@ export const Resume = () => {
           <JobCard
             title="Senior Creative Technologist"
             company="Karsh Hagan &bull; Full-time"
+            companyLink="https://karshhagan.com"
             duration="3 yrs 5 mos &bull; Denver, Colorado"
             /* eslint-disable-next-line max-len */
             logo="https://media.licdn.com/dms/image/C4E0BAQFHx-M9LdTajA/company-logo_100_100/0/1569951228610?e=1698883200&v=beta&t=5xfY5OEUyyd_lIbV0UI6MpGQaA-uLVbs8V1_oduNKtk"
@@ -251,11 +254,18 @@ export const Resume = () => {
                 reporting, and optimization. Created technology comparisons
                 for a wide variety of stakeholders.
               </Box>
+              <Box variant="p">
+                Wrote several articles for the company blog. [
+                <Link href="/#/blog/using-nfts-to-protect-creative-works">1</Link>,&nbsp;
+                <Link href="/#/blog/third-party-cookies">2</Link>,&nbsp;
+                <Link href="/#/blog/redesigning-retail">3</Link>]
+              </Box>
             </>}
           />
           <JobCard
             title="Senior Frontend Engineer"
             company="Bloomfire &bull; Full-time"
+            companyLink="https://bloomfire.com"
             duration="1 yr 4 mos &bull; Austin, Texas"
             /* eslint-disable-next-line max-len */
             logo="https://media.licdn.com/dms/image/C4E0BAQFBJYrCf4gQRA/company-logo_100_100/0/1583167897491?e=1698883200&v=beta&t=u0VCJaQhiBZIdUg3c6s8xqMX0rXsfOCnbGscU-Icp1o"
@@ -283,7 +293,8 @@ export const Resume = () => {
             <hr />
             <JobCard
               title="Senior Presentation Layer Developer"
-              company="SapientRazorfish &bull; Full-time"
+              company="razorfish &bull; Full-time"
+              companyLink="https://www.razorfish.com/"
               duration="1 yr 2 mos &bull; Austin, Texas"
               /* eslint-disable-next-line max-len */
               logo="https://media.licdn.com/dms/image/C560BAQFfYKn6of94Bw/company-logo_100_100/0/1549799977055?e=1698883200&v=beta&t=g1k2kXLwBDrlMQk8TM5YRSiGz8z-ApDvv_hfKbg5iK0"
@@ -320,7 +331,8 @@ export const Resume = () => {
         <ColumnLayout borders="horizontal">
           <JobCard
             title="Faculty (Digital Animation)"
-            company="School of the Art Institute of Chicgo &bull; Adjunct"
+            company="School of the Art Institute of Chicago &bull; Adjunct"
+            companyLink="https://www.saic.edu/"
             duration="6 yrs 1 mo &bull; Chicago, Illinois"
             /* eslint-disable-next-line max-len */
             logo="https://media.licdn.com/dms/image/C4D0BAQH_O0IttUyiXA/company-logo_100_100/0/1519856335355?e=1698883200&v=beta&t=vZlbTmswjjxNFIzrq30K--M-bW1deQxwtN170FboROE"
@@ -333,6 +345,7 @@ export const Resume = () => {
             <JobCard
               title="Certified Professional Instructor (Design Technology)"
               company="Sterling Ledet &bull; Contract"
+              companyLink="https://www.ledet.com/"
               duration="17 yrs &bull; Touring"
               /* eslint-disable-next-line max-len */
               logo="https://media.licdn.com/dms/image/C4E0BAQFEFKDuHSAl1w/company-logo_100_100/0/1519856968192?e=1698883200&v=beta&t=p1ssvcQsUJ4wcq4wNrjqJeHO1Jfa9NyD1dYeBvSY7Zs"

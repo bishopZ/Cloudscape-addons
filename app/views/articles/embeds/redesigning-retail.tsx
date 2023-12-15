@@ -19,13 +19,11 @@ export const RedesigningRetail = () => {
     <p><ExternalLink href="https://karshhagan.com/insights/redesigning-retail">
       Read the article
     </ExternalLink></p>
-    <h2>Who</h2>
-    <p>Experiential Design<br />Retail Space Design</p>
     <h2>Why</h2>
     <p>Even as retail establishments begin to open back up, one of the first
       things on everyone&rsquo;s mind is social distancing. Wearing a mask or
       not, everyone is painfully aware of precautions, both mandated and
       personal. Stores can open their doors, but the retail experience will
-      never be the same...</p>
+      never be the same.</p>
   </Container>;
 };
