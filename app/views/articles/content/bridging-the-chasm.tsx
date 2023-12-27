@@ -92,6 +92,9 @@ export const BridgingTheChasmContent = () => {
         <Box variant="p">
         Bridging the gap between designers and developers in the digital landscape necessitates effective communication, platform understanding, collaborative design tools, design and development workshops, iterative collaboration, and cross-disciplinary training. By adopting these strategies, designers and developers can foster a cohesive and productive partnership, resulting in the creation of exceptional customer experiences that embody the designer's vision.
         </Box>
+        <Box variant="p" fontSize="body-s" color="text-body-secondary">
+          Photo by No dice, CC BY-SA 4.0
+        </Box>
       </SpaceBetween>
     </Container>
   </SpaceBetween>;

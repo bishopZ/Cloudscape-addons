@@ -298,9 +298,9 @@ module.exports = () => [
   // },
 {
     slug: 'bridging-the-chasm',
-    title: 'Design and development collaboratation',
+    title: 'Bridging the chasm',
     description: 'Harmonious collaboration between design and development is crucial for crafting outstanding user experiences.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Collaboration_power.png/320px-Collaboration_power.png',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Colaboraci%C3%B3n.jpg',
     format: 'Article',
     topic: 'Collaboration',
     discipline: 'Product',

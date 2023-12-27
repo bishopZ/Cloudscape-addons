@@ -2,7 +2,6 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import { Spacing } from '/addons/helpers/spacing-constants';
 import { selectArticles } from '/data/articles';
 import { useAppSelector } from '/data/data-store';
 import { makeHeaderImage } from '/utils/content-map';
@@ -33,7 +32,7 @@ export const DoINeedArticle = () => {
           experiments with new products or operates in a changing market, the benefits of a
           design system may be outweighed by the need for flexibility and adaptability.
         </Box>
-        <Box variant="p" fontSize="body-s">
+        <Box variant="p" fontSize="body-s" color="text-body-secondary">
           Photo by John Fowler from Placitas, NM, USA, CC BY 2.0, Wikimedia Commons
         </Box>
       </SpaceBetween>
