@@ -209,28 +209,6 @@ module.exports = () => [
   //   tokenitems wizardsteps',
   // },
   // {
-  //   slug: 'bridging-the-chasm',
-  //   title: 'Design and development collaboratation',
-  //   description: 'Harmonious collaboration between design and development is crucial for crafting outstanding user experiences.',
-  //   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Collaboration_power.png/320px-Collaboration_power.png',
-  //   format: 'Article',
-  //   topic: 'Collaboration',
-  //   discipline: 'Product',
-  //   section: 'Tools',
-  //   author: 'Bishop Zareh',
-  //   publicationDate: new Date('Dec 7, 2023'),
-  //   keywords: 'software engineering divide potential bridge gap insights synergy design thinking agile \
-  //   development methodologies collaborative tools integrated workflows digital innovation symbiotic relationship \
-  //   professionals landscape diversity bootcamps worldwide framework pragmatic stragey evidence-based langauge \
-  //   barrier communication terminology vocabulary principles mindset creativity logic perspective organization \
-  //   cross-disciplinary coexist divergent innovation change wireframes comps supporting documents hairball \
-  //   shared unexpected meetings process product intent vision solutions mininterprestation compromise loss \
-  //   ideal expertise skills clear channels stand-ups status updates project goals constriants alignment lines \
-  //   limitations standpoint empathy end users user experience collaborative adoption platforms real-time editing \
-  //   version control exchange ideas project design system feedback commenting contextual iterative workshops \
-  //   knowledge-sharing holistic product ownership lifecycle foundation user-centric training',
-  // },
-  // {
   //   slug: 'anatomy-of-a-design-system',
   //   title: 'Anatomy of a design system',
   //   description: 'A design system consists of several key elements that work together to provide a cohesive and standardized approach to digital design.',
@@ -318,7 +296,28 @@ module.exports = () => [
   //   version control process exchange ideas vision implementation robust effective simultaneous \
   //   feedback interation components libraries projects team unified coherent contextual channels',
   // },
-
+{
+    slug: 'bridging-the-chasm',
+    title: 'Design and development collaboratation',
+    description: 'Harmonious collaboration between design and development is crucial for crafting outstanding user experiences.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Collaboration_power.png/320px-Collaboration_power.png',
+    format: 'Article',
+    topic: 'Collaboration',
+    discipline: 'Product',
+    section: 'Tools',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Dec 27, 2023'),
+    keywords: 'software engineering divide potential bridge gap insights synergy design thinking agile \
+    development methodologies collaborative tools integrated workflows digital innovation symbiotic relationship \
+    professionals landscape diversity bootcamps worldwide framework pragmatic stragey evidence-based langauge \
+    barrier communication terminology vocabulary principles mindset creativity logic perspective organization \
+    cross-disciplinary coexist divergent innovation change wireframes comps supporting documents hairball \
+    shared unexpected meetings process product intent vision solutions mininterprestation compromise loss \
+    ideal expertise skills clear channels stand-ups status updates project goals constriants alignment lines \
+    limitations standpoint empathy end users user experience collaborative adoption platforms real-time editing \
+    version control exchange ideas project design system feedback commenting contextual iterative workshops \
+    knowledge-sharing holistic product ownership lifecycle foundation user-centric training',
+  },
   {
     slug: 'do-i-need-a-design-system',
     title: 'Do I need a design system?',

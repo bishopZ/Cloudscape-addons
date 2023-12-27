@@ -257,8 +257,9 @@ export const Resume = () => {
               <Box variant="p">
                 Wrote several articles for the company blog. [
                 <Link href="/#/blog/using-nfts-to-protect-creative-works">1</Link>,&nbsp;
-                <Link href="/#/blog/third-party-cookies">2</Link>,&nbsp;
-                <Link href="/#/blog/redesigning-retail">3</Link>]
+                <Link href="/#/blog/third-party-cookies">2</Link>]
+                {/* ,&nbsp; */}
+                {/* <Link href="/#/blog/redesigning-retail">3</Link>] */}
               </Box>
             </>}
           />

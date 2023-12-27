@@ -31,6 +31,7 @@ export const CONTENT_MAP = {
   'redesigning-retail': RedesigningRetail,
   'using-nfts-to-protect-creative-works': NftCreativeWork,
   'third-party-cookies': ThirdPartyCookies,
+  'bridging-the-chasm': BridgingTheChasmContent,
 
   // 'core-tenets': TenetsPage,
 
@@ -45,7 +46,6 @@ export const CONTENT_MAP = {
   // 'string-utils': StringArticle,
   // 'type-helpers': TypeArticle,
 
-  // 'bridging-the-chasm': BridgingTheChasmContent,
   // 'anatomy-of-a-design-system': AnatomyArticle,
   // 'documenting-a-design-system': DocumentingArticle,
   // 'design-system-lifecycle': LifecycleArticle,
