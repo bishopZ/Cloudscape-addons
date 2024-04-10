@@ -411,12 +411,12 @@ module.exports = () => [
     description: '79% of consumers feel concerned about how companies are using the data they collect.',
     image: 'https://bishopz.s3.amazonaws.com/upload/cookies_hero_right.png',
     format: 'Article',
-    discipline: 'Marketing',
+    discipline: 'Search',
     section: 'Analytics',
     topic: 'Browsers',
     author: 'Bishop Zareh',
     publicationDate: new Date('March 21, 2021'),
-    keywords: 'w3c collection tracking advertising targeting',
+    keywords: 'w3c collection tracking advertising targeting search',
     views: 269
   }
 

@@ -64,8 +64,8 @@ export const skills: Skill[] = [
   {
     discipline: 'AI', areas: [
       {
-        name: 'AI-assisted design', skills: [
-          ['ChatGPT', 'Claude', 'Llama'],
+        name: 'AI-assisted', skills: [
+          ['ChatGPT', 'Claude', 'Midjourney'],
           ['OpenGPT'],
           ['Dify.ai'],
         ]
@@ -88,7 +88,7 @@ export const skills: Skill[] = [
       }, {
         name: 'Analytics', skills: [
           ['SEO', 'Google Marketing Platform', 'Adobe Analytics'],
-          ['ArcGIS', 'Open Streets', 'Google Maps', 'Google Earth', 'Terraform'],
+          ['ArcGIS', 'Open Streets', 'Google Maps', 'Google Earth'],
           ['Power BI Workbench'],
         ]
       },
@@ -117,7 +117,7 @@ export const skills: Skill[] = [
         name: 'Testing', skills: [
           ['Selenium', 'Cypress', 'Jest'],
           ['ESLint', 'Static code analysis'],
-          ['Accessibility (WCAG)', 'Localization (i18n)'],
+          ['Accessibility (WCAG 3)', 'Localization (i18n)'],
         ]
       }
     ],
