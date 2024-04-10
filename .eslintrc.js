@@ -24,7 +24,8 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:jsx-a11y/strict'
+    'plugin:jsx-a11y/strict',
+    'plugin:@next/next/recommended'
   ],
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
@@ -139,7 +140,7 @@ module.exports = {
     'jsx-quotes': 'error',
     'key-spacing': 'error',
     '@typescript-eslint/keyword-spacing': 'error',
-    'max-len': ['error', 120],
+    'max-len': 'off',
     'max-lines': ['warn', 500],
     'max-statements-per-line': ['error', { max: 2 }],
     'multiline-ternary': ['error', 'always-multiline'],
@@ -196,17 +197,22 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/type-annotation-spacing': 'error',
 
-    'id-length': ['error', { 'exceptions': ['_', 's', 'l', 'a', 'b', 'm'] }],
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'id-length': ['error', { 'exceptions': ['_', 's', 'l', 'a', 'b', 'm', 'x', 'y', 'z'] }],
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-var': 'error',
     'object-shorthand': ['error', 'always'],
     'prefer-arrow-callback': 'error',
     'prefer-template': 'error',
     'radix': 'error',
-    '@typescript-eslint/no-duplicate-imports': 'error',
+    '@typescript-eslint/no-duplicate-imports': 'warn',
 
-    'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'error'
+    'simple-import-sort/imports': 'warn',
+    'simple-import-sort/exports': 'warn',
+
+    'jsx-a11y/click-events-have-key-events': 'warn',
+    'jsx-a11y/no-noninteractive-element-interactions': 'warn',
+
+    '@next/next/no-img-element': 'off'
 
   }
 }

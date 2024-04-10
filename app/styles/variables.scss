@@ -1,0 +1,66 @@
+@import 'functions';
+
+:root {
+  // https://css-tricks.com/snippets/css/fluid-typography/
+  --mobile-size: 375px;
+  --tablet-size: 810px;
+  --desktop-size: 1440px;
+  --capped-view-width: min(2500px, 100vw);
+  --scale: (var(--capped-view-width) - var(--mobile-size)) / (1440 - 375);
+  --scale-sm: (var(--capped-view-width) - var(--mobile-size)) / (810 - 375);
+  --scale-lg: (var(--capped-view-width) - var(--tablet-size)) / (1440 - 810);
+
+  --gutter-vertical: calc(12px + 12 * var(--scale));
+  --gutter-horizontal: calc(12px + 12 * var(--scale));
+
+  --mono-font: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --base-font: Avenir, "Open Sans", "Helvetica Neue", Roboto, Arial, sans-serif;
+  --default-font: var(--base-font);
+  --thin-font: AvertaThin, var(--default-font);
+  --italic-font: AvertaItalic, var(--default-font);
+  --bold-font: AvertaBold, var(--default-font);
+  --bold-italic-font: AvertaBoldItalic, var(--default-font);
+  --special-font: Mattone, var(--default-font);
+}
+
+html {
+  --background: white;
+  --foreground: black;
+  --dark: #0F172A;
+  --light: #EADFF7;
+  --pink: #FFBDF2;
+  --purple: #3D0687;
+  --light-purple: #802BE8;
+  --dark-grey: #292B30;
+  --grey: #7F7F7F;
+  --off-white: #F5EEFD;
+  --off-black: #0F172A;
+  --blue: #4200E3;
+  --light-blue: #91D7F1;
+  --dark-blue: #02004B;
+  --purple-text: #3D0687;
+  --static-off-white: #F5EEFD;
+  --cjo-purple: #12012C;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    --background: black;
+    --foreground: white;
+    --dark: #8fa5d9;
+    --light: #1d1c1e;
+    --pink: #5b204f;
+    --purple: #bda0e4;
+    --light-purple: #9747FF;
+    --dark-grey: #d5d9e4;
+    --off-white: #1f1f20;
+    --off-black: #d6def2;
+    --blue: #7140ec;
+    --light-blue: #02004B;
+    --dark-blue: #91D7F1;
+    --purple-text: #d5d9e4;
+    --cjo-purple: #d5d9e4;
+  }
+}

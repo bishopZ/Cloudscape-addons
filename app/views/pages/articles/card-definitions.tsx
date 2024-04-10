@@ -15,7 +15,7 @@ export const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
     {
       id: 'image',
       content: item => <Link href={`#/articles/${item.slug}`}>
-        <div className="card-image">
+        <div className="card-image down">
           <img
             src={item.image === ''
               ? 'assets/chasm.jpg'

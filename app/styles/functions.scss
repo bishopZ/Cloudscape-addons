@@ -1,0 +1,14 @@
+
+@function scaled($sm, $lg) {
+  @return calc(#{$sm}px + #{$lg - $sm} * var(--scale));
+}
+
+
+@function scaled-sm($sm, $lg) {
+  @return calc(#{$sm}px + #{$lg - $sm} * var(--scale-sm));
+}
+
+
+@function scaled-lg($sm, $lg) {
+  @return calc(#{$sm}px + #{$lg - $sm} * var(--scale-lg));
+}

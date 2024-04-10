@@ -1,5 +1,5 @@
 
-import { Container } from '@cloudscape-design/components';
+import { Container, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -15,14 +15,16 @@ export const NftCreativeWork = () => {
   return <Container media={{ content:
     <img src={article?.image} alt="" />
   }}>
-    <h2>What</h2>
-    <p>I wrote this article about NFTs for the Insights section of Karsh Hagan's website.</p>
-    <p><ExternalLink href="https://karshhagan.com/insights/using-nfts-to-protect-creative-works">
-      Read the article
-    </ExternalLink></p>
-    <h2>Why</h2>
-    <p>Blockchain brings technological innovation to many parts of our economy
-      resistant to change and still adapting to the last round of disruptions.
-      But how will Blockchain and NFTs be used in the advertising industry?</p>
+    <SpaceBetween size='m'>
+      <h2>What</h2>
+      <p>I wrote this article about NFTs for the Insights section of Karsh Hagan's website.</p>
+      <p><ExternalLink href="https://karshhagan.com/insights/using-nfts-to-protect-creative-works">
+        Read the article
+      </ExternalLink></p>
+      <h2>Why</h2>
+      <p>Blockchain brings technological innovation to many parts of our economy
+        resistant to change and still adapting to the last round of disruptions.
+        But how will Blockchain and NFTs be used in the advertising industry?</p>
+    </SpaceBetween>
   </Container>;
 };

@@ -18,7 +18,7 @@ type SidenavItem = SideNavigationProps.Section
 export const capitalize = (value: string) => value.replace(value[0], value[0].toUpperCase());
 
 const articles: SidenavItem = {
-  type: 'link', text: 'Browse', href: '#/'
+  type: 'link', text: 'Articles', href: '#/'
 };
 
 const docs: SidenavItem = {
@@ -26,10 +26,13 @@ const docs: SidenavItem = {
 };
 
 const articlesNav: SidenavItem[] = [
-  { type: 'link', text: 'Search articles', href: '#/search' },
+  { type: 'link', text: 'Search', href: '#/search' },
   { type: 'divider' },
-  { type: 'link', text: 'Resume', href: '#/resume' },
-  { type: 'link', text: 'Show record', href: '#/exhibitions' },
+
+  { type: 'section-group', title: 'About', items: [
+    { type: 'link', text: 'Resume', href: '#/resume' },
+    { type: 'link', text: 'Show record', href: '#/exhibitions' },
+  ]},
   // { type: 'link', text: 'Addons gallery', href: '#/articles/gallery' },
   // { type: 'link', text: 'Understanding design systems', href: '#/articles/search/design%20systems' },
   // { type: 'divider' },

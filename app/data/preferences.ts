@@ -26,11 +26,11 @@ const initialState = {
   tools: 'closed',
   [PREFERENCES.ARTICLES]: {
     pageSizes: [10, 45, 100],
-    pageSize: 50,
+    pageSize: 45,
     wrapLines: false,
     columnWidth: [120, 250, 165, 0, 0, 150, 0], // for all columns
     contentSelection: [ // for visible columns
-      'image', 'title', 'publicationDate', 'section', 'topic', 'discipline'
+      'title', 'publicationDate', 'section', 'topic', 'discipline'
     ]
   }
 };
