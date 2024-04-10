@@ -378,7 +378,7 @@ module.exports = () => [
   {
     slug: "using-nfts-to-protect-creative-works",
     title: "Using NFTs to protect creative works",
-    description: 'Recently, another form of blockchain, NFTs, have made headlines in the art world for their record-breaking, multimillion dollar sales.',
+    description: 'Recently, a form of blockchain called NFTs, have made headlines in the art world for their record-breaking, multimillion dollar sales.',
     image: 'https://bishopz.s3.amazonaws.com/upload/NFT_Graphic_L1-1__Article_Header_1.jpeg',
     format: 'Article',
     discipline: 'Engineering',
@@ -392,7 +392,7 @@ module.exports = () => [
   {
     slug: "third-party-cookies",
     title: "Why are Third Party Cookies going away?",
-    description: 'Why is the third party cookie on the chopping block?',
+    description: 'Why are third party cookies on the chopping block?',
     image: 'https://bishopz.s3.amazonaws.com/upload/cookies_hero_right.png',
     format: 'Article',
     discipline: 'Marketing',

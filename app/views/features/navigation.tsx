@@ -17,20 +17,20 @@ type SidenavItem = SideNavigationProps.Section
 
 export const capitalize = (value: string) => value.replace(value[0], value[0].toUpperCase());
 
-const blog: SidenavItem = {
-  type: 'link', text: 'Blog', href: '#/'
+const articles: SidenavItem = {
+  type: 'link', text: 'Browse', href: '#/'
 };
 
 const docs: SidenavItem = {
   type: 'link', text: 'Cloudscape addons', href: '#/docs'
 };
 
-const blogNav: SidenavItem[] = [
+const articlesNav: SidenavItem[] = [
   { type: 'link', text: 'Resume', href: '#/resume' },
   { type: 'link', text: 'Show record', href: '#/exhibitions' },
-  // { type: 'link', text: 'Addons gallery', href: '#/blog/gallery' },
-  // { type: 'link', text: 'Understanding design systems', href: '#/blog/search/design%20systems' },
-  // { type: 'link', text: 'Search articles', href: '#/blog/search' },
+  // { type: 'link', text: 'Addons gallery', href: '#/articles/gallery' },
+  // { type: 'link', text: 'Understanding design systems', href: '#/articles/search/design%20systems' },
+  // { type: 'link', text: 'Search articles', href: '#/articles/search' },
   // { type: 'divider' },
   // {
   //   type: 'link',
@@ -99,8 +99,8 @@ export const Navigation = () => {
       skip navigation
     </button>
     <SideNavigation
-      header={isDocs ? docs : blog}
-      items={isDocs ? docsNav : blogNav}
+      header={isDocs ? docs : articles}
+      items={isDocs ? docsNav : articlesNav}
       activeHref={`#${location.pathname}`}
     />
     <Box
@@ -130,7 +130,7 @@ export const Breadcrumbs = (props: Props) => {
     return formattedCrumb;
   });
 
-  const root = location.pathname.indexOf('/docs') === -1 ? blog : docs;
+  const root = location.pathname.indexOf('/docs') === -1 ? articles : docs;
 
   return <BreadcrumbGroup
     items={

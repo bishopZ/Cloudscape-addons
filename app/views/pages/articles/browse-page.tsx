@@ -12,20 +12,22 @@ import { changePreference } from '/data/preferences';
 
 const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
   header: item =>
-    <Link fontSize="heading-m" href={`#/blog/${item.slug}`}>
+    <Link fontSize="heading-m" href={`#/articles/${item.slug}`}>
       {item.title}
     </Link>,
   sections: [
     {
       id: 'image',
-      content: item => <div className="card-image">
-        <img
-          src={item.image === ''
-            ? 'assets/chasm.jpg'
-            : item.image}
-          alt={item.title}
-        />
-      </div>
+      content: item => <Link href={`#/articles/${item.slug}`}>
+        <div className="card-image">
+          <img
+            src={item.image === ''
+              ? 'assets/chasm.jpg'
+              : item.image}
+            alt={item.title}
+          />
+        </div>
+      </Link>
     },
     { id: 'description',
       header: '',
@@ -102,7 +104,7 @@ export const BrowseArticles = () => {
           }}>
           info
           </Link>}
-          // actions={<Link href="#/blog/search">
+          // actions={<Link href="#/articles/search">
           //   <Button variant="primary" iconName="search">
           //     Search
           //   </Button>

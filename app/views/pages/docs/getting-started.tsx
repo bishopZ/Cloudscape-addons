@@ -60,7 +60,7 @@ export const Docs = () => {
           }>
           <Box variant="p">
           Cloudscape Addons is an exciting addition to Amazon's Cloudscape design system.
-          Check out the <Link href="#/blog/gallery">Gallery</Link> to see the Addons in action.
+          Check out the <Link href="#/articles/gallery">Gallery</Link> to see the Addons in action.
           </Box>
         </ExpandableSection>
       </Container>
@@ -74,7 +74,7 @@ export const Docs = () => {
           }>
           <ol>
             <li>
-            First, use the <Link href="#/">Browse</Link> or <Link href="#/blog/search">Search</Link> pages
+            First, use the <Link href="#/">Browse</Link> or <Link href="#/articles/search">Search</Link> pages
             to locate a component that might work well for you and your team.</li>
             <li>
             Copy the source code for the component into a file in your code base.
@@ -114,7 +114,7 @@ export const Docs = () => {
           }>
           <ul>
             <li>
-              Our <Link href="#/">community blog</Link> updates every two weeks with new articles
+              Our <Link href="#/">community articles</Link> updates every two weeks with new articles
               and components about Cloudscape and other design systems.
             </li>
             <li>

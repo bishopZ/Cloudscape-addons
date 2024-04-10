@@ -57,7 +57,7 @@ export const BridgingTheChasmContent = () => {
         </Box>
       </SpaceBetween>
     </Container>
-    <Container header={<Header variant="h2">3 Potential solutions</Header>}>
+    <Container header={<Header variant="h2">3. Potential solutions</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
         As the divide between designers and developers widens, designs often suffer from misinterpretation, compromises, or even loss. Hence, the question arises: How can we bridge this gap? While an ideal scenario would involve all designers having coding expertise and all developers possessing design skills, such a reality remains unrealistic.
@@ -87,7 +87,7 @@ export const BridgingTheChasmContent = () => {
         </Box>
       </SpaceBetween>
     </Container>
-    <Container header={<Header variant="h2">4 Conclusion</Header>}>
+    <Container header={<Header variant="h2">4. Conclusion</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
         Bridging the gap between designers and developers in the digital landscape necessitates effective communication, platform understanding, collaborative design tools, design and development workshops, iterative collaboration, and cross-disciplinary training. By adopting these strategies, designers and developers can foster a cohesive and productive partnership, resulting in the creation of exceptional customer experiences that embody the designer's vision.

@@ -7,12 +7,12 @@ export const PreviewHeader = () => {
   return <Header
     variant="h2"
     actions={<SpaceBetween size="s" direction="horizontal">
-      <Button variant="link" href="#/blog/gallery">
+      <Button variant="link" href="#/articles/gallery">
         Addon gallery
       </Button>
       {!isDocs && <Button
         variant="link"
-        href={window.location.hash.replace('blog', 'docs')}>
+        href={window.location.hash.replace('articles', 'docs')}>
         Component documentation
       </Button>}
     </SpaceBetween>}>

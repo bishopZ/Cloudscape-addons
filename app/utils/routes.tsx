@@ -3,12 +3,12 @@ import type { AppLayoutProps, BreadcrumbGroupProps } from '@cloudscape-design/co
 import { deslugify } from '/addons/helpers/string-utils';
 // import { deslugify } from '/addons/helpers/string-utils';
 import type { ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
-import { ArticleContainer } from '/views/pages/blog/article-container';
-import { BrowseArticles } from '/views/pages/blog/browse-page';
+import { ArticleContainer } from '/views/pages/articles/article-container';
+import { BrowseArticles } from '/views/pages/articles/browse-page';
 import { Exhibitions } from '/views/pages/exhibitions';
-// import { ArticleContainer } from '/views/pages/blog/article-container';
-// import { Blog } from '/views/pages/blog/blog-page';
-// import { BrowseArticles } from '/views/pages/blog/browse-page';
+// import { ArticleContainer } from '/views/pages/articles/article-container';
+// import { Blog } from '/views/pages/articles/articles-page';
+// import { BrowseArticles } from '/views/pages/articles/browse-page';
 // import { DocsContainer } from '/views/pages/docs/doc-container';
 // import { Docs } from '/views/pages/docs/getting-started';
 import { NotFound } from '/views/pages/not-found';
@@ -32,7 +32,7 @@ export const ROUTES = (): RouteProps[] => [
   //   component: Docs,
   //   breadcrumbs: []
   // }, {
-  //   path: '/blog/gallery',
+  //   path: '/articles/gallery',
   //   title: 'Cloudscape gallery',
   //   contentType: 'default',
   //   component: Preview,
@@ -41,7 +41,7 @@ export const ROUTES = (): RouteProps[] => [
   //   ]
   // },
   // {
-  //   path: '/blog/search/:filter',
+  //   path: '/articles/search/:filter',
   //   title: 'Articles',
   //   contentType: 'default',
   //   component: Blog,
@@ -49,7 +49,7 @@ export const ROUTES = (): RouteProps[] => [
   //     { text: 'Search', href: '' }
   //   ]
   // }, {
-  //   path: '/blog/search',
+  //   path: '/articles/search',
   //   title: 'Articles',
   //   contentType: 'default',
   //   component: Blog,
@@ -65,7 +65,7 @@ export const ROUTES = (): RouteProps[] => [
   //     params => ({ text: deslugify(params.slug ?? 'Documentation'), href: '' })
   //   ]
   // }, {
-    path: '/blog/:slug',
+    path: '/articles/:slug',
     title: params => deslugify(params.slug ?? 'Article'),
     contentType: 'default',
     component: ArticleContainer,
@@ -94,7 +94,7 @@ export const ROUTES = (): RouteProps[] => [
     breadcrumbs: []
   },
   {
-    path: '/blog',
+    path: '/browse',
     title: 'Browse articles',
     contentType: 'default',
     component: BrowseArticles,

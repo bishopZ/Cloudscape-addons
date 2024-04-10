@@ -193,9 +193,9 @@ export const Resume = () => {
         <ColumnLayout borders="horizontal">
           <JobCard
             title="Senior Frontend Engineer"
-            company="Stellar Elements (current) &bull; Full-time"
+            company="Stellar Elements &bull; Full-time"
             companyLink="https://www.stellarelements.com/"
-            duration="Oct 2021 - Present &bull; Seattle, Washington (remote)"
+            duration="Oct 2021 - Apr 2024 &bull; Seattle, Washington (remote)"
             /* eslint-disable-next-line max-len */
             logo="https://media.licdn.com/dms/image/D560BAQG-eXtmKYSbfQ/company-logo_100_100/0/1684789598663?e=1698883200&v=beta&t=xvGJ1_lKCNdONe0o4aXsPcKDqA80g0ar66aAOTqhx6s"
             description={<>
@@ -255,11 +255,11 @@ export const Resume = () => {
                 for a wide variety of stakeholders.
               </Box>
               <Box variant="p">
-                Wrote several articles for the company blog. [
-                <Link href="/#/blog/using-nfts-to-protect-creative-works">1</Link>,&nbsp;
-                <Link href="/#/blog/third-party-cookies">2</Link>]
+                Wrote several articles for the company website. [
+                <Link href="/#/articles/using-nfts-to-protect-creative-works">1</Link>,&nbsp;
+                <Link href="/#/articles/third-party-cookies">2</Link>]
                 {/* ,&nbsp; */}
-                {/* <Link href="/#/blog/redesigning-retail">3</Link>] */}
+                {/* <Link href="/#/articles/redesigning-retail">3</Link>] */}
               </Box>
             </>}
           />

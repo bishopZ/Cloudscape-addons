@@ -101,7 +101,7 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
       i18nStrings={topNavStrings}
       // search={<SpaceBetween size="s" direction="horizontal">
       //   <Link href="#/">
-      //     <Button variant={path.startsWith('/blog') || path === '/' ? 'normal' : 'link'}>
+      //     <Button variant={path.startsWith('/articles') || path === '/' ? 'normal' : 'link'}>
       //       Blog
       //     </Button>
       //   </Link>

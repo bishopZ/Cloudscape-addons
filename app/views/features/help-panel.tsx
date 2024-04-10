@@ -10,15 +10,19 @@ export const HelpPanelContent = () => {
         And sadly, it sank into the swamp.
       </Box>
       <Box variant="p">
-        But then... then we built BishopZ.com version 2,
+        But then...
+        <br />then we built BishopZ.com version 2,
         and it also sank into the swamp.
       </Box>
       <Box variant="p">
-        But then... Then we built BishopZ.com version 3, and
-        it burned down... and then sank into the swamp.
+        But then...
+        <br />Then we built BishopZ.com version 3, and
+        it burned down...
+        <br />and then sank into the swamp.
       </Box>
       <Box variant="p">
-        But version 4... version 4 is all for you,
+        But version 4...
+        <br />version 4 is all for you,
         and some day, all that you see will be yours.
       </Box>
       <Box variant="p">

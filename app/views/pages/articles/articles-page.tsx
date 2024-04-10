@@ -15,7 +15,7 @@ import { useAppDispatch, useAppSelector } from '/data/data-store';
 import { initPreferences, PREFERENCES, selectPreferences, updatePreferences } from '/data/preferences';
 import { Preferences } from '/views/features/table-preferences';
 
-import { BlogHeader } from './blog-header';
+import { BlogHeader } from './articles-header';
 import { TABLE_COLUMNS } from './table-data';
 
 export const Blog = () => {
@@ -90,7 +90,7 @@ export const Blog = () => {
   return <Table
     {...collectionProps}
     variant="full-page"
-    trackBy="transformerId"
+    trackBy="slug"
     resizableColumns
     stickyHeader
     firstIndex={paginationProps.currentPageIndex * articlePrefs.pageSize + 1}
@@ -118,6 +118,4 @@ export const Blog = () => {
       dispatch(setSelected(event.detail.selectedItems));
     }}
   />;
-
-  return <></>;
 };

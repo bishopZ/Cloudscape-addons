@@ -15,7 +15,7 @@ export const TABLE_COLUMNS: TableColumn<Article>[] = [
   {
     id: 'title',
     header: 'Title',
-    cell: item => <Link href={`#/blog/${item.slug}`}>
+    cell: item => <Link href={`#/articles/${item.slug}`}>
       {item.title}
     </Link>,
     sortingField: 'title',

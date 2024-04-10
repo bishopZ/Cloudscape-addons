@@ -50,15 +50,16 @@ export const Exhibitions = () => {
         <p>1998 Innovation in Art and Technology, Texas Interactive Multimedia Awards (Kill The President)</p>
       </Container>
       <Container header={<Header variant="h2">Art exhibitions</Header>}>
+        <p>2024 Visual coordinator, <ExternalLink href="//www.youtube.com/watch?v=Uh42Zpoobyc">"Söm Sãptälahn"</ExternalLink> itchy-O, Fiske Planetarium - Boulder, CO</p>
         <p>2023 Projection artist, <ExternalLink href="//www.westword.com/music/itchy-o-brings-spooktacular-halloween-concerts-to-mercury-cafe-in-denver-18101046">"Hallowmass"</ExternalLink> (run of 10 shows) itchy-O, Mercury Cafe - Denver, CO</p>
-        <p>2023 Performance artist, "Art Night Out" <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink> - Lafayette, CO</p>
-        <p>2023 Projection artist, <ExternalLink href="https://itchyo.com/mystic_evening/">"This Mystic Night"</ExternalLink> itchy-O, Levitt Pavillion - Denver, CO (4.3k audience)</p>
+        <p>2023 Performance artist, Art Night Out <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink> - Lafayette, CO</p>
+        <p>2023 Projection artist, <ExternalLink href="//itchyo.com/mystic_evening/">"This Mystic Night"</ExternalLink>  itchy-O, Levitt Pavillion - Denver, CO (4.3k audience)</p>
         <p>2023 Special effects assistant (fog), "Intergalactic Masquerade" <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Oriental Theater - Denver, CO</p>
         <p>2023 Performance artist, <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink> featuring <ExternalLink href="//www.n3ptune.com/">n3ptune</ExternalLink>, Bluebird - Denver, CO</p>
-        <p>2023 Projection artist, "Kink Valentines" <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Reel Works - Denver, CO</p>
+        <p>2023 Projection artist, Kink Valentines <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Reel Works - Denver, CO</p>
         <p>2022 Special effects assistant (electrical), <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, The Summit - Denver, CO</p>
         <p>2022 Lighting director, <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Far Out Lounge - Austin, TX</p>
-        <p>2022 Lighting designer, "Fantastic Fest" <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Alamo Draft House - Austin, TX</p>
+        <p>2022 Lighting designer, Fantastic Fest <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Alamo Draft House - Austin, TX</p>
         <p>2022 Projection artist, "Tetrapolar Purification Ceremony" <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Filmore Auditorium - Denver, CO</p>
         <p>2017 Projection artist, Rocky Mountain Audio Festival, Marriott Tech Center - Denver, CO</p>
         <p>2015 Live game show technician, "Meditation Deathmatch" Voice &amp; Exit Festival, Haymaker - Austin, TX</p>
@@ -78,10 +79,10 @@ export const Exhibitions = () => {
         <p>2002 Video installation, “digital?confusion” Austin Museum of Digital Art - Austin, TX (SXSW Interactive opening party)</p>
       </Container>
       <Container header={<Header variant="h2">Public speaking</Header>}>
-        <p>2023 User Group Presenter, <Link href="#/blog/state-management:-the-missing-manual">"State management: the missing manual"</Link> React Denver - Denver, CO</p>
-        <p>2023 User Group Presenter, <Link href="#/blog/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>
+        <p>2023 User Group Presenter, <Link href="#/articles/state-management:-the-missing-manual">"State management: the missing manual"</Link> React Denver - Denver, CO</p>
+        <p>2023 User Group Presenter, <Link href="#/articles/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>
         <p>2023 User Group Presenter, "Life as an engineer at Amazon" <ExternalLink href="//reactdenver.com/">React Denver</ExternalLink> - Denver, CO</p>
-        <p>2022 User Group Presenter, <Link href="#/blog/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>
+        <p>2022 User Group Presenter, <Link href="#/articles/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>
         <p>2018 User Group Presenter, “A brief history of recipes” Denver Creative Tech, Legwork Studio - Denver, CO</p>
         <p>2018 User Group Presenter, “ADVANCED INTELLIGENT DEEP ARTIFICIAL NEURAL MACHINE ROBOTS” Refresh Denver, Galvanize - Denver, CO</p>
         <p>2017 User Group Presenter, <ExternalLink href="//vimeo.com/manage/videos/211040647">"RGB vs HSL, the beatdown"</ExternalLink> Denver Creative Tech, Commons on Champa - Denver, CO</p>
