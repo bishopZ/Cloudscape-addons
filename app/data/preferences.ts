@@ -30,7 +30,7 @@ const initialState = {
     wrapLines: false,
     columnWidth: [120, 250, 165, 0, 0, 150, 0], // for all columns
     contentSelection: [ // for visible columns
-      'title', 'publicationDate', 'section', 'topic', 'discipline'
+      'title', 'publicationDate', 'section', 'type', 'topic', 'discipline'
     ]
   }
 };

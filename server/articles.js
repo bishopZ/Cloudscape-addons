@@ -279,24 +279,40 @@ module.exports = () => [
   //   needs voice recruit adopters contributors heros future continuous improvement \
   //   scientist perfecting edge',
   // },
-  // {
-  //   slug: 'collaboration-tools-figma',
-  //   title: 'Collaborative design with Figma',
-  //   description: 'Articulation of the features and advantages of Figma as a \
-  //   collaborative design & feedback tool.',
-  //   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png',
-  //   format: 'Article',
-  //   topic: 'Collaboration',
-  //   discipline: 'Design',
-  //   section: 'Tools',
-  //   vendor: 'Figma',
-  //   author: 'Bishop Zareh',
-  //   publicationDate: new Date('Jun 15, 2023'),
-  //   keywords: 'tolls adoption designers developers shared platforms real-time editing commenting \
-  //   version control process exchange ideas vision implementation robust effective simultaneous \
-  //   feedback interation components libraries projects team unified coherent contextual channels',
-  // },
-{
+  {
+    slug: 'matter-thought-leadership',
+    title: 'MATTER: thought leadership',
+    description: 'The site is an internal effort by Stellar Elements to provoke conversation around topics that\
+      will be relivant for years to come.',
+    image: 'https://matter.stellarelements.com/images/Enigma-no-motion.webp',
+    format: 'Website',
+    topic: 'Thought leardership',
+    discipline: 'Strategy',
+    section: 'Strategy',
+    vendor: 'Stellar Elements',
+    author: 'many',
+    publicationDate: new Date('Apr 10, 2024'),
+    keywords: 'AI superapps customer journey orchestrations maps invisible design experience complexity\
+      gap analysis',
+  },
+  {
+    slug: 'collaboration-tools-figma',
+    title: 'Collaborative design with Figma',
+    description: 'Articulation of the features and advantages of Figma as a \
+    collaborative design & feedback tool.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png',
+    format: 'Article',
+    topic: 'Collaboration',
+    discipline: 'Design',
+    section: 'Tools',
+    vendor: 'Figma',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Feb 22, 2024'),
+    keywords: 'tolls adoption designers developers shared platforms real-time editing commenting \
+    version control process exchange ideas vision implementation robust effective simultaneous \
+    feedback interation components libraries projects team unified coherent contextual channels',
+  },
+  {
     slug: 'bridging-the-chasm',
     title: 'Bridging the chasm',
     description: 'Harmonious collaboration between design and development is crucial for crafting outstanding user experiences.',
@@ -392,7 +408,7 @@ module.exports = () => [
   {
     slug: "third-party-cookies",
     title: "Why are Third Party Cookies going away?",
-    description: 'Why are third party cookies on the chopping block?',
+    description: '79% of consumers feel concerned about how companies are using the data they collect.',
     image: 'https://bishopz.s3.amazonaws.com/upload/cookies_hero_right.png',
     format: 'Article',
     discipline: 'Marketing',

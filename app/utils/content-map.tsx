@@ -23,6 +23,7 @@ import { RedesigningRetail } from '/views/articles/embeds/redesigning-retail';
 import { StateManagement } from '/views/articles/embeds/state-management';
 import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
 import { TenetsPage } from '/views/pages/tenets/tenets-page';
+import { Matter } from '/views/articles/embeds/introducing-matter';
 
 export const CONTENT_MAP = {
   'do-i-need-a-design-system': DoINeedArticle,
@@ -32,6 +33,8 @@ export const CONTENT_MAP = {
   'using-nfts-to-protect-creative-works': NftCreativeWork,
   'third-party-cookies': ThirdPartyCookies,
   'bridging-the-chasm': BridgingTheChasmContent,
+  'collaboration-tools-figma': FigmaArticle,
+  'matter-thought-leadership': Matter,
 
   // 'core-tenets': TenetsPage,
 
@@ -50,7 +53,6 @@ export const CONTENT_MAP = {
   // 'documenting-a-design-system': DocumentingArticle,
   // 'design-system-lifecycle': LifecycleArticle,
   // 'design-system-maturity': MaturityArticle,
-  // 'collaboration-tools-figma': FigmaArticle,
 } as const;
 
 export const makeHeaderImage = (path: string) => {
