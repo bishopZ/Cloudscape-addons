@@ -1,164 +1,22 @@
-import type { TableProps
-} from '@cloudscape-design/components';
 import {
-  Box, ColumnLayout, Container, ContentLayout, ExpandableSection, Grid, Header, Link, SpaceBetween, Table
+  Box, ColumnLayout, Container, ContentLayout, ExpandableSection, Header, Link, SpaceBetween, Table
 } from '@cloudscape-design/components';
 import React from 'react';
 
-import { Dash } from '/addons/details/loading';
+import { ExternalLink } from '/addons/details/external-link';
 import { Spacing } from '/addons/helpers/spacing-constants';
 
 import { JobCard } from '../common/job-card';
+import { skillColumns, skills } from './skills';
 
 /* eslint-disable max-len */
-const gridDefinition = [
-  { colspan: { default: 12 } },
-  { colspan: { default: 12 } }
-];
-
-const innerGrid = [
-  { colspan: { default: 12, xxs: 4 } },
-  { colspan: { default: 12, xxs: 4 } },
-  { colspan: { default: 12, xxs: 4 } }
-];
-
-type Skill = {
-  discipline: string
-  areas?: {
-    name: string
-    skills: string[][]
-  }[]
-}
-
-const skillColumns: TableProps.ColumnDefinition<Skill>[] = [{
-  id: 'discipline',
-  header: 'Discipline',
-  cell: item => item.discipline ?? <Dash />,
-  isRowHeader: true
-}, {
-  id: 'areas',
-  header: 'Area',
-  cell: item => {
-    return item.areas?.map((area, index) =>
-      <Grid key={index} gridDefinition={gridDefinition}>
-        <ExpandableSection headerText={area.name}>
-          <Grid gridDefinition={innerGrid}>
-            {area.skills.map((skillSet, setIndex) =>
-              <Box
-                key={setIndex}
-                padding={Spacing.BottomM}
-                display="block">
-                {skillSet.map(skill => <>
-                  {skill}
-                  <br />
-                </>
-                )}
-              </Box>
-            )}
-          </Grid>
-        </ExpandableSection>
-      </Grid>
-    );
-  },
-  isRowHeader: true
-}];
-
-const skills: Skill[] = [
-  {
-    discipline: 'Product', areas: [
-      {
-        name: 'Process', skills: [
-          ['Agile lead', 'Jira', 'Trello', 'User-centric approach'],
-          ['Requirements gathering', 'Project estimation', 'Backlog creation', 'Data-driven decision making'],
-          ['Mentorship', 'Workshop design', 'Instructional design'],
-        ]
-      }, {
-        name: 'Analytics', skills: [
-          ['SEO', 'Google Marketing Platform', 'Adobe Analytics'],
-          ['ArcGIS', 'Open Streets', 'Google Maps', 'Google Earth', 'Terraform'],
-          ['Power BI Workbench'],
-        ]
-      },
-    ]
-  }, {
-    discipline: 'Frontend engineering', areas: [
-      {
-        name: 'Build system, CMS, Platform', skills: [
-          ['Node.js', 'Express', 'Webpack', 'Gatsby', 'Next.js', 'Sass'],
-          ['Storyblock', 'Contentful', 'Strapi'],
-          ['Git', 'Docker', 'CloudFormation', 'AWS Amplify', 'Heroku'],
-        ]
-      }, {
-        name: 'Development', skills: [
-          ['Typescript', 'React', 'React router', 'Redux toolkit'],
-          ['Android', 'React Native'],
-          ['VS Code', 'Atom', 'Sublime'],
-        ]
-      }, {
-        name: 'Animation', skills: [
-          ['Greensock', 'React Spring', 'React Transition Groups'],
-          ['THREE.js', 'D3.js', 'Canvas', 'WebGL'],
-          ['Processing', 'Resolume', 'Projection mapping'],
-        ]
-      }, {
-        name: 'Testing', skills: [
-          ['Selenium', 'Cypress', 'Jest'],
-          ['ESLint', 'Static code analysis'],
-          ['Accessibility (WCAG)', 'Localization (i18n)'],
-        ]
-      }
-    ],
-  }, {
-    discipline: 'Backend engineering', areas: [
-      {
-        name: 'Cloud & API', skills: [
-          ['Amazon Web Services', 'Google Cloud Platform', 'Gitlab'],
-          ['OBS', 'RTMP'],
-          ['GraphQL', 'REST'],
-        ]
-      }, {
-        name: 'Database', skills: [
-          ['Postgres', 'MySQL'],
-          ['MongoDB', 'DynamoDB', 'AWS SQS'],
-          ['Local Storage', 'Redis', 'Neo4j'],
-        ]
-      }, {
-        name: 'Hardware', skills: [
-          ['Linux', 'Raspberry Pi'],
-          ['Bluetooth', 'RFID', 'OSC / MIDI', 'HDMI'],
-          ['Dolby Atmos', 'Video signal processing'],
-        ]
-      },
-    ]
-  }, {
-    discipline: 'Design', areas: [
-      {
-        name: 'Product design', skills: [
-          ['Experiential design', 'Immersive design'],
-          ['Copywriting', 'Journey mapping', 'User testing', 'UX research'],
-          ['Voice UI', 'Multi-modal / multi-device UI'],
-        ]
-      }, {
-        name: 'Visual, UX & Motion design', skills: [
-          ['Figma', 'Sketch', 'Photoshop', 'Illustrator', 'Adobe XD'],
-          ['Final Cut Pro', 'After Effects', 'Autodesk 3ds', 'Cinema 4D'],
-          ['Narrative construction', 'Storyboards', 'Motion design', 'Compositing', 'Color grading'],
-        ]
-      }, {
-        name: 'Design systems', skills: [
-          ['Cloudscape', 'Bootstrap'],
-          ['Technical writing'],
-          ['Design system principles', 'Design system construction'],
-        ]
-      },
-    ]
-  }
-];
 
 /* eslint-disable max-lines-per-function, react/jsx-max-depth, react/self-closing-comp */
 export const Resume = () => {
   return <ContentLayout
-    header={<Header variant="h1">Bishop Zareh</Header>}>
+    header={<Header variant="h1" description="I'm looking for new opportunities!">
+      Bishop Zareh
+    </Header>}>
     <SpaceBetween size="s">
       <Container header={<Header variant="h2">Summary</Header>}>
         <Box variant="p">
@@ -200,16 +58,16 @@ export const Resume = () => {
             logo="https://media.licdn.com/dms/image/D560BAQG-eXtmKYSbfQ/company-logo_100_100/0/1684789598663?e=1698883200&v=beta&t=xvGJ1_lKCNdONe0o4aXsPcKDqA80g0ar66aAOTqhx6s"
             description={<>
               <Box variant="p">
-                Worked exclusively on the Amazon account helping to build the interface to Amazon Web Services (AWS).
+                I worked on the Amazon account helping to build the interface to Amazon Web Services (AWS).
               </Box>
               <Box variant="p">
                 I helped update an in-production service to a newer version of its design system, and to newer React and Redux coding patterns. We created a template that all new code on the project should follow. Enforced those standards with new Contribution Guidelines, ESLint configuration, and new automated testing framework (Cypress). We also built several new features to showcase the velocity of feature development using our system.
-              </Box>
-              <Box variant="p">
-                I single-handedly built the interface for a new AWS service. This allowed me to use the newest and best tools available to Amazon's internal engineers.
-              </Box>
-              <Box variant="p">
+                I built the interface for a new AWS service. This allowed me to use the newest and best tools available to Amazon's internal engineers.
                 I built a documentation website using over a 1000 Markdown files and Gatsby. Delivered an aggressive set of features on a 12-week timeline.
+              </Box>
+              <Box variant="p">
+                After leaving Amazon, I lead a small team of engineers to create the <ExternalLink href="//matter.stellarelements.com">MATTER website</ExternalLink>, dedicated to thought leadership.
+                For the last three months, I researched engineering productivity enhancements with AI.
               </Box>
             </>}
           />

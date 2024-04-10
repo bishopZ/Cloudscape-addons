@@ -95,7 +95,7 @@ export const BrowseArticles = () => {
       header={
         <Header
           variant="h1"
-          // description="New articles every two weeks."
+          // description="I'm looking for new opportunities!"
           info={<Link onFollow={() => {
             dispatch(changePreference({
               name: 'tools',
@@ -114,6 +114,6 @@ export const BrowseArticles = () => {
         </Header>
       }
     />
-    {/* <Alert header="New articles every two weeks!" /> */}
+    {/* <Alert header="I'm looking for new opportunities!" /> */}
   </>;
 };

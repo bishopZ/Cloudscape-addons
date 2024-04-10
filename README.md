@@ -8,12 +8,12 @@ This is the code for my webiste.
 
 ```
 npm install
-npm run serve
+npm run watch
 ```
 Then in a new terminal, run these.
 
 ```
-npm run server
+npm start
 ```
 
 Then open http://localhost:8000 to view the website.
