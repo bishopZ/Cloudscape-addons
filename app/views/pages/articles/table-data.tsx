@@ -9,7 +9,11 @@ export const TABLE_COLUMNS: TableColumn<Article>[] = [
   {
     id: 'image',
     header: 'Image',
-    cell: item => <img style={{ maxWidth: 110 }} src="/assets/chasm.jpg" />,
+    cell: item => <Link href={`#/articles/${item.slug}`}><img
+      style={{ maxWidth: 110 }}
+      alt=""
+      src={item.image}
+    /></Link>,
     sortingField: 'image',
   },
   {

@@ -5,6 +5,7 @@ import { deslugify } from '/addons/helpers/string-utils';
 import type { ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
 import { ArticleContainer } from '/views/pages/articles/article-container';
 import { BrowseArticles } from '/views/pages/articles/browse-page';
+import { Search } from '/views/pages/articles/search-page';
 import { Exhibitions } from '/views/pages/exhibitions';
 // import { ArticleContainer } from '/views/pages/articles/article-container';
 // import { Blog } from '/views/pages/articles/articles-page';
@@ -12,8 +13,9 @@ import { Exhibitions } from '/views/pages/exhibitions';
 // import { DocsContainer } from '/views/pages/docs/doc-container';
 // import { Docs } from '/views/pages/docs/getting-started';
 import { NotFound } from '/views/pages/not-found';
+
 // import { Preview } from '/views/pages/preview';
-import { Resume } from '/views/pages/resume';
+import { Resume } from '../views/pages/resume/resume';
 
 export type RouteProps = {
   contentType: AppLayoutProps.ContentType
@@ -42,14 +44,6 @@ export const ROUTES = (): RouteProps[] => [
   // },
   // {
   //   path: '/articles/search/:filter',
-  //   title: 'Articles',
-  //   contentType: 'default',
-  //   component: Blog,
-  //   breadcrumbs: [
-  //     { text: 'Search', href: '' }
-  //   ]
-  // }, {
-  //   path: '/articles/search',
   //   title: 'Articles',
   //   contentType: 'default',
   //   component: Blog,
@@ -92,15 +86,15 @@ export const ROUTES = (): RouteProps[] => [
     contentType: 'default',
     component: Resume,
     breadcrumbs: []
-  },
-  {
-    path: '/browse',
-    title: 'Browse articles',
+  }, {
+    path: '/search',
+    title: 'Search articles',
     contentType: 'default',
-    component: BrowseArticles,
-    breadcrumbs: []
-  },
-  {
+    component: Search,
+    breadcrumbs: [
+      { text: 'Search', href: '' }
+    ]
+  }, {
     path: '/',
     title: 'Browse articles',
     contentType: 'default',

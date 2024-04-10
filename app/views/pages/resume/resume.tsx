@@ -6,47 +6,16 @@ import React from 'react';
 import { ExternalLink } from '/addons/details/external-link';
 import { Spacing } from '/addons/helpers/spacing-constants';
 
-import { JobCard } from '../common/job-card';
+import { JobCard } from '../../common/job-card';
 import { skillColumns, skills } from './skills';
 
-/* eslint-disable max-len */
-
-/* eslint-disable max-lines-per-function, react/jsx-max-depth, react/self-closing-comp */
+/* eslint-disable max-len, max-lines-per-function */
 export const Resume = () => {
   return <ContentLayout
     header={<Header variant="h1" description="I'm looking for new opportunities!">
       Bishop Zareh
     </Header>}>
     <SpaceBetween size="s">
-      <Container header={<Header variant="h2">Summary</Header>}>
-        <Box variant="p">
-          With more than two decades of experience crafting
-          novel experiences for the web, mobile, and immersive environments,
-          Bishop brings a wealth of knowledge and expertise
-          to lead your team to success.
-        </Box>
-        <Box variant="p">
-          He's received awards from
-          SIGGRAPH, SXSW, AIGA, Awwwards
-          and industry certifications from
-          Apple, Google, Adobe, Autodesk and more.
-        </Box>
-        <Box variant="p">
-          From 2005 to 2011, he taught motion design at
-          School of the Art Institute of Chicago.
-          In 2010, Bishop spoke about the future of user interface design
-          at technical conferences across the country.
-          In 2013, he organized a panel at South by Southwest on glitch art.
-          In 2016, he won an Audience Choice award at the San Antonio Film
-          Festival for his color grading and title design work on
-          Wallace Witherspoon's "Second Impression."
-          In 2018, he was featured in the Colorado AdClub's "The 50"
-          for his work on Aspen's "Give a Fl*ke" campaign.
-        </Box>
-        <Box variant="p">
-          Since 2021, he's worked as an embedded expert at Amazon.
-        </Box>
-      </Container>
       <Container header={<Header variant="h2">Experience</Header>}>
         <ColumnLayout borders="horizontal">
           <JobCard

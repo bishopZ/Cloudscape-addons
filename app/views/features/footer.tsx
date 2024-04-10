@@ -16,7 +16,7 @@ export const Footer = () => {
       </SpaceBetween>
     </Box>
     <Box float="right" margin={Spacing.VerticalL} display="inline-block">
-  &copy; 2023 TODO All Rights Reserved.
+  &copy; 2024 Bishop Zareh, All Rights Reserved.
       <br />This site uses essential cookies.
     </Box>
   </footer>;

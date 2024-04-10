@@ -50,17 +50,17 @@ export const Exhibitions = () => {
         <p>1998 Innovation in Art and Technology, Texas Interactive Multimedia Awards (Kill The President)</p>
       </Container>
       <Container header={<Header variant="h2">Art exhibitions</Header>}>
-        <p>2024 Visual coordinator, <ExternalLink href="//www.youtube.com/watch?v=Uh42Zpoobyc">"Söm Sãptälahn"</ExternalLink> itchy-O, Fiske Planetarium - Boulder, CO</p>
+        <p>2024 Visual coordinator, <ExternalLink href="//www.youtube.com/watch?v=Uh42Zpoobyc">"Söm Sãptälahn"</ExternalLink> (2 shows), itchy-O, Fiske Planetarium - Boulder, CO</p>
         <p>2023 Projection artist, <ExternalLink href="//www.westword.com/music/itchy-o-brings-spooktacular-halloween-concerts-to-mercury-cafe-in-denver-18101046">"Hallowmass"</ExternalLink> (run of 10 shows) itchy-O, Mercury Cafe - Denver, CO</p>
-        <p>2023 Performance artist, Art Night Out <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink> - Lafayette, CO</p>
+        <p>2023 Performance artist, Art Night Out, itchy-O - Lafayette, CO</p>
         <p>2023 Projection artist, <ExternalLink href="//itchyo.com/mystic_evening/">"This Mystic Night"</ExternalLink>  itchy-O, Levitt Pavillion - Denver, CO (4.3k audience)</p>
-        <p>2023 Special effects assistant (fog), "Intergalactic Masquerade" <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Oriental Theater - Denver, CO</p>
-        <p>2023 Performance artist, <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink> featuring <ExternalLink href="//www.n3ptune.com/">n3ptune</ExternalLink>, Bluebird - Denver, CO</p>
+        <p>2023 Special effects assistant (fog), "Intergalactic Masquerade" itchy-O, Oriental Theater - Denver, CO</p>
+        <p>2023 Performance artist, itchy-O featuring <ExternalLink href="//www.n3ptune.com/">n3ptune</ExternalLink>, Bluebird - Denver, CO</p>
         <p>2023 Projection artist, Kink Valentines <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Reel Works - Denver, CO</p>
-        <p>2022 Special effects assistant (electrical), <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, The Summit - Denver, CO</p>
-        <p>2022 Lighting director, <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Far Out Lounge - Austin, TX</p>
-        <p>2022 Lighting designer, Fantastic Fest <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Alamo Draft House - Austin, TX</p>
-        <p>2022 Projection artist, "Tetrapolar Purification Ceremony" <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Filmore Auditorium - Denver, CO</p>
+        <p>2022 Special effects assistant (electrical), itchy-O, The Summit - Denver, CO</p>
+        <p>2022 Lighting director, itchy-O, Far Out Lounge - Austin, TX</p>
+        <p>2022 Lighting designer, Fantastic Fest, itchy-O, Alamo Draft House - Austin, TX</p>
+        <p>2022 Projection artist, "Tetrapolar Purification Ceremony" itchy-O, Filmore Auditorium - Denver, CO</p>
         <p>2017 Projection artist, Rocky Mountain Audio Festival, Marriott Tech Center - Denver, CO</p>
         <p>2015 Live game show technician, "Meditation Deathmatch" Voice &amp; Exit Festival, Haymaker - Austin, TX</p>
         <p>2015 Group show, "Venice, TX" The Wrong, <ExternalLink href="//homeostasislab.org/info">Homeostasis Lab</ExternalLink> - Toronto, Canada</p>

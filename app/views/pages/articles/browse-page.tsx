@@ -1,68 +1,20 @@
-import type { CardsProps } from '@cloudscape-design/components';
-import { Alert, Box, Button, Cards, Header, Icon, Link } from '@cloudscape-design/components';
+import { Button, Cards, Header, Link } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
 
-import { Dash, LoadingSpinner } from '/addons/details/loading';
+import { LoadingSpinner } from '/addons/details/loading';
 import { cardLabels, loadingText } from '/addons/helpers/a11y-helpers';
-import { getRelativeTime } from '/addons/helpers/string-utils';
-import type { Article } from '/data/articles';
 import { initArticles, selectArticles } from '/data/articles';
 import { useAppDispatch, useAppSelector } from '/data/data-store';
 import { changePreference } from '/data/preferences';
 
-const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
-  header: item =>
-    <Link fontSize="heading-m" href={`#/articles/${item.slug}`}>
-      {item.title}
-    </Link>,
-  sections: [
-    {
-      id: 'image',
-      content: item => <Link href={`#/articles/${item.slug}`}>
-        <div className="card-image">
-          <img
-            src={item.image === ''
-              ? 'assets/chasm.jpg'
-              : item.image}
-            alt={item.title}
-          />
-        </div>
-      </Link>
-    },
-    { id: 'description',
-      header: '',
-      content: item => <Box fontSize="body-m">
-        {item.description}
-      </Box>,
-    }, {
-      id: 'publicationDate',
-      header: 'Published',
-      content: item => <Box fontSize="body-s" color="text-body-secondary">
-        {getRelativeTime(item.publicationDate)}
-      </Box>,
-      width: 33
-    }, {
-      id: 'discipline',
-      header: 'Discipline',
-      content: item => <Box fontSize="body-s" color="text-body-secondary">
-        {item.discipline ?? <Dash />}
-      </Box>,
-      width: 33
-    }, {
-      id: 'format',
-      header: 'Format',
-      content: item => <Box fontSize="body-s" color="text-body-secondary">
-        {item.format ?? <Dash />}
-      </Box>,
-      width: 33
-    }],
-};
+import { CARD_DEFINITIONS } from './card-definitions';
 
 const cardsPerRow = [
   { cards: 1 },
   { minWidth: 420, cards: 2 },
   { minWidth: 910, cards: 3 },
   { minWidth: 1240, cards: 4 },
+  { minWidth: 1940, cards: 5 },
 ];
 
 export const BrowseArticles = () => {
@@ -104,12 +56,11 @@ export const BrowseArticles = () => {
           }}>
           info
           </Link>}
-          // actions={<Link href="#/articles/search">
-          //   <Button variant="primary" iconName="search">
-          //     Search
-          //   </Button>
-          // </Link>}
-        >
+          actions={<Link href="#/search">
+            <Button variant="primary" iconName="search">
+              Search
+            </Button>
+          </Link>}>
           Browse articles
         </Header>
       }

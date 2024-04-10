@@ -26,11 +26,12 @@ const docs: SidenavItem = {
 };
 
 const articlesNav: SidenavItem[] = [
+  { type: 'link', text: 'Search articles', href: '#/search' },
+  { type: 'divider' },
   { type: 'link', text: 'Resume', href: '#/resume' },
   { type: 'link', text: 'Show record', href: '#/exhibitions' },
   // { type: 'link', text: 'Addons gallery', href: '#/articles/gallery' },
   // { type: 'link', text: 'Understanding design systems', href: '#/articles/search/design%20systems' },
-  // { type: 'link', text: 'Search articles', href: '#/articles/search' },
   // { type: 'divider' },
   // {
   //   type: 'link',
@@ -107,7 +108,7 @@ export const Navigation = () => {
       className="copyright"
       fontSize="body-s"
       color="text-status-inactive">
-      &copy; 2023 Bishop Zareh
+      &copy; 2024 Bishop Zareh
       <br />all rights reserved
       <br />this site uses essential cookies.
     </Box>

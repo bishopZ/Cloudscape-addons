@@ -15,10 +15,10 @@ import { useAppDispatch, useAppSelector } from '/data/data-store';
 import { initPreferences, PREFERENCES, selectPreferences, updatePreferences } from '/data/preferences';
 import { Preferences } from '/views/features/table-preferences';
 
-import { BlogHeader } from './articles-header';
+import { BlogHeader } from './search-header';
 import { TABLE_COLUMNS } from './table-data';
 
-export const Blog = () => {
+export const Search = () => {
   const dispatch = useAppDispatch();
   const params = useParams();
   const { initialized, items: articles, error } = useAppSelector(selectArticles);
@@ -57,7 +57,7 @@ export const Blog = () => {
     },
     pagination: { pageSize: articlePrefs.pageSize },
     sorting: { defaultState: {
-      sortingColumn: TABLE_COLUMNS[1],
+      sortingColumn: TABLE_COLUMNS[2],
       isDecending: true
     } },
     selection: { trackBy: 'title', keepSelection: true },

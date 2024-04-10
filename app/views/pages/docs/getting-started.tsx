@@ -29,7 +29,7 @@ export const Docs = () => {
         }}>
           info
         </Link>}
-        description="TODO">
+        description="About Cloudscape">
         Getting started
       </Header>
     }>
