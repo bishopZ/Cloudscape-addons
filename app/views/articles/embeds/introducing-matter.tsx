@@ -20,7 +20,7 @@ export const Matter = () => {
       <p>
         I lead a small engineering team on a tight schedule to publish volume 1 of the MATTER website.
         The site is an internal effort by Stellar Elements to provoke conversation around topics that
-        will be relivant for years to come.
+        will be relevant for years to come.
       </p>
       <p><ExternalLink href="//matter.stellarelements.com">
         See the site
@@ -39,6 +39,11 @@ export const Matter = () => {
         Since MATTER, was positioned as a "thought leadership" website, we wanted it to represent the
         best of both worlds. MATTER is a website where design, content and engineering are all turned
         up to 11.
+      </p>
+      <p>
+        For instance, it is very rare for an animated website to also respect the "prefers reduce motion"
+        preference in the operating system. The preference is there for users that really need it.
+        MATTER respects both this preference and light/dark mode.
       </p>
     </SpaceBetween>
   </Container>;

@@ -93,7 +93,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h1 span {
-  color: var(--background);
   font-weight: 400;
   z-index: 2;
   text-transform: capitalize;
@@ -142,6 +141,8 @@ h2, h3 {
   width: 1px;
 }
 
+
+
 .card-image {
   height: 120px;
   display: flex;
@@ -187,6 +188,7 @@ h2, h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
+  text-decoration-line: none !important;
 }
 
 [class^='awsui_utilities'] a {
