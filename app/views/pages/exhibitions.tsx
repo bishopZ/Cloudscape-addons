@@ -36,7 +36,7 @@ export const Exhibitions = () => {
         </Box>
       </Container>
       <Container header={<Header variant="h2">Awards</Header>}>
-        <p>2018 The 50, AdClub of Colorado (<ExternalLink href="//karshhagan.com/case-studies/aspen-snowmass">Aspen Give a Fl*ke Twitter bot</ExternalLink>)</p>
+        <p>2019 The 50, AdClub of Colorado (<ExternalLink href="//karshhagan.com/case-studies/aspen-snowmass">Aspen Give a Fl*ke Twitter bot</ExternalLink>)</p>
         <p>2016 Audience Award for Best Narrative Feature, San Antonio Film Festival ("Second Impression" directed by Wallace Weatherspoon)</p>
         <p>2014 Arts Grant Recipient, Burning Flipside (Meditation Deathmatch)</p>
         <p>2011 Best of New England, AIGA (Island Creek Oyster Bar)</p>
@@ -56,7 +56,7 @@ export const Exhibitions = () => {
         <p>2023 Projection artist, <ExternalLink href="//itchyo.com/mystic_evening/">"This Mystic Night"</ExternalLink>  itchy-O, Levitt Pavillion - Denver, CO (4.3k audience)</p>
         <p>2023 Special effects assistant (fog), "Intergalactic Masquerade" itchy-O, Oriental Theater - Denver, CO</p>
         <p>2023 Performance artist, itchy-O featuring <ExternalLink href="//www.n3ptune.com/">n3ptune</ExternalLink>, Bluebird - Denver, CO</p>
-        <p>2023 Projection artist, Kink Valentines <ExternalLink href="//itchy-o.com">itchy-O</ExternalLink>, Reel Works - Denver, CO</p>
+        <p>2023 Projection artist, Kink Valentines <ExternalLink href="//itchyo.com">itchy-O</ExternalLink>, Reel Works - Denver, CO</p>
         <p>2022 Special effects assistant (electrical), itchy-O, The Summit - Denver, CO</p>
         <p>2022 Lighting director, itchy-O, Far Out Lounge - Austin, TX</p>
         <p>2022 Lighting designer, Fantastic Fest, itchy-O, Alamo Draft House - Austin, TX</p>
@@ -69,7 +69,7 @@ export const Exhibitions = () => {
         <p>2008 Projection artist, Festival of Ice, Millennium Park - Chicago, IL (with Plaid)</p>
         <p>2008 Projection artist, Green Festival, Navy Pier - Chicago, IL</p>
         <p>2008 Projection artist, Boneyard Arts Festival, Krannert Center for Performing Arts - Champaign-Urbana, IL</p>
-        <p>2007 Projection artist, Art of Play, Chicago Cultural Center - Chicago, IL (with <ExternalLink href="//www.bubblyfish.com/">Bubblyfish</ExternalLink>)</p>
+        <p>2007 Projection artist, Art of Play, Chicago Cultural Center - Chicago, IL (with Bubblyfish)</p>
         <p>2007 Projection artist, Green Festival, McCormick Center - Chicago, IL (with <ExternalLink href="//djspooky.com/">DJ Spooky</ExternalLink>)</p>
         <p>2005 Projection artist, Version&gt;05 Fest, Zhou B Art Center - Chicago, IL</p>
         <p>2004 Projection artist, West Loop Art Market, NBC Tower - Chicago, IL</p>

@@ -66,56 +66,56 @@ export const skills: Skill[] = [
       {
         name: 'AI-assisted', skills: [
           ['ChatGPT', 'Claude', 'Midjourney'],
-          ['OpenGPT'],
+          ['LocalGPT', 'Edith'],
           ['Dify.ai'],
         ]
       }, {
         name: 'GenUI', skills: [
           ['LM Studio', 'Prompt engineering'],
           ['Locofy', 'Vercel\'s V0', 'Anima'],
-          ['Python'],
+          ['Python'], // TensorFlow, PyTorch, NLTK, spaCy
         ]
       },
     ]
   }, {
     discipline: 'Product', areas: [
       {
-        name: 'Process', skills: [
-          ['Agile lead', 'Jira', 'Trello', 'User-centric approach'],
-          ['Requirements gathering', 'Project estimation', 'Backlog creation', 'Data-driven decision making'],
-          ['Mentorship', 'Workshop design', 'Instructional design'],
+        name: 'Delivery', skills: [
+          ['Agile project management', 'Jira', 'Trello'],
+          ['Requirements gathering', 'Stakeholder management', 'Risk management'],
+          ['Mentorship', 'Technical writing', 'Presentation skills'],
         ]
       }, {
         name: 'Analytics', skills: [
-          ['SEO', 'Google Marketing Platform', 'Adobe Analytics'],
-          ['ArcGIS', 'Open Streets', 'Google Maps', 'Google Earth'],
-          ['Power BI Workbench'],
+          ['SEO', 'Keyword research (SEMRush)', 'Enhanced listings (JSON+ld)'],
+          ['Google Marketing Platform', 'Adobe Analytics', 'ArcGIS'],
+          ['Power BI Workbench', 'Report creation'],
         ]
       },
     ]
   }, {
     discipline: 'Frontend engineering', areas: [
       {
-        name: 'Build system, CMS, Platform', skills: [
-          ['Node.js', 'Webpack', 'Gatsby', 'Next.js', 'Sass'],
-          ['Storyblock', 'Contentful', 'Strapi'],
-          ['Git', 'Docker', 'CloudFormation', 'AWS Amplify', 'Heroku'],
+        name: 'Build system (web & mobile)', skills: [
+          ['Node.js', 'Express', 'Webpack', 'Gatsby', 'Next.js', 'Typescript', 'Sass'],
+          ['React', 'React Router', 'Redux Toolkit', 'React Hooks'],
+          ['Android Studio', 'React Native', 'Cordova'],
         ]
       }, {
-        name: 'Development', skills: [
-          ['Typescript', 'React', 'React router', 'Redux toolkit'],
-          ['Android', 'React Native'],
-          ['VS Code', 'Atom', 'Sublime'],
+        name: 'Design systems & collaboration', skills: [
+          ['Bootstrap', 'Cloudscape', 'Blocks'],
+          ['Design system principles', 'Design system construction'],
+          ['Figjam', 'Miro'],
         ]
       }, {
-        name: 'Animation', skills: [
+        name: 'Special effects (web)', skills: [
           ['Greensock', 'React Spring', 'React Transition Groups'],
           ['THREE.js', 'D3.js', 'Canvas', 'WebGL'],
-          ['Processing', 'Resolume', 'Projection mapping'],
+          ['After Effects', 'Figma', 'Motion design']
         ]
       }, {
-        name: 'Testing', skills: [
-          ['Selenium', 'Cypress', 'Jest'],
+        name: 'Quality assurance', skills: [
+          ['Cypress', 'Jest'],
           ['ESLint', 'Static code analysis'],
           ['Accessibility (WCAG 3)', 'Localization (i18n)'],
         ]
@@ -124,13 +124,19 @@ export const skills: Skill[] = [
   }, {
     discipline: 'Backend engineering', areas: [
       {
-        name: 'Cloud & API', skills: [
-          ['Amazon Web Services', 'Google Cloud Platform'],
-          ['Netlify', 'Gitlab'],
+        name: 'Content management systems', skills: [
+          ['Contentful', 'Strapi'],
           ['GraphQL', 'REST'],
+          ['Wordpress', 'Drupal']
         ]
       }, {
-        name: 'Database', skills: [
+        name: 'Cloud services', skills: [
+          ['Git', 'Docker', 'Kubernetes'],
+          ['Lambda', 'CloudFormation', 'AWS Amplify', 'Heroku'],
+          ['Amazon Web Services', 'Google Cloud Platform', 'Netlify', 'Gitlab'],
+        ]
+      }, {
+        name: 'Databases', skills: [
           ['Postgres', 'MySQL'],
           ['MongoDB', 'DynamoDB', 'AWS SQS'],
           ['Local Storage', 'Redis', 'Neo4j'],
@@ -138,30 +144,8 @@ export const skills: Skill[] = [
       }, {
         name: 'Hardware', skills: [
           ['Linux', 'Raspberry Pi'],
-          ['Bluetooth', 'RFID', 'OSC / MIDI', 'HDMI'],
-          ['Dolby Atmos', 'Video signal processing'],
-        ]
-      },
-    ]
-  }, {
-    discipline: 'Design', areas: [
-      {
-        name: 'Product design', skills: [
-          ['Experiential design', 'Immersive design'],
-          ['Copywriting', 'Journey mapping', 'User testing', 'UX research'],
-          ['Voice UI', 'Multi-modal / multi-device UI'],
-        ]
-      }, {
-        name: 'Visual, UX & Motion design', skills: [
-          ['Figma', 'Sketch', 'Photoshop', 'Illustrator', 'Adobe XD'],
-          ['Final Cut Pro', 'After Effects', 'Autodesk 3ds', 'Cinema 4D'],
-          ['Narrative construction', 'Storyboards', 'Motion design', 'Compositing', 'Color grading'],
-        ]
-      }, {
-        name: 'Design systems', skills: [
-          ['Cloudscape', 'Bootstrap'],
-          ['Technical writing'],
-          ['Design system principles', 'Design system construction'],
+          ['Bluetooth', 'RFID', 'OSC', 'MIDI', 'HDMI'],
+          ['Dolby Atmos', '7.1 surround sound'],
         ]
       },
     ]

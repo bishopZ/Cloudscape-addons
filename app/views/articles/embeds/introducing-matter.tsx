@@ -18,9 +18,7 @@ export const Matter = () => {
     <SpaceBetween size='m'>
       <h2>What</h2>
       <p>
-        I lead a small engineering team on a tight schedule to publish volume 1 of the MATTER website.
-        The site is an internal effort by Stellar Elements to provoke conversation around topics that
-        will be relevant for years to come.
+        MATTER is a thought leadership website that seeks to provide insightful content on topics relevant for years to come. The site is dedicated to exploring themes of horizontality, which refers to the idea of moving beyond traditional hierarchies and structures to create a more inclusive and diverse society. The site features experiential pieces created in collaboration with experts and visionaries from around the world, which aim to educate, engage, and provoke thought on topics such as the future of democracy, the intersection of strategy and marketing, and the role of artificial intelligence in productivity enhancement.
       </p>
       <p><ExternalLink href="//matter.stellarelements.com">
         See the site

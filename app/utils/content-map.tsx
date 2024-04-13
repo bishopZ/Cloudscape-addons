@@ -35,6 +35,7 @@ export const CONTENT_MAP = {
   'bridging-the-chasm': BridgingTheChasmContent,
   'collaboration-tools-figma': FigmaArticle,
   'matter-thought-leadership': Matter,
+  'design-system-maturity': MaturityArticle,
 
   // 'core-tenets': TenetsPage,
 
@@ -52,7 +53,7 @@ export const CONTENT_MAP = {
   // 'anatomy-of-a-design-system': AnatomyArticle,
   // 'documenting-a-design-system': DocumentingArticle,
   // 'design-system-lifecycle': LifecycleArticle,
-  // 'design-system-maturity': MaturityArticle,
+
 } as const;
 
 export const makeHeaderImage = (path: string) => {

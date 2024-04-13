@@ -8,7 +8,7 @@ type Props = {
   title: string
   company: string
   duration: string
-  logo: string
+  logo?: string
   description: React.ReactNode
   companyLink?: string
 }

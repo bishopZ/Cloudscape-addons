@@ -17,7 +17,9 @@ export const NftCreativeWork = () => {
   }}>
     <SpaceBetween size='m'>
       <h2>What</h2>
-      <p>I wrote this article about NFTs for the Insights section of Karsh Hagan's website.</p>
+      <p>
+        This article discusses how Non-Fungible Tokens (NFTs) are being used to protect digital artworks and creative works in various industries, including art, music, and entertainment. NFTs are unique digital assets that are stored on a blockchain, providing a tamper-proof and transparent record of ownership. They offer a new ownership model for digital art, allowing artists to sell exclusive rights to their work and receive payment in the form of cryptocurrency. This article provides an in-depth look at the potential benefits and challenges of using NFTs to protect creative works, and highlights the innovative ways in which this technology is transforming the art world.
+      </p>
       <p><ExternalLink href="https://karshhagan.com/insights/using-nfts-to-protect-creative-works">
         Read the article
       </ExternalLink></p>

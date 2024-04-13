@@ -270,10 +270,10 @@ module.exports = () => [
   //   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/PENGUIN_LIFECYCLE_H.JPG/320px-PENGUIN_LIFECYCLE_H.JPG',
   //   format: 'Article',
   //   topic: 'Design systems',
-  //   discipline: 'Design',
+  //   discipline: 'Product',
   //   section: 'Delivery',
   //   author: 'Bishop Zareh',
-  //   publicationDate: new Date('Jun 9, 2023'),
+  //   publicationDate: new Date('Apr 4, 2024'),
   //   keywords: 'game educate engage knowledge potential purpose \
   //   benefits approach vision elighten colleagues two-way conversation users learn listen \
   //   needs voice recruit adopters contributors heros future continuous improvement \
@@ -283,7 +283,7 @@ module.exports = () => [
     slug: 'matter-thought-leadership',
     title: 'MATTER: thought leadership',
     description: 'The site is an internal effort by Stellar Elements to provoke conversation around topics that\
-      will be relivant for years to come.',
+      will be relevant for years to come.',
     image: 'https://matter.stellarelements.com/images/Enigma-no-motion.webp',
     format: 'Website',
     topic: 'Thought leardership',
