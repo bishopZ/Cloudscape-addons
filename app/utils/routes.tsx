@@ -26,7 +26,9 @@ export type RouteProps = {
   component: React.FC
 }
 
-const defaultDescription = 'Personal website of Bishop Zareh.';
+const defaultDescription = 'Explore the intersection of technology and spirituality with Bishop Z\'s \
+  insightful articles and resources. Discover the power of AI and design systems, and learn \
+  how to integrate them into your daily work.';
 
 // eslint-disable-next-line max-lines-per-function
 export const ROUTES = (): RouteProps[] => [
@@ -81,7 +83,7 @@ export const ROUTES = (): RouteProps[] => [
   {
     path: '/exhibitions',
     title: 'Show record',
-    description: defaultDescription,
+    description: 'Discover BishopZ\'s latest exhibitions featuring a list of past clients, awards won, and public speaking engagements. From museum events to luxury brand experiences, Bishop creates unforgettable moments.',
     contentType: 'default',
     component: Exhibitions,
     breadcrumbs: []
@@ -89,14 +91,14 @@ export const ROUTES = (): RouteProps[] => [
   {
     path: '/resume',
     title: 'Resume',
-    description: defaultDescription,
+    description: 'Looking for an exceptional software engineer who can bring innovation and creativity to your team? Bishop Zareh, with over 20 years of experience crafting novel experiences for the web, mobile, and immersive environments, is ready to lead your team to success. With a wealth of knowledge and expertise in full stack web development, e-commerce, payments, and agile methodologies, Bishop is the ideal candidate for any engineering position. Check out his professional summary and contact him today to learn more about how he can help take your team to the next level!',
     contentType: 'default',
     component: Resume,
     breadcrumbs: []
   }, {
     path: '/search',
     title: 'Search articles',
-    description: defaultDescription,
+    description: 'Unlock the power of AI and design systems with Bishop Z\'s insightsful articles and resources. Discover how to integrate these cutting-edge technologies into your daily work. Search articles on bishopz.com, a platform for exploring the future of software engineering.',
     contentType: 'default',
     component: Search,
     breadcrumbs: [
@@ -105,7 +107,7 @@ export const ROUTES = (): RouteProps[] => [
   }, {
     path: '/',
     title: 'Browse articles',
-    description: defaultDescription,
+    description: 'Unlock the secrets of technology with Bishop Z\'s thought-provoking articles. Explore the intersection of AI and design systems to discover how to integrate these concepts into your own work. With in-depth analysis of the latest trends and innovations, Bishop Z offers a unique perspective that will inspire and empower you.',
     contentType: 'default',
     component: BrowseArticles,
     breadcrumbs: []
