@@ -1,6 +1,6 @@
 import type { AppLayoutProps, BreadcrumbGroupProps } from '@cloudscape-design/components';
 
-import { deslugify } from '/addons/helpers/string-utils';
+import { DEFAULT_LOCALE, deslugify } from '/addons/helpers/string-utils';
 import type { ParamArticle, ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
 import { ArticleContainer } from '/views/pages/articles/article-container';
 import { BrowseArticles } from '/views/pages/articles/browse-page';
@@ -13,6 +13,8 @@ import { Exhibitions } from '/views/pages/exhibitions';
 // import { Docs } from '/views/pages/docs/getting-started';
 import { NotFound } from '/views/pages/not-found';
 
+const { DEFAULT_DESCRIPTION } = require('/data/constants')
+
 // import { Preview } from '/views/pages/preview';
 import { Resume } from '../views/pages/resume/resume';
 
@@ -24,8 +26,6 @@ export type RouteProps = {
   breadcrumbs: Array<BreadcrumbGroupProps.Item | ParamBreadcrumb>
   component: React.FC
 }
-
-const defaultDescription = 'Explore technology with Bishop Z\'s insightful articles and resources. Discover the power of AI and design systems, and learn how to integrate them into your daily work.';
 
 // eslint-disable-next-line max-lines-per-function
 export const ROUTES = (): RouteProps[] => [
@@ -63,7 +63,7 @@ export const ROUTES = (): RouteProps[] => [
   // }, {
     path: '/articles/:slug',
     title: params => deslugify(params.slug ?? 'Article'),
-    description: params => params.description ?? defaultDescription,
+    description: params => params.description ?? DEFAULT_DESCRIPTION,
     contentType: 'default',
     component: ArticleContainer,
     breadcrumbs: [
@@ -72,7 +72,7 @@ export const ROUTES = (): RouteProps[] => [
   }, {
     path: '/:slug',
     title: 'Not found',
-    description: defaultDescription,
+    description: DEFAULT_DESCRIPTION,
     contentType: 'default',
     component: NotFound,
     breadcrumbs: []

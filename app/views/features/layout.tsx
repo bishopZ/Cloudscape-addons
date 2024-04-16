@@ -15,7 +15,7 @@ import type { Breadcrumb, ParamArticle, ParamBreadcrumb, ParamString } from '/ad
 import { useAppDispatch, useAppSelector } from '/data/data-store';
 import { clearNotifications, selectNotifications } from '/data/notifications';
 import { changePreference, initPreferences, selectPreferences } from '/data/preferences';
-import { POST_TITLE } from '/utils/constants';
+const { POST_TITLE } = require('../../data/constants');
 
 import HelpPanelContent from './help-panel';
 import { theme, topNav, utilities } from './layout-data';
