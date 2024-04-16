@@ -56,7 +56,7 @@ export const BrowseArticles = () => {
           }}>
           info
           </Link>}
-          actions={<Link href="#/search">
+          actions={<Link href="/search">
             <Button variant="primary" iconName="search">
               Search
             </Button>

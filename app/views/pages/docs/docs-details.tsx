@@ -21,7 +21,7 @@ export const DocsDetails = () => {
           {formatDate(article?.publicationDate)}
         </LabeledValue>
         <LabeledValue label="Section">
-          <Link href={`#/articles/search/${article?.section}`}>
+          <Link href={`/articles/search/${article?.section}`}>
             {inNotEmpty(article?.section)}
           </Link>
         </LabeledValue>

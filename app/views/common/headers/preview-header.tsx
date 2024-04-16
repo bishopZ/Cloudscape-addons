@@ -7,7 +7,7 @@ export const PreviewHeader = () => {
   return <Header
     variant="h2"
     actions={<SpaceBetween size="s" direction="horizontal">
-      <Button variant="link" href="#/articles/gallery">
+      <Button variant="link" href="/articles/gallery">
         Addon gallery
       </Button>
       {!isDocs && <Button

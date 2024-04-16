@@ -19,7 +19,7 @@ export const Preview = () => {
     <SpaceBetween size="l">
       <Container header={
         <Header
-          actions={<Button variant="link" href="#/docs/loading-states">Docs</Button>}
+          actions={<Button variant="link" href="/docs/loading-states">Docs</Button>}
           variant="h2">
           Loading states
         </Header>
@@ -29,7 +29,7 @@ export const Preview = () => {
       <Container
         header={
           <Header
-            actions={<Button variant="link" href="#/docs/icon-map">Docs</Button>}
+            actions={<Button variant="link" href="/docs/icon-map">Docs</Button>}
             variant="h2">
             Icon map
           </Header>
@@ -38,7 +38,7 @@ export const Preview = () => {
       </Container>
       <Container header={
         <Header
-          actions={<Button variant="link" href="#/docs/generic-empty">Docs</Button>}
+          actions={<Button variant="link" href="/docs/generic-empty">Docs</Button>}
           variant="h2">
           Generic empty and No match
         </Header>
@@ -47,7 +47,7 @@ export const Preview = () => {
       </Container>
       <Container header={
         <Header
-          actions={<Button variant="link" href="#/docs/labeled-number">Docs</Button>}
+          actions={<Button variant="link" href="/docs/labeled-number">Docs</Button>}
           variant="h2">
           Labeled number
         </Header>
@@ -56,7 +56,7 @@ export const Preview = () => {
       </Container>
       <Container header={
         <Header
-          actions={<Button variant="link" href="#/docs/labeled-input">Docs</Button>}
+          actions={<Button variant="link" href="/docs/labeled-input">Docs</Button>}
           variant="h2">
           Labeled input
         </Header>
@@ -65,7 +65,7 @@ export const Preview = () => {
       </Container>
       <Container header={
         <Header
-          actions={<Button variant="link" href="#/docs/unsaved-changes-modal">Docs</Button>}
+          actions={<Button variant="link" href="/docs/unsaved-changes-modal">Docs</Button>}
           variant="h2">
           Unsaved changes modal
         </Header>

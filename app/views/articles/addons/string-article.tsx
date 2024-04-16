@@ -158,7 +158,7 @@ export const formatDate = (date?: string | Date) => {
           But what if we want relative dates? Should we install moment.js?
           These days relative dates are included in the javascript specification,
           with just a little extra finese. Relative time is used for the
-          publication date on the <Link href="#/">Blog page</Link>.
+          publication date on the <Link href="/">Browse page</Link>.
         </Box>
         <pre><code className="language-javascript">{`export const DEFAULT_LOCALE = 'en-us';
 

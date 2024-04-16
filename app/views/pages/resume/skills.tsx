@@ -71,7 +71,7 @@ export const skills: Skill[] = [
         ]
       }, {
         name: 'GenUI', skills: [
-          ['LM Studio', 'Prompt engineering'],
+          ['SWE-agent', 'LM Studio', 'Prompt engineering'],
           ['Locofy', 'Vercel\'s V0', 'Anima'],
           ['Python'], // TensorFlow, PyTorch, NLTK, spaCy
         ]

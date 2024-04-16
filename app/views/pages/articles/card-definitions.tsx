@@ -8,13 +8,13 @@ import type { Article } from '/data/articles';
 
 export const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
   header: item =>
-    <Link fontSize="heading-m" href={`#/articles/${item.slug}`}>
+    <Link fontSize="heading-m" href={`/articles/${item.slug}`}>
       {item.title}
     </Link>,
   sections: [
     {
       id: 'image',
-      content: item => <Link href={`#/articles/${item.slug}`}>
+      content: item => <Link href={`/articles/${item.slug}`}>
         <div className="card-image down">
           <img
             src={item.image === ''

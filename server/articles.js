@@ -282,7 +282,7 @@ module.exports = () => [
   {
     slug: 'matter-thought-leadership',
     title: 'MATTER: thought leadership',
-    description: 'The site is an internal effort by Stellar Elements to provoke conversation around topics that\
+    description: 'A Stellar Elements website, designed to provoke conversation around topics that\
       will be relevant for years to come.',
     image: 'https://matter.stellarelements.com/images/Enigma-no-motion.webp',
     format: 'Website',
@@ -387,7 +387,7 @@ module.exports = () => [
     section: 'Immersive',
     topic: 'Retail',
     author: 'Bishop Zareh',
-    publicationDate: new Date('Feb 13, 3021'),
+    publicationDate: new Date('Feb 13, 2021'),
     keywords: 'space covid shopping attitude customer',
     views: 241
   },
@@ -411,11 +411,11 @@ module.exports = () => [
     description: '79% of consumers feel concerned about how companies are using the data they collect.',
     image: 'https://bishopz.s3.amazonaws.com/upload/cookies_hero_right.png',
     format: 'Article',
-    discipline: 'Search',
+    discipline: 'Marketing',
     section: 'Analytics',
     topic: 'Browsers',
     author: 'Bishop Zareh',
-    publicationDate: new Date('March 21, 2021'),
+    publicationDate: new Date('Jul 19, 2021'),
     keywords: 'w3c collection tracking advertising targeting search',
     views: 269
   }

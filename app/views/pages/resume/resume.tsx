@@ -29,7 +29,7 @@ export const Resume = () => {
                 I had the opportunity to work exclusively on the Amazon account, where I was part of a team responsible for updating an in-production AWS service that spanned 26 global regions and ran in six languages. Our team of 2-5 engineers updated the service to a newer version of its design system and newer React and Redux coding patterns. As a key member of the team, I created a template for all new code on the project, wrote new contribution guidelines, an ESLint configuration, and a new automated testing framework using Cypress. These efforts not only improved the functionality and performance of the service but also enhanced the overall quality of the development process.
               </p>
               <p>
-                For the last three months, I researched ways to achieve engineering productivity enhancements using Large Lanugage Models (LLMs).
+                For the last three months, I researched ways to achieve engineering productivity enhancements using Large Lanugage Models (LLMs), and built the company's "thought leadership" platform, <Link href="/articles/matter-thought-leadership">MATTER</Link>.
               </p>
             </SpaceBetween>}
           />
@@ -43,17 +43,14 @@ export const Resume = () => {
               <Box variant="p">
                 As the Senior Creative Technologist at Karsh Hagan, I managed the technical aspects of over twenty accounts, including full-stack development on multiple architectures using React with Redux. My responsibilities included managing teams of domestic and foreign contract developers, building websites, take-overs, social media posts, mobile apps, voice apps, interactive prototypes, landing pages, animated microsites, and large content marketing websites. Additionally, I architected and built three web-based products with Node.js for an internal startup incubator, and collaborated with brand creatives to develop innovative marketing campaigns using design systems, personalization, chat bots, augmented reality (AR), webcam stream routing, animation-to-web pipelines, machine learning, blockchain, and more. I also created many starter templates for new website builds in diverse industries such as healthcare, energy, and consumer electronics. Furthermore, I acted as the official bug hunter on systems that had fallen out of repair.
 
-                I managed the collaboration
-                between analytics, measurement goals, media trafficking,
-                reporting, and optimization. I created technology comparisons
-                for a wide variety of stakeholders.
+                I also managed the collaboration between analytics, measurement goals, media trafficking, reporting, and optimization, and created technology comparisons for a wide variety of stakeholders.
               </Box>
               <Box variant="p">
                 Wrote several articles for the company website. [
-                <Link href="/#/articles/using-nfts-to-protect-creative-works">1</Link>,&nbsp;
-                <Link href="/#/articles/third-party-cookies">2</Link>]
+                <Link href="/articles/using-nfts-to-protect-creative-works">1</Link>,&nbsp;
+                <Link href="/articles/third-party-cookies">2</Link>]
                 {/* ,&nbsp; */}
-                {/* <Link href="/#/articles/redesigning-retail">3</Link>] */}
+                {/* <Link href="/articles/redesigning-retail">3</Link>] */}
               </Box>
               <Box
                 variant="p"
@@ -126,7 +123,7 @@ export const Resume = () => {
             companyLink="https://www.saic.edu/"
             duration="6 yrs 1 mo &bull; Chicago, Illinois"
             logo="https://media.licdn.com/dms/image/C4D0BAQH_O0IttUyiXA/company-logo_100_100/0/1519856335355?e=1698883200&v=beta&t=vZlbTmswjjxNFIzrq30K--M-bW1deQxwtN170FboROE"
-            description="I taught motion design at the School of the Art Institute of Chicago for six years, where I mentored senior undergraduates in developing their portfolios. My passion for inspiring others has earned me praise from students and peers alike. With a proven track record of success and train-the-trainer certifications in Adobe After Effects and Autodesk 3Ds Max."
+            description="I taught motion design at the School of the Art Institute of Chicago for six years, where I mentored senior undergraduates in developing their portfolios. My passion for inspiring others has earned me praise from students and peers alike. With a proven track record of success and train-the-trainer certifications in Adobe After Effects and Autodesk 3DS."
           />
           <ExpandableSection headerText="More education">
             <JobCard

@@ -18,23 +18,23 @@ type SidenavItem = SideNavigationProps.Section
 export const capitalize = (value: string) => value.replace(value[0], value[0].toUpperCase());
 
 const articles: SidenavItem = {
-  type: 'link', text: 'Articles', href: '#/'
+  type: 'link', text: 'Articles', href: '/'
 };
 
 const docs: SidenavItem = {
-  type: 'link', text: 'Cloudscape addons', href: '#/docs'
+  type: 'link', text: 'Cloudscape addons', href: '/docs'
 };
 
 const articlesNav: SidenavItem[] = [
-  { type: 'link', text: 'Search', href: '#/search' },
+  { type: 'link', text: 'Search', href: '/search' },
   { type: 'divider' },
 
   { type: 'section-group', title: 'About', items: [
-    { type: 'link', text: 'Resume', href: '#/resume' },
-    { type: 'link', text: 'Show record', href: '#/exhibitions' },
+    { type: 'link', text: 'Resume', href: '/resume' },
+    { type: 'link', text: 'Show record', href: '/exhibitions' },
   ]},
-  // { type: 'link', text: 'Addons gallery', href: '#/articles/gallery' },
-  // { type: 'link', text: 'Understanding design systems', href: '#/articles/search/design%20systems' },
+  // { type: 'link', text: 'Addons gallery', href: '/articles/gallery' },
+  // { type: 'link', text: 'Understanding design systems', href: '/articles/search/design%20systems' },
   // { type: 'divider' },
   // {
   //   type: 'link',
@@ -54,8 +54,8 @@ const articlesNav: SidenavItem[] = [
 ];
 
 const docsNav: SidenavItem[] = [
-  { type: 'link', text: 'Getting started', href: '#/docs' },
-  { type: 'link', text: 'Core tenets', href: '#/docs/core-tenets' }
+  { type: 'link', text: 'Getting started', href: '/docs' },
+  { type: 'link', text: 'Core tenets', href: '/docs/core-tenets' }
 ];
 
 export const Navigation = () => {
@@ -82,7 +82,7 @@ export const Navigation = () => {
           .map(item => ({
             type: 'link',
             text: item.name ?? item.title,
-            href: `#/docs/${item.slug}`
+            href: `/docs/${item.slug}`
           } as SideNavigationProps.Link))
           .sort((a, b) => a.text.localeCompare(b.text))
       });
@@ -105,7 +105,7 @@ export const Navigation = () => {
     <SideNavigation
       header={isDocs ? docs : articles}
       items={isDocs ? docsNav : articlesNav}
-      activeHref={`#${location.pathname}`}
+      activeHref={location.pathname}
     />
     <Box
       className="copyright"

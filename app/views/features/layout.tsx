@@ -100,12 +100,12 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
       utilities={utils}
       i18nStrings={topNavStrings}
       // search={<SpaceBetween size="s" direction="horizontal">
-      //   <Link href="#/">
+      //   <Link href="/">
       //     <Button variant={path.startsWith('/articles') || path === '/' ? 'normal' : 'link'}>
       //       Blog
       //     </Button>
       //   </Link>
-      //   <Link href="#/docs">
+      //   <Link href="/docs">
       //     <Button variant={path.startsWith('/docs') ? 'normal' : 'link'}>
       //       Addons
       //     </Button>

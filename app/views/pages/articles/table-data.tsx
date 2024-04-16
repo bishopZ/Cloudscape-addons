@@ -9,7 +9,7 @@ export const TABLE_COLUMNS: TableColumn<Article>[] = [
   {
     id: 'image',
     header: 'Image',
-    cell: item => <Link href={`#/articles/${item.slug}`}><img
+    cell: item => <Link href={`/articles/${item.slug}`}><img
       style={{ maxWidth: 110 }}
       alt=""
       src={item.image}
@@ -19,7 +19,7 @@ export const TABLE_COLUMNS: TableColumn<Article>[] = [
   {
     id: 'title',
     header: 'Title',
-    cell: item => <Link href={`#/articles/${item.slug}`}>
+    cell: item => <Link href={`/articles/${item.slug}`}>
       {item.title}
     </Link>,
     sortingField: 'title',

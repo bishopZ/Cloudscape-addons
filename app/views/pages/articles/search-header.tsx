@@ -22,7 +22,7 @@ const HeaderActions = () => {
   // const dispatch = useAppDispatch();
 
   return <SpaceBetween size="s" direction="horizontal">
-    <Link href="#/">
+    <Link href="/">
       <Button variant="primary">
         Browse
       </Button>

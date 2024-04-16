@@ -54,7 +54,7 @@ export const theme: Theme = {
 };
 
 export const topNav: TopNavigationProps.Identity = {
-  href: '#/',
+  href: '/',
   title: 'Bishop Z',
   logo: {
     src: 'assets/Jan-2016-bubble-v1_onwhite.gif',
