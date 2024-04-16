@@ -1,7 +1,6 @@
 import type { AppLayoutProps, BreadcrumbGroupProps } from '@cloudscape-design/components';
 
 import { deslugify } from '/addons/helpers/string-utils';
-// import { deslugify } from '/addons/helpers/string-utils';
 import type { ParamArticle, ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
 import { ArticleContainer } from '/views/pages/articles/article-container';
 import { BrowseArticles } from '/views/pages/articles/browse-page';
