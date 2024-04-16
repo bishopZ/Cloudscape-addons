@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const articles = require('./articles');
+const makeSitemap = require('./sitemap')
 const express = require('express')
 
 const HOST = 'localhost';
@@ -15,6 +16,8 @@ app.get('/api/articles', (request, response) => {
   response.setHeader('Access-Control-Allow-Origin', 'https://bishopz.com/');
   response.json(articles())
 })
+
+app.get('/sitemap.xml', makeSitemap)
 
 app.use(express.static(path.join(__dirname, '../public')));
 
