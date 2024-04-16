@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 
 import { LabeledValue } from '/addons/details/labeled-value';
 import { formatDate, inNotEmpty } from '/addons/helpers/string-utils';
-import { selectArticle, selectArticles } from '/data/articles';
+import { selectArticle } from '/data/articles';
 import { useAppSelector } from '/data/data-store';
 
 export const ArticleDetails = () => {

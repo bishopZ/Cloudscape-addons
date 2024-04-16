@@ -94,14 +94,25 @@ export const Layout = (props: Props) => {
     }
     const displayTitle = formattedTitle + POST_TITLE;
 
-    if (document) {
-      if (document.title !== displayTitle) document.title = displayTitle;
-      const descriptionLink = document.querySelector('meta[name="description"]')
-      descriptionLink?.setAttribute("content", formattedDescription as string);
-      console.log(formattedDescription)
+    if (document && document.title !== displayTitle) {
+      document.title = displayTitle;
+      document.querySelector('meta[property="og:title"]')?.setAttribute("content", displayTitle);
+      document.querySelector('meta[name="apple-mobile-web-app-title"]')?.setAttribute("content", displayTitle);
+      document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", displayTitle);
+
+      document.querySelector('meta[name="description"]')?.setAttribute("content", formattedDescription as string);
+      document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", formattedDescription as string);
+      document.querySelector('meta[property="og:description"]')?.setAttribute("content", formattedDescription as string);
+
+      document.querySelector('meta[property="og:url"]')?.setAttribute("content", params.slug!);
+
+      if (article) {
+        document.querySelector('meta[name="twitter:image"]')?.setAttribute("content", article.image);
+        document.querySelector('meta[property="og:image"]')?.setAttribute("content", article.image);
+      }
     }
 
-  }, [title, article]);
+  }, [title, description, article]);
 
   if (!initialized) return <Box margin={Spacing.L} textAlign="center">
     <LoadingSpinner />

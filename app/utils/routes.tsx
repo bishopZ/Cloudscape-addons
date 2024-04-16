@@ -26,9 +26,7 @@ export type RouteProps = {
   component: React.FC
 }
 
-const defaultDescription = 'Explore the intersection of technology and spirituality with Bishop Z\'s \
-  insightful articles and resources. Discover the power of AI and design systems, and learn \
-  how to integrate them into your daily work.';
+const defaultDescription = 'Explore technology with Bishop Z\'s insightful articles and resources. Discover the power of AI and design systems, and learn how to integrate them into your daily work.';
 
 // eslint-disable-next-line max-lines-per-function
 export const ROUTES = (): RouteProps[] => [
