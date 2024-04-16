@@ -8,8 +8,6 @@ const HOST = 'localhost';
 const PORT = process.env.PORT || 3000;
 const app = express()
 
-app.use('/', express.static(path.join(__dirname, '../public')))
-
 app.get('/api/articles', (request, response) => {
   console.log('sent articles')
   response.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
@@ -17,6 +15,8 @@ app.get('/api/articles', (request, response) => {
   response.setHeader('Access-Control-Allow-Origin', 'https://bishopz.com/');
   response.json(articles())
 })
+
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('*', (request, response) => {
   response.sendFile(path.join(__dirname, '../public/index.html'))
