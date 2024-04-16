@@ -1,5 +1,6 @@
-import { Button, Header, Link, SpaceBetween } from '@cloudscape-design/components';
+import { Button, Header, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { makeCounter } from '/addons/helpers/string-utils';
 import { getSelectedCount } from '/data/articles';
@@ -22,7 +23,7 @@ const HeaderActions = () => {
   // const dispatch = useAppDispatch();
 
   return <SpaceBetween size="s" direction="horizontal">
-    <Link href="/">
+    <Link to="/">
       <Button variant="primary">
         Browse
       </Button>

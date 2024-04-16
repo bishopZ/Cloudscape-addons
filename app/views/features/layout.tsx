@@ -11,16 +11,16 @@ import { LoadingSpinner } from '/addons/details/loading';
 import { layoutLabels } from '/addons/helpers/a11y-helpers';
 import { topNavStrings } from '/addons/helpers/i18n-helpers';
 import { Spacing } from '/addons/helpers/spacing-constants';
-import type { Breadcrumb, ParamArticle, ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
+import type { Breadcrumb, ParamArticle, ParamBreadcrumb } from '/addons/helpers/type-helpers';
+import { selectArticle } from '/data/articles';
 import { useAppDispatch, useAppSelector } from '/data/data-store';
 import { clearNotifications, selectNotifications } from '/data/notifications';
 import { changePreference, initPreferences, selectPreferences } from '/data/preferences';
-const { POST_TITLE } = require('../../data/constants');
 
+import { POST_TITLE } from '../../data/constants';
 import HelpPanelContent from './help-panel';
 import { theme, topNav, utilities } from './layout-data';
 import { Breadcrumbs, Navigation } from './navigation';
-import { selectArticle } from '/data/articles';
 
 type Props = {
   children: React.ReactNode
@@ -44,18 +44,14 @@ export const Layout = (props: Props) => {
   const { initialized, brightness, density, motion, tools } = useAppSelector(selectPreferences);
 
   useEffect(() => {
-    if (!initialized) void dispatch(initPreferences);
+    if (!initialized) dispatch(initPreferences);
   }, [initialized]);
 
   useEffect(() => {
     applyTheme({ theme });
 
-    if (brightness === 'light') {
-      applyMode(Mode.Light);
-    }
-    if (brightness === 'dark') {
-      applyMode(Mode.Dark);
-    }
+    if (brightness === 'light') applyMode(Mode.Light);
+    if (brightness === 'dark') applyMode(Mode.Dark);
     if (brightness === 'auto') {
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         applyMode(Mode.Dark);
@@ -63,13 +59,11 @@ export const Layout = (props: Props) => {
         applyMode(Mode.Light);
       }
     }
-
     if (density === 'compact') {
       applyDensity(Density.Compact);
     } else {
       applyDensity(Density.Comfortable);
     }
-
     if (motion === 'off') {
       disableMotion(true);
     } else {
@@ -96,22 +90,21 @@ export const Layout = (props: Props) => {
 
     if (document && document.title !== displayTitle) {
       document.title = displayTitle;
-      document.querySelector('meta[property="og:title"]')?.setAttribute("content", displayTitle);
-      document.querySelector('meta[name="apple-mobile-web-app-title"]')?.setAttribute("content", displayTitle);
-      document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", displayTitle);
+      document.querySelector('meta[property="og:title"]')?.setAttribute('content', displayTitle);
+      document.querySelector('meta[name="apple-mobile-web-app-title"]')?.setAttribute('content', displayTitle);
+      document.querySelector('meta[name="twitter:title"]')?.setAttribute('content', displayTitle);
 
-      document.querySelector('meta[name="description"]')?.setAttribute("content", formattedDescription as string);
-      document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", formattedDescription as string);
-      document.querySelector('meta[property="og:description"]')?.setAttribute("content", formattedDescription as string);
+      document.querySelector('meta[name="description"]')?.setAttribute('content', formattedDescription as string);
+      document.querySelector('meta[name="twitter:description"]')?.setAttribute('content', formattedDescription as string);
+      document.querySelector('meta[property="og:description"]')?.setAttribute('content', formattedDescription as string);
 
-      document.querySelector('meta[property="og:url"]')?.setAttribute("content", params.slug!);
+      document.querySelector('meta[property="og:url"]')?.setAttribute('content', params.slug!);
 
       if (article) {
-        document.querySelector('meta[name="twitter:image"]')?.setAttribute("content", article.image);
-        document.querySelector('meta[property="og:image"]')?.setAttribute("content", article.image);
+        document.querySelector('meta[name="twitter:image"]')?.setAttribute('content', article.image);
+        document.querySelector('meta[property="og:image"]')?.setAttribute('content', article.image);
       }
     }
-
   }, [title, description, article]);
 
   if (!initialized) return <Box margin={Spacing.L} textAlign="center">

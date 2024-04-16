@@ -1,7 +1,8 @@
 import {
-  Box, ColumnLayout, Container, ContentLayout, ExpandableSection, Header, Link, SpaceBetween, Table
+  Box, ColumnLayout, Container, ContentLayout, ExpandableSection, Header, SpaceBetween, Table
 } from '@cloudscape-design/components';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { Spacing } from '/addons/helpers/spacing-constants';
@@ -24,12 +25,12 @@ export const Resume = () => {
             companyLink="https://www.stellarelements.com/"
             duration="2 yrs 6 mos &bull; Seattle, Washington (remote)"
             logo="https://media.licdn.com/dms/image/D560BAQG-eXtmKYSbfQ/company-logo_100_100/0/1684789598663?e=1698883200&v=beta&t=xvGJ1_lKCNdONe0o4aXsPcKDqA80g0ar66aAOTqhx6s"
-            description={<SpaceBetween size='s'>
+            description={<SpaceBetween size="s">
               <p>
                 I had the opportunity to work exclusively on the Amazon account, where I was part of a team responsible for updating an in-production AWS service that spanned 26 global regions and ran in six languages. Our team of 2-5 engineers updated the service to a newer version of its design system and newer React and Redux coding patterns. As a key member of the team, I created a template for all new code on the project, wrote new contribution guidelines, an ESLint configuration, and a new automated testing framework using Cypress. These efforts not only improved the functionality and performance of the service but also enhanced the overall quality of the development process.
               </p>
               <p>
-                For the last three months, I researched ways to achieve engineering productivity enhancements using Large Lanugage Models (LLMs), and built the company's "thought leadership" platform, <Link href="/articles/matter-thought-leadership">MATTER</Link>.
+                For the last three months, I researched ways to achieve engineering productivity enhancements using Large Lanugage Models (LLMs), and built the company's "thought leadership" platform, <Link to="/articles/matter-thought-leadership">MATTER</Link>.
               </p>
             </SpaceBetween>}
           />
@@ -39,7 +40,7 @@ export const Resume = () => {
             companyLink="https://karshhagan.com"
             duration="3 yrs 5 mos &bull; Denver, Colorado"
             logo="https://media.licdn.com/dms/image/C4E0BAQFHx-M9LdTajA/company-logo_100_100/0/1569951228610?e=1698883200&v=beta&t=5xfY5OEUyyd_lIbV0UI6MpGQaA-uLVbs8V1_oduNKtk"
-            description={<SpaceBetween size='m'>
+            description={<SpaceBetween size="m">
               <Box variant="p">
                 As the Senior Creative Technologist at Karsh Hagan, I managed the technical aspects of over twenty accounts, including full-stack development on multiple architectures using React with Redux. My responsibilities included managing teams of domestic and foreign contract developers, building websites, take-overs, social media posts, mobile apps, voice apps, interactive prototypes, landing pages, animated microsites, and large content marketing websites. Additionally, I architected and built three web-based products with Node.js for an internal startup incubator, and collaborated with brand creatives to develop innovative marketing campaigns using design systems, personalization, chat bots, augmented reality (AR), webcam stream routing, animation-to-web pipelines, machine learning, blockchain, and more. I also created many starter templates for new website builds in diverse industries such as healthcare, energy, and consumer electronics. Furthermore, I acted as the official bug hunter on systems that had fallen out of repair.
 
@@ -47,10 +48,10 @@ export const Resume = () => {
               </Box>
               <Box variant="p">
                 Wrote several articles for the company website. [
-                <Link href="/articles/using-nfts-to-protect-creative-works">1</Link>,&nbsp;
-                <Link href="/articles/third-party-cookies">2</Link>]
+                <Link to="/articles/using-nfts-to-protect-creative-works">1</Link>,&nbsp;
+                <Link to="/articles/third-party-cookies">2</Link>]
                 {/* ,&nbsp; */}
-                {/* <Link href="/articles/redesigning-retail">3</Link>] */}
+                {/* <Link to="/articles/redesigning-retail">3</Link>] */}
               </Box>
               <Box
                 variant="p"
@@ -64,9 +65,9 @@ export const Resume = () => {
               </Box>
               <Box variant="p" padding={Spacing.LeftL}>
                 <em>
-                  <Link href="https://karshhagan.com/people/david-stewart" external>
+                  <ExternalLink href="https://karshhagan.com/people/david-stewart">
                     David Stewart
-                  </Link>
+                  </ExternalLink>
                   <br />VP of Creative Technology, Karsh Hagan
                 </em>
               </Box>
@@ -95,11 +96,11 @@ export const Resume = () => {
               companyLink="https://www.razorfish.com/"
               duration="1 yr 2 mos &bull; Austin, Texas"
               logo="https://media.licdn.com/dms/image/C560BAQFfYKn6of94Bw/company-logo_100_100/0/1549799977055?e=1698883200&v=beta&t=g1k2kXLwBDrlMQk8TM5YRSiGz8z-ApDvv_hfKbg5iK0"
-              description={<SpaceBetween size='s'>
-              <p>
+              description={<SpaceBetween size="s">
+                <p>
                 At razorfish, I used Javascript to build parts of a complex single-page application for the national product release of AT&T's Digital Life home automation system. Specifically, I architected and built a consumer-level, web-based, 3D modeling application with THREE.js. It enabled users to construct a 3D model of their home and their smart devices.
-              </p>
-              <p>
+                </p>
+                <p>
                 Digital Life in the news [<ExternalLink href="//engt.co/Ov1uBh">1</ExternalLink>, <ExternalLink href="//cnet.co/1Gl0ZQa">2</ExternalLink>, <ExternalLink href="//on-ajc.com/1C4FbUZ">3</ExternalLink>]
                 </p>
               </SpaceBetween>}

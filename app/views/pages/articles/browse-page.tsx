@@ -1,5 +1,6 @@
-import { Button, Cards, Header, Link } from '@cloudscape-design/components';
+import { Button, Cards, Header } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import { LoadingSpinner } from '/addons/details/loading';
 import { cardLabels, loadingText } from '/addons/helpers/a11y-helpers';
@@ -48,15 +49,16 @@ export const BrowseArticles = () => {
         <Header
           variant="h1"
           // description="I'm looking for new opportunities!"
-          info={<Link onFollow={() => {
-            dispatch(changePreference({
-              name: 'tools',
-              value: 'open'
-            }));
-          }}>
+          info={<Link to="#"
+            onClick={() => {
+              dispatch(changePreference({
+                name: 'tools',
+                value: 'open'
+              }));
+            }}>
           info
           </Link>}
-          actions={<Link href="/search">
+          actions={<Link to="/search">
             <Button variant="primary" iconName="search">
               Search
             </Button>

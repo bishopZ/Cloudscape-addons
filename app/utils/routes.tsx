@@ -1,7 +1,8 @@
 import type { AppLayoutProps, BreadcrumbGroupProps } from '@cloudscape-design/components';
 
-import { DEFAULT_LOCALE, deslugify } from '/addons/helpers/string-utils';
-import type { ParamArticle, ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
+import { deslugify } from '/addons/helpers/string-utils';
+import type { ParamArticle, ParamBreadcrumb } from '/addons/helpers/type-helpers';
+import { DEFAULT_DESCRIPTION } from '/data/constants';
 import { ArticleContainer } from '/views/pages/articles/article-container';
 import { BrowseArticles } from '/views/pages/articles/browse-page';
 import { Search } from '/views/pages/articles/search-page';
@@ -12,8 +13,6 @@ import { Exhibitions } from '/views/pages/exhibitions';
 // import { DocsContainer } from '/views/pages/docs/doc-container';
 // import { Docs } from '/views/pages/docs/getting-started';
 import { NotFound } from '/views/pages/not-found';
-
-const { DEFAULT_DESCRIPTION } = require('/data/constants')
 
 // import { Preview } from '/views/pages/preview';
 import { Resume } from '../views/pages/resume/resume';

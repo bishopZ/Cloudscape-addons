@@ -1,6 +1,6 @@
-import { ColumnLayout, Container, Header, Link, SpaceBetween } from '@cloudscape-design/components';
+import { ColumnLayout, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { LabeledValue } from '/addons/details/labeled-value';
@@ -21,7 +21,7 @@ export const DocsDetails = () => {
           {formatDate(article?.publicationDate)}
         </LabeledValue>
         <LabeledValue label="Section">
-          <Link href={`/articles/search/${article?.section}`}>
+          <Link to={`/articles/search/${article?.section}`}>
             {inNotEmpty(article?.section)}
           </Link>
         </LabeledValue>

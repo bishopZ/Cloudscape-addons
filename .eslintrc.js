@@ -25,7 +25,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:jsx-a11y/strict',
-    'plugin:@next/next/recommended'
   ],
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
@@ -211,8 +210,6 @@ module.exports = {
 
     'jsx-a11y/click-events-have-key-events': 'warn',
     'jsx-a11y/no-noninteractive-element-interactions': 'warn',
-
-    '@next/next/no-img-element': 'off'
 
   }
 }

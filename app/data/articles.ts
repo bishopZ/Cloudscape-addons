@@ -40,7 +40,7 @@ const add = (state: State, action: PayloadAction<Article[]>) => {
   state.initialized = true;
 };
 const select = (state: State, action: PayloadAction<Article[]>) => {
-  state.selectedItems = action.payload;
+  if (!state.initialized) state.selectedItems = action.payload;
 };
 
 export const articles = createSlice({
