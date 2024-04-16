@@ -21,7 +21,7 @@ app.get('/sitemap.xml', makeSitemap)
 
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.get('*', (request, response) => {
+app.get('/*', (request, response) => {
   response.sendFile(path.join(__dirname, '../public/index.html'))
 })
 

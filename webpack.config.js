@@ -28,7 +28,8 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'app/index.html',
+      template: path.resolve(__dirname, 'app/index.html'),
+      inject: false
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
