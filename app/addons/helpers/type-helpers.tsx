@@ -7,6 +7,7 @@ import type {
 } from '@cloudscape-design/components';
 import type { NonCancelableEventHandler } from '@cloudscape-design/components/internal/events';
 import type { Params } from 'react-router-dom';
+import { Article } from '/data/articles';
 
 export type GenericObject = Record<string, unknown>
 export type ValueOf<T> = T[keyof T]
@@ -68,3 +69,4 @@ export type WizardSteps = ReadonlyArray<WizardProps.Step>
 
 export type ParamBreadcrumb = (params: Readonly<Params<string>>) => BreadcrumbGroupProps.Item;
 export type ParamString = (params: Readonly<Params<string>>) => string;
+export type ParamArticle = (params: Readonly<Article>) => string;

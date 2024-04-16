@@ -3,7 +3,6 @@ import '/styles/prism.css';
 
 import React, { useMemo } from 'react';
 import { Provider } from 'react-redux';
-// import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import { store } from '/data/data-store';
 import { ROUTES } from '/utils/routes';
@@ -15,7 +14,6 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { BrowseArticles } from './pages/articles/browse-page';
 
 export const Application = () => {
   const routeMemo = useMemo(() => ROUTES, []);
@@ -23,7 +21,7 @@ export const Application = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       routeMemo().map(({
-        component: Component, contentType, path, title, breadcrumbs
+        component: Component, contentType, path, title, breadcrumbs, description
       }, index) =>
         <Route
           key={index}
@@ -32,7 +30,8 @@ export const Application = () => {
             <Layout
               breadcrumbs={breadcrumbs}
               contentType={contentType}
-              title={title}>
+              title={title}
+              description={description}>
               <Component />
             </Layout>
           }

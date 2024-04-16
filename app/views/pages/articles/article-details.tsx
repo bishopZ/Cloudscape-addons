@@ -4,13 +4,12 @@ import { useParams } from 'react-router-dom';
 
 import { LabeledValue } from '/addons/details/labeled-value';
 import { formatDate, inNotEmpty } from '/addons/helpers/string-utils';
-import { selectArticles } from '/data/articles';
+import { selectArticle, selectArticles } from '/data/articles';
 import { useAppSelector } from '/data/data-store';
 
 export const ArticleDetails = () => {
   const params = useParams();
-  const { items } = useAppSelector(selectArticles);
-  const article = items.find(item => item.slug === params.slug); // TODO move to the reducer
+  const article = useAppSelector(selectArticle(params.slug!));
 
   return <SpaceBetween size="m">
     <Container header={<Header variant="h2">Details</Header>}>

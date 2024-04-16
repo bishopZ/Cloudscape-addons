@@ -11,7 +11,7 @@ import { LoadingSpinner } from '/addons/details/loading';
 import { layoutLabels } from '/addons/helpers/a11y-helpers';
 import { topNavStrings } from '/addons/helpers/i18n-helpers';
 import { Spacing } from '/addons/helpers/spacing-constants';
-import type { Breadcrumb, ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
+import type { Breadcrumb, ParamArticle, ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
 import { useAppDispatch, useAppSelector } from '/data/data-store';
 import { clearNotifications, selectNotifications } from '/data/notifications';
 import { changePreference, initPreferences, selectPreferences } from '/data/preferences';
@@ -20,21 +20,25 @@ import { POST_TITLE } from '/utils/constants';
 import HelpPanelContent from './help-panel';
 import { theme, topNav, utilities } from './layout-data';
 import { Breadcrumbs, Navigation } from './navigation';
+import { selectArticle } from '/data/articles';
 
 type Props = {
   children: React.ReactNode
   breadcrumbs?: Array<Breadcrumb | ParamBreadcrumb>
   contentType: AppLayoutProps.ContentType
-  title: string | ParamString
+  title: string | ParamArticle
+  description: string | ParamArticle
 }
 
 let lastPath = '';
 
-export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => {
+export const Layout = (props: Props) => {
+  const { children, breadcrumbs, contentType, title, description } = props;
   const dispatch = useAppDispatch();
   const location = useLocation();
   const notifications = useAppSelector(selectNotifications);
   const params = useParams();
+  const article = useAppSelector(selectArticle(params.slug!));
   const path = location.pathname;
 
   const { initialized, brightness, density, motion, tools } = useAppSelector(selectPreferences);
@@ -83,10 +87,21 @@ export const Layout = ({ children, breadcrumbs, contentType, title }: Props) => 
 
   useEffect(() => {
     let formattedTitle = title;
-    if (typeof formattedTitle === 'function') formattedTitle = formattedTitle(params);
+    let formattedDescription = description;
+    if (article) {
+      if (typeof formattedTitle === 'function') formattedTitle = formattedTitle(article);
+      if (typeof formattedDescription === 'function') formattedDescription = formattedDescription(article);
+    }
     const displayTitle = formattedTitle + POST_TITLE;
-    if (document.title !== displayTitle) document.title = displayTitle;
-  }, [title]);
+
+    if (document) {
+      if (document.title !== displayTitle) document.title = displayTitle;
+      const descriptionLink = document.querySelector('meta[name="description"]')
+      descriptionLink?.setAttribute("content", formattedDescription as string);
+      console.log(formattedDescription)
+    }
+
+  }, [title, article]);
 
   if (!initialized) return <Box margin={Spacing.L} textAlign="center">
     <LoadingSpinner />

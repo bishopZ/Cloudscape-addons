@@ -2,7 +2,7 @@ import type { AppLayoutProps, BreadcrumbGroupProps } from '@cloudscape-design/co
 
 import { deslugify } from '/addons/helpers/string-utils';
 // import { deslugify } from '/addons/helpers/string-utils';
-import type { ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
+import type { ParamArticle, ParamBreadcrumb, ParamString } from '/addons/helpers/type-helpers';
 import { ArticleContainer } from '/views/pages/articles/article-container';
 import { BrowseArticles } from '/views/pages/articles/browse-page';
 import { Search } from '/views/pages/articles/search-page';
@@ -20,10 +20,13 @@ import { Resume } from '../views/pages/resume/resume';
 export type RouteProps = {
   contentType: AppLayoutProps.ContentType
   path: string
-  title: string | ParamString
+  title: string | ParamArticle
+  description: string | ParamArticle
   breadcrumbs: Array<BreadcrumbGroupProps.Item | ParamBreadcrumb>
   component: React.FC
 }
+
+const defaultDescription = 'Personal website of Bishop Zareh.';
 
 // eslint-disable-next-line max-lines-per-function
 export const ROUTES = (): RouteProps[] => [
@@ -61,6 +64,7 @@ export const ROUTES = (): RouteProps[] => [
   // }, {
     path: '/articles/:slug',
     title: params => deslugify(params.slug ?? 'Article'),
+    description: params => params.description ?? defaultDescription,
     contentType: 'default',
     component: ArticleContainer,
     breadcrumbs: [
@@ -69,6 +73,7 @@ export const ROUTES = (): RouteProps[] => [
   }, {
     path: '/:slug',
     title: 'Not found',
+    description: defaultDescription,
     contentType: 'default',
     component: NotFound,
     breadcrumbs: []
@@ -76,6 +81,7 @@ export const ROUTES = (): RouteProps[] => [
   {
     path: '/exhibitions',
     title: 'Show record',
+    description: defaultDescription,
     contentType: 'default',
     component: Exhibitions,
     breadcrumbs: []
@@ -83,12 +89,14 @@ export const ROUTES = (): RouteProps[] => [
   {
     path: '/resume',
     title: 'Resume',
+    description: defaultDescription,
     contentType: 'default',
     component: Resume,
     breadcrumbs: []
   }, {
     path: '/search',
     title: 'Search articles',
+    description: defaultDescription,
     contentType: 'default',
     component: Search,
     breadcrumbs: [
@@ -97,6 +105,7 @@ export const ROUTES = (): RouteProps[] => [
   }, {
     path: '/',
     title: 'Browse articles',
+    description: defaultDescription,
     contentType: 'default',
     component: BrowseArticles,
     breadcrumbs: []
