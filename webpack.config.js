@@ -96,7 +96,7 @@ const config = {
   },
 };
 
-export default async function main() {
+export default function main() {
   if (isProduction) {
     config.mode = 'production';
   } else {

@@ -199,4 +199,8 @@ h2, h3 {
   color: var(--light-blue);
   text-decoration: none;
   padding-left: 0.33rem;
+  &:hover {
+    color: var(--white);
+    text-decoration: underline;
+  }
 }
