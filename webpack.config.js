@@ -1,9 +1,14 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
+import path from 'path'
+import { fileURLToPath } from 'url';
+// import HtmlWebpackPlugin from 'html-webpack-plugin'
+import MiniCssExtractPlugin  from 'mini-css-extract-plugin'
+import CssMinimizerPlugin from "css-minimizer-webpack-plugin"
+import CopyPlugin from "copy-webpack-plugin"
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const isProduction = process.env.NODE_ENV === 'production';
-const CopyPlugin = require("copy-webpack-plugin");
 
 const config = {
   entry: [
@@ -27,10 +32,10 @@ const config = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'app/index.html'),
-      inject: false
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: path.resolve(__dirname, 'app/index.html'),
+    //   inject: false
+    // }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[name].css',
@@ -91,7 +96,7 @@ const config = {
   },
 };
 
-module.exports = () => {
+export default async function main() {
   if (isProduction) {
     config.mode = 'production';
   } else {

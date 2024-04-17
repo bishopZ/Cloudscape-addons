@@ -76,6 +76,7 @@ svg {
   display: block;
 }
 
+
 // typography
 
 html {
@@ -104,8 +105,8 @@ h2, h3 {
   font-weight: 700;
 }
 
-// utilities
 
+// utilities
 
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -116,7 +117,6 @@ h2, h3 {
   position: absolute;
   white-space: nowrap;
 }
-
 
 .hide { display: none; }
 
@@ -138,8 +138,6 @@ h2, h3 {
   white-space: nowrap;
   width: 1px;
 }
-
-
 
 .card-image {
   height: 120px;
@@ -179,7 +177,6 @@ h2, h3 {
   border-radius: 100%;
 }
 
-
 [class^='awsui_card-header_'] a:not(#\9),
 [class*='awsui_card-header_'] a:not(#\9) {
   white-space: nowrap;
@@ -195,4 +192,11 @@ h2, h3 {
 
 [class^='awsui_variant-default_'], [class*=' awsui_variant-default_'] {
   max-width: 1024px;
+}
+
+[class^='awsui_info'] a {
+  font-size: 0.8rem;
+  color: var(--light-blue);
+  text-decoration: none;
+  padding-left: 0.33rem;
 }

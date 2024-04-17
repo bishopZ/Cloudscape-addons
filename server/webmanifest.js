@@ -1,4 +1,5 @@
-module.exports = {
+
+export const webmanifest = {
   "name": "Bishop Z",
   "short_name": "Bishop Z",
   "description": "Explore technology with Bishop Z's insightful articles and resources. Discover the power of AI and design systems, and learn how to integrate them into your daily work.",

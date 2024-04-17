@@ -1,17 +1,29 @@
-// const http = require('http');
-// const fs = require('fs');
-const path = require('path');
-const articles = require('./articles');
-const makeSitemap = require('./sitemap')
-const express = require('express')
-const manifest = require('./webmanifest')
-const { engine } = require('express-handlebars');
-const { DEFAULT_TITLE, DEFAULT_DESCRIPTION, DEFAULT_IMAGE } = require('./constants');
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { articles } from './articles.js';
+import { makeSitemap } from './sitemap.js';
+import express from 'express';
+import { engine } from 'express-handlebars';
+import { DEFAULT_TITLE, DEFAULT_DESCRIPTION, DEFAULT_IMAGE } from './constants.js';
+import { webmanifest } from './webmanifest.js';
+import helmet from 'helmet';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const HOST = 'localhost';
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT ?? 3000;
 
 const app = express()
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      "script-src": ["'self'", "bishopz.com", "localhost", "'unsafe-eval'"],
+      "script-src-attr": ["'unsafe-inline'"],
+      "img-src": ["*"], // Allow images to be loaded from any source
+    },
+  },
+}));
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, '/views'));
@@ -31,7 +43,7 @@ app.get('/robots.txt', (req, res) => {
 
 app.get('/manifest.webmanifest', (req, res) => {
   res.type('application/manifest+json');
-  res.json(manifest);
+  res.json(webmanifest);
 })
 
 app.get('/sitemap.xml', makeSitemap)
@@ -40,7 +52,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/*', (req, res) => {
   console.log(req.path)
-  const article = articles().find(article => '/articles/' + article.slug === req.path) || {};
+  const article = articles().find(article => '/articles/' + article.slug === req.path) ?? {};
   res.render('index', {
     layout: false,
     title: article.title || DEFAULT_TITLE,

@@ -1,5 +1,5 @@
 
-module.exports = () => [
+export const articles = () => [
   // {
   //   slug: 'loading-states',
   //   title: 'Cloudscape loading states',

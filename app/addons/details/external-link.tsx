@@ -1,6 +1,5 @@
-import { Link as CSLink } from '@cloudscape-design/components';
+import { Link } from '@cloudscape-design/components';
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { externalIconAriaLabel } from '/addons/helpers/a11y-helpers';
 
@@ -15,12 +14,11 @@ export const ExternalLink = (props: Props) => {
     children
   } = props;
   return <>
-    <CSLink
+    <Link
+      href={href}
       external
       externalIconAriaLabel={externalIconAriaLabel}>
-      <Link to={href}>
-        {children}
-      </Link>
-    </CSLink>
+      {children}
+    </Link>
   </>;
 };

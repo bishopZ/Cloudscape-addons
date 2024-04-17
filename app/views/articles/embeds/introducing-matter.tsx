@@ -15,7 +15,7 @@ export const Matter = () => {
   return <Container media={{ content:
     <img src={article?.image} alt="" />
   }}>
-    <SpaceBetween size='m'>
+    <SpaceBetween size="m">
       <h2>What</h2>
       <p>
         MATTER is a thought leadership website that seeks to provide insightful content on topics relevant for years to come. The site is dedicated to exploring themes of horizontality, which refers to the idea of moving beyond traditional hierarchies and structures to create a more inclusive and diverse society. The site features experiential pieces created in collaboration with experts and visionaries from around the world, which aim to educate, engage, and provoke thought on topics such as the future of democracy, the intersection of strategy and marketing, and the role of artificial intelligence in productivity enhancement.
@@ -45,4 +45,4 @@ export const Matter = () => {
       </p>
     </SpaceBetween>
   </Container>;
-}
+};
