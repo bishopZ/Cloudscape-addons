@@ -284,7 +284,7 @@ export const articles = () => [
     title: 'MATTER: thought leadership',
     description: 'A Stellar Elements website, designed to provoke conversation around topics that\
       will be relevant for years to come.',
-    image: 'https://matter.stellarelements.com/images/Enigma-no-motion.webp',
+    image: 'https://matter.stellarelements.com/images/teaser-ai.jpg.webp',
     format: 'Website',
     topic: 'Thought leardership',
     discipline: 'Strategy',
@@ -293,7 +293,7 @@ export const articles = () => [
     author: 'many',
     publicationDate: new Date('Apr 10, 2024'),
     keywords: 'AI superapps customer journey orchestrations maps invisible design experience complexity\
-      gap analysis',
+      gap analysis CJO',
   },
   {
     slug: 'collaboration-tools-figma',
@@ -416,9 +416,55 @@ export const articles = () => [
     topic: 'Browsers',
     author: 'Bishop Zareh',
     publicationDate: new Date('Jul 19, 2021'),
-    keywords: 'w3c collection tracking advertising targeting search',
+    keywords: 'w3c collection tracking advertising targeting search seo google',
     views: 269
   }
+  // {
+  //   "_id": {
+  //     "$oid": "60e287ef7b744f001528deb7"
+  //   },
+  //   "updatedBy": {
+  //     "$oid": "60a95d6a0200b600159800b9"
+  //   },
+  //   "updatedAt": {
+  //     "$date": "2023-04-11T02:29:06.176Z"
+  //   },
+  //   "createdBy": {
+  //     "$oid": "60a95d6a0200b600159800b9"
+  //   },
+  //   "createdAt": {
+  //     "$date": "2021-07-05T04:17:51.246Z"
+  //   },
+  //   "pageTitle": "American Analog Set music video, “Come Home Julie”",
+  //   "slug": "american-analog-set-res-fest",
+  //   "title": "American Analog Set",
+  //   "images": [
+  //     {
+  //       "$oid": "60e288f67b744f001528deb8"
+  //     }
+  //   ],
+  //   "views": 261,
+  //   "state": "Visible",
+  //   "category": "Video",
+  //   "type": "slideshow",
+  //   "__v": 2,
+  //   "date": {
+  //     "$date": "2004-07-05T04:17:58.000Z"
+  //   },
+  //   "heroTitle": "American Analog Set music video,“Come Home Julie”",
+  //   "what": "<p>Music video for indie music group, American Analog Set.</p>\r\n<p><strong><a title=\"Come Home Julie by American Analog Set\" href=\"https://www.youtube.com/watch?v=1ifdpAE9Ggk\" target=\"_blank\" rel=\"noopener\">Watch the Video</a></strong></p>",
+  //   "who": "<p>2004 World premier, RESfest opening screening of SIGGRAPH</p>\r\n<p>Adobe Illustrator<br />Adobe After Effects</p>",
+  //   "why": "<p>A labor of love, 11 months of animating for the sheer joy of it.</p>",
+  //   "featuredImage": {
+  //     "url": "https://bishopz.s3.amazonaws.com/upload/american-analog-set-music-video.png",
+  //     "bucket": "bishopz",
+  //     "etag": "\"6c565e417bf19488340b70641dfa4e73\"",
+  //     "size": 156865,
+  //     "path": "/upload",
+  //     "filename": "american-analog-set-music-video.png",
+  //     "mimetype": "image/png"
+  //   }
+  // },
 
 ] .filter(item => {
   if (!item.publicationDate) return false;

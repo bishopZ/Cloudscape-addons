@@ -1,5 +1,4 @@
-import type { TableProps
-} from '@cloudscape-design/components';
+import type { TableProps } from '@cloudscape-design/components';
 import {
   Box, ExpandableSection, Grid,
 } from '@cloudscape-design/components';
@@ -38,7 +37,9 @@ export const skillColumns: TableProps.ColumnDefinition<Skill>[] = [{
   cell: item => {
     return item.areas?.map((area, index) =>
       <Grid key={index} gridDefinition={gridDefinition}>
-        <ExpandableSection headerText={area.name}>
+        <ExpandableSection
+          headerText={area.name}
+          defaultExpanded={area.name === 'Build system (web & mobile)'}>
           <Grid gridDefinition={innerGrid}>
             {area.skills.map((skillSet, setIndex) =>
               <Box
@@ -97,8 +98,8 @@ export const skills: Skill[] = [
     discipline: 'Frontend engineering', areas: [
       {
         name: 'Build system (web & mobile)', skills: [
-          ['Node.js', 'Express', 'Webpack', 'Gatsby', 'Next.js', 'Typescript', 'Sass'],
-          ['React', 'React Router', 'Redux Toolkit', 'React Hooks'],
+          ['Node.js', 'Express', 'Webpack', 'Gatsby', 'Next.js'],
+          ['Typescript', 'React', 'Redux Toolkit', 'Sass'],
           ['Android Studio', 'React Native', 'Cordova'],
         ]
       }, {
@@ -110,8 +111,8 @@ export const skills: Skill[] = [
       }, {
         name: 'Special effects (web)', skills: [
           ['Greensock', 'React Spring', 'React Transition Groups'],
-          ['THREE.js', 'D3.js', 'Canvas', 'WebGL'],
-          ['After Effects', 'Figma', 'Motion design']
+          ['THREE.js', 'D3.js', 'Canvas', 'WebGL', 'SVG'],
+          ['After Effects', 'Figma', 'Lottie', 'Motion design']
         ]
       }, {
         name: 'Quality assurance', skills: [

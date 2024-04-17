@@ -21,6 +21,7 @@ app.use(helmet({
       "script-src": ["'self'", "bishopz.com", "localhost", "'unsafe-eval'"],
       "script-src-attr": ["'unsafe-inline'"],
       "img-src": ["*"], // Allow images to be loaded from any source
+      "frame-src": ["'self'", "https://player.vimeo.com"], // Add Vimeo to frame-src
     },
   },
 }));
