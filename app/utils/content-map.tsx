@@ -24,6 +24,7 @@ import { StateManagement } from '/views/articles/embeds/state-management';
 import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
 import { TenetsPage } from '/views/pages/tenets/tenets-page';
 import { Matter } from '/views/articles/embeds/introducing-matter';
+import { ComeHomeJulie } from '/views/articles/embeds/come-home-julie';
 
 export const CONTENT_MAP = {
   'do-i-need-a-design-system': DoINeedArticle,
@@ -36,6 +37,7 @@ export const CONTENT_MAP = {
   'collaboration-tools-figma': FigmaArticle,
   'matter-thought-leadership': Matter,
   'design-system-maturity': MaturityArticle,
+  'american-analog-set-res-fest': ComeHomeJulie,
 
   // 'core-tenets': TenetsPage,
 

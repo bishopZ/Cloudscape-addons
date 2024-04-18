@@ -195,12 +195,12 @@ h2, h3 {
 }
 
 [class^='awsui_info'] a {
-  font-size: 0.8rem;
-  color: var(--light-blue);
+  font-size: 0.78rem;
+  color: #91D7F1; // same for light and dark mode
   text-decoration: none;
   padding-left: 0.33rem;
   &:hover {
-    color: var(--white);
+    color: #fff;
     text-decoration: underline;
   }
 }

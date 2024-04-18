@@ -20,7 +20,7 @@ export const Resume = () => {
       <Container header={<Header variant="h2">Experience</Header>}>
         <ColumnLayout borders="horizontal">
           <JobCard
-            title="Senior Frontend Engineer"
+            title="Senior Software Engineer, Frontend"
             company="Stellar Elements (Amdocs) &bull; Full-time"
             companyLink="https://www.stellarelements.com/"
             duration="2 yrs 6 mos &bull; Seattle, Washington (remote)"
