@@ -20,5 +20,5 @@
     // "allowJs": true,
   },
   "files": ["app/init.tsx"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx"],
 }

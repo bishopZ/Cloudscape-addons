@@ -280,6 +280,18 @@ export const articles = () => [
   //   scientist perfecting edge',
   // },
   {
+    slug: 'fourth-screen-screen-readers-frontend',
+    title: 'The 4th Screen: making Screen Readers part of your Frontend',
+    description: 'Eric Glasser wrote this great article about incorporating screen readers in to your frontend development process.',
+    image: 'https://www.biopticcoder.com/content/images/size/w2000/2023/12/DALL-E-2023-12-02-21.07.56---A-conceptual-image-representing-the-integration-of-screen-readers-in-web-design.-It-features-a-collage-of-four-screens_-desktop--mobile--tablet--and-a.png',
+    format: 'Article',
+    topic: 'Screen Readers',
+    discipline: 'Engineering',
+    section: 'Accessibility',
+    author: 'Eric Glasser',
+    publicationDate: new Date('Dec 2, 2023'),
+    keywords: 'Responsive accessibility frontend Inclusive Desktop Mobile Tablet Testing Empathy guidelines UX impaired Compliance checkbox Firsthand Principles Navigation Content hierarchy Descriptive links buttons practices',
+  }, {
     slug: 'matter-thought-leadership',
     title: 'MATTER: thought leadership',
     description: 'A Stellar Elements website, designed to provoke conversation around topics that\

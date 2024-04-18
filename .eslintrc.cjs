@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  ignorePatterns: ["*.json", ".eslintrc.js"],
+  ignorePatterns: ["*.json", "*.js", "*.cjs"],
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 'latest',

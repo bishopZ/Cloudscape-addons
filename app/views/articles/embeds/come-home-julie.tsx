@@ -6,13 +6,13 @@ import { ExternalLink } from '/addons/details/external-link';
 export const ComeHomeJulie = () => {
   return <Container
     media={{ content: <iframe
-      title="YouTube video of the music video"
+      title="YouTube video of the music video, 'Come Home Baby Julie, Come Home'"
       src="https://www.youtube.com/embed/1ifdpAE9Ggk?si=j1rs3ApnnkLBSLS-"
     /> }}>
     <SpaceBetween size="s">
       <h2>What</h2>
       <p>
-        Music video for the Austin-based indie rock band, American Analog Set. World premier at RESfest opening screening of SIGGRAPH 2004 at the Egyptian Theater in Los Angeles.
+        A music video for "Come Home Baby Julie, Come Home" by the late, Austin-based indie rock band, American Analog Set. World premier at the RESfest opening screening of SIGGRAPH 2004 in the Egyptian Theater, Los Angeles.
       </p>
       <p>
         <ExternalLink href="https://www.youtube.com/watch?v=1ifdpAE9Ggk">
