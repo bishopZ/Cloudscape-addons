@@ -29,7 +29,7 @@ export const FourthScreen = () => {
         <ExternalLink href="https://www.linkedin.com/in/ericglasser/">Eric Glasser</ExternalLink>
       </strong></p>
       <p>
-        Leading software engineer with over 10 years of experience in the cross-section of technology and business. Skilled in full stack development, I have a track record of delivering high-quality solutions that drive business growth. Specializing in developer experience, accessibility, and sustainable software architectures, with a passion for building technology that unlocks opportunities for everyone. My personal experience as a visually impaired developer fuels my commitment to inclusive design. Proven ability to lead cross-functional teams and drive innovation through combining people, process, and technology.
+        Eric Glasser is a seasoned software engineer with over a decade of experience at the intersection of technology and business. Recognized for his expertise in full stack development, Eric consistently delivers top-tier solutions that catalyze business growth. With a strong focus on developer experience, accessibility, and sustainable software architectures, he is deeply passionate about creating technology that opens doors for all.
       </p>
       <h2>Why</h2>
       <p>

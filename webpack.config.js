@@ -1,7 +1,7 @@
 
 import path from 'path'
 import { fileURLToPath } from 'url';
-// import HtmlWebpackPlugin from 'html-webpack-plugin'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin  from 'mini-css-extract-plugin'
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin"
 import CopyPlugin from "copy-webpack-plugin"
@@ -32,10 +32,10 @@ const config = {
     ],
   },
   plugins: [
-    // new HtmlWebpackPlugin({
-    //   template: path.resolve(__dirname, 'app/index.html'),
-    //   inject: false
-    // }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'app/index.html'),
+      inject: false
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[name].css',
