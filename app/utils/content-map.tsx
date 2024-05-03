@@ -22,13 +22,14 @@ import { ComeHomeJulie } from '/views/articles/embeds/come-home-julie';
 import { FourthScreen } from '/views/articles/embeds/fourth-screen';
 import { Matter } from '/views/articles/embeds/introducing-matter';
 import { NftCreativeWork } from '/views/articles/embeds/nft-creative-work';
+import { NNGGenUIOutcome } from '/views/articles/embeds/nng-genui-outcome';
 import { RedesigningRetail } from '/views/articles/embeds/redesigning-retail';
 import { StateManagement } from '/views/articles/embeds/state-management';
 import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
 // import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
-  'genui-outcome-design-nng': FourthScreen,
+  'genui-outcome-design-nng': NNGGenUIOutcome,
   'fourth-screen-screen-readers-frontend': FourthScreen,
   'do-i-need-a-design-system': DoINeedArticle,
   'from-any-to-unknown': FromAnyToUnknown,
