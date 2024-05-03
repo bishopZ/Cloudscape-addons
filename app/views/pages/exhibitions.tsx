@@ -4,14 +4,29 @@ import { Link } from 'react-router-dom';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { Spacing } from '/addons/helpers/spacing-constants';
+import { useAppDispatch } from '/data/data-store';
+import { changePreference } from '/data/preferences';
 
 /* eslint-disable max-len */
 export const Exhibitions = () => {
+  const dispatch = useAppDispatch();
   let videoHeight = 480;
   if (window.innerWidth < 1024) videoHeight = 240;
 
   return <ContentLayout
-    header={<Header variant="h1">Show record</Header>}>
+    header={<Header
+      variant="h1"
+      info={<Link to="#"
+        onClick={() => {
+          dispatch(changePreference({
+            name: 'tools',
+            value: 'open'
+          }));
+        }}>
+          info
+      </Link>}>
+      Show record
+    </Header>}>
     <SpaceBetween size="s">
       <Container
         header={<Header variant="h2">Select clients</Header>}

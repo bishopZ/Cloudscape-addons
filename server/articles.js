@@ -280,6 +280,18 @@ export const articles = () => [
   //   scientist perfecting edge',
   // },
   {
+    slug: 'genui-outcome-design-nng',
+    title: 'Design and Generative UI',
+    description: 'Diving into Neilson Norman Group\'s take on GenUI vs AI-assisted design.',
+    image: 'https://media.nngroup.com/media/articles/opengraph_images/GenUI-33.png',
+    format: 'Article',
+    topic: 'Generative UI',
+    discipline: 'Design',
+    section: 'Machine Learning',
+    author: 'Nielsen Norman Group',
+    publicationDate: new Date('May 3, 2024'),
+    keywords: 'AI systems Intent-based outcome specification User experience UX design Microinteractions Personalization Interaction paradigm Automation Strategic Final outcomes Human Informational Scalability',
+  }, {
     slug: 'fourth-screen-screen-readers-frontend',
     title: 'The Fourth Screen: making Screen Readers part of Frontend',
     description: 'Eric Glasser wrote this great article about incorporating screen readers in to your frontend development process.',

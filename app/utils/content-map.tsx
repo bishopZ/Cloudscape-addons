@@ -28,6 +28,7 @@ import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
 // import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
+  'genui-outcome-design-nng': FourthScreen,
   'fourth-screen-screen-readers-frontend': FourthScreen,
   'do-i-need-a-design-system': DoINeedArticle,
   'from-any-to-unknown': FromAnyToUnknown,

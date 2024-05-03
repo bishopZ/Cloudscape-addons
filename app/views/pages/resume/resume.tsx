@@ -6,14 +6,29 @@ import { Link } from 'react-router-dom';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { Spacing } from '/addons/helpers/spacing-constants';
+import { useAppDispatch } from '/data/data-store';
+import { changePreference } from '/data/preferences';
 
 import { JobCard } from '../../common/job-card';
 import { skillColumns, skills } from './skills';
 
 /* eslint-disable max-lines-per-function */
 export const Resume = () => {
+  const dispatch = useAppDispatch();
+
   return <ContentLayout
-    header={<Header variant="h1" description="I'm on the hunt for my next adventure!">
+    header={<Header
+      variant="h1"
+      description="I'm on the hunt for my next adventure!"
+      info={<Link to="#"
+        onClick={() => {
+          dispatch(changePreference({
+            name: 'tools',
+            value: 'open'
+          }));
+        }}>
+          info
+      </Link>}>
       Bishop Zareh
     </Header>}>
     <SpaceBetween size="s">

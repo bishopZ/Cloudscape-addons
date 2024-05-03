@@ -26,7 +26,7 @@ const initialState = {
   tools: 'closed',
   [PREFERENCES.ARTICLES]: {
     pageSizes: [10, 45, 100],
-    pageSize: 45,
+    pageSize: 10,
     wrapLines: false,
     columnWidth: [120, 250, 165, 0, 0, 150, 0], // for all columns
     contentSelection: [ // for visible columns
