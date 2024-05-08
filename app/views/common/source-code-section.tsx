@@ -9,9 +9,8 @@ type Props = {
 
 export const SourceCodeSection = (props: Props) => {
   const { source } = props;
-  const isDocs = location.hash.indexOf('/docs') !== -1;
-
-  if (!isDocs) return <></>;
+  // const isDocs = location.hash.indexOf('/docs') !== -1;
+  // if (!isDocs) return <></>;
 
   return <Container header={<SourceHeader source={source} />}>
     <ExpandableSection

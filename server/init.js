@@ -52,7 +52,7 @@ app.get('/sitemap.xml', makeSitemap)
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/*', (req, res) => {
-  console.log(req.path)
+  // console.log(req.path)
   const article = articles().find(article => '/articles/' + article.slug === req.path) ?? {};
   res.render('index', {
     layout: false,

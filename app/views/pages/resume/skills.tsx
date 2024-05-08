@@ -66,9 +66,9 @@ export const skills: Skill[] = [
     discipline: 'AI', areas: [
       {
         name: 'AI-assisted', skills: [
-          ['ChatGPT', 'Claude', 'Midjourney'],
-          ['LocalGPT', 'Edith'],
-          ['Dify.ai'],
+          ['AWS Bedrock', 'Mistral', 'Claude', 'ChatGPT'],
+          ['LocalGPT', 'Response Augmentation (RAG)'],
+          ['Stable Diffusion', 'Midjourney', 'LoRa'],
         ]
       }, {
         name: 'GenUI', skills: [

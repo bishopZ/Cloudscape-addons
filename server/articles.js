@@ -179,36 +179,6 @@ export const articles = () => [
   //   selector location uri aws sdk bucketname box makeS3Location addons',
   // },
   // {
-  //   slug: 'type-helpers',
-  //   title: 'Cloudscape Typescript helpers',
-  //   name: 'Typescript helpers',
-  //   description: 'A collection of Typescript definitions that make your code more readible.',
-  //   image: 'assets/chasm.jpg',
-  //   format: 'Documentation',
-  //   topic: 'Components',
-  //   discipline: 'Engineering',
-  //   section: 'Helpers',
-  //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 16, 2023'),
-  //   tenets: [1, 4],
-  //   keywords: 'addons definitions name internal intuitive readability generic shape non-cancelable preventdefault \
-  //   wrappers event handler definition list inference engine variables object fruits apple grape bland \
-  //   BreadcrumbGroupProps, ButtonDropdownProps, ButtonProps, CalendarProps, CardsProps, CheckboxProps, \
-  //   CollectionPreferencesProps, DateRangePickerProps, ExpandableSectionProps, FlashbarProps, GridProps, \
-  //   InputProps, LinkProps, ModalProps, MultiselectProps, NonCancelableCustomEvent, RadioGroupProps, \
-  //   SegmentedControlProps, SelectProps, SideNavigationProps, TableProps, TabsProps, TagEditorProps, \
-  //   TextFilterProps, TilesProps, ToggleProps, TokenGroupProps, WizardProps NonCancelableEventHandler \
-  //   GenericObject Record string unknown valueof keyof typeof buttonclick buttonfollow buttondropclick \
-  //   cardschange calendarchange checkboxchange columnwidthschange daterangechange expandablechange \
-  //   inputchange inputkeydetail linkfollow modaldismiss mutilselectchange preferenceconfirm \
-  //   radiochange rowclick sementedchange selectchange selectload sidenavchange sidenavfollow \
-  //   tabchange tableselectionchange tablesortchange tageditorchange textfilterchange tilechange \
-  //   tokendismiss togglechange wizardnavigate breadcrumb buttondropitems cardsdefinition \
-  //   cardSection cardslayout flashbarmessages griddefinition multiselectdoptions radioitems \
-  //   sidenavheader sidenavitems segmentedoptions tabs tags tablecolumn tileitems timerangeoptions \
-  //   tokenitems wizardsteps',
-  // },
-  // {
   //   slug: 'anatomy-of-a-design-system',
   //   title: 'Anatomy of a design system',
   //   description: 'A design system consists of several key elements that work together to provide a cohesive and standardized approach to digital design.',
@@ -280,6 +250,35 @@ export const articles = () => [
   //   scientist perfecting edge',
   // },
   {
+    slug: 'type-helpers',
+    title: 'Cloudscape type helpers',
+    description: 'A collection of Typescript definitions that make your code more readable.',
+    image: '/assets/clouds.webp',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Helpers',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('May 9, 2024'),
+    tenets: [1, 4],
+    keywords: 'addons definitions name internal intuitive readability generic shape non-cancelable preventdefault \
+    wrappers event handler definition list inference engine variables object fruits apple grape bland \
+    BreadcrumbGroupProps, ButtonDropdownProps, ButtonProps, CalendarProps, CardsProps, CheckboxProps, \
+    CollectionPreferencesProps, DateRangePickerProps, ExpandableSectionProps, FlashbarProps, GridProps, \
+    InputProps, LinkProps, ModalProps, MultiselectProps, NonCancelableCustomEvent, RadioGroupProps, \
+    SegmentedControlProps, SelectProps, SideNavigationProps, TableProps, TabsProps, TagEditorProps, \
+    TextFilterProps, TilesProps, ToggleProps, TokenGroupProps, WizardProps NonCancelableEventHandler \
+    GenericObject Record string unknown valueof keyof typeof buttonclick buttonfollow buttondropclick \
+    cardschange calendarchange checkboxchange columnwidthschange daterangechange expandablechange \
+    inputchange inputkeydetail linkfollow modaldismiss mutilselectchange preferenceconfirm \
+    radiochange rowclick sementedchange selectchange selectload sidenavchange sidenavfollow \
+    tabchange tableselectionchange tablesortchange tageditorchange textfilterchange tilechange \
+    tokendismiss togglechange wizardnavigate breadcrumb buttondropitems cardsdefinition \
+    cardSection cardslayout flashbarmessages griddefinition multiselectdoptions radioitems \
+    sidenavheader sidenavitems segmentedoptions tabs tags tablecolumn tileitems timerangeoptions \
+    tokenitems wizardsteps',
+  },
+  {
     slug: 'genui-outcome-design-nng',
     title: 'Design and Generative UI',
     description: 'Diving into Neilson Norman Group\'s take on GenUI vs AI-assisted design.',
@@ -289,7 +288,7 @@ export const articles = () => [
     discipline: 'Design',
     section: 'Machine Learning',
     author: 'Nielsen Norman Group',
-    publicationDate: new Date('May 3, 2024'),
+    publicationDate: new Date('Apr 23, 2024'),
     keywords: 'AI systems Intent-based outcome specification User experience UX design Microinteractions Personalization Interaction paradigm Automation Strategic Final outcomes Human Informational Scalability',
   }, {
     slug: 'fourth-screen-screen-readers-frontend',
