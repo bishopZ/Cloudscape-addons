@@ -253,7 +253,7 @@ export const articles = () => [
     slug: 'type-helpers',
     title: 'Cloudscape type helpers',
     description: 'A collection of Typescript definitions that make your code more readable.',
-    image: '/assets/clouds.png',
+    image: 'https://bishopz.s3.amazonaws.com/clouds.webp',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',
