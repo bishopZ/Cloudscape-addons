@@ -15,7 +15,8 @@ const config = {
     './app/init.tsx',
     './app/styles/styles.scss',
     './app/images/Jan-2016-bubble-v1_onwhite.gif',
-    './app/images/chasm.jpg'
+    './app/images/chasm.jpg',
+    './app/images/clouds.webp'
   ],
   output: {
     path: path.resolve(__dirname, 'public'),
