@@ -249,6 +249,20 @@ export const articles = () => [
   //   needs voice recruit adopters contributors heros future continuous improvement \
   //   scientist perfecting edge',
   // },
+{
+    slug: 'karsh-hagan-office-pet',
+    title: 'Creating Office Pet: my first Alexa Skill',
+    description: '',
+    image: 'https://bishopz.s3.amazonaws.com/upload/Karsh-Hagans-Office-Pet.png',
+    format: 'Application',
+    topic: 'Voice Interface',
+    discipline: 'Engineering',
+    section: '',
+    vendor: 'Amazon Alexa',
+    publicationDate: new Date('May 25, 2021'),
+    views: 346,
+    keywords: 'lambda aws echo dot Assistant Smart home skills ask device',
+  },
   {
     slug: 'type-helpers',
     title: 'Cloudscape type helpers',
