@@ -13,7 +13,7 @@ export const SyntheticData = () => {
   return <Container media={{
     content: <img src={article?.image} alt="" />
   }}>
-    <SpaceBetween size="s">
+    <SpaceBetween size="m">
       <h2>What</h2>
       <p>
         A few weeks ago, Google published an article exploring the
@@ -33,7 +33,7 @@ export const SyntheticData = () => {
           It's difficult to "ensuring the factuality ... of the data." Hallucinations in the training data create more hallucinations from the trained model. Biases also become amplified.
         </li>
         <li>
-          The synthetic data must "accurately reflects the complex patterns and relationships found in real-world data"
+          The synthetic data must "accurately reflects the complex patterns and relationships found in real-world data."
         </li>
         <li>
           It's possible for bad actors to create intentionally misleading training data in order to create LLMs that produce misinformation. "This can be particularly dangerous when synthetic data is used to impersonate real people, manipulate public opinion, or influence political processes."

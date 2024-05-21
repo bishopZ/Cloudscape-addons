@@ -260,7 +260,7 @@ export const articles = () => [
     section: 'Machine Learning',
     vendor: 'Google',
     publicationDate: new Date('May 21, 2024'),
-    keywords: 'ai ',
+    keywords: 'ai large language model training Natural Language Processing NLP Best practices quality Diversity Real-world validation Adversarial Ethical considerations Continuous improvement Monitoring evaluation Machine learning ML Natural language generation NLG augmentation robustness Ethics Bias mitigation Cultural sensitivity Testing evaluation frameworks',
   },
   {
     slug: 'karsh-hagan-office-pet',
@@ -274,7 +274,7 @@ export const articles = () => [
     vendor: 'Amazon Alexa',
     publicationDate: new Date('May 25, 2021'),
     views: 346,
-    keywords: 'lambda aws echo dot Assistant Smart home skills ask device',
+    keywords: 'lambda aws echo dot Assistant Smart home device ASK Skills Kit amazon',
   },
   {
     slug: 'type-helpers',
