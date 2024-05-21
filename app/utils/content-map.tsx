@@ -26,10 +26,12 @@ import { NNGGenUIOutcome } from '/views/articles/embeds/nng-genui-outcome';
 import { OfficePet } from '/views/articles/embeds/office-pet';
 import { RedesigningRetail } from '/views/articles/embeds/redesigning-retail';
 import { StateManagement } from '/views/articles/embeds/state-management';
+import { SyntheticData } from '/views/articles/embeds/synthetic-data';
 import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
 // import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
+  'synthetic-data-lessons-learned': SyntheticData,
   'karsh-hagan-office-pet': OfficePet,
   'genui-outcome-design-nng': NNGGenUIOutcome,
   'fourth-screen-screen-readers-frontend': FourthScreen,

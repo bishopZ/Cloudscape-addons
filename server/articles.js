@@ -249,10 +249,23 @@ export const articles = () => [
   //   needs voice recruit adopters contributors heros future continuous improvement \
   //   scientist perfecting edge',
   // },
-{
+  {
+    slug: 'synthetic-data-lessons-learned',
+    title: 'Synthetic data: lessons learned',
+    description: 'Google recently published an article about using generated data to train LLMs.',
+    image: 'https://bishopz.s3.amazonaws.com/2024/00009-651483004.webp',
+    format: 'Article',
+    topic: 'Synthetic Data',
+    discipline: 'Engineering',
+    section: 'Machine Learning',
+    vendor: 'Google',
+    publicationDate: new Date('May 21, 2024'),
+    keywords: 'ai ',
+  },
+  {
     slug: 'karsh-hagan-office-pet',
     title: 'Creating Office Pet: my first Alexa Skill',
-    description: '',
+    description: '"Office Pet" is Karsh Hagan\'s voice bot on Amazon\'s Alexa platform.',
     image: 'https://bishopz.s3.amazonaws.com/upload/Karsh-Hagans-Office-Pet.png',
     format: 'Application',
     topic: 'Voice Interface',

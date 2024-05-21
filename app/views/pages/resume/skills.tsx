@@ -133,8 +133,8 @@ export const skills: Skill[] = [
       }, {
         name: 'Cloud services', skills: [
           ['Git', 'Docker', 'Kubernetes'],
-          ['Lambda', 'CloudFormation', 'AWS Amplify', 'Heroku'],
-          ['Amazon Web Services', 'Google Cloud Platform', 'Netlify', 'Gitlab'],
+          ['Amazon Web Services', 'Google Cloud Platform', 'Heroku', 'Netlify', 'Gitlab'],
+          ['Lambda', 'CloudFormation', 'AWS Amplify'],
         ]
       }, {
         name: 'Databases', skills: [
