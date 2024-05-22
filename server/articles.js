@@ -278,7 +278,7 @@ export const articles = () => [
   },
   {
     slug: 'type-helpers',
-    title: 'Cloudscape type helpers',
+    title: 'Cloudscape TypeHelpers',
     description: 'A collection of Typescript definitions that make your code more readable.',
     image: 'https://bishopz.s3.amazonaws.com/clouds.webp',
     format: 'Documentation',
@@ -429,7 +429,7 @@ export const articles = () => [
   },
   {
     slug: "redesigning-retail",
-    title: "Redesigning retail",
+    title: "Redesigning retail for COVID",
     description: 'Even as retail establishments begin to open back up, one of the first things on everyone\'s mind is social distancing.',
     image: 'https://bishopz.s3.amazonaws.com/upload/Karsh-Hagan-New-Retail-header.jpg',
     format: 'Article',

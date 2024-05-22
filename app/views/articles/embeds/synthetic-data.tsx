@@ -42,14 +42,16 @@ export const SyntheticData = () => {
           We expect AIs to act according to common human values. This alignment comes as a byproduct of real-wold training data. Synthetic data may not have these values embedded in them. This can cause models to behave in ways that are "misaligned with human expectations."
         </li>
       </ul>
-      <h2>Who</h2>
-      <p>
-        Google Deep Mind
-      </p>
       <p>
         <ExternalLink href="https://arxiv.org/pdf/2404.07503">
           View the PDF
         </ExternalLink>
+      </p>
+      <h2>Who</h2>
+      <p>
+        Google DeepMind
+        <br />Stanford University
+        <br />Georgia Institute of Technology
       </p>
       <h2>Why</h2>
       <p>
@@ -59,12 +61,12 @@ export const SyntheticData = () => {
         content marketers now that a robot can do their homework.
       </p>
       <p>
-        Most LLMs, such as ChatGPT, Llama, and Claude, were training in-part by scraping
+        Most LLMs, such as ChatGPT, Llama, and Claude, were trained in-part by scraping
         text from websites. As people increase their use of LLMs to generate content for
         their websites, this source of text becomes increasingly synthetic.
       </p>
       <p>
-        Using scraped web content to train LLMs then amplifies the challenges this article points out- biases get amplified, hallucinations become real, and facts are replaced with convincing lies.
+        Using scraped web content to train LLMs amplifies the challenges this article points out- biases and hallucinations become become ingrained and facts are replaced with convincing lies.
       </p>
     </SpaceBetween>
   </Container>;
