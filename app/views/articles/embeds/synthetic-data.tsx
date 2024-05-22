@@ -30,10 +30,10 @@ export const SyntheticData = () => {
       </p>
       <ul>
         <li>
-          It's difficult to "ensuring the factuality ... of the data." Hallucinations in the training data create more hallucinations from the trained model. Biases also become amplified.
+          It's difficult to ensure "the factuality and fidelity of the data." Hallucinations in the training data create more hallucinations from the trained model. Biases also become amplified.
         </li>
         <li>
-          The synthetic data must "accurately reflects the complex patterns and relationships found in real-world data."
+          The synthetic data must "accurately reflect the complex patterns and relationships found in real-world data."
         </li>
         <li>
           It's possible for bad actors to create intentionally misleading training data in order to create LLMs that produce misinformation. "This can be particularly dangerous when synthetic data is used to impersonate real people, manipulate public opinion, or influence political processes."
@@ -55,9 +55,7 @@ export const SyntheticData = () => {
       </p>
       <h2>Why</h2>
       <p>
-        <ExternalLink href="https://www.forbes.com/sites/forbescommunicationscouncil/2023/12/22/artificial-intelligence-and-the-future-of-content-marketing/?sh=151a18e63e23">Many people</ExternalLink> have forcasted that AI will dramatically change the content marketing industry as
-        we know it. We've all read marketing articles that were devoid of actual content,
-        and those were written by humans. You can imagine the burden that is lifted from
+        <ExternalLink href="https://www.forbes.com/sites/forbescommunicationscouncil/2023/12/22/artificial-intelligence-and-the-future-of-content-marketing/?sh=151a18e63e23">Many people</ExternalLink> have forcasted that AI will dramatically change the content marketing industry as we know it. We've all read marketing articles that were devoid of actual content, and those were written by humans. You can imagine the burden that is lifted from
         content marketers now that a robot can do their homework.
       </p>
       <p>
