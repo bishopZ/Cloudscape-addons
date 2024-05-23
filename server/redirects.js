@@ -4,7 +4,7 @@ export const redirects = [
   ['/contact', '/resume'],
   ['/fantasy-data-viz-2017', '/'],
   ['/colorado-webcams', '/'],
-  ['/at-and-t-digital-life-web-3d', '/'],
+  ['/at-and-t-digital-life-web-3d', '/articles/att-digital-life-web-3d'],
   ['/karsh-hagan-first-on-site', '/'],
   ['/venice-tx-homeostasis-lab', '/'],
   ['/harvard-book-store-interactive-interface', '/'],

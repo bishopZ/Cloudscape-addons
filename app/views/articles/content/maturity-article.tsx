@@ -2,18 +2,17 @@ import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/compone
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import { selectArticles } from '/data/articles';
+import { selectArticle } from '/data/articles';
 import { useAppSelector } from '/data/data-store';
 import { makeHeaderImage } from '/utils/content-map';
 
 /* eslint-disable max-len */
 export const MaturityArticle = () => {
   const params = useParams();
-  const { items } = useAppSelector(selectArticles);
-  const article = items.find(item => item.slug === params.slug);
+  const item = useAppSelector(selectArticle(params.slug ?? ''));
 
   return <Container
-    media={makeHeaderImage(article?.image ?? '')}
+    media={makeHeaderImage(item?.image ?? '')}
     header={
       <Header variant="h2">How can I mature my design system?</Header>
     }>

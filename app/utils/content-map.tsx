@@ -28,6 +28,7 @@ import { RedesigningRetail } from '/views/articles/embeds/redesigning-retail';
 import { StateManagement } from '/views/articles/embeds/state-management';
 import { SyntheticData } from '/views/articles/embeds/synthetic-data';
 import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
+import { DigitalLife } from '/views/articles/slideshows/digital-life';
 // import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
@@ -45,6 +46,7 @@ export const CONTENT_MAP = {
   'collaboration-tools-figma': FigmaArticle,
   'matter-thought-leadership': Matter,
   'design-system-maturity': MaturityArticle,
+  'att-digital-life-web-3d': DigitalLife,
   'american-analog-set-res-fest': ComeHomeJulie,
 
   // 'core-tenets': TenetsPage,

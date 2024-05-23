@@ -3,17 +3,17 @@ import '/styles/prism.css';
 
 import React, { useMemo } from 'react';
 import { Provider } from 'react-redux';
-
-import { store } from '/data/data-store';
-import { ROUTES } from '/utils/routes';
-
-import { Layout } from './features/layout';
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom';
+
+import { store } from '/data/data-store';
+import { ROUTES } from '/utils/routes';
+
+import { Layout } from './features/layout';
 
 export const Application = () => {
   const routeMemo = useMemo(() => ROUTES, []);

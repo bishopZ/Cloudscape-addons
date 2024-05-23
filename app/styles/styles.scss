@@ -207,3 +207,23 @@ h2, h3 {
     text-decoration: underline;
   }
 }
+
+// slideshow
+
+.slick-slider {
+  padding: 35px;
+
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slick-next:before, .slick-prev:before {
+    color: black;
+  }
+  .slick-dots {
+    bottom: 25px;
+    left: -25px;
+  }
+}

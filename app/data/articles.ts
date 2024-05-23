@@ -24,6 +24,7 @@ export type Article = {
   tenets?: number[]
   referenceComponent?: string
   referenceLink?: string
+  images?: string[]
 }
 
 const initialState = {
