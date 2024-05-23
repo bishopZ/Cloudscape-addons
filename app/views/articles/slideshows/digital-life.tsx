@@ -1,6 +1,6 @@
 
 
-import { Container, Header, SpaceBetween } from '@cloudscape-design/components';
+import { Container, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Slider from 'react-slick';

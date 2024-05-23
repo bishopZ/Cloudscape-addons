@@ -22,7 +22,7 @@ app.use(helmet({
       "script-src": ["'self'", "bishopz.com", "localhost", "'unsafe-eval'"],
       "script-src-attr": ["'unsafe-inline'"],
       "img-src": ["*"], // Allow images to be loaded from any source
-      "frame-src": ["'self'", "https://player.vimeo.com", "https://www.youtube.com"], // Add Vimeo to frame-src
+      "frame-src": ["'self'", "https://player.vimeo.com", "https://www.youtube.com", "https://editor.p5js.org" ],
     },
   },
 }));

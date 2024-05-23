@@ -19,6 +19,7 @@ import { FigmaArticle } from '/views/articles/content/figma-article';
 import { MaturityArticle } from '/views/articles/content/maturity-article';
 import { FromAnyToUnknown } from '/views/articles/embeds/any-to-unknown';
 import { ComeHomeJulie } from '/views/articles/embeds/come-home-julie';
+import { FlockingBehavior } from '/views/articles/embeds/flocking-behavior';
 import { FourthScreen } from '/views/articles/embeds/fourth-screen';
 import { Matter } from '/views/articles/embeds/introducing-matter';
 import { NftCreativeWork } from '/views/articles/embeds/nft-creative-work';
@@ -47,6 +48,7 @@ export const CONTENT_MAP = {
   'matter-thought-leadership': Matter,
   'design-system-maturity': MaturityArticle,
   'att-digital-life-web-3d': DigitalLife,
+  'flocking-behavior-project': FlockingBehavior,
   'american-analog-set-res-fest': ComeHomeJulie,
 
   // 'core-tenets': TenetsPage,
