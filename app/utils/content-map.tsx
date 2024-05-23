@@ -74,7 +74,7 @@ export const makeHeaderImage = (path: string) => {
       src={path}
       alt="Article header"
     />,
-    height: 250,
+    height: 275,
     position: 'top' as 'top' | 'side'
   };
 };

@@ -7,6 +7,7 @@ import { engine } from 'express-handlebars';
 import { DEFAULT_TITLE, DEFAULT_DESCRIPTION, DEFAULT_IMAGE } from './constants.js';
 import { webmanifest } from './webmanifest.js';
 import helmet from 'helmet';
+import { redirects } from './redirects.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -28,6 +29,12 @@ app.use(helmet({
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, '/views'));
+
+redirects.forEach(redirect => {
+  app.get(redirect[0], (req, res) => {
+    res.redirect(redirect[1])
+  })
+})
 
 app.get('/api/articles', (req, res) => {
   console.log('sent articles')

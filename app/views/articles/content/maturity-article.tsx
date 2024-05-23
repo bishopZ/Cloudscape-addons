@@ -1,10 +1,10 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
-
-import { makeHeaderImage } from '/utils/content-map';
 import { useParams } from 'react-router-dom';
-import { useAppSelector } from '/data/data-store';
+
 import { selectArticles } from '/data/articles';
+import { useAppSelector } from '/data/data-store';
+import { makeHeaderImage } from '/utils/content-map';
 
 /* eslint-disable max-len */
 export const MaturityArticle = () => {

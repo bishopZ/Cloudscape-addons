@@ -233,22 +233,24 @@ export const articles = () => [
   //   growth nurturing mindset promise improving time healthy platform wise leader organization \
   //   guru guiding greatness evolving adapt',
   // },
-  // {
-  //   slug: 'design-system-maturity',
-  //   title: 'Maturing a design system',
-  //   description: 'How to advance the maturity of your design system.',
-  //   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/PENGUIN_LIFECYCLE_H.JPG/320px-PENGUIN_LIFECYCLE_H.JPG',
-  //   format: 'Article',
-  //   topic: 'Design systems',
-  //   discipline: 'Product',
-  //   section: 'Delivery',
-  //   author: 'Bishop Zareh',
-  //   publicationDate: new Date('Apr 4, 2024'),
-  //   keywords: 'game educate engage knowledge potential purpose \
-  //   benefits approach vision elighten colleagues two-way conversation users learn listen \
-  //   needs voice recruit adopters contributors heros future continuous improvement \
-  //   scientist perfecting edge',
-  // },
+
+  {
+    slug: 'design-system-maturity',
+    title: 'Maturing a design system',
+    description: 'How to advance the maturity of your design system.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/African_bush_elephants_%28Loxodonta_africana%29_female_with_six-week-old_baby.jpg/1024px-African_bush_elephants_%28Loxodonta_africana%29_female_with_six-week-old_baby.jpg?20180412131938',
+    // image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sable_antelope_%28Hippotragus_niger%29_adult_male.jpg/1024px-Sable_antelope_%28Hippotragus_niger%29_adult_male.jpg?20200316223927',
+    format: 'Article',
+    topic: 'Design systems',
+    discipline: 'Product',
+    section: 'Delivery',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('May 28, 2024'),
+    keywords: 'game educate engage knowledge potential purpose \
+    benefits approach vision elighten colleagues two-way conversation users learn listen \
+    needs voice recruit adopters contributors heros future continuous improvement \
+    scientist perfecting edge',
+  },
   {
     slug: 'synthetic-data-lessons-learned',
     title: 'Synthetic data: lessons learned',
@@ -258,13 +260,13 @@ export const articles = () => [
     topic: 'Synthetic Data',
     discipline: 'Engineering',
     section: 'Machine Learning',
-    vendor: 'Google',
+    vendor: 'Google DeepMind',
     publicationDate: new Date('May 21, 2024'),
     keywords: 'ai large language model training Natural Language Processing NLP Best practices quality Diversity Real-world validation Adversarial Ethical considerations Continuous improvement Monitoring evaluation Machine learning ML Natural language generation NLG augmentation robustness Ethics Bias mitigation Cultural sensitivity Testing evaluation frameworks',
   },
   {
     slug: 'karsh-hagan-office-pet',
-    title: 'Creating Office Pet: my first Alexa Skill',
+    title: 'Creating my first Alexa Skill',
     description: '"Office Pet" is Karsh Hagan\'s voice bot on Amazon\'s Alexa platform.',
     image: 'https://bishopz.s3.amazonaws.com/upload/Karsh-Hagans-Office-Pet.png',
     format: 'Application',
@@ -274,7 +276,7 @@ export const articles = () => [
     vendor: 'Amazon Alexa',
     publicationDate: new Date('May 25, 2021'),
     views: 346,
-    keywords: 'lambda aws echo dot Assistant Smart home device ASK Skills Kit amazon',
+    keywords: 'lambda aws echo dot Assistant Smart home device ASK Skills Kit',
   },
   {
     slug: 'type-helpers',
@@ -332,8 +334,8 @@ export const articles = () => [
   }, {
     slug: 'matter-thought-leadership',
     title: 'MATTER: thought leadership',
-    description: 'A Stellar Elements website, designed to provoke conversation around topics that\
-      will be relevant for years to come.',
+    description: 'A Stellar Elements website, designed to provoke conversation on topics that\'ll\
+      be relevant for years to come.',
     image: 'https://matter.stellarelements.com/images/beyond-horizontality.png.webp',
     format: 'Website',
     topic: 'Thought leardership',
@@ -365,7 +367,7 @@ export const articles = () => [
   {
     slug: 'bridging-the-chasm',
     title: 'Bridging the chasm',
-    description: 'Harmonious collaboration between design and development is crucial for crafting outstanding user experiences.',
+    description: 'Fostering harmonious collaboration between design and development is crucial for crafting outstanding user experiences.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Colaboraci%C3%B3n.jpg',
     format: 'Article',
     topic: 'Collaboration',
@@ -392,7 +394,7 @@ export const articles = () => [
     format: 'Article',
     discipline: 'Product',
     section: 'Tools',
-    topic: 'Design systems',
+    topic: 'Design System',
     author: 'Bishop Zareh',
     publicationDate: new Date('Dec 7, 2023'),
     keywords: 'key factors scale longevity necessary organization skilled design work system priority brand lifespan risks stability \
@@ -438,13 +440,13 @@ export const articles = () => [
     topic: 'Retail',
     author: 'Bishop Zareh',
     publicationDate: new Date('Feb 13, 2021'),
-    keywords: 'space covid shopping attitude customer',
+    keywords: 'space epidemic virus tourism shopping attitude customer',
     views: 241
   },
   {
     slug: "using-nfts-to-protect-creative-works",
     title: "Using NFTs to protect creative works",
-    description: 'Recently, a form of blockchain called NFTs, have made headlines in the art world for their record-breaking, multimillion dollar sales.',
+    description: 'NFTs have made headlines in the art world for their record-breaking, multimillion dollar sales.',
     image: 'https://bishopz.s3.amazonaws.com/upload/NFT_Graphic_L1-1__Article_Header_1.jpeg',
     format: 'Article',
     discipline: 'Engineering',
@@ -452,7 +454,7 @@ export const articles = () => [
     topic: 'NFTs',
     author: 'Bishop Zareh',
     publicationDate: new Date('March 21, 2021'),
-    keywords: 'cryptocurrrency art token theft ownership stewardship',
+    keywords: 'crypto currrency token theft ownership stewardship blockchain bitcoin ether',
     views: 331
   },
   {

@@ -55,7 +55,7 @@ export const SyntheticData = () => {
       </p>
       <h2>Why</h2>
       <p>
-        <ExternalLink href="https://www.forbes.com/sites/forbescommunicationscouncil/2023/12/22/artificial-intelligence-and-the-future-of-content-marketing/?sh=151a18e63e23">Many people</ExternalLink> have forcasted that AI will dramatically change the content marketing industry as we know it. We've all read marketing articles that were devoid of actual content, and those were written by humans. You can imagine the burden that is lifted from
+        <ExternalLink href="https://www.forbes.com/sites/forbescommunicationscouncil/2023/12/22/artificial-intelligence-and-the-future-of-content-marketing/?sh=151a18e63e23">Many people</ExternalLink> have forecasted that AI will dramatically change the content marketing industry as we know it. We've all read marketing articles that were devoid of actual content, and those were written by humans. You can imagine the burden that is lifted from
         content marketers now that a robot can do their homework.
       </p>
       <p>
