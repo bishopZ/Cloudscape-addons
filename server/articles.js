@@ -321,7 +321,7 @@ export const articles = () => [
     keywords: 'AI systems Intent-based outcome specification User experience UX design Microinteractions Personalization Interaction paradigm Automation Strategic Final outcomes Human Informational Scalability',
   }, {
     slug: 'fourth-screen-screen-readers-frontend',
-    title: 'The Fourth Screen: making Screen Readers part of Frontend',
+    title: 'Making Screen Readers part of Frontend',
     description: 'Eric Glasser wrote this great article about incorporating screen readers in to your frontend development process.',
     image: 'https://www.biopticcoder.com/content/images/size/w2000/2023/12/DALL-E-2023-12-02-21.07.56---A-conceptual-image-representing-the-integration-of-screen-readers-in-web-design.-It-features-a-collage-of-four-screens_-desktop--mobile--tablet--and-a.png',
     format: 'Article',

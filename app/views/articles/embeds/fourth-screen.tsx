@@ -8,7 +8,7 @@ import { useAppSelector } from '/data/data-store';
 
 export const FourthScreen = () => {
   const params = useParams();
-  const article = useAppSelector(selectArticle(params.slug!));
+  const article = useAppSelector(selectArticle(params.slug ?? ''));
 
   return <Container media={{
     content: <img src={article?.image} alt="" />

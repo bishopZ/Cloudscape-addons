@@ -19,9 +19,9 @@ const settings = {
 
 export const DigitalLife = () => {
   const params = useParams();
-  const item = useAppSelector(selectArticle(params.slug ?? ''));
+  const article = useAppSelector(selectArticle(params.slug ?? ''));
 
-  return <Container media={makeHeaderImage(item?.image ?? '')}>
+  return <Container media={makeHeaderImage(article?.image ?? '')}>
     <SpaceBetween size="xs">
       <h2>What</h2>
       <p>

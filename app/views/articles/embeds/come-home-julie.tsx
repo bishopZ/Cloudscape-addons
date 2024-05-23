@@ -1,14 +1,17 @@
 import { Container, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { selectArticle } from '/data/articles';
+import { useAppSelector } from '/data/data-store';
+import { makeHeaderImage } from '/utils/content-map';
 
 export const ComeHomeJulie = () => {
-  return <Container
-    media={{ content: <iframe
-      title="YouTube video of the music video, 'Come Home Baby Julie, Come Home'"
-      src="https://www.youtube.com/embed/1ifdpAE9Ggk?si=j1rs3ApnnkLBSLS-"
-    /> }}>
+  const params = useParams();
+  const article = useAppSelector(selectArticle(params.slug ?? ''));
+
+  return <Container media={makeHeaderImage(article?.image ?? '')}>
     <SpaceBetween size="s">
       <h2>What</h2>
       <p>
