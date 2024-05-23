@@ -14,7 +14,13 @@ export const FlockingBehavior = () => {
     <SpaceBetween size="xs">
       <h2>What</h2>
       <p>
-        P5.js is a creative coding and web visualization platform that offers millions of possibilities. I wanted to use P5 to create a interactive visualization that makes use of Karsh Hagan's iconic triangles.
+        Processing is a free graphics library and integrated development environment (IDE) built for the electronic arts, new media art, and visual design communities with the purpose of teaching non-programmers the fundamentals of computer programming in a visual context.
+      </p>
+      <p>
+        P5.js is a native JavaScript alternative to Processing.js that has the official support of the Processing Foundation. p5.js gained over 1.5 million users.
+      </p>
+      <p>
+        I wanted to use P5 to create a interactive visualization that makes use of Karsh Hagan's iconic triangles.
       </p>
       <h2>How</h2>
       <p>P5.js</p>

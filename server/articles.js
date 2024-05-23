@@ -374,7 +374,7 @@ export const articles = () => [
     discipline: 'Product',
     section: 'Tools',
     author: 'Bishop Zareh',
-    publicationDate: new Date('Dec 27, 2023'),
+    publicationDate: new Date('Jan 9, 2024'),
     keywords: 'software engineering divide potential bridge gap insights synergy design thinking agile \
     development methodologies collaborative tools integrated workflows digital innovation symbiotic relationship \
     professionals landscape diversity bootcamps worldwide framework pragmatic stragey evidence-based langauge \
@@ -396,7 +396,7 @@ export const articles = () => [
     section: 'Tools',
     topic: 'Design System',
     author: 'Bishop Zareh',
-    publicationDate: new Date('Dec 7, 2023'),
+    publicationDate: new Date('Dec 16, 2023'),
     keywords: 'key factors scale longevity necessary organization skilled design work system priority brand lifespan risks stability \
     choice options',
   },
@@ -497,7 +497,7 @@ export const articles = () => [
     topic: 'Web 3D',
     vendor: 'AT&T',
     author: 'Bishop Zareh',
-    publicationDate: new Date('May 31, 2021'),
+    publicationDate: new Date('Jun 6, 2021'),
     keywords: 'THREE.js Web3d Webgl interactive razorfish',
     images: [
       'https://bishopz.s3.amazonaws.com/upload/att-digital-life-1.png',
