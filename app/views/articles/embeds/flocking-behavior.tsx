@@ -25,8 +25,12 @@ export const FlockingBehavior = () => {
       <h2>How</h2>
       <p>P5.js</p>
       <h2>Why</h2>
-      <p>Flocking behavior is a natural phenomenon. From birds and bees, to drones and robots, this phenomenon has also found broad application in computer science.</p>
-      <p>The animation will never repeat, yet the way the triangles break off into new direction, then return to the flock, mirrors Karsh Hagan's company culture.</p>
+      <p>
+        Flocking behavior is a natural phenomenon, from birds and bees, to sheep and goats, this emergent behavior has also found broad application in computer science.
+      </p>
+      <p>
+        The animation will never repeat, yet the way the triangles break off into new direction, then return to the flock, mirrors Karsh Hagan's company culture.
+      </p>
     </SpaceBetween>
   </Container>;
 };

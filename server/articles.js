@@ -497,7 +497,7 @@ export const articles = () => [
     topic: 'Web 3D',
     vendor: 'AT&T',
     author: 'Bishop Zareh',
-    publicationDate: new Date('Jun 6, 2021'),
+    publicationDate: new Date('Jun 6, 2020'),
     keywords: 'THREE.js Web3d Webgl interactive razorfish',
     images: [
       'https://bishopz.s3.amazonaws.com/upload/att-digital-life-1.png',

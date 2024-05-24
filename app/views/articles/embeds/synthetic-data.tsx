@@ -65,7 +65,7 @@ export const SyntheticData = () => {
         their websites, this source of text becomes increasingly synthetic.
         </p>
         <p>
-        Using scraped web content to train LLMs amplifies the challenges this article points out- biases and hallucinations become become ingrained and facts are replaced with convincing lies.
+        Using scraped web content to train LLMs amplifies the challenges Google's article points out- biases and hallucinations become more ingrained and facts are replaced with convincing lies.
         </p>
       </SpaceBetween>
     </Container>
