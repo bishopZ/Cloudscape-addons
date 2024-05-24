@@ -253,7 +253,7 @@ export const articles = () => [
   {
     slug: 'synthetic-data-lessons-learned',
     title: 'Synthetic data: lessons learned',
-    description: 'Google recently published an article about using generated data to train LLMs.',
+    description: 'Exploring the limitations of using AI to generate training data for better AIs.',
     image: 'https://bishopz.s3.amazonaws.com/2024/00009-651483004.webp',
     format: 'Article',
     topic: 'Synthetic Data',
