@@ -1,14 +1,20 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { IconMap } from '/addons/helpers/icon-map';
+import { selectArticle } from '/data/articles';
+import { useAppSelector } from '/data/data-store';
 import { makeHeaderImage } from '/utils/content-map';
 import { PreviewHeader } from '/views/common/headers/preview-header';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 
 export const IconMapArticle = () => {
+  const params = useParams();
+  const article = useAppSelector(selectArticle(params.slug!));
+
   useEffect(() => {
     setTimeout(() => {
       if (window.Prism) window.Prism.highlightAll();
@@ -58,13 +64,13 @@ export const IconMap = () => {
 };`}
     />
     <Container
-      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
+      media={makeHeaderImage(article?.image ?? '')}
       header={<Header variant="h2">
         Introducing the IconMap
       </Header>}>
       <Box variant="p">
         Cloudscape includes
-        <ExternalLink href="https://cloudscape.design/components/icon/?tabId=api">a nice set of icons</ExternalLink>,
+        &nbsp;<ExternalLink href="https://cloudscape.design/components/icon/?tabId=api">a nice set of icons</ExternalLink>,
         however the documentation doesn't
         show a preview of those icons. All the names are listed, but finding the
         icon that matches your design, can take time.

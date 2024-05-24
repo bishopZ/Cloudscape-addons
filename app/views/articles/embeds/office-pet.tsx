@@ -16,16 +16,10 @@ export const OfficePet = () => {
     <SpaceBetween size="s">
       <h2>What</h2>
       <p>
-        "Office Pet" is Karsh Hagan's voice bot on Amazon's Alexa platform.
+        "Office Pet" was Karsh Hagan's voice bot on Amazon's Alexa platform.
       </p>
       <p>
-        You can ask it things like "Alexa, ask Office Pet, what's the Karsh Hagan motto?" and "Alexa, ask Office Pet, who is Pocky?"
-      </p>
-      <p>
-        To try it out- go to your Alexa Skill's interface and search for Karsh Hagan.
-      </p>
-      <p>
-        <ExternalLink href="https://www.amazon.ca/The-Karsh-Hagan-Office-Pet/dp/B07CVQ3NGP">See it on Amazon!</ExternalLink>
+        You could ask it things like "What's the Karsh Hagan motto?" and "Who is Pocky?"
       </p>
       <h2>How</h2>
       <p>

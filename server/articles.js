@@ -1,48 +1,6 @@
 
 export const articles = () => [
-  // {
-  //   slug: 'loading-states',
-  //   title: 'Cloudscape loading states',
-  //   name: 'Loading states',
-  //   description: 'Basic loading state components to expand the vocabulary of Cloudscape.',
-  //   image: 'assets/chasm.jpg',
-  //   format: 'Documentation',
-  //   topic: 'Components',
-  //   discipline: 'Engineering',
-  //   section: 'Details',
-  //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 3, 2023'),
-  //   tenets: [2],
-  //   referenceComponent: 'Spinner',
-  //   referenceLink: 'https://cloudscape.design/components/spinner/',
-  //   keywords: 'fancy code ndash mdash team Spinner loading optional generic state fetch medianame dashboard key \
-  //   value html addons',
-  // },
-  // {
-  //   slug: 'icon-map',
-  //   title: 'Cloudscape icon map',
-  //   name: 'Icon map',
-  //   description: 'Developer convenience component to aid in quickly finding the name of a particular icon.',
-  //   image: 'assets/chasm.jpg',
-  //   format: 'Documentation',
-  //   topic: 'Components',
-  //   discipline: 'Engineering',
-  //   section: 'Helpers',
-  //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 4, 2023'),
-  //   tenets: [0],
-  //   referenceComponent: 'Icon',
-  //   referenceLink: 'https://cloudscape.design/components/icon/',
-  //   keywords: 'icons set preview design simple find tool speed box grid spacebetween spacing plus \
-  //     double angle arrow left full audio half off bug call calendar caret filled right \
-  //     check contact close copy delete marker download drag indicator edit ellipsis envelope expand external \
-  //     file filter flag open folder group active heart insert row keyboard lock private menu \
-  //     microphone microphone multiscreen notification redo refresh remove resize area script search security \
-  //     settings share shrink status progress info negative pending positive stopped \
-  //     warning suggestions thumbs up ticket collapse \
-  //     treeview expand undo unlocked upload user profile user profile video on\
-  //     video unavailable view horizontal vertical zoom out to fit addons',
-  // },
+
   // {
   //   slug: 'labeled-input',
   //   title: 'Cloudscape labeled input',
@@ -82,28 +40,7 @@ export const articles = () => [
   //   text-status-success text-status-inactive box color loading empty dash display-l boxprops formfield \
   //   formfieldstrings loadingspinner status constraint description secondarycontrol stretch addons',
   // },
-  // {
-  //   slug: 'spacing-constants',
-  //   title: 'Cloudscape spacing constants',
-  //   name: 'Spacing constants',
-  //   description: 'Helper file for DRYing up the use of spacing objects in your project.',
-  //   image: 'assets/chasm.jpg',
-  //   format: 'Documentation',
-  //   topic: 'Components',
-  //   discipline: 'Engineering',
-  //   section: 'Helpers',
-  //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 5, 2023'),
-  //   tenets: [0, 1, 2],
-  //   referenceComponent: 'Dashboard',
-  //   referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
-  //   keywords: 'consistent interface box tool padding margin content DRY constants size xxs xs s m l xl xxl n medium\
-  //   large small horizontal vertical directions top left bottom right developers topxxlbottoms boxprops topn topxxs \
-  //   topn topxs tops topm topl topxl topxxl bottomn bottomxxs bottomxs bottoms bottomm bottoml bottomxl bottomxxl \
-  //   leftn leftxxs leftxs lefts leftm leftl leftxl leftxxl rightn rightxxs rightxs rights rightm rightl rightxl \
-  //   rightxxl verticaln verticalxxs verticalxs verticals verticalm verticall verticalxl verticalxxl horizontaln \
-  //   horizontalxxs horizontalxs horizontals horizontalm horizontall horizontalxl horizontalxxl none addons'
-  // },
+
   // {
   //   slug: 'generic-empty',
   //   title: 'Cloudscape generic empty',
@@ -141,6 +78,27 @@ export const articles = () => [
   //   keywords: 'formfield form field wrap details labeledvalue keyvalue key-value value consistent naming \
   //   box keyvalueprops label children addons',
   // },
+
+  // {
+//     slug: 'string-utils',
+//     title: 'Cloudscape string utilities',
+//     name: 'String utilities',
+//     description: 'A collection of localization-friendly string utility functions \
+//     for use with tables, dates, and S3 resources.',
+//     image: 'assets/chasm.jpg',
+//     format: 'Documentation',
+//     topic: 'Components',
+//     discipline: 'Engineering',
+//     section: 'Helpers',
+//     vendor: 'Cloudscape',
+//     publicationDate: new Date('Jun 4, 2024'),
+//     tenets: [0, 1, 2, 3],
+//     keywords: 'utilities localization internationalization l10n l18n multi-language addoptional form fields optional \
+//     label title translated heading-s inline-block ariarequired required formatdate absolute relativedash fallback \
+//     toLocaleDateString LOCALE year month day week minute second moment makecounter table header s3 resource \
+//     selector location uri aws sdk bucketname box makeS3Location addons',
+//   },
+
   // {
   //   slug: 'unsaved-changes-modal',
   //   title: 'Cloudscape unsaved changes modal',
@@ -159,25 +117,7 @@ export const articles = () => [
   //   keywords: 'unsavedchangesmodal comprehensive wizard ux designer pattern form value navigates page lost alert \
   //   box button spacebetween visible ondismiss onconfirm warning leave continue addons',
   // },
-  // {
-  //   slug: 'string-utils',
-  //   title: 'Cloudscape string utilities',
-  //   name: 'String utilities',
-  //   description: 'A collection of localization-friendly string utility functions \
-  //   for use with tables, dates, and S3 resources.',
-  //   image: 'assets/chasm.jpg',
-  //   format: 'Documentation',
-  //   topic: 'Components',
-  //   discipline: 'Engineering',
-  //   section: 'Helpers',
-  //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 14, 2023'),
-  //   tenets: [0, 1, 2, 3],
-  //   keywords: 'utilities localization internationlization l10n l18n multi-language addoptional form fields optional \
-  //   label title translated heading-s inline-block ariarequired required formatdate absolute relativedash fallback \
-  //   toLocaleDateString LOCALE year month day week minute second moment makecounter table header s3 resource \
-  //   selector location uri aws sdk bucketname box makeS3Location addons',
-  // },
+
   // {
   //   slug: 'anatomy-of-a-design-system',
   //   title: 'Anatomy of a design system',
@@ -234,6 +174,74 @@ export const articles = () => [
   //   guru guiding greatness evolving adapt',
   // },
 
+
+// {
+  //   slug: 'loading-states',
+  //   title: 'Cloudscape loading states',
+  //   name: 'Loading states',
+  //   description: 'Basic loading state components to expand the vocabulary of Cloudscape.',
+  //   image: 'assets/chasm.jpg',
+  //   format: 'Documentation',
+  //   topic: 'Components',
+  //   discipline: 'Engineering',
+  //   section: 'Details',
+  //   vendor: 'Cloudscape',
+  //   publicationDate: new Date('Jun 3, 2023'),
+  //   tenets: [2],
+  //   referenceComponent: 'Spinner',
+  //   referenceLink: 'https://cloudscape.design/components/spinner/',
+  //   keywords: 'fancy code ndash mdash team Spinner loading optional generic state fetch medianame dashboard key \
+  //   value html addons',
+  // },
+
+  // {
+  //   slug: 'cloudscape-icon-map',
+  //   title: 'Cloudscape icon map',
+  //   name: 'Icon map',
+  //   description: 'Developer convenience component to aid in quickly finding the name of a particular icon.',
+  //   image: 'https://bishopz.s3.amazonaws.com/2024/cloudscape-icon-map.webp',
+  //   format: 'Documentation',
+  //   topic: 'Components',
+  //   discipline: 'Engineering',
+  //   section: 'Helpers',
+  //   vendor: 'Cloudscape',
+  //   publicationDate: new Date('Jun 4, 2023'),
+  //   tenets: [0],
+  //   referenceComponent: 'Icon',
+  //   referenceLink: 'https://cloudscape.design/components/icon/',
+  //   keywords: 'icons set preview design simple find tool speed box grid spacebetween spacing plus \
+  //     double angle arrow left full audio half off bug call calendar caret filled right \
+  //     check contact close copy delete marker download drag indicator edit ellipsis envelope expand external \
+  //     file filter flag open folder group active heart insert row keyboard lock private menu \
+  //     microphone microphone multiscreen notification redo refresh remove resize area script search security \
+  //     settings share shrink status progress info negative pending positive stopped \
+  //     warning suggestions thumbs up ticket collapse \
+  //     treeview expand undo unlocked upload user profile user profile video on\
+  //     video unavailable view horizontal vertical zoom out to fit addons',
+  // },
+
+ {
+    slug: 'cloudscape-spacing-constants',
+    title: 'Cloudscape spacing constants',
+    name: 'Spacing constants',
+    description: 'Helper file for DRYing up the use of spacing objects in your application.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Harmonic_series_spacing_successive_octaves.png?20151008092642',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Helpers',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('Jun 4, 2024'),
+    tenets: [0, 1, 2],
+    referenceComponent: 'Dashboard',
+    referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
+    keywords: 'consistent interface helper box tool padding margin content DRY constants size xxs xs s m l xl xxl n medium\
+    large small horizontal vertical directions top left bottom right developers topxxlbottoms boxprops topn topxxs \
+    topn topxs tops topm topl topxl topxxl bottomn bottomxxs bottomxs bottoms bottomm bottoml bottomxl bottomxxl \
+    leftn leftxxs leftxs lefts leftm leftl leftxl leftxxl rightn rightxxs rightxs rights rightm rightl rightxl \
+    rightxxl verticaln verticalxxs verticalxs verticals verticalm verticall verticalxl verticalxxl horizontaln \
+    horizontalxxs horizontalxs horizontals horizontalm horizontall horizontalxl horizontalxxl none addons'
+  },
   {
     slug: 'growing-your-design-system',
     title: 'Growing your design system',
@@ -472,7 +480,7 @@ export const articles = () => [
   },
   {
     slug: "flocking-behavior-project",
-    title: "Flocking Behavior Project",
+    title: "P5 Flocking behavior project",
     description: 'P5.js is a creative coding and web visualization platform that offers millions of possibilities.',
     image: 'https://bishopz.s3.amazonaws.com/upload/flocking-behavior-project.png',
     format: 'Proof of Concept',

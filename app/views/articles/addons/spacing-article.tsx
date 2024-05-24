@@ -1,12 +1,18 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { selectArticle } from '/data/articles';
+import { useAppSelector } from '/data/data-store';
 import { makeHeaderImage } from '/utils/content-map';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
 /* eslint-disable max-lines-per-function */
 export const SpacingConstants = () => {
+  const params = useParams();
+  const article = useAppSelector(selectArticle(params.slug!));
+
   useEffect(() => {
     setTimeout(() => {
       if (window.Prism) window.Prism.highlightAll();
@@ -85,7 +91,7 @@ const SpacingConstant = {
 export const Spacing = SpacingConstant as Record<keyof typeof SpacingConstant, BoxProps.Spacing>;`}
     />
     <Container
-      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
+      media={makeHeaderImage(article?.image ?? '')}
       header={<Header variant="h2">
       Introducing the spacing constants
       </Header>}>
@@ -93,7 +99,7 @@ export const Spacing = SpacingConstant as Record<keyof typeof SpacingConstant, B
         <Box variant="p">
           The spacing constants provide a consistent interface to the Spacing
           property of Cloudscape's
-          <ExternalLink href="https://cloudscape.design/components/box/">Box component.</ExternalLink>
+          &nbsp;<ExternalLink href="https://cloudscape.design/components/box/">Box component.</ExternalLink>
           The Box component is the only tool in Cloudscapes arsenal that can add
           padding and margin to content. Since the Box component is so common,
           the Spacing constants warrent being DRYed up into a single constants

@@ -99,7 +99,7 @@ $ source sklearn-env/bin/activate  # activate
 $ pip install -U scikit-learn matplotlib
       `}</code></pre>
         <p>
-        sci-learn has many different methods for creating synthetic data. <code>make_regression</code> and <code>make_classification</code> are two of the most valuable, but this example focuses on <code>make_blobs</code>. With <code>make_blobs</code> the <code>centers</code> parameter controls the number of clustered data points to be generated.
+          <code>sci-learn</code> has many different methods for creating synthetic data. <code>make_regression</code> and <code>make_classification</code> are two of the most valuable, but this example focuses on <code>make_blobs</code>. With <code>make_blobs</code> the <code>centers</code> parameter controls the number of clustered data points to be generated.
         </p>
         <pre><code className="language-python">{`
 from sklearn.datasets import make_blobs

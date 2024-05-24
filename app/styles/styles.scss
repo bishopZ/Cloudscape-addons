@@ -208,6 +208,10 @@ h2, h3 {
   }
 }
 
+[class^='awsui_media'] img {
+  max-height: 500px;
+}
+
 // slideshow
 
 .slick-slider {
