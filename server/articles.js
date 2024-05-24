@@ -279,7 +279,7 @@ export const articles = () => [
     keywords: 'lambda aws echo dot Assistant Smart home device ASK Skills Kit',
   },
   {
-    slug: 'type-helpers',
+    slug: 'cloudscape-type-helpers',
     title: 'Cloudscape TypeHelpers',
     description: 'A collection of Typescript definitions that make your code more readable.',
     image: 'https://bishopz.s3.amazonaws.com/clouds.webp',

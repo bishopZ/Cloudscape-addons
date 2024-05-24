@@ -62,7 +62,7 @@ export const CONTENT_MAP = {
   // 'generic-empty': EmptyArticle,
   // 'unsaved-changes-modal': UnsavedArticle,
   // 'string-utils': StringArticle,
-  'type-helpers': TypeArticle,
+  'cloudscape-type-helpers': TypeArticle,
 
   // 'anatomy-of-a-design-system': AnatomyArticle,
   // 'documenting-a-design-system': DocumentingArticle,

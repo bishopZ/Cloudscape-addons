@@ -1,5 +1,7 @@
 import '@cloudscape-design/global-styles/index.css';
 import '/styles/prism.css';
+import '/styles/slick.min.css';
+import '/styles/slick-theme.min.css';
 
 import React, { useMemo } from 'react';
 import { Provider } from 'react-redux';

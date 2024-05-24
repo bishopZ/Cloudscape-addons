@@ -12,6 +12,8 @@ export const redirects = [
   ['/aspen-give-a-flake', '/'],
   ['/karsh-hagan-undercanvas', '/'],
   ['/rbg-x-hsl', 'https://vimeo.com/211040647'],
+
+  ['/articles/type-helpers', '/articles/cloudscape-type-helpers'],
   ['/at-and-t-digital-life-web-3d', '/articles/att-digital-life-web-3d'],
   ['/using-nfts-to-protect-creative-works', '/articles/using-nfts-to-protect-creative-works'],
   ['/american-analog-set-res-fest', '/articles/american-analog-set-res-fest'],

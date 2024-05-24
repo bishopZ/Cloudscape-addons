@@ -56,22 +56,19 @@ export const SyntheticData = () => {
         </p>
         <h2>Why</h2>
         <p>
-          <ExternalLink href="https://www.forbes.com/sites/forbescommunicationscouncil/2023/12/22/artificial-intelligence-and-the-future-of-content-marketing/?sh=151a18e63e23">Many people</ExternalLink> have forecasted that AI will dramatically change the content marketing industry as we know it. We've all read marketing articles that were devoid of actual content, and those were written by humans. You can imagine the burden that is lifted from
-        content marketers now that a robot can do their homework.
+          <ExternalLink href="https://www.forbes.com/sites/forbescommunicationscouncil/2023/12/22/artificial-intelligence-and-the-future-of-content-marketing/?sh=151a18e63e23">Many people</ExternalLink> have forecasted that AI will dramatically change the content marketing industry as we know it. We've all read marketing articles that were devoid of actual content, and those were written by humans. You can imagine the burden that is lifted from content marketers now that a robot can do their homework.
         </p>
         <p>
-        Most LLMs, such as ChatGPT, Llama, and Claude, were trained in-part by scraping
-        text from websites. As people increase their use of LLMs to generate content for
-        their websites, this source of text becomes increasingly synthetic.
+          Most LLMs, such as ChatGPT, Llama, and Claude, were trained in-part by scraping text from websites. As people increase their use of LLMs to generate content for their websites, this source of text becomes increasingly synthetic.
         </p>
         <p>
-        Using scraped web content to train LLMs amplifies the challenges Google's article points out- biases and hallucinations become more ingrained and facts are replaced with convincing lies.
+          Using scraped web content to train LLMs amplifies the challenges Google's article points out- biases and hallucinations become more ingrained and facts are replaced with convincing lies.
         </p>
       </SpaceBetween>
     </Container>
-    {/* <Container header={<Header variant="h2">How can I create synthetic data?</Header>}>
+    {/* <Container header={<Header variant="h2">How to create synthetic data</Header>}>
       <p>
-        Despite it's limitations and challenges, synthetic data is still an essential part of machine learning.
+        Despite it's limitations and challenges, synthetic data is still an essential part of learning machine learning.
       </p>
     </Container> */}
   </>;
