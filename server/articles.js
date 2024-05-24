@@ -235,11 +235,10 @@ export const articles = () => [
   // },
 
   {
-    slug: 'design-system-maturity',
-    title: 'Maturing a design system',
-    description: 'How to advance the maturity of your design system.',
+    slug: 'growing-your-design-system',
+    title: 'Growing your design system',
+    description: 'Exploring the intricacies of the process of maturing a design system.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/African_bush_elephants_%28Loxodonta_africana%29_female_with_six-week-old_baby.jpg/1024px-African_bush_elephants_%28Loxodonta_africana%29_female_with_six-week-old_baby.jpg?20180412131938',
-    // image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sable_antelope_%28Hippotragus_niger%29_adult_male.jpg/1024px-Sable_antelope_%28Hippotragus_niger%29_adult_male.jpg?20200316223927',
     format: 'Article',
     topic: 'Design systems',
     discipline: 'Product',
@@ -249,7 +248,7 @@ export const articles = () => [
     keywords: 'game educate engage knowledge potential purpose \
     benefits approach vision elighten colleagues two-way conversation users learn listen \
     needs voice recruit adopters contributors heros future continuous improvement \
-    scientist perfecting edge',
+    scientist perfecting edge evolve',
   },
   {
     slug: 'synthetic-data-lessons-learned',

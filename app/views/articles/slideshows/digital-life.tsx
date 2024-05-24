@@ -1,3 +1,5 @@
+import '/styles/slick.min.css';
+import '/styles/slick-theme.min.css';
 
 import { Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
@@ -41,9 +43,6 @@ export const DigitalLife = () => {
         To facilitate an seemless transition between the modeling and monitoring components of the user experience, we opted to employ THREE.js for rendering both aspects. By using the same technology in both scenarios, we ensured a fluid progression from designing one's home on a flat 2D blueprint to visualizing it in three dimensions as an immersive security dashboard.
       </p>
       <h3>How</h3>
-      <p>
-        THREE.js
-      </p>
       <p>
         With THREE.js, we could easily manipulate 3D models, apply materials and lighting, and leverage WebGL technology for rendering within the web browser - ensuring seamless compatibility across a wide landscape of devices.
       </p>

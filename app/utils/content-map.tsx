@@ -46,7 +46,7 @@ export const CONTENT_MAP = {
   'bridging-the-chasm': BridgingTheChasmContent,
   'collaboration-tools-figma': FigmaArticle,
   'matter-thought-leadership': Matter,
-  'design-system-maturity': MaturityArticle,
+  'growing-your-design-system': MaturityArticle,
   'att-digital-life-web-3d': DigitalLife,
   'flocking-behavior-project': FlockingBehavior,
   'american-analog-set-res-fest': ComeHomeJulie,
