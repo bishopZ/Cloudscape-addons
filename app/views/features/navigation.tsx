@@ -111,9 +111,28 @@ export const Navigation = () => {
       className="copyright"
       fontSize="body-s"
       color="text-status-inactive">
-      &copy; 2024 Bishop Zareh
-      <br />all rights reserved
-      <br />this site uses essential cookies.
+      <p>
+        This work is marked with
+        &nbsp;
+        <a
+          href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1"
+          target="_blank"
+          rel="license noopener noreferrer">
+          CC0 1.0
+        </a>
+        <>&nbsp;</>
+        <img
+          style={{ height: 20, width: 20, verticalAlign: 'middle' }}
+          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+          alt="" />
+        <>&nbsp;</>
+        <img
+          style={{ height: 20, width: 20, verticalAlign: 'middle' }}
+          src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"
+          alt="" />
+
+      </p>
+      <p>This site uses essential cookies.</p>
     </Box>
   </>;
 };

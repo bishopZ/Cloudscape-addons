@@ -32,7 +32,7 @@ export const Search = () => {
   const articlePrefs = preferences[PREFERENCES.ARTICLES];
   const preferencesFetched = preferences.initialized;
   useEffect(() => {
-    if (!preferencesFetched) void dispatch(initPreferences);
+    if (!preferencesFetched) dispatch(initPreferences);
   }, [preferencesFetched]);
   TABLE_COLUMNS.forEach((column, index) => {
     column.width = articlePrefs.columnWidth[index];
