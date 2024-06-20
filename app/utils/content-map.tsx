@@ -26,6 +26,7 @@ import { NftCreativeWork } from '/views/articles/embeds/nft-creative-work';
 import { NNGGenUIOutcome } from '/views/articles/embeds/nng-genui-outcome';
 import { OfficePet } from '/views/articles/embeds/office-pet';
 import { RedesigningRetail } from '/views/articles/embeds/redesigning-retail';
+import { SoftwareEngineeringAI } from '/views/articles/embeds/software-engineering-and-ai';
 import { StateManagement } from '/views/articles/embeds/state-management';
 import { SyntheticData } from '/views/articles/embeds/synthetic-data';
 import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
@@ -33,6 +34,7 @@ import { DigitalLife } from '/views/articles/slideshows/digital-life';
 // import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
+  'software-engineering-and-ai': SoftwareEngineeringAI,
   'synthetic-data-lessons-learned': SyntheticData,
   'karsh-hagan-office-pet': OfficePet,
   'genui-outcome-design-nng': NNGGenUIOutcome,

@@ -219,8 +219,21 @@ export const articles = () => [
   //     treeview expand undo unlocked upload user profile user profile video on\
   //     video unavailable view horizontal vertical zoom out to fit addons',
   // },
-
- {
+  {
+    slug: 'software-engineering-and-ai',
+    title: 'Software engineering and AI',
+    description: 'A deep dive into the current state of AI-assisted Software Engineering and Generative UI.',
+    image: 'https://reactdenver.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fqp40pp1s%2Fdevelopment%2Fa64f718eeb0f20a595111a599a59b174f7a607e7-800x709.webp%3Fw%3D800%26auto%3Dformat&w=3840&q=75',
+    format: 'Presentation',
+    discipline: 'Engineering',
+    section: 'Machine Learning',
+    topic: 'AI-assisted Engineering',
+    vendor: '',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Jun 20, 2024'),
+    keywords: 'swe artificial intelligence python benchmark machine learning bad code',
+  },
+  {
     slug: 'cloudscape-spacing-constants',
     title: 'Cloudscape spacing constants',
     name: 'Spacing constants',
@@ -231,7 +244,7 @@ export const articles = () => [
     discipline: 'Engineering',
     section: 'Helpers',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Jun 4, 2024'),
+    publicationDate: new Date('Jun 3, 2024'),
     tenets: [0, 1, 2],
     referenceComponent: 'Dashboard',
     referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
@@ -346,7 +359,7 @@ export const articles = () => [
     image: 'https://matter.stellarelements.com/images/beyond-horizontality.png.webp',
     format: 'Case Study',
     topic: 'Thought leardership',
-    discipline: 'Strategy',
+    discipline: 'Engineering',
     section: 'Case Studies',
     vendor: 'Stellar Elements',
     author: 'many',
@@ -424,7 +437,7 @@ export const articles = () => [
   },
   {
     slug: 'state-management:-the-missing-manual',
-    title: "React state management: the missing manual",
+    title: "React state management",
     description: 'A side-by-side analysis of the three main state management tools in React, useState, useContext and useReducer.',
     image: 'https://bishopz.s3.amazonaws.com/upload/architectures3.png',
     format: 'Presentation',
@@ -452,7 +465,7 @@ export const articles = () => [
   },
   {
     slug: "using-nfts-to-protect-creative-works",
-    title: "Using NFTs to protect creative works",
+    title: "NFTs protect creative works",
     description: 'NFTs have made headlines in the art world for their record-breaking, multimillion dollar sales.',
     image: 'https://bishopz.s3.amazonaws.com/upload/NFT_Graphic_L1-1__Article_Header_1.jpeg',
     format: 'Article',
@@ -466,7 +479,7 @@ export const articles = () => [
   },
   {
     slug: "third-party-cookies",
-    title: "Why are Third Party Cookies going away?",
+    title: "Third Party Cookies and privacy",
     description: '79% of consumers feel concerned about how companies are using the data they collect.',
     image: 'https://bishopz.s3.amazonaws.com/upload/cookies_hero_right.png',
     format: 'Article',
@@ -480,7 +493,7 @@ export const articles = () => [
   },
   {
     slug: "flocking-behavior-project",
-    title: "P5 Flocking behavior project",
+    title: "P5 flocking behavior project",
     description: 'P5.js is a creative coding and web visualization platform that offers millions of possibilities.',
     image: 'https://bishopz.s3.amazonaws.com/upload/flocking-behavior-project.png',
     format: 'Proof of Concept',

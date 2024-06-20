@@ -30,9 +30,8 @@ export const SyntheticData = () => {
         best practices and lessons learned from "Synthetic data." Synthetic data
         is the use of Large Language Models (LLMs) to generate training data
         for other LLMs- using AI to train better AIs.
-        </p>
-        <p>
-        It covers three key areas where synthetic data can be used, evaluation, training, and reasoning, and highlights the challenges and limitations associated with its use. Overall, the article emphasizes the importance of carefully considering these factors when working with synthetic data in language modeling applications.
+
+        It covers three key areas where synthetic data can be used, evaluation, training, and reasoning, and highlights the challenges and limitations associated with its use.
         </p>
         <p>
         Synthetic data can be an effective supplement or alternative to real-world data for training Large Language Models (LLMs). However, below are some of the challenges with
@@ -84,11 +83,11 @@ export const SyntheticData = () => {
         Synthetic data provides a controlled environment for training and evaluating LLMs that is consistent and repeatable. This can be particularly useful in the early stages of model development, where it's important to gain a deep understanding of how the model behaves.
         </p>
         <p>
-        LLMs require vast quantities of training data to achieve good performance. Synthetic data can be used to augment existing datasetsin a more cost-effective way. Synthetic data can also be generated in-house, reducing reliance on external data sources and minimizing costs associated with purchasing or licensing data.
+        LLMs require vast quantities of training data to achieve good performance. Synthetic data can be used to augment existing datasets in a cost-effective way. Synthetic data can also be generated in-house, reducing reliance on external data sources and minimizing costs associated with purchasing or licensing data.
         </p>
       </SpaceBetween>
     </Container>
-    <Container header={<Header variant="h2">How to create synthetic data with scikit-learn</Header>}>
+    <Container header={<Header variant="h2">How to create synthetic data with Python</Header>}>
       <SpaceBetween size="m">
         <p>
         Before you begin, you will need to install the sklearn package. It's recommended to also use a virtual environment (venv).
@@ -116,7 +115,9 @@ features, target = make_blobs(
 print('features ', features[:3])
 print('target ', target[:3])
       `}</code></pre>
-        <p>We can then see the distibution with the <code>matplotlib</code> library.</p>
+        <p>
+          We can then see the distibution of clusters by using the <code>matplotlib</code> library.
+        </p>
         <pre><code className="language-python">{`
 import matplotlib.pyplot as plot
 
