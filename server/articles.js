@@ -194,31 +194,31 @@ export const articles = () => [
   //   value html addons',
   // },
 
-  // {
-  //   slug: 'cloudscape-icon-map',
-  //   title: 'Cloudscape icon map',
-  //   name: 'Icon map',
-  //   description: 'Developer convenience component to aid in quickly finding the name of a particular icon.',
-  //   image: 'https://bishopz.s3.amazonaws.com/2024/cloudscape-icon-map.webp',
-  //   format: 'Documentation',
-  //   topic: 'Components',
-  //   discipline: 'Engineering',
-  //   section: 'Helpers',
-  //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 4, 2023'),
-  //   tenets: [0],
-  //   referenceComponent: 'Icon',
-  //   referenceLink: 'https://cloudscape.design/components/icon/',
-  //   keywords: 'icons set preview design simple find tool speed box grid spacebetween spacing plus \
-  //     double angle arrow left full audio half off bug call calendar caret filled right \
-  //     check contact close copy delete marker download drag indicator edit ellipsis envelope expand external \
-  //     file filter flag open folder group active heart insert row keyboard lock private menu \
-  //     microphone microphone multiscreen notification redo refresh remove resize area script search security \
-  //     settings share shrink status progress info negative pending positive stopped \
-  //     warning suggestions thumbs up ticket collapse \
-  //     treeview expand undo unlocked upload user profile user profile video on\
-  //     video unavailable view horizontal vertical zoom out to fit addons',
-  // },
+  {
+    slug: 'cloudscape-icon-map',
+    title: 'Cloudscape icon map',
+    name: 'Icon map',
+    description: 'Developer convenience component to aid in quickly finding the name of a particular icon.',
+    image: 'https://bishopz.s3.amazonaws.com/2024/cloudscape-icon-map.webp',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Helpers',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('Aug 10, 2024'),
+    tenets: [0],
+    referenceComponent: 'Icon',
+    referenceLink: 'https://cloudscape.design/components/icon/',
+    keywords: 'icons set preview design simple find tool speed box grid spacebetween spacing plus \
+      double angle arrow left full audio half off bug call calendar caret filled right \
+      check contact close copy delete marker download drag indicator edit ellipsis envelope expand external \
+      file filter flag open folder group active heart insert row keyboard lock private menu \
+      microphone microphone multiscreen notification redo refresh remove resize area script search security \
+      settings share shrink status progress info negative pending positive stopped \
+      warning suggestions thumbs up ticket collapse \
+      treeview expand undo unlocked upload user profile user profile video on\
+      video unavailable view horizontal vertical zoom out to fit addons',
+  },
   {
     slug: 'software-engineering-and-ai',
     title: 'Software engineering and AI',
