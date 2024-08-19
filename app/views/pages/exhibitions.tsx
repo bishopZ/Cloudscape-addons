@@ -65,6 +65,7 @@ export const Exhibitions = () => {
         <p>2009 Conference presenter, “The history of tomorrow's interfaces” Motion Graphics Festival - Boston, Washington DC, Austin</p>
       </Container>
       <Container header={<Header variant="h2">Awards</Header>}>
+        <p>2024 Awwwards Site of the Day Nominee, Awwwards.com (<ExternalLink href="https://www.awwwards.com/sites/matter-3">MATTER</ExternalLink>)</p>
         <p>2019 The 50, AdClub of Colorado (<ExternalLink href="//karshhagan.com/case-studies/aspen-snowmass">Aspen Give a Fl*ke Twitter bot</ExternalLink>)</p>
         <p>2016 Audience Award for Best Narrative Feature, San Antonio Film Festival ("Second Impression" directed by Wallace Weatherspoon)</p>
         <p>2014 Arts Grant Recipient, Burning Flipside (Meditation Deathmatch)</p>
