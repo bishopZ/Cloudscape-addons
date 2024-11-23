@@ -46,12 +46,12 @@ export const Exhibitions = () => {
           • Citibank • MIT • SAIC • Leo Burnett
           • Mayo Clinic • Aspen Snow Mass • Harvard Book Store
           • Arrow Electronics • Blackberry
-          • General Mills • General Motors • AT&T • TD Ameritrade
+          • General Mills • General Motors • AT&T • TD Ameritrade • Vertafore • Amdocs
           • Anchutz Medical Campus • University of Chicago • Cambridge Office of Tourism
           • Fiske Planetarium • Denver International Airport
         </Box>
       </Container>
-      <Container header={<Header variant="h2">Public speaking</Header>}>
+        <p>2024 User Group Presenter, <Link to="/articles/software-engineering-and-ai">"AI and Software Engineering"</Link> React Denver - Denver, CO</p>
         <p>2023 User Group Presenter, <Link to="/articles/state-management:-the-missing-manual">"State management: the missing manual"</Link> React Denver - Denver, CO</p>
         <p>2023 User Group Presenter, <Link to="/articles/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>
         <p>2023 User Group Presenter, "Life as an engineer at Amazon" <ExternalLink href="//reactdenver.com/">React Denver</ExternalLink> - Denver, CO</p>

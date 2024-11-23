@@ -35,6 +35,17 @@ export const Resume = () => {
       <Container header={<Header variant="h2">Experience</Header>}>
         <ColumnLayout borders="horizontal">
           <JobCard
+            title="Senior Frontend Architect"
+            company="Vertafore &bull; Full-time"
+            companyLink="https://www.vertsafore.com/"
+            duration="Jul 2024 - Present &bull; Seattle, Washington (remote)"
+            logo="https://media.licdn.com/dms/image/v2/C4D0BAQEuzgQT1Dmzjw/company-logo_100_100/company-logo_100_100/0/1651184196480/vertafore_logo?e=1740614400&v=beta&t=0yXCuYbGmeEigrMMaH5OLpv7yJnjsafw2woCobzZ8qY"
+            description={<SpaceBetween size="s">
+              <p>
+                Work with designers and engineers to develop the company's design system, ensuring fast and consistent work across ten different product teams.
+              </p>
+            </SpaceBetween>}
+          /><JobCard
             title="Senior Software Engineer, Frontend"
             company="Stellar Elements (Amdocs) &bull; Full-time"
             companyLink="https://www.stellarelements.com/"
