@@ -19,7 +19,7 @@ export const Resume = () => {
   return <ContentLayout
     header={<Header
       variant="h1"
-      description="I'm on the hunt for my next adventure!"
+      // description="I'm on the hunt for my next adventure!"
       info={<Link to="#"
         onClick={() => {
           dispatch(changePreference({
@@ -38,7 +38,7 @@ export const Resume = () => {
             title="Senior Frontend Architect"
             company="Vertafore &bull; Full-time"
             companyLink="https://www.vertsafore.com/"
-            duration="Jul 2024 - Present &bull; Seattle, Washington (remote)"
+            duration="Jul 2024 - Present &bull; Denver, Colorado"
             logo="https://media.licdn.com/dms/image/v2/C4D0BAQEuzgQT1Dmzjw/company-logo_100_100/company-logo_100_100/0/1651184196480/vertafore_logo?e=1740614400&v=beta&t=0yXCuYbGmeEigrMMaH5OLpv7yJnjsafw2woCobzZ8qY"
             description={<SpaceBetween size="s">
               <p>

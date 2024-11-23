@@ -139,7 +139,7 @@ export const makeS3Location = (location: string) => {
           format across the site. Whether they show up in a table cell or on a Dashboard,
           they should be in the same format. The Addon's formatDate helper ensures
           consistent formatting in a way that works with internationalization. It also
-          uses the Dash component as a smart fallback.
+          uses the Empty component as a smart fallback.
         </Box>
         <pre><code className="language-javascript">{`export const DEFAULT_LOCALE = 'en-us';
 

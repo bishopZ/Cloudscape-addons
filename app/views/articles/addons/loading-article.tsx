@@ -37,7 +37,7 @@ export const LoadingSpinner = ({ mediaName }: Props) => <>
     <Container
       media={makeHeaderImage(article?.image ?? '')}
       header={<Header variant="h2">
-      Introducing Dash
+      Introducing Empty
       </Header>}>
       <SpaceBetween size="s">
         <Box variant="p">

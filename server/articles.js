@@ -493,7 +493,7 @@ export const articles = () => [
   },
   {
     slug: "flocking-behavior-project",
-    title: "P5 flocking behavior project",
+    title: "P5.js flocking behavior project",
     description: 'P5.js is a creative coding and web visualization platform that offers millions of possibilities.',
     image: 'https://bishopz.s3.amazonaws.com/upload/flocking-behavior-project.png',
     format: 'Proof of Concept',

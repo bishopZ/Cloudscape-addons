@@ -106,7 +106,7 @@ switch (status) {
         <Box variant="p">
           LabeledNumber also creates a loading and empty state for the number
           property, using the
-          &nbsp;<Link href="/docs/loading-states">Loading spinner and Dash addons</Link>.
+          &nbsp;<Link href="/docs/loading-states">Loading spinner and Empty addons</Link>.
         </Box>
         <pre><code className="language-javascript">{`
 type Props = {
