@@ -26,7 +26,7 @@ export const LoadingArticle = () => {
     <SourceCodeSection source={`import { Spinner } from '@cloudscape-design/components';
 import React from 'react';
 
-export const Dash = () => <>&ndash;</>;
+export const Empty = () => <>&ndash;</>;
 
 type Props = { mediaName?: string }
 
@@ -44,12 +44,12 @@ export const LoadingSpinner = ({ mediaName }: Props) => <>
           Cloudscape Addon's proudly announces this stunning piece of code!
         </Box>
         <pre><code className="language-javascript">
-          {'export const Dash = () => <>&ndash;</>;'}
+          {'export const Empty = () => <>&ndash;</>;'}
         </code></pre>
         <Box variant="p">
-          The Dash component isn't about fancy code. Of course, a developer can
+          The Empty component isn't about fancy code. A developer can easily
           write <code className="language-javascript">{'&ndash;'}</code> instead
-          of <code className="language-javascript">{'<Dash />'}</code>,
+          of <code className="language-javascript">{'<Empty />'}</code>,
           but that requires every developer on
           the project to remember the difference
           between <code className="language-javascript">{'&ndash;'}</code> and
@@ -59,8 +59,9 @@ export const LoadingSpinner = ({ mediaName }: Props) => <>
           so that the same solution is used every time.
         </Box>
         <Box variant="p">
-          Dash is especially useful on details pages when not every item has a
-          value. The Dash component becomes the vocabulary word for "no value exists."
+          Empty is especially useful on details pages when not every item has a
+          value. The Empty component becomes the design system's vocabulary word
+          for "no value exists."
         </Box>
       </SpaceBetween>
     </Container>

@@ -191,7 +191,7 @@ export const articles = () => [
     referenceComponent: 'Spinner',
     referenceLink: 'https://cloudscape.design/components/spinner/',
     keywords: 'fancy code ndash mdash team Spinner loading optional generic state fetch medianame dashboard key \
-    value html addons',
+    value html addons empty zero value',
   },
 
   {
@@ -265,7 +265,7 @@ export const articles = () => [
     discipline: 'Product',
     section: 'Delivery',
     author: 'Bishop Zareh',
-    publicationDate: new Date('May 28, 2024'),
+    publicationDate: new Date('May 28, 2025'),
     keywords: 'game educate engage knowledge potential purpose \
     benefits approach vision elighten colleagues two-way conversation users learn listen \
     needs voice recruit adopters contributors heros future continuous improvement \
