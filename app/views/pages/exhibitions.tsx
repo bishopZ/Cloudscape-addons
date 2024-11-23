@@ -80,6 +80,7 @@ export const Exhibitions = () => {
         <p>1998 Innovation in Art and Technology, Texas Interactive Multimedia Awards (Kill The President)</p>
       </Container>
       <Container header={<Header variant="h2">Art exhibitions</Header>}>
+        <p>2024 Performance artist, Summer Scream, itchy-O, Lakeside Amusement Park - Denver, CO</p>
         <p>2024 Projection artist, Intergalactic Mascarade, itchy-O, The Summit - Denver, CO</p>
         <p>2024 Visual coordinator, <ExternalLink href="//www.youtube.com/watch?v=Uh42Zpoobyc">"Söm Sãptälahn"</ExternalLink> (2 shows), itchy-O, Fiske Planetarium - Boulder, CO</p>
         <p>2023 Projection artist, <ExternalLink href="//www.westword.com/music/itchy-o-brings-spooktacular-halloween-concerts-to-mercury-cafe-in-denver-18101046">"Hallowmass"</ExternalLink> (10 shows) itchy-O, Mercury Cafe - Denver, CO</p>

@@ -175,24 +175,24 @@ export const articles = () => [
   // },
 
 
-// {
-  //   slug: 'loading-states',
-  //   title: 'Cloudscape loading states',
-  //   name: 'Loading states',
-  //   description: 'Basic loading state components to expand the vocabulary of Cloudscape.',
-  //   image: 'assets/chasm.jpg',
-  //   format: 'Documentation',
-  //   topic: 'Components',
-  //   discipline: 'Engineering',
-  //   section: 'Details',
-  //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 3, 2023'),
-  //   tenets: [2],
-  //   referenceComponent: 'Spinner',
-  //   referenceLink: 'https://cloudscape.design/components/spinner/',
-  //   keywords: 'fancy code ndash mdash team Spinner loading optional generic state fetch medianame dashboard key \
-  //   value html addons',
-  // },
+{
+    slug: 'loading-states',
+    title: 'Cloudscape loading states',
+    name: 'Loading states',
+    description: 'Basic loading state components to expand the vocabulary of Cloudscape.',
+    image: 'assets/chasm.jpg',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Details',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('Oct 3, 2024'),
+    tenets: [2],
+    referenceComponent: 'Spinner',
+    referenceLink: 'https://cloudscape.design/components/spinner/',
+    keywords: 'fancy code ndash mdash team Spinner loading optional generic state fetch medianame dashboard key \
+    value html addons',
+  },
 
   {
     slug: 'cloudscape-icon-map',
