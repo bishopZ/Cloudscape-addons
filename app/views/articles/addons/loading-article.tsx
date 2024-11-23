@@ -1,8 +1,11 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { LoadingSpinner } from '/addons/details/loading';
+import { selectArticle } from '/data/articles';
+import { useAppSelector } from '/data/data-store';
 import { makeHeaderImage } from '/utils/content-map';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
@@ -10,6 +13,9 @@ import { PreviewHeader } from '../../common/headers/preview-header';
 import { LoadingPreview } from '../previews/loading-preview';
 
 export const LoadingArticle = () => {
+  const params = useParams();
+  const article = useAppSelector(selectArticle(params.slug!));
+
   useEffect(() => {
     setTimeout(() => {
       if (window.Prism) window.Prism.highlightAll();
@@ -29,7 +35,7 @@ export const LoadingSpinner = ({ mediaName }: Props) => <>
   <>&nbsp;Loading {mediaName ?? ''}</>
 </>;`} />
     <Container
-      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
+      media={makeHeaderImage(article?.image ?? '')}
       header={<Header variant="h2">
       Introducing Dash
       </Header>}>
