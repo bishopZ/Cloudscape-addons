@@ -116,7 +116,7 @@ export const skills: Skill[] = [
         ]
       }, {
         name: 'Quality assurance', skills: [
-          ['Cypress', 'Jest'],
+          ['Cypress', 'React Testing Library'],
           ['ESLint', 'Static code analysis'],
           ['Accessibility (WCAG 3)', 'Localization (i18n)'],
         ]
