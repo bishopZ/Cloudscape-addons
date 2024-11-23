@@ -47,7 +47,7 @@ export const LoadingSpinner = ({ mediaName }: Props) => <>
           {'export const Empty = () => <>&ndash;</>;'}
         </code></pre>
         <Box variant="p">
-          The Empty component isn't about fancy code. A developer can easily
+          The Empty component isn't about writing fancy code. Of course, any developer can easily
           write <code className="language-javascript">{'&ndash;'}</code> instead
           of <code className="language-javascript">{'<Empty />'}</code>,
           but that requires every developer on
@@ -55,7 +55,7 @@ export const LoadingSpinner = ({ mediaName }: Props) => <>
           between <code className="language-javascript">{'&ndash;'}</code> and
           &nbsp;<code className="language-javascript">{'&mdash;'}</code>, and
           make a decision of which to use, each time they encounter the problem.
-          Instead, decide one time, as a team, then write a component like Dash,
+          Instead, decide one time, as a team, then write a component like Empty,
           so that the same solution is used every time.
         </Box>
         <Box variant="p">
