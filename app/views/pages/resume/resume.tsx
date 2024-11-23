@@ -53,10 +53,11 @@ export const Resume = () => {
             logo="https://media.licdn.com/dms/image/D560BAQG-eXtmKYSbfQ/company-logo_100_100/0/1684789598663?e=1698883200&v=beta&t=xvGJ1_lKCNdONe0o4aXsPcKDqA80g0ar66aAOTqhx6s"
             description={<SpaceBetween size="s">
               <p>
-                I had the opportunity to work exclusively on the Amazon account, where I was part of a team responsible for updating an in-production AWS service that spanned 26 global regions and ran in six languages. Our team of 2-5 engineers updated the service to a newer version of its design system and newer React and Redux coding patterns. As a key member of the team, I created a template for all new code on the project, wrote new contribution guidelines, an ESLint configuration, and a new automated testing framework using Cypress. These efforts not only improved the functionality and performance of the service but also enhanced the overall quality of the development process.
+                I had the opportunity to work exclusively on the Amazon account, where I was part of a team responsible for updating an in-production AWS service that spanned 26 global regions and ran in six languages. Our team of 2-5 engineers updated the service to a newer version of its design system and newer React and Redux coding patterns. As a key member of the team, I created a template for all new code on the project, wrote new contribution guidelines, an ESLint configuration, and a new automated testing framework using Cypress. These efforts not only improved the functionality and performance of the service but also enhanced the overall speed and quality of the development process.
               </p>
               <p>
-                For the last three months, I researched ways to achieve engineering productivity enhancements using Large Lanugage Models (LLMs), and built the company's "thought leadership" platform, <Link to="/articles/matter-thought-leadership">MATTER</Link>.
+                For the last three months, I researched ways to achieve engineering productivity enhancements using Large Lanugage Models (LLMs), and built the company's "thought leadership" platform, <Link to="/articles/matter-thought-leadership">MATTER</Link>, which was nominated for an
+                Awwwards Site of the Day.
               </p>
             </SpaceBetween>}
           />

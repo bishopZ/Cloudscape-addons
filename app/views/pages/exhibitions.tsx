@@ -51,7 +51,7 @@ export const Exhibitions = () => {
           • Fiske Planetarium • Denver International Airport
         </Box>
       </Container>
-      <Container>
+      <Container header={<Header variant="h2">Public speaking</Header>}>
         <p>2024 User Group Presenter, <Link to="/articles/software-engineering-and-ai">"AI and Software Engineering"</Link> React Denver - Denver, CO</p>
         <p>2023 User Group Presenter, <Link to="/articles/state-management:-the-missing-manual">"State management: the missing manual"</Link> React Denver - Denver, CO</p>
         <p>2023 User Group Presenter, <Link to="/articles/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>

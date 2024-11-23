@@ -74,9 +74,9 @@ export const LoadingSpinner = ({ mediaName }: Props) => <>
         <Box variant="p">
         LoadingSpinner also doesn't have much to it.
         Cloudscape already provides a
-          <ExternalLink href="https://cloudscape.design/components/spinner/">
+          &nbsp;<ExternalLink href="https://cloudscape.design/components/spinner/">
           Spinner component.
-          </ExternalLink>
+          </ExternalLink>&nbsp;
         LoadingSpinner simply adds the word "Loading" and an
         optional media name. It's designed as the generic interface for
         the state of your app while data is in-transit.

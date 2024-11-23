@@ -18,7 +18,7 @@ export const LoadingPreview = () => {
       from an API or other data source.
     </Box>
     <LabeledValue label="Instance option">
-      <LoadingSpinner mediaName="instance" />
+      <LoadingSpinner mediaName="option" />
     </LabeledValue>
     <Box variant="p">
       Empty can be used when the value was fetched, but doesn't exist.
