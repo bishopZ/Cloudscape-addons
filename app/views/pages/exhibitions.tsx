@@ -67,7 +67,7 @@ export const Exhibitions = () => {
       </Container>
       <Container header={<Header variant="h2">Awards</Header>}>
         <p>2024 Awwwards Site of the Day Nominee, Awwwards.com (<Link href="/articles/matter-thought-leadership">MATTER website</Link>)</p>
-        <p>2019 The 50, AdClub of Colorado (<ExternalLink href="//karshhagan.com/case-studies/aspen-snowmass">Aspen Give a Fl*ke Twitter bot</ExternalLink>)</p>
+        <p>2019 The 50, AdClub of Colorado (<Link href="/articles/aspen-give-a-flake">Aspen Give a Fl*ke Twitter bot</Link>)</p>
         <p>2016 Audience Award for Best Narrative Feature, San Antonio Film Festival ("Second Impression" directed by Wallace Weatherspoon)</p>
         <p>2014 Arts Grant Recipient, Burning Flipside (Meditation Deathmatch)</p>
         <p>2011 Best of New England, AIGA (Island Creek Oyster Bar)</p>

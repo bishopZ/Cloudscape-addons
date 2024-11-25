@@ -25,7 +25,7 @@ export const AspenGiveAFlake = () => {
 
   return <Container
     header={<Header variant="h2">
-      Crafting a Home Security Experience with AT&T Digital Life and THREE.js
+      {params?.name ?? params?.title}
     </Header>}
     media={makeHeaderImage(article?.image ?? '')}>
     <SpaceBetween size="xs">
@@ -39,7 +39,7 @@ export const AspenGiveAFlake = () => {
       <p>
         <ExternalLink href="https://karshhagan.com/work/aspen-snowmass-give-a-flake-campaign-case-study">Give a Fl*ke Case Study</ExternalLink>
       </p>
-      <h3>Who</h3>
+      <h3>Tools</h3>
       <p>React.js<br />Google Civic Information API<br />Twitter API<br />Webpack<br />Node.js<br />Heroku</p>
       <h3>Why</h3>
       <p>Aspen Snowmass has always been a values-driven company, but that story has always taken a back seat to their world-class ski offering. As climate change becomes a more pressing threat to the ski industry itself, those two messages now intersect. So we set out to compel snowsports enthusiasts to protect their passion by joining the fight against climate change.</p>
