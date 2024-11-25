@@ -31,13 +31,13 @@ export const AspenGiveAFlake = () => {
     <SpaceBetween size="xs">
       <h3>What</h3>
       <p>
-        A module for the Give A Fl*ke campaign website that facilitated tweeting to politicians.
+        A module for the Give A Fl*ke campaign website that facilitated tweeting to politicians. The social engagement of Give a Flake garnered over one million impressions, resulting in 2,500 people contacting elected officials via Twitter and 50 phone calls to Congress.
       </p>
       <p>
-        Winner of the AdClub of Colorado's "The 50 Award" in 2018.
+        Winner of the AdClub of Colorado's "The 50 Award" in 2018 in the "Best Social Campaign" category.
       </p>
       <p>
-        <ExternalLink href="https://karshhagan.com/work/aspen-snowmass-give-a-flake-campaign-case-study">Give a Fl*ke Case Study</ExternalLink>
+        <ExternalLink href="https://karshhagan.com/work/aspen-snowmass-give-a-flake-campaign-case-study">See the full campaign Case Study on Karsh Hagan</ExternalLink>
       </p>
       <h3>Tools</h3>
       <p>React.js<br />Google Civic Information API<br />Twitter API<br />Webpack<br />Node.js<br />Heroku</p>

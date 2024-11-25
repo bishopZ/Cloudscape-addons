@@ -75,7 +75,7 @@ export const Exhibitions = () => {
         <p>2010 Visiting Artist, Salisbury University, Maryland</p>
         <p>2009 Semi-finalist, SXSW Game Idea Competition (Chicago House Story)</p>
         <p>2007 Grant Recipient, Cool Globes: Hot Ideas for a Cooler Planet</p>
-        <p>2004 World premier, RESfest opening screening of SIGGRAPH (American Analog Set music video <ExternalLink href="//www.youtube.com/watch?v=1ifdpAE9Ggk">"Come Home Julie"</ExternalLink>)</p>
+        <p>2004 World premier, RESfest opening screening of SIGGRAPH (American Analog Set music video <Link href="/articles/american-analog-set-res-fest">"Come Home Julie"</Link>)</p>
         <p>2002 Artist in Residence, Depauw University, Indiana</p>
         <p>1999 Nominee, SXSW Web Awards (Kill The President)</p>
         <p>1998 Innovation in Art and Technology, Texas Interactive Multimedia Awards (Kill The President)</p>
