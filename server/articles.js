@@ -180,60 +180,31 @@ export const articles = () => [
   // },
 
 
-// },{
-//   "_id": {
-//     "$oid": "60a9c50c57ab5100155c97af"
-//   },
-//   "updatedBy": {
-//     "$oid": "60a95d6a0200b600159800b9"
-//   },
-//   "updatedAt": {
-//     "$date": "2023-04-11T02:29:06.475Z"
-//   },
-//   "createdBy": {
-//     "$oid": "60a95d6a0200b600159800b9"
-//   },
-//   "createdAt": {
-//     "$date": "2021-05-23T02:59:24.727Z"
-//   },
-//   "pageTitle": "Aspen Give-a-Fl*ke Twitter bot",
-//   "slug": "aspen-give-a-flake",
-//   "title": "Karsh - Aspen GAF",
-//   "images": [
-//     {
-//       "$oid": "60aab3f0484681001553811c"
-//     },
-//     {
-//       "$oid": "60aab40c484681001553811d"
-//     }
-//   ],
-//   "views": 348,
-//   "state": "Visible",
-//   "category": "Product",
-//   "type": "slideshow",
-//   "__v": 3,
-//   "date": {
-//     "$date": "2019-05-23T02:59:47.000Z"
-//   },
-//   "heroTitle": "Aspen Give-a-Fl*ke Twitter bot",
-//   "what": "<p>A module for the Give A Fl*ke campaign website that facilitated tweeting.</p>\r\n<p>Winner of the&nbsp;<a title=\"BishopZ Biography\" href=\"/biography\">AdClub of Colorado's&nbsp;The 50 Award</a> in 2018.</p>\r\n<p><strong><a title=\"Give a Fl*ke Case Study on KarshHagan.com\" href=\"https://karshhagan.com/work/aspen-snowmass-give-a-flake-campaign-case-study\" target=\"_blank\" rel=\"noopener\">Give a Fl*ke Case Study</a></strong></p>",
-//   "who": "<p>React.js<br />Google Civic Information API<br />Twitter API<br />Webpack<br />Node.js<br />Heroku</p>",
-//   "why": "<p>Aspen Snowmass has always been a values-driven company, but that story has always taken a back seat to their world-class ski offering. As climate change becomes a more pressing threat to the ski industry itself, those two messages now intersect. So we set out to compel snowsports enthusiasts to protect their passion by joining the fight against climate change.</p>\r\n<p>The module targeted specific lawmakers, in the site visitor's voting district. It offered a variety of phrasings to match the user's voice and to create more impact.</p>",
-//   "featuredImage": {
-//     "url": "https://bishopz.s3.amazonaws.com/upload/KarshHagan_GiveAFlake_Header.jpg",
-//     "bucket": "bishopz",
-//     "etag": "\"ccddabca9899681bc9a91b7b5db9813d\"",
-//     "size": 827736,
-//     "path": "/upload",
-//     "filename": "KarshHagan_GiveAFlake_Header.jpg",
-//     "mimetype": "image/jpeg"
-//   }
 
+
+{
+  "slug": "aspen-give-a-flake",
+  "title": "Aspen Give-a-Fl*ke Twitter bot",
+  description: 'A module for the Give A Fl*ke campaign website that facilitated tweeting to politicians.',
+  image: 'https://bishopz.s3.amazonaws.com/upload/KarshHagan_GiveAFlake_Header.jpg',
+  format: 'Case Study',
+  topic: 'Social media',
+  discipline: 'Engineering',
+  section: 'Case Study',
+  vendor: 'X',
+  publicationDate: new Date('05-23-2021'),
+  keywords: 'snow melting climate change global warming political action activism ',
+  "views": 348,
+  "images": [
+    "https://bishopz.s3.amazonaws.com/upload/KarshHagan_rw4_2_GiveaFlake_ipad.jpg",
+    "https://bishopz.s3.amazonaws.com/upload/KarshHagan_rw4_3_LRG.jpg"
+  ],
+},
 {
     slug: 'loading-states',
     title: 'Cloudscape loading states',
     name: 'Loading states',
-    description: 'Basic loading state components to expand the vocabulary of Cloudscape.',
+    description: 'Basic loading state components to expand the vocabulary of the Cloudscape design system.',
     image: 'https://bishopz.s3.us-east-1.amazonaws.com/2024/cloudscape-loading.webp',
     format: 'Documentation',
     topic: 'Components',

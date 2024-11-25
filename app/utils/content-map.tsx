@@ -31,10 +31,12 @@ import { SoftwareEngineeringAI } from '/views/articles/embeds/software-engineeri
 import { StateManagement } from '/views/articles/embeds/state-management';
 import { SyntheticData } from '/views/articles/embeds/synthetic-data';
 import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
+import { AspenGiveAFlake } from '/views/articles/slideshows/aspen-give-a-flake';
 import { DigitalLife } from '/views/articles/slideshows/digital-life';
 // import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
+  'aspen-give-a-flake': AspenGiveAFlake,
   'design-directors-dance-with-ai': DesignDirectorDance,
   'software-engineering-and-ai': SoftwareEngineeringAI,
   'synthetic-data-lessons-learned': SyntheticData,
