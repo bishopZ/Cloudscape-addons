@@ -211,7 +211,7 @@ export const articles = () => [
     discipline: 'Engineering',
     section: 'Data Display',
     vendor: 'Cloudscape',
-    publicationDate: new Date('sept 3, 2024'),
+    publicationDate: new Date('Nov 3, 2024'),
     tenets: [2],
     referenceComponent: 'Spinner',
     referenceLink: 'https://cloudscape.design/components/spinner/',
@@ -230,7 +230,7 @@ export const articles = () => [
     discipline: 'Engineering',
     section: 'Helpers',
     vendor: 'Cloudscape',
-    publicationDate: new Date('nov 10, 2024'),
+    publicationDate: new Date('Aug 10, 2024'),
     tenets: [0],
     referenceComponent: 'Icon',
     referenceLink: 'https://cloudscape.design/components/icon/',
@@ -255,7 +255,7 @@ export const articles = () => [
     topic: '',
     vendor: '',
     author: 'Nathan Hardy',
-    publicationDate: new Date('Jul 18, 2024'),
+    publicationDate: new Date('Sept 18, 2024'),
     keywords: 'ml trust agents ghosted enterprise llm buddies engagement product customer journey\
     sidekick deep rizz social insights authenticity trust confidence voice chat character soul mate\
     genai empathy body language context tasks moral audio a/b bff emotion memory uncertainty '
