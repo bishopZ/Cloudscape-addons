@@ -19,6 +19,7 @@ import { FigmaArticle } from '/views/articles/content/figma-article';
 import { MaturityArticle } from '/views/articles/content/maturity-article';
 import { FromAnyToUnknown } from '/views/articles/embeds/any-to-unknown';
 import { ComeHomeJulie } from '/views/articles/embeds/come-home-julie';
+import { DesignDirectorDance } from '/views/articles/embeds/design-directors-dance';
 import { FlockingBehavior } from '/views/articles/embeds/flocking-behavior';
 import { FourthScreen } from '/views/articles/embeds/fourth-screen';
 import { Matter } from '/views/articles/embeds/introducing-matter';
@@ -34,6 +35,7 @@ import { DigitalLife } from '/views/articles/slideshows/digital-life';
 // import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
+  'design-directors-dance-with-ai': DesignDirectorDance,
   'software-engineering-and-ai': SoftwareEngineeringAI,
   'synthetic-data-lessons-learned': SyntheticData,
   'karsh-hagan-office-pet': OfficePet,

@@ -205,7 +205,7 @@ export const articles = () => [
     discipline: 'Engineering',
     section: 'Helpers',
     vendor: 'Cloudscape',
-    publicationDate: new Date('Aug 10, 2024'),
+    publicationDate: new Date('Sept 10, 2024'),
     tenets: [0],
     referenceComponent: 'Icon',
     referenceLink: 'https://cloudscape.design/components/icon/',
@@ -218,6 +218,22 @@ export const articles = () => [
       warning suggestions thumbs up ticket collapse \
       treeview expand undo unlocked upload user profile user profile video on\
       video unavailable view horizontal vertical zoom out to fit addons',
+  },
+  {
+    slug: 'design-directors-dance-with-ai',
+    title: 'A design director\'s dance with AI',
+    description: 'I contributed to this article about designing the interface for AI agents.',
+    image: 'https://miro.medium.com/v2/resize:fit:1200/format:webp/1*dYWE8lOI0PTMbDyNPnhm7A.gif',
+    format: 'Article',
+    discipline: 'Design',
+    section: 'Machine Learning',
+    topic: '',
+    vendor: '',
+    author: 'Nathan Hardy',
+    publicationDate: new Date('Jul 18, 2024'),
+    keywords: 'ml trust agents ghosted enterprise llm buddies engagement product customer journey\
+    sidekick deep rizz social insights authenticity trust confidence voice chat character soul mate\
+    genai empathy body language context tasks moral audio a/b bff emotion memory uncertainty '
   },
   {
     slug: 'software-engineering-and-ai',
@@ -466,7 +482,7 @@ export const articles = () => [
   },
   {
     slug: "using-nfts-to-protect-creative-works",
-    title: "NFTs protect creative works",
+    title: "NFTs can protect creative works",
     description: 'NFTs have made headlines in the art world for their record-breaking, multimillion dollar sales.',
     image: 'https://bishopz.s3.amazonaws.com/upload/NFT_Graphic_L1-1__Article_Header_1.jpeg',
     format: 'Article',
