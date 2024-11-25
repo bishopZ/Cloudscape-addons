@@ -1,26 +1,7 @@
 
 export const articles = () => [
 
-  // {
-  //   slug: 'labeled-input',
-  //   title: 'Cloudscape labeled input',
-  //   name: 'Labeled input',
-  //   description: 'Labeled variation of the Input component that provides smart defaults.',
-  //   image: 'assets/chasm.jpg',
-  //   format: 'Documentation',
-  //   topic: 'Components',
-  //   discipline: 'Engineering',
-  //   section: 'Forms',
-  //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 24, 2023'),
-  //   tenets: [0, 1, 3, 4],
-  //   referenceComponent: 'Input',
-  //   referenceLink: 'https://cloudscape.design/components/input/',
-  //   keywords: 'versitile majority form label accessibility usability best practice formfield type map text password \
-  //   decimal numeric search email tel url value placeholder optional mode step addoptional aria inputprops \
-  //   cleararialabel formfieldstrings inputchange InputKeyDetail onchange secondarycontrol readonly onkey autocomplete \
-  //   spellcheck info error constraint onchange labeledinput addons'
-  // },
+
   // {
   //   slug: 'labeled-number',
   //   title: 'Cloudscape labeled number',
@@ -118,24 +99,24 @@ export const articles = () => [
   //   box button spacebetween visible ondismiss onconfirm warning leave continue addons',
   // },
 
-  // {
-  //   slug: 'anatomy-of-a-design-system',
-  //   title: 'Anatomy of a design system',
-  //   description: 'A design system consists of several key elements that work together to provide a cohesive and standardized approach to digital design.',
-  //   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Parts_of_clarinet_6.jpg/1024px-Parts_of_clarinet_6.jpg',
+    // {
+  //   slug: 'design-system-lifecycle',
+  //   title: 'Lifecycle of a design system',
+  //   description: 'Explores the stages of a design system\'s maturity.',
+  //   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/PENGUIN_LIFECYCLE_H.JPG/320px-PENGUIN_LIFECYCLE_H.JPG',
   //   format: 'Article',
   //   topic: 'Design systems',
   //   discipline: 'Design',
-  //   section: 'Foundation',
+  //   section: 'Delivery',
   //   author: 'Bishop Zareh',
-  //   publicationDate: new Date('Jun 2, 2023'),
-  //   keywords: 'anatomy digital design foundations layer elements development interfaces principles iconography guidelines logos \
-  //   typefaces illustration sound voice tone photography motion layout elevation color identity lanugage \
-  //   tokens decisions attributes spacing opacity radii volume borders timing consistent global platforms \
-  //   product scalability change multi-platform support unified process core collection building block \
-  //   reusable components patterns grid scale animation component buttons search bars text inputs notifications \
-  //   breadcrumbs tabs tooltips radio ecosystem',
+  //   publicationDate: new Date('Jun 8, 2023'),
+  //   keywords: 'superheros digital interface mature win joke potential journey stages model \
+  //   version ingredients balance present dicovering combination principals tokens core \
+  //   adoption obvious charming associated instructions showcase choice teenage foundation \
+  //   growth nurturing mindset promise improving time healthy platform wise leader organization \
+  //   guru guiding greatness evolving adapt',
   // },
+
   // {
   //   slug: 'documenting-a-design-system',
   //   title: 'Documenting a design system',
@@ -156,24 +137,97 @@ export const articles = () => [
   //   decisions explainations describe functionality migration transition outline recommended scenarios \
   //   individuals location where assets resources examples showcase real-world inspiration',
   // },
-  // {
-  //   slug: 'design-system-lifecycle',
-  //   title: 'Lifecycle of a design system',
-  //   description: 'Explores the stages of a design system\'s maturity.',
-  //   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/PENGUIN_LIFECYCLE_H.JPG/320px-PENGUIN_LIFECYCLE_H.JPG',
+
+
+// {
+  //   slug: 'labeled-input',
+  //   title: 'Cloudscape labeled input',
+  //   name: 'Labeled input',
+  //   description: 'Labeled variation of the Input component that provides smart defaults.',
+  //   image: 'assets/chasm.jpg',
+  //   format: 'Documentation',
+  //   topic: 'Components',
+  //   discipline: 'Engineering',
+  //   section: 'Forms',
+  //   vendor: 'Cloudscape',
+  //   publicationDate: new Date('Jun 24, 2023'),
+  //   tenets: [0, 1, 3, 4],
+  //   referenceComponent: 'Input',
+  //   referenceLink: 'https://cloudscape.design/components/input/',
+  //   keywords: 'versitile majority form label accessibility usability best practice formfield type map text password \
+  //   decimal numeric search email tel url value placeholder optional mode step addoptional aria inputprops \
+  //   cleararialabel formfieldstrings inputchange InputKeyDetail onchange secondarycontrol readonly onkey autocomplete \
+  //   spellcheck info error constraint onchange labeledinput addons'
+  // },
+
+ // {
+  //   slug: 'anatomy-of-a-design-system',
+  //   title: 'Anatomy of a design system',
+  //   description: 'A design system consists of several key elements that work together to provide a cohesive and standardized approach to digital design.',
+  //   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Parts_of_clarinet_6.jpg/1024px-Parts_of_clarinet_6.jpg',
   //   format: 'Article',
   //   topic: 'Design systems',
   //   discipline: 'Design',
-  //   section: 'Delivery',
+  //   section: 'Foundation',
   //   author: 'Bishop Zareh',
-  //   publicationDate: new Date('Jun 8, 2023'),
-  //   keywords: 'superheros digital interface mature win joke potential journey stages model \
-  //   version ingredients balance present dicovering combination principals tokens core \
-  //   adoption obvious charming associated instructions showcase choice teenage foundation \
-  //   growth nurturing mindset promise improving time healthy platform wise leader organization \
-  //   guru guiding greatness evolving adapt',
+  //   publicationDate: new Date('Jun 2, 2023'),
+  //   keywords: 'anatomy digital design foundations layer elements development interfaces principles iconography guidelines logos \
+  //   typefaces illustration sound voice tone photography motion layout elevation color identity lanugage \
+  //   tokens decisions attributes spacing opacity radii volume borders timing consistent global platforms \
+  //   product scalability change multi-platform support unified process core collection building block \
+  //   reusable components patterns grid scale animation component buttons search bars text inputs notifications \
+  //   breadcrumbs tabs tooltips radio ecosystem',
   // },
 
+
+// },{
+//   "_id": {
+//     "$oid": "60a9c50c57ab5100155c97af"
+//   },
+//   "updatedBy": {
+//     "$oid": "60a95d6a0200b600159800b9"
+//   },
+//   "updatedAt": {
+//     "$date": "2023-04-11T02:29:06.475Z"
+//   },
+//   "createdBy": {
+//     "$oid": "60a95d6a0200b600159800b9"
+//   },
+//   "createdAt": {
+//     "$date": "2021-05-23T02:59:24.727Z"
+//   },
+//   "pageTitle": "Aspen Give-a-Fl*ke Twitter bot",
+//   "slug": "aspen-give-a-flake",
+//   "title": "Karsh - Aspen GAF",
+//   "images": [
+//     {
+//       "$oid": "60aab3f0484681001553811c"
+//     },
+//     {
+//       "$oid": "60aab40c484681001553811d"
+//     }
+//   ],
+//   "views": 348,
+//   "state": "Visible",
+//   "category": "Product",
+//   "type": "slideshow",
+//   "__v": 3,
+//   "date": {
+//     "$date": "2019-05-23T02:59:47.000Z"
+//   },
+//   "heroTitle": "Aspen Give-a-Fl*ke Twitter bot",
+//   "what": "<p>A module for the Give A Fl*ke campaign website that facilitated tweeting.</p>\r\n<p>Winner of the&nbsp;<a title=\"BishopZ Biography\" href=\"/biography\">AdClub of Colorado's&nbsp;The 50 Award</a> in 2018.</p>\r\n<p><strong><a title=\"Give a Fl*ke Case Study on KarshHagan.com\" href=\"https://karshhagan.com/work/aspen-snowmass-give-a-flake-campaign-case-study\" target=\"_blank\" rel=\"noopener\">Give a Fl*ke Case Study</a></strong></p>",
+//   "who": "<p>React.js<br />Google Civic Information API<br />Twitter API<br />Webpack<br />Node.js<br />Heroku</p>",
+//   "why": "<p>Aspen Snowmass has always been a values-driven company, but that story has always taken a back seat to their world-class ski offering. As climate change becomes a more pressing threat to the ski industry itself, those two messages now intersect. So we set out to compel snowsports enthusiasts to protect their passion by joining the fight against climate change.</p>\r\n<p>The module targeted specific lawmakers, in the site visitor's voting district. It offered a variety of phrasings to match the user's voice and to create more impact.</p>",
+//   "featuredImage": {
+//     "url": "https://bishopz.s3.amazonaws.com/upload/KarshHagan_GiveAFlake_Header.jpg",
+//     "bucket": "bishopz",
+//     "etag": "\"ccddabca9899681bc9a91b7b5db9813d\"",
+//     "size": 827736,
+//     "path": "/upload",
+//     "filename": "KarshHagan_GiveAFlake_Header.jpg",
+//     "mimetype": "image/jpeg"
+//   }
 
 {
     slug: 'loading-states',

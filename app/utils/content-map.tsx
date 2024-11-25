@@ -22,7 +22,7 @@ import { ComeHomeJulie } from '/views/articles/embeds/come-home-julie';
 import { DesignDirectorDance } from '/views/articles/embeds/design-directors-dance';
 import { FlockingBehavior } from '/views/articles/embeds/flocking-behavior';
 import { FourthScreen } from '/views/articles/embeds/fourth-screen';
-import { Matter } from '/views/articles/embeds/introducing-matter';
+import { Matter } from '/views/articles/embeds/matter';
 import { NftCreativeWork } from '/views/articles/embeds/nft-creative-work';
 import { NNGGenUIOutcome } from '/views/articles/embeds/nng-genui-outcome';
 import { OfficePet } from '/views/articles/embeds/office-pet';

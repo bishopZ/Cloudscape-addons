@@ -83,6 +83,8 @@ html {
   font-family: var(--default-font)
 }
 
+a { text-decoration: none; }
+
 p, li, dd, dt, label {
   max-width: 2000px;
   text-wrap: balance;

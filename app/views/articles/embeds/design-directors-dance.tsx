@@ -37,10 +37,10 @@ export const DesignDirectorDance = () => {
       <h2>Why</h2>
       <p>
         I've read a lot of articles about AI- most of them focus on the technology.
-        A rare few focus on design, but those, including <Link href="/articles/genui-outcome-design-nng">NNG's wonder foray into Generative UI</Link>, look at how AI can evolve the practice of Design.
+        A rare few focus on design, but even those, including <Link href="/articles/genui-outcome-design-nng">NNG's wonderful foray into Generative UI</Link>, look at how AI can evolve the practice of Design.
       </p>
       <p>
-        Nathan's article was the first I've read that delves into the design of
+        Nathan's article was the first I've read that delves specificlly into the design of
         AI interfaces and tools. It among the first to ask what designers can do
         to help AI agents become more like sidekicks and buddies.
       </p>

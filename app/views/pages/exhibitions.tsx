@@ -1,6 +1,5 @@
-import { Box, Container, ContentLayout, Header, SpaceBetween } from '@cloudscape-design/components';
+import { Box, Button, Container, ContentLayout, Header, Link, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { ExternalLink } from '/addons/details/external-link';
 import { Spacing } from '/addons/helpers/spacing-constants';
@@ -16,7 +15,8 @@ export const Exhibitions = () => {
   return <ContentLayout
     header={<Header
       variant="h1"
-      info={<Link to="#"
+      info={<Button
+        variant="link"
         onClick={() => {
           dispatch(changePreference({
             name: 'tools',
@@ -24,7 +24,7 @@ export const Exhibitions = () => {
           }));
         }}>
           info
-      </Link>}>
+      </Button>}>
       Show record
     </Header>}>
     <SpaceBetween size="s">
@@ -52,11 +52,11 @@ export const Exhibitions = () => {
         </Box>
       </Container>
       <Container header={<Header variant="h2">Public speaking</Header>}>
-        <p>2024 User Group Presenter, <Link to="/articles/software-engineering-and-ai">"AI and Software Engineering"</Link> React Denver - Denver, CO</p>
-        <p>2023 User Group Presenter, <Link to="/articles/state-management:-the-missing-manual">"State management: the missing manual"</Link> React Denver - Denver, CO</p>
-        <p>2023 User Group Presenter, <Link to="/articles/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>
+        <p>2024 User Group Presenter, <Link href="/articles/software-engineering-and-ai">"AI and Software Engineering"</Link> React Denver - Denver, CO</p>
+        <p>2023 User Group Presenter, <Link href="/articles/state-management:-the-missing-manual">"State management: the missing manual"</Link> React Denver - Denver, CO</p>
+        <p>2023 User Group Presenter, <Link href="/articles/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>
         <p>2023 User Group Presenter, "Life as an engineer at Amazon" <ExternalLink href="//reactdenver.com/">React Denver</ExternalLink> - Denver, CO</p>
-        <p>2022 User Group Presenter, <Link to="/articles/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>
+        <p>2022 User Group Presenter, <Link href="/articles/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>
         <p>2018 User Group Presenter, “A brief history of recipes” Denver Creative Tech, Legwork Studio - Denver, CO</p>
         <p>2018 User Group Presenter, “ADVANCED INTELLIGENT DEEP ARTIFICIAL NEURAL MACHINE ROBOTS” Refresh Denver, Galvanize - Denver, CO</p>
         <p>2017 User Group Presenter, <ExternalLink href="//vimeo.com/manage/videos/211040647">"RGB vs HSL, the beatdown"</ExternalLink> Denver Creative Tech, Commons on Champa - Denver, CO</p>
@@ -66,7 +66,7 @@ export const Exhibitions = () => {
         <p>2009 Conference presenter, “The history of tomorrow's interfaces” Motion Graphics Festival - Boston, Washington DC, Austin</p>
       </Container>
       <Container header={<Header variant="h2">Awards</Header>}>
-        <p>2024 Awwwards Site of the Day Nominee, Awwwards.com (<ExternalLink href="https://www.awwwards.com/sites/matter-3">MATTER</ExternalLink>)</p>
+        <p>2024 Awwwards Site of the Day Nominee, Awwwards.com (<Link href="/articles/matter-thought-leadership">MATTER website</Link>)</p>
         <p>2019 The 50, AdClub of Colorado (<ExternalLink href="//karshhagan.com/case-studies/aspen-snowmass">Aspen Give a Fl*ke Twitter bot</ExternalLink>)</p>
         <p>2016 Audience Award for Best Narrative Feature, San Antonio Film Festival ("Second Impression" directed by Wallace Weatherspoon)</p>
         <p>2014 Arts Grant Recipient, Burning Flipside (Meditation Deathmatch)</p>
@@ -75,7 +75,7 @@ export const Exhibitions = () => {
         <p>2010 Visiting Artist, Salisbury University, Maryland</p>
         <p>2009 Semi-finalist, SXSW Game Idea Competition (Chicago House Story)</p>
         <p>2007 Grant Recipient, Cool Globes: Hot Ideas for a Cooler Planet</p>
-        <p>2004 World premier, RESfest opening screening of SIGGRAPH (American Analog Set music video <ExternalLink href="https://www.youtube.com/watch?v=1ifdpAE9Ggk">"Come Home Julie"</ExternalLink>)</p>
+        <p>2004 World premier, RESfest opening screening of SIGGRAPH (American Analog Set music video <ExternalLink href="//www.youtube.com/watch?v=1ifdpAE9Ggk">"Come Home Julie"</ExternalLink>)</p>
         <p>2002 Artist in Residence, Depauw University, Indiana</p>
         <p>1999 Nominee, SXSW Web Awards (Kill The President)</p>
         <p>1998 Innovation in Art and Technology, Texas Interactive Multimedia Awards (Kill The President)</p>
