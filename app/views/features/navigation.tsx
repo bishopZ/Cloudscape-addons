@@ -18,7 +18,7 @@ type SidenavItem = SideNavigationProps.Section
 export const capitalize = (value: string) => value.replace(value[0], value[0].toUpperCase());
 
 const articles: SidenavItem = {
-  type: 'link', text: 'Articles', href: '/'
+  type: 'link', text: 'Browse', href: '/'
 };
 
 const docs: SidenavItem = {

@@ -571,20 +571,20 @@ export const articles = () => [
     ],
     views: 283,
   },
-  {
-    slug: "american-analog-set-res-fest",
-    title: "“Come Home Julie” music video",
-    description: 'Music video for indie rock band, American Analog Set.',
-    image: 'https://bishopz.s3.amazonaws.com/upload/american-analog-set-music-video.png',
-    format: 'Music Video',
-    discipline: 'Design',
-    section: 'Motion Graphics',
-    topic: 'Motion Design',
-    author: 'Bishop Zareh',
-    publicationDate: new Date('Jul 5, 2004'),
-    keywords: '',
-    views: 261
-  }
+  // {
+  //   slug: "american-analog-set-res-fest",
+  //   title: "“Come Home Julie” music video",
+  //   description: 'Music video for indie rock band, American Analog Set.',
+  //   image: 'https://bishopz.s3.amazonaws.com/upload/american-analog-set-music-video.png',
+  //   format: 'Music Video',
+  //   discipline: 'Design',
+  //   section: 'Motion Graphics',
+  //   topic: 'Motion Design',
+  //   author: 'Bishop Zareh',
+  //   publicationDate: new Date('Jul 5, 2004'),
+  //   keywords: '',
+  //   views: 261
+  // }
 
 ] .filter(item => {
   if (!item.publicationDate) return false;

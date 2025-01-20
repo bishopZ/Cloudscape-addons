@@ -98,13 +98,13 @@ export const skills: Skill[] = [
     discipline: 'Frontend engineering', areas: [
       {
         name: 'Build system (web & mobile)', skills: [
-          ['Node.js', 'Express', 'Webpack', 'Gatsby', 'Next.js'],
+          ['Node.js', 'Express', 'Vite', 'Gatsby', 'Next.js'],
           ['Typescript', 'React', 'Redux Toolkit', 'Sass'],
           ['Android Studio', 'React Native', 'Cordova'],
         ]
       }, {
         name: 'Design systems & collaboration', skills: [
-          ['Bootstrap', 'Cloudscape', 'Blocks'],
+          ['Material UI', 'Ant Design', 'Cloudscape'],
           ['Design system principles', 'Design system construction'],
           ['Figjam', 'Miro'],
         ]

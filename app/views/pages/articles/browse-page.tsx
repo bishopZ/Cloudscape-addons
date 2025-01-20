@@ -49,7 +49,8 @@ export const BrowseArticles = () => {
         <Header
           variant="h1"
           // description="I'm looking for new opportunities!"
-          info={<Link to="#"
+          info={<Button
+            variant="link"
             onClick={() => {
               dispatch(changePreference({
                 name: 'tools',
@@ -57,7 +58,7 @@ export const BrowseArticles = () => {
               }));
             }}>
           info
-          </Link>}
+          </Button>}
           actions={<Link to="/search">
             <Button variant="primary" iconName="search">
               Search

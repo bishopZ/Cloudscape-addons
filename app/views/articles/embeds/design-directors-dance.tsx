@@ -41,7 +41,7 @@ export const DesignDirectorDance = () => {
       </p>
       <p>
         Nathan's article was the first I've read that delves specificlly into the design of
-        AI interfaces and tools. It among the first to ask what designers can do
+        AI interfaces and tools. It's among the first to ask what designers can do
         to help AI agents become more like sidekicks and buddies.
       </p>
     </SpaceBetween>
