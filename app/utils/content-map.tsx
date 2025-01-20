@@ -10,7 +10,7 @@ import { SpacingConstants } from '/views/articles/addons/spacing-article';
 // import { StringArticle } from '/views/articles/addons/string-article';
 import { TypeArticle } from '/views/articles/addons/type-article';
 // import { UnsavedArticle } from '/views/articles/addons/unsaved-article';
-// import { AnatomyArticle } from '/views/articles/content/anatomy-article';
+import { AnatomyArticle } from '/views/articles/content/anatomy-article';
 import { BridgingTheChasmContent } from '/views/articles/content/bridging-the-chasm';
 import { DoINeedArticle } from '/views/articles/content/do-i-need-article';
 // import { DocumentingArticle } from '/views/articles/content/documenting-article';
@@ -70,7 +70,7 @@ export const CONTENT_MAP = {
   // 'unsaved-changes-modal': UnsavedArticle,
   // 'string-utils': StringArticle,
 
-  // 'anatomy-of-a-design-system': AnatomyArticle,
+  'anatomy-of-a-design-system': AnatomyArticle,
   // 'documenting-a-design-system': DocumentingArticle,
   // 'design-system-lifecycle': LifecycleArticle,
 

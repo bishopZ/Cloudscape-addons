@@ -160,28 +160,24 @@ export const articles = () => [
   //   spellcheck info error constraint onchange labeledinput addons'
   // },
 
- // {
-  //   slug: 'anatomy-of-a-design-system',
-  //   title: 'Anatomy of a design system',
-  //   description: 'A design system consists of several key elements that work together to provide a cohesive and standardized approach to digital design.',
-  //   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Parts_of_clarinet_6.jpg/1024px-Parts_of_clarinet_6.jpg',
-  //   format: 'Article',
-  //   topic: 'Design systems',
-  //   discipline: 'Design',
-  //   section: 'Foundation',
-  //   author: 'Bishop Zareh',
-  //   publicationDate: new Date('Jun 2, 2023'),
-  //   keywords: 'anatomy digital design foundations layer elements development interfaces principles iconography guidelines logos \
-  //   typefaces illustration sound voice tone photography motion layout elevation color identity lanugage \
-  //   tokens decisions attributes spacing opacity radii volume borders timing consistent global platforms \
-  //   product scalability change multi-platform support unified process core collection building block \
-  //   reusable components patterns grid scale animation component buttons search bars text inputs notifications \
-  //   breadcrumbs tabs tooltips radio ecosystem',
-  // },
-
-
-
-
+ {
+    slug: 'anatomy-of-a-design-system',
+    title: 'Anatomy of a design system',
+    description: 'A design system consists of several key elements that work together to provide a cohesive and standardized approach to digital design.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Parts_of_clarinet_6.jpg/1024px-Parts_of_clarinet_6.jpg',
+    format: 'Article',
+    topic: 'Design systems',
+    discipline: 'Design',
+    section: 'Foundation',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Jan 12, 2025'),
+    keywords: 'anatomy digital design foundations layer elements development interfaces principles iconography guidelines logos \
+    typefaces illustration sound voice tone photography motion layout elevation color identity lanugage \
+    tokens decisions attributes spacing opacity radii volume borders timing consistent global platforms \
+    product scalability change multi-platform support unified process core collection building block \
+    reusable components patterns grid scale animation component buttons search bars text inputs notifications \
+    breadcrumbs tabs tooltips radio ecosystem',
+  },
 {
   "slug": "aspen-give-a-flake",
   "title": "Aspen Give-a-Fl*ke Twitter bot",
@@ -306,7 +302,7 @@ export const articles = () => [
     discipline: 'Product',
     section: 'Delivery',
     author: 'Bishop Zareh',
-    publicationDate: new Date('May 28, 2025'),
+    publicationDate: new Date('May 28, 2024'),
     keywords: 'game educate engage knowledge potential purpose \
     benefits approach vision elighten colleagues two-way conversation users learn listen \
     needs voice recruit adopters contributors heros future continuous improvement \

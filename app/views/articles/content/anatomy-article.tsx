@@ -1,13 +1,19 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
+import { selectArticle } from '/data/articles';
+import { useAppSelector } from '/data/data-store';
 import { makeHeaderImage } from '/utils/content-map';
 
 /* eslint-disable max-len */
 export const AnatomyArticle = () => {
+  const params = useParams();
+  const article = useAppSelector(selectArticle(params.slug!));
+
   return <SpaceBetween size="m">
     <Container
-      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
+      media={makeHeaderImage(article?.image ?? '')}
       header={<Header variant="h2">What are the parts of a design system?</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
