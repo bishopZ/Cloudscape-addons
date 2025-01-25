@@ -65,13 +65,13 @@ export const skills: Skill[] = [
   {
     discipline: 'AI', areas: [
       {
-        name: 'AI-assisted', skills: [
-          ['AWS Bedrock', 'Mistral', 'Claude', 'ChatGPT'],
+        name: 'AI-assisted engineering', skills: [
+          ['AWS Bedrock', 'Llama', 'Gemini', 'Mistral', 'ChatGPT'],
           ['LocalGPT', 'Response Augmentation (RAG)'],
-          ['Stable Diffusion', 'Midjourney', 'LoRa'],
+          ['ComfyUI', 'Stable Diffusion', 'Midjourney', 'RunwayML', 'LoRa'],
         ]
       }, {
-        name: 'GenUI', skills: [
+        name: 'Generative UI', skills: [
           ['SWE-agent', 'LM Studio', 'Prompt engineering'],
           ['Locofy', 'Vercel\'s V0', 'Anima'],
           ['Python'], // TensorFlow, PyTorch, NLTK, spaCy
@@ -104,8 +104,8 @@ export const skills: Skill[] = [
         ]
       }, {
         name: 'Design systems & collaboration', skills: [
-          ['Material UI', 'Ant Design', 'Cloudscape'],
-          ['Design system principles', 'Design system construction'],
+          ['Material UI', 'Ant Design', 'Cloudscape', 'Bootstrap'],
+          ['Storybook', 'Design system principles', 'Design system construction'],
           ['Figjam', 'Miro'],
         ]
       }, {

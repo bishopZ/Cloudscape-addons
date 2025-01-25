@@ -31,7 +31,7 @@ export const AspenGiveAFlake = () => {
     <SpaceBetween size="xs">
       <h3>What</h3>
       <p>
-        A module for the Give A Fl*ke campaign website that facilitated tweeting to politicians. The social engagement of Give a Flake garnered over one million impressions, resulting in 2,500 people contacting elected officials via Twitter and 50 phone calls to Congress.
+        A module for the Give A Fl*ke campaign website that facilitated tweeting to politicians. The social engagement of Give a Flake garnered over one million impressions, resulting in 2,500 people contacting elected officials via X (Twitter) and 50 phone calls to Congress.
       </p>
       <p>
         Winner of the AdClub of Colorado's "The 50 Award" in 2018 in the "Best Social Campaign" category.
@@ -40,7 +40,7 @@ export const AspenGiveAFlake = () => {
         <ExternalLink href="https://karshhagan.com/work/aspen-snowmass-give-a-flake-campaign-case-study">See the full campaign Case Study on Karsh Hagan</ExternalLink>
       </p>
       <h3>Tools</h3>
-      <p>React.js<br />Google Civic Information API<br />Twitter API<br />Webpack<br />Node.js<br />Heroku</p>
+      <p>React.js<br />Google Civic Information API<br />X (Twitter) API<br />Webpack<br />Node.js<br />Heroku</p>
       <h3>Why</h3>
       <p>Aspen Snowmass has always been a values-driven company, but that story has always taken a back seat to their world-class ski offering. As climate change becomes a more pressing threat to the ski industry itself, those two messages now intersect. So we set out to compel snowsports enthusiasts to protect their passion by joining the fight against climate change.</p>
       <p>The module targeted specific lawmakers, in the site visitor's voting district. It offered a variety of phrasings to match the user's voice and to create more impact.</p>

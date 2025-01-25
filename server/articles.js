@@ -22,25 +22,27 @@ export const articles = () => [
   //   formfieldstrings loadingspinner status constraint description secondarycontrol stretch addons',
   // },
 
-  // {
-  //   slug: 'generic-empty',
-  //   title: 'Cloudscape generic empty',
-  //   name: 'Generic empty',
-  //   description: 'Simple components designed to speed up creation of new Tables.',
+// {
+  //   slug: 'labeled-input',
+  //   title: 'Cloudscape labeled input',
+  //   name: 'Labeled input',
+  //   description: 'Labeled variation of the Input component that provides smart defaults.',
   //   image: 'assets/chasm.jpg',
   //   format: 'Documentation',
   //   topic: 'Components',
   //   discipline: 'Engineering',
-  //   section: 'Tables',
+  //   section: 'Forms',
   //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 7, 2023'),
-  //   tenets: [2, 3],
-  //   referenceComponent: 'Dashboard',
-  //   referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
-  //   keywords: 'table configuration collection hools items states filter matches patterns reusable smart defaults \
-  //   title description buttonname onclick standard continuation refresh nomatch clear defaults Implementation \
-  //   usecollection collectionsettings filterprops collectionprops button box spacebetween fontweight spacing addons',
+  //   publicationDate: new Date('Jun 24, 2023'),
+  //   tenets: [0, 1, 3, 4],
+  //   referenceComponent: 'Input',
+  //   referenceLink: 'https://cloudscape.design/components/input/',
+  //   keywords: 'versitile majority form label accessibility usability best practice formfield type map text password \
+  //   decimal numeric search email tel url value placeholder optional mode step addoptional aria inputprops \
+  //   cleararialabel formfieldstrings inputchange InputKeyDetail onchange secondarycontrol readonly onkey autocomplete \
+  //   spellcheck info error constraint onchange labeledinput addons'
   // },
+
   // {
   //   slug: 'labeled-value',
   //   title: 'Cloudscape labeled value',
@@ -60,25 +62,6 @@ export const articles = () => [
   //   box keyvalueprops label children addons',
   // },
 
-  // {
-//     slug: 'string-utils',
-//     title: 'Cloudscape string utilities',
-//     name: 'String utilities',
-//     description: 'A collection of localization-friendly string utility functions \
-//     for use with tables, dates, and S3 resources.',
-//     image: 'assets/chasm.jpg',
-//     format: 'Documentation',
-//     topic: 'Components',
-//     discipline: 'Engineering',
-//     section: 'Helpers',
-//     vendor: 'Cloudscape',
-//     publicationDate: new Date('Jun 4, 2024'),
-//     tenets: [0, 1, 2, 3],
-//     keywords: 'utilities localization internationalization l10n l18n multi-language addoptional form fields optional \
-//     label title translated heading-s inline-block ariarequired required formatdate absolute relativedash fallback \
-//     toLocaleDateString LOCALE year month day week minute second moment makecounter table header s3 resource \
-//     selector location uri aws sdk bucketname box makeS3Location addons',
-//   },
 
   // {
   //   slug: 'unsaved-changes-modal',
@@ -139,25 +122,45 @@ export const articles = () => [
   // },
 
 
-// {
-  //   slug: 'labeled-input',
-  //   title: 'Cloudscape labeled input',
-  //   name: 'Labeled input',
-  //   description: 'Labeled variation of the Input component that provides smart defaults.',
+  // {
+//     slug: 'string-utils',
+//     title: 'Cloudscape string utilities',
+//     name: 'String utilities',
+//     description: 'A collection of localization-friendly string utility functions \
+//     for use with tables, dates, and S3 resources.',
+//     image: 'assets/chasm.jpg',
+//     format: 'Documentation',
+//     topic: 'Components',
+//     discipline: 'Engineering',
+//     section: 'Helpers',
+//     vendor: 'Cloudscape',
+//     publicationDate: new Date('Jun 4, 2024'),
+//     tenets: [0, 1, 2, 3],
+//     keywords: 'utilities localization internationalization l10n l18n multi-language addoptional form fields optional \
+//     label title translated heading-s inline-block ariarequired required formatdate absolute relativedash fallback \
+//     toLocaleDateString LOCALE year month day week minute second moment makecounter table header s3 resource \
+//     selector location uri aws sdk bucketname box makeS3Location addons',
+//   },
+
+
+  // {
+  //   slug: 'generic-empty',
+  //   title: 'Cloudscape generic empty',
+  //   name: 'Generic empty',
+  //   description: 'Simple components designed to speed up creation of new Tables.',
   //   image: 'assets/chasm.jpg',
   //   format: 'Documentation',
   //   topic: 'Components',
   //   discipline: 'Engineering',
-  //   section: 'Forms',
+  //   section: 'Tables',
   //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 24, 2023'),
-  //   tenets: [0, 1, 3, 4],
-  //   referenceComponent: 'Input',
-  //   referenceLink: 'https://cloudscape.design/components/input/',
-  //   keywords: 'versitile majority form label accessibility usability best practice formfield type map text password \
-  //   decimal numeric search email tel url value placeholder optional mode step addoptional aria inputprops \
-  //   cleararialabel formfieldstrings inputchange InputKeyDetail onchange secondarycontrol readonly onkey autocomplete \
-  //   spellcheck info error constraint onchange labeledinput addons'
+  //   publicationDate: new Date('Jun 7, 2023'),
+  //   tenets: [2, 3],
+  //   referenceComponent: 'Dashboard',
+  //   referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
+  //   keywords: 'table configuration collection hools items states filter matches patterns reusable smart defaults \
+  //   title description buttonname onclick standard continuation refresh nomatch clear defaults Implementation \
+  //   usecollection collectionsettings filterprops collectionprops button box spacebetween fontweight spacing addons',
   // },
 
  {
@@ -180,7 +183,7 @@ export const articles = () => [
   },
 {
   "slug": "aspen-give-a-flake",
-  "title": "Aspen Give-a-Fl*ke Twitter bot",
+  "title": "Aspen Give-a-Fl*ke X bot",
   description: 'A module for the Give A Fl*ke campaign website that facilitated tweeting to politicians.',
   image: 'https://bishopz.s3.amazonaws.com/upload/KarshHagan_GiveAFlake_Header.jpg',
   format: 'Case Study',
