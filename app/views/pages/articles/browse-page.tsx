@@ -64,7 +64,7 @@ export const BrowseArticles = () => {
               Search
             </Button>
           </Link>}>
-          Browse articles
+          Browse
         </Header>
       }
     />

@@ -93,8 +93,8 @@ export const ROUTES = (): RouteProps[] => [
     breadcrumbs: []
   }, {
     path: '/search',
-    title: 'Search articles',
-    description: 'Unlock the power of AI and design systems with Bishop Z\'s insightsful articles and resources. Discover how to integrate these cutting-edge technologies into your daily work. Search articles on bishopz.com, a platform for exploring the future of software engineering.',
+    title: 'Search',
+    description: 'Unlock the power of AI and design systems with Bishop Z\'s insightful articles and resources. Discover how to integrate these cutting-edge technologies into your daily work. Search articles on bishopz.com, a platform for exploring the future of software engineering.',
     contentType: 'default',
     component: Search,
     breadcrumbs: [
@@ -102,7 +102,7 @@ export const ROUTES = (): RouteProps[] => [
     ]
   }, {
     path: '/',
-    title: 'Browse articles',
+    title: 'Browse',
     description: 'Unlock the secrets of technology with Bishop Z\'s thought-provoking articles. Explore the intersection of AI and design systems to discover how to integrate these concepts into your own work. With in-depth analysis of the latest trends and innovations, Bishop Z offers a unique perspective that will inspire and empower you.',
     contentType: 'default',
     component: BrowseArticles,
