@@ -463,7 +463,7 @@ export const articles = () => [
   },
   {
     slug: 'from-any-to-unknown',
-    title: "Typescript: from Any to Unknown",
+    title: "Typescript: from any to unknown",
     description: 'This presentation details the differences between Typescript\'s "any" and "unknown" types.',
     image: 'https://bishopz.s3.amazonaws.com/upload/typescript.png',
     format: 'Presentation',
@@ -472,7 +472,7 @@ export const articles = () => [
     topic: 'Typescript',
     vendor: 'Typescript',
     author: 'Bishop Zareh',
-    publicationDate: new Date('Aug 15, 2023'),
+    publicationDate: new Date('March 25, 2025'),
     keywords: 'React Denver math effective safety',
     views: 142,
   },

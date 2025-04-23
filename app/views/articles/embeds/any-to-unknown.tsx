@@ -6,17 +6,18 @@ import { ExternalLink } from '/addons/details/external-link';
 export const FromAnyToUnknown = () => {
   return <Container
     media={{ content: <iframe
-      title="YouTube video of presentation"
-      src="https://www.youtube.com/embed/0Kwm4OskzBs"
+      title="The Journey of Typescript: from any to unknown"
+      src="https://www.youtube.com/embed/_JDHxsgIwz4?si=kQHyTVfo264ozcT-&amp;start=1728"
     /> }}>
       <SpaceBetween size='m'>
         <h2>What</h2>
         <p>
-          "Typescript: from any to unknown" discusses the potential dangers of using the "any" type in TypeScript.
+        This session is tailored to developers seeking to deepen their understanding of static typing, regardless of whether they're new to Typescript or already using it in their projects. We embark by comparing JavaScript and TypeScript, learning the pitfalls of the "any" type, and explore common ways to avoid it. We'll see how to use "is" functions to enhance type inference, and chart a migration path from unknown to known. By the end, you'll be ready to take your own Typescript journey further!
         </p>
         <h2>Who</h2>
         <p>Presented by Bishop Zareh
-          for <ExternalLink href="https://reactdenver.com/">React Denver</ExternalLink></p>
+          for <ExternalLink href="https://denverscript.com/">Denver Script</ExternalLink>.
+          Bishop Zareh has over 20 years of experience crafting novel experiences for the web, mobile, and immersive environments. </p>
         <h2>Why</h2>
         <p>
           1. <strong>Convenience vs. safety</strong>: Using "any" can make code more convenient to write and read, but it also means sacrificing safety and reliability. By not explicitly defining the type of a variable, you are relying on the inference engine to figure it out, which can lead to errors and bugs.

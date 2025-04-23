@@ -52,6 +52,7 @@ export const Exhibitions = () => {
         </Box>
       </Container>
       <Container header={<Header variant="h2">Public speaking</Header>}>
+        <p>2025 User Group Presenter, <Link href="/articles/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> Denver Script, Code Talent - Denver, CO</p>
         <p>2024 User Group Presenter, <Link href="/articles/software-engineering-and-ai">"AI and Software Engineering"</Link> React Denver - Denver, CO</p>
         <p>2023 User Group Presenter, <Link href="/articles/state-management:-the-missing-manual">"State management: the missing manual"</Link> React Denver - Denver, CO</p>
         <p>2023 User Group Presenter, <Link href="/articles/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> React Denver - Denver, CO</p>
@@ -81,6 +82,7 @@ export const Exhibitions = () => {
         <p>1998 Innovation in Art and Technology, Texas Interactive Multimedia Awards (Kill The President)</p>
       </Container>
       <Container header={<Header variant="h2">Art exhibitions</Header>}>
+        <p>2025 Visual coordinator/Animator, "Söm Sãptälahn" (2 shows), itchy-O, Fiske Planetarium - Boulder, CO</p>
         <p>2024 Performance artist, Summer Scream, itchy-O, Lakeside Amusement Park - Denver, CO</p>
         <p>2024 Projection artist, Intergalactic Mascarade, itchy-O, The Summit - Denver, CO</p>
         <p>2024 Visual coordinator, <ExternalLink href="//www.youtube.com/watch?v=Uh42Zpoobyc">"Söm Sãptälahn"</ExternalLink> (2 shows), itchy-O, Fiske Planetarium - Boulder, CO</p>
