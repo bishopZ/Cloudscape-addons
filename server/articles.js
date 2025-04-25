@@ -204,7 +204,7 @@ export const articles = () => [
     title: 'Cloudscape loading states',
     name: 'Loading states',
     description: 'Basic loading state components to expand the vocabulary of the Cloudscape design system.',
-    image: 'https://bishopz.s3.us-east-1.amazonaws.com/2024/cloudscape-loading.webp',
+    image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/better-loading-state.jpg',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',
