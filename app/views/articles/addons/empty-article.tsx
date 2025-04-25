@@ -1,7 +1,10 @@
 import { Box, Container, Header, SpaceBetween } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 import { ExternalLink } from '/addons/details/external-link';
+import { selectArticle } from '/data/articles';
+import { useAppSelector } from '/data/data-store';
 import { makeHeaderImage } from '/utils/content-map';
 import { SourceCodeSection } from '/views/common/source-code-section';
 
@@ -10,6 +13,9 @@ import { EmptyPreview } from '../previews/empty-preview';
 
 /* eslint-disable max-lines-per-function, max-len */
 export const EmptyArticle = () => {
+  const params = useParams();
+  const article = useAppSelector(selectArticle(params.slug!));
+
   useEffect(() => {
     setTimeout(() => {
       if (window.Prism) window.Prism.highlightAll();
@@ -65,9 +71,7 @@ export const NoMatch = ({ clear }: NoMatchProps) => <GenericEmpty
   onClick={() => { clear() }}
 />;`} />
     <Container
-      media={makeHeaderImage(
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png'
-      )}
+      media={makeHeaderImage(article?.image ?? '')}
       header={<Header variant="h2">
       Introducing GenericEmpty
       </Header>}>
@@ -78,7 +82,7 @@ export const NoMatch = ({ clear }: NoMatchProps) => <GenericEmpty
           Cloudscape. However, the table feature each require some configuration.
         </Box>
         <Box variant="p">
-          Tables frequently use the
+          Tables frequently use the&nbsp;
           <ExternalLink href="https://cloudscape.design/get-started/dev-guides/collection-hooks/">
             Collection Hooks
           </ExternalLink> to manage the collection of items shown in the table.

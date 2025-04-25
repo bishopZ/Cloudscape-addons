@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import { EmptyArticle } from '/views/articles/addons/empty-article';
+import { EmptyArticle } from '/views/articles/addons/empty-article';
 import { IconMapArticle } from '/views/articles/addons/icon-map-article';
 // import { InputArticle } from '/views/articles/addons/input-article';
 // import { LabeledValueArticle } from '/views/articles/addons/labeled-value-article';
@@ -66,7 +66,7 @@ export const CONTENT_MAP = {
   // 'labeled-input': InputArticle,
   // 'labeled-number': NumberArticle,
   // 'labeled-value': LabeledValueArticle,
-  // 'generic-empty': EmptyArticle,
+  'generic-empty': EmptyArticle,
   // 'unsaved-changes-modal': UnsavedArticle,
   // 'string-utils': StringArticle,
 

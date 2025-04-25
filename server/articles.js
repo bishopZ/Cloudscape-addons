@@ -143,25 +143,25 @@ export const articles = () => [
 //   },
 
 
-  // {
-  //   slug: 'generic-empty',
-  //   title: 'Cloudscape generic empty',
-  //   name: 'Generic empty',
-  //   description: 'Simple components designed to speed up creation of new Tables.',
-  //   image: 'assets/chasm.jpg',
-  //   format: 'Documentation',
-  //   topic: 'Components',
-  //   discipline: 'Engineering',
-  //   section: 'Tables',
-  //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 7, 2023'),
-  //   tenets: [2, 3],
-  //   referenceComponent: 'Dashboard',
-  //   referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
-  //   keywords: 'table configuration collection hools items states filter matches patterns reusable smart defaults \
-  //   title description buttonname onclick standard continuation refresh nomatch clear defaults Implementation \
-  //   usecollection collectionsettings filterprops collectionprops button box spacebetween fontweight spacing addons',
-  // },
+  {
+    slug: 'generic-empty',
+    title: 'Cloudscape generic empty',
+    name: 'Generic empty',
+    description: 'Simple components designed to speed up creation of new Tables.',
+    image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/empty-states.jpg',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Tables',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('Apr 24, 2025'),
+    tenets: [2, 3],
+    referenceComponent: 'Dashboard',
+    referenceLink: 'https://cloudscape.design/examples/react/dashboard.html',
+    keywords: 'table configuration collection hools items states filter matches patterns reusable smart defaults \
+    title description buttonname onclick standard continuation refresh nomatch clear defaults Implementation \
+    usecollection collectionsettings filterprops collectionprops button box spacebetween fontweight spacing addons',
+  },
 
  {
     slug: 'anatomy-of-a-design-system',
