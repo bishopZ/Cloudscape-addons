@@ -290,7 +290,7 @@ export const articles = () => [
     title: 'Cloudscape spacing constants',
     name: 'Spacing constants',
     description: 'Helper file for DRYing up the use of spacing objects in your application.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Harmonic_series_spacing_successive_octaves.png?20151008092642',
+    image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/cloudscape-spacing-constants.jpg',
     format: 'Documentation',
     topic: 'Components',
     discipline: 'Engineering',
@@ -459,20 +459,20 @@ export const articles = () => [
     version control exchange ideas project design system feedback commenting contextual iterative workshops \
     knowledge-sharing holistic product ownership lifecycle foundation user-centric training',
   },
-  {
-    slug: 'do-i-need-a-design-system',
-    title: 'Do I need a design system?',
-    description: 'I\'m often asked how to approach design systems, and when to consider using them.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Lou_Ruovo_Center_for_Brain_Health.jpg',
-    format: 'Article',
-    discipline: 'Product',
-    section: 'Tools',
-    topic: 'Design System',
-    author: 'Bishop Zareh',
-    publicationDate: new Date('Dec 16, 2023'),
-    keywords: 'key factors scale longevity necessary organization skilled design work system priority brand lifespan risks stability \
-    choice options',
-  },
+  // {
+  //   slug: 'do-i-need-a-design-system',
+  //   title: 'Do I need a design system?',
+  //   description: 'I\'m often asked how to approach design systems, and when to consider using them.',
+  //   image: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Lou_Ruovo_Center_for_Brain_Health.jpg',
+  //   format: 'Article',
+  //   discipline: 'Product',
+  //   section: 'Tools',
+  //   topic: 'Design System',
+  //   author: 'Bishop Zareh',
+  //   publicationDate: new Date('Dec 16, 2023'),
+  //   keywords: 'key factors scale longevity necessary organization skilled design work system priority brand lifespan risks stability \
+  //   choice options',
+  // },
   {
     slug: 'from-any-to-unknown',
     title: "Typescript: from any to unknown",
