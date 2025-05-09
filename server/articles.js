@@ -151,6 +151,7 @@ export const articles = () => [
     format: 'Code',
     topic: 'Frontend',
     discipline: 'Engineering',
+    section: 'Tools',
     publicationDate: new Date('May 9, 2025'),
     keywords: 'vite typescript react redux toolkit error boundary node express ejs passport local first crypto \
     eslint heroku env seo design system history next webpack backbone jquery'
