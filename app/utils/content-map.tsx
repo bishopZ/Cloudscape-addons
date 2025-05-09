@@ -17,6 +17,7 @@ import { DoINeedArticle } from '/views/articles/content/do-i-need-article';
 import { FigmaArticle } from '/views/articles/content/figma-article';
 // import { LifecycleArticle } from '/views/articles/content/lifecycle-article';
 import { MaturityArticle } from '/views/articles/content/maturity-article';
+import { Boilerplate2025 } from '/views/articles/embeds/2025-boilerplate';
 import { FromAnyToUnknown } from '/views/articles/embeds/any-to-unknown';
 import { ComeHomeJulie } from '/views/articles/embeds/come-home-julie';
 import { DesignDirectorDance } from '/views/articles/embeds/design-directors-dance';
@@ -36,6 +37,7 @@ import { DigitalLife } from '/views/articles/slideshows/digital-life';
 // import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
+  '2025-boilerplate': Boilerplate2025,
   'aspen-give-a-flake': AspenGiveAFlake,
   'design-directors-dance-with-ai': DesignDirectorDance,
   'software-engineering-and-ai': SoftwareEngineeringAI,

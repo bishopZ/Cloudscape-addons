@@ -142,7 +142,19 @@ export const articles = () => [
 //     selector location uri aws sdk bucketname box makeS3Location addons',
 //   },
 
-
+  {
+    slug: '2025-boilerplate',
+    title: 'Boilerplate for 2025',
+    name: 'Boilerplate for 2025',
+    description: 'A local-first web app boilerplate for 2025. A family of frontend technologies, setup and ready to go!',
+    image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/2025-boilerplate.jpg',
+    format: 'Code',
+    topic: 'Frontend',
+    discipline: 'Engineering',
+    publicationDate: new Date('May 9, 2025'),
+    keywords: 'vite typescript react redux toolkit error boundary node express ejs passport local first crypto \
+    eslint heroku env seo design system history next webpack backbone jquery'
+  },
   {
     slug: 'generic-empty',
     title: 'Cloudscape generic empty',

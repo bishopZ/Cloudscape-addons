@@ -13,8 +13,8 @@ import type { Article } from '/data/articles';
 import { initArticles, selectArticles, setSelected } from '/data/articles';
 import { useAppDispatch, useAppSelector } from '/data/data-store';
 import { initPreferences, PREFERENCES, selectPreferences, updatePreferences } from '/data/preferences';
-import { Preferences } from '/views/features/table-preferences';
 
+// import { Preferences } from '/views/features/table-preferences';
 import { BlogHeader } from './search-header';
 import { TABLE_COLUMNS } from './table-data';
 
@@ -74,11 +74,11 @@ export const Search = () => {
     ariaLabels={paginationLabels}
   />;
 
-  const ArticlePreferences = <Preferences
-    savedPreferences={articlePrefs}
-    columns={TABLE_COLUMNS}
-    mediaName={PREFERENCES.ARTICLES}
-  />;
+  // const ArticlePreferences = <Preferences
+  //   savedPreferences={articlePrefs}
+  //   columns={TABLE_COLUMNS}
+  //   mediaName={PREFERENCES.ARTICLES}
+  // />;
 
   const ArticleFilter = <TextFilter
     {...filterProps}
@@ -105,7 +105,7 @@ export const Search = () => {
     loadingText="Loading"
     header={<BlogHeader />}
     pagination={articles.length > articlePrefs.pageSize && ArticlePagination}
-    preferences={ArticlePreferences}
+    // preferences={ArticlePreferences}
     filter={ArticleFilter}
     onColumnWidthsChange={(event: ColumnWidthsChange) => {
       if (event.detail.widths) {
