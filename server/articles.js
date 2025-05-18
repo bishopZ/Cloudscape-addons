@@ -152,6 +152,7 @@ export const articles = () => [
     topic: 'Frontend',
     discipline: 'Engineering',
     section: 'Tools',
+    vendor: 'Vite',
     publicationDate: new Date('May 9, 2025'),
     keywords: 'vite typescript react redux toolkit error boundary node express ejs passport local first crypto \
     eslint heroku env seo design system history next webpack backbone jquery'
@@ -353,7 +354,7 @@ export const articles = () => [
   },
   {
     slug: 'cloudscape-type-helpers',
-    title: 'Cloudscape TypeHelpers',
+    title: 'Cloudscape type helpers',
     description: 'A collection of Typescript definitions that make your code more readable.',
     image: 'https://bishopz.s3.amazonaws.com/clouds.webp',
     format: 'Documentation',
@@ -363,7 +364,8 @@ export const articles = () => [
     vendor: 'Cloudscape',
     publicationDate: new Date('May 9, 2024'),
     tenets: [1, 4],
-    keywords: 'addons definitions name internal intuitive readability generic shape non-cancelable preventdefault \
+    keywords: 'typescript addons definitions name internal intuitive readability generic shape non-cancelable \
+    preventdefault strict typechecking static \
     wrappers event handler definition list inference engine variables object fruits apple grape bland \
     BreadcrumbGroupProps, ButtonDropdownProps, ButtonProps, CalendarProps, CardsProps, CheckboxProps, \
     CollectionPreferencesProps, DateRangePickerProps, ExpandableSectionProps, FlashbarProps, GridProps, \
@@ -410,7 +412,7 @@ export const articles = () => [
     title: 'MATTER: thought leadership',
     description: 'A Stellar Elements website, designed to provoke conversation on topics that\'ll\
       be relevant for years to come.',
-    image: 'https://matter.stellarelements.com/images/beyond-horizontality.png.webp',
+    image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/matter.png',
     format: 'Case Study',
     topic: 'Thought Leardership',
     discipline: 'Engineering',
