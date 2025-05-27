@@ -27,6 +27,7 @@ const docs: SidenavItem = {
 
 const articlesNav: SidenavItem[] = [
   { type: 'link', text: 'Search', href: '/search' },
+  { type: 'link', text: 'RSS feed', href: '/rss.xml' },
   { type: 'divider' },
 
   { type: 'section-group', title: 'About', items: [

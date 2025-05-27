@@ -159,8 +159,8 @@ export const articles = () => [
   },
   {
     slug: 'generic-empty',
-    title: 'Cloudscape generic empty',
-    name: 'Generic empty',
+    title: 'Cloudscape empty state',
+    name: 'Generic empty state',
     description: 'Simple components designed to speed up creation of new Tables.',
     image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/empty-states.jpg',
     format: 'Documentation',
@@ -384,7 +384,7 @@ export const articles = () => [
   },
   {
     slug: 'genui-outcome-design-nng',
-    title: 'Design and Generative UI',
+    title: 'Design and generative UI',
     description: 'Diving into Neilson Norman Group\'s take on GenUI vs AI-assisted design.',
     image: 'https://media.nngroup.com/media/articles/opengraph_images/GenUI-33.png',
     format: 'Article',

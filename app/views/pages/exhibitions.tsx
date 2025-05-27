@@ -52,6 +52,7 @@ export const Exhibitions = () => {
         </Box>
       </Container>
       <Container header={<Header variant="h2">Public speaking</Header>}>
+        <p>2025 User Group Presenter, <Link href="/articles/2025-boilerplate">"Boilerplate for 2025"</Link> React ATX, Capital Factory - Austin, TX</p>
         <p>2025 User Group Presenter, <Link href="/articles/from-any-to-unknown">"Typescript: from Any to Unknown"</Link> Denver Script, Code Talent - Denver, CO</p>
         <p>2024 User Group Presenter, <Link href="/articles/software-engineering-and-ai">"AI and Software Engineering"</Link> React Denver - Denver, CO</p>
         <p>2023 User Group Presenter, <Link href="/articles/state-management:-the-missing-manual">"State management: the missing manual"</Link> React Denver - Denver, CO</p>

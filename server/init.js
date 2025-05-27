@@ -8,6 +8,7 @@ import { DEFAULT_TITLE, DEFAULT_DESCRIPTION, DEFAULT_IMAGE } from './constants.j
 import { webmanifest } from './webmanifest.js';
 import helmet from 'helmet';
 import { redirects } from './redirects.js';
+import { format } from 'date-fns';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -26,7 +27,13 @@ app.use(helmet({
     },
   },
 }));
-app.engine('handlebars', engine());
+app.engine('handlebars', engine({
+  helpers: {
+    formatDate: function(date) {
+      return format(new Date(date), 'EEE, dd MMM yyyy HH:mm:ss xxxx');
+    }
+  }
+}));
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, '/views'));
 
@@ -35,6 +42,14 @@ redirects.forEach(redirect => {
     res.redirect(redirect[1])
   })
 })
+
+app.get('/rss.xml', (req, res) => {
+  res.setHeader('Content-Type', 'application/xml');
+  res.render('rss', {
+    layout: false,
+    items: articles()
+  });
+});
 
 app.get('/api/articles', (req, res) => {
   console.log('sent articles')

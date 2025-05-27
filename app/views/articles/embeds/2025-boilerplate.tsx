@@ -134,6 +134,65 @@ export const Boilerplate2025 = () => {
     <Container>
       <SpaceBetween size="s">
         <h2>
+        What's the difference between a Boilerplate and a Design System?
+        </h2>
+        <p>
+          A boilerplate and a design system serve different purposes but can complement each other.
+        </p>
+        <p>
+          <strong>Boilerplate</strong> is a technical foundation.
+        </p>
+        <ul>
+          <li>
+            Project structure
+          </li>
+          <li>
+            Build tools configuration
+          </li>
+          <li>
+            Routing setup
+          </li>
+          <li>
+            State management patterns
+          </li>
+          <li>
+            API integration strategies
+          </li>
+          <li>
+            Developer tooling (linters, testing frameworks)
+          </li>
+        </ul>
+        <p>
+          <strong>Design system</strong> is a collection of reusable UI components and design guidelines.
+        </p>
+        <ul>
+          <li>
+            Visual component library (buttons, forms, modals)
+          </li>
+          <li>
+            Design tokens (colors, spacing, typography)
+          </li>
+          <li>
+            Interaction patterns
+          </li>
+          <li>
+            Accessibility standards
+          </li>
+          <li>
+            Visual design consistency rules
+          </li>
+        </ul>
+        <p>
+          My boilerplate focuses on the technical architecture - it provides the "plumbing" for React, TypeScript, data management and more. It handles how data flows, how pages are built, etc.
+        </p>
+        <p>
+          A design system, like Chakra UI, sits on top of that foundation, providing the actual UI components users interact with. You could swap Chakra for MUI, Tailwind, or a custom solution while keeping the same underlying boilerplate architecture.
+        </p>
+      </SpaceBetween>
+    </Container>
+    <Container>
+      <SpaceBetween size="s">
+        <h2>
         History: A Journey Through Time
         </h2>
         <p>
