@@ -47,7 +47,7 @@ export const Resume = () => {
             </SpaceBetween>}
           /><JobCard
             title="Senior Software Engineer, Frontend"
-            company="Stellar Elements (Amdocs) &bull; Full-time"
+            company="Amdocs &bull; Full-time"
             companyLink="https://www.stellarelements.com/"
             duration="2 yrs 6 mos &bull; Seattle, Washington (remote)"
             logo="https://media.licdn.com/dms/image/D560BAQG-eXtmKYSbfQ/company-logo_100_100/0/1684789598663?e=1698883200&v=beta&t=xvGJ1_lKCNdONe0o4aXsPcKDqA80g0ar66aAOTqhx6s"

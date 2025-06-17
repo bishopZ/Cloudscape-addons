@@ -33,6 +33,7 @@ const articlesNav: SidenavItem[] = [
   { type: 'section-group', title: 'About', items: [
     { type: 'link', text: 'Resume', href: '/resume' },
     { type: 'link', text: 'Show record', href: '/exhibitions' },
+    { type: 'link', text: 'Contact', href: '/contact' },
   ] },
   // { type: 'link', text: 'Addons gallery', href: '/articles/gallery' },
   // { type: 'link', text: 'Understanding design systems', href: '/articles/search/design%20systems' },

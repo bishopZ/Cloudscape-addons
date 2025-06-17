@@ -9,8 +9,6 @@ import { changePreference } from '/data/preferences';
 /* eslint-disable max-len */
 export const Exhibitions = () => {
   const dispatch = useAppDispatch();
-  let videoHeight = 480;
-  if (window.innerWidth < 1024) videoHeight = 240;
 
   return <ContentLayout
     header={<Header
@@ -28,17 +26,7 @@ export const Exhibitions = () => {
       Show record
     </Header>}>
     <SpaceBetween size="s">
-      <Container
-        header={<Header variant="h2">Select clients</Header>}
-        media={{
-          content: <iframe
-            title="vimeo-player"
-            src="//player.vimeo.com/video/213543689"
-            height={videoHeight}
-            allowFullScreen
-          />,
-          height: videoHeight,
-        }}>
+      <Container header={<Header variant="h2">Select clients</Header>}>
         <Box
           padding={Spacing.HorizontalL}
           fontSize="heading-s">
@@ -83,7 +71,8 @@ export const Exhibitions = () => {
         <p>1998 Innovation in Art and Technology, Texas Interactive Multimedia Awards (Kill The President)</p>
       </Container>
       <Container header={<Header variant="h2">Art exhibitions</Header>}>
-        <p>2025 Visual coordinator/Animator, "Söm Sãptälahn" (2 shows), itchy-O, Fiske Planetarium - Boulder, CO</p>
+        <p>2025 Assistant Stage Manager, Intergalactic Masquerade, itchy-O, The Ogden - Denver, CO</p>
+        <p>2025 Visual coordinator &amp; Animator, "Söm Sãptälahn" (2 shows), itchy-O, Fiske Planetarium - Boulder, CO</p>
         <p>2024 Performance artist, Summer Scream, itchy-O, Lakeside Amusement Park - Denver, CO</p>
         <p>2024 Projection artist, Intergalactic Mascarade, itchy-O, The Summit - Denver, CO</p>
         <p>2024 Visual coordinator, <ExternalLink href="//www.youtube.com/watch?v=Uh42Zpoobyc">"Söm Sãptälahn"</ExternalLink> (2 shows), itchy-O, Fiske Planetarium - Boulder, CO</p>

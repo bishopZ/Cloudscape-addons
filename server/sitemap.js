@@ -17,6 +17,12 @@ export const makeSitemap = (req, res) => {
         <priority>1.0</priority>
       </url>
       <url>
+        <loc>https://bishopz.com/contact</loc>
+        <lastmod>2024-04-16T00:00:00+00:00Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+      </url>
+      <url>
         <loc>https://bishopz.com/exhibitions</loc>
         <lastmod>2024-04-16T00:00:00+00:00Z</lastmod>
         <changefreq>monthly</changefreq>

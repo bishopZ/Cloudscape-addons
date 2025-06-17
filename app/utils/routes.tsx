@@ -6,6 +6,7 @@ import { DEFAULT_DESCRIPTION } from '/data/constants';
 import { ArticleContainer } from '/views/pages/articles/article-container';
 import { BrowseArticles } from '/views/pages/articles/browse-page';
 import { Search } from '/views/pages/articles/search-page';
+import { Contact } from '/views/pages/contact';
 import { Exhibitions } from '/views/pages/exhibitions';
 // import { ArticleContainer } from '/views/pages/articles/article-container';
 // import { Blog } from '/views/pages/articles/articles-page';
@@ -74,6 +75,13 @@ export const ROUTES = (): RouteProps[] => [
     description: DEFAULT_DESCRIPTION,
     contentType: 'default',
     component: NotFound,
+    breadcrumbs: []
+  }, {
+    path: '/contact',
+    title: 'Contact',
+    description: 'Contact Bishop Z for any inquiries or collaborations. Reach out to discuss your next project or learn more about his work.',
+    contentType: 'default',
+    component: Contact,
     breadcrumbs: []
   },
   {
