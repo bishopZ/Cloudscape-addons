@@ -7,7 +7,7 @@ import { IconMapArticle } from '/views/articles/addons/icon-map-article';
 import { LoadingArticle } from '/views/articles/addons/loading-article';
 // import { NumberArticle } from '/views/articles/addons/number-article';
 import { SpacingConstants } from '/views/articles/addons/spacing-article';
-// import { StringArticle } from '/views/articles/addons/string-article';
+import { StringArticle } from '/views/articles/addons/string-article';
 import { TypeArticle } from '/views/articles/addons/type-article';
 // import { UnsavedArticle } from '/views/articles/addons/unsaved-article';
 import { AnatomyArticle } from '/views/articles/content/anatomy-article';
@@ -70,7 +70,7 @@ export const CONTENT_MAP = {
   // 'labeled-value': LabeledValueArticle,
   'generic-empty': EmptyArticle,
   // 'unsaved-changes-modal': UnsavedArticle,
-  // 'string-utils': StringArticle,
+  'string-utils': StringArticle,
 
   'anatomy-of-a-design-system': AnatomyArticle,
   // 'documenting-a-design-system': DocumentingArticle,

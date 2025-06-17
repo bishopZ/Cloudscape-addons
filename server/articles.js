@@ -122,25 +122,25 @@ export const articles = () => [
   // },
 
 
-  // {
-//     slug: 'string-utils',
-//     title: 'Cloudscape string utilities',
-//     name: 'String utilities',
-//     description: 'A collection of localization-friendly string utility functions \
-//     for use with tables, dates, and S3 resources.',
-//     image: 'assets/chasm.jpg',
-//     format: 'Documentation',
-//     topic: 'Components',
-//     discipline: 'Engineering',
-//     section: 'Helpers',
-//     vendor: 'Cloudscape',
-//     publicationDate: new Date('Jun 4, 2024'),
-//     tenets: [0, 1, 2, 3],
-//     keywords: 'utilities localization internationalization l10n l18n multi-language addoptional form fields optional \
-//     label title translated heading-s inline-block ariarequired required formatdate absolute relativedash fallback \
-//     toLocaleDateString LOCALE year month day week minute second moment makecounter table header s3 resource \
-//     selector location uri aws sdk bucketname box makeS3Location addons',
-//   },
+  {
+    slug: 'string-utils',
+    title: 'Cloudscape string utilities',
+    name: 'String utilities',
+    description: 'A collection of localization-friendly string utility functions \
+    for use with tables, dates, and S3 resources.',
+    image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/string-utils.jpg',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Helpers',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('Jun 17, 2025'),
+    tenets: [0, 1, 2, 3],
+    keywords: 'utilities localization internationalization l10n l18n multi-language addoptional form fields optional \
+    label title translated heading-s inline-block ariarequired required formatdate absolute relativedash fallback \
+    toLocaleDateString LOCALE year month day week minute second moment makecounter table header s3 resource \
+    selector location uri aws sdk bucketname box makeS3Location addons',
+  },
 
   {
     slug: '2025-boilerplate',
