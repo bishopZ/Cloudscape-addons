@@ -6,27 +6,33 @@ export const makeSitemap = (req, res) => {
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
         <loc>https://bishopz.com/</loc>
-        <lastmod>2024-04-16T00:00:00+00:00Z</lastmod>
+        <lastmod>2025-06-21T00:00:00+00:00Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
       </url>
       <url>
         <loc>https://bishopz.com/resume</loc>
-        <lastmod>2024-04-16T00:00:00+00:00Z</lastmod>
+        <lastmod>2025-06-21T00:00:00+00:00Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
       </url>
       <url>
+        <loc>https://bishopz.com/exhibitions</loc>
+        <lastmod>2025-06-21T00:00:00+00:00Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+      </url>
+      <url>
         <loc>https://bishopz.com/contact</loc>
-        <lastmod>2024-04-16T00:00:00+00:00Z</lastmod>
+        <lastmod>2025-06-21T00:00:00+00:00Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
       </url>
       <url>
-        <loc>https://bishopz.com/exhibitions</loc>
-        <lastmod>2024-04-16T00:00:00+00:00Z</lastmod>
+        <loc>https://bishopz.com/rss.xml</loc>
+        <lastmod>2025-06-21T00:00:00+00:00Z</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.2</priority>
       </url>
       ${articles().map(article => `<url>
         <loc>https://bishopz.com/articles/${article.slug}</loc>

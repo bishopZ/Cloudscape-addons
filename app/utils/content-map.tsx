@@ -13,7 +13,7 @@ import { TypeArticle } from '/views/articles/addons/type-article';
 import { AnatomyArticle } from '/views/articles/content/anatomy-article';
 import { BridgingTheChasmContent } from '/views/articles/content/bridging-the-chasm';
 import { DoINeedArticle } from '/views/articles/content/do-i-need-article';
-// import { DocumentingArticle } from '/views/articles/content/documenting-article';
+import { DocumentingArticle } from '/views/articles/content/documenting-article';
 import { FigmaArticle } from '/views/articles/content/figma-article';
 // import { LifecycleArticle } from '/views/articles/content/lifecycle-article';
 import { MaturityArticle } from '/views/articles/content/maturity-article';
@@ -73,7 +73,7 @@ export const CONTENT_MAP = {
   'string-utils': StringArticle,
 
   'anatomy-of-a-design-system': AnatomyArticle,
-  // 'documenting-a-design-system': DocumentingArticle,
+  'documenting-a-design-system': DocumentingArticle,
   // 'design-system-lifecycle': LifecycleArticle,
 
 } as const;

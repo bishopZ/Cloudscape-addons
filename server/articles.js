@@ -100,28 +100,26 @@ export const articles = () => [
   //   guru guiding greatness evolving adapt',
   // },
 
-  // {
-  //   slug: 'documenting-a-design-system',
-  //   title: 'Documenting a design system',
-  //   description: 'Document your design system with assets, process and documentation.',
-  //   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Austria_-_G%C3%B6ttweig_Abbey_-_2015.jpg/320px-Austria_-_G%C3%B6ttweig_Abbey_-_2015.jpg',
-  //   format: 'Article',
-  //   topic: 'Design system',
-  //   discipline: 'Writing',
-  //   section: 'Delivery',
-  //   author: 'Bishop Zareh',
-  //   publicationDate: new Date('Jun 6, 2023'),
-  //   keywords: 'centralized scalable cohesive potential clear communicates assets processes guidelines \
-  //   teams consistency efficiency collaboration tangible layered logo files brand identity tokens CSS primitive \
-  //   color palette core sass layout mixin interfaces components figma buttons product human behaviors actions \
-  //   governance development maintenance usage contibution evaluating approving changes evolution \
-  //   synchronization projects deprecation outdated release versioning updates extention variation \
-  //   customization onboarding backbone rationale purpose owns beliefs philohophies reasoning benefits \
-  //   decisions explainations describe functionality migration transition outline recommended scenarios \
-  //   individuals location where assets resources examples showcase real-world inspiration',
-  // },
-
-
+  {
+    slug: 'documenting-a-design-system',
+    title: 'Documenting a design system',
+    description: 'Document your design system with assets, process and documentation.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Austria_-_G%C3%B6ttweig_Abbey_-_2015.jpg/960px-Austria_-_G%C3%B6ttweig_Abbey_-_2015.jpg',
+    format: 'Article',
+    topic: 'Design system',
+    discipline: 'Writing',
+    section: 'Delivery',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Jun 23, 2025'),
+    keywords: 'centralized scalable cohesive potential clear communicates assets processes guidelines \
+    teams consistency efficiency collaboration tangible layered logo files brand identity tokens CSS primitive \
+    color palette core sass layout mixin interfaces components figma buttons product human behaviors actions \
+    governance development maintenance usage contibution evaluating approving changes evolution \
+    synchronization projects deprecation outdated release versioning updates extention variation \
+    customization onboarding backbone rationale purpose owns beliefs philohophies reasoning benefits \
+    decisions explainations describe functionality migration transition outline recommended scenarios \
+    individuals location where assets resources examples showcase real-world inspiration',
+  },
   {
     slug: 'string-utils',
     title: 'Cloudscape string utilities',
@@ -144,8 +142,8 @@ export const articles = () => [
 
   {
     slug: '2025-boilerplate',
-    title: 'Boilerplate for 2025',
-    name: 'Boilerplate for 2025',
+    title: 'Frontend Boilerplate for 2025',
+    name: 'Frontend Boilerplate for 2025',
     description: 'A local-first web app boilerplate for 2025. A family of frontend technologies, setup and ready to go!',
     image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/2025-boilerplate.jpg',
     format: 'Code',
