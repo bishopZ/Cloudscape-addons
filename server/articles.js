@@ -193,25 +193,25 @@ export const articles = () => [
     reusable components patterns grid scale animation component buttons search bars text inputs notifications \
     breadcrumbs tabs tooltips radio ecosystem',
   },
-{
-  "slug": "aspen-give-a-flake",
-  "title": "Aspen Give-a-Fl*ke X bot",
-  description: 'A module for the Give A Fl*ke campaign website that facilitated tweeting to politicians.',
-  image: 'https://bishopz.s3.amazonaws.com/upload/KarshHagan_GiveAFlake_Header.jpg',
-  format: 'Case Study',
-  topic: 'Social media',
-  discipline: 'Engineering',
-  section: 'Case Study',
-  vendor: 'X',
-  publicationDate: new Date('05-23-2021'),
-  keywords: 'snow melting climate change global warming political action activism ',
-  "views": 348,
-  "images": [
-    "https://bishopz.s3.amazonaws.com/upload/KarshHagan_rw4_2_GiveaFlake_ipad.jpg",
-    "https://bishopz.s3.amazonaws.com/upload/KarshHagan_rw4_3_LRG.jpg"
-  ],
-},
-{
+  {
+    "slug": "aspen-give-a-flake",
+    "title": "Aspen Give-a-Fl*ke X bot",
+    description: 'A module for the Give A Fl*ke campaign website that facilitated tweeting to politicians.',
+    image: 'https://bishopz.s3.amazonaws.com/upload/KarshHagan_GiveAFlake_Header.jpg',
+    format: 'Case Study',
+    topic: 'Social media',
+    discipline: 'Engineering',
+    section: 'Case Study',
+    vendor: 'X',
+    publicationDate: new Date('05-23-2021'),
+    keywords: 'snow melting climate change global warming political action activism ',
+    "views": 348,
+    "images": [
+      "https://bishopz.s3.amazonaws.com/upload/KarshHagan_rw4_2_GiveaFlake_ipad.jpg",
+      "https://bishopz.s3.amazonaws.com/upload/KarshHagan_rw4_3_LRG.jpg"
+    ],
+  },
+  {
     slug: 'loading-states',
     title: 'Cloudscape loading states',
     name: 'Loading states',
@@ -333,7 +333,7 @@ export const articles = () => [
     discipline: 'Engineering',
     section: 'Machine Learning',
     vendor: 'Google DeepMind',
-    publicationDate: new Date('May 21, 2024'),
+    publicationDate: new Date('July 1, 2025'),
     keywords: 'ai large language model training Natural Language Processing NLP Best practices quality Diversity Real-world validation Adversarial Ethical considerations Continuous improvement Monitoring evaluation Machine learning ML Natural language generation NLG augmentation robustness Ethics Bias mitigation Cultural sensitivity Testing evaluation frameworks',
   },
   {
