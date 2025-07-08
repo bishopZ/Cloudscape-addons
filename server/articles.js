@@ -105,7 +105,7 @@ export const articles = () => [
     slug: 'diamond-age-waitlist',
     title: 'Diamond Age Waitlist',
     description: 'Diamond Age, a new private productivity game, now has a Waitlist for the Beta Program.',
-    image: 'https://diamond-age.bishopz.com/app/images/William-Adolphe_Bouguereau_Song_of_the_Angels_1881.jpg',
+    image: 'https://bishopz.s3.us-east-1.amazonaws.com/diamond-age/William-Adolphe_Bouguereau_Song_of_the_Angels_1881.jpg',
     format: 'Announcement',
     topic: 'Productivity',
     discipline: 'Product',

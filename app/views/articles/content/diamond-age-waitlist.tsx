@@ -54,7 +54,7 @@ export const DiamondAgeWaitlist = () => {
             <strong>A Playful Perspective:</strong> Don't overthink—have fun. Use our Advisors to spice up daily routines.
           </li>
           <li>
-            Play with your AI Advisor(s). Have them suggest an idea? Sure! But also feel free to take a snooze and let us handle when it's the best moment for that particular task!
+            Play with your AI Advisors. Have them suggest an idea? Sure! But also feel free to take a snooze and let us handle when it's the best moment for that particular task!
           </li>
         </ul>
         <Box variant="p">
