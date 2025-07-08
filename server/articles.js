@@ -100,6 +100,20 @@ export const articles = () => [
   //   guru guiding greatness evolving adapt',
   // },
 
+
+  {
+    slug: 'diamond-age-waitlist',
+    title: 'Diamond Age Waitlist',
+    description: 'Diamond Age, a new private productivity game, now has a Waitlist for the Beta Program.',
+    image: 'https://diamond-age.bishopz.com/app/images/William-Adolphe_Bouguereau_Song_of_the_Angels_1881.jpg',
+    format: 'Announcement',
+    topic: 'Productivity',
+    discipline: 'Product',
+    section: 'Tools',
+    vendor: 'Diamond Age',
+    publicationDate: new Date('Jul 8, 2025'),
+    keywords: 'diamond age waitlist beta program private productivity game',
+  },
   {
     slug: 'documenting-a-design-system',
     title: 'Documenting a design system',

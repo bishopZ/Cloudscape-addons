@@ -1,5 +1,5 @@
 import {
-  Box, ColumnLayout, Container, ContentLayout, ExpandableSection, Header, SpaceBetween, Table
+  Box, Button, ColumnLayout, Container, ContentLayout, ExpandableSection, Header, SpaceBetween, Table
 } from '@cloudscape-design/components';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -20,15 +20,17 @@ export const Resume = () => {
     header={<Header
       variant="h1"
       // description="I'm on the hunt for my next adventure!"
-      info={<Link to="#"
+      info={<Button
+        variant="link"
         onClick={() => {
           dispatch(changePreference({
             name: 'tools',
             value: 'open'
           }));
         }}>
-          info
-      </Link>}>
+      info
+      </Button>}
+    >
       Bishop Zareh
     </Header>}>
     <SpaceBetween size="s">
@@ -38,7 +40,7 @@ export const Resume = () => {
             title="Senior Frontend Architect"
             company="Vertafore &bull; Full-time"
             companyLink="https://www.vertsafore.com/"
-            duration="Jul 2024 - Present &bull; Denver, Colorado"
+            duration="Jul 2024 - Apr 2025 &bull; Denver, Colorado"
             logo="https://media.licdn.com/dms/image/v2/C4D0BAQEuzgQT1Dmzjw/company-logo_100_100/company-logo_100_100/0/1651184196480/vertafore_logo?e=1740614400&v=beta&t=0yXCuYbGmeEigrMMaH5OLpv7yJnjsafw2woCobzZ8qY"
             description={<SpaceBetween size="s">
               <p>

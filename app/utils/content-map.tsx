@@ -12,6 +12,7 @@ import { TypeArticle } from '/views/articles/addons/type-article';
 // import { UnsavedArticle } from '/views/articles/addons/unsaved-article';
 import { AnatomyArticle } from '/views/articles/content/anatomy-article';
 import { BridgingTheChasmContent } from '/views/articles/content/bridging-the-chasm';
+import { DiamondAgeWaitlist } from '/views/articles/content/diamond-age-waitlist';
 import { DoINeedArticle } from '/views/articles/content/do-i-need-article';
 import { DocumentingArticle } from '/views/articles/content/documenting-article';
 import { FigmaArticle } from '/views/articles/content/figma-article';
@@ -37,6 +38,7 @@ import { DigitalLife } from '/views/articles/slideshows/digital-life';
 // import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
+  'diamond-age-waitlist': DiamondAgeWaitlist,
   '2025-boilerplate': Boilerplate2025,
   'aspen-give-a-flake': AspenGiveAFlake,
   'design-directors-dance-with-ai': DesignDirectorDance,
