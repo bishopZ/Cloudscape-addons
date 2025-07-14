@@ -21,20 +21,9 @@ export const Matter = () => {
         MATTER is a thought leadership website that seeks to provide insightful content on topics relevant for years to come. The site is dedicated to exploring themes of horizontality, which refers to the idea of moving beyond traditional hierarchies and structures to create a more inclusive and diverse society. The site features experiential pieces created in collaboration with experts and visionaries from around the world, which aim to educate, engage, and provoke thought on topics such as the future of democracy, the intersection of strategy and marketing, and the role of artificial intelligence in productivity enhancement.
       </p>
       <p>
-        <ExternalLink href="//matter.stellarelements.com">
-          See the site
-        </ExternalLink>
-      </p>
-      <p>
         MATTER was nominated for an&nbsp;
         <ExternalLink href="https://www.awwwards.com/sites/matter-3">
           Awwwards Site of the Day.
-        </ExternalLink>
-      </p>
-      <h2>Who</h2>
-      <p>
-        <ExternalLink href="//matter.stellarelements.com/meet-the-team">
-          Meet the team
         </ExternalLink>
       </p>
       <h2>Why</h2>
