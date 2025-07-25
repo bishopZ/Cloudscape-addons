@@ -100,7 +100,19 @@ export const articles = () => [
   //   guru guiding greatness evolving adapt',
   // },
 
-
+  {
+    slug: 'full-stack-soft-skills',
+    title: 'Full Stack Soft Skills',
+    description: 'A Frontend Developer\'s Guide to Backend Engineering Practices',
+    image: 'https://bishopz.s3.us-east-1.amazonaws.com/lofi/lofi2.jpg',
+    format: 'Article',
+    topic: 'Full Stack',
+    discipline: 'Engineering',
+    section: 'Tools',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Jul 25, 2025'),
+    keywords: '',
+  },
   {
     slug: 'diamond-age-waitlist',
     title: 'Diamond Age Waitlist',

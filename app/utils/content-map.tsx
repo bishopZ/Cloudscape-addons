@@ -16,6 +16,8 @@ import { DiamondAgeWaitlist } from '/views/articles/content/diamond-age-waitlist
 import { DoINeedArticle } from '/views/articles/content/do-i-need-article';
 import { DocumentingArticle } from '/views/articles/content/documenting-article';
 import { FigmaArticle } from '/views/articles/content/figma-article';
+// import { TenetsPage } from '/views/pages/tenets/tenets-page';
+import { FullStackSoftSkills } from '/views/articles/content/full-stack-soft-skills';
 // import { LifecycleArticle } from '/views/articles/content/lifecycle-article';
 import { MaturityArticle } from '/views/articles/content/maturity-article';
 import { Boilerplate2025 } from '/views/articles/embeds/2025-boilerplate';
@@ -35,9 +37,9 @@ import { SyntheticData } from '/views/articles/embeds/synthetic-data';
 import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
 import { AspenGiveAFlake } from '/views/articles/slideshows/aspen-give-a-flake';
 import { DigitalLife } from '/views/articles/slideshows/digital-life';
-// import { TenetsPage } from '/views/pages/tenets/tenets-page';
 
 export const CONTENT_MAP = {
+  'full-stack-soft-skills': FullStackSoftSkills,
   'diamond-age-waitlist': DiamondAgeWaitlist,
   '2025-boilerplate': Boilerplate2025,
   'aspen-give-a-flake': AspenGiveAFlake,

@@ -13,7 +13,7 @@ export const DiamondAgeWaitlist = () => {
   return <SpaceBetween size="xs">
     <Container
       media={makeHeaderImage(article?.image ?? '')}
-      header={<Header variant="h2">Welcome to the Diamond Age, a Private Productivity Game for Slackers</Header>}>
+      header={<Header variant="h2">Welcome to the Diamond Age, a Private Productivity Game</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
         Great news! You've opened the beta waiting list for Diamond Age. We're beyond thrilled to have you join this exciting journey.
