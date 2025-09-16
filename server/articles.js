@@ -82,23 +82,23 @@ export const articles = () => [
   //   box button spacebetween visible ondismiss onconfirm warning leave continue addons',
   // },
 
-    // {
-  //   slug: 'design-system-lifecycle',
-  //   title: 'Lifecycle of a design system',
-  //   description: 'Explores the stages of a design system\'s maturity.',
-  //   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/PENGUIN_LIFECYCLE_H.JPG/320px-PENGUIN_LIFECYCLE_H.JPG',
-  //   format: 'Article',
-  //   topic: 'Design system',
-  //   discipline: 'Design',
-  //   section: 'Delivery',
-  //   author: 'Bishop Zareh',
-  //   publicationDate: new Date('Jun 8, 2023'),
-  //   keywords: 'superheros digital interface mature win joke potential journey stages model \
-  //   version ingredients balance present dicovering combination principals tokens core \
-  //   adoption obvious charming associated instructions showcase choice teenage foundation \
-  //   growth nurturing mindset promise improving time healthy platform wise leader organization \
-  //   guru guiding greatness evolving adapt',
-  // },
+    {
+    slug: 'design-system-lifecycle',
+    title: 'Lifecycle of a design system',
+    description: 'Explores the stages of a design system\'s maturity.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Penguin-lifecycle-blank.jpg',
+    format: 'Article',
+    topic: 'Design system',
+    discipline: 'Design',
+    section: 'Delivery',
+    author: 'Bishop Zareh',
+    publicationDate: new Date('Sept 23, 2025'),
+    keywords: 'superheros digital interface mature win joke potential journey stages model \
+    version ingredients balance present dicovering combination principals tokens core \
+    adoption obvious charming associated instructions showcase choice teenage foundation \
+    growth nurturing mindset promise improving time healthy platform wise leader organization \
+    guru guiding greatness evolving adapt',
+  },
 
   {
     slug: 'full-stack-soft-skills',
@@ -116,7 +116,7 @@ export const articles = () => [
   {
     slug: 'diamond-age-waitlist',
     title: 'Diamond Age Waitlist',
-    description: 'Diamond Age, a new private productivity game, now has a Waitlist for the Beta Program.',
+    description: 'Diamond Age waitlist is closed. Beta users can login to continue using the app.',
     image: 'https://bishopz.s3.us-east-1.amazonaws.com/diamond-age/William-Adolphe_Bouguereau_Song_of_the_Angels_1881.jpg',
     format: 'Announcement',
     topic: 'Productivity',

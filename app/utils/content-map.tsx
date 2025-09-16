@@ -18,7 +18,7 @@ import { DocumentingArticle } from '/views/articles/content/documenting-article'
 import { FigmaArticle } from '/views/articles/content/figma-article';
 // import { TenetsPage } from '/views/pages/tenets/tenets-page';
 import { FullStackSoftSkills } from '/views/articles/content/full-stack-soft-skills';
-// import { LifecycleArticle } from '/views/articles/content/lifecycle-article';
+import { LifecycleArticle } from '/views/articles/content/lifecycle-article';
 import { MaturityArticle } from '/views/articles/content/maturity-article';
 import { Boilerplate2025 } from '/views/articles/embeds/2025-boilerplate';
 import { FromAnyToUnknown } from '/views/articles/embeds/any-to-unknown';
@@ -78,7 +78,7 @@ export const CONTENT_MAP = {
 
   'anatomy-of-a-design-system': AnatomyArticle,
   'documenting-a-design-system': DocumentingArticle,
-  // 'design-system-lifecycle': LifecycleArticle,
+  'design-system-lifecycle': LifecycleArticle,
 
 } as const;
 
