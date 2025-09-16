@@ -16,11 +16,11 @@ export const DiamondAgeWaitlist = () => {
       header={<Header variant="h2">Welcome to the Diamond Age, a Private Productivity Game</Header>}>
       <SpaceBetween size="xs">
         <Box variant="p">
-        Great news! You've opened the beta waiting list for Diamond Age. We're beyond thrilled to have you join this exciting journey.
+        Update: The Diamond Age private beta has concluded and the waitlist is now closed. If you previously participated in the beta, you can continue using the app by signing in.
         </Box>
         <Button onClick={() => {
           window.open('https://diamond-age.bishopz.com/', '_blank');
-        }}>Join the Waitlist</Button>
+        }}>Open the App</Button>
       </SpaceBetween>
     </Container>
     <Container>
@@ -44,7 +44,7 @@ export const DiamondAgeWaitlist = () => {
     </Container>
     <Container>
       <SpaceBetween size="xs">
-        <Header variant="h3">The Perfect Productivity Dance: Join the Game!</Header>
+        <Header variant="h3">The Perfect Productivity Dance</Header>
         <Box variant="p">
           We aren't talking about setting up tasks with endless notifications here. This isn't what people would have traditionally called productivity, Diamond age is like an old app from the 1960s, its your private, digital, game-like companion.
 
@@ -64,18 +64,18 @@ export const DiamondAgeWaitlist = () => {
     </Container>
     <Container>
       <SpaceBetween size="xs">
-        <Header variant="h3">Join the Waitlist for the Diamond Age Beta</Header>
+        <Header variant="h3">Private Beta Complete — Waitlist Closed</Header>
         <Box variant="p">
-          Our Beta Version will run on web browsers Chrome or Firefox; final apps will work seamlessly across mobile devices.
+          Thank you to everyone who joined and helped shape Diamond Age. Access is currently limited to existing beta participants.
         </Box>
         <Box variant="p">
-          To join the waitlist, visit the Diamond Age website and click the "Join the Waitlist" button.
+          New sign-ups are not available at this time. If you were part of the beta, visit the app and sign in to continue.
         </Box>
         <Button onClick={() => {
           window.open('https://diamond-age.bishopz.com/', '_blank');
-        }}>Join the Waitlist</Button>
+        }}>Open the App</Button>
         <Box variant="p">
-          Stay tuned—more exciting details will be coming your way!
+          Stay tuned for future updates.
         </Box>
         <Box variant="p">
           Play on! Keep it simple & snooze with Diamond age. With Diamond Age, your productivity just got more enjoyable and meaningful. We can't wait to embark on this adventure together.

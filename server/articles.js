@@ -123,7 +123,7 @@ export const articles = () => [
     discipline: 'Product',
     section: 'Tools',
     vendor: 'Diamond Age',
-    publicationDate: new Date('Jul 8, 2025'),
+    publicationDate: new Date('Sept 16, 2025'),
     keywords: 'diamond age waitlist beta program private productivity game',
   },
   {
