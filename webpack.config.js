@@ -12,6 +12,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 const config = {
   entry: [
+    './app/styles/reset.scss',
     './app/init.tsx',
     './app/styles/styles.scss',
     './app/images/Jan-2016-bubble-v1_onwhite.gif',

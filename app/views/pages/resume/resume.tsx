@@ -37,23 +37,35 @@ export const Resume = () => {
       <Container header={<Header variant="h2">Experience</Header>}>
         <ColumnLayout borders="horizontal">
           <JobCard
+            title="Founer/CEO"
+            company="Diamond Age &bull; Full-time"
+            companyLink="https://diamondage.bishopz.com/"
+            duration="May 2025 - Present &bull; Denver, Colorado"
+            description={
+              <p>
+                Founded and built a full stack web app that generates personalized advice using On-device LLMs. Product planning, Marketing: Built the entire MVP (minimum viable product). Private web beta is live. App Store and Play Store inclusion pending.
+              </p>
+            }
+          />
+          <JobCard
             title="Senior Frontend Architect"
             company="Vertafore &bull; Full-time"
             companyLink="https://www.vertsafore.com/"
             duration="Jul 2024 - Apr 2025 &bull; Denver, Colorado"
             logo="https://media.licdn.com/dms/image/v2/C4D0BAQEuzgQT1Dmzjw/company-logo_100_100/company-logo_100_100/0/1651184196480/vertafore_logo?e=1740614400&v=beta&t=0yXCuYbGmeEigrMMaH5OLpv7yJnjsafw2woCobzZ8qY"
-            description={<SpaceBetween size="s">
+            description={
               <p>
-                Work with designers and engineers to develop the company's design system, ensuring fast and consistent work across ten different product teams.
+                Work with designers and engineers to develop the company's design system, ensuring fast and consistent work across ten products. Created an outreach program to speed onboarding of new products to the design system. Develop and document design patterns and best practices for all engineering teams, showcasing good architectural decisions that ensure continuous iteration and fast feature development.
               </p>
-            </SpaceBetween>}
-          /><JobCard
+            }
+          />
+          <JobCard
             title="Senior Software Engineer, Frontend"
             company="Amdocs &bull; Full-time"
             companyLink="https://www.stellarelements.com/"
             duration="2 yrs 6 mos &bull; Seattle, Washington (remote)"
             logo="https://media.licdn.com/dms/image/D560BAQG-eXtmKYSbfQ/company-logo_100_100/0/1684789598663?e=1698883200&v=beta&t=xvGJ1_lKCNdONe0o4aXsPcKDqA80g0ar66aAOTqhx6s"
-            description={<SpaceBetween size="s">
+            description={<>
               <p>
                 I had the opportunity to work exclusively on the Amazon account, where I was part of a team responsible for updating an in-production AWS service that spanned 26 global regions and ran in six languages. Our team of 2-5 engineers updated the service to a newer version of its design system and newer React and Redux coding patterns. As a key member of the team, I created a template for all new code on the project, wrote new contribution guidelines, an ESLint configuration, and a new automated testing framework using Cypress. These efforts not only improved the functionality and performance of the service but also enhanced the overall speed and quality of the development process.
               </p>
@@ -61,7 +73,7 @@ export const Resume = () => {
                 For the last three months, I researched ways to achieve engineering productivity enhancements using Large Lanugage Models (LLMs), and built the company's "thought leadership" platform, <Link to="/articles/matter-thought-leadership">MATTER</Link>, which was nominated for an
                 Awwwards Site of the Day.
               </p>
-            </SpaceBetween>}
+            </>}
           />
           <JobCard
             title="Senior Creative Technologist"
@@ -69,7 +81,7 @@ export const Resume = () => {
             companyLink="https://karshhagan.com"
             duration="3 yrs 5 mos &bull; Denver, Colorado"
             logo="https://media.licdn.com/dms/image/C4E0BAQFHx-M9LdTajA/company-logo_100_100/0/1569951228610?e=1698883200&v=beta&t=5xfY5OEUyyd_lIbV0UI6MpGQaA-uLVbs8V1_oduNKtk"
-            description={<SpaceBetween size="m">
+            description={<>
               <Box variant="p">
                 As the Senior Creative Technologist at Karsh Hagan, I managed the technical aspects of over twenty accounts, including full-stack development on multiple architectures using React with Redux. My responsibilities included managing teams of domestic and foreign contract developers, building websites, take-overs, social media posts, mobile apps, voice apps, interactive prototypes, landing pages, animated microsites, and large content marketing websites. Additionally, I architected and built three web-based products with Node.js for an internal startup incubator, and collaborated with brand creatives to develop innovative marketing campaigns using design systems, personalization, chat bots, augmented reality (AR), webcam stream routing, animation-to-web pipelines, machine learning, blockchain, and more. I also created many starter templates for new website builds in diverse industries such as healthcare, energy, and consumer electronics. Furthermore, I acted as the official bug hunter on systems that had fallen out of repair.
 
@@ -100,7 +112,7 @@ export const Resume = () => {
                   <br />VP of Creative Technology, Karsh Hagan
                 </em>
               </Box>
-            </SpaceBetween>}
+            </>}
           />
           <JobCard
             title="Senior Frontend Engineer"
@@ -125,14 +137,14 @@ export const Resume = () => {
               companyLink="https://www.razorfish.com/"
               duration="1 yr 2 mos &bull; Austin, Texas"
               logo="https://media.licdn.com/dms/image/C560BAQFfYKn6of94Bw/company-logo_100_100/0/1549799977055?e=1698883200&v=beta&t=g1k2kXLwBDrlMQk8TM5YRSiGz8z-ApDvv_hfKbg5iK0"
-              description={<SpaceBetween size="s">
+              description={<>
                 <p>
                 At razorfish, I used Javascript to build parts of a complex single-page application for the national product release of AT&T's Digital Life home automation system. Specifically, I architected and built a consumer-level, web-based, 3D modeling application with THREE.js. It enabled users to construct a 3D model of their home and their smart devices.
                 </p>
                 <p>
                 Digital Life in the news [<ExternalLink href="//engt.co/Ov1uBh">1</ExternalLink>, <ExternalLink href="//cnet.co/1Gl0ZQa">2</ExternalLink>, <ExternalLink href="//on-ajc.com/1C4FbUZ">3</ExternalLink>]
                 </p>
-              </SpaceBetween>}
+              </>}
             />
             <hr />
             <JobCard
