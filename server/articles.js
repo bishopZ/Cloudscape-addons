@@ -86,7 +86,7 @@ export const articles = () => [
     slug: 'design-system-lifecycle',
     title: 'Lifecycle of a design system',
     description: 'Explores the stages of a design system\'s maturity.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Penguin-lifecycle-blank.jpg',
+    image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/lifecycle-design-system.jpg',
     format: 'Article',
     topic: 'Design system',
     discipline: 'Design',
