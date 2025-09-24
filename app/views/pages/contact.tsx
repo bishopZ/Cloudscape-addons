@@ -41,7 +41,9 @@ export const Contact = () => {
         <SpaceBetween size="l">
           <div>
             <h3>Send an email</h3>
-            <p>I accept email at support@thisdomain.com.</p>
+            <p style={{ marginBottom: 0 }}>
+              I accept email at support@thisdomain.com.
+            </p>
           </div>
           <div>
             <h3>Connect on Social</h3>

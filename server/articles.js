@@ -364,8 +364,8 @@ export const articles = () => [
   },
   {
     slug: 'karsh-hagan-office-pet',
-    title: 'Creating my first Alexa Skill',
-    description: '"Office Pet" is Karsh Hagan\'s voice bot on Amazon\'s Alexa platform.',
+    title: 'My first Alexa Skill',
+    description: '"Office Pet" was Karsh Hagan\'s voice bot on Amazon\'s Alexa platform.',
     image: 'https://bishopz.s3.amazonaws.com/upload/Karsh-Hagans-Office-Pet.png',
     format: 'Case Study',
     topic: 'Voice Interface',
