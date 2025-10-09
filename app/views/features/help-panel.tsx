@@ -6,7 +6,7 @@ export const HelpPanelContent = () => {
     header={<Header variant="h2">Bishop Zareh: software engineering expert with a twist</Header>}>
     <SpaceBetween size="xs">
       <Box variant="p">
-        Are you looking for an exceptional software engineer who can bring innovation and creativity to your team? Look no further than Bishop Zareh, with over 20 years of experience crafting novel experiences for the web, mobile, and immersive environments. Bishop is ready to lead your team to success with a wealth of knowledge and expertise.
+        Bishop Zareh is an exceptional software engineer with over 20 years of crafting novel web, mobile, and immersive experiences.
       </Box>
       <Header variant='h3'>Award-winning experience</Header>
       <ul>
@@ -28,12 +28,6 @@ export const HelpPanelContent = () => {
       <p>
         Since 2021, Bishop has worked as an embedded expert at Amazon, bringing his unique blend of design skills and agile methodologies to the company. With a passion for delivering high-quality code and a commitment to excellence, Bishop is ready to take on new challenges and drive success for your team.
       </p>
-      <Header variant='h3'>Fun facts</Header>
-      <ul>
-        <li>Bishop is a bit of a quirky character with a great sense of humor (just don't ask him about his secret stash of puns).</li>
-        <li>When he's not coding, Bishop can be found exploring the outdoors or experimenting with new recipes in the kitchen.</li>
-        <li>Despite being 49 years young, Bishop is still trying to figure out how to use TikTok (hey, it's all about learning and growth, right?).</li>
-      </ul>
       <p>&nbsp;</p>
     </SpaceBetween>
   </HelpPanel>;

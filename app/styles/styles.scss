@@ -227,3 +227,11 @@ h2, h3 {
     left: -25px;
   }
 }
+
+// fixes after reset
+button[class*='awsui_navigation-toggle'] span {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
