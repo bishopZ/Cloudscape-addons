@@ -42,9 +42,14 @@ export const Resume = () => {
             companyLink="https://diamondage.bishopz.com/"
             duration="May 2025 - Present &bull; Denver, Colorado"
             description={
-              <p>
-                Founded and built a full stack web app that generates personalized advice using On-device LLMs. Product planning, Marketing: Built the entire MVP (minimum viable product). Private web beta is live. App Store and Play Store inclusion pending.
-              </p>
+              <>
+                <p>
+                  Built a fullstack web app, two mobile apps, and two marketing sites in 5 months. They use on-device LLMs to give advice.
+                </p>
+                <p>
+                  Conducted all product planning,  marketing, and investor relations. Conducted private beta including user interviews.
+                </p>
+              </>
             }
           />
           <JobCard
@@ -83,9 +88,13 @@ export const Resume = () => {
             logo="https://media.licdn.com/dms/image/C4E0BAQFHx-M9LdTajA/company-logo_100_100/0/1569951228610?e=1698883200&v=beta&t=5xfY5OEUyyd_lIbV0UI6MpGQaA-uLVbs8V1_oduNKtk"
             description={<>
               <Box variant="p">
-                As the Senior Creative Technologist at Karsh Hagan, I managed the technical aspects of over twenty accounts, including full-stack development on multiple architectures using React with Redux. My responsibilities included managing teams of domestic and foreign contract developers, building websites, take-overs, social media posts, mobile apps, voice apps, interactive prototypes, landing pages, animated microsites, and large content marketing websites. Additionally, I architected and built three web-based products with Node.js for an internal startup incubator, and collaborated with brand creatives to develop innovative marketing campaigns using design systems, personalization, chat bots, augmented reality (AR), webcam stream routing, animation-to-web pipelines, machine learning, blockchain, and more. I also created many starter templates for new website builds in diverse industries such as healthcare, energy, and consumer electronics. Furthermore, I acted as the official bug hunter on systems that had fallen out of repair.
-
-                I also managed the collaboration between analytics, measurement goals, media trafficking, reporting, and optimization, and created technology comparisons for a wide variety of stakeholders.
+                Managed technical aspects of over 20 accounts, including fullstack development on multiple architectures.
+              </Box>
+              <Box variant="p">
+                Built websites, take-overs, social media posts, mobile apps, voice apps, prototypes, animated microsites, and large content marketing websites, as well as three web-based products with Node.js for an internal startup incubator.
+              </Box>
+              <Box variant="p">
+                Collaborated with brand creatives to develop innovative marketing campaigns using design systems, analytics, chat bots, augmented reality (AR), webcam stream routing, machine learning, blockchain, and more.
               </Box>
               <Box variant="p">
                 Wrote several articles for the company website. [

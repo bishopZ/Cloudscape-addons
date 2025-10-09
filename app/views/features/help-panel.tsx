@@ -3,7 +3,7 @@ import React, { memo } from 'react';
 
 export const HelpPanelContent = () => {
   return <HelpPanel
-    header={<Header variant="h2">Bishop Zareh: software engineering expert with a twist</Header>}>
+    header={<Header variant="h2">Bishop Zareh</Header>}>
     <SpaceBetween size="xs">
       <Box variant="p">
         Bishop Zareh is an exceptional software engineer with over 20 years of crafting novel web, mobile, and immersive experiences.
