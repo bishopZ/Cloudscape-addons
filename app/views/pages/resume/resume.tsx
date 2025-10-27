@@ -44,7 +44,7 @@ export const Resume = () => {
             description={
               <>
                 <p>
-                  Built a fullstack web app, two mobile apps, and two marketing sites in 5 months. They use on-device LLMs to give advice.
+                  Built a fullstack web app, two mobile apps, and two marketing sites in five months. They use on-device LLMs to give advice.
                 </p>
                 <p>
                   Conducted all product planning,  marketing, and investor relations. Conducted private beta including user interviews.
@@ -66,7 +66,7 @@ export const Resume = () => {
           />
           <JobCard
             title="Senior Software Engineer, Frontend"
-            company="Amdocs &bull; Full-time"
+            company="Amdocs Studios &bull; Full-time"
             companyLink="https://www.stellarelements.com/"
             duration="2 yrs 6 mos &bull; Seattle, Washington (remote)"
             logo="https://media.licdn.com/dms/image/D560BAQG-eXtmKYSbfQ/company-logo_100_100/0/1684789598663?e=1698883200&v=beta&t=xvGJ1_lKCNdONe0o4aXsPcKDqA80g0ar66aAOTqhx6s"
