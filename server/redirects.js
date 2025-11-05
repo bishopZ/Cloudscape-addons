@@ -11,6 +11,8 @@ export const redirects = [
   ['/aspen-give-a-flake', '/'],
   ['/karsh-hagan-undercanvas', '/'],
   ['/rbg-x-hsl', 'https://vimeo.com/211040647'],
+  ['/fourth-screen-screen-readers-frontend', '/'],
+  ['/do-i-need-a-design-system', '/'],
 
   ['/articles/type-helpers', '/articles/cloudscape-type-helpers'],
   ['/at-and-t-digital-life-web-3d', '/articles/att-digital-life-web-3d'],
