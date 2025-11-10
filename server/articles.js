@@ -83,6 +83,20 @@ export const articles = () => [
   // },
 
     {
+      slug: 'ut-lectures',
+      title: 'UTLectures.org',
+      description: 'A platform for free & public lectures at UT.',
+      image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/UT-Lectures-org.png',
+      format: 'Article',
+      topic: 'Events',
+      discipline: 'Engineering',
+      section: 'Delivery',
+      author: 'Bishop Zareh',
+      publicationDate: new Date('Nov 9, 2025'),
+      keywords: 'org events ai',
+    },
+
+    {
     slug: 'design-system-lifecycle',
     title: 'Lifecycle of a design system',
     description: 'Explores the stages of a design system\'s maturity.',

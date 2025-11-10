@@ -37,8 +37,10 @@ import { SyntheticData } from '/views/articles/embeds/synthetic-data';
 import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
 import { AspenGiveAFlake } from '/views/articles/slideshows/aspen-give-a-flake';
 import { DigitalLife } from '/views/articles/slideshows/digital-life';
+import { UTLectures } from '/views/articles/content/ut-lectures';
 
 export const CONTENT_MAP = {
+  'ut-lectures': UTLectures,
   'full-stack-soft-skills': FullStackSoftSkills,
   'diamond-age-waitlist': DiamondAgeWaitlist,
   '2025-boilerplate': Boilerplate2025,

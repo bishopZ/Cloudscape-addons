@@ -115,7 +115,7 @@ export const Navigation = () => {
       color="text-status-inactive">
       <p>
         This work is marked with
-        &nbsp;
+        <br />
         <a
           href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1"
           target="_blank"
@@ -124,12 +124,12 @@ export const Navigation = () => {
         </a>
         <>&nbsp;</>
         <img
-          style={{ height: 20, width: 20, verticalAlign: 'middle' }}
+          style={{ height: 20, width: 20, verticalAlign: 'middle', display: 'inline-block' }}
           src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
           alt="" />
         <>&nbsp;</>
         <img
-          style={{ height: 20, width: 20, verticalAlign: 'middle' }}
+          style={{ height: 20, width: 20, verticalAlign: 'middle', display: 'inline-block' }}
           src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"
           alt="" />
 
