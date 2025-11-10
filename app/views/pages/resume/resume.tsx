@@ -38,13 +38,13 @@ export const Resume = () => {
         <ColumnLayout borders="horizontal">
           <JobCard
             title="Founer/CEO"
-            company="Diamond Age &bull; Full-time"
-            companyLink="https://diamondage.bishopz.com/"
+            company="Chill Street Productions &bull; Full-time"
+            companyLink="https://bishopz.com/"
             duration="May 2025 - Present &bull; Denver, Colorado"
             description={
               <>
                 <p>
-                  Built a fullstack web app, two mobile apps, and two marketing sites in five months. They use on-device LLMs to give advice.
+                  Built a two fullstack web app, two mobile apps, and two marketing sites in six months. They use on-device LLMs to give advice.
                 </p>
                 <p>
                   Conducted all product planning,  marketing, and investor relations. Conducted private beta including user interviews.

@@ -71,6 +71,7 @@ export const Exhibitions = () => {
         <p>1998 Innovation in Art and Technology, Texas Interactive Multimedia Awards (Kill The President)</p>
       </Container>
       <Container header={<Header variant="h2">Art exhibitions</Header>}>
+        <p>2025 Technical Stage Manager, "Hallowmass" (2 shows), itchy-O, The Summit - Denver, CO</p>
         <p>2025 Performance artist, Museum of Contemporary Art Gala, itchy-O - Denver, CO</p>
         <p>2025 Special Effects Performer (fog), Split Sygil, itchy-O, UC Theater - Berkley, CA</p>
         <p>2025 Special Effects Performer (fog), Split Sygil, itchy-O, Great American Music Hall - San Francisco, CA</p>
