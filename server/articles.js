@@ -87,7 +87,7 @@ export const articles = () => [
       title: 'UTLectures.org',
       description: 'A platform for free & public lectures at UT.',
       image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/UT-Lectures-org.png',
-      format: 'Article',
+      format: 'Announcement',
       topic: 'Events',
       discipline: 'Engineering',
       section: 'Delivery',
