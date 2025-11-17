@@ -44,10 +44,10 @@ export const Resume = () => {
             description={
               <>
                 <p>
-                  Built a two fullstack web app, two mobile apps, and two marketing sites in six months. They use on-device LLMs to give advice.
+                  Built two fullstack web apps, two mobile apps, and three marketing sites in six months. They use on-device LLMs to give advice and create summaries.
                 </p>
                 <p>
-                  Conducted all product planning,  marketing, and investor relations. Conducted private beta including user interviews.
+                  Conducted all product planning, marketing, and investor relations. Conducted private beta tests including user interviews.
                 </p>
               </>
             }
