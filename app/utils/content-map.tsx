@@ -38,8 +38,10 @@ import { ThirdPartyCookies } from '/views/articles/embeds/third-party-cookies';
 import { AspenGiveAFlake } from '/views/articles/slideshows/aspen-give-a-flake';
 import { DigitalLife } from '/views/articles/slideshows/digital-life';
 import { UTLectures } from '/views/articles/content/ut-lectures';
+import { VibeCodeAustin } from '/views/articles/content/vibe-code-austin';
 
 export const CONTENT_MAP = {
+  'vibe-code-austin': VibeCodeAustin,
   'ut-lectures': UTLectures,
   'full-stack-soft-skills': FullStackSoftSkills,
   'diamond-age-waitlist': DiamondAgeWaitlist,

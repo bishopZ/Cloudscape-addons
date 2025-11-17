@@ -83,6 +83,19 @@ export const articles = () => [
   // },
 
     {
+      slug: 'vibe-code-austin',
+      title: 'Vibe Code Austin',
+      description: 'A new meetup group for vibe coders in Austin, Texas.',
+      image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/vibe-code-austin.jpg',
+      format: 'Announcement',
+      topic: 'Events',
+      discipline: 'Engineering',
+      section: 'Delivery',
+      author: 'Bishop Zareh',
+      publicationDate: new Date('Nov 17, 2025'),
+      keywords: 'cursor ai claude openai chatgpt github vscode',
+    },
+    {
       slug: 'ut-lectures',
       title: 'UTLectures.org',
       description: 'A platform for free & public lectures at UT.',
