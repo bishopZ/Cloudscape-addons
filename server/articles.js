@@ -98,7 +98,7 @@ export const articles = () => [
     {
       slug: 'ut-lectures',
       title: 'UTLectures.org',
-      description: 'A platform for free & public lectures at UT.',
+      description: 'A platform for free & public lectures at UT Austin.',
       image: 'https://bishopz.s3.us-east-1.amazonaws.com/2025/UT-Lectures-org.png',
       format: 'Announcement',
       topic: 'Events',

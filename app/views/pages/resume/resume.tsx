@@ -39,7 +39,7 @@ export const Resume = () => {
           <JobCard
             title="Founer/CEO"
             company="Chill Street Productions &bull; Full-time"
-            companyLink="https://bishopz.com/"
+            companyLink="https://time2magic.com/"
             duration="May 2025 - Present &bull; Denver, Colorado"
             description={
               <>
@@ -56,7 +56,7 @@ export const Resume = () => {
             title="Senior Frontend Architect"
             company="Vertafore &bull; Full-time"
             companyLink="https://www.vertsafore.com/"
-            duration="Jul 2024 - Apr 2025 &bull; Denver, Colorado"
+            duration="10 mos &bull; Jul 2024 - Apr 2025 &bull; Denver, Colorado"
             logo="https://media.licdn.com/dms/image/v2/C4D0BAQEuzgQT1Dmzjw/company-logo_100_100/company-logo_100_100/0/1651184196480/vertafore_logo?e=1740614400&v=beta&t=0yXCuYbGmeEigrMMaH5OLpv7yJnjsafw2woCobzZ8qY"
             description={
               <p>
