@@ -4,6 +4,7 @@ import { useAppSelector } from "/data/data-store";
 import { Box, Button, Container, Header, List, SpaceBetween } from "@cloudscape-design/components";
 import { makeHeaderImage } from "/utils/content-map";
 import { EventSubscriptionForm } from "../common/event-subscription-form";
+import { ExternalLink } from "/addons/details/external-link";
 
 export const VibeCodeAustin = () => {
   const params = useParams();
@@ -49,11 +50,12 @@ export const VibeCodeAustin = () => {
       ]} renderItem={(item) => item} />
 
       <Box variant="p">
-      Bring your questions, your war stories, and your curiosity. Let's build a community where everyone – from the veterans to the vibes-curious – can learn, collaborate, and keep the coding energy positive.
+      Bring your questions, your war stories, and your curiosity. Let's build a community where everyone - from the veterans to the vibes-curious - can learn, collaborate, and keep the coding energy positive.
       </Box>
 
       <Box variant="p">
-      Hosted by Chill Street Productions
+      Hosted by
+      <ExternalLink href="https://time2magic.com">Chill Street Productions</ExternalLink>
       </Box>
 
     </SpaceBetween>
