@@ -3,6 +3,7 @@ import { selectArticle } from "/data/articles";
 import { useAppSelector } from "/data/data-store";
 import { Box, Button, Container, Header, List, SpaceBetween } from "@cloudscape-design/components";
 import { makeHeaderImage } from "/utils/content-map";
+import { EventSubscriptionForm } from "../common/event-subscription-form";
 
 export const VibeCodeAustin = () => {
   const params = useParams();
@@ -19,6 +20,7 @@ export const VibeCodeAustin = () => {
         Vibe Code Austin is a new meetup group for vibe coders in Austin, Texas.
         This is a group for software developers, web programmers, and AI enthusiasts in the Austin area. Join us for networking, coding sessions, workshops, and discussions on the latest trends in computer software development, web programming, and artificial intelligence programming. Whether you're a seasoned pro or just starting out, this group is a great opportunity to collaborate, learn, and share your passion for coding. Let's code together and create some amazing vibes in the Austin tech community!
       </Box>
+      <EventSubscriptionForm />
       <Button onClick={() => {
         window.open('https://www.meetup.com/vibe-code-austin/', '_blank');
       }}>View the meetup group</Button>
