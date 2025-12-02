@@ -24,6 +24,7 @@
     "@cloudscape-design/components": "^3.0.1133",
     "@cloudscape-design/design-tokens": "^3.0.51",
     "@cloudscape-design/global-styles": "^1.0.34",
+    "@formspree/react": "^3.0.0",
     "@reduxjs/toolkit": "1.9.5",
     "@types/prismjs": "^1.26.0",
     "@types/react": "18.2.8",

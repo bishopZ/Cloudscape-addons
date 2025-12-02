@@ -1,34 +1,65 @@
-import { Box, Header, HelpPanel, SpaceBetween } from '@cloudscape-design/components';
-import React, { memo } from 'react';
+import { Box, Button, Header, HelpPanel, SpaceBetween } from '@cloudscape-design/components';
+import { useForm, ValidationError } from '@formspree/react';
+import React, { memo, useState } from 'react';
+
+import { LabeledInput } from '/addons/forms/labeled-input';
+import type { InputChange } from '/addons/helpers/type-helpers';
 
 export const HelpPanelContent = () => {
+  const [email, setEmail] = useState('');
+  const [state, handleSubmit] = useForm('meoykpwz');
+
+  const handleEmailChange = (event: InputChange) => {
+    setEmail(event.detail.value);
+  };
+
+  if (state.succeeded) {
+    return <HelpPanel
+      header={<Header variant="h2">Stay Updated</Header>}>
+      <SpaceBetween size="m">
+        <Box variant="p" color="text-status-success">
+          Thanks for joining! You'll receive announcements about new articles and content.
+        </Box>
+      </SpaceBetween>
+    </HelpPanel>;
+  }
+
+  const hasErrors = state.errors ? Array.isArray(state.errors) && state.errors.length > 0 : false;
+
   return <HelpPanel
-    header={<Header variant="h2">Bishop Zareh</Header>}>
-    <SpaceBetween size="xs">
+    header={<Header variant="h2">Stay Updated</Header>}>
+    <SpaceBetween size="m">
       <Box variant="p">
-        Bishop Zareh is an exceptional software engineer with over 20 years of crafting novel web, mobile, and immersive experiences.
+        Sign up to receive email announcements about new articles, content updates, and other news. I only send emails when there's something meaningful to share.
       </Box>
-      <Header variant='h3'>Award-winning experience</Header>
-      <ul>
-        <li>Received awards from SIGGRAPH, SXSW, AIGA, Awwwards</li>
-        <li>Received industry certifications from Apple, Google, Adobe, Autodesk, and more</li>
-      </ul>
-      <Header variant='h3'>Teaching and speaking</Header>
-      <ul>
-        <li>Taught motion design at the School of the Art Institute of Chicago (2005-2011)</li>
-        <li>Spoke about the future of user interface design at technical conferences across the country (2010)</li>
-        <li>Organized a panel at South by Southwest on glitch art (2013)</li>
-      </ul>
-      <Header variant='h3'>Achievements</Header>
-      <ul>
-        <li>Won an Audience Choice award at the San Antonio Film Festival for color grading and title design work on Wallace Witherspoon's "Second Impression" (2016)</li>
-        <li>Featured in the Colorado AdClub's "The 50" for work on Aspen's "Give a Fl*ke" campaign (2018)</li>
-      </ul>
-      <Header variant='h3'>Embedded expert at Amazon</Header>
-      <p>
-        Since 2021, Bishop has worked as an embedded expert at Amazon, bringing his unique blend of design skills and agile methodologies to the company. With a passion for delivering high-quality code and a commitment to excellence, Bishop is ready to take on new challenges and drive success for your team.
-      </p>
-      <p>&nbsp;</p>
+      <form onSubmit={handleSubmit}>
+        <SpaceBetween size="m">
+          <div>
+            <LabeledInput
+              mode="email"
+              label="Email address"
+              placeholder="your@email.com"
+              value={email}
+              onChange={handleEmailChange}
+              disabled={state.submitting}
+              error={hasErrors ? 'Please enter a valid email address' : undefined}
+            />
+            <input type="hidden" name="email" value={email} />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </div>
+          <Button
+            variant="primary"
+            formAction="submit"
+            loading={state.submitting}
+            disabled={!email || state.submitting}>
+            {state.submitting ? 'Subscribing...' : 'Subscribe'}
+          </Button>
+        </SpaceBetween>
+      </form>
     </SpaceBetween>
   </HelpPanel>;
 };
