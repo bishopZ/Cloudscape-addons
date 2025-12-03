@@ -12,15 +12,22 @@ export const UTLectures = () => {
   return <SpaceBetween size="xs">
   <Alert
     type="info"
-    header="Follow UTLectures on Instagram"
+    header="Follow UTLectures on social media"
     action={
-      <Button onClick={() => {
-        window.open('https://www.instagram.com/utlectures/', '_blank');
-      }}>
-        Follow on Instagram
-      </Button>
+      <SpaceBetween size="s" direction="horizontal">
+        <Button onClick={() => {
+          window.open('https://www.instagram.com/utlectures/', '_blank');
+        }}>
+          Follow on Instagram
+        </Button>
+        <Button onClick={() => {
+          window.open('https://www.facebook.com/groups/1467743208255595', '_blank');
+        }}>
+          Join Facebook Group
+        </Button>
+      </SpaceBetween>
     }>
-    Stay updated with the latest lectures and events at UT Austin by following us on Instagram!
+    Stay updated with the latest lectures and events at UT Austin by following us on Instagram or joining our Facebook group!
   </Alert>
   <Container
     media={makeHeaderImage(article?.image ?? '')}
