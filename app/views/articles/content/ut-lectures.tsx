@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { selectArticle } from "/data/articles";
 import { useAppSelector } from "/data/data-store";
-import { Box, Button, Header } from "@cloudscape-design/components";
+import { Alert, Box, Button, Header } from "@cloudscape-design/components";
 import { Container, SpaceBetween } from "@cloudscape-design/components";
 import { makeHeaderImage } from "/utils/content-map";
 
@@ -10,6 +10,18 @@ export const UTLectures = () => {
   const article = useAppSelector(selectArticle(params.slug!));
 
   return <SpaceBetween size="xs">
+  <Alert
+    type="info"
+    header="Follow UTLectures on Instagram"
+    action={
+      <Button onClick={() => {
+        window.open('https://www.instagram.com/utlectures/', '_blank');
+      }}>
+        Follow on Instagram
+      </Button>
+    }>
+    Stay updated with the latest lectures and events at UT Austin by following us on Instagram!
+  </Alert>
   <Container
     media={makeHeaderImage(article?.image ?? '')}
     header={<Header variant="h2">
