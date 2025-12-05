@@ -37,17 +37,14 @@ export const Resume = () => {
       <Container header={<Header variant="h2">Experience</Header>}>
         <ColumnLayout borders="horizontal">
           <JobCard
-            title="Founer/CEO"
+            title="Senior Software Engineer"
             company="Chill Street Productions &bull; Full-time"
             companyLink="https://time2magic.com/"
             duration="May 2025 - Present &bull; Denver, Colorado"
             description={
               <>
                 <p>
-                  Built two fullstack web apps, two mobile apps, and three marketing sites in six months. They use on-device LLMs to give advice and create summaries.
-                </p>
-                <p>
-                  Conducted all product planning, marketing, and investor relations. Conducted private beta tests including user interviews.
+                Built production-ready fullstack applications including web platforms and mobile apps using React, React Native, and TypeScript. Led full product lifecycle from architecture through deployment, conducting user research and iterative testing to optimize performance and UX.
                 </p>
               </>
             }
