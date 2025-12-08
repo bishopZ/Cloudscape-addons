@@ -12,7 +12,7 @@ import { TypeArticle } from '/views/articles/addons/type-article';
 // import { UnsavedArticle } from '/views/articles/addons/unsaved-article';
 import { AnatomyArticle } from '/views/articles/content/anatomy-article';
 import { BridgingTheChasmContent } from '/views/articles/content/bridging-the-chasm';
-import { DiamondAgeWaitlist } from '/views/articles/content/diamond-age-waitlist';
+import { LoveStreetPublicBeta } from '/views/articles/content/love-street-public-beta';
 import { DoINeedArticle } from '/views/articles/content/do-i-need-article';
 import { DocumentingArticle } from '/views/articles/content/documenting-article';
 import { FigmaArticle } from '/views/articles/content/figma-article';
@@ -44,7 +44,7 @@ export const CONTENT_MAP = {
   'vibe-code-austin': VibeCodeAustin,
   'ut-lectures': UTLectures,
   'full-stack-soft-skills': FullStackSoftSkills,
-  'diamond-age-waitlist': DiamondAgeWaitlist,
+  'love-street-public-beta': LoveStreetPublicBeta,
   '2025-boilerplate': Boilerplate2025,
   'aspen-give-a-flake': AspenGiveAFlake,
   'design-directors-dance-with-ai': DesignDirectorDance,

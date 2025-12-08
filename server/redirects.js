@@ -19,4 +19,5 @@ export const redirects = [
   ['/using-nfts-to-protect-creative-works', '/articles/using-nfts-to-protect-creative-works'],
   ['/american-analog-set-res-fest', '/articles/american-analog-set-res-fest'],
   ['/karsh-hagan-office-pet', '/articles/karsh-hagan-office-pet'],
+  ['/articles/diamond-age-waitlist', '/articles/love-street-public-beta'],
 ];
