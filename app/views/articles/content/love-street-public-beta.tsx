@@ -110,8 +110,8 @@ export const LoveStreetPublicBeta = () => {
           Love Street isn't finished. It might never be "finished." But it's ready for real-world use, and I'm excited to build the next phase with a broader community.
         </Box>
         <Button onClick={() => {
-          window.open('[Google Play link]', '_blank');
-        }}>Try Love Street on Google Play</Button>
+          window.open('https://lovestreet.app', '_blank');
+        }}>Try Love Street now!</Button>
         <Box variant="p">
           <strong>Share feedback with the Feedback link in the app.</strong>
         </Box>
