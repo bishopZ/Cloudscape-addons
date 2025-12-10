@@ -116,7 +116,7 @@ import matplotlib.pyplot as plot
 plot.scatter(features[:,0], features[:,1], c=target)
 plot.show()
       `}</code></pre>
-        <img style={{ maxWidth: 500 }} src="https://bishopz.s3.amazonaws.com/2024/scilearn-distribution.webp" alt="graph showing dot plot distribution in four clusters" />
+        <img style={{ maxWidth: 500 }} src="/images/scilearn-distribution.webp" alt="graph showing dot plot distribution in four clusters" />
       </SpaceBetween>
     </Container>
   </SpaceBetween>;
