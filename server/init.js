@@ -72,6 +72,7 @@ app.get('/manifest.webmanifest', (req, res) => {
 
 app.get('/sitemap.xml', makeSitemap)
 
+app.use('/images', express.static(path.join(__dirname, '../app/images')));
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/*', (req, res) => {
