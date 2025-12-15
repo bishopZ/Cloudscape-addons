@@ -40,7 +40,7 @@ export const Resume = () => {
             title="Senior Software Engineer"
             company="Chill Street Productions &bull; Full-time"
             companyLink="https://time2magic.com/"
-            duration="May 2025 - Present &bull; Denver, Colorado"
+            duration="May 2025 - Present &bull; Austin, Texas"
             description={
               <>
                 <p>
