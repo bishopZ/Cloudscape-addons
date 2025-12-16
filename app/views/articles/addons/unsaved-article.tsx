@@ -6,8 +6,14 @@ import { makeHeaderImage } from '/utils/content-map';
 import { UnsavedPreview } from '/views/articles/previews/unsaved-preview';
 import { PreviewHeader } from '/views/common/headers/preview-header';
 import { SourceCodeSection } from '/views/common/source-code-section';
+import { useParams } from 'react-router-dom';
+import { useAppSelector } from '/data/data-store';
+import { selectArticle } from '/data/articles';
 
 export const UnsavedArticle = () => {
+  const params = useParams();
+  const article = useAppSelector(selectArticle(params.slug!));
+
   useEffect(() => {
     setTimeout(() => {
       if (window.Prism) window.Prism.highlightAll();
@@ -52,7 +58,7 @@ export const UnsavedChangesModal = (props: Props) => {
   </Modal>;
 };`} />
     <Container
-      media={makeHeaderImage('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figma-dynamic-gradient.png/768px-Figma-dynamic-gradient.png')}
+      media={makeHeaderImage(article?.image ?? '')}
       header={<Header variant="h2">
         Introducing UnsavedChangesModal
       </Header>}>

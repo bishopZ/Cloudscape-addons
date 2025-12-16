@@ -63,24 +63,24 @@ export const articles = () => [
   // },
 
 
-  // {
-  //   slug: 'unsaved-changes-modal',
-  //   title: 'Cloudscape unsaved changes modal',
-  //   name: 'Unsaved changes modal',
-  //   description: 'The modal described in the documentation for Cloudscape\'s Wizard Component.',
-  //   image: 'assets/chasm.jpg',
-  //   format: 'Documentation',
-  //   topic: 'Components',
-  //   discipline: 'Engineering',
-  //   section: 'Forms',
-  //   vendor: 'Cloudscape',
-  //   publicationDate: new Date('Jun 12, 2023'),
-  //   tenets: [0, 2],
-  //   referenceComponent: 'Wizard',
-  //   referenceLink: 'https://cloudscape.design/components/wizard/',
-  //   keywords: 'unsavedchangesmodal comprehensive wizard ux designer pattern form value navigates page lost alert \
-  //   box button spacebetween visible ondismiss onconfirm warning leave continue addons',
-  // },
+  {
+    slug: 'unsaved-changes-modal',
+    title: 'Cloudscape unsaved changes modal',
+    name: 'Unsaved changes modal',
+    description: 'The modal described in the documentation for Cloudscape\'s Wizard Component.',
+    image: '/images/unsaved-changes.png',
+    format: 'Documentation',
+    topic: 'Components',
+    discipline: 'Engineering',
+    section: 'Forms',
+    vendor: 'Cloudscape',
+    publicationDate: new Date('Dec 16, 2025'),
+    tenets: [0, 2],
+    referenceComponent: 'Wizard',
+    referenceLink: 'https://cloudscape.design/components/wizard/',
+    keywords: 'unsavedchangesmodal comprehensive wizard ux designer pattern form value navigates page lost alert \
+    box button spacebetween visible ondismiss onconfirm warning leave continue addons',
+  },
 
     {
       slug: 'vibe-code-austin',
