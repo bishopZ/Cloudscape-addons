@@ -28,15 +28,16 @@ export const Contact = () => {
       </Header>}>
       <Container
         header={<Header variant="h2">Ways to connect</Header>}
-        media={{
-          content: <iframe
-            title="vimeo-player"
-            src="//player.vimeo.com/video/213543689"
-            height={videoHeight}
-            allowFullScreen
-          />,
-          height: videoHeight,
-        }}>
+        // media={{
+        //   content: <iframe
+        //     title="vimeo-player"
+        //     src="//player.vimeo.com/video/213543689"
+        //     height={videoHeight}
+        //     allowFullScreen
+        //   />,
+        //   height: videoHeight,
+        // }}
+        >
 
         <SpaceBetween size="l">
           <div>
