@@ -381,7 +381,7 @@ export const articles = () => [
     slug: 'synthetic-data-lessons-learned',
     title: 'Synthetic data: lessons learned',
     description: 'Exploring the limitations of using AI to generate training data for better AIs.',
-    image: '/images00009-651483004.webp',
+    image: '/images/00009-651483004.webp',
     format: 'Article',
     topic: 'Synthetic Data',
     discipline: 'Engineering',
