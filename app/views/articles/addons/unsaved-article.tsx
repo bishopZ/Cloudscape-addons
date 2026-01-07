@@ -69,11 +69,11 @@ export const UnsavedChangesModal = (props: Props) => {
           the <ExternalLink href="https://cloudscape.design/components/wizard/">Wizard component.</ExternalLink> Ask
           any UX designer how a Wizard
           should be designed and they will talk your ear off. The Wizard pattern
-          has been with us for decades and Cloudscape's Wizard goes a long ways
-          toward proving out the lessons learned over that time.
+          has been with us for decades and Cloudscape's Wizard goes a long way
+          towards proving out the lessons learned over that time.
         </Box>
         <Box variant="p">
-          In the documentation for the Wizard component they offer some recommendations
+          In the documentation for the Wizard component, they offer some recommendations
           that also apply to most forms pages. If the customer changes a value, then
           navigates to another page, then their changes will be lost.
           Users should be alerted to this situation before the changes are lost.

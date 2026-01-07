@@ -85,14 +85,14 @@ export const articles = () => [
     {
       slug: 'vibe-code-austin',
       title: 'Vibe Code Austin',
-      description: 'A new meetup group for vibe coders in Austin, Texas.',
+      description: 'A meetup group for vibe coders in Austin, Texas.',
       image: '/images/vibe-code-austin.jpg',
       format: 'Announcement',
       topic: 'Events',
       discipline: 'Engineering',
       section: 'Delivery',
       author: 'Bishop Zareh',
-      publicationDate: new Date('Nov 17, 2025'),
+      publicationDate: new Date('Jan 7, 2026'),
       keywords: 'cursor ai claude openai chatgpt github vscode',
     },
     {
@@ -143,7 +143,7 @@ export const articles = () => [
   {
     slug: 'love-street-public-beta',
     title: 'Love Street Public Beta',
-    description: 'Why I spent six building yet another productivity app—and why this one\'s different.',
+    description: 'Why I spent six months building yet another productivity app—and why this one\'s different.',
     image: '/images/lofi4.jpg',
     format: 'Announcement',
     topic: 'Productivity',
