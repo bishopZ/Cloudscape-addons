@@ -57,7 +57,7 @@ export const topNav: TopNavigationProps.Identity = {
   href: '/',
   title: 'Bishop Z',
   logo: {
-    src: '/assets/Jan-2016-bubble-v1_onwhite.gif',
+    src: '/images/apple-icon-180x180.png',
     alt: 'Bishop Z logo'
   }
 };

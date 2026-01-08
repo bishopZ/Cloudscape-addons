@@ -15,9 +15,9 @@ export const NotFound = () => {
         The content you requested could not be found.
       </Alert>
       <Box>
-        If you believe something should be here, please contact
-        <ExternalLink href="">
-          TODO.
+        If you believe something should be here, please contact&nbsp;
+        <ExternalLink href="mailto:support@bishopz.com">
+          support@bishopz.com.
         </ExternalLink>
       </Box>
     </SpaceBetween>
