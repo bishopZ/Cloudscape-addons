@@ -3,7 +3,7 @@ import React from 'react';
 import { EmptyArticle } from '/views/articles/addons/empty-article';
 import { IconMapArticle } from '/views/articles/addons/icon-map-article';
 // import { InputArticle } from '/views/articles/addons/input-article';
-// import { LabeledValueArticle } from '/views/articles/addons/labeled-value-article';
+import { LabeledValueArticle } from '/views/articles/addons/labeled-value-article';
 import { LoadingArticle } from '/views/articles/addons/loading-article';
 // import { NumberArticle } from '/views/articles/addons/number-article';
 import { SpacingConstants } from '/views/articles/addons/spacing-article';
@@ -75,7 +75,7 @@ export const CONTENT_MAP = {
   'loading-states': LoadingArticle,
   // 'labeled-input': InputArticle,
   // 'labeled-number': NumberArticle,
-  // 'labeled-value': LabeledValueArticle,
+  'labeled-value': LabeledValueArticle,
   'generic-empty': EmptyArticle,
   'unsaved-changes-modal': UnsavedArticle,
   'string-utils': StringArticle,

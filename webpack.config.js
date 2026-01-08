@@ -16,7 +16,7 @@ const config = {
     './app/init.tsx',
     './app/styles/styles.scss',
     './app/images/Jan-2016-bubble-v1_onwhite.gif',
-    './app/images/chasm.jpg',
+    './app/images/chasm.webp',
     './app/images/Bishop-Zareh-v5.1.pdf'
   ],
   output: {

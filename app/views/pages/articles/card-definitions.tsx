@@ -19,7 +19,7 @@ export const CARD_DEFINITIONS: CardsProps.CardDefinition<Article> = {
         <div className="card-image down">
           <img
             src={item.image === ''
-              ? 'assets/chasm.jpg'
+              ? 'images/chasm.webp'
               : item.image}
             alt={item.title}
           />
