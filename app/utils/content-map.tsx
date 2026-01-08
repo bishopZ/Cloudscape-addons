@@ -44,7 +44,7 @@ export const CONTENT_MAP = {
   'vibe-code-austin': VibeCodeAustin,
   'ut-lectures': UTLectures,
   'full-stack-soft-skills': FullStackSoftSkills,
-  'love-street-public-beta': LoveStreetPublicBeta,
+  'love-street-app': LoveStreetPublicBeta,
   '2025-boilerplate': Boilerplate2025,
   'aspen-give-a-flake': AspenGiveAFlake,
   'design-directors-dance-with-ai': DesignDirectorDance,

@@ -20,4 +20,5 @@ export const redirects = [
   ['/american-analog-set-res-fest', '/articles/american-analog-set-res-fest'],
   ['/karsh-hagan-office-pet', '/articles/karsh-hagan-office-pet'],
   ['/articles/diamond-age-waitlist', '/articles/love-street-public-beta'],
+  ['/articles/love-street-public-beta', '/articles/love-street-app'],
 ];

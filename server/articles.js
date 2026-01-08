@@ -141,9 +141,9 @@ export const articles = () => [
     keywords: '',
   },
   {
-    slug: 'love-street-public-beta',
-    title: 'Love Street Public Beta',
-    description: 'Why I spent six months building yet another productivity app—and why this one\'s different.',
+    slug: 'love-street-app',
+    title: 'Love Street App',
+    description: 'A productivity app that doesn\'t bother you.',
     image: '/images/lofi4.jpg',
     format: 'Announcement',
     topic: 'Productivity',
@@ -151,7 +151,7 @@ export const articles = () => [
     section: 'Tools',
     vendor: 'Love Street',
     author: 'Bishop Zareh',
-    publicationDate: new Date('Dec 8, 2025'),
+    publicationDate: new Date('Jan 8, 2026'),
     keywords: 'productivity app android ios local-first privacy wellness gamification ai advisors anti-productivity',
   },
   {
