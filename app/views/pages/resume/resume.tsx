@@ -38,7 +38,7 @@ export const Resume = () => {
         <ColumnLayout borders="horizontal">
           <JobCard
             title="Senior Software Engineer"
-            company="Chill Street Productions &bull; Full-time"
+            company="Time 2 Magic &bull; Full-time"
             companyLink="https://time2magic.com/"
             duration="May 2025 - Present &bull; Austin, Texas"
             description={
