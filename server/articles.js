@@ -37,7 +37,7 @@ export const articles = () => [
   //   tenets: [0, 1, 3, 4],
   //   referenceComponent: 'Input',
   //   referenceLink: 'https://cloudscape.design/components/input/',
-  //   keywords: 'versitile majority form label accessibility usability best practice formfield type map text password \
+  //   keywords: 'versitile majority form label accessibility usability formfield type map text password \
   //   decimal numeric search email tel url value placeholder optional mode step addoptional aria inputprops \
   //   cleararialabel formfieldstrings inputchange InputKeyDetail onchange secondarycontrol readonly onkey autocomplete \
   //   spellcheck info error constraint onchange labeledinput addons'
@@ -388,7 +388,7 @@ export const articles = () => [
     section: 'Machine Learning',
     vendor: 'Google DeepMind',
     publicationDate: new Date('July 1, 2025'),
-    keywords: 'ai large language model training Natural Language Processing NLP Best practices quality Diversity Real-world validation Adversarial Ethical considerations Continuous improvement Monitoring evaluation Machine learning ML Natural language generation NLG augmentation robustness Ethics Bias mitigation Cultural sensitivity Testing evaluation frameworks',
+    keywords: 'ai large language model training Natural Language Processing NLP quality Diversity Real-world validation Adversarial Ethical considerations Continuous improvement Monitoring evaluation Machine learning ML Natural language generation NLG augmentation robustness Ethics Bias mitigation Cultural sensitivity Testing evaluation frameworks',
   },
   {
     slug: 'karsh-hagan-office-pet',
@@ -555,7 +555,7 @@ export const articles = () => [
     vendor: 'React',
     author: 'Bishop Zareh',
     publicationDate: new Date('Nov 21, 2023'),
-    keywords: 'React Denver redux bignerdranch programming patterns best practices application scalability',
+    keywords: 'React Denver redux bignerdranch programming patterns application scalability',
   },
   {
     slug: "redesigning-retail",

@@ -40,7 +40,7 @@ export const SyntheticData = () => {
         </p>
       </SpaceBetween>
     </Container>
-    <Container header={<Header variant="h2">Benefits and Best Practices</Header>}>
+    <Container header={<Header variant="h2">Benefits</Header>}>
       <SpaceBetween size="m">
         <p>
         In the book, Building AI-Powered Products, Dr. Marily Nika provides an excellent summary of when to use synthetic data.

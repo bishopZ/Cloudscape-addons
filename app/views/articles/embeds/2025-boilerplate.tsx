@@ -31,10 +31,10 @@ export const Boilerplate2025 = () => {
           I release a boilerplate every few years. Boilerplates go a little bit further than the starter projects that each library gives you, yet they land short of being an actual project. They give you a good starting point, if you want this exact mix of technologies. It also suggests good organizational patterns for a scalable code base.
         </p>
         <p>
-          When you create an starter application with create-next-app, vite, or the majority of similar command-line tools, the app you're given is wonderful in many ways, but fails to follow best practices outside of the narrow scope of its base framework. It may come with many best practices for React, but not for CSS, accessibility, SEO, file organization and a host of other concerns that any person wanting to publish a well-made website needs.
+          When you create an starter application with create-next-app, vite, or the majority of similar command-line tools, the app you're given is wonderful in many ways, but fails to follow standard practices outside of the narrow scope of its base framework. It may come with many of the standard patterns for React, but not for CSS, accessibility, SEO, API, file organization and a host of other concerns that any person wanting to publish a well-made website needs.
         </p>
         <p>
-          If those repos are trying to be the simplest form of a specific technology, this repository aims to be the simplest form of a family of technologies. This repository aims to be an enhanced starter library, providing concise examples of all the features and best practices.
+          If those repos are trying to be the simplest form of a specific technology, this repository aims to be the simplest form of a family of technologies. This repository aims to be an enhanced starter library, providing concise examples of all the features.
         </p>
         <p>
           This boilerplate is right for you if:
@@ -99,7 +99,7 @@ export const Boilerplate2025 = () => {
         Passport.js
         </h3>
         <p>
-        By integrating Passport.js as an example login process, we can demonstrate best practices for authentication without compromising security or scalability. Future improvements will focus on implementing additional features like CSRF protection and login attempts limits, which may require a database solution.
+        By integrating Passport.js as an example login process, we can demonstrate authentication patterns without compromising security or scalability. Future improvements will focus on implementing additional features like CSRF protection and login attempts limits, which may require a database solution.
         </p>
         <h3>
         ESlint
@@ -124,7 +124,7 @@ export const Boilerplate2025 = () => {
         Administrative interfaces may benefit from Cloudscape's intuitive navigation and layout features. While Marketing sites might be better suited to Github's Preview design system, with its emphasis on eye-catching visuals and responsive design.
         </p>
         <p>
-        When selecting a design system consider your project's goals and determine which design systems align best with your requirements. Choose a design system with a strong, active community and an extensive ecosystem of supporting tools, libraries, and documentation. Opt for a system with thorough documentation that covers every aspect, including setup, customization, and best practices. Then select the design system best suits your development team's experience level and skillset.
+        When selecting a design system consider your project's goals and determine which design systems align best with your requirements. Choose a design system with a strong, active community and an extensive ecosystem of supporting tools, libraries, and documentation. Opt for a system with thorough documentation that covers every aspect, including setup and customization. Then select the design system best suits your development team's experience level and skillset.
         </p>
         <p>
           If you're uncertain about which design system to implement, refer to our example branch with-chakra-ui, where Chakra UI is used as a case study.

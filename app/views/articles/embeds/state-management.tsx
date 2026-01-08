@@ -18,7 +18,7 @@ export const StateManagement = () => {
           in React, useState, useContext and useReducer. We show how the subtle
           differences between them offer strong guidance on what situations each
           one is designed for.</p>
-        <p>Beyond best practices, we explore the design patterns that drive
+        <p>Beyond the basics, we explore the design patterns that drive
           scalable React applications, and compare them to patterns used
           in other frameworks such as Angular and Vue. Finally, we compare the
           syntax and usage of React's built-in useReducer to Redux reducers,

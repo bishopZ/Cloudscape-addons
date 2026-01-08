@@ -41,7 +41,7 @@ export const MaturityArticle = () => {
         Like a mad scientist perfecting their creation, your design system requires continuous improvement to stay relevant and effective. Embrace an iterative approach that encompasses testing, refining assets, enhancing documentation, and optimizing processes. Regularly evaluate the performance of your design system against evolving business needs and user feedback.
       </p>
       <p>
-        Stay on the cutting edge of design by keeping up with industry trends and advancements in technology. Integrate new methodologies or best practices as they emerge, ensuring your design system remains a valuable asset for creative endeavors. By embracing change and adaptability, you foster a culture of continuous improvement that supports long-term growth and success.
+        Stay on the cutting edge of design by keeping up with industry trends and advancements in technology. Integrate new methodologies as they emerge, ensuring your design system remains a valuable asset for creative endeavors. By embracing change and adaptability, you foster a culture of continuous improvement that supports long-term growth and success.
       </p>
       <h3>What are the most mature design systems?</h3>
       <ul>

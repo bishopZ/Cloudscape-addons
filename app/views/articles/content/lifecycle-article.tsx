@@ -195,7 +195,7 @@ export const LifecycleArticle = () => {
         Even at peak maturity, humility remains essential. It's crucial for design systems teams to remain nimble and mindful of the fact that the system is always eventually wrong. The world changes, user needs evolve, technology advances, and business priorities shift.
         </Box>
         <Box variant="p">
-        <strong>Continuous Learning:</strong> Stay connected to industry trends, emerging technologies, and evolving user expectations. Your system should be a leader in adopting new best practices, not a barrier to progress.
+        <strong>Continuous Learning:</strong> Stay connected to industry trends, emerging technologies, and evolving user expectations. Your system should be a leader, not a barrier to progress.
         </Box>
         <Box variant="p">
         <strong>Strategic Flexibility:</strong> Be prepared for major pivots. Whether it's a rebrand, a new product line, or a technology migration, your system should enable change rather than constrain it.

@@ -126,7 +126,7 @@ export const LabeledInput = (props: Props) => {
           </ExternalLink>
           are in the context of a form.
           When an Input is in a form, it should have a label to comply with
-          accessibility and usablity best practices. Labels are provided by the
+          accessibility and usablity standards. Labels are provided by the
           <ExternalLink href="https://cloudscape.design/components/form-field/">
             FormField component.
           </ExternalLink>

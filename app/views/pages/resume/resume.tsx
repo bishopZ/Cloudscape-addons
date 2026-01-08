@@ -57,7 +57,7 @@ export const Resume = () => {
             logo="https://media.licdn.com/dms/image/v2/C4D0BAQEuzgQT1Dmzjw/company-logo_100_100/company-logo_100_100/0/1651184196480/vertafore_logo?e=1740614400&v=beta&t=0yXCuYbGmeEigrMMaH5OLpv7yJnjsafw2woCobzZ8qY"
             description={
               <p>
-                Work with designers and engineers to develop the company's design system, ensuring fast and consistent work across ten products. Created an outreach program to speed onboarding of new products to the design system. Develop and document design patterns and best practices for all engineering teams, showcasing good architectural decisions that ensure continuous iteration and fast feature development.
+                Work with designers and engineers to develop the company's design system, ensuring fast and consistent work across ten products. Created an outreach program to speed onboarding of new products to the design system. Develop and document design patterns for all engineering teams, showcasing good architectural decisions that ensure continuous iteration and fast feature development.
               </p>
             }
           />
