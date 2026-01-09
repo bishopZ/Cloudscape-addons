@@ -43,9 +43,7 @@ export const Docs = () => {
             </Box>
           }>
           <Box variant="p">
-          Cloudscape is
-            <ExternalLink href="https://cloudscape.design/">an open source design system</ExternalLink>
-          released by Amazon. Cloudscape offers user interface guidelines, front-end components, design resources,
+          Cloudscape is&nbsp;<ExternalLink href="https://cloudscape.design/">an open source design system</ExternalLink>&nbsp;released by Amazon. Cloudscape offers user interface guidelines, front-end components, design resources,
           and development tools for building intuitive, engaging, and inclusive customer experiences at scale.
           </Box>
         </ExpandableSection>
@@ -104,26 +102,7 @@ export const Docs = () => {
           </Box>
         </ExpandableSection>
       </Container>
-      <Container>
-        <ExpandableSection
-          defaultExpanded={expandAll}
-          headerText={
-            <Box variant="h4" tagOverride="strong">
-          Community: How can I get involved?
-            </Box>
-          }>
-          <ul>
-            <li>
-              Our <Link href="/">community articles</Link> updates every two weeks with new articles
-              and components about Cloudscape and other design systems.
-            </li>
-            <li>
-              When we establish a version controlled repository, we will
-              accept community contributions in the form of pull requests.
-            </li>
-          </ul>
-        </ExpandableSection>
-      </Container>
+
       <Container>
         <ExpandableSection
           defaultExpanded={expandAll}
@@ -147,34 +126,7 @@ export const Docs = () => {
           </Box>
         </ExpandableSection>
       </Container>
-      <Container>
-        <ExpandableSection
-          defaultExpanded={expandAll}
-          headerText={
-            <Box variant="h4" tagOverride="strong">
-          What versions are used?
-            </Box>
-          }>
-          <Box variant="p">
-            The documentation was written using Cloudscape with these tools.
-            <ul>
-              <li>Cloudscape components v3</li>
-              <li>Cloudscape collection hooks v1</li>
-              <li>Cloudscape design tokens v3</li>
-              <li>Cloudscape global styles v1</li>
-              <li>React v18</li>
-              <li>Typescript v5</li>
-            </ul>
-          </Box>
-          {/* <Box variant="p">
-      A few of the addons also require Redux Toolkit.
-      </Box>
-      <ul>
-        <li>Redux v4</li>
-        <li>Redux Toolkit v1</li>
-      </ul> */}
-        </ExpandableSection>
-      </Container>
+
     </SpaceBetween>
   </ContentLayout>;
 };

@@ -32,21 +32,6 @@ const articlesNav: SidenavItem[] = [
   { type: 'link', text: 'Gallery', href: '/articles/gallery' },
   { type: 'link', text: 'Understanding design systems', href: '/search?q=design%20system' },
   { type: 'divider' },
-  {
-    type: 'link',
-    text: 'Privacy',
-    external: true,
-    externalIconAriaLabel,
-    href: ''
-  },
-  {
-    type: 'link',
-    text: 'Feedback',
-    external: true,
-    externalIconAriaLabel,
-    href: ''
-  },
-  { type: 'divider' },
 ];
 
 const baseDocsNav: SidenavItem[] = [

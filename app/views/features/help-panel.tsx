@@ -7,7 +7,7 @@ import type { InputChange } from '/addons/helpers/type-helpers';
 
 export const HelpPanelContent = () => {
   const [email, setEmail] = useState('');
-  const [state, handleSubmit] = useForm('meoykpwz');
+  const [state, handleSubmit] = useForm('mwvvevaz');
 
   const handleEmailChange = (event: InputChange) => {
     setEmail(event.detail.value);
