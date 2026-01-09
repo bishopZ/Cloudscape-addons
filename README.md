@@ -1,7 +1,7 @@
 
-# Bishop Z v4
+# Cloudscape Addons v0.1.0
 
-This is the code for my webiste.
+This is the code for the cloudscape addons site.
 
 
 # Getting started
@@ -16,4 +16,4 @@ Then in a new terminal, run these.
 npm start
 ```
 
-Then open http://localhost:8000 to view the website.
+Then open http://localhost:3000 to view the website.

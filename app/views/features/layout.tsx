@@ -1,6 +1,6 @@
 import type { AppLayoutProps } from '@cloudscape-design/components';
 import {
-  AppLayout, Box, Flashbar, TopNavigation
+  AppLayout, Box, Button, Flashbar, Link, SpaceBetween, TopNavigation
 } from '@cloudscape-design/components';
 import { applyTheme } from '@cloudscape-design/components/theming';
 import { applyDensity, applyMode, Density, disableMotion, Mode } from '@cloudscape-design/global-styles';
@@ -118,18 +118,18 @@ export const Layout = (props: Props) => {
       identity={topNav}
       utilities={utils}
       i18nStrings={topNavStrings}
-      // search={<SpaceBetween size="s" direction="horizontal">
-      //   <Link href="/">
-      //     <Button variant={path.startsWith('/articles') || path === '/' ? 'normal' : 'link'}>
-      //       Blog
-      //     </Button>
-      //   </Link>
-      //   <Link href="/docs">
-      //     <Button variant={path.startsWith('/docs') ? 'normal' : 'link'}>
-      //       Addons
-      //     </Button>
-      //   </Link>
-      // </SpaceBetween>}
+      search={<SpaceBetween size="s" direction="horizontal">
+        <Link href="/">
+          <Button variant={path.startsWith('/articles') || path === '/' || path === '/search' ? 'normal' : 'link'}>
+            Articles
+          </Button>
+        </Link>
+        <Link href="/docs">
+          <Button variant={path.startsWith('/docs') ? 'normal' : 'link'}>
+            Docs
+          </Button>
+        </Link>
+      </SpaceBetween>}
     />
     <AppLayout
       contentType={contentType}

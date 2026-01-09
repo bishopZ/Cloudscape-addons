@@ -183,7 +183,7 @@ export const articles = () => [
     slug: 'loading-states',
     title: 'Cloudscape loading states',
     name: 'Loading states',
-    description: 'Basic loading state components to expand the vocabulary of the Cloudscape design system.',
+    description: 'Basic loading state components to expand the vocabulary of the Cloudscape.',
     image: '/images/better-loading-state.webp',
     format: 'Documentation',
     topic: 'Components',
@@ -309,7 +309,7 @@ export const articles = () => [
     publicationDate: new Date('Feb 22, 2024'),
     keywords: 'tolls adoption designers developers shared platforms real-time editing commenting \
     version control process exchange ideas vision implementation robust effective simultaneous \
-    feedback interation components libraries projects team unified coherent contextual channels',
+    feedback interation components libraries projects team unified coherent contextual channels design system',
   },
   {
     slug: 'bridging-the-chasm',

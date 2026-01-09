@@ -55,10 +55,10 @@ export const theme: Theme = {
 
 export const topNav: TopNavigationProps.Identity = {
   href: '/',
-  title: 'Bishop Z',
+  title: 'Cloudscape Addons',
   logo: {
     src: '/images/apple-icon-180x180.png',
-    alt: 'Bishop Z logo'
+    alt: 'Cloudscape Addons logo'
   }
 };
 

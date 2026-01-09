@@ -1,7 +1,10 @@
 
 export const redirects = [
   ['/upload', '/'],
-  ['/biography', '/resume'],
+  ['/biography', '/'],
+  ['/resume', '/'],
+  ['/contact', '/'],
+  ['/exhibitions', '/'],
   ['/fantasy-data-viz-2017', '/'],
   ['/colorado-webcams', '/'],
   ['/karsh-hagan-first-on-site', '/'],

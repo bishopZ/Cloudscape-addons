@@ -1,6 +1,6 @@
 
-export const POST_TITLE = ' - BishopZ.com';
+export const POST_TITLE = ' - Cloudscape Addons';
 
-export const DEFAULT_TITLE = 'Bishop Z';
-export const DEFAULT_DESCRIPTION = 'Explore technology with Bishop Z\'s insightful articles and resources. Discover the power of AI and design systems, and learn how to integrate them into your daily work.';
-export const DEFAULT_IMAGE = 'https://bishopz.com/images/chasm.webp';
+export const DEFAULT_TITLE = 'Cloudscape Addons';
+export const DEFAULT_DESCRIPTION = 'A collection of addons for the Cloudscape design system.';
+export const DEFAULT_IMAGE = 'https://cloudscape.bishopz.com/images/chasm.webp';

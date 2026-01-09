@@ -5,37 +5,19 @@ export const makeSitemap = (req, res) => {
   res.send(`<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://bishopz.com/</loc>
+        <loc>https://cloudscape.bishopz.com/</loc>
         <lastmod>2025-06-21T00:00:00+00:00Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
       </url>
       <url>
-        <loc>https://bishopz.com/resume</loc>
-        <lastmod>2025-06-21T00:00:00+00:00Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-      </url>
-      <url>
-        <loc>https://bishopz.com/exhibitions</loc>
-        <lastmod>2025-06-21T00:00:00+00:00Z</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>https://bishopz.com/contact</loc>
-        <lastmod>2025-06-21T00:00:00+00:00Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>https://bishopz.com/rss.xml</loc>
+        <loc>https://cloudscape.bishopz.com/rss.xml</loc>
         <lastmod>2025-06-21T00:00:00+00:00Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.2</priority>
       </url>
       ${articles().map(article => `<url>
-        <loc>https://bishopz.com/articles/${article.slug}</loc>
+        <loc>https://cloudscape.bishopz.com/articles/${article.slug}</loc>
         <lastmod>${article.publicationDate.toISOString()}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>

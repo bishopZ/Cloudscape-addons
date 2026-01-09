@@ -1,8 +1,8 @@
 
 export const webmanifest = {
-  "name": "Bishop Z",
-  "short_name": "Bishop Z",
-  "description": "Explore technology with Bishop Z's insightful articles and resources. Discover the power of AI and design systems, and learn how to integrate them into your daily work.",
+  "name": "Cloudscape Addons",
+  "short_name": "Cloudscape Addons",
+  "description": "A collection of addons for the Cloudscape design system.",
   "start_url": "/",
   "display": "browser",
   "background_color": "#fff",

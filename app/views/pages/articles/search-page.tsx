@@ -2,7 +2,7 @@ import { useCollection } from '@cloudscape-design/collection-hooks';
 import type { TableProps } from '@cloudscape-design/components';
 import { Pagination, Table, TextFilter } from '@cloudscape-design/components';
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 
 import GenericError from '/addons/details/generic-error';
 import { LoadingSpinner } from '/addons/details/loading';
@@ -20,7 +20,7 @@ import { TABLE_COLUMNS } from './table-data';
 
 export const Search = () => {
   const dispatch = useAppDispatch();
-  const params = useParams();
+  const [searchParams] = useSearchParams();
   const { initialized, items: articles, error } = useAppSelector(selectArticles);
 
   useEffect(() => {
@@ -51,7 +51,7 @@ export const Search = () => {
 
   const collectionSettings = {
     filtering: {
-      defaultFilteringText: params.filter?.toLocaleLowerCase() ?? '',
+      defaultFilteringText: searchParams.get('q')?.toLowerCase() ?? '',
       empty: TableFooter,
       noMatch: <NoMatch clear={() => { actions.setFiltering('') }} />,
     },

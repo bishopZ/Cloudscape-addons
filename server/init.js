@@ -55,22 +55,22 @@ app.get('/rss.xml', (req, res) => {
 app.get('/api/articles', (req, res) => {
   console.log('sent articles')
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
-  res.setHeader('Access-Control-Allow-Origin', 'https://bishopz.herokuapp.com/');
   res.setHeader('Access-Control-Allow-Origin', 'https://bishopz.com/');
+  res.setHeader('Access-Control-Allow-Origin', 'https://cloudscape.bishopz.com/');
   res.json(articles())
-})
+});
 
 app.get('/robots.txt', (req, res) => {
   res.type('text/robots');
-  res.send('User-agent: *\nAllow: /\nSitemap: http://bishopz.com/sitemap.xml');
+  res.send('User-agent: *\nAllow: /\nSitemap: http://cloudscape.bishopz.com/sitemap.xml');
 });
 
 app.get('/manifest.webmanifest', (req, res) => {
   res.type('application/manifest+json');
   res.json(webmanifest);
-})
+});
 
-app.get('/sitemap.xml', makeSitemap)
+app.get('/sitemap.xml', makeSitemap);
 
 app.use('/images', express.static(path.join(__dirname, '../app/images')));
 app.use(express.static(path.join(__dirname, '../public')));

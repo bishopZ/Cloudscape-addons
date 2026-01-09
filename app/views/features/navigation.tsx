@@ -29,13 +29,8 @@ const articlesNav: SidenavItem[] = [
   { type: 'link', text: 'RSS feed', href: '/rss.xml' },
   { type: 'divider' },
 
-  { type: 'section-group', title: 'About', items: [
-    { type: 'link', text: 'Resume', href: '/resume' },
-    { type: 'link', text: 'Show record', href: '/exhibitions' },
-    { type: 'link', text: 'Contact', href: '/contact' },
-  ] },
-  { type: 'link', text: 'Addons gallery', href: '/articles/gallery' },
-  { type: 'link', text: 'Understanding design systems', href: '/articles/search/design%20systems' },
+  { type: 'link', text: 'Gallery', href: '/articles/gallery' },
+  { type: 'link', text: 'Understanding design systems', href: '/search?q=design%20system' },
   { type: 'divider' },
   {
     type: 'link',
@@ -54,7 +49,7 @@ const articlesNav: SidenavItem[] = [
   { type: 'divider' },
 ];
 
-const docsNav: SidenavItem[] = [
+const baseDocsNav: SidenavItem[] = [
   { type: 'link', text: 'Getting started', href: '/docs' },
   { type: 'link', text: 'Core tenets', href: '/docs/core-tenets' }
 ];
@@ -71,6 +66,7 @@ export const Navigation = () => {
     return memo;
   }, [] as string[]);
 
+  const docsNav = [...baseDocsNav];
   types
     .sort((a, b) => a.localeCompare(b))
     .forEach(type => {
