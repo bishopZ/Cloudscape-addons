@@ -16,7 +16,7 @@ const config = {
     './app/init.tsx',
     './app/styles/styles.scss',
     './app/images/Jan-2016-bubble-v1_onwhite.gif',
-    './app/images/chasm.webp',
+    './app/images/string-utils.webp',
     './app/images/Bishop-Zareh-v5.1.pdf'
   ],
   output: {
@@ -84,7 +84,7 @@ const config = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|pdf)$/i,
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|webp|pdf)$/i,
         type: 'asset/resource',
       },
     ],
