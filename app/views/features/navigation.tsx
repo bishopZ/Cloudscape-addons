@@ -5,7 +5,6 @@ import { useLocation, useParams } from 'react-router-dom';
 
 import { LoadingSpinner } from '/addons/details/loading';
 import { externalIconAriaLabel } from '/addons/helpers/a11y-helpers';
-import { Spacing } from '/addons/helpers/spacing-constants';
 import type { Breadcrumb, ParamBreadcrumb } from '/addons/helpers/type-helpers';
 import { initArticles, selectArticles } from '/data/articles';
 import { useAppDispatch, useAppSelector } from '/data/data-store';
@@ -35,23 +34,23 @@ const articlesNav: SidenavItem[] = [
     { type: 'link', text: 'Show record', href: '/exhibitions' },
     { type: 'link', text: 'Contact', href: '/contact' },
   ] },
-  // { type: 'link', text: 'Addons gallery', href: '/articles/gallery' },
-  // { type: 'link', text: 'Understanding design systems', href: '/articles/search/design%20systems' },
-  // { type: 'divider' },
-  // {
-  //   type: 'link',
-  //   text: 'Privacy',
-  //   external: true,
-  //   externalIconAriaLabel,
-  //   href: ''
-  // },
-  // {
-  //   type: 'link',
-  //   text: 'Feedback',
-  //   external: true,
-  //   externalIconAriaLabel,
-  //   href: ''
-  // },
+  { type: 'link', text: 'Addons gallery', href: '/articles/gallery' },
+  { type: 'link', text: 'Understanding design systems', href: '/articles/search/design%20systems' },
+  { type: 'divider' },
+  {
+    type: 'link',
+    text: 'Privacy',
+    external: true,
+    externalIconAriaLabel,
+    href: ''
+  },
+  {
+    type: 'link',
+    text: 'Feedback',
+    external: true,
+    externalIconAriaLabel,
+    href: ''
+  },
   { type: 'divider' },
 ];
 

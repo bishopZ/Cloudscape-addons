@@ -1,6 +1,6 @@
 {
-  "name": "bishopz.com",
-  "version": "4.0.1",
+  "name": "cloudscape-addons",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -69,7 +69,7 @@
   },
   "engines": {
     "node": "22.20.0",
-    "npm": "11.6.2"
+    "npm": "11.7.0"
   },
   "browserslist": {
     "production": [
