@@ -35,7 +35,7 @@ export const ArticleDetails = () => {
         </SpaceBetween>
         <SpaceBetween size="m">
           <LabeledValue label="Author">
-            {article?.author ?? 'Bishop Zareh'}
+            {article?.author ?? 'Cloudscape Addons'}
           </LabeledValue>
           <LabeledValue label="Publication date">
             {formatDate(article?.publicationDate)}
